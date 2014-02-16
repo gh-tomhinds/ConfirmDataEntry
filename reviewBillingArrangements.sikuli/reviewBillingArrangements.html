@@ -1,0 +1,187 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>reviewBillingArrangements.sikuli\reviewBillingArrangements.sikuli</h2> <a href="reviewBillingArrangements.sikuli\reviewBillingArrangements.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> baCommon
+<span class="kw">import</span> datetime
+
+<span class="kw">import</span> baAdjustTotal_Time
+<span class="kw">import</span> baAdjustTotal_Exp
+<span class="kw">import</span> baAdjustTotal_Both
+
+<span class="kw">import</span> baAdjustTimekeeper_Time
+<span class="kw">import</span> baAdjustTimekeeper_Exp
+<span class="kw">import</span> baAdjustTimekeeper_Both
+
+<span class="kw">import</span> baAdjustTask
+<span class="kw">import</span> baAdjustExpense
+
+<span class="kw">import</span> baAbsolute_Time
+<span class="kw">import</span> baAbsolute_Exp
+<span class="kw">import</span> baAbsolute_Both
+
+<span class="kw">import</span> baMinimum_Time
+<span class="kw">import</span> baMinimum_Exp
+<span class="kw">import</span> baMinimum_Both
+
+<span class="kw">import</span> baMaximum_Time
+<span class="kw">import</span> baMaximum_Exp
+<span class="kw">import</span> baMaximum_Both
+
+<span class="kw">import</span> baFlatFeePlus_Time
+<span class="kw">import</span> baFlatFeePlus_Exp
+<span class="kw">import</span> baFlatFeePlus_Both
+
+<span class="kw">import</span> baContingency_Time
+<span class="kw">import</span> baContingency_Exp
+<span class="kw">import</span> baContingency_Both
+
+<span class="kw">import</span> baMinimumHours
+<span class="kw">import</span> baPercent
+
+<span class="kw">import</span> baProgressTotal
+<span class="kw">import</span> baProgressActivity
+<span class="kw">import</span> baInterimTotal
+<span class="kw">import</span> baInterimActivity
+
+<span class="kw">import</span> baSlipsRoundMin
+<span class="kw">import</span> baSlipsRoundDol
+<span class="kw">import</span> baPrecision
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> baLogHeader():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="kw">if</span> os.path.isfile(Settings.BALogFile):
+        outFile = Settings.repFolder + <span class="str">"\\BA-Log.txt"</span>
+        billLog = open(outFile, <span class="str">"a"</span>)
+        billLog.write(<span class="str">"\n"</span>)
+        billLog.write(<span class="str">"==================================================\n"</span>)
+        baTime = datetime.datetime.now()
+        billLog.write(baTime.strftime(<span class="str">"Started: %Y-%m-%d %H:%M:%S\n"</span>))
+        billLog.write(<span class="str">"==================================================\n"</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Review_BillingArrangements():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Review_BillingArrangements'</span>)
+    baLogHeader()
+
+<span class="cmt">#    baAdjustTotal_Time.BA_AdjustTotal_Time()
+</span><span class="cmt">#    baAdjustTotal_Exp.BA_AdjustTotal_Exp()
+</span><span class="cmt">#    baAdjustTotal_Both.BA_AdjustTotal_Both()
+</span>
+<span class="cmt">#    baAdjustTimekeeper_Time.BA_AdjustTimekeeper_Time()
+</span><span class="cmt">#    baAdjustTimekeeper_Exp.BA_AdjustTimekeeper_Exp()
+</span><span class="cmt">#    baAdjustTimekeeper_Both.BA_AdjustTimekeeper_Both()
+</span>
+<span class="cmt">#    baAdjustTask.BA_AdjustTask()
+</span><span class="cmt">#    baAdjustExpense.BA_AdjustExpense()
+</span>
+<span class="cmt">#    baAbsolute_Time.BA_Absolute_Time()
+</span><span class="cmt">#    baAbsolute_Exp.BA_Absolute_Exp()
+</span><span class="cmt">#    baAbsolute_Both.BA_Absolute_Both()
+</span>
+<span class="cmt">#    baMinimum_Time.BA_Minimum_Time()
+</span><span class="cmt">#    baMinimum_Exp.BA_Minimum_Exp()
+</span><span class="cmt">#    baMinimum_Both.BA_Minimum_Both()
+</span>
+<span class="cmt">#    baMaximum_Time.BA_Maximum_Time()
+</span><span class="cmt">#    baMaximum_Exp.BA_Maximum_Exp()
+</span><span class="cmt">#    baMaximum_Both.BA_Maximum_Both()
+</span>
+<span class="cmt">#    baFlatFeePlus_Time.BA_FlatFeePlus_Time()
+</span><span class="cmt">#    baFlatFeePlus_Exp.BA_FlatFeePlus_Exp()
+</span><span class="cmt">#    baFlatFeePlus_Both.BA_FlatFeePlus_Both()
+</span>
+<span class="cmt">#    baContingency_Time.BA_Contingency_Time()
+</span><span class="cmt">#    baContingency_Exp.BA_Contingency_Exp()
+</span><span class="cmt">#    baContingency_Both.BA_Contingency_Both()
+</span>
+<span class="cmt">#    baMinimumHours.BA_MinimumHours()
+</span>
+<span class="cmt">#    baPercent.BA_Percent()
+</span>
+<span class="cmt">#    baProgressTotal.BA_ProgressTotal()
+</span><span class="cmt">#    baProgressActivity.BA_ProgressActivity()    
+</span><span class="cmt">#    baInterimTotal.BA_InterimTotal()    
+</span><span class="cmt">#    baInterimActivity.BA_InterimActivity()    
+</span>
+    baSlipsRoundMin.BA_SlipsRoundMin()
+    baSlipsRoundDol.BA_SlipsRoundDol()
+    baPrecision.BA_Precision()
+</pre>
+</body>
+</html>

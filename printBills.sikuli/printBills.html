@@ -1,0 +1,212 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>printBills.sikuli\printBills.sikuli</h2> <a href="printBills.sikuli\printBills.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> setupBills():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">'- set up bill report'</span>)
+
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressTAB(<span class="dig">4</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># default button
+</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.ALT)
+
+<span class="cmt"># mark a/r tran follow slip date
+</span>    myTools.pressTAB(<span class="dig">6</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+
+<span class="cmt"># unmark send bills by email
+</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        myTools.pressTAB(<span class="dig">4</span>)
+    <span class="kw">else</span>:
+        myTools.pressTAB(<span class="dig">5</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+
+<span class="cmt"># unmark envelopes
+</span>    myTools.pressTAB(<span class="dig">4</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.SPACE)
+
+<span class="cmt"># OK
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># Print to PDF
+</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.END)
+
+<span class="cmt"># PDF Options
+</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.UP)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># SAVE and Close
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Set_BillDate(month):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">'- change bill date'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"d"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="cmt"># get to 2013
+</span>    <span class="skw">type</span>(Key.PAGE_UP,KeyModifier.CTRL)
+
+    <span class="kw">if</span> month == <span class="dig">1</span>:
+        <span class="cmt"># get to 01/01/2013
+</span>        <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
+        <span class="cmt"># move to 01/27/2013
+</span>        myTools.pressDOWN(<span class="dig">4</span>)
+        myTools.pressLEFT(<span class="dig">2</span>)
+    <span class="kw">else</span>:
+        <span class="skw">type</span>(Key.PAGE_DOWN)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Print_BillRun(month):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">'- print bill run for month: '</span> + str(month))
+
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
+    <span class="skw">doubleClick</span>(<img src="1368070709186.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># choose TODAY to get to manual date entry
+</span>    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># type in dates
+</span>    myTools.pressTAB(<span class="dig">6</span>)
+    <span class="skw">type</span>(<span class="str">"1/1/2013"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    billDate = str(month) + <span class="str">"/27/2013"</span>
+    <span class="skw">type</span>(billDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># print bills to PDF
+</span>    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="skw">wait</span>(<img src="1368071925388.png" />,<span class="dig">300</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># approve bills
+</span>    <span class="skw">wait</span>(Pattern(<img src="1368108335979.png" />).targetOffset(-<span class="dig">124</span>,-<span class="dig">10</span>),<span class="dig">300</span>)
+    <span class="skw">click</span>(Pattern(<img src="1368108335979.png" />).targetOffset(-<span class="dig">124</span>,-<span class="dig">10</span>))
+    <span class="skw">type</span>(Key.ENTER)
+    waitVanish(<img src="1368288231948.png" />,<span class="dig">600</span>)
+
+    <span class="cmt"># close report entry / don't save
+</span>    logging.debug(<span class="str">'-- close report window'</span>)
+    <span class="skw">click</span>(<img src="1368113563889.png" />)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Print_Bills():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Print_Bills'</span>)
+
+    setupBills()
+    <span class="kw">for</span> count <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">13</span>):
+        Set_BillDate(count)
+        Print_BillRun(count)
+</pre>
+</body>
+</html>

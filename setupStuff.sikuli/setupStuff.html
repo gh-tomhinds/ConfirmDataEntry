@@ -1,0 +1,129 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>setupStuff.sikuli\setupStuff.sikuli</h2> <a href="setupStuff.sikuli\setupStuff.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> os
+<span class="kw">import</span> datetime
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Setup_Stuff():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Setup_Stuff'</span>)
+
+<span class="cmt"># get current month and year (forget where this is used)
+</span>    rightNow = datetime.datetime.now()
+    Settings.thisMonth = rightNow.month
+    Settings.thisYear = rightNow.year
+
+<span class="cmt"># point to Sikuli folder on desktop
+</span>    Settings.sikFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli'</span>
+    logging.debug(<span class="str">"- Sikuli folder:    %s"</span> %Settings.sikFolder)
+
+<span class="cmt"># point to source data folder on desktop and data files
+</span>    Settings.dataFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli\\DataFiles'</span>
+    logging.debug(<span class="str">"- Data folder:      %s"</span> %Settings.dataFolder)
+    Settings.cliFile = Settings.dataFolder + <span class="str">'\\towns.csv'</span>
+    Settings.tkFile = Settings.dataFolder + <span class="str">'\\timekeepers.csv'</span>
+    Settings.taskFile = Settings.dataFolder + <span class="str">'\\tasks.csv'</span>
+    Settings.expFile = Settings.dataFolder + <span class="str">'\\expenses.csv'</span>
+    Settings.refFile = Settings.dataFolder + <span class="str">'\\refs.csv'</span>
+
+
+
+<span class="cmt"># get TS version and point to TS paths
+</span>
+    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    Settings.repFolder = Settings.sikFolder + <span class="str">"\\Reports\\"</span> + Settings.tsVersion
+    logging.debug(<span class="str">"- Report folder:    %s"</span> %Settings.repFolder)
+
+    Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion
+    logging.debug(<span class="str">"- Timeslips folder: %s"</span> %Settings.tsFolder)
+
+    Settings.tsEXE = Settings.tsFolder + <span class="str">"\\timeslip.exe"</span>
+    logging.debug(<span class="str">"- Timeslips EXE:    %s"</span> %Settings.tsEXE)
+
+    Settings.tsimpEXE = Settings.tsFolder + <span class="str">"\\tsimport.exe"</span>
+    logging.debug(<span class="str">"- TSImport EXE:     %s"</span> %Settings.tsimpEXE)
+
+    Settings.dbFolder = Settings.tsFolder + <span class="str">"\\Sikuli"</span>
+    logging.debug(<span class="str">"- DB folder:        %s"</span> %Settings.dbFolder)
+
+    Settings.BALogFile = Settings.repFolder + <span class="str">"\\BA-Log.txt"</span>
+    <span class="cmt"># delete BA Log File
+</span>    <span class="cmt"># os.remove(Settings.BALogFile)</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,193 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>tsMain.sikuli\tsMain.sikuli</h2> <a href="tsMain.sikuli\tsMain.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="cmt"># tsMain
+</span><span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="cmt">#
+</span><span class="cmt"># These scripts rely on the following:                
+</span><span class="cmt">#
+</span><span class="cmt"># 1) Windows Explorer windows opens in primary monitor 
+</span><span class="cmt"># 2) Timeslips is installed below C:\Program Files (x86)  
+</span><span class="cmt"># 3) Timeslips install folder is in format: Timeslips 2014
+</span><span class="cmt">#
+</span><span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+<span class="cmt">#import python
+</span><span class="kw">import</span> logging
+reload(logging)
+<span class="kw">import</span> os
+<span class="kw">import</span> datetime
+
+<span class="cmt"># import my sikuli scripts
+</span><span class="kw">import</span> setupStuff
+<span class="kw">import</span> closeTimeslips
+<span class="kw">import</span> delDataFolder
+<span class="kw">import</span> startTSandNewDB
+<span class="kw">import</span> tweakPrefs
+<span class="kw">import</span> createCategories
+<span class="kw">import</span> createCustomFields
+<span class="kw">import</span> createClient
+<span class="kw">import</span> createTask
+<span class="kw">import</span> createExpense
+<span class="kw">import</span> importClients
+<span class="kw">import</span> importTimekeepers
+<span class="kw">import</span> importTasks
+<span class="kw">import</span> importExpenses
+<span class="kw">import</span> editTimekeeper
+<span class="kw">import</span> editTask
+<span class="kw">import</span> editExpense
+<span class="kw">import</span> editClient
+<span class="kw">import</span> setupFeeAlloc
+<span class="kw">import</span> setupExpMarkups
+<span class="kw">import</span> createRefs
+<span class="kw">import</span> importRefs
+<span class="kw">import</span> setupTaxes
+<span class="kw">import</span> createSlips
+
+<span class="kw">import</span> reviewBillingArrangements
+<span class="kw">import</span> baCommon
+
+<span class="kw">import</span> createPayments
+<span class="kw">import</span> importBillLayout
+<span class="kw">import</span> printBills
+<span class="kw">import</span> setupCalTerms
+<span class="kw">import</span> calendarStuff
+<span class="kw">import</span> printClients
+<span class="kw">import</span> printTasks
+<span class="kw">import</span> printExpenses
+<span class="kw">import</span> printTimekeepers
+<span class="kw">import</span> compareReports
+
+<span class="cmt"># setup logging
+</span>logging.basicConfig(filename=os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\desktop\Sikuli\Sikuli.log'</span>, level=logging.DEBUG, format=<span class="str">'%(message)s'</span>, filemode=<span class="str">'w'</span>)
+<span class="cmt"># Level = DEBUG, INFO, WARNING, ERROR, CRITICAL
+</span>
+<span class="cmt"># stamp start time
+</span>startTime = datetime.datetime.now()
+logging.debug(<span class="str">' '</span>)
+logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+logging.debug(startTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
+logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+
+setupStuff.Setup_Stuff()
+<span class="cmt">#closeTimeslips.Close_Timeslips()
+</span><span class="cmt">#delDataFolder.Delete_Data_Folder()
+</span><span class="cmt">#startTSandNewDB.StartTS_CreateNewDB()
+</span><span class="cmt">#tweakPrefs.Tweak_Prefs()
+</span><span class="cmt">#createCategories.Create_Categories()
+</span><span class="cmt">#createCustomFields.Create_CustomFields()
+</span><span class="cmt">#createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
+</span><span class="cmt">#createTask.Create_Task()
+</span><span class="cmt">#createExpense.Create_Expense()
+</span><span class="cmt">#importTimekeepers.Import_Timekeepers()
+</span><span class="cmt">#editTimekeeper.Edit_Timekeeper()
+</span><span class="cmt">#importClients.Import_Clients()
+</span><span class="cmt">#editClient.Edit_Client()
+</span><span class="cmt">#importTasks.Import_Tasks()
+</span><span class="cmt">#editTask.Edit_Task()
+</span><span class="cmt">#importExpenses.Import_Expenses()
+</span><span class="cmt">#editExpense.Edit_Expense()
+</span><span class="cmt">#createRefs.Create_Refs()
+</span><span class="cmt">#importRefs.Import_Refs()
+</span><span class="cmt">#setupFeeAlloc.Setup_FeeAlloc()
+</span><span class="cmt">#setupExpMarkups.Setup_ExpMarkups()
+</span><span class="cmt">#setupTaxes.Setup_Taxes()
+</span><span class="cmt">#createSlips.Create_Slips(10,10)
+</span>
+<span class="cmt">#createPayments.Create_Payments()
+</span>importBillLayout.Import_BillLayout()
+printBills.Print_Bills()
+<span class="cmt">#baCommon.Setup_BADefaultLayout()
+</span><span class="cmt">#reviewBillingArrangements.Review_BillingArrangements()
+</span>
+<span class="cmt">#setupCalTerms.Setup_CalTerms()
+</span><span class="cmt">#calendarStuff.Calendar_Stuff()
+</span><span class="cmt">#printClients.Print_Clients()
+</span><span class="cmt">#printTasks.Print_Tasks()
+</span><span class="cmt">#printExpenses.Print_Expenses()
+</span><span class="cmt">#printTimekeepers.Print_Timekeepers()
+</span><span class="cmt">#compareReports.Compare_Reports()
+</span>
+endTime = datetime.datetime.now()
+logging.debug(<span class="str">' '</span>)
+logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+logging.debug(endTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
+logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+
+elapsedTime = endTime - startTime
+logging.debug(<span class="str">"Elapsed:    %s"</span> %elapsedTime)
+
+exit()
+</pre>
+</body>
+</html>

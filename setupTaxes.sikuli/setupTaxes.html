@@ -1,0 +1,250 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>setupTaxes.sikuli\setupTaxes.sikuli</h2> <a href="setupTaxes.sikuli\setupTaxes.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Change_TaxRule():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">'- Change_TaxRule'</span>)
+
+    logging.debug(<span class="str">'-- open Taxes'</span>)
+    <span class="skw">click</span>(Pattern(<img src="SaturnWindow.png" />).targetOffset(-<span class="dig">29</span>,<span class="dig">1</span>))
+    <span class="skw">type</span>(<span class="str">"t"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    logging.debug(<span class="str">'-- open GA tax rule'</span>)
+    <span class="skw">type</span>(Key.F6)
+    <span class="skw">type</span>(<span class="str">"g"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'-- change rate'</span>)
+    myTools.pressTAB(<span class="dig">3</span>)
+    <span class="skw">type</span>(<span class="str">"7.25"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.END)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    logging.debug(<span class="str">'-- change settings'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">click</span>(<img src="1365991914214.png" />)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Change_ClientSettings():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- Change_ClientSettings'</span>)
+
+    logging.debug(<span class="str">'-- change a client'</span>)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressF6(<span class="dig">4</span>)
+    <span class="kw">if</span> Settings.tsVersion == <span class="str">"2015"</span>:
+        myTools.pressF6(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressTAB(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"g"</span>)
+
+    logging.debug(<span class="str">'-- save client'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KEY_CTRL)
+    logging.debug(<span class="str">'-- export settings'</span>)
+    <span class="skw">click</span>(<img src="1384206308056.png" />)
+
+    <span class="cmt"># clear all and highlight tax profile
+</span>    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.DOWN)
+
+    <span class="cmt"># mark tax profile
+</span>    <span class="skw">type</span>(Key.F4)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># mark all clients
+</span>    <span class="skw">type</span>(Key.INSERT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># click export
+</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">wait</span>(<img src="1387902836993.png" />, <span class="dig">10</span>)
+    <span class="kw">else</span>:
+        <span class="skw">wait</span>(<img src="1387316703616.png" />, <span class="dig">10</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Change_TaskSettings():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- Change_TaskSettings'</span>)
+
+    logging.debug(<span class="str">'-- change a task'</span>)
+    <span class="skw">type</span>(<span class="str">"y"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F6)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F4)
+    logging.debug(<span class="str">'-- save task'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    logging.debug(<span class="str">'-- export settings'</span>)
+    <span class="skw">rightClick</span>(<img src="1387404402223.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"e"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.PAGE_DOWN,KeyModifier.SHIFT)
+    <span class="skw">type</span>(Key.F4)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Change_ExpenseSettings():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- Change_ExpenseSettings'</span>)
+
+    logging.debug(<span class="str">'-- change an expense'</span>)
+    <span class="skw">type</span>(<span class="str">"y"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.F6)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">3</span>)
+    myTools.pressDOWN(<span class="dig">8</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(Key.F4)
+    logging.debug(<span class="str">'-- save expense'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    logging.debug(<span class="str">'-- export settings'</span>)
+    <span class="skw">rightClick</span>(<img src="1366001759780.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"e"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.PAGE_DOWN,KeyModifier.SHIFT)
+    <span class="skw">type</span>(Key.F4)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Setup_Taxes():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Setup_Taxes'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    Change_TaxRule()
+    Change_ClientSettings()
+    Change_TaskSettings()
+    Change_ExpenseSettings()
+</pre>
+</body>
+</html>
