@@ -155,13 +155,15 @@
         checkFor_BillingDate()
         checkFor_SPS()
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-        <span class="skw">type</span>(<span class="str">"f"</span>,KEY_ALT)
+
+        <span class="cmt"># File &gt; New &gt; Database
+</span>        logging.debug(<span class="str">'- create new database'</span>)
+        <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
         <span class="skw">type</span>(<span class="str">"n"</span>)
         <span class="skw">type</span>(<span class="str">"d"</span>)
-    logging.debug(<span class="str">'- create new database'</span>)
-<span class="cmt">#    click("EmptyDatabas.png")
-</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"n"</span>,KEY_ALT)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
 
 <span class="cmt"># new db path and settings
 </span>    logging.debug(<span class="str">'- enter path'</span>)

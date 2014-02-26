@@ -89,7 +89,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     logging.debug(<span class="str">'  - nicknames'</span>)
-    <span class="skw">type</span>(<span class="str">"a"</span>,KEY_CTRL)
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(<span class="str">"Agawam"</span>)
     <span class="skw">type</span>(Key.TAB)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -224,8 +224,13 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># notes
-</span>    <span class="skw">type</span>(<span class="str">"1"</span>,KeyModifier.CTRL)
+</span><span class="cmt"># go to first page, then shift+f6
+</span>
+    <span class="skw">type</span>(<span class="str">"1"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
+
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
 
     <span class="skw">type</span>(Key.END)
     <span class="skw">type</span>(<span class="str">" edit"</span>)

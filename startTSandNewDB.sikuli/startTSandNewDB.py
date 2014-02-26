@@ -83,13 +83,15 @@ def StartTS_CreateNewDB():
         checkFor_BillingDate()
         checkFor_SPS()
         time.sleep(1)
-        type("f",KEY_ALT)
+
+        # File > New > Database
+        logging.debug('- create new database')
+        type("f",KeyModifier.ALT)
         type("n")
         type("d")
-    logging.debug('- create new database')
-#    click("EmptyDatabas.png")
+        
     time.sleep(1)    
-    type("n",KEY_ALT)
+    type("n",KeyModifier.ALT)
 
 # new db path and settings
     logging.debug('- enter path')

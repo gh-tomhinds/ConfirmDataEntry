@@ -20,7 +20,7 @@ def Edit_Timekeeper():
     type(Key.ENTER)
     time.sleep(1)
 # edit stuff
-    type("a",KEY_CTRL)
+    type("a",KeyModifier.CTRL)
     type("TomH")
     type(Key.TAB)
     type("HindsT")

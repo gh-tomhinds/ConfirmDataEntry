@@ -47,7 +47,7 @@ def Setup_ExpMarkups():
     wait("1383856805063.png", FOREVER)
     type(Key.ENTER)    
 
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
     type(Key.ENTER)    
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)

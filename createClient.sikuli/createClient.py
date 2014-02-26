@@ -77,6 +77,10 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
 
     type("1",KeyModifier.CTRL)
     type(Key.F6,KeyModifier.SHIFT)
+    
+    if int(Settings.tsVersion) > 2014:
+        type(Key.F6,KeyModifier.SHIFT)
+
 
     type(clinotes)
     

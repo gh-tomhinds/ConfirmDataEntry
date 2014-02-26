@@ -150,6 +150,10 @@
     <span class="skw">type</span>(<span class="str">"1"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
 
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
+
+
     <span class="skw">type</span>(clinotes)
 
     logging.debug(<span class="str">'- save'</span>)

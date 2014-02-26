@@ -17,7 +17,7 @@ def Edit_CliGenInfo():
     time.sleep(1)
 
     logging.debug('  - nicknames')
-    type("a",KEY_CTRL)
+    type("a",KeyModifier.CTRL)
     type("Agawam")
     type(Key.TAB)
     time.sleep(1)    
@@ -152,8 +152,13 @@ def Edit_CliRatesNotes():
     type(Key.ENTER)
 
 # notes
+# go to first page, then shift+f6
+
     type("1",KeyModifier.CTRL)
     type(Key.F6,KeyModifier.SHIFT)
+    
+    if int(Settings.tsVersion) > 2014:
+        type(Key.F6,KeyModifier.SHIFT)
     
     type(Key.END)
     type(" edit")

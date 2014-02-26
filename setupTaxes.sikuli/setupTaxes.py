@@ -53,7 +53,7 @@ def Change_ClientSettings():
     type("g")
 
     logging.debug('-- save client')
-    type("s",KEY_CTRL)
+    type("s",KeyModifier.CTRL)
     logging.debug('-- export settings')
     click("1384206308056.png")    
     

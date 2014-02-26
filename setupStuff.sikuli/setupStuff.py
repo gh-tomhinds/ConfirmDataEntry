@@ -27,13 +27,11 @@ def Setup_Stuff():
     Settings.expFile = Settings.dataFolder + '\\expenses.csv'
     Settings.refFile = Settings.dataFolder + '\\refs.csv'
 
-
-
-# get TS version and point to TS paths
-
+# get TS version
     Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
     time.sleep(1)
 
+# point to TS paths
     Settings.repFolder = Settings.sikFolder + "\\Reports\\" + Settings.tsVersion
     logging.debug("- Report folder:    %s" %Settings.repFolder)
 

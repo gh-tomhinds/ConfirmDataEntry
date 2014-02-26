@@ -99,14 +99,12 @@
     Settings.expFile = Settings.dataFolder + <span class="str">'\\expenses.csv'</span>
     Settings.refFile = Settings.dataFolder + <span class="str">'\\refs.csv'</span>
 
-
-
-<span class="cmt"># get TS version and point to TS paths
-</span>
-    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
+<span class="cmt"># get TS version
+</span>    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    Settings.repFolder = Settings.sikFolder + <span class="str">"\\Reports\\"</span> + Settings.tsVersion
+<span class="cmt"># point to TS paths
+</span>    Settings.repFolder = Settings.sikFolder + <span class="str">"\\Reports\\"</span> + Settings.tsVersion
     logging.debug(<span class="str">"- Report folder:    %s"</span> %Settings.repFolder)
 
     Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion

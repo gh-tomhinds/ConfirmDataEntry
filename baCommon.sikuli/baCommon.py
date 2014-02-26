@@ -65,7 +65,7 @@ def moveto_BAPage():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     if int(Settings.tsVersion) > 2014:
-        myTools.pressSHIFTF6(8)
+        myTools.pressSHIFTF6(9)
     else:
         myTools.pressF6(3)
 

@@ -49,6 +49,6 @@ def Setup_Discounts():
     wait("1377193370762.png", FOREVER)
     type(Key.ENTER)    
 
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)

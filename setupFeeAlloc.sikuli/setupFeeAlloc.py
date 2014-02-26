@@ -29,7 +29,6 @@ def Setup_CustomFields():
     type(Key.ENTER)
     time.sleep(2)
 
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Export_Timekeepers():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -39,8 +38,7 @@ def Export_Timekeepers():
     type("i", KeyModifier.CTRL)
     time.sleep(1)    
     type(Key.ENTER)
-    time.sleep(1)    
-    
+    time.sleep(1)   
     
     if Settings.tsVersion == "2015":
         myTools.pressF6(4)
@@ -92,10 +90,9 @@ def Export_Timekeepers():
     wait("1387316703616.png", 10)
     type(Key.ENTER)    
 
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
-    type(Key.F4,KEY_CTRL)
-
+    type(Key.F4,KeyModifier.CTRL)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Setup_FeeAlloc():
