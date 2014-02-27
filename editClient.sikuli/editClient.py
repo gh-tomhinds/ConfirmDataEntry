@@ -235,7 +235,11 @@ def Edit_InterestSetting():
     type(Key.ENTER)
     time.sleep(1)
     type("y")
-    wait("1387309714643.png",10)
+    
+    if int(Settings.tsVersion) > 2014:
+        wait("1387902836993.png", 10)        
+    else:        
+        wait("1387309714643.png",10)
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #

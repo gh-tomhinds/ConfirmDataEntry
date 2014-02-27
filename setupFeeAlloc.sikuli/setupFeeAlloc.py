@@ -35,6 +35,7 @@ def Export_Timekeepers():
 
     logging.debug('- Export Timekeepers')
 
+    # open client info
     type("i", KeyModifier.CTRL)
     time.sleep(1)    
     type(Key.ENTER)
@@ -47,7 +48,8 @@ def Export_Timekeepers():
         type(Key.F6)
         myTools.pressTAB(3)
         type(Key.RIGHT)
-    
+
+    # enter custom field values
     type(Key.TAB)
     type("t")
     type(Key.TAB)
@@ -87,7 +89,10 @@ def Export_Timekeepers():
     time.sleep(1)
     type(Key.ENTER)    
 
-    wait("1387316703616.png", 10)
+    if int(Settings.tsVersion) > 2014:
+        wait("1387902836993.png", FOREVER)        
+    else:        
+        wait("1387309714643.png",FOREVER)
     type(Key.ENTER)    
 
     type(Key.F4,KeyModifier.CTRL)
