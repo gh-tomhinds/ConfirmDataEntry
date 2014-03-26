@@ -7,8 +7,7 @@ import myTools
 def Create_TwelvePayments(client,cliNum):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug(' ')
-    logging.debug('- Create_TwelvePayments')
+    logging.debug('- Create_TwelvePayments: ' + client)
 
     time.sleep(1)
 
@@ -76,15 +75,3 @@ def Create_Payments():
      
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-
-

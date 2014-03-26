@@ -6,6 +6,8 @@ import csv
 def Create_OneSlip(slipType,tk,act,cli,slipnum):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    logging.debug('- Create_OneSlip: ' + str(slipnum))
+
     type("n",KeyModifier.CTRL)
     time.sleep(1)
 
@@ -93,7 +95,7 @@ def Create_Slips(tmslips,exslips):
         expenses.append(oneExp["NN2"])
     expenses.sort()
 
-    type("m",KEY_CTRL)
+    type("m",KeyModifier.CTRL)
     time.sleep(1)
 
     count = 0
@@ -101,7 +103,7 @@ def Create_Slips(tmslips,exslips):
     for slip in range(tmslips):
         Create_OneSlip("t",timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+1)
         count += 1
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
 
     # for expenses, got to the end of the list and open the slip so we can copy dates.
@@ -112,7 +114,7 @@ def Create_Slips(tmslips,exslips):
     for slip in range(exslips):
         Create_OneSlip("e",timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+1)
         count += 1
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
 
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4,KeyModifier.CTRL)

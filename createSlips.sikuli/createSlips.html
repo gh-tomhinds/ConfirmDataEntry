@@ -78,6 +78,8 @@
 </span><span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    logging.debug(<span class="str">'- Create_OneSlip: '</span> + str(slipnum))
+
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -165,7 +167,7 @@
         expenses.append(oneExp[<span class="str">"NN2"</span>])
     expenses.sort()
 
-    <span class="skw">type</span>(<span class="str">"m"</span>,KEY_CTRL)
+    <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     count = <span class="dig">0</span>
@@ -173,7 +175,7 @@
     <span class="kw">for</span> slip <span class="kw">in</span> range(tmslips):
         Create_OneSlip(<span class="str">"t"</span>,timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+<span class="dig">1</span>)
         count += <span class="dig">1</span>
-    <span class="skw">type</span>(Key.F4,KEY_CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># for expenses, got to the end of the list and open the slip so we can copy dates.
@@ -184,10 +186,10 @@
     <span class="kw">for</span> slip <span class="kw">in</span> range(exslips):
         Create_OneSlip(<span class="str">"e"</span>,timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+<span class="dig">1</span>)
         count += <span class="dig">1</span>
-    <span class="skw">type</span>(Key.F4,KEY_CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="skw">type</span>(Key.F4,KEY_CTRL)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 </pre>
 </body>
 </html>
