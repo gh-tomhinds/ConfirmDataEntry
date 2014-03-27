@@ -131,6 +131,10 @@ def Print_Bills():
     logging.debug(' ')
     logging.debug('Print_Bills')
 
+    # make sure timeslips has focus
+    if int(Settings.tsVersion) > 2013:
+        click("1388176090422.png")
+
     setupBills()
     for count in range(1,13):
         Set_BillDate(count)

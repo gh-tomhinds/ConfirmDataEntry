@@ -7,6 +7,10 @@ def Import_BillLayout():
     logging.debug(' ')
     logging.debug('Import_BillLayout')
 
+    # make sure timeslips has focus
+    if int(Settings.tsVersion) > 2013:
+        click("1388176090422.png")
+
     logging.debug('- open layout list')
     type("b",KeyModifier.ALT)
     type("t")

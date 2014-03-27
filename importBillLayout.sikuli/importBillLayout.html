@@ -46,8 +46,8 @@
          h2 {
             display: inline;
             font-weight: normal;
-         }  
-         
+         }
+
          .info {
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
@@ -78,6 +78,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_BillLayout'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
+        <span class="skw">click</span>(<img src="1388176090422.png" />)
 
     logging.debug(<span class="str">'- open layout list'</span>)
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
