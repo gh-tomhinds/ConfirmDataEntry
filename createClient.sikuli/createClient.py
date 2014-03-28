@@ -6,7 +6,7 @@ import myTools
 def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
-    logging.debug('Create_Client' + nn1)
+    logging.debug('Create_Client: ' + nn1)
 
     logging.debug('- open client list')
     type("i",KeyModifier.CTRL)
@@ -92,10 +92,15 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
         logging.debug('- conflict check')    
         type(Key.ENTER)
 
-    # sleep while searching
-    time.sleep(10)
+    # sleep while searching  
+    time.sleep(15)
 
-    # assume nothing is found, close results
+    # always try to close results list
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    
+    # switch to first page of client info to swallow ENTER in case there were results
+    type("1",KeyModifier.CTRL)
     type(Key.ENTER)
     time.sleep(1)
 

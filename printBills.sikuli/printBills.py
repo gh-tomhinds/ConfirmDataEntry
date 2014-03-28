@@ -64,13 +64,12 @@ def Set_BillDate(month):
     type("b",KeyModifier.ALT)
     type("d")    
     time.sleep(2)
-
-    # get to 2013
-    type(Key.PAGE_UP,KeyModifier.CTRL)
     
     if month == 1:
+        # get to 2013
+        type(Key.PAGE_UP,KeyModifier.CTRL)        
         # get to 01/01/2013
-        type(Key.HOME,KeyModifier.CTRL)
+        type(Key.HOME,KeyModifier.CTRL)        
         # move to 01/27/2013
         myTools.pressDOWN(4)
         myTools.pressLEFT(2)        

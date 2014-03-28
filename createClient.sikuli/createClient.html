@@ -78,7 +78,7 @@
 </span><span class="kw">def</span> Create_Client(nn1,nn2,fullname,inrefto,clinotes):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Create_Client'</span> + nn1)
+    logging.debug(<span class="str">'Create_Client: '</span> + nn1)
 
     logging.debug(<span class="str">'- open client list'</span>)
     <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
@@ -164,11 +164,16 @@
         logging.debug(<span class="str">'- conflict check'</span>)
         <span class="skw">type</span>(Key.ENTER)
 
-    <span class="cmt"># sleep while searching
-</span>    time.<span class="skw">sleep</span>(<span class="dig">10</span>)
+    <span class="cmt"># sleep while searching  
+</span>    time.<span class="skw">sleep</span>(<span class="dig">15</span>)
 
-    <span class="cmt"># assume nothing is found, close results
-</span>    <span class="skw">type</span>(Key.ENTER)
+    <span class="cmt"># always try to close results list
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># switch to first page of client info to swallow ENTER in case there were results
+</span>    <span class="skw">type</span>(<span class="str">"1"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># close client info

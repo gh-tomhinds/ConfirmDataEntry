@@ -97,10 +97,6 @@ def BA_InterimTotal_Arrangement3():
 # save and close    
     type("s",KeyModifier.CTRL)
 
-    # after TS2014, an extra warning message
-    if int(Settings.tsVersion) > 2014:
-        type(Key.ENTER)
-
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
