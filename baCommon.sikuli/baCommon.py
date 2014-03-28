@@ -102,6 +102,10 @@ def setup_BABills():
 def Setup_BADefaultLayout():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    # make sure timeslips has focus
+    if int(Settings.tsVersion) > 2013:
+        click("1388176090422.png")
+
     Import_DefaultLayout()
     Setup_NewNamesDefault()
     setup_BABills()
@@ -110,7 +114,8 @@ def Setup_BADefaultLayout():
 def BA_Create_Slips(baClient):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug('- BA_Create_Slips')
+    logging.debug(' ')
+    logging.debug('BA_Create_Slips')
 
     type("m",KeyModifier.CTRL)
     time.sleep(1)
@@ -134,7 +139,7 @@ def BA_Create_Slips(baClient):
 def BA_Bill(baClient,billNum):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug('- BA_Bill')
+    logging.debug('- BA_Bill: ' + baClient + ' ' + str(billNum))
 
     type("b",KeyModifier.CTRL)
     click("1372861568498.png")

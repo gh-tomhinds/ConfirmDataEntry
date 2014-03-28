@@ -79,11 +79,7 @@ def BA_ContingencyBoth_Arrangement2():
     
 # save and close    
     time.sleep(1)    
-    type("s",KeyModifier.CTRL)
-    
-    if int(Settings.tsVersion) > 2014:
-        time.sleep(1)
-        type(Key.ENTER)
+    type("s",KeyModifier.CTRL)   
 
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)

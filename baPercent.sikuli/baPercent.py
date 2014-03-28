@@ -126,9 +126,6 @@ def BA_Percent_Arrangement2():
     time.sleep(1)    
     type("s",KeyModifier.CTRL)
 
-    if int(Settings.tsVersion) > 2014:
-        type(Key.ENTER)
-
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
@@ -184,9 +181,6 @@ def BA_Percent_Arrangement3():
     type(Key.SPACE)
     time.sleep(1)
     type("s",KeyModifier.CTRL)
-
-    if int(Settings.tsVersion) > 2014:
-        type(Key.ENTER)  
 
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)

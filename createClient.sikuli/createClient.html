@@ -163,17 +163,20 @@
     <span class="kw">if</span> exists(<img src="1386699132805.png" />):
         logging.debug(<span class="str">'- conflict check'</span>)
         <span class="skw">type</span>(Key.ENTER)
-        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-        <span class="skw">type</span>(Key.ENTER)
 
-        <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># sleep while searching
+</span>    time.<span class="skw">sleep</span>(<span class="dig">10</span>)
 
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="cmt"># assume nothing is found, close results
+</span>    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    <span class="cmt"># close client info
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    <span class="cmt"># close client list
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 </pre>
 </body>
 </html>

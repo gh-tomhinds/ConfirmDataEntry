@@ -65,6 +65,11 @@ def Review_BillingArrangements():
 
     logging.debug(' ')
     logging.debug('Review_BillingArrangements')
+
+    # make sure timeslips has focus
+    if int(Settings.tsVersion) > 2013:
+        click("1388176090422.png")
+    
     baLogHeader()
 
 #    baAdjustTotal_Time.BA_AdjustTotal_Time()
@@ -94,18 +99,18 @@ def Review_BillingArrangements():
 #    baFlatFeePlus_Exp.BA_FlatFeePlus_Exp()
 #    baFlatFeePlus_Both.BA_FlatFeePlus_Both()
 
-#    baContingency_Time.BA_Contingency_Time()
-#    baContingency_Exp.BA_Contingency_Exp()
-#    baContingency_Both.BA_Contingency_Both()
+    baContingency_Time.BA_Contingency_Time()
+    baContingency_Exp.BA_Contingency_Exp()
+    baContingency_Both.BA_Contingency_Both()
 
-#    baMinimumHours.BA_MinimumHours()
+    baMinimumHours.BA_MinimumHours()
 
-#    baPercent.BA_Percent()
+    baPercent.BA_Percent()
 
-#    baProgressTotal.BA_ProgressTotal()
-#    baProgressActivity.BA_ProgressActivity()    
-#    baInterimTotal.BA_InterimTotal()    
-#    baInterimActivity.BA_InterimActivity()    
+    baProgressTotal.BA_ProgressTotal()
+    baProgressActivity.BA_ProgressActivity()    
+    baInterimTotal.BA_InterimTotal()    
+    baInterimActivity.BA_InterimActivity()    
 
     baSlipsRoundMin.BA_SlipsRoundMin()    
     baSlipsRoundDol.BA_SlipsRoundDol()    

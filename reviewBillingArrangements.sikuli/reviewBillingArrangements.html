@@ -137,6 +137,11 @@
 </span>
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Review_BillingArrangements'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
+        <span class="skw">click</span>(<img src="1388176090422.png" />)
+
     baLogHeader()
 
 <span class="cmt">#    baAdjustTotal_Time.BA_AdjustTotal_Time()
@@ -166,19 +171,19 @@
 </span><span class="cmt">#    baFlatFeePlus_Exp.BA_FlatFeePlus_Exp()
 </span><span class="cmt">#    baFlatFeePlus_Both.BA_FlatFeePlus_Both()
 </span>
-<span class="cmt">#    baContingency_Time.BA_Contingency_Time()
-</span><span class="cmt">#    baContingency_Exp.BA_Contingency_Exp()
-</span><span class="cmt">#    baContingency_Both.BA_Contingency_Both()
-</span>
-<span class="cmt">#    baMinimumHours.BA_MinimumHours()
-</span>
-<span class="cmt">#    baPercent.BA_Percent()
-</span>
-<span class="cmt">#    baProgressTotal.BA_ProgressTotal()
-</span><span class="cmt">#    baProgressActivity.BA_ProgressActivity()    
-</span><span class="cmt">#    baInterimTotal.BA_InterimTotal()    
-</span><span class="cmt">#    baInterimActivity.BA_InterimActivity()    
-</span>
+    baContingency_Time.BA_Contingency_Time()
+    baContingency_Exp.BA_Contingency_Exp()
+    baContingency_Both.BA_Contingency_Both()
+
+    baMinimumHours.BA_MinimumHours()
+
+    baPercent.BA_Percent()
+
+    baProgressTotal.BA_ProgressTotal()
+    baProgressActivity.BA_ProgressActivity()
+    baInterimTotal.BA_InterimTotal()
+    baInterimActivity.BA_InterimActivity()
+
     baSlipsRoundMin.BA_SlipsRoundMin()
     baSlipsRoundDol.BA_SlipsRoundDol()
     baPrecision.BA_Precision()

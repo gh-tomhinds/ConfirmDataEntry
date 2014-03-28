@@ -91,14 +91,17 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
     if exists("1386699132805.png"):
         logging.debug('- conflict check')    
         type(Key.ENTER)
-        time.sleep(2)        
-        type(Key.ENTER)
-        
-        type(Key.F4,KeyModifier.CTRL)
-        time.sleep(1)    
-        
+
+    # sleep while searching
+    time.sleep(10)
+
+    # assume nothing is found, close results
+    type(Key.ENTER)
+    time.sleep(1)
+
+    # close client info
     type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1) 
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1) 
+    time.sleep(1)    
+
+    # close client list
     type(Key.F4,KeyModifier.CTRL)

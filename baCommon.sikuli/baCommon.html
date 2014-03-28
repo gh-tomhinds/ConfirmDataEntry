@@ -174,6 +174,10 @@
 </span><span class="kw">def</span> Setup_BADefaultLayout():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    <span class="cmt"># make sure timeslips has focus
+</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
+        <span class="skw">click</span>(<img src="1388176090422.png" />)
+
     Import_DefaultLayout()
     Setup_NewNamesDefault()
     setup_BABills()
@@ -182,7 +186,8 @@
 </span><span class="kw">def</span> BA_Create_Slips(baClient):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- BA_Create_Slips'</span>)
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'BA_Create_Slips'</span>)
 
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -206,7 +211,7 @@
 </span><span class="kw">def</span> BA_Bill(baClient,billNum):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- BA_Bill'</span>)
+    logging.debug(<span class="str">'- BA_Bill: '</span> + baClient + <span class="str">' '</span> + str(billNum))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
     <span class="skw">click</span>(<img src="1372861568498.png" />)
