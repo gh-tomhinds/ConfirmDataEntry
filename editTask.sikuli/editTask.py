@@ -32,8 +32,9 @@ def Edit_Task():
     logging.debug('  - rates')
     type(Key.TAB)    
 
-    # filling rates with 1.01 thru 1.20
+    # filling rates with 101.01 thru 101.20
     for i in range(101,121):
+        i += 10000
         rate = str(float(i)/100)
         type(rate)
         type(Key.TAB)

@@ -253,12 +253,16 @@
     counter = <span class="dig">0</span>
     moreClients = True
 
-    <span class="kw">while</span> moreClients == True:
+    <span class="cmt"># loop through clients
+</span>    <span class="cmt"># assign default rate tk 1-20, then cl 1-20, then ta 1-20, 
+</span>    <span class="cmt"># then loop again until the end
+</span>    <span class="kw">while</span> moreClients == True:
         <span class="kw">for</span> source <span class="kw">in</span> [<span class="str">"ti"</span>,<span class="str">"cl"</span>,<span class="str">"ta"</span>]:
+            logging.debug(<span class="str">'-- client: '</span> + str(counter+<span class="dig">1</span>))
+
             <span class="kw">if</span> moreClients == False:
                 <span class="kw">break</span>
             <span class="kw">for</span> level <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">21</span>):
-
                 <span class="cmt"># if i get to total clients, exit early
 </span>                <span class="kw">if</span> counter &gt; <span class="dig">350</span>:
                     moreClients = False

@@ -72,32 +72,32 @@ def Review_BillingArrangements():
     
     baLogHeader()
 
-#    baAdjustTotal_Time.BA_AdjustTotal_Time()
-#    baAdjustTotal_Exp.BA_AdjustTotal_Exp()
-#    baAdjustTotal_Both.BA_AdjustTotal_Both()
+    baAdjustTotal_Time.BA_AdjustTotal_Time()
+    baAdjustTotal_Exp.BA_AdjustTotal_Exp()
+    baAdjustTotal_Both.BA_AdjustTotal_Both()
     
-#    baAdjustTimekeeper_Time.BA_AdjustTimekeeper_Time()
-#    baAdjustTimekeeper_Exp.BA_AdjustTimekeeper_Exp()
-#    baAdjustTimekeeper_Both.BA_AdjustTimekeeper_Both()
+    baAdjustTimekeeper_Time.BA_AdjustTimekeeper_Time()
+    baAdjustTimekeeper_Exp.BA_AdjustTimekeeper_Exp()
+    baAdjustTimekeeper_Both.BA_AdjustTimekeeper_Both()
 
-#    baAdjustTask.BA_AdjustTask()
-#    baAdjustExpense.BA_AdjustExpense()
+    baAdjustTask.BA_AdjustTask()
+    baAdjustExpense.BA_AdjustExpense()
 
-#    baAbsolute_Time.BA_Absolute_Time()
-#    baAbsolute_Exp.BA_Absolute_Exp()
-#    baAbsolute_Both.BA_Absolute_Both()
+    baAbsolute_Time.BA_Absolute_Time()
+    baAbsolute_Exp.BA_Absolute_Exp()
+    baAbsolute_Both.BA_Absolute_Both()
 
-#    baMinimum_Time.BA_Minimum_Time()
-#    baMinimum_Exp.BA_Minimum_Exp()
-#    baMinimum_Both.BA_Minimum_Both()
+    baMinimum_Time.BA_Minimum_Time()
+    baMinimum_Exp.BA_Minimum_Exp()
+    baMinimum_Both.BA_Minimum_Both()
     
-#    baMaximum_Time.BA_Maximum_Time()
-#    baMaximum_Exp.BA_Maximum_Exp()
-#    baMaximum_Both.BA_Maximum_Both()
+    baMaximum_Time.BA_Maximum_Time()
+    baMaximum_Exp.BA_Maximum_Exp()
+    baMaximum_Both.BA_Maximum_Both()
 
-#    baFlatFeePlus_Time.BA_FlatFeePlus_Time()
-#    baFlatFeePlus_Exp.BA_FlatFeePlus_Exp()
-#    baFlatFeePlus_Both.BA_FlatFeePlus_Both()
+    baFlatFeePlus_Time.BA_FlatFeePlus_Time()
+    baFlatFeePlus_Exp.BA_FlatFeePlus_Exp()
+    baFlatFeePlus_Both.BA_FlatFeePlus_Both()
 
     baContingency_Time.BA_Contingency_Time()
     baContingency_Exp.BA_Contingency_Exp()

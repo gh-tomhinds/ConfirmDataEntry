@@ -180,13 +180,17 @@ def Edit_DefaultRates():
 
     counter = 0
     moreClients = True
-    
+
+    # loop through clients
+    # assign default rate tk 1-20, then cl 1-20, then ta 1-20, 
+    # then loop again until the end
     while moreClients == True:
         for source in ["ti","cl","ta"]:
+            logging.debug('-- client: ' + str(counter+1))    
+            
             if moreClients == False:
                 break
             for level in range(1,21):
-    
                 # if i get to total clients, exit early
                 if counter > 350:
                     moreClients = False

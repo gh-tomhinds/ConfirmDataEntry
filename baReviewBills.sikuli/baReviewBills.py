@@ -5,12 +5,12 @@ import csv
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Get_BillValues(fullBill,phrase):
+def Get_BillValues(billType,fullBill,phrase):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # searches the bill text file for a phrase and returns the value associated with it
 
-    logging.debug('- Get_BillValues')
+    logging.debug('- Get_BillValues: ' + billType)
 
     for billLine in fullBill:
         if billLine.find(phrase) != -1:
@@ -47,7 +47,7 @@ def Review_Bill(billName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
-    logging.debug('Review_Bill')
+    logging.debug('Review_Bill: ' + billName)
 
     # open the file that contain bill data
     baDataFile = Settings.dataFolder + "\\baData.csv"
@@ -89,11 +89,11 @@ def Review_Bill(billName):
         billFile.close()
 
         # read values from printed bill
-        billFeesValue = Get_BillValues(billLines,timeText)
+        billFeesValue = Get_BillValues("Fees",billLines,timeText)
         print("* * *")        
         print(billFeesValue)
-        billCostsValue = Get_BillValues(billLines,expText)
-        billTotalValue = Get_BillValues(billLines,totalText)
+        billCostsValue = Get_BillValues("Costs",billLines,expText)
+        billTotalValue = Get_BillValues("Total",billLines,totalText)
 
         # open log file
         outFile = Settings.repFolder + "\\BA-Log.txt"

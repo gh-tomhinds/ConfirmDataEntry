@@ -104,8 +104,9 @@
     logging.debug(<span class="str">'  - rates'</span>)
     <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># filling rates with 1.01 thru 1.20
+    <span class="cmt"># filling rates with 101.01 thru 101.20
 </span>    <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">101</span>,<span class="dig">121</span>):
+        i += <span class="dig">10000</span>
         rate = str(float(i)/<span class="dig">100</span>)
         <span class="skw">type</span>(rate)
         <span class="skw">type</span>(Key.TAB)

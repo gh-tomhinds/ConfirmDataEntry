@@ -77,12 +77,12 @@
 
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Get_BillValues(fullBill,phrase):
+</span><span class="kw">def</span> Get_BillValues(billType,fullBill,phrase):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     <span class="cmt"># searches the bill text file for a phrase and returns the value associated with it
 </span>
-    logging.debug(<span class="str">'- Get_BillValues'</span>)
+    logging.debug(<span class="str">'- Get_BillValues: '</span> + billType)
 
     <span class="kw">for</span> billLine <span class="kw">in</span> fullBill:
         <span class="kw">if</span> billLine.<span class="skw">find</span>(phrase) != -<span class="dig">1</span>:
@@ -119,7 +119,7 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Review_Bill'</span>)
+    logging.debug(<span class="str">'Review_Bill: '</span> + billName)
 
     <span class="cmt"># open the file that contain bill data
 </span>    baDataFile = Settings.dataFolder + <span class="str">"\\baData.csv"</span>
@@ -161,11 +161,11 @@
         billFile.close()
 
         <span class="cmt"># read values from printed bill
-</span>        billFeesValue = Get_BillValues(billLines,timeText)
+</span>        billFeesValue = Get_BillValues(<span class="str">"Fees"</span>,billLines,timeText)
         <span class="kw">print</span>(<span class="str">"* * *"</span>)
         <span class="kw">print</span>(billFeesValue)
-        billCostsValue = Get_BillValues(billLines,expText)
-        billTotalValue = Get_BillValues(billLines,totalText)
+        billCostsValue = Get_BillValues(<span class="str">"Costs"</span>,billLines,expText)
+        billTotalValue = Get_BillValues(<span class="str">"Total"</span>,billLines,totalText)
 
         <span class="cmt"># open log file
 </span>        outFile = Settings.repFolder + <span class="str">"\\BA-Log.txt"</span>

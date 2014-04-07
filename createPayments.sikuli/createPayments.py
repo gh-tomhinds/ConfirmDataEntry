@@ -57,6 +57,10 @@ def Create_Payments():
     logging.debug(' ')
     logging.debug('Create_Payments')
 
+    # make sure timeslips has focus
+    if int(Settings.tsVersion) > 2013:
+        click("1388176090422.png")
+
     # start with manually entered client, then load other clients from file
     allClients = ["Agawam"]
     fileClients = csv.DictReader(open(Settings.cliFile))

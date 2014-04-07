@@ -133,10 +133,6 @@
 <span class="cmt"># save and close    
 </span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
 
-    <span class="cmt"># after TS2014, an extra warning message
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
-        <span class="skw">type</span>(Key.ENTER)
-
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
