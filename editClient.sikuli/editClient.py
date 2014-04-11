@@ -217,7 +217,7 @@ def Edit_InterestSetting():
 
     # get to interest field
     if int(Settings.tsVersion) > 2014:
-        myTools.pressSHIFTF6(8)
+        myTools.pressSHIFTF6(9)
         myTools.pressTAB(9)
     else:
         myTools.pressF6(2)    
@@ -229,7 +229,12 @@ def Edit_InterestSetting():
     click(Pattern("1368122194605.png").targetOffset(0,8))
     time.sleep(1)
     type(Key.DELETE)
-    myTools.pressDOWN(5)
+
+    if int(Settings.tsVersion) > 2014:
+        myTools.pressDOWN(5)
+    else:
+        myTools.pressDOWN(6)
+    
     type(Key.F4)
     time.sleep(1)
     
@@ -241,9 +246,9 @@ def Edit_InterestSetting():
     type("y")
     
     if int(Settings.tsVersion) > 2014:
-        wait("1387902836993.png", 10)        
+        wait("1387902836993.png", 20)        
     else:        
-        wait("1387309714643.png",10)
+        wait("1387309714643.png",20)
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -252,6 +257,9 @@ def Edit_Client():
 
     logging.debug(' ')
     logging.debug('Edit_Client')
+
+    # make sure timeslips has focus
+    myTools.getFocus()
 
     Edit_CliGenInfo()
     Edit_CliCustom()

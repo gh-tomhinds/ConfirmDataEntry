@@ -105,5 +105,8 @@ def Setup_FeeAlloc():
 
     logging.debug('Set Up Fee Allocation')
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     Setup_CustomFields()
     Export_Timekeepers()

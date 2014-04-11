@@ -203,8 +203,7 @@
     logging.debug(<span class="str">'Print_Bills'</span>)
 
     <span class="cmt"># make sure timeslips has focus
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
-        <span class="skw">click</span>(<img src="1388176090422.png" />)
+</span>    myTools.getFocus()
 
     setupBills()
     <span class="kw">for</span> count <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">13</span>):

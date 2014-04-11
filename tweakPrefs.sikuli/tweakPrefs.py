@@ -9,8 +9,7 @@ def Tweak_Prefs():
     logging.debug('Tweak_Prefs')
 
     # make sure timeslips has focus
-    if int(Settings.tsVersion) > 2013:
-        click("1388176090422.png")
+    myTools.getFocus()
 
     logging.debug('- open preferences')
     type("p",KeyModifier.ALT)

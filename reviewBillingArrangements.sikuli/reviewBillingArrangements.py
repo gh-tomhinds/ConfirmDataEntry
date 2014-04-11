@@ -65,11 +65,10 @@ def Review_BillingArrangements():
 
     logging.debug(' ')
     logging.debug('Review_BillingArrangements')
-
-    # make sure timeslips has focus
-    if int(Settings.tsVersion) > 2013:
-        click("1388176090422.png")
     
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     baLogHeader()
 
     baAdjustTotal_Time.BA_AdjustTotal_Time()

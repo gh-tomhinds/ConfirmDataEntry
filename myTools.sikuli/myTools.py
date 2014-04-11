@@ -1,4 +1,4 @@
-from sikuli import *
+from sikuli import *              
 
 def pressTAB(number):
     if number != 0:
@@ -39,3 +39,7 @@ def pressRIGHT(number):
     if number != 0:
         for i in range(number):
             type(Key.RIGHT)
+
+def getFocus():
+    if int(Settings.tsVersion) > 2013:
+        click("1397240284893.png")

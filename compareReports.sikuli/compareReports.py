@@ -8,18 +8,14 @@ def Compare_Reports():
     logging.debug(' ')
     logging.debug('Compare_Reports')
 
-# only run report comparison if TS2014
-    if Settings.tsVersion <> "2014":
-        logging.debug("- skipping report comparison")
-        return              
-
     global newRepLine
 
 # make a list of all files in the NewReports folder
     for reportFile in os.listdir(Settings.repFolder + "\\NewReports\\"):
-        if reportFile.endswith(".csv"):
+        if reportFile.endswith(".txt"):
 
 # point to old report, new report, and output file
+            logging.debug('- process: ' + reportFile)
             oldFile = Settings.repFolder + "\\OldReports\\" + reportFile
             newFile = Settings.repFolder + "\\NewReports\\" + reportFile
             outFile = Settings.repFolder + "ReportLog.txt"

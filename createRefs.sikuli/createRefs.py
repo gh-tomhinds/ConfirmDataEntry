@@ -1,12 +1,16 @@
 from sikuli import *
 import logging
 import csv
+import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Refs():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
     logging.debug('Create_Refs')
+
+    # make sure timeslips has focus
+    myTools.getFocus()
 
     logging.debug('- open reference list')
     type("r", KeyModifier.CTRL + KeyModifier.SHIFT)

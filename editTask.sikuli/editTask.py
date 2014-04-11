@@ -8,6 +8,9 @@ def Edit_Task():
     logging.debug(' ')
     logging.debug('Edit_Task')
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     logging.debug('- open task list')
     type("n",KeyModifier.ALT)
     type("f")

@@ -9,6 +9,9 @@ def Create_Categories():
     logging.debug(' ')
     logging.debug('Create_Categories')
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     logging.debug('- open category list')
     type("p",KeyModifier.ALT)
     

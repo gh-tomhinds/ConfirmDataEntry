@@ -73,12 +73,16 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> csv
+<span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_Refs():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Create_Refs'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
 
     logging.debug(<span class="str">'- open reference list'</span>)
     <span class="skw">type</span>(<span class="str">"r"</span>, KeyModifier.CTRL + KeyModifier.SHIFT)

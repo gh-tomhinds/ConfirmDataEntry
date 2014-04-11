@@ -8,8 +8,11 @@ def Setup_ExpMarkups():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug('Set Up Exp Markups')
+    
+    # make sure timeslips has focus
+    myTools.getFocus()
+    
     logging.debug('- open Expense List')
-
     type("y", KeyModifier.CTRL + KeyModifier.SHIFT)
     time.sleep(1)
     

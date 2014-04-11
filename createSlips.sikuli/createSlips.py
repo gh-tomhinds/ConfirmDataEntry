@@ -62,10 +62,9 @@ def Create_Slips(tmslips,exslips):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
     logging.debug('- Create_Slips')
-
+    
     # make sure timeslips has focus
-    if int(Settings.tsVersion) > 2013:
-        click("1388176090422.png")
+    myTools.getFocus()
 
     # start with manually entered client, then load other clients from file
     clients = ["Agawam"]

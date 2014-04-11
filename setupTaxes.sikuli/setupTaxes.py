@@ -8,7 +8,7 @@ def Change_TaxRule():
     logging.debug('- Change_TaxRule')
 
     logging.debug('-- open Taxes')
-    click(Pattern("SaturnWindow.png").targetOffset(-29,1))
+    type("p",KeyModifier.ALT)   
     type("t")
     time.sleep(2)
 
@@ -167,6 +167,9 @@ def Setup_Taxes():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
     logging.debug('Setup_Taxes')
+    
+    # make sure timeslips has focus
+    myTools.getFocus()
 
     time.sleep(1)
     Change_TaxRule()

@@ -8,6 +8,9 @@ def Edit_Timekeeper():
     logging.debug(' ')
     logging.debug('Edit_Timekeeper')
 
+# make sure timeslips has focus
+    myTools.getFocus()
+
     logging.debug('- open timekeeper list')
     type("n",KeyModifier.ALT)    
     type("n")

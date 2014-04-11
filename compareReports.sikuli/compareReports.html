@@ -46,8 +46,8 @@
          h2 {
             display: inline;
             font-weight: normal;
-         }  
-         
+         }
+
          .info {
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
@@ -80,19 +80,15 @@
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Compare_Reports'</span>)
 
-<span class="cmt"># only run report comparison if TS2014
-</span>    <span class="kw">if</span> Settings.tsVersion &lt;&gt; <span class="str">"2014"</span>:
-        logging.debug(<span class="str">"- skipping report comparison"</span>)
-        <span class="kw">return</span>
-
     <span class="kw">global</span> newRepLine
 
 <span class="cmt"># make a list of all files in the NewReports folder
 </span>    <span class="kw">for</span> reportFile <span class="kw">in</span> os.listdir(Settings.repFolder + <span class="str">"\\NewReports\\"</span>):
-        <span class="kw">if</span> reportFile.endswith(<span class="str">".csv"</span>):
+        <span class="kw">if</span> reportFile.endswith(<span class="str">".txt"</span>):
 
 <span class="cmt"># point to old report, new report, and output file
-</span>            oldFile = Settings.repFolder + <span class="str">"\\OldReports\\"</span> + reportFile
+</span>            logging.debug(<span class="str">'- process: '</span> + reportFile)
+            oldFile = Settings.repFolder + <span class="str">"\\OldReports\\"</span> + reportFile
             newFile = Settings.repFolder + <span class="str">"\\NewReports\\"</span> + reportFile
             outFile = Settings.repFolder + <span class="str">"ReportLog.txt"</span>
 

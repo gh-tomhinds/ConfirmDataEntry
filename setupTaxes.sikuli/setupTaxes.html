@@ -80,7 +80,7 @@
 </span>    logging.debug(<span class="str">'- Change_TaxRule'</span>)
 
     logging.debug(<span class="str">'-- open Taxes'</span>)
-    <span class="skw">click</span>(Pattern(<img src="SaturnWindow.png" />).targetOffset(-<span class="dig">29</span>,<span class="dig">1</span>))
+    <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"t"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
@@ -239,6 +239,9 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Setup_Taxes'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
 
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     Change_TaxRule()

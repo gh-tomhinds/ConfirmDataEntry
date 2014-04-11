@@ -80,8 +80,11 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">'Set Up Exp Markups'</span>)
-    logging.debug(<span class="str">'- open Expense List'</span>)
 
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    logging.debug(<span class="str">'- open Expense List'</span>)
     <span class="skw">type</span>(<span class="str">"y"</span>, KeyModifier.CTRL + KeyModifier.SHIFT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 

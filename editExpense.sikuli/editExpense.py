@@ -8,6 +8,9 @@ def Edit_Expense():
     logging.debug(' ')
     logging.debug('Edit_Expense')
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     logging.debug('- open expense list')
     type("n",KeyModifier.ALT)
     type("o")

@@ -40,6 +40,9 @@ def Create_CustomFields():
     logging.debug(' ')
     logging.debug('Create_CustomFields')
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     logging.debug('- open custom fields dialog box')
     type("p",KeyModifier.ALT)
     type("c")

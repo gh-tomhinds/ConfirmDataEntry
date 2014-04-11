@@ -136,8 +136,7 @@
     logging.debug(<span class="str">'- Create_Slips'</span>)
 
     <span class="cmt"># make sure timeslips has focus
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
-        <span class="skw">click</span>(<img src="1388176090422.png" />)
+</span>    myTools.getFocus()
 
     <span class="cmt"># start with manually entered client, then load other clients from file
 </span>    clients = [<span class="str">"Agawam"</span>]
