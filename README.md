@@ -7,6 +7,7 @@ This project contains SIKULI code to automate some regression test plans.
 ### tsMain
 
 This file the main driver of this set of scripts.
+<<<<<<< HEAD
 * It sets up the logging system.
 * It generates the starting time stamp
 * It calls all scripts
@@ -103,4 +104,6 @@ Then it's called to by each billing arrangement script to create a new client fo
 ### printTimekeepers
 
 ### compareReports
+=======
+>>>>>>> ffb8282f9477356627a805891f3230ad7bcd6de8
 
