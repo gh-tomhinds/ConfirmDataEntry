@@ -24,7 +24,7 @@ def Create_Categories():
 
     for category in ["Construction","General","Landscape","Hardware","Supplies","Materials","Other"]:
         logging.debug('- create: ' + category)
-        type("n",KEY_ALT)
+        type("n",KeyModifier.ALT)
         type(category)
         type(Key.ENTER)
 

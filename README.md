@@ -37,11 +37,18 @@ This file contains code to create a new empty database.
 
 ### tweakPrefs
 
-This file first resets preferences to their default, then sets several preferences to values that help speed data entry.
+This file first resets preferences to their default, then sets several preferences to values that help speed data entry. These changes are saved in a new preference file.
 
 ### createCategories
 
+This file creates a set of categories for use with new tasks and expenses.
+
 ### createCustomFields
+
+This file create one of each type of client custom fields.
+* Create_CustomFields - opens the Custom fields dialog box and calls CreateOne for each type of custom field; then calls FillList
+* CreateOne - Creates a specific custom field
+* FillList - Fills the List type custom field with values
 
 ### createClient.Create_Client
 
