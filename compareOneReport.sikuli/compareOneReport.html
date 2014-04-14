@@ -1,0 +1,130 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>compareOneReport.sikuli\compareOneReport.sikuli</h2> <a href="compareOneReport.sikuli\compareOneReport.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> os
+<span class="kw">import</span> logging
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Compare_OneReport(reportName):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Compare_OneReport: '</span> + reportName)
+
+<span class="cmt"># point to old report, new report, and output file
+</span>    baseFile = Settings.baseRepFolder + <span class="str">"\\"</span> + reportName
+    newFile = Settings.repFolder + <span class="str">"\\"</span> + reportName
+
+    <span class="kw">global</span> newRepLine
+
+<span class="cmt"># don't compare if old report doesn't exist
+</span>    <span class="kw">if</span> <span class="kw">not</span> os.path.exists(baseFile):
+        logging.debug(<span class="str">" - Baseline report MISSING"</span>)
+        <span class="kw">return</span>
+
+<span class="cmt"># don't compare if new report doesn't exist
+</span>    <span class="kw">if</span> <span class="kw">not</span> os.path.exists(baseFile):
+        logging.debug(<span class="str">" - New report MISSING"</span>)
+        <span class="kw">return</span>
+
+<span class="cmt"># open report files
+</span>    baseRep = open(baseFile)
+    newRep = open(newFile)
+
+<span class="cmt"># read lines of the report files
+</span>    baseRepLines = baseRep.read().splitlines()
+    newRepLines = newRep.read().splitlines()
+
+<span class="cmt"># close report files
+</span>    baseRep.close()
+    newRep.close()
+
+<span class="cmt"># open reset line counter and error flag
+</span>    newRepLine = <span class="dig">0</span>
+    errorFound = False
+
+<span class="cmt"># compare each line in old report to new report; jump out on first mismatch
+</span>    <span class="kw">for</span> baseRepLine <span class="kw">in</span> baseRepLines:
+        <span class="kw">if</span> baseRepLine != newRepLines[newRepLine]:
+            errorFound = True
+            logging.debug(<span class="str">" - FAILED : "</span> + reportName)
+            logging.debug(<span class="str">" Line: %d \n"</span> % (newRepLine+<span class="dig">1</span>))
+            logging.debug(<span class="str">" Old: "</span> + baseRepLine + <span class="str">"\n"</span>)
+            logging.debug(<span class="str">" New: "</span> + newRepLines[newRepLine] + <span class="str">"\n\n"</span>)
+            <span class="kw">break</span>
+        newRepLine += <span class="dig">1</span>
+
+    <span class="kw">if</span> errorFound != True:
+        logging.debug(<span class="str">" - passed : "</span> + reportName)
+</pre>
+</body>
+</html>

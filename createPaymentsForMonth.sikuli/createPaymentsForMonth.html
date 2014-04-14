@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>createPayments.sikuli\createPayments.sikuli</h2> <a href="createPayments.sikuli\createPayments.zip">(Download this script)</a>
+<h2>createPaymentsForMonth.sikuli\createPaymentsForMonth.sikuli</h2> <a href="createPaymentsForMonth.sikuli\createPaymentsForMonth.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -76,68 +76,65 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Create_TwelvePayments(client,cliNum):
+</span><span class="kw">def</span> Create_AllPaymentsForMonth(client,cliNum,month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- Create_TwelvePayments: '</span> + client)
-
+    logging.debug(<span class="str">'- Create_AllPaymentsForMonth: '</span> + client)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="kw">for</span> month <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">13</span>):
+    <span class="cmt"># new payment
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-        <span class="cmt"># new payment
-</span>        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># type
+</span>    <span class="skw">type</span>(Key.TAB)
 
-        <span class="cmt"># type
-</span>        <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># source
+</span>    myTools.pressDOWN(month-<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
 
-        <span class="cmt"># source
-</span>        myTools.pressDOWN(month-<span class="dig">1</span>)
+    <span class="cmt"># check number
+</span>    <span class="kw">if</span> month == <span class="dig">1</span>:
+        <span class="skw">type</span>(str(cliNum))
         <span class="skw">type</span>(Key.TAB)
 
-        <span class="cmt"># check number
-</span>        <span class="kw">if</span> month == <span class="dig">1</span>:
-            <span class="skw">type</span>(str(cliNum))
-            <span class="skw">type</span>(Key.TAB)
-
-        <span class="cmt"># skip card options
-</span>        <span class="kw">if</span> month <span class="kw">in</span> (<span class="dig">3</span>,<span class="dig">4</span>,<span class="dig">5</span>,<span class="dig">6</span>,<span class="dig">7</span>,<span class="dig">8</span>):
-            <span class="skw">type</span>(Key.TAB)
-
-        <span class="cmt"># client
-</span>        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-        <span class="skw">type</span>(client)
+    <span class="cmt"># skip card options
+</span>    <span class="kw">if</span> month <span class="kw">in</span> (<span class="dig">3</span>,<span class="dig">4</span>,<span class="dig">5</span>,<span class="dig">6</span>,<span class="dig">7</span>,<span class="dig">8</span>):
         <span class="skw">type</span>(Key.TAB)
 
-        <span class="cmt"># date
-</span>        payDate = str(month) + <span class="str">"/28/2013"</span>
-        <span class="skw">type</span>(payDate)
+    <span class="cmt"># client
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(client)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># date
+</span>    payDate = str(month) + <span class="str">"/28/2013"</span>
+    <span class="skw">type</span>(payDate)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># skip deposit slip
+</span>    <span class="kw">if</span> month <span class="kw">in</span> (<span class="dig">1</span>,<span class="dig">2</span>):
         <span class="skw">type</span>(Key.TAB)
 
-        <span class="cmt"># skip deposit slip
-</span>        <span class="kw">if</span> month <span class="kw">in</span> (<span class="dig">1</span>,<span class="dig">2</span>):
-            <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># Amount
+</span>    amount = <span class="dig">100</span> + int(cliNum) + month/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(amount))
+    <span class="skw">type</span>(Key.TAB)
 
-        <span class="cmt"># Amount
-</span>        amount = <span class="dig">100</span> + int(cliNum) + month/float(<span class="dig">100</span>)
-        <span class="skw">type</span>(str(amount))
-        <span class="skw">type</span>(Key.TAB)
-
-        <span class="cmt"># Description
-</span>        <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
-        <span class="skw">type</span>(client + <span class="str">" - "</span> + str(cliNum) + <span class="str">" - "</span> + payDate)
-        <span class="skw">type</span>(Key.ENTER)
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-        <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt"># Description
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(client + <span class="str">" - "</span> + str(cliNum) + <span class="str">" - "</span> + payDate)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Create_Payments():
+</span><span class="kw">def</span> Create_PaymentsForMonth(month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Create_Payments'</span>)
+    logging.debug(<span class="str">'Create_PaymentsForMonth: '</span> + str(month))
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -156,7 +153,7 @@
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
-        Create_TwelvePayments(oneClient,count)
+        Create_AllPaymentsForMonth(oneClient,count,month)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

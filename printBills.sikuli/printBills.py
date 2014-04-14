@@ -3,60 +3,6 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def setupBills():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug('- set up bill report')
-
-    type("b",KeyModifier.CTRL)
-    time.sleep(1)
-
-    myTools.pressTAB(4)
-    type(Key.ENTER)
-    time.sleep(1)
-
-# default button
-    type("d",KeyModifier.ALT)
-
-# mark a/r tran follow slip date
-    myTools.pressTAB(6)
-    time.sleep(1)
-    type(Key.SPACE)
-
-# unmark send bills by email
-    if int(Settings.tsVersion) > 2014:
-        myTools.pressTAB(4)
-    else:
-        myTools.pressTAB(5)        
-    time.sleep(1)
-    type(Key.SPACE)
-
-# unmark envelopes
-    myTools.pressTAB(4)
-    time.sleep(1)
-    type(Key.SPACE)
-
-# OK
-    time.sleep(1)
-    type(Key.ENTER)
-
-# Print to PDF
-    myTools.pressTAB(2)
-    type(Key.END)
-
-# PDF Options
-    myTools.pressTAB(2)
-    type(Key.SPACE)
-    time.sleep(1)
-    type(Key.UP)
-    time.sleep(1)
-    type(Key.ENTER) 
-
-# SAVE and Close
-    type("s",KeyModifier.CTRL)
-    type(Key.ENTER)
-    type(Key.F4,KeyModifier.CTRL)
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Set_BillDate(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug('- change bill date')
@@ -125,7 +71,7 @@ def Print_BillRun(month):
     time.sleep(1)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Print_Bills():
+def Print_Bills(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
     logging.debug('Print_Bills')
@@ -133,7 +79,5 @@ def Print_Bills():
     # make sure timeslips has focus
     myTools.getFocus()
 
-    setupBills()
-    for count in range(1,13):
-        Set_BillDate(count)
-        Print_BillRun(count)
+    Set_BillDate(month)
+    Print_BillRun(month)

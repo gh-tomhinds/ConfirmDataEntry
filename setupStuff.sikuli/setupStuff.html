@@ -104,7 +104,10 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># point to TS paths
-</span>    Settings.repFolder = Settings.sikFolder + <span class="str">"\\Reports\\"</span> + Settings.tsVersion
+</span>    Settings.baseRepFolder = Settings.sikFolder + <span class="str">"\\Reports\\Baseline"</span>
+    logging.debug(<span class="str">"- Baseline Reports folder:    %s"</span> %Settings.baseRepFolder)
+
+    Settings.repFolder = Settings.sikFolder + <span class="str">"\\Reports\\"</span> + Settings.tsVersion
     logging.debug(<span class="str">"- Report folder:    %s"</span> %Settings.repFolder)
 
     Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion

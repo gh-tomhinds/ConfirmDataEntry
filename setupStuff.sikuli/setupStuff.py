@@ -32,6 +32,9 @@ def Setup_Stuff():
     time.sleep(1)
 
 # point to TS paths
+    Settings.baseRepFolder = Settings.sikFolder + "\\Reports\\Baseline"
+    logging.debug("- Baseline Reports folder:    %s" %Settings.baseRepFolder)
+    
     Settings.repFolder = Settings.sikFolder + "\\Reports\\" + Settings.tsVersion
     logging.debug("- Report folder:    %s" %Settings.repFolder)
 

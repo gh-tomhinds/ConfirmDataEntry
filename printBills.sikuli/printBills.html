@@ -75,60 +75,6 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> setupBills():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">'- set up bill report'</span>)
-
-    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    myTools.pressTAB(<span class="dig">4</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-<span class="cmt"># default button
-</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.ALT)
-
-<span class="cmt"># mark a/r tran follow slip date
-</span>    myTools.pressTAB(<span class="dig">6</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.SPACE)
-
-<span class="cmt"># unmark send bills by email
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
-        myTools.pressTAB(<span class="dig">4</span>)
-    <span class="kw">else</span>:
-        myTools.pressTAB(<span class="dig">5</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.SPACE)
-
-<span class="cmt"># unmark envelopes
-</span>    myTools.pressTAB(<span class="dig">4</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.SPACE)
-
-<span class="cmt"># OK
-</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-
-<span class="cmt"># Print to PDF
-</span>    myTools.pressTAB(<span class="dig">2</span>)
-    <span class="skw">type</span>(Key.END)
-
-<span class="cmt"># PDF Options
-</span>    myTools.pressTAB(<span class="dig">2</span>)
-    <span class="skw">type</span>(Key.SPACE)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.UP)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-
-<span class="cmt"># SAVE and Close
-</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-    <span class="skw">type</span>(Key.ENTER)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Set_BillDate(month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">'- change bill date'</span>)
@@ -197,7 +143,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Print_Bills():
+</span><span class="kw">def</span> Print_Bills(month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Print_Bills'</span>)
@@ -205,10 +151,8 @@
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
 
-    setupBills()
-    <span class="kw">for</span> count <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">13</span>):
-        Set_BillDate(count)
-        Print_BillRun(count)
+    Set_BillDate(month)
+    Print_BillRun(month)
 </pre>
 </body>
 </html>

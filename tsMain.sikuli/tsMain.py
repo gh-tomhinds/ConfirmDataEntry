@@ -46,6 +46,9 @@ import reviewBillingArrangements
 import baCommon
 
 import createPayments
+import createPaymentsForMonth
+
+import setupBills
 import importBillLayout
 import printBills
 import setupCalTerms
@@ -54,6 +57,7 @@ import printClients
 import printTasks
 import printExpenses
 import printTimekeepers
+import printARAgedBal
 import compareReports
 
 # setup logging
@@ -92,9 +96,14 @@ setupStuff.Setup_Stuff()
 #setupTaxes.Setup_Taxes()
 #createSlips.Create_Slips(10,10)
 
-#createPayments.Create_Payments()
-#importBillLayout.Import_BillLayout()
-#printBills.Print_Bills()
+setupBills.Setup_Bills()
+importBillLayout.Import_BillLayout()
+
+printBills.Print_Bills(1)
+createPaymentsForMonth.Create_PaymentsForMonth(1)
+
+#printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
+
 #baCommon.Setup_BADefaultLayout()
 #reviewBillingArrangements.Review_BillingArrangements()
 
@@ -104,7 +113,7 @@ setupStuff.Setup_Stuff()
 #printTasks.Print_Tasks()
 #printExpenses.Print_Expenses()
 #printTimekeepers.Print_Timekeepers()
-compareReports.Compare_Reports()
+#compareReports.Compare_Reports()
 
 endTime = datetime.datetime.now()
 logging.debug(' ')

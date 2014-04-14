@@ -12,35 +12,46 @@ def Create_TwelvePayments(client,cliNum):
     time.sleep(1)
 
     for month in range(1,13):
+        
         # new payment
         type("n",KeyModifier.CTRL)
         time.sleep(1)
+        
         # type
         type(Key.TAB)
+        
         # source
         myTools.pressDOWN(month-1)
         type(Key.TAB)
+        
         # check number
         if month == 1:
             type(str(cliNum))
             type(Key.TAB)
+            
         # skip card options
         if month in (3,4,5,6,7,8):
             type(Key.TAB)
+            
         # client
+        time.sleep(1)        
         type(client)        
         type(Key.TAB)
+        
         # date
         payDate = str(month) + "/28/2013"
         type(payDate)
         type(Key.TAB)
+        
         # skip deposit slip
         if month in (1,2):
             type(Key.TAB)
+            
         # Amount
         amount = 100 + int(cliNum) + month/float(100)
         type(str(amount))
         type(Key.TAB)
+        
         # Description
         type("a",KeyModifier.CTRL)
         type(client + " - " + str(cliNum) + " - " + payDate)
@@ -48,7 +59,6 @@ def Create_TwelvePayments(client,cliNum):
         time.sleep(1)
         type("s",KeyModifier.CTRL)
         time.sleep(1)  
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Payments():

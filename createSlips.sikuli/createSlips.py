@@ -26,6 +26,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
 
     # client
     type(Key.TAB)
+    time.sleep(1)   
     type(cli)
     time.sleep(1)
 
