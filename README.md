@@ -50,7 +50,7 @@ This file create one of each type of client custom fields.
 * CreateOne - Creates a specific custom field
 * FillList - Fills the List type custom field with values
 
-### createClient.Create_Client
+### createClient
 
 This file contains code to create one client. 
 Initially, it's called with values to create the first client in the database. 
@@ -58,23 +58,55 @@ Then it's called to by each billing arrangement script to create a new client fo
 
 ### createTask
 
+This file contains code to create the initial task. 
+
 ### createExpense
+
+This file contains code to create the initial expense. 
 
 ### importTimekeepers
 
+This file contains code to open TSImport to import additional timekeepers from a file.
+That data file is: Desktop\Sikuli\DataFiles\timekeepers.csv.
+
 ### editTimekeeper
+
+This file contains code to edit the initial timekeeper that was created in startTSandNewDB.
 
 ### importClients
 
+This file contains code to open TSImport to import additional timekeepers from a file.
+That data file is: Desktop\Sikuli\DataFiles\towns.csv.
+* Import_Clients - Opens TSImport, sets up the template, imports data
+* Add_CustomField - Adds the custom fields to the template
+
 ### editClient
+
+This file contains code to edit the initial client that was created in createClient, then also edit default rate and interest for all clients.
+* EditClient - Drives the process
+* Edit_CliGenInfo - edits values in the Contact Info page for initial client
+* Edit_CliCustom - edits values in the Custom page for initial client
+* Edit_CliRatesNotes - edits billing rates and notes for initial client
+* Edit_DefaultRates - loops through all clients, editing default rate settings
+* Edit_InterestSetting - edits interest setting and exports it to all other clients
 
 ### importTasks
 
+This file contains code to open TSImport to import additional tasks from a file.
+That data file is: Desktop\Sikuli\DataFiles\tasks.csv.
+
 ### editTask
+
+This file contains code to edit the initial client that was created in createTask.
 
 ### importExpenses
 
+This file contains code to open TSImport to import additional expenses from a file.
+That data file is: Desktop\Sikuli\DataFiles\expenses.csv.
+
 ### editExpense
+
+This file contains code to edit the initial client that was created in createExpense.
 
 ### createRefs
 
@@ -111,6 +143,4 @@ Then it's called to by each billing arrangement script to create a new client fo
 ### printTimekeepers
 
 ### compareReports
-=======
->>>>>>> ffb8282f9477356627a805891f3230ad7bcd6de8
 

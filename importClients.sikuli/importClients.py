@@ -8,13 +8,13 @@ def Add_CustomField(name, downArrow):
 
     type(Key.ENTER)
     type(Key.TAB)
-    type("a",KEY_CTRL)
+    type("a",KeyModifier.CTRL)
 
     for i in range(downArrow+1):
         type(Key.DOWN)
 
     type(Key.ENTER)
-    type(Key.TAB,KEY_SHIFT)
+    type(Key.TAB,KeyModifier.SHIFT)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Clients():
