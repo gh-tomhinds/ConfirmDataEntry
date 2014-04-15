@@ -14,7 +14,7 @@
 import logging
 reload(logging)
 import os
-import datetime
+import myTools
 
 # import my sikuli scripts
 import setupStuff
@@ -51,6 +51,7 @@ import createPaymentsForMonth
 import setupBills
 import importBillLayout
 import printBills
+import backupData
 import setupCalTerms
 import calendarStuff
 import printClients
@@ -64,14 +65,9 @@ import compareReports
 logging.basicConfig(filename=os.environ['USERPROFILE']+'\desktop\Sikuli\Sikuli.log', level=logging.DEBUG, format='%(message)s', filemode='w')
 # Level = DEBUG, INFO, WARNING, ERROR, CRITICAL
 
-# stamp start time
-startTime = datetime.datetime.now()
-logging.debug(' ')
-logging.debug('- - - - - - - - - - - - - - -')
-logging.debug(startTime.strftime("Started at: %Y-%m-%d %H:%M:%S"))
-logging.debug('- - - - - - - - - - - - - - -')
-
+myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
+
 #closeTimeslips.Close_Timeslips()
 #delDataFolder.Delete_Data_Folder()
 #startTSandNewDB.StartTS_CreateNewDB()
@@ -96,11 +92,13 @@ setupStuff.Setup_Stuff()
 #setupTaxes.Setup_Taxes()
 #createSlips.Create_Slips(10,10)
 
-setupBills.Setup_Bills()
-importBillLayout.Import_BillLayout()
+#setupBills.Setup_Bills()
+#importBillLayout.Import_BillLayout()
 
-printBills.Print_Bills(1)
-createPaymentsForMonth.Create_PaymentsForMonth(1)
+for count in range(1,13):
+#    printBills.Print_Bills(count)
+#    createPaymentsForMonth.Create_PaymentsForMonth(count)
+    backupData.Backup_Data(count)
 
 #printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
 
@@ -115,13 +113,6 @@ createPaymentsForMonth.Create_PaymentsForMonth(1)
 #printTimekeepers.Print_Timekeepers()
 #compareReports.Compare_Reports()
 
-endTime = datetime.datetime.now()
-logging.debug(' ')
-logging.debug('- - - - - - - - - - - - - - -')
-logging.debug(endTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
-logging.debug('- - - - - - - - - - - - - - -')
-
-elapsedTime = endTime - startTime
-logging.debug("Elapsed:    %s" %elapsedTime)
+myTools.endTimeStamp()
 
 exit()

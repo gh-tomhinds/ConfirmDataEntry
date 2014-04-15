@@ -55,6 +55,8 @@ def Create_AllPaymentsForMonth(client,cliNum,month):
     type(Key.ENTER)
     time.sleep(1)
     type("s",KeyModifier.CTRL)
+    if exists("1397586037229.png"):
+        type(Key.ENTER)
     time.sleep(1)  
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #

@@ -71,6 +71,9 @@
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> datetime
+<span class="kw">import</span> logging
+
 
 <span class="kw">def</span> pressTAB(number):
     <span class="kw">if</span> number != <span class="dig">0</span>:
@@ -115,6 +118,23 @@
 <span class="kw">def</span> getFocus():
     <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
         <span class="skw">click</span>(<img src="1397240284893.png" />)
+
+<span class="kw">def</span> startTimeStamp():
+    Settings.startTime = datetime.datetime.now()
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(Settings.startTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
+    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+
+<span class="kw">def</span> endTimeStamp():
+    endTime = datetime.datetime.now()
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(endTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
+    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+
+    elapsedTime = endTime - Settings.startTime
+    logging.debug(<span class="str">"Elapsed:    %s"</span> %elapsedTime)
 </pre>
 </body>
 </html>
