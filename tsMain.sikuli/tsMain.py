@@ -10,9 +10,6 @@
 #
 # - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-#import python
-import logging
-reload(logging)
 import os
 import myTools
 
@@ -59,12 +56,13 @@ import printTasks
 import printExpenses
 import printTimekeepers
 import printARAgedBal
+import printTkHistory
 import compareReports
 
-# setup logging
-logging.basicConfig(filename=os.environ['USERPROFILE']+'\desktop\Sikuli\Sikuli.log', level=logging.DEBUG, format='%(message)s', filemode='w')
-# Level = DEBUG, INFO, WARNING, ERROR, CRITICAL
+#import sendEmail
 
+# setup logging
+myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
@@ -95,12 +93,13 @@ setupStuff.Setup_Stuff()
 #setupBills.Setup_Bills()
 #importBillLayout.Import_BillLayout()
 
-for count in range(1,13):
+#for count in range(1,13):
 #    printBills.Print_Bills(count)
 #    createPaymentsForMonth.Create_PaymentsForMonth(count)
-    makeBackup.Backup_Data(count)
+#    makeBackup.Backup_Data(count)
 
 #printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
+printTkHistory.Print_TkHistory("TkHistory-01.csv")
 
 #baCommon.Setup_BADefaultLayout()
 #reviewBillingArrangements.Review_BillingArrangements()
@@ -114,5 +113,7 @@ for count in range(1,13):
 #compareReports.Compare_Reports()
 
 myTools.endTimeStamp()
+
+#sendEmail.Send_Email()
 
 exit()

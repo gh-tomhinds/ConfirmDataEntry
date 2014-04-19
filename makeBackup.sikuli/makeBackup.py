@@ -31,7 +31,7 @@ def Backup_Data(month):
 
     # name backup file: ex: 2015-bill-03
     strBackupFile = Settings.tsVersion + "-bill-" + strMonth
-    time.sleep(1)   
+    time.sleep(2)
     type(strBackupFile)
     logging.debug('- backup file:' + strBackupFile)    
     time.sleep(1)

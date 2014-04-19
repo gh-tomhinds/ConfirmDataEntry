@@ -52,12 +52,12 @@ def Print_BillRun(month):
     time.sleep(1)
     type(Key.ENTER)    
 
-    wait("1368071925388.png",300)
+    wait("1368071925388.png",600)
     type(Key.ENTER)    
     time.sleep(1)
 
     # approve bills
-    wait(Pattern("1368108335979.png").targetOffset(-124,-10),300)
+    wait(Pattern("1368108335979.png").targetOffset(-124,-10),600)
     click(Pattern("1368108335979.png").targetOffset(-124,-10))
     type(Key.ENTER)
     waitVanish("1368288231948.png",600) 
@@ -75,9 +75,11 @@ def Print_Bills(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
     logging.debug('Print_Bills')
+    myTools.sectionStartTimeStamp()
     
     # make sure timeslips has focus
     myTools.getFocus()
 
     Set_BillDate(month)
     Print_BillRun(month)
+    myTools.sectionStartTimeStamp()

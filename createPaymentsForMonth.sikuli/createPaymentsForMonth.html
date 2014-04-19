@@ -76,10 +76,10 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Create_AllPaymentsForMonth(client,cliNum,month):
+</span><span class="kw">def</span> Create_OnePayment(client,cliNum,month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- Create_AllPaymentsForMonth: '</span> + client)
+    logging.debug(<span class="str">'- Create_OnePayment: '</span> + str(month) + <span class="str">"-"</span> + client)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># new payment
@@ -137,6 +137,7 @@
 </span>
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Create_PaymentsForMonth: '</span> + str(month))
+    myTools.sectionStartTimeStamp()
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -155,10 +156,11 @@
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
-        Create_AllPaymentsForMonth(oneClient,count,month)
+        Create_OnePayment(oneClient,count,month)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

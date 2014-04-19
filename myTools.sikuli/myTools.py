@@ -1,7 +1,12 @@
 from sikuli import *
 import datetime
 import logging
+#reload(logging)
 
+def setupLog():
+    Settings.myLogFile = os.environ['USERPROFILE'] + '\desktop\Sikuli\Sikuli.log'
+    logging.basicConfig(filename=Settings.myLogFile, level=logging.DEBUG, format='%(message)s', filemode='w')
+    # Level = DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 def pressTAB(number):
     if number != 0:
@@ -55,13 +60,30 @@ def startTimeStamp():
     logging.debug('- - - - - - - - - - - - - - -')
 
 def endTimeStamp():
-    endTime = datetime.datetime.now()
+    Settings.endTime = datetime.datetime.now()
     logging.debug(' ')
     logging.debug('- - - - - - - - - - - - - - -')
-    logging.debug(endTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
+    logging.debug(Settings.endTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
     logging.debug('- - - - - - - - - - - - - - -')
 
-    elapsedTime = endTime - Settings.startTime
+    elapsedTime = Settings.endTime - Settings.startTime
     logging.debug("Elapsed:    %s" %elapsedTime)
+
+def sectionStartTimeStamp():
+    Settings.sectionStartTime = datetime.datetime.now()
+    logging.debug(' ')
+    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug(Settings.sectionStartTime.strftime("Started at: %Y-%m-%d %H:%M:%S"))
+    logging.debug('- - - - - - - - - - - - - - -')
+
+def sectionEndTimeStamp():
+    Settings.sectionEndTime = datetime.datetime.now()
+    logging.debug(' ')
+    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug(Settings.sectionEndTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
+    logging.debug('- - - - - - - - - - - - - - -')
+
+    sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime
+    logging.debug("Elapsed:    %s" %sectionElapsedTime)
 
 

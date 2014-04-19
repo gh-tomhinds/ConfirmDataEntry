@@ -19,11 +19,12 @@ def Import_BillLayout():
     click(Pattern("1366207860086.png").targetOffset(3,-9))
     time.sleep(2)
 
-    logging.debug('- save layout')
     type(Settings.dataFolder + "\\Bill with Taxes.tsl")
     type(Key.ENTER)
-    time.sleep(1)
+    time.sleep(2)
     type("Bill with Taxes")
+    
+    logging.debug('- save layout')    
     type("l",KeyModifier.ALT)
     type("s")
     time.sleep(1)

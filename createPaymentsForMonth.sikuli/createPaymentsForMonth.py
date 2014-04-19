@@ -4,10 +4,10 @@ import csv
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Create_AllPaymentsForMonth(client,cliNum,month):
+def Create_OnePayment(client,cliNum,month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug('- Create_AllPaymentsForMonth: ' + client)
+    logging.debug('- Create_OnePayment: ' + str(month) + "-" + client)
     time.sleep(1)
 
     # new payment
@@ -65,7 +65,8 @@ def Create_PaymentsForMonth(month):
 
     logging.debug(' ')
     logging.debug('Create_PaymentsForMonth: ' + str(month))
-    
+    myTools.sectionStartTimeStamp()
+
     # make sure timeslips has focus
     myTools.getFocus()
 
@@ -83,7 +84,8 @@ def Create_PaymentsForMonth(month):
 
     for oneClient in allClients:
         count += 1
-        Create_AllPaymentsForMonth(oneClient,count,month)
+        Create_OnePayment(oneClient,count,month)
      
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()

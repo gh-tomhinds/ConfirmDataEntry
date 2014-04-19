@@ -72,12 +72,13 @@
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
+<span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> CreateOne(name, downArrow):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- create '</span> + name)
+    logging.debug(<span class="str">'-- create '</span> + name)
 
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -89,13 +90,47 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> FillList():
+</span><span class="kw">def</span> FillCliList():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">'- fill list'</span>)
 
     <span class="skw">doubleClick</span>(<img src="ListList-1.png" />)
     listItems = [<span class="str">'Barnstable'</span>,<span class="str">'Berkshire'</span>,<span class="str">'Bristol'</span>,<span class="str">'Dukes'</span>,<span class="str">'Essex'</span>,<span class="str">'Franklin'</span>,<span class="str">'Hampden'</span>,<span class="str">'Hampshire'</span>,<span class="str">'Middlesex'</span>,<span class="str">'Nantucket'</span>,<span class="str">'Norfolk'</span>,<span class="str">'Plymouth'</span>,<span class="str">'Suffolk'</span>,<span class="str">'Worcester'</span>]
+
+    <span class="kw">for</span> listItem <span class="kw">in</span> listItems:
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+        <span class="skw">type</span>(listItem)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> FillTkList():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- fill list'</span>)
+
+    <span class="skw">doubleClick</span>(<img src="ListList-1.png" />)
+    listItems = [<span class="str">'Brisket'</span>,<span class="str">'Pork'</span>,<span class="str">'Ribs'</span>,<span class="str">'Chicken'</span>,<span class="str">'Turkey'</span>]
+
+    <span class="kw">for</span> listItem <span class="kw">in</span> listItems:
+        <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+        <span class="skw">type</span>(listItem)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> FillActList():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'- fill list'</span>)
+
+    <span class="skw">doubleClick</span>(<img src="ListList-1.png" />)
+    listItems = [<span class="str">"Construction"</span>,<span class="str">"General"</span>,<span class="str">"Landscape"</span>,<span class="str">"Hardware"</span>,<span class="str">"Supplies"</span>,<span class="str">"Materials"</span>,<span class="str">"Other"</span>]
 
     <span class="kw">for</span> listItem <span class="kw">in</span> listItems:
         <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
@@ -120,10 +155,33 @@
     <span class="skw">type</span>(<span class="str">"c"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
+    logging.debug(<span class="str">'- add CLIENT custom fields'</span>)
+
     customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>,<span class="str">'Timekeeper'</span>]
     <span class="kw">for</span> customField <span class="kw">in</span> customFields:
         CreateOne(customField, customFields.index(customField))
-    FillList()
+    FillCliList()
+
+    logging.debug(<span class="str">'- add TIMEKEEPER custom fields'</span>)
+
+    <span class="skw">type</span>(Key.F6)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
+    <span class="kw">for</span> customField <span class="kw">in</span> customFields:
+        CreateOne(customField, customFields.index(customField))
+    FillTkList()
+
+    logging.debug(<span class="str">'- add ACTIVITY custom fields'</span>)
+
+    <span class="skw">type</span>(Key.F6)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
+    <span class="kw">for</span> customField <span class="kw">in</span> customFields:
+        CreateOne(customField, customFields.index(customField))
+    FillActList()
+
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">10</span>)
 </pre>

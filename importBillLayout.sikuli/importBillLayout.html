@@ -91,11 +91,12 @@
     <span class="skw">click</span>(Pattern(<img src="1366207860086.png" />).targetOffset(<span class="dig">3</span>,-<span class="dig">9</span>))
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    logging.debug(<span class="str">'- save layout'</span>)
     <span class="skw">type</span>(Settings.dataFolder + <span class="str">"\\Bill with Taxes.tsl"</span>)
     <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="skw">type</span>(<span class="str">"Bill with Taxes"</span>)
+
+    logging.debug(<span class="str">'- save layout'</span>)
     <span class="skw">type</span>(<span class="str">"l"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"s"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
