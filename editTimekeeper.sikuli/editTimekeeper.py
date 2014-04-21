@@ -3,13 +3,8 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Edit_Timekeeper():
+def Edit_TkGenInfo():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('Edit_Timekeeper')
-
-# make sure timeslips has focus
-    myTools.getFocus()
 
     logging.debug('- open timekeeper list')
     type("n",KeyModifier.ALT)    
@@ -55,7 +50,54 @@ def Edit_Timekeeper():
     type(Key.TAB)
     type(Key.UP)    
     type(Key.TAB)
-    type("10.01")
+    type("50.01")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Edit_TkCustom():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    logging.debug('  - custom fields')
+
+# switch to custom fields
+    type(Key.F6)    
+    type(Key.TAB)
+
+# Date
+    type("1/1/14")
+    type(Key.TAB)
+ # Hours
+    type("111.11")
+    type(Key.TAB)
+ # List
+    type("Ribs")
+    type(Key.TAB)
+ # Money
+    type("111.11")
+    type(Key.TAB)
+    time.sleep(1)    
+ # Number
+    type("111.11")
+    type(Key.TAB)
+ # Percent
+    type("111.11")
+    type(Key.TAB)
+ # Text
+    type("Tom Hinds")
+    type(Key.TAB)
+    
+    time.sleep(1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Edit_Timekeeper():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+    logging.debug(' ')
+    logging.debug('Edit_Timekeeper')
+
+# make sure timeslips has focus
+    myTools.getFocus()
+
+    Edit_TkGenInfo()
+    Edit_TkCustom()    
 
     logging.debug('- save and close')
     type("s",KeyModifier.CTRL)
@@ -63,3 +105,4 @@ def Edit_Timekeeper():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)       
     type(Key.F4,KeyModifier.CTRL)
+

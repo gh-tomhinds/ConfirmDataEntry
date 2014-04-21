@@ -7,7 +7,6 @@ This project contains SIKULI code to automate some regression test plans.
 ### tsMain
 
 This file the main driver of this set of scripts.
-<<<<<<< HEAD
 * It sets up the logging system.
 * It generates the starting time stamp
 * It calls all scripts
@@ -110,7 +109,13 @@ This file contains code to edit the initial client that was created in createExp
 
 ### createRefs
 
+This file contains code that changes reference settings, exports them to all clients, then creates global references (from names in a data file) that are used by all clients.
+That data file is: Desktop\Sikuli\DataFiles\templateRefs.csv.
+
 ### importRefs
+
+This file contains code that sets up a TSImport template and imports client-specific references for each client.
+That data file that is imported is: Desktop\Sikuli\DataFiles\refs.csv.
 
 ### setupFeeAlloc
 

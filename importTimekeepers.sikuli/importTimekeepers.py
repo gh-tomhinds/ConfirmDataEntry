@@ -3,6 +3,21 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Add_TkCustomField(name, downArrow):
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    type(Key.ENTER)
+    type(Key.TAB)
+    type("a",KeyModifier.CTRL)
+
+    for i in range(downArrow+1):
+        type(Key.DOWN)
+
+    type(Key.ENTER)
+    type(Key.TAB,KeyModifier.SHIFT)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Timekeepers():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
@@ -112,6 +127,14 @@ def Import_Timekeepers():
     myTools.pressDOWN(1)
     type(Key.ENTER) 
     time.sleep(1)        
+
+    # custom
+    type("c")
+    time.sleep(1)        
+    
+    customFields = ['Date','Hours','CountyList','Money','Number','Percent','Text']
+    for customField in customFields:
+        Add_TkCustomField(customField, customFields.index(customField))
 
 # omit 1st record
     click("1386713105865.png")

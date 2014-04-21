@@ -75,14 +75,9 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Edit_Timekeeper():
+</span><span class="kw">def</span> Edit_TkGenInfo():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Edit_Timekeeper'</span>)
-
-<span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
-
+</span>
     logging.debug(<span class="str">'- open timekeeper list'</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"n"</span>)
@@ -127,7 +122,54 @@
     <span class="skw">type</span>(Key.TAB)
     <span class="skw">type</span>(Key.UP)
     <span class="skw">type</span>(Key.TAB)
-    <span class="skw">type</span>(<span class="str">"10.01"</span>)
+    <span class="skw">type</span>(<span class="str">"50.01"</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Edit_TkCustom():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'  - custom fields'</span>)
+
+<span class="cmt"># switch to custom fields
+</span>    <span class="skw">type</span>(Key.F6)
+    <span class="skw">type</span>(Key.TAB)
+
+<span class="cmt"># Date
+</span>    <span class="skw">type</span>(<span class="str">"1/1/14"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Hours
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># List
+</span>    <span class="skw">type</span>(<span class="str">"Ribs"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Money
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+ <span class="cmt"># Number
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Percent
+</span>    <span class="skw">type</span>(<span class="str">"111.11"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Text
+</span>    <span class="skw">type</span>(<span class="str">"Tom Hinds"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Edit_Timekeeper():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Edit_Timekeeper'</span>)
+
+<span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    Edit_TkGenInfo()
+    Edit_TkCustom()
 
     logging.debug(<span class="str">'- save and close'</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
