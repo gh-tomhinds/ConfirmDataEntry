@@ -164,7 +164,7 @@ def Import_Clients():
     for customField in customFields:
         Add_CustomField(customField, customFields.index(customField))
 
-# if ts2015 oe later, address2 fields
+# if ts2015 or later, address2 fields
 
     if int(Settings.tsVersion) > 2014:
         

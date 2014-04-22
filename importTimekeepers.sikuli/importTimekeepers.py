@@ -70,58 +70,13 @@ def Import_Timekeepers():
 #email
     myTools.pressDOWN(1)
     type(Key.ENTER) 
-    time.sleep(1)        
-#rate 1 - 5
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    time.sleep(1)        
+    time.sleep(1)
 
-#rate 6 - 10
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    time.sleep(1)        
-    
-#rate 11 - 15
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    time.sleep(1)        
-
-#rate 16 - 20
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    myTools.pressDOWN(1)
-    type(Key.ENTER) 
-    time.sleep(1)        
+#rates 1 - 20
+    for i in range(1,21):
+        myTools.pressDOWN(1)
+        type(Key.ENTER) 
+    time.sleep(1)           
 
 #overhead
     myTools.pressDOWN(1)

@@ -75,6 +75,20 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Add_TaskCustomField(name, downArrow):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+
+    <span class="kw">for</span> i <span class="kw">in</span> range(downArrow+<span class="dig">1</span>):
+        <span class="skw">type</span>(Key.DOWN)
+
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(Key.TAB,KeyModifier.SHIFT)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Import_Tasks():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
@@ -159,6 +173,14 @@
         myTools.pressDOWN(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># custom
+</span>    <span class="skw">type</span>(<span class="str">"c"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'CountyList'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
+    <span class="kw">for</span> customField <span class="kw">in</span> customFields:
+        Add_TaskCustomField(customField, customFields.index(customField))
 
 <span class="cmt"># omit 1st record
 </span>    <span class="skw">click</span>(<img src="Limitrecords.png" />)

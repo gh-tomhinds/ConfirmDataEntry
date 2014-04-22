@@ -143,56 +143,11 @@
 </span>    myTools.pressDOWN(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-<span class="cmt">#rate 1 - 5
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt">#rate 6 - 10
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-<span class="cmt">#rate 11 - 15
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-<span class="cmt">#rate 16 - 20
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    myTools.pressDOWN(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
+<span class="cmt">#rates 1 - 20
+</span>    <span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">21</span>):
+        myTools.pressDOWN(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#overhead

@@ -3,13 +3,8 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Edit_Task():
+def Edit_TaskGenInfo():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('Edit_Task')
-
-    # make sure timeslips has focus
-    myTools.getFocus()
 
     logging.debug('- open task list')
     type("n",KeyModifier.ALT)
@@ -52,6 +47,53 @@ def Edit_Task():
     type("a",KeyModifier.CTRL)
     time.sleep(1)
     type("Create something new")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Edit_TaskCustom():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    logging.debug('  - custom fields')
+
+# switch to custom fields
+    myTools.pressF6(2)
+    type(Key.TAB)
+
+# Date
+    type("1/1/15")
+    type(Key.TAB)
+ # Hours
+    type("101.01")
+    type(Key.TAB)
+ # List
+    type("Construction")
+    type(Key.TAB)
+ # Money
+    type("101.01")
+    type(Key.TAB)
+    time.sleep(1)    
+ # Number
+    type("101.01")
+    type(Key.TAB)
+ # Percent
+    type("101.01")
+    type(Key.TAB)
+ # Text
+    type("Build Structure")
+    type(Key.TAB)
+    
+    time.sleep(1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Edit_Task():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+    logging.debug(' ')
+    logging.debug('Edit_Task')
+
+    # make sure timeslips has focus
+    myTools.getFocus()
+    
+    Edit_TaskGenInfo()
+    Edit_TaskCustom()    
 
     logging.debug('- save and close task list')
     type("s",KeyModifier.CTRL)

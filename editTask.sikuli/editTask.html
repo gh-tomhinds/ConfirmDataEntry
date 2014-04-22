@@ -75,14 +75,9 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Edit_Task():
+</span><span class="kw">def</span> Edit_TaskGenInfo():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Edit_Task'</span>)
-
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
-
+</span>
     logging.debug(<span class="str">'- open task list'</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"f"</span>)
@@ -124,6 +119,53 @@
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"Create something new"</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Edit_TaskCustom():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">'  - custom fields'</span>)
+
+<span class="cmt"># switch to custom fields
+</span>    myTools.pressF6(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+<span class="cmt"># Date
+</span>    <span class="skw">type</span>(<span class="str">"1/1/15"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Hours
+</span>    <span class="skw">type</span>(<span class="str">"101.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># List
+</span>    <span class="skw">type</span>(<span class="str">"Construction"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Money
+</span>    <span class="skw">type</span>(<span class="str">"101.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+ <span class="cmt"># Number
+</span>    <span class="skw">type</span>(<span class="str">"101.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Percent
+</span>    <span class="skw">type</span>(<span class="str">"101.01"</span>)
+    <span class="skw">type</span>(Key.TAB)
+ <span class="cmt"># Text
+</span>    <span class="skw">type</span>(<span class="str">"Build Structure"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Edit_Task():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Edit_Task'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    Edit_TaskGenInfo()
+    Edit_TaskCustom()
 
     logging.debug(<span class="str">'- save and close task list'</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)

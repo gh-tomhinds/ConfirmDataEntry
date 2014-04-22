@@ -3,6 +3,20 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Add_TaskCustomField(name, downArrow):
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    type(Key.ENTER)
+    type(Key.TAB)
+    type("a",KeyModifier.CTRL)
+
+    for i in range(downArrow+1):
+        type(Key.DOWN)
+
+    type(Key.ENTER)
+    type(Key.TAB,KeyModifier.SHIFT)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Tasks():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
@@ -87,6 +101,14 @@ def Import_Tasks():
         myTools.pressDOWN(1)
         type(Key.ENTER) 
     time.sleep(1)        
+
+    # custom
+    type("c")
+    time.sleep(1)        
+    
+    customFields = ['Date','Hours','CountyList','Money','Number','Percent','Text']
+    for customField in customFields:
+        Add_TaskCustomField(customField, customFields.index(customField))
 
 # omit 1st record
     click("Limitrecords.png")
