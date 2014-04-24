@@ -3,6 +3,20 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Add_ExpCustomField(name, downArrow):
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    type(Key.ENTER)
+    type(Key.TAB)
+    type("a",KeyModifier.CTRL)
+
+    for i in range(downArrow+1):
+        type(Key.DOWN)
+
+    type(Key.ENTER)
+    type(Key.TAB,KeyModifier.SHIFT)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Expenses():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
@@ -84,7 +98,15 @@ def Import_Expenses():
     for i in range(1,20):
         myTools.pressDOWN(1)
         type(Key.ENTER) 
+    time.sleep(1)
+
+# custom
+    type("c")
     time.sleep(1)        
+    
+    customFields = ['Date','Hours','CountyList','Money','Number','Percent','Text']
+    for customField in customFields:
+        Add_ExpCustomField(customField, customFields.index(customField))
 
 # omit 1st record
     click("Limitrecords.png")

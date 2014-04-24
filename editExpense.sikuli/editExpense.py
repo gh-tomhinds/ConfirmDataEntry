@@ -3,13 +3,8 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Edit_Expense():
+def Edit_ExpenseGenInfo():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('Edit_Expense')
-
-    # make sure timeslips has focus
-    myTools.getFocus()
 
     logging.debug('- open expense list')
     type("n",KeyModifier.ALT)
@@ -60,7 +55,59 @@ def Edit_Expense():
     type("a",KeyModifier.CTRL)
     type("Hammers, saws, etc.")        
 
-# close
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Edit_ExpenseCustom():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    logging.debug('  - custom fields')
+
+    # switch to custom fields
+    myTools.pressF6(2)
+    type(Key.TAB)
+
+    # Date
+    type("12/1/16")
+    type(Key.TAB)
+ 
+    # Hours
+    type("301.01")
+    type(Key.TAB)
+    
+    # List
+    type("Materials")
+    type(Key.TAB)
+
+    # Money
+    type("301.01")
+    type(Key.TAB)
+    time.sleep(1)    
+    
+    # Number
+    type("301.01")
+    type(Key.TAB)
+    
+    # Percent
+    type("301.01")
+    type(Key.TAB)
+    
+    # Text
+    type("Hand Tools")
+    type(Key.TAB)
+    
+    time.sleep(1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Edit_Expense():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+    logging.debug(' ')
+    logging.debug('Edit_Expense')
+
+    # make sure timeslips has focus
+    myTools.getFocus()
+
+    Edit_ExpenseGenInfo()
+    Edit_ExpenseCustom()    
+
     logging.debug('- save and close expense list')
     type("s",KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
