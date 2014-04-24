@@ -4,7 +4,7 @@ import csv
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Create_OnePayment(client,cliNum,month):
+def Create_OnePayToAccount(client,cliNum,month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug('- Create_OnePayment: ' + str(month) + "-" + client)
@@ -14,53 +14,46 @@ def Create_OnePayment(client,cliNum,month):
     type("n",KeyModifier.CTRL)
     time.sleep(1)
        
-    # type
+    # skip type
     type(Key.TAB)
-       
-    # source
-    myTools.pressDOWN(month-1)
+
+    # skip deposit slip
     type(Key.TAB)
-        
-    # check number
-    if month == 1:
-        type(str(cliNum))
-        type(Key.TAB)
-            
-    # skip card options
-    if month in (3,4,5,6,7,8):
-        type(Key.TAB)
-            
+
     # client
     time.sleep(1)        
     type(client)        
     type(Key.TAB)
         
+    # skip account
+    type(Key.TAB)
+
     # date
     payDate = str(month) + "/28/2013"
     type(payDate)
     type(Key.TAB)
         
-    # skip deposit slip
-    if month in (1,2):
-        type(Key.TAB)
+    # skip check number
+    type(Key.TAB)
             
     # Amount
-    amount = 100 + int(cliNum) + month/float(100)
+    amount = 10 + month/float(100)
     type(str(amount))
     type(Key.TAB)
-        
+
     # Description
     type("a",KeyModifier.CTRL)
     type(client + " - " + str(cliNum) + " - " + payDate)
     type(Key.ENTER)
     time.sleep(1)
     type("s",KeyModifier.CTRL)
-    if exists("1397586037229.png"):
-        type(Key.ENTER)
+
+    if exists("1398349359000.png"):
+        type("n")    
     time.sleep(1)  
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Create_PaymentsForMonth(month):
+def Create_PaysToAccount(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
@@ -80,12 +73,12 @@ def Create_PaymentsForMonth(month):
 
     count = 0
 
-    # open a/r tran list
-    type("t",KeyModifier.CTRL)
+    # open funds list
+    type("f",KeyModifier.CTRL)
 
     for oneClient in allClients:
         count += 1
-        Create_OnePayment(oneClient,count,month)
+        Create_OnePayToAccount(oneClient,count,month)
      
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

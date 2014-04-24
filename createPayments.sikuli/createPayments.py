@@ -1,3 +1,7 @@
+#
+# THIS IS NOT CURRENTLY USED
+#
+
 from sikuli import *
 import logging
 import csv
