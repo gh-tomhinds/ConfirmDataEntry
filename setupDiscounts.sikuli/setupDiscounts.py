@@ -8,8 +8,12 @@ def Setup_Discounts():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug('Set Up Discounts')
-    click("Names-1.png")
-    type("i")
+
+    # make sure timeslips has focus
+    myTools.getFocus()
+
+    logging.debug('- change a client')
+    type("i",KeyModifier.CTRL)
     time.sleep(1)
 
     type(Key.ENTER)

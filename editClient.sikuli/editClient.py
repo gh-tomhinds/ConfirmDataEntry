@@ -245,11 +245,7 @@ def Edit_InterestSetting():
     time.sleep(1)
     type("y")
     
-    if int(Settings.tsVersion) > 2014:
-        wait("1387902836993.png", 20)        
-    else:        
-        wait("1387309714643.png",20)
-    type(Key.ENTER)
+    myTools.waitForExportSuccess()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Edit_Client():

@@ -21,6 +21,7 @@ import startTSandNewDB
 import tweakPrefs
 import createCategories
 import createCustomFields
+import editDefaultClient
 import createClient
 import createTask
 import createExpense
@@ -72,6 +73,8 @@ setupStuff.Setup_Stuff()
 #tweakPrefs.Tweak_Prefs()
 #createCategories.Create_Categories()
 #createCustomFields.Create_CustomFields()
+
+#editDefaultClient.Edit_DefaultClient()
 #createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
 #createTask.Create_Task()
 #createExpense.Create_Expense()
@@ -82,12 +85,12 @@ setupStuff.Setup_Stuff()
 #importTasks.Import_Tasks()
 #editTask.Edit_Task()
 #importExpenses.Import_Expenses()
-editExpense.Edit_Expense()
+#editExpense.Edit_Expense()
 #createRefs.Create_Refs()
 #importRefs.Import_Refs()
-#setupFeeAlloc.Setup_FeeAlloc()
-#setupExpMarkups.Setup_ExpMarkups()
-#setupTaxes.Setup_Taxes()
+setupFeeAlloc.Setup_FeeAlloc()
+setupExpMarkups.Setup_ExpMarkups()
+setupTaxes.Setup_Taxes()
 #createSlips.Create_Slips(10,10)
 
 #setupBills.Setup_Bills()

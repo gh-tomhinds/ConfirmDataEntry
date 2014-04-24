@@ -77,11 +77,8 @@ def Change_ClientSettings():
     time.sleep(1)
     type(Key.ENTER)
 
-    if int(Settings.tsVersion) > 2014:
-        wait("1387902836993.png", FOREVER)
-    else:        
-        wait("1387316703616.png", FOREVER)
-    type(Key.ENTER)
+    myTools.waitForExportSuccess()
+    
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

@@ -52,6 +52,13 @@ def getFocus():
     if int(Settings.tsVersion) > 2013:
         click("1397240284893.png")
 
+def waitForExportSuccess():
+    if int(Settings.tsVersion) > 2014:
+        wait("1387902836993.png", FOREVER)
+    else:        
+        wait("1387316703616.png", FOREVER)
+    type(Key.ENTER)
+
 def startTimeStamp():
     Settings.startTime = datetime.datetime.now()
     logging.debug(' ')
