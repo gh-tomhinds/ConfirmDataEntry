@@ -8,6 +8,9 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
     logging.debug(' ')
     logging.debug('Create_Client: ' + nn1)
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     logging.debug('- open client list')
     type("i",KeyModifier.CTRL)
     time.sleep(1)

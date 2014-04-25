@@ -79,7 +79,7 @@
 </span><span class="kw">def</span> Create_OnePayToAccount(client,cliNum,month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- Create_OnePayment: '</span> + str(month) + <span class="str">"-"</span> + client)
+    logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(month) + <span class="str">"-"</span> + client)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># new payment
@@ -109,7 +109,7 @@
 </span>    <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># Amount
-</span>    amount = <span class="dig">10</span> + month/float(<span class="dig">100</span>)
+</span>    amount = <span class="dig">25</span> + month/float(<span class="dig">100</span>)
     <span class="skw">type</span>(str(amount))
     <span class="skw">type</span>(Key.TAB)
 
@@ -129,8 +129,13 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Create_PaymentsForMonth: '</span> + str(month))
+    logging.debug(<span class="str">'Create_PaysToAccount: '</span> + str(month))
     myTools.sectionStartTimeStamp()
+
+    <span class="cmt"># enter PFAs for month 1,4,7,10
+</span>    <span class="kw">if</span> month <span class="kw">in</span> (<span class="dig">2</span>,<span class="dig">3</span>,<span class="dig">5</span>,<span class="dig">6</span>,<span class="dig">8</span>,<span class="dig">9</span>,<span class="dig">11</span>,<span class="dig">12</span>):
+        logging.debug(<span class="str">'- skip payments for: '</span> + str(month))
+        <span class="kw">return</span>
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()

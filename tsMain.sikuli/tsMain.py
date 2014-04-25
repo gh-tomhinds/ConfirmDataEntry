@@ -33,6 +33,7 @@ import editTimekeeper
 import editTask
 import editExpense
 import editClient
+import editClientFunds
 import setupFeeAlloc
 import setupExpMarkups
 import createRefs
@@ -62,7 +63,6 @@ import compareReports
 
 #import sendEmail
 
-# setup logging
 myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
@@ -82,15 +82,16 @@ setupStuff.Setup_Stuff()
 #editTimekeeper.Edit_Timekeeper()
 #importClients.Import_Clients()
 #editClient.Edit_Client()
+editClientFunds.Edit_ClientFunds()
 #importTasks.Import_Tasks()
 #editTask.Edit_Task()
 #importExpenses.Import_Expenses()
 #editExpense.Edit_Expense()
 #createRefs.Create_Refs()
 #importRefs.Import_Refs()
-setupFeeAlloc.Setup_FeeAlloc()
-setupExpMarkups.Setup_ExpMarkups()
-setupTaxes.Setup_Taxes()
+#setupFeeAlloc.Setup_FeeAlloc()
+#setupExpMarkups.Setup_ExpMarkups()
+#setupTaxes.Setup_Taxes()
 #createSlips.Create_Slips(10,10)
 
 #setupBills.Setup_Bills()

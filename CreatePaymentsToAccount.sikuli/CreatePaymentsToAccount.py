@@ -7,7 +7,7 @@ import myTools
 def Create_OnePayToAccount(client,cliNum,month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug('- Create_OnePayment: ' + str(month) + "-" + client)
+    logging.debug('- Create_OnePTA: ' + str(month) + "-" + client)
     time.sleep(1)
 
     # new payment
@@ -37,7 +37,7 @@ def Create_OnePayToAccount(client,cliNum,month):
     type(Key.TAB)
             
     # Amount
-    amount = 10 + month/float(100)
+    amount = 25 + month/float(100)
     type(str(amount))
     type(Key.TAB)
 
@@ -50,15 +50,20 @@ def Create_OnePayToAccount(client,cliNum,month):
 
     if exists("1398349359000.png"):
         type("n")    
-    time.sleep(1)  
+    time.sleep(1)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_PaysToAccount(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
-    logging.debug('Create_PaymentsForMonth: ' + str(month))
+    logging.debug('Create_PaysToAccount: ' + str(month))
     myTools.sectionStartTimeStamp()
+
+    # enter PFAs for month 1,4,7,10
+    if month in (2,3,5,6,8,9,11,12):
+        logging.debug('- skip payments for: ' + str(month))        
+        return
 
     # make sure timeslips has focus
     myTools.getFocus()

@@ -105,6 +105,7 @@
 <span class="kw">import</span> editTask
 <span class="kw">import</span> editExpense
 <span class="kw">import</span> editClient
+<span class="kw">import</span> editClientFunds
 <span class="kw">import</span> setupFeeAlloc
 <span class="kw">import</span> setupExpMarkups
 <span class="kw">import</span> createRefs
@@ -134,8 +135,7 @@
 
 <span class="cmt">#import sendEmail
 </span>
-<span class="cmt"># setup logging
-</span>myTools.setupLog()
+myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
@@ -154,16 +154,17 @@ setupStuff.Setup_Stuff()
 </span><span class="cmt">#editTimekeeper.Edit_Timekeeper()
 </span><span class="cmt">#importClients.Import_Clients()
 </span><span class="cmt">#editClient.Edit_Client()
-</span><span class="cmt">#importTasks.Import_Tasks()
+</span>editClientFunds.Edit_ClientFunds()
+<span class="cmt">#importTasks.Import_Tasks()
 </span><span class="cmt">#editTask.Edit_Task()
 </span><span class="cmt">#importExpenses.Import_Expenses()
 </span><span class="cmt">#editExpense.Edit_Expense()
 </span><span class="cmt">#createRefs.Create_Refs()
 </span><span class="cmt">#importRefs.Import_Refs()
-</span>setupFeeAlloc.Setup_FeeAlloc()
-setupExpMarkups.Setup_ExpMarkups()
-setupTaxes.Setup_Taxes()
-<span class="cmt">#createSlips.Create_Slips(10,10)
+</span><span class="cmt">#setupFeeAlloc.Setup_FeeAlloc()
+</span><span class="cmt">#setupExpMarkups.Setup_ExpMarkups()
+</span><span class="cmt">#setupTaxes.Setup_Taxes()
+</span><span class="cmt">#createSlips.Create_Slips(10,10)
 </span>
 <span class="cmt">#setupBills.Setup_Bills()
 </span><span class="cmt">#importBillLayout.Import_BillLayout()
