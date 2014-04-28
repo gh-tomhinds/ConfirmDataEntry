@@ -76,6 +76,62 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Init_Clients():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered client, then load other clients from file
+</span>    clientList = [<span class="str">"Agawam"</span>]
+    allClis = csv.DictReader(open(Settings.cliFile))
+
+    <span class="kw">for</span> oneCli <span class="kw">in</span> allClis:
+        clientList.append(oneCli[<span class="str">"NN1"</span>])
+    clientList.sort()
+
+    <span class="kw">return</span>(clientList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Init_Timekeepers():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered timekeeper, then load other tks from file
+</span>    timekeeperList = [<span class="str">"TomH"</span>]
+    allTks = csv.DictReader(open(Settings.tkFile))
+
+    <span class="kw">for</span> oneTk <span class="kw">in</span> allTks:
+        timekeeperList.append(oneTk[<span class="str">"NN1"</span>])
+    timekeeperList.sort()
+
+    <span class="kw">return</span>(timekeeperList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Init_Tasks():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered task, then load other tasks from file
+</span>    taskList = [<span class="str">"CON001"</span>]
+    allTasks = csv.DictReader(open(Settings.taskFile))
+
+    <span class="kw">for</span> oneTask <span class="kw">in</span> allTasks:
+        taskList.append(oneTask[<span class="str">"nn2"</span>])
+    taskList.sort()
+
+    <span class="kw">return</span>(taskList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Init_Expenses():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># start with manually entered expense, then load other exps from file
+</span>    expenseList = [<span class="str">"E001"</span>]
+    allExps = csv.DictReader(open(Settings.expFile))
+
+    <span class="kw">for</span> oneExp <span class="kw">in</span> allExps:
+        expenseList.append(oneExp[<span class="str">"NN2"</span>])
+    expenseList.sort()
+
+    <span class="kw">return</span>(expenseList)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
@@ -132,55 +188,240 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Import_TimeSlips():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Import_TimeSlips'</span>)
+
+<span class="cmt"># start tsimport
+</span>    logging.debug(<span class="str">'- start TSImport'</span>)
+
+    <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.KEY_WIN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Settings.tsimpEXE)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="skw">wait</span>(<img src="1386702753073.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    logging.debug(<span class="str">'- set up slip template'</span>)
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(<span class="str">"c"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#choose source
+</span>    <span class="skw">wait</span>(<img src="1386702883681.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"g"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Settings.tSlipsFile)
+
+<span class="cmt">#choose fields
+</span>    myTools.pressTAB(<span class="dig">7</span>)
+
+<span class="cmt"># type
+</span>    myTools.pressDOWN(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># timekeeper
+</span>    myTools.pressDOWN(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># client
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># activity
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># reference
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># extra
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># date
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+
+<span class="cmt"># omit 1st 10 records
+</span>    <span class="skw">click</span>(<img src="1386713105865-1.png" />)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"12"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># import data
+</span>    logging.debug(<span class="str">'- import data'</span>)
+    <span class="skw">type</span>(Key.F9)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.RIGHT)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># verify data
+</span>    <span class="skw">wait</span>(<img src="1386704518399.png" />,FOREVER)
+    <span class="kw">if</span> exists(Pattern(<img src="FailedImport-1.png" />).similar(<span class="dig">0.95</span>)):
+        logging.debug(<span class="str">'- import complete - no failed names'</span>)
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">'- import complete - some failed names'</span>)
+
+<span class="cmt"># close tsimport
+</span>    logging.debug(<span class="str">'- close TSImport'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.RIGHT)
+    <span class="skw">type</span>(Key.ENTER)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"x"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Import_ExpenseSlips():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Import_ExpenseSlips'</span>)
+
+<span class="cmt"># start tsimport
+</span>    logging.debug(<span class="str">'- start TSImport'</span>)
+
+    <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.KEY_WIN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Settings.tsimpEXE)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="skw">wait</span>(<img src="1386702753073.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    logging.debug(<span class="str">'- set up slip template'</span>)
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(<span class="str">"c"</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#choose source
+</span>    <span class="skw">wait</span>(<img src="1386702883681.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"g"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Settings.eSlipsFile)
+
+<span class="cmt">#choose fields
+</span>    myTools.pressTAB(<span class="dig">7</span>)
+
+<span class="cmt"># type
+</span>    myTools.pressDOWN(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># timekeeper
+</span>    myTools.pressDOWN(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># client
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># activity
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># reference
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># extra
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># date
+</span>    myTools.pressDOWN(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+
+<span class="cmt"># omit 1st 10 records
+</span>    <span class="skw">click</span>(<img src="1386713105865-1.png" />)
+    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(<span class="str">"12"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt"># import data
+</span>    logging.debug(<span class="str">'- import data'</span>)
+    <span class="skw">type</span>(Key.F9)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.RIGHT)
+    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># verify data
+</span>    <span class="skw">wait</span>(<img src="1386704518399.png" />,FOREVER)
+    <span class="kw">if</span> exists(Pattern(<img src="FailedImport-1.png" />).similar(<span class="dig">0.95</span>)):
+        logging.debug(<span class="str">'- import complete - no failed names'</span>)
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">'- import complete - some failed names'</span>)
+
+<span class="cmt"># close tsimport
+</span>    logging.debug(<span class="str">'- close TSImport'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.RIGHT)
+    <span class="skw">type</span>(Key.ENTER)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"x"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_Slips(tmslips,exslips):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'- Create_Slips'</span>)
 
+    clients = Init_Clients()
+    timekeepers = Init_Timekeepers()
+    tasks = Init_Tasks()
+    expenses = Init_Expenses()
+
+    count = <span class="dig">0</span>
+
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
 
-    <span class="cmt"># start with manually entered client, then load other clients from file
-</span>    clients = [<span class="str">"Agawam"</span>]
-    allClis = csv.DictReader(open(Settings.cliFile))
-
-    <span class="kw">for</span> oneCli <span class="kw">in</span> allClis:
-        clients.append(oneCli[<span class="str">"NN1"</span>])
-    clients.sort()
-
-    <span class="cmt"># start with manually entered timekeeper, then load other tks from file
-</span>    timekeepers = [<span class="str">"TomH"</span>]
-    allTks = csv.DictReader(open(Settings.tkFile))
-
-    <span class="kw">for</span> oneTk <span class="kw">in</span> allTks:
-        timekeepers.append(oneTk[<span class="str">"NN1"</span>])
-    timekeepers.sort()
-
-    <span class="cmt"># start with manually entered task, then load other tasks from file
-</span>    tasks = [<span class="str">"CON001"</span>]
-    allTasks = csv.DictReader(open(Settings.taskFile))
-
-    <span class="kw">for</span> oneTask <span class="kw">in</span> allTasks:
-        tasks.append(oneTask[<span class="str">"nn2"</span>])
-    tasks.sort()
-
-    <span class="cmt"># start with manually entered expense, then load other exps from file
-</span>    expenses = [<span class="str">"E001"</span>]
-    allExps = csv.DictReader(open(Settings.expFile))
-
-    <span class="kw">for</span> oneExp <span class="kw">in</span> allExps:
-        expenses.append(oneExp[<span class="str">"NN2"</span>])
-    expenses.sort()
-
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    count = <span class="dig">0</span>
 
     <span class="kw">for</span> slip <span class="kw">in</span> range(tmslips):
         Create_OneSlip(<span class="str">"t"</span>,timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+<span class="dig">1</span>)
         count += <span class="dig">1</span>
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    Import_TimeSlips()
+    <span class="cmt"># increase count to account for imported slips
+</span>    count += <span class="dig">692</span>
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># for expenses, got to the end of the list and open the slip so we can copy dates.
@@ -195,6 +436,8 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    Import_ExpenseSlips()
 </pre>
 </body>
 </html>
