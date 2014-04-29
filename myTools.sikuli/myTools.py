@@ -54,9 +54,9 @@ def getFocus():
 
 def waitForExportSuccess():
     if int(Settings.tsVersion) > 2014:
-        wait("1387902836993.png", FOREVER)
+        wait("1398732299997.png", FOREVER)
     else:        
-        wait("1387316703616.png", FOREVER)
+        wait("1398732235702.png", FOREVER)
     type(Key.ENTER)
 
 def startTimeStamp():

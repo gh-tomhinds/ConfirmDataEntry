@@ -18,7 +18,7 @@ def Import_Refs():
     time.sleep(2)
 
     wait("1386702753073.png",FOREVER)
-    time.sleep(2)
+    time.sleep(5)
 
     logging.debug('- set up ref template')
     time.sleep(1)
@@ -36,7 +36,7 @@ def Import_Refs():
     type(Key.ENTER)
 
 # choose source
-    wait("1386702883681.png")
+    wait("1386702883681.png",FOREVER)
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)

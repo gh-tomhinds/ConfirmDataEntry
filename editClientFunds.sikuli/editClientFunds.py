@@ -60,8 +60,13 @@ def Edit_ClientFunds():
         type("s",KeyModifier.CTRL)    
         time.sleep(1)
         
-        #next client
-        type(Key.TAB)
+        #go to nn1 field
+        if int(Settings.tsVersion) > 2014:    
+            myTools.pressTAB(1)
+        else:
+            myTools.pressTAB(4)
+            
+        #next client        
         type(Key.PAGE_DOWN)
         time.sleep(1)
 

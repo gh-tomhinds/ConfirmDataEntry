@@ -31,7 +31,7 @@ def Import_Expenses():
     time.sleep(2)
 
     wait("1386702753073.png",FOREVER)
-    time.sleep(2)
+    time.sleep(5)
 
     logging.debug('- set up task template')
     time.sleep(1)
@@ -49,7 +49,7 @@ def Import_Expenses():
     type(Key.ENTER)
 
 # choose source
-    wait("1386702883681.png")
+    wait("1386702883681.png",FOREVER)
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
