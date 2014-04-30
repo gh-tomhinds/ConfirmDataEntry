@@ -75,10 +75,9 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Backup_Data(month):
+</span><span class="kw">def</span> Backup_Data(bkuName):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Backup_Data: '</span> + str(month))
+</span>    logging.debug(<span class="str">'Backup_Data: '</span> + bkuName)
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -94,18 +93,8 @@
     <span class="cmt"># YES button
 </span>    <span class="skw">type</span>(Key.ENTER)
 
-    <span class="cmt"># make month number a string
-</span>    strMonth = str(month)
-
-    <span class="cmt"># if month is under 10, prefix with 0        
-</span>    <span class="kw">if</span> month &lt; <span class="dig">10</span>:
-        strMonth = <span class="str">"0"</span> + strMonth
-
-    <span class="cmt"># name backup file: ex: 2015-bill-03
-</span>    strBackupFile = Settings.tsVersion + <span class="str">"-bill-"</span> + strMonth
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-    <span class="skw">type</span>(strBackupFile)
-    logging.debug(<span class="str">'- backup file:'</span> + strBackupFile)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(bkuName)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># SAVE button
@@ -119,6 +108,24 @@
 
     <span class="cmt"># OK button
 </span>    <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Backup_BillData(billMonth):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Backup_Data: '</span> + str(billMonth))
+
+    <span class="cmt"># make month number a string
+</span>    strMonth = str(billMonth)
+
+    <span class="cmt"># if month is under 10, prefix with 0        
+</span>    <span class="kw">if</span> billMonth &lt; <span class="dig">10</span>:
+        strMonth = <span class="str">"0"</span> + strMonth
+
+    <span class="cmt"># name backup file: ex: 2015-bill-03
+</span>    strBackupFile = Settings.tsVersion + <span class="str">"-bill-"</span> + strMonth
+    Backup_Data(strBackupFile)
 </pre>
 </body>
 </html>

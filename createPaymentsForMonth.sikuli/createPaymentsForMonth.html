@@ -80,7 +80,6 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">'- Create_OnePayment: '</span> + str(month) + <span class="str">"-"</span> + client)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># new payment
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
@@ -110,6 +109,7 @@
     <span class="cmt"># date
 </span>    payDate = str(month) + <span class="str">"/28/2013"</span>
     <span class="skw">type</span>(payDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># skip deposit slip
@@ -127,9 +127,9 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
     <span class="kw">if</span> exists(<img src="1397586037229.png" />):
         <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_PaymentsForMonth(month):

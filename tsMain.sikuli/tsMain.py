@@ -44,8 +44,9 @@ import createSlips
 import reviewBillingArrangements
 import baCommon
 
-import createPayments
+#import createPayments
 import createPaymentsForMonth
+import createPaymentsToAccount
 
 import setupBills
 import importBillLayout
@@ -68,40 +69,40 @@ myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
 #closeTimeslips.Close_Timeslips()
-delDataFolder.Delete_Data_Folder()
-startTSandNewDB.StartTS_CreateNewDB()
-tweakPrefs.Tweak_Prefs()
-createCategories.Create_Categories()
-createCustomFields.Create_CustomFields()
+#delDataFolder.Delete_Data_Folder()
+#startTSandNewDB.StartTS_CreateNewDB()
+#tweakPrefs.Tweak_Prefs()
+#createCategories.Create_Categories()
+#createCustomFields.Create_CustomFields()
 
-editDefaultClient.Edit_DefaultClient()
-createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
-createTask.Create_Task()
-createExpense.Create_Expense()
-importTimekeepers.Import_Timekeepers()
-editTimekeeper.Edit_Timekeeper()
-importClients.Import_Clients()
-editClient.Edit_Client()
-editClientFunds.Edit_ClientFunds()
-importTasks.Import_Tasks()
-editTask.Edit_Task()
-importExpenses.Import_Expenses()
-editExpense.Edit_Expense()
-createRefs.Create_Refs()
-importRefs.Import_Refs()
-setupFeeAlloc.Setup_FeeAlloc()
-setupExpMarkups.Setup_ExpMarkups()
-setupTaxes.Setup_Taxes()
+#editDefaultClient.Edit_DefaultClient()
+#createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
+#createTask.Create_Task()
+#createExpense.Create_Expense()
+#importTimekeepers.Import_Timekeepers()
+#editTimekeeper.Edit_Timekeeper()
+#importClients.Import_Clients()
+#editClient.Edit_Client()
+#editClientFunds.Edit_ClientFunds()
+#importTasks.Import_Tasks()
+#editTask.Edit_Task()
+#importExpenses.Import_Expenses()
+#editExpense.Edit_Expense()
+#createRefs.Create_Refs()
+#importRefs.Import_Refs()
+#setupFeeAlloc.Setup_FeeAlloc()
+#setupExpMarkups.Setup_ExpMarkups()
+#setupTaxes.Setup_Taxes()
 #createSlips.Create_Slips(10,10)
 
 #setupBills.Setup_Bills()
 #importBillLayout.Import_BillLayout()
 
-#for count in range(1,13):
-#    printBills.Print_Bills(count)
-#    createPaymentsForMonth.Create_PaymentsForMonth(count)
-#    createPaymentsToAccount.Create_PaysToAccount(count)
-#    makeBackup.Backup_Data(count)
+for count in range(1,13):
+    printBills.Print_Bills(count)
+    createPaymentsForMonth.Create_PaymentsForMonth(count)
+    createPaymentsToAccount.Create_PaymentsToAccount(count)
+    makeBackup.Backup_BillData(count)
 
 #printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
 #printTkHistory.Print_TkHistory("TkHistory-01.csv")

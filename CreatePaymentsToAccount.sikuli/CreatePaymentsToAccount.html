@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>CreatePaymentsToAccount.sikuli\CreatePaymentsToAccount.sikuli</h2> <a href="CreatePaymentsToAccount.sikuli\CreatePaymentsToAccount.zip">(Download this script)</a>
+<h2>createPaymentsToAccount.sikuli\createPaymentsToAccount.sikuli</h2> <a href="createPaymentsToAccount.sikuli\createPaymentsToAccount.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -80,21 +80,20 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(month) + <span class="str">"-"</span> + client)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># new payment
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># skip type
+    <span class="cmt"># type (skip)
 </span>    <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># skip deposit slip
+    <span class="cmt"># deposit slip (skip)
 </span>    <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># client
-</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(client)
+</span>    <span class="skw">type</span>(client)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># skip account
@@ -117,15 +116,14 @@
 </span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(client + <span class="str">" - "</span> + str(cliNum) + <span class="str">" - "</span> + payDate)
     <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
 
     <span class="kw">if</span> exists(<img src="1398349359000.png" />):
         <span class="skw">type</span>(<span class="str">"n"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Create_PaysToAccount(month):
+</span><span class="kw">def</span> Create_PaymentsToAccount(month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">' '</span>)

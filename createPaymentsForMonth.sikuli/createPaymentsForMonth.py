@@ -8,7 +8,6 @@ def Create_OnePayment(client,cliNum,month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug('- Create_OnePayment: ' + str(month) + "-" + client)
-    time.sleep(1)
 
     # new payment
     type("n",KeyModifier.CTRL)
@@ -38,6 +37,7 @@ def Create_OnePayment(client,cliNum,month):
     # date
     payDate = str(month) + "/28/2013"
     type(payDate)
+    time.sleep(1)
     type(Key.TAB)
         
     # skip deposit slip
@@ -55,9 +55,9 @@ def Create_OnePayment(client,cliNum,month):
     type(Key.ENTER)
     time.sleep(1)
     type("s",KeyModifier.CTRL)
+    
     if exists("1397586037229.png"):
         type(Key.ENTER)
-    time.sleep(1)  
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_PaymentsForMonth(month):

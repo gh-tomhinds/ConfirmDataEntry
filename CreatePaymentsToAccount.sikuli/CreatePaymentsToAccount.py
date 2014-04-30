@@ -8,22 +8,21 @@ def Create_OnePayToAccount(client,cliNum,month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug('- Create_OnePTA: ' + str(month) + "-" + client)
-    time.sleep(1)
 
     # new payment
     type("n",KeyModifier.CTRL)
     time.sleep(1)
        
-    # skip type
+    # type (skip)
     type(Key.TAB)
 
-    # skip deposit slip
+    # deposit slip (skip)
     type(Key.TAB)
 
     # client
-    time.sleep(1)        
     type(client)        
-    type(Key.TAB)
+    time.sleep(1)        
+    type(Key.TAB)    
         
     # skip account
     type(Key.TAB)
@@ -45,15 +44,14 @@ def Create_OnePayToAccount(client,cliNum,month):
     type("a",KeyModifier.CTRL)
     type(client + " - " + str(cliNum) + " - " + payDate)
     type(Key.ENTER)
-    time.sleep(1)
+    time.sleep(.5)
     type("s",KeyModifier.CTRL)
 
     if exists("1398349359000.png"):
         type("n")    
-    time.sleep(1)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Create_PaysToAccount(month):
+def Create_PaymentsToAccount(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')

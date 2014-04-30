@@ -3,10 +3,9 @@ import logging
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Backup_Data(month):
+def Backup_Data(bkuName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('Backup_Data: ' + str(month))
+    logging.debug('Backup_Data: ' + bkuName)
     
     # make sure timeslips has focus
     myTools.getFocus()
@@ -22,18 +21,8 @@ def Backup_Data(month):
     # YES button
     type(Key.ENTER)
 
-    # make month number a string
-    strMonth = str(month)
-    
-    # if month is under 10, prefix with 0        
-    if month < 10:
-        strMonth = "0" + strMonth
-
-    # name backup file: ex: 2015-bill-03
-    strBackupFile = Settings.tsVersion + "-bill-" + strMonth
-    time.sleep(2)
-    type(strBackupFile)
-    logging.debug('- backup file:' + strBackupFile)    
+    time.sleep(1)
+    type(bkuName)
     time.sleep(1)
 
     # SAVE button
@@ -47,3 +36,21 @@ def Backup_Data(month):
     
     # OK button
     type(Key.ENTER)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Backup_BillData(billMonth):
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    logging.debug(' ')
+    logging.debug('Backup_Data: ' + str(billMonth))
+
+    # make month number a string
+    strMonth = str(billMonth)
+    
+    # if month is under 10, prefix with 0        
+    if billMonth < 10:
+        strMonth = "0" + strMonth
+
+    # name backup file: ex: 2015-bill-03
+    strBackupFile = Settings.tsVersion + "-bill-" + strMonth
+    Backup_Data(strBackupFile)
