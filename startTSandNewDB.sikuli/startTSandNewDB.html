@@ -73,6 +73,19 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
+<span class="kw">import</span> shutil
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> delete_dataFolder():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'delete_dataFolder'</span>)
+
+    <span class="kw">if</span> os.path.exists(Settings.dbFolder):
+        logging.debug(<span class="str">"- Delete folder:     %s"</span> % Settings.dbFolder)
+        shutil.rmtree(Settings.dbFolder)
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">"- Missing:           %s"</span> % Settings.dbFolder)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> checkFor_Sample():
@@ -124,6 +137,14 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'StartTS_CreateNewDB'</span>)
+
+    <span class="skw">popup</span>(<span class="str">"make sure Timeslips is closed"</span>)
+
+<span class="cmt"># delete the data folder
+</span>    delete_dataFolder()
+
+<span class="cmt"># show desktop
+</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.KEY_WIN)
 
 <span class="cmt"># start timeslips
 </span>    logging.debug(<span class="str">'- start Timeslips'</span>)

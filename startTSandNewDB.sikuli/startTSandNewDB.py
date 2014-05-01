@@ -1,6 +1,19 @@
 from sikuli import *
 import logging
 import myTools
+import shutil
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+def delete_dataFolder():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+    logging.debug(' ')
+    logging.debug('delete_dataFolder')
+
+    if os.path.exists(Settings.dbFolder):
+        logging.debug("- Delete folder:     %s" % Settings.dbFolder)
+        shutil.rmtree(Settings.dbFolder)
+    else:
+        logging.debug("- Missing:           %s" % Settings.dbFolder)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkFor_Sample():
@@ -52,7 +65,15 @@ def StartTS_CreateNewDB():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     logging.debug(' ')
     logging.debug('StartTS_CreateNewDB')
-    
+
+    popup("make sure Timeslips is closed")
+
+# delete the data folder
+    delete_dataFolder()
+
+# show desktop
+    type("d",KeyModifier.KEY_WIN)
+
 # start timeslips
     logging.debug('- start Timeslips')
 

@@ -67,52 +67,56 @@
    </head>
 <body>
 <div class="info">
-<h2>closeTimeslips.sikuli\closeTimeslips.sikuli</h2> <a href="closeTimeslips.sikuli\closeTimeslips.zip">(Download this script)</a>
+<h2>createImportEditNames.sikuli\createImportEditNames.sikuli</h2> <a href="createImportEditNames.sikuli\createImportEditNames.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
-<span class="kw">import</span> logging
 
+<span class="kw">import</span> editDefaultClient
+
+<span class="kw">import</span> createClient
+<span class="kw">import</span> createTask
+<span class="kw">import</span> createExpense
+
+<span class="kw">import</span> importTimekeepers
+<span class="kw">import</span> editTimekeeper
+
+<span class="kw">import</span> importClients
+<span class="kw">import</span> editClient
+<span class="kw">import</span> editClientFunds
+
+<span class="kw">import</span> importTasks
+<span class="kw">import</span> editTask
+<span class="kw">import</span> importExpenses
+<span class="kw">import</span> editExpense
+
+<span class="kw">import</span> createRefs
+<span class="kw">import</span> importRefs
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Close_Timeslips():
+</span><span class="kw">def</span> CreateImportEdit_Names():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    <span class="skw">popup</span>(<span class="str">"make sure Timeslips is closed"</span>)
+    editDefaultClient.Edit_DefaultClient()
 
-    <span class="cmt">#show desktop
-</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.KEY_WIN)
+    createClient.Create_Client(<span class="str">"ZZZlient"</span>,<span class="str">"Client001"</span>,<span class="str">"9999 - First Client"</span>,<span class="str">"In Ref to"</span>,<span class="str">"Client Notes"</span>)
+    createTask.Create_Task()
+    createExpense.Create_Expense()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Old_Stuff():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
+    importTimekeepers.Import_Timekeepers()
+    editTimekeeper.Edit_Timekeeper()
 
-    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Close_Timeslips'</span>)
+    importClients.Import_Clients()
+    editClient.Edit_Client()
+    editClientFunds.Edit_ClientFunds()
 
-    <span class="cmt">#show desktop
-</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.KEY_WIN)
+    importTasks.Import_Tasks()
+    editTask.Edit_Task()
+    importExpenses.Import_Expenses()
+    editExpense.Edit_Expense()
 
-
-    tsCheck = <span class="dig">0</span>
-    <span class="kw">while</span> App.focus(<span class="str">"Sage Timeslips 201"</span>):
-        tsCheck += <span class="dig">1</span>
-        logging.debug(<span class="str">'- TS was open'</span>)
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-        <span class="cmt">#restore window
-</span>        <span class="skw">type</span>(Key.SPACE,KeyModifier.ALT)
-        <span class="skw">type</span>(<span class="str">"r"</span>)
-        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-
-        <span class="skw">type</span>(<span class="str">"f"</span>,KEY_ALT)
-        <span class="skw">type</span>(<span class="str">"x"</span>)
-        <span class="kw">if</span> exists(<img src="D0youwanttum.png" />):
-            <span class="skw">click</span>(<img src="1351892439140.png" />)
-
-        <span class="kw">if</span> tsCheck == <span class="dig">3</span>:
-            <span class="skw">popup</span>(<span class="str">"can't close timeslips"</span>)
+    createRefs.Create_Refs()
+    importRefs.Import_Refs()
 </pre>
 </body>
 </html>

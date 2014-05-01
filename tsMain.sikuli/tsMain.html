@@ -87,37 +87,22 @@
 
 <span class="cmt"># import my sikuli scripts
 </span><span class="kw">import</span> setupStuff
-<span class="kw">import</span> closeTimeslips
-<span class="kw">import</span> delDataFolder
 <span class="kw">import</span> startTSandNewDB
 <span class="kw">import</span> tweakPrefs
+
+<span class="kw">import</span> createImportEditNames
+
 <span class="kw">import</span> createCategories
 <span class="kw">import</span> createCustomFields
-<span class="kw">import</span> editDefaultClient
-<span class="kw">import</span> createClient
-<span class="kw">import</span> createTask
-<span class="kw">import</span> createExpense
-<span class="kw">import</span> importClients
-<span class="kw">import</span> importTimekeepers
-<span class="kw">import</span> importTasks
-<span class="kw">import</span> importExpenses
-<span class="kw">import</span> editTimekeeper
-<span class="kw">import</span> editTask
-<span class="kw">import</span> editExpense
-<span class="kw">import</span> editClient
-<span class="kw">import</span> editClientFunds
 <span class="kw">import</span> setupFeeAlloc
 <span class="kw">import</span> setupExpMarkups
-<span class="kw">import</span> createRefs
-<span class="kw">import</span> importRefs
 <span class="kw">import</span> setupTaxes
 <span class="kw">import</span> createSlips
 
 <span class="kw">import</span> reviewBillingArrangements
 <span class="kw">import</span> baCommon
 
-<span class="cmt">#import createPayments
-</span><span class="kw">import</span> createPaymentsForMonth
+<span class="kw">import</span> createPaymentsForMonth
 <span class="kw">import</span> createPaymentsToAccount
 
 <span class="kw">import</span> setupBills
@@ -140,29 +125,14 @@ myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
-<span class="cmt">#closeTimeslips.Close_Timeslips()
-</span><span class="cmt">#delDataFolder.Delete_Data_Folder()
-</span><span class="cmt">#startTSandNewDB.StartTS_CreateNewDB()
-</span><span class="cmt">#tweakPrefs.Tweak_Prefs()
-</span><span class="cmt">#createCategories.Create_Categories()
-</span><span class="cmt">#createCustomFields.Create_CustomFields()
-</span>
-<span class="cmt">#editDefaultClient.Edit_DefaultClient()
-</span><span class="cmt">#createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
-</span><span class="cmt">#createTask.Create_Task()
-</span><span class="cmt">#createExpense.Create_Expense()
-</span><span class="cmt">#importTimekeepers.Import_Timekeepers()
-</span><span class="cmt">#editTimekeeper.Edit_Timekeeper()
-</span><span class="cmt">#importClients.Import_Clients()
-</span><span class="cmt">#editClient.Edit_Client()
-</span><span class="cmt">#editClientFunds.Edit_ClientFunds()
-</span><span class="cmt">#importTasks.Import_Tasks()
-</span><span class="cmt">#editTask.Edit_Task()
-</span><span class="cmt">#importExpenses.Import_Expenses()
-</span><span class="cmt">#editExpense.Edit_Expense()
-</span><span class="cmt">#createRefs.Create_Refs()
-</span><span class="cmt">#importRefs.Import_Refs()
-</span><span class="cmt">#setupFeeAlloc.Setup_FeeAlloc()
+startTSandNewDB.StartTS_CreateNewDB()
+tweakPrefs.Tweak_Prefs()
+createCategories.Create_Categories()
+createCustomFields.Create_CustomFields()
+
+createImportEditNames.CreateImportEdit_Names()
+
+<span class="cmt">#setupFeeAlloc.Setup_FeeAlloc()
 </span><span class="cmt">#setupExpMarkups.Setup_ExpMarkups()
 </span><span class="cmt">#setupTaxes.Setup_Taxes()
 </span><span class="cmt">#createSlips.Create_Slips(10,10)
@@ -170,12 +140,12 @@ setupStuff.Setup_Stuff()
 <span class="cmt">#setupBills.Setup_Bills()
 </span><span class="cmt">#importBillLayout.Import_BillLayout()
 </span>
-<span class="kw">for</span> count <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">13</span>):
-    printBills.Print_Bills(count)
-    createPaymentsForMonth.Create_PaymentsForMonth(count)
-    createPaymentsToAccount.Create_PaymentsToAccount(count)
-    makeBackup.Backup_BillData(count)
-
+<span class="cmt">#for count in range(1,13):
+</span><span class="cmt">#    printBills.Print_Bills(count)
+</span><span class="cmt">#    createPaymentsForMonth.Create_PaymentsForMonth(count)
+</span><span class="cmt">#    createPaymentsToAccount.Create_PaymentsToAccount(count)
+</span><span class="cmt">#    makeBackup.Backup_BillData(count)
+</span>
 <span class="cmt">#printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
 </span><span class="cmt">#printTkHistory.Print_TkHistory("TkHistory-01.csv")
 </span>
