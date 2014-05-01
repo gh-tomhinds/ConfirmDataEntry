@@ -21,6 +21,10 @@ import editExpense
 import createRefs
 import importRefs
 
+import setupFeeAlloc
+import setupExpMarkups
+import setupTaxes
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def CreateImportEdit_Names():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -45,3 +49,7 @@ def CreateImportEdit_Names():
     
     createRefs.Create_Refs()
     importRefs.Import_Refs()
+
+    setupFeeAlloc.Setup_FeeAlloc()
+    setupExpMarkups.Setup_ExpMarkups()
+    setupTaxes.Setup_Taxes()

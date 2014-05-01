@@ -67,64 +67,40 @@
    </head>
 <body>
 <div class="info">
-<h2>createImportEditNames.sikuli\createImportEditNames.sikuli</h2> <a href="createImportEditNames.sikuli\createImportEditNames.zip">(Download this script)</a>
+<h2>runMonthlyBillCycle.sikuli\runMonthlyBillCycle.sikuli</h2> <a href="runMonthlyBillCycle.sikuli\runMonthlyBillCycle.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 
-<span class="kw">import</span> editDefaultClient
+<span class="kw">import</span> setupBills
+<span class="kw">import</span> importBillLayout
 
-<span class="kw">import</span> createClient
-<span class="kw">import</span> createTask
-<span class="kw">import</span> createExpense
+<span class="kw">import</span> printBills
+<span class="kw">import</span> createPaymentsForMonth
+<span class="kw">import</span> createPaymentsToAccount
 
-<span class="kw">import</span> importTimekeepers
-<span class="kw">import</span> editTimekeeper
-
-<span class="kw">import</span> importClients
-<span class="kw">import</span> editClient
-<span class="kw">import</span> editClientFunds
-
-<span class="kw">import</span> importTasks
-<span class="kw">import</span> editTask
-<span class="kw">import</span> importExpenses
-<span class="kw">import</span> editExpense
-
-<span class="kw">import</span> createRefs
-<span class="kw">import</span> importRefs
-
-<span class="kw">import</span> setupFeeAlloc
-<span class="kw">import</span> setupExpMarkups
-<span class="kw">import</span> setupTaxes
+<span class="kw">import</span> printARAgedBal
+<span class="kw">import</span> printTkHistory
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> CreateImportEdit_Names():
+</span><span class="kw">def</span> run_MonthlyBillCycle(startMonth,endMonth)
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    editDefaultClient.Edit_DefaultClient()
+    <span class="kw">for</span> thisMonth <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">13</span>):
 
-    createClient.Create_Client(<span class="str">"ZZZlient"</span>,<span class="str">"Client001"</span>,<span class="str">"9999 - First Client"</span>,<span class="str">"In Ref to"</span>,<span class="str">"Client Notes"</span>)
-    createTask.Create_Task()
-    createExpense.Create_Expense()
+        <span class="cmt"># set up the bill report and import the bill layout before the first month
+</span>        <span class="kw">if</span> (thisMonth == <span class="dig">1</span>):
+            setupBills.Setup_Bills()
+            importBillLayout.Import_BillLayout()
 
-    importTimekeepers.Import_Timekeepers()
-    editTimekeeper.Edit_Timekeeper()
+        printBills.Print_Bills(thisMonth)
+        createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
+        createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
+        makeBackup.Backup_BillData(thisMonth)
 
-    importClients.Import_Clients()
-    editClient.Edit_Client()
-    editClientFunds.Edit_ClientFunds()
-
-    importTasks.Import_Tasks()
-    editTask.Edit_Task()
-    importExpenses.Import_Expenses()
-    editExpense.Edit_Expense()
-
-    createRefs.Create_Refs()
-    importRefs.Import_Refs()
-
-    setupFeeAlloc.Setup_FeeAlloc()
-    setupExpMarkups.Setup_ExpMarkups()
-    setupTaxes.Setup_Taxes()
+    <span class="cmt"># after whole bill run is done, compare some reports
+</span>    printARAgedBal.Print_ARAgedBal(<span class="str">"ARAgedBal-02.csv"</span>)
+    printTkHistory.Print_TkHistory(<span class="str">"TkHistory-01.csv"</span>)
 </pre>
 </body>
 </html>

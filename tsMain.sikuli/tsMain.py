@@ -10,10 +10,9 @@
 #
 # - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-import os
+# import my sikuli scripts
 import myTools
 
-# import my sikuli scripts
 import setupStuff
 import startTSandNewDB
 import tweakPrefs
@@ -22,20 +21,14 @@ import createImportEditNames
 
 import createCategories
 import createCustomFields
-import setupFeeAlloc
-import setupExpMarkups
-import setupTaxes
+
 import createSlips
 
 import reviewBillingArrangements
 import baCommon
 
-import createPaymentsForMonth
-import createPaymentsToAccount
+import runMonthlyBillCycle
 
-import setupBills
-import importBillLayout
-import printBills
 import makeBackup
 import setupCalTerms
 import calendarStuff
@@ -43,8 +36,6 @@ import printClients
 import printTasks
 import printExpenses
 import printTimekeepers
-import printARAgedBal
-import printTkHistory
 import compareReports
 
 #import sendEmail
@@ -60,22 +51,11 @@ createCustomFields.Create_CustomFields()
 
 createImportEditNames.CreateImportEdit_Names()
 
-#setupFeeAlloc.Setup_FeeAlloc()
-#setupExpMarkups.Setup_ExpMarkups()
-#setupTaxes.Setup_Taxes()
 #createSlips.Create_Slips(10,10)
+## pass in num of time slips and num expense slips to create manually; should by 10, 10
 
-#setupBills.Setup_Bills()
-#importBillLayout.Import_BillLayout()
-
-#for count in range(1,13):
-#    printBills.Print_Bills(count)
-#    createPaymentsForMonth.Create_PaymentsForMonth(count)
-#    createPaymentsToAccount.Create_PaymentsToAccount(count)
-#    makeBackup.Backup_BillData(count)
-
-#printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
-#printTkHistory.Print_TkHistory("TkHistory-01.csv")
+#runMonthlyBillCycle.run_MonthlyBillCycle(1,13)
+## pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #baCommon.Setup_BADefaultLayout()
 #reviewBillingArrangements.Review_BillingArrangements()
