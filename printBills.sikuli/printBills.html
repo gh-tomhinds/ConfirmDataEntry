@@ -73,29 +73,41 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
+<span class="kw">from</span> datetime <span class="kw">import</span> date
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Set_BillDate(month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">'- change bill date'</span>)
+</span>    logging.debug(<span class="str">'- change bill date: '</span> + str(month) + <span class="str">"/27/2013"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+
+    <span class="cmt"># open revise date
+</span>    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"d"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="kw">if</span> month == <span class="dig">1</span>:
-        <span class="cmt"># get to 2013
-</span>        <span class="skw">type</span>(Key.PAGE_UP,KeyModifier.CTRL)
-        <span class="cmt"># get to 01/01/2013
-</span>        <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
-        <span class="cmt"># move to 01/27/2013
-</span>        myTools.pressDOWN(<span class="dig">4</span>)
-        myTools.pressLEFT(<span class="dig">2</span>)
-    <span class="kw">else</span>:
-        <span class="skw">type</span>(Key.PAGE_DOWN)
+    <span class="cmt"># go to today
+</span>    <span class="skw">type</span>(<span class="str">"t"</span>)
 
+    <span class="cmt">#get to 01/01 of current year
+</span>    <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
+
+    <span class="cmt"># get to 01/01/2013
+</span>    thisYear = date.today().year
+    <span class="kw">for</span> prevYear <span class="kw">in</span> range(<span class="dig">2013</span>,thisYear):
+        <span class="skw">type</span>(Key.PAGE_UP,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get to 01/27/2013
+</span>    myTools.pressDOWN(<span class="dig">4</span>)
+    myTools.pressLEFT(<span class="dig">2</span>)
+
+    <span class="kw">for</span> nextMonth <span class="kw">in</span> range(month-<span class="dig">1</span>):
+        <span class="skw">type</span>(Key.PAGE_DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Print_BillRun(month):

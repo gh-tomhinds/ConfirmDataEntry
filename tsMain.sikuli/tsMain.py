@@ -44,17 +44,18 @@ myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
-startTSandNewDB.StartTS_CreateNewDB()
-tweakPrefs.Tweak_Prefs()
-createCategories.Create_Categories()
-createCustomFields.Create_CustomFields()
+#startTSandNewDB.StartTS_CreateNewDB()
 
-createImportEditNames.CreateImportEdit_Names()
+#tweakPrefs.Tweak_Prefs()
+#createCategories.Create_Categories()
+#createCustomFields.Create_CustomFields()
+
+#createImportEditNames.CreateImportEdit_Names()
 
 #createSlips.Create_Slips(10,10)
 ## pass in num of time slips and num expense slips to create manually; should by 10, 10
 
-#runMonthlyBillCycle.run_MonthlyBillCycle(1,13)
+runMonthlyBillCycle.run_MonthlyBillCycle(1,13)
 ## pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #baCommon.Setup_BADefaultLayout()
