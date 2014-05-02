@@ -157,9 +157,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Print_Bills(month):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Print_Bills'</span>)
+</span>
     myTools.sectionStartTimeStamp()
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Print_Bills: '</span> + str(month))
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()

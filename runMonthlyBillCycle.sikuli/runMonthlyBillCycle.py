@@ -16,7 +16,7 @@ import printTkHistory
 def run_MonthlyBillCycle(startMonth,endMonth):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    for thisMonth in range(1,13):
+    for thisMonth in range(startMonth,endMonth):
 
         # set up the bill report and import the bill layout before the first month
         if (thisMonth == 1):

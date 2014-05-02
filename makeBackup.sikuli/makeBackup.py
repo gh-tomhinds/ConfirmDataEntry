@@ -20,13 +20,16 @@ def Backup_Data(bkuName):
 
     # YES button
     type(Key.ENTER)
-
     time.sleep(1)
+
+    # enter backup name
     type(bkuName)
     time.sleep(1)
 
     # SAVE button
     type(Key.ENTER)
+    time.sleep(1)
+
     
     if exists("1397592513401.png"):
         type(Key.ENTER)

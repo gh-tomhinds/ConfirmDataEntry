@@ -54,13 +54,14 @@ def Create_OnePayToAccount(client,cliNum,month):
 def Create_PaymentsToAccount(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp()
     logging.debug(' ')
     logging.debug('Create_PaysToAccount: ' + str(month))
-    myTools.sectionStartTimeStamp()
 
     # enter PFAs for month 1,4,7,10
     if month in (2,3,5,6,8,9,11,12):
-        logging.debug('- skip payments for: ' + str(month))        
+        logging.debug('- skip payments for: ' + str(month))
+        myTools.sectionEndTimeStamp()
         return
 
     # make sure timeslips has focus

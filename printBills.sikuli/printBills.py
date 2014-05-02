@@ -85,9 +85,10 @@ def Print_BillRun(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Print_Bills(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('Print_Bills')
+
     myTools.sectionStartTimeStamp()
+    logging.debug(' ')
+    logging.debug('Print_Bills: ' + str(month))
     
     # make sure timeslips has focus
     myTools.getFocus()

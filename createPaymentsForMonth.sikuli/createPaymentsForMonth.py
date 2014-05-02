@@ -63,9 +63,9 @@ def Create_OnePayment(client,cliNum,month):
 def Create_PaymentsForMonth(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp()
     logging.debug(' ')
     logging.debug('Create_PaymentsForMonth: ' + str(month))
-    myTools.sectionStartTimeStamp()
 
     # make sure timeslips has focus
     myTools.getFocus()
