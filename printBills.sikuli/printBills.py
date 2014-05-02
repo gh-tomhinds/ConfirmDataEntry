@@ -1,29 +1,41 @@
 from sikuli import *
 import logging
 import myTools
+from datetime import date
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Set_BillDate(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug('- change bill date')
+    logging.debug('- change bill date: ' + str(month) + "/27/2013")
     time.sleep(1)
+    
+    # open revise date
     type("b",KeyModifier.ALT)
     type("d")    
     time.sleep(2)
-    
-    if month == 1:
-        # get to 2013
+
+    # go to today
+    type("t")
+
+    #get to 01/01 of current year
+    type(Key.HOME,KeyModifier.CTRL)        
+
+    # get to 01/01/2013
+    thisYear = date.today().year
+    for prevYear in range(2013,thisYear):
         type(Key.PAGE_UP,KeyModifier.CTRL)        
-        # get to 01/01/2013
-        type(Key.HOME,KeyModifier.CTRL)        
-        # move to 01/27/2013
-        myTools.pressDOWN(4)
-        myTools.pressLEFT(2)        
-    else:
-        type(Key.PAGE_DOWN)
-       
     time.sleep(1)
+
+    # get to 01/27/2013
+    myTools.pressDOWN(4)
+    myTools.pressLEFT(2)        
+
+    for nextMonth in range(month-1):
+        type(Key.PAGE_DOWN)       
+    time.sleep(1)
+    
     type(Key.ENTER)
+    time.sleep(1)  
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Print_BillRun(month):
