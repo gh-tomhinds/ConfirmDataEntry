@@ -110,6 +110,17 @@
 </span>    <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> Backup_Checkpoint(checkpointName):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Backup_Data: '</span> + checkpointName)
+
+    <span class="cmt"># name backup file: ex: 2015-slips
+</span>    strBackupFile = Settings.tsVersion + <span class="str">"-"</span> + checkpointName
+    Backup_Data(strBackupFile)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Backup_BillData(billMonth):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>

@@ -38,6 +38,17 @@ def Backup_Data(bkuName):
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def Backup_Checkpoint(checkpointName):
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    logging.debug(' ')
+    logging.debug('Backup_Data: ' + checkpointName)
+
+    # name backup file: ex: 2015-slips
+    strBackupFile = Settings.tsVersion + "-" + checkpointName
+    Backup_Data(strBackupFile)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Backup_BillData(billMonth):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 

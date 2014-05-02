@@ -25,6 +25,8 @@ import setupFeeAlloc
 import setupExpMarkups
 import setupTaxes
 
+import makeBackup
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def CreateImportEdit_Names():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -53,3 +55,5 @@ def CreateImportEdit_Names():
     setupFeeAlloc.Setup_FeeAlloc()
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
+
+    makeBackup.Backup_Checkpoint("slips")

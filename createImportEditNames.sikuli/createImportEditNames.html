@@ -97,6 +97,8 @@
 <span class="kw">import</span> setupExpMarkups
 <span class="kw">import</span> setupTaxes
 
+<span class="kw">import</span> makeBackup
+
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> CreateImportEdit_Names():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -125,6 +127,8 @@
     setupFeeAlloc.Setup_FeeAlloc()
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
+
+    makeBackup.Backup_Checkpoint(<span class="str">"slips"</span>)
 </pre>
 </body>
 </html>

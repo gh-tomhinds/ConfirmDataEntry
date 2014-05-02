@@ -82,4 +82,4 @@ def Print_Bills(month):
 
     Set_BillDate(month)
     Print_BillRun(month)
-    myTools.sectionStartTimeStamp()
+    myTools.sectionEndTimeStamp()
