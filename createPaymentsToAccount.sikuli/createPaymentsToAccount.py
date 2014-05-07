@@ -54,7 +54,7 @@ def Create_OnePayToAccount(client,cliNum,month):
 def Create_PaymentsToAccount(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp()
+    myTools.sectionStartTimeStamp("paystoaccount" + str(month))
     logging.debug(' ')
     logging.debug('Create_PaysToAccount: ' + str(month))
 

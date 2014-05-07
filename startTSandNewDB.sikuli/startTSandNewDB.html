@@ -135,7 +135,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> StartTS_CreateNewDB():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"new db"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'StartTS_CreateNewDB'</span>)
 
     <span class="skw">popup</span>(<span class="str">"make sure Timeslips is closed"</span>)
@@ -267,6 +270,8 @@
 
 <span class="cmt"># PEP
 </span>    checkFor_PEP()
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

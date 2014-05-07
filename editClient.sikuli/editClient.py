@@ -251,6 +251,7 @@ def Edit_InterestSetting():
 def Edit_Client():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("edit client")
     logging.debug(' ')
     logging.debug('Edit_Client')
 
@@ -272,3 +273,5 @@ def Edit_Client():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

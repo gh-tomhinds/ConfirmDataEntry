@@ -5,6 +5,9 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Tweak_Prefs():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("preferences")
+
     logging.debug(' ')
     logging.debug('Tweak_Prefs')
 
@@ -72,3 +75,5 @@ def Tweak_Prefs():
     # close  
     time.sleep(1)   
     type(Key.ENTER)
+
+    myTools.sectionEndTimeStamp()

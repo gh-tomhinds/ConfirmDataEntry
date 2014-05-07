@@ -6,6 +6,8 @@ import myTools
 def Create_Categories():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("categories")
+
     logging.debug(' ')
     logging.debug('Create_Categories')
 
@@ -31,3 +33,5 @@ def Create_Categories():
     logging.debug('- close list')
     myTools.pressTAB(4)
     type(Key.ENTER)    
+
+    myTools.sectionEndTimeStamp()

@@ -5,6 +5,9 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Expense():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("create expense")
+
     logging.debug(' ')
     logging.debug('Create_Expense')
 
@@ -85,3 +88,5 @@ def Create_Expense():
     type(Key.F4,KeyModifier.CTRL)  
     time.sleep(1)    
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

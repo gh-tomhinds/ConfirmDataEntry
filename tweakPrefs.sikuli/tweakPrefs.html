@@ -77,7 +77,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Tweak_Prefs():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"preferences"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Tweak_Prefs'</span>)
 
     <span class="cmt"># make sure timeslips has focus
@@ -144,6 +147,8 @@
     <span class="cmt"># close  
 </span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

@@ -63,6 +63,9 @@ def checkFor_BillingDate():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def StartTS_CreateNewDB():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("new db")
+
     logging.debug(' ')
     logging.debug('StartTS_CreateNewDB')
 
@@ -195,3 +198,5 @@ def StartTS_CreateNewDB():
 
 # PEP
     checkFor_PEP()
+
+    myTools.sectionEndTimeStamp()

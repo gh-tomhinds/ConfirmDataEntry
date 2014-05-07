@@ -57,3 +57,8 @@ def Setup_Stuff():
     # delete BA Log File
     # os.remove(Settings.BALogFile)    
 
+    # set up duration log and add version to it
+    Settings.durationFile = Settings.sikFolder + "\\Durations.txt" 
+    durationLog = open(Settings.durationFile, "a")
+    durationLog.write(str(Settings.tsVersion) + "\n")
+    durationLog.close()   

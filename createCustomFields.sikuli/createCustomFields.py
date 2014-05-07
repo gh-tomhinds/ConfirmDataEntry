@@ -72,6 +72,8 @@ def FillActList():
 def Create_CustomFields():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("custom fields")
+
     logging.debug(' ')
     logging.debug('Create_CustomFields')
 
@@ -112,3 +114,5 @@ def Create_CustomFields():
     
     type(Key.ENTER)
     time.sleep(10)
+
+    myTools.sectionEndTimeStamp()

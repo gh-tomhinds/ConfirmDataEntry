@@ -5,6 +5,9 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("create client")
+
     logging.debug(' ')
     logging.debug('Create_Client: ' + nn1)
 
@@ -113,3 +116,5 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
 
     # close client list
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

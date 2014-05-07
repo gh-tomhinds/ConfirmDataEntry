@@ -1,6 +1,6 @@
 from sikuli import *
 
-import editDefaultClient
+#import editDefaultClient
 
 import createClient
 import createTask
@@ -31,7 +31,7 @@ import makeBackup
 def CreateImportEdit_Names():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
  
-    editDefaultClient.Edit_DefaultClient()
+#    editDefaultClient.Edit_DefaultClient()
     
     createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
     createTask.Create_Task()

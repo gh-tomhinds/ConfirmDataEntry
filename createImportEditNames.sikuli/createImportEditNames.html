@@ -72,8 +72,8 @@
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 
-<span class="kw">import</span> editDefaultClient
-
+<span class="cmt">#import editDefaultClient
+</span>
 <span class="kw">import</span> createClient
 <span class="kw">import</span> createTask
 <span class="kw">import</span> createExpense
@@ -103,8 +103,8 @@
 </span><span class="kw">def</span> CreateImportEdit_Names():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    editDefaultClient.Edit_DefaultClient()
-
+<span class="cmt">#    editDefaultClient.Edit_DefaultClient()
+</span>
     createClient.Create_Client(<span class="str">"ZZZlient"</span>,<span class="str">"Client001"</span>,<span class="str">"9999 - First Client"</span>,<span class="str">"In Ref to"</span>,<span class="str">"Client Notes"</span>)
     createTask.Create_Task()
     createExpense.Create_Expense()

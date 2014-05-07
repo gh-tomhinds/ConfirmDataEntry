@@ -77,7 +77,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_Client(nn1,nn2,fullname,inrefto,clinotes):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"create client"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Create_Client: '</span> + nn1)
 
     <span class="cmt"># make sure timeslips has focus
@@ -185,6 +188,8 @@
 
     <span class="cmt"># close client list
 </span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

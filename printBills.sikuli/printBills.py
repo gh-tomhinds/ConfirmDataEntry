@@ -86,7 +86,7 @@ def Print_BillRun(month):
 def Print_Bills(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp()
+    myTools.sectionStartTimeStamp("bills" + str(month))
     logging.debug(' ')
     logging.debug('Print_Bills: ' + str(month))
     

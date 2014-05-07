@@ -5,6 +5,9 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Task():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("create task")
+
     logging.debug(' ')
     logging.debug('Create_Task')
 
@@ -89,3 +92,5 @@ def Create_Task():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)    
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

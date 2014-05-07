@@ -63,7 +63,7 @@ def Create_OnePayment(client,cliNum,month):
 def Create_PaymentsForMonth(month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp()
+    myTools.sectionStartTimeStamp("payments" + str(month))
     logging.debug(' ')
     logging.debug('Create_PaymentsForMonth: ' + str(month))
 
