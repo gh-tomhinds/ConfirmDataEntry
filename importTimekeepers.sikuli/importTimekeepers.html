@@ -88,11 +88,13 @@
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">type</span>(Key.TAB,KeyModifier.SHIFT)
 
-
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Import_Timekeepers():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"import timekeepers"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_Timekeepers'</span>)
 
 <span class="cmt"># start tsimport
@@ -197,6 +199,8 @@
     <span class="skw">type</span>(<span class="str">"x"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

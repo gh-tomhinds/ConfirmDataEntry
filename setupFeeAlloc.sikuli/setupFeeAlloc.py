@@ -103,6 +103,9 @@ def Export_Timekeepers():
 def Setup_FeeAlloc():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("setup fee alloc")
+
+    logging.debug(' ')
     logging.debug('Set Up Fee Allocation')
 
     # make sure timeslips has focus
@@ -110,3 +113,5 @@ def Setup_FeeAlloc():
 
     Setup_CustomFields()
     Export_Timekeepers()
+    
+    myTools.sectionEndTimeStamp()

@@ -5,6 +5,9 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Refs():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("import refs")
+
     logging.debug(' ')
     logging.debug('Import_Refs')
 
@@ -88,4 +91,6 @@ def Import_Refs():
     type("f",KeyModifier.ALT)
     type("x")
     time.sleep(1)
-    type("n")        
+    type("n")
+
+    myTools.sectionEndTimeStamp()    

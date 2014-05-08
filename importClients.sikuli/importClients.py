@@ -19,6 +19,9 @@ def Add_CustomField(name, downArrow):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Clients():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("import clients")
+
     logging.debug(' ')
     logging.debug('Import_Clients')
     
@@ -219,3 +222,5 @@ def Import_Clients():
     type("x")
     time.sleep(1)
     type("n")        
+
+    myTools.sectionEndTimeStamp()

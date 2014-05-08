@@ -78,6 +78,8 @@
 </span><span class="kw">def</span> Edit_ClientFunds():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"edit client funds"</span>)
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Edit_ClientFunds'</span>)
 
@@ -146,6 +148,8 @@
 </span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

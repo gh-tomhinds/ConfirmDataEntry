@@ -6,59 +6,53 @@ import shutil
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def delete_dataFolder():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('delete_dataFolder')
+    logging.debug('- delete_dataFolder')
 
     if os.path.exists(Settings.dbFolder):
-        logging.debug("- Delete folder:     %s" % Settings.dbFolder)
+        logging.debug("-- Delete folder:     %s" % Settings.dbFolder)
         shutil.rmtree(Settings.dbFolder)
     else:
-        logging.debug("- Missing:           %s" % Settings.dbFolder)
+        logging.debug("-- Missing:           %s" % Settings.dbFolder)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkFor_Sample():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('checkFor_Sample')
+    logging.debug('- checkFor_Sample')
 
     time.sleep(1)     
     if exists("Youarepresen.png"):
-        logging.debug('- Sample message exists')
+        logging.debug('-- Sample message exists')
         type(Key.ENTER)        
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkFor_PEP():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('checkFor_PEP')
+    logging.debug('- checkFor_PEP')
 
     time.sleep(1)     
     if exists("ProductEnhan.png"):
-        logging.debug('- PEP message exists')
+        logging.debug('-- PEP message exists')
         type(Key.ENTER)        
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkFor_SPS():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('checkFor_SPS')
+    logging.debug('- checkFor_SPS')
 
     time.sleep(1)     
     if exists("SagePavment.png"):
-        logging.debug('- SPS message exists')
+        logging.debug('-- SPS message exists')
         type(Key.ENTER)        
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkFor_BillingDate():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('checkFor_BillingDate')
+    logging.debug('- checkFor_BillingDate')
 
     time.sleep(1)     
     if exists("1386630096436.png"):
-        logging.debug('- billing date message exists')
+        logging.debug('-- billing date message exists')
         type(Key.ENTER)
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def StartTS_CreateNewDB():
@@ -83,22 +77,22 @@ def StartTS_CreateNewDB():
     App.open(Settings.tsEXE)   
     time.sleep(3)
     
-    logging.debug('- wait until TS is open')
+    logging.debug('-- wait until TS is open')
 
     wait("1387825071114.png")
 
     checkFor_PEP()
 
 # start the new db process
-    logging.debug('Check for database')
+    logging.debug('- Check for database')
 
     if exists("DatabaseNotF.png"):
-        logging.debug('- db not found')
+        logging.debug('-- db not found')
         type(Key.ENTER)
         time.sleep(2)
         type("n")
     else:
-        logging.debug('- db found')
+        logging.debug('-- db found')
         if exists("1386630258779.png"):
             type(Key.ENTER)        
             time.sleep(1)
@@ -190,13 +184,8 @@ def StartTS_CreateNewDB():
         time.sleep(1)
         type("n")
 
-# date
     checkFor_BillingDate()
-
-# SPS
     checkFor_SPS()
-
-# PEP
     checkFor_PEP()
 
     myTools.sectionEndTimeStamp()

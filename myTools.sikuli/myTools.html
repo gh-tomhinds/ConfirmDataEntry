@@ -191,16 +191,20 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    Settings.sectionEndTime = datetime.datetime.now()
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'= = = = = = = = = = = = = = = = = = = ='</span>)
     logging.debug(Settings.sectionEndTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'= = = = = = = = = = = = = = = = = = = ='</span>)
 
     sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime
-    logging.debug(<span class="str">"Elapsed:    %s"</span> %sectionElapsedTime)
+
+    totalMinutes = sectionElapsedTime.seconds / float(<span class="dig">60</span>)
+    totalMinutes = int(totalMinutes * <span class="dig">100</span>) / <span class="dig">100.0</span>
+
+    logging.debug(<span class="str">"Elapsed:    %s"</span> %totalMinutes)
 
     durationLog = open(Settings.durationFile, <span class="str">"a"</span>)
 
-    durationLog.write(Settings.sectionName + <span class="str">","</span> + str(sectionElapsedTime) + <span class="str">"\n"</span>)
+    durationLog.write(Settings.sectionName + <span class="str">","</span> + str(totalMinutes) + <span class="str">"\n"</span>)
     durationLog.close()
 </pre>
 </body>

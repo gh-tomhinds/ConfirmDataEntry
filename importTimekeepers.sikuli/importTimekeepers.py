@@ -16,10 +16,12 @@ def Add_TkCustomField(name, downArrow):
     type(Key.ENTER)
     type(Key.TAB,KeyModifier.SHIFT)
 
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Timekeepers():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("import timekeepers")
+
     logging.debug(' ')
     logging.debug('Import_Timekeepers')
 
@@ -125,3 +127,5 @@ def Import_Timekeepers():
     type("x")
     time.sleep(1)
     type("n")        
+
+    myTools.sectionEndTimeStamp()

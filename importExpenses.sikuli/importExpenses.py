@@ -19,6 +19,9 @@ def Add_ExpCustomField(name, downArrow):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Expenses():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("import expenses")
+
     logging.debug(' ')
     logging.debug('Import_Expenses')
 
@@ -138,4 +141,6 @@ def Import_Expenses():
     type("f",KeyModifier.ALT)
     type("x")
     time.sleep(1)
-    type("n")        
+    type("n")
+    
+    myTools.sectionEndTimeStamp()

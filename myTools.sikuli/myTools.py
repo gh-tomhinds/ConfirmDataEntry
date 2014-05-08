@@ -119,14 +119,18 @@ def sectionEndTimeStamp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     Settings.sectionEndTime = datetime.datetime.now()
     logging.debug(' ')
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('= = = = = = = = = = = = = = = = = = = =')
     logging.debug(Settings.sectionEndTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('= = = = = = = = = = = = = = = = = = = =')
 
-    sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime    
-    logging.debug("Elapsed:    %s" %sectionElapsedTime)
+    sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime
+
+    totalMinutes = sectionElapsedTime.seconds / float(60)
+    totalMinutes = int(totalMinutes * 100) / 100.0
+    
+    logging.debug("Elapsed:    %s" %totalMinutes)
 
     durationLog = open(Settings.durationFile, "a")
 
-    durationLog.write(Settings.sectionName + "," + str(sectionElapsedTime) + "\n")
+    durationLog.write(Settings.sectionName + "," + str(totalMinutes) + "\n")
     durationLog.close()

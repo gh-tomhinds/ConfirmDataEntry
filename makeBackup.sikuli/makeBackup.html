@@ -77,7 +77,9 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Backup_Data(bkuName):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">'Backup_Data: '</span> + bkuName)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"make backup "</span> + bkuName)
+    logging.debug(<span class="str">'Backup_Data: '</span> + bkuName)
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -111,6 +113,8 @@
 
     <span class="cmt"># OK button
 </span>    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Backup_Checkpoint(checkpointName):

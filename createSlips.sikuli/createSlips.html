@@ -74,6 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> csv
 <span class="kw">import</span> myTools
+<span class="kw">import</span> makeBackup
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Init_Clients():
@@ -191,6 +192,7 @@
 </span><span class="kw">def</span> Import_TimeSlips():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"import time slips"</span>)
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_TimeSlips'</span>)
 
@@ -287,10 +289,13 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
 
+    myTools.sectionEndTimeStamp()
+
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Import_ExpenseSlips():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"import expense slips"</span>)
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_ExpenseSlips'</span>)
 
@@ -387,22 +392,24 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
 
+    myTools.sectionEndTimeStamp()
+
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_Slips(tmslips,exslips):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'- Create_Slips'</span>)
 
+    myTools.sectionStartTimeStamp(<span class="str">"init slips"</span>)
     clients = Init_Clients()
     timekeepers = Init_Timekeepers()
     tasks = Init_Tasks()
     expenses = Init_Expenses()
-
     count = <span class="dig">0</span>
+    myTools.sectionEndTimeStamp()
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
-
+    myTools.sectionStartTimeStamp(<span class="str">"create time slips"</span>)
+    myTools.getFocus()
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -411,15 +418,16 @@
         count += <span class="dig">1</span>
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
 
     Import_TimeSlips()
+
+    myTools.sectionStartTimeStamp(<span class="str">"create time slips"</span>)
     <span class="cmt"># increase count to account for imported slips
 </span>    count += <span class="dig">692</span>
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
+    myTools.getFocus()
 
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -436,8 +444,11 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
 
     Import_ExpenseSlips()
+
+    makeBackup.Backup_Checkpoint(<span class="str">"slips"</span>)
 </pre>
 </body>
 </html>

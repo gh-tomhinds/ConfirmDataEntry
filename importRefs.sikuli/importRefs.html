@@ -77,7 +77,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Import_Refs():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"import refs"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_Refs'</span>)
 
 <span class="cmt"># start tsimport
@@ -161,6 +164,8 @@
     <span class="skw">type</span>(<span class="str">"x"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

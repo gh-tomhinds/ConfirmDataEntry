@@ -90,6 +90,9 @@ def Edit_TkCustom():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Edit_Timekeeper():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("edit timekeeper")
+
     logging.debug(' ')
     logging.debug('Edit_Timekeeper')
 
@@ -106,3 +109,4 @@ def Edit_Timekeeper():
     time.sleep(1)       
     type(Key.F4,KeyModifier.CTRL)
 
+    myTools.sectionEndTimeStamp()

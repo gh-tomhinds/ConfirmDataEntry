@@ -130,9 +130,9 @@
 </span>    <span class="cmt"># os.remove(Settings.BALogFile)    
 </span>
     <span class="cmt"># set up duration log and add version to it
-</span>    Settings.durationFile = Settings.sikFolder + <span class="str">"\\Durations.txt"</span>
+</span>    Settings.durationFile = Settings.sikFolder + <span class="str">"\\Durations-"</span> + Settings.tsVersion + <span class="str">".csv"</span>
     durationLog = open(Settings.durationFile, <span class="str">"a"</span>)
-    durationLog.write(str(Settings.tsVersion) + <span class="str">"\n"</span>)
+    durationLog.write(<span class="str">" ,"</span> + str(Settings.tsVersion) + <span class="str">"\n"</span>)
     durationLog.close()
 </pre>
 </body>

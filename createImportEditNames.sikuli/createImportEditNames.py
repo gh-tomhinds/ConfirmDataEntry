@@ -56,4 +56,4 @@ def CreateImportEdit_Names():
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
 
-    makeBackup.Backup_Checkpoint("slips")
+    makeBackup.Backup_Checkpoint("names")

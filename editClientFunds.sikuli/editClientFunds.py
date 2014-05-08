@@ -6,6 +6,8 @@ import myTools
 def Edit_ClientFunds():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("edit client funds")
+
     logging.debug(' ')
     logging.debug('Edit_ClientFunds')
 
@@ -74,3 +76,5 @@ def Edit_ClientFunds():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

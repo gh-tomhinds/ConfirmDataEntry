@@ -86,6 +86,9 @@ def Edit_TaskCustom():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Edit_Task():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("edit task")
+
     logging.debug(' ')
     logging.debug('Edit_Task')
 
@@ -101,3 +104,5 @@ def Edit_Task():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)    
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

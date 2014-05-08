@@ -234,7 +234,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Setup_Taxes():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"setup taxes"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Setup_Taxes'</span>)
 
     <span class="cmt"># make sure timeslips has focus
@@ -245,6 +248,8 @@
     Change_ClientSettings()
     Change_TaskSettings()
     Change_ExpenseSettings()
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

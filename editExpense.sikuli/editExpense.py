@@ -99,6 +99,9 @@ def Edit_ExpenseCustom():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Edit_Expense():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("edit expense")
+
     logging.debug(' ')
     logging.debug('Edit_Expense')
 
@@ -113,3 +116,5 @@ def Edit_Expense():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)    
     type(Key.F4,KeyModifier.CTRL)
+    
+    myTools.sectionEndTimeStamp()

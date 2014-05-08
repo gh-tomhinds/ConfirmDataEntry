@@ -162,6 +162,9 @@ def Change_ExpenseSettings():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Setup_Taxes():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("setup taxes")
+
     logging.debug(' ')
     logging.debug('Setup_Taxes')
     
@@ -173,3 +176,5 @@ def Setup_Taxes():
     Change_ClientSettings()
     Change_TaskSettings()
     Change_ExpenseSettings()
+
+    myTools.sectionEndTimeStamp()

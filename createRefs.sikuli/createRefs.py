@@ -6,6 +6,9 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Refs():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("create refs")
+
     logging.debug(' ')
     logging.debug('Create_Refs')
 
@@ -71,3 +74,5 @@ def Create_Refs():
         time.sleep(1)
 
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

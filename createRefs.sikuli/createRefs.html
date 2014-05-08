@@ -78,7 +78,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_Refs():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"create refs"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Create_Refs'</span>)
 
     <span class="cmt"># make sure timeslips has focus
@@ -143,6 +146,8 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

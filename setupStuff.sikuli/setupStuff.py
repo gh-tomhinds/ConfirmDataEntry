@@ -58,7 +58,7 @@ def Setup_Stuff():
     # os.remove(Settings.BALogFile)    
 
     # set up duration log and add version to it
-    Settings.durationFile = Settings.sikFolder + "\\Durations.txt" 
+    Settings.durationFile = Settings.sikFolder + "\\Durations-" + Settings.tsVersion + ".csv" 
     durationLog = open(Settings.durationFile, "a")
-    durationLog.write(str(Settings.tsVersion) + "\n")
+    durationLog.write(" ," + str(Settings.tsVersion) + "\n")
     durationLog.close()   

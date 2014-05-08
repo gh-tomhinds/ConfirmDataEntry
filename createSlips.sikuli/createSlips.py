@@ -2,6 +2,7 @@ from sikuli import *
 import logging
 import csv
 import myTools
+import makeBackup
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Init_Clients():
@@ -119,6 +120,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
 def Import_TimeSlips():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("import time slips")
     logging.debug(' ')
     logging.debug('Import_TimeSlips')
     
@@ -213,12 +215,15 @@ def Import_TimeSlips():
     type("f",KeyModifier.ALT)
     type("x")
     time.sleep(1)
-    type("n")        
-
+    type("n")
+    
+    myTools.sectionEndTimeStamp()
+    
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_ExpenseSlips():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("import expense slips")
     logging.debug(' ')
     logging.debug('Import_ExpenseSlips')
     
@@ -314,6 +319,8 @@ def Import_ExpenseSlips():
     type("x")
     time.sleep(1)
     type("n")        
+    
+    myTools.sectionEndTimeStamp()    
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_Slips(tmslips,exslips):
@@ -321,16 +328,16 @@ def Create_Slips(tmslips,exslips):
     logging.debug(' ')
     logging.debug('- Create_Slips')
 
+    myTools.sectionStartTimeStamp("init slips")
     clients = Init_Clients()
     timekeepers = Init_Timekeepers()
     tasks = Init_Tasks()
     expenses = Init_Expenses()
-
     count = 0
+    myTools.sectionEndTimeStamp()
 
-    # make sure timeslips has focus
+    myTools.sectionStartTimeStamp("create time slips")
     myTools.getFocus()
-
     type("m",KeyModifier.CTRL)
     time.sleep(1)
 
@@ -339,14 +346,15 @@ def Create_Slips(tmslips,exslips):
         count += 1
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
-
     type(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
 
     Import_TimeSlips()
+
+    myTools.sectionStartTimeStamp("create time slips")
     # increase count to account for imported slips
     count += 692
 
-    # make sure timeslips has focus
     myTools.getFocus()
 
     type("m",KeyModifier.CTRL)
@@ -364,7 +372,8 @@ def Create_Slips(tmslips,exslips):
     time.sleep(1)
 
     type(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
 
     Import_ExpenseSlips()
 
-    
+    makeBackup.Backup_Checkpoint("slips")    

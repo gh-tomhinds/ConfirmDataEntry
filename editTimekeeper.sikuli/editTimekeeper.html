@@ -162,7 +162,10 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Edit_Timekeeper():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"edit timekeeper"</span>)
+
+    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Edit_Timekeeper'</span>)
 
 <span class="cmt"># make sure timeslips has focus
@@ -177,6 +180,8 @@
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

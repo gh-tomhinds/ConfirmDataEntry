@@ -5,6 +5,8 @@ import myTools
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Backup_Data(bkuName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("make backup " + bkuName)
     logging.debug('Backup_Data: ' + bkuName)
     
     # make sure timeslips has focus
@@ -39,6 +41,8 @@ def Backup_Data(bkuName):
     
     # OK button
     type(Key.ENTER)
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Backup_Checkpoint(checkpointName):

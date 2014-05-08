@@ -19,6 +19,9 @@ def Add_TaskCustomField(name, downArrow):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Import_Tasks():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("import tasks")
+
     logging.debug(' ')
     logging.debug('Import_Tasks')
 
@@ -140,4 +143,6 @@ def Import_Tasks():
     type("f",KeyModifier.ALT)
     type("x")
     time.sleep(1)
-    type("n")        
+    type("n")
+
+    myTools.sectionEndTimeStamp()
