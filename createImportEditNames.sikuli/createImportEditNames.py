@@ -56,4 +56,6 @@ def CreateImportEdit_Names():
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
 
+    printClients.Print_Clients("Clients-01.csv")
+
     makeBackup.Backup_Checkpoint("names")

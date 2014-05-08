@@ -1,50 +1,62 @@
 from sikuli import *
 import logging
+import myTools
+import compareOneReport
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Print_Clients():
+def Print_Clients(reportName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
- 
+
     logging.debug(' ')
-    logging.debug('Print_Clients')
+    logging.debug('Print_Clients: ' + reportName)
 
+    # make sure timeslips has focus
+    myTools.getFocus()
+    
     logging.debug('- open report list')
-    click("Beports.png")
-    type("c")
-
+    type("r",KeyModifier.ALT)
+    type("c")    
+    time.sleep(1)
+    
     logging.debug('- set up client info listing')
-    doubleClick("ClientInfoLi.png")
-    click("MZElpticns.png")
-    click("1352843528241.png")
-    click("Showclient.png")
+    type("client info")    
     time.sleep(1)
-    click("5howreferenc.png")
-    type(Key.ENTER)
+    type("o",KeyModifier.CTRL)
+    time.sleep(1)
 
-# choose CSV
-    type(Key.TAB)
-    type(Key.TAB)
-    type(Key.F4)
+    # Options
+    myTools.pressSHIFTTAB(4)
+    type(Key.SPACE)
     time.sleep(1)
+
+    # Default
+    myTools.pressSHIFTTAB(4)
+    type(Key.SPACE)
+    time.sleep(1)
+
+    # OK
+    myTools.pressTAB(1)
+    type(Key.SPACE)
+    time.sleep(1)
+
+    # choose CSV
+    myTools.pressTAB(2)
     type("c")    
     type(Key.ENTER)
-
-    logging.debug('- print')
-    click("1352843841109.png")
     time.sleep(1)
 
-    if Settings.tsVersion == "2014":
-        type(Settings.repFolder + "\\NewReports\\clientlist.csv")
-    else:
-        type(Settings.repFolder + "\\OldReports\\clientlist.csv")        
-
+    # fill in path and name; press ENTER
+    type(Settings.repFolder + "\\" + reportName)
     time.sleep(1)
-    click("7.png")
-    type(Key.ENTER)
-    if exists("Confirm.png"):
-        type(Key.ENTER)
-    time.sleep(3)        
-    type(Key.F4,KEY_CTRL)
-    time.sleep(1)            
-    type("n")
-    type(Key.F4,KEY_CTRL)    
+    type(Key.ENTER)    
+
+    if exists("1372861767712.png"):
+        type(Key.ENTER)  
+        
+    time.sleep(5)
+
+    # compare the report with baseline
+    compareOneReport.Compare_OneReport(reportName)
+
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
