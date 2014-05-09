@@ -27,6 +27,9 @@ import setupTaxes
 
 import makeBackup
 
+import printTimekeepers
+import printClients
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def CreateImportEdit_Names():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -56,6 +59,7 @@ def CreateImportEdit_Names():
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
 
+    printTimekeepers.Print_Timekeepers("Timekeepers-01.csv")
     printClients.Print_Clients("Clients-01.csv")
 
     makeBackup.Backup_Checkpoint("names")

@@ -105,8 +105,8 @@
 </span>
     <span class="kw">for</span> oneClient <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">351</span>):
 
-        <span class="cmt"># log every 50 clients
-</span>        <span class="kw">if</span> oneClient <span class="kw">in</span> (<span class="dig">50</span>,<span class="dig">100</span>,<span class="dig">150</span>,<span class="dig">200</span>,<span class="dig">250</span>,<span class="dig">300</span>,<span class="dig">350</span>):
+        <span class="cmt"># log every 35 clients
+</span>        <span class="kw">if</span> oneClient <span class="kw">in</span> (<span class="dig">35</span>,<span class="dig">70</span>,<span class="dig">105</span>,<span class="dig">140</span>,<span class="dig">175</span>,<span class="dig">210</span>,<span class="dig">245</span>,<span class="dig">280</span>,<span class="dig">315</span>,<span class="dig">350</span>):
             logging.debug(<span class="str">'-- client: '</span> + str(oneClient+<span class="dig">1</span>))
 
         <span class="cmt"># list
@@ -116,13 +116,14 @@
 
         <span class="cmt">#open funds
 </span>        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
 
         <span class="cmt"># enter 25 for "balance falls below" and "replenishment"    
 </span>        <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
             myTools.pressTAB(<span class="dig">3</span>)
         <span class="kw">else</span>:
             myTools.pressTAB(<span class="dig">4</span>)
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
 
         <span class="skw">type</span>(<span class="str">"25"</span>)
         myTools.pressTAB(<span class="dig">1</span>)

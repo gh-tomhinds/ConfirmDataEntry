@@ -79,6 +79,8 @@
 </span><span class="kw">def</span> Print_Clients(reportName):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"print clients"</span>)
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Print_Clients: '</span> + reportName)
 
@@ -131,7 +133,12 @@
 </span>    compareOneReport.Compare_OneReport(reportName)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

@@ -7,6 +7,8 @@ import compareOneReport
 def Print_Clients(reportName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("print clients")
+
     logging.debug(' ')
     logging.debug('Print_Clients: ' + reportName)
 
@@ -59,4 +61,9 @@ def Print_Clients(reportName):
     compareOneReport.Compare_OneReport(reportName)
 
     type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
+
+    time.sleep(1)            
+    type("n")
+    type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

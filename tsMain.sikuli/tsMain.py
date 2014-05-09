@@ -32,10 +32,8 @@ import runMonthlyBillCycle
 import makeBackup
 import setupCalTerms
 import calendarStuff
-import printClients
 import printTasks
 import printExpenses
-import printTimekeepers
 import compareReports
 
 #import sendEmail
@@ -63,7 +61,6 @@ createImportEditNames.CreateImportEdit_Names()
 #calendarStuff.Calendar_Stuff()
 #printTasks.Print_Tasks()
 #printExpenses.Print_Expenses()
-#printTimekeepers.Print_Timekeepers()
 #compareReports.Compare_Reports()
 
 myTools.endTimeStamp()

@@ -99,6 +99,9 @@
 
 <span class="kw">import</span> makeBackup
 
+<span class="kw">import</span> printTimekeepers
+<span class="kw">import</span> printClients
+
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> CreateImportEdit_Names():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -128,6 +131,7 @@
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
 
+    printTimekeepers.Print_Timekeepers(<span class="str">"Timekeepers-01.csv"</span>)
     printClients.Print_Clients(<span class="str">"Clients-01.csv"</span>)
 
     makeBackup.Backup_Checkpoint(<span class="str">"names"</span>)

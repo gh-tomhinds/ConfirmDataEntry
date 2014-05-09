@@ -33,8 +33,8 @@ def Edit_ClientFunds():
 
     for oneClient in range(1,351):
 
-        # log every 50 clients
-        if oneClient in (50,100,150,200,250,300,350):               
+        # log every 35 clients
+        if oneClient in (35,70,105,140,175,210,245,280,315,350):               
             logging.debug('-- client: ' + str(oneClient+1))    
 
         # list
@@ -44,13 +44,14 @@ def Edit_ClientFunds():
         
         #open funds
         type(Key.ENTER)
+        time.sleep(.5)
         
         # enter 25 for "balance falls below" and "replenishment"    
         if int(Settings.tsVersion) > 2014:    
             myTools.pressTAB(3)
         else:
             myTools.pressTAB(4)    
-        time.sleep(1)
+        time.sleep(.5)
     
         type("25")
         myTools.pressTAB(1)
