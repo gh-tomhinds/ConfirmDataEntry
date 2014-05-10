@@ -53,7 +53,7 @@ def Import_Timekeepers():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.tkFile)
+    paste(Settings.tkFile)
 
 #choose fields
     myTools.pressTAB(7)

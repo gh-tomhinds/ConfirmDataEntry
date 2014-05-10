@@ -19,7 +19,7 @@ def Setup_Stuff():
     logging.debug("- Sikuli folder:    %s" %Settings.sikFolder)
 
 # point to source data folder on desktop and data files
-    Settings.dataFolder = os.environ['USERPROFILE']+'\\desktop\\Sikuli\\DataFiles'
+    Settings.dataFolder = os.environ['USERPROFILE']+'\\desktop\\Sikuli\\ConfirmDataEntry\\dataFiles'
     logging.debug("- Data folder:      %s" %Settings.dataFolder)
     Settings.cliFile = Settings.dataFolder + '\\towns.csv'
     Settings.tkFile = Settings.dataFolder + '\\timekeepers.csv'
@@ -28,7 +28,6 @@ def Setup_Stuff():
     Settings.refFile = Settings.dataFolder + '\\refs.csv'
     Settings.tSlipsFile = Settings.dataFolder + '\\tslips.csv'
     Settings.eSlipsFile = Settings.dataFolder + '\\eslips.csv'
-
 
 # get TS version
     Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")

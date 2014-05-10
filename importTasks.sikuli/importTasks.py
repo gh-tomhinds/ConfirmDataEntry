@@ -57,7 +57,7 @@ def Import_Tasks():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.taskFile)   
+    paste(Settings.taskFile)   
 
 #choose fields
     logging.debug('- choose fields')        

@@ -53,7 +53,7 @@ def Import_Clients():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.cliFile)
+    paste(Settings.cliFile)
 
 #choose fields
     myTools.pressTAB(7)

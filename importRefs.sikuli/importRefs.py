@@ -43,7 +43,7 @@ def Import_Refs():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.refFile)
+    paste(Settings.refFile)
 
 #choose fields
     logging.debug('- choose fields')        

@@ -4,7 +4,7 @@ import myTools
 import compareOneReport
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Print_TimekeepersClients(reportName):
+def Print_Timekeepers(reportName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("print timekeepers")

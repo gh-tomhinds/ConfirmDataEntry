@@ -50,9 +50,9 @@ createCustomFields.Create_CustomFields()
 
 createImportEditNames.CreateImportEdit_Names()
 
-#createSlips.Create_Slips(10,10) # pass in num-time-slips and num-exp-slips to create manually; should by 10, 10
+createSlips.Create_Slips(10,10) # pass in num-time-slips and num-exp-slips to create manually; should by 10, 10
 
-#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #baCommon.Setup_BADefaultLayout()
 #reviewBillingArrangements.Review_BillingArrangements()

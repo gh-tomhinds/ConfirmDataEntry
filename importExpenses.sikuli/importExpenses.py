@@ -56,7 +56,7 @@ def Import_Expenses():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.expFile)
+    paste(Settings.expFile)
 
 # choose fields
     logging.debug('- choose fields')        

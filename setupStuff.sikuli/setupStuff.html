@@ -91,7 +91,7 @@
     logging.debug(<span class="str">"- Sikuli folder:    %s"</span> %Settings.sikFolder)
 
 <span class="cmt"># point to source data folder on desktop and data files
-</span>    Settings.dataFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli\\DataFiles'</span>
+</span>    Settings.dataFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli\\ConfirmDataEntry\\dataFiles'</span>
     logging.debug(<span class="str">"- Data folder:      %s"</span> %Settings.dataFolder)
     Settings.cliFile = Settings.dataFolder + <span class="str">'\\towns.csv'</span>
     Settings.tkFile = Settings.dataFolder + <span class="str">'\\timekeepers.csv'</span>
@@ -100,7 +100,6 @@
     Settings.refFile = Settings.dataFolder + <span class="str">'\\refs.csv'</span>
     Settings.tSlipsFile = Settings.dataFolder + <span class="str">'\\tslips.csv'</span>
     Settings.eSlipsFile = Settings.dataFolder + <span class="str">'\\eslips.csv'</span>
-
 
 <span class="cmt"># get TS version
 </span>    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
