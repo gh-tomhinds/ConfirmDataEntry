@@ -151,7 +151,7 @@ def Import_TimeSlips():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.tSlipsFile)
+    paste(Settings.tSlipsFile)
 
 #choose fields
     myTools.pressTAB(7)
@@ -254,7 +254,7 @@ def Import_ExpenseSlips():
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
-    type(Settings.eSlipsFile)
+    paste(Settings.eSlipsFile)
 
 #choose fields
     myTools.pressTAB(7)

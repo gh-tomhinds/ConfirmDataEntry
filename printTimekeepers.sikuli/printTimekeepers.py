@@ -21,7 +21,7 @@ def Print_Timekeepers(reportName):
     time.sleep(1)
     
     logging.debug('- set up timekeeper info listing')
-    type("client info")    
+    type("timekeeper info")    
     time.sleep(1)
     type("o",KeyModifier.CTRL)
     time.sleep(1)
@@ -42,7 +42,7 @@ def Print_Timekeepers(reportName):
     time.sleep(1)   
 
     # OK
-    myTools.pressTAB(5)
+    myTools.pressTAB(6)
     type(Key.SPACE)
     time.sleep(1)
 
