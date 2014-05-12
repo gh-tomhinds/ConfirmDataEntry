@@ -39,7 +39,7 @@ def Setup_Stuff():
     time.sleep(1)
 
 # point to report paths
-    Settings.rootRepFolder = scriptFolder + "\\!reports"
+    Settings.rootRepFolder = Settings.scriptFolder + "\\!reports"
     logging.debug("- Reports root folder:        %s" %Settings.rootRepFolder)
 
     Settings.baseRepFolder = Settings.rootRepFolder + "\\Baseline"

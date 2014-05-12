@@ -31,7 +31,7 @@ def Edit_ClientFunds():
     # assign default rate tk 1-20, then cl 1-20, then ta 1-20, 
     # then loop again until the end
 
-    for oneClient in range(1,351):
+    for oneClient in range(1,352):
 
         # log every 35 clients
         if oneClient in (35,70,105,140,175,210,245,280,315,350):               
@@ -59,9 +59,9 @@ def Edit_ClientFunds():
         myTools.pressTAB(2)
         type(Key.SPACE)
         type(Key.ENTER)
-        time.sleep(1)
+        time.sleep(.5)
         type("s",KeyModifier.CTRL)    
-        time.sleep(1)
+        time.sleep(.5)
         
         #go to nn1 field
         if int(Settings.tsVersion) > 2014:    
