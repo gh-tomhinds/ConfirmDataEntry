@@ -1,0 +1,5 @@
+Report: Aged AR.txt 
+ Line: 58 
+ Old: 1:58 PM 					     Aged A/R Balances by Date					      Page	  2
+ New: 1:59 PM 					     Aged A/R Balances by Date					      Page	  2
+
