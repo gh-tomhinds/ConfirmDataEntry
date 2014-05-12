@@ -27,6 +27,7 @@ import setupTaxes
 
 import makeBackup
 
+import printFunds
 import printTimekeepers
 import printClients
 
@@ -46,6 +47,8 @@ def CreateImportEdit_Names():
     importClients.Import_Clients()
     editClient.Edit_Client()    
     editClientFunds.Edit_ClientFunds()
+
+    printFunds.Print_Funds("FundsSettings-01.csv")   
     
     importTasks.Import_Tasks()
     editTask.Edit_Task()

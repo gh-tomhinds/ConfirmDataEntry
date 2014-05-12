@@ -90,9 +90,14 @@
 </span>    Settings.sikFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli'</span>
     logging.debug(<span class="str">"- Sikuli folder:    %s"</span> %Settings.sikFolder)
 
+<span class="cmt"># point to scripts folder on desktop
+</span>    Settings.scriptFolder = Settings.sikFolder + <span class="str">'\\ConfirmDataEntry'</span>
+    logging.debug(<span class="str">"- Script folder:    %s"</span> %Settings.scriptFolder)
+
 <span class="cmt"># point to source data folder on desktop and data files
-</span>    Settings.dataFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli\\ConfirmDataEntry\\dataFiles'</span>
+</span>    Settings.dataFolder = Settings.scriptFolder + <span class="str">'\\!data'</span>
     logging.debug(<span class="str">"- Data folder:      %s"</span> %Settings.dataFolder)
+
     Settings.cliFile = Settings.dataFolder + <span class="str">'\\towns.csv'</span>
     Settings.tkFile = Settings.dataFolder + <span class="str">'\\timekeepers.csv'</span>
     Settings.taskFile = Settings.dataFolder + <span class="str">'\\tasks.csv'</span>
@@ -105,14 +110,18 @@
 </span>    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># point to TS paths
-</span>    Settings.baseRepFolder = Settings.sikFolder + <span class="str">"\\Reports\\Baseline"</span>
+<span class="cmt"># point to report paths
+</span>    Settings.rootRepFolder = scriptFolder + <span class="str">"\\!reports"</span>
+    logging.debug(<span class="str">"- Reports root folder:        %s"</span> %Settings.rootRepFolder)
+
+    Settings.baseRepFolder = Settings.rootRepFolder + <span class="str">"\\Baseline"</span>
     logging.debug(<span class="str">"- Baseline Reports folder:    %s"</span> %Settings.baseRepFolder)
 
-    Settings.repFolder = Settings.sikFolder + <span class="str">"\\Reports\\"</span> + Settings.tsVersion
+    Settings.repFolder = Settings.rootRepFolder + <span class="str">"\\"</span> + Settings.tsVersion
     logging.debug(<span class="str">"- Report folder:    %s"</span> %Settings.repFolder)
 
-    Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion
+<span class="cmt"># point to TS paths
+</span>    Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion
     logging.debug(<span class="str">"- Timeslips folder: %s"</span> %Settings.tsFolder)
 
     Settings.tsEXE = Settings.tsFolder + <span class="str">"\\timeslip.exe"</span>

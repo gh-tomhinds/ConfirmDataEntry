@@ -18,9 +18,14 @@ def Setup_Stuff():
     Settings.sikFolder = os.environ['USERPROFILE']+'\\desktop\\Sikuli'
     logging.debug("- Sikuli folder:    %s" %Settings.sikFolder)
 
+# point to scripts folder on desktop
+    Settings.scriptFolder = Settings.sikFolder + '\\ConfirmDataEntry'
+    logging.debug("- Script folder:    %s" %Settings.scriptFolder)
+
 # point to source data folder on desktop and data files
-    Settings.dataFolder = os.environ['USERPROFILE']+'\\desktop\\Sikuli\\ConfirmDataEntry\\dataFiles'
+    Settings.dataFolder = Settings.scriptFolder + '\\!data'
     logging.debug("- Data folder:      %s" %Settings.dataFolder)
+    
     Settings.cliFile = Settings.dataFolder + '\\towns.csv'
     Settings.tkFile = Settings.dataFolder + '\\timekeepers.csv'
     Settings.taskFile = Settings.dataFolder + '\\tasks.csv'
@@ -33,13 +38,17 @@ def Setup_Stuff():
     Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
     time.sleep(1)
 
-# point to TS paths
-    Settings.baseRepFolder = Settings.sikFolder + "\\Reports\\Baseline"
+# point to report paths
+    Settings.rootRepFolder = scriptFolder + "\\!reports"
+    logging.debug("- Reports root folder:        %s" %Settings.rootRepFolder)
+
+    Settings.baseRepFolder = Settings.rootRepFolder + "\\Baseline"
     logging.debug("- Baseline Reports folder:    %s" %Settings.baseRepFolder)
     
-    Settings.repFolder = Settings.sikFolder + "\\Reports\\" + Settings.tsVersion
+    Settings.repFolder = Settings.rootRepFolder + "\\" + Settings.tsVersion
     logging.debug("- Report folder:    %s" %Settings.repFolder)
 
+# point to TS paths
     Settings.tsFolder = "C:\\Program Files (x86)\\Timeslips " + Settings.tsVersion
     logging.debug("- Timeslips folder: %s" %Settings.tsFolder)
 

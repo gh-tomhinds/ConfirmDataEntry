@@ -99,6 +99,7 @@
 
 <span class="kw">import</span> makeBackup
 
+<span class="kw">import</span> printFunds
 <span class="kw">import</span> printTimekeepers
 <span class="kw">import</span> printClients
 
@@ -118,6 +119,8 @@
     importClients.Import_Clients()
     editClient.Edit_Client()
     editClientFunds.Edit_ClientFunds()
+
+    printFunds.Print_Funds(<span class="str">"FundsSettings-01.csv"</span>)
 
     importTasks.Import_Tasks()
     editTask.Edit_Task()
