@@ -40,10 +40,10 @@ def Setup_Stuff():
 
 # point to report paths
     Settings.rootRepFolder = Settings.scriptFolder + "\\!reports"
-    logging.debug("- Reports root folder:        %s" %Settings.rootRepFolder)
+    logging.debug("- Rep root folder:  %s" %Settings.rootRepFolder)
 
     Settings.baseRepFolder = Settings.rootRepFolder + "\\Baseline"
-    logging.debug("- Baseline Reports folder:    %s" %Settings.baseRepFolder)
+    logging.debug("- Base Rep folder:  %s" %Settings.baseRepFolder)
     
     Settings.repFolder = Settings.rootRepFolder + "\\" + Settings.tsVersion
     logging.debug("- Report folder:    %s" %Settings.repFolder)

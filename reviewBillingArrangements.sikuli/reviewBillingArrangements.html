@@ -74,6 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> baCommon
 <span class="kw">import</span> datetime
+<span class="kw">import</span> myTools
 
 <span class="kw">import</span> baAdjustTotal_Time
 <span class="kw">import</span> baAdjustTotal_Exp
@@ -135,6 +136,8 @@
 </span><span class="kw">def</span> Review_BillingArrangements():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"run ba"</span>)
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Review_BillingArrangements'</span>)
 
@@ -186,6 +189,8 @@
     baSlipsRoundMin.BA_SlipsRoundMin()
     baSlipsRoundDol.BA_SlipsRoundDol()
     baPrecision.BA_Precision()
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

@@ -6,7 +6,9 @@ import compareOneReport
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Print_TkHistory(reportName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
- 
+
+    myTools.sectionStartTimeStamp("print tk history")
+
     logging.debug(' ')
     logging.debug('Print_TkHistory: ' + reportName)
 
@@ -81,3 +83,4 @@ def Print_TkHistory(reportName):
         type("n")
     type(Key.F4,KeyModifier.CTRL)
         
+    myTools.sectionEndTimeStamp()

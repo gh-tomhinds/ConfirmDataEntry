@@ -2,6 +2,7 @@ from sikuli import *
 import logging
 import baCommon
 import datetime
+import myTools
 
 import baAdjustTotal_Time
 import baAdjustTotal_Exp
@@ -63,6 +64,8 @@ def baLogHeader():
 def Review_BillingArrangements():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("run ba")
+
     logging.debug(' ')
     logging.debug('Review_BillingArrangements')
     
@@ -113,4 +116,6 @@ def Review_BillingArrangements():
 
     baSlipsRoundMin.BA_SlipsRoundMin()    
     baSlipsRoundDol.BA_SlipsRoundDol()    
-    baPrecision.BA_Precision()    
+    baPrecision.BA_Precision()
+    
+    myTools.sectionEndTimeStamp()

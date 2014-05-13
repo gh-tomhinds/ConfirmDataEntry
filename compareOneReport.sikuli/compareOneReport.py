@@ -47,7 +47,7 @@ def Compare_OneReport(reportName):
             logging.debug(" - FAILED : " + reportName)
             logging.debug(" Line: %d \n" % (newRepLine+1))
             logging.debug(" Old: " + baseRepLine + "\n")
-            logging.debug(" New: " + newRepLines[newRepLine] + "\n\n")
+            logging.debug(" New: " + newRepLines[newRepLine])
             break
         newRepLine += 1
     

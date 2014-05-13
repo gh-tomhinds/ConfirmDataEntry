@@ -7,7 +7,7 @@ import myTools
 def Create_OnePayment(client,cliNum,month):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug('- Create_OnePayment: ' + str(month) + "-" + client)
+    logging.debug('- Create_OnePay: ' + str(month) + "-" + client)
 
     # new payment
     type("n",KeyModifier.CTRL)

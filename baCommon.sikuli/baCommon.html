@@ -125,12 +125,14 @@
     <span class="skw">type</span>(Key.DOWN)
 
 <span class="cmt"># get to Layout field
-</span>    myTools.pressTAB(<span class="dig">9</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        myTools.pressTAB(<span class="dig">10</span>)
+    <span class="kw">else</span>:
+        myTools.pressTAB(<span class="dig">9</span>)
     <span class="skw">type</span>(<span class="str">"t"</span>)
 
     <span class="skw">type</span>(Key.ENTER)
-
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> moveto_BAPage():
@@ -174,13 +176,15 @@
 </span><span class="kw">def</span> Setup_BADefaultLayout():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    <span class="cmt"># make sure timeslips has focus
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
-        <span class="skw">click</span>(<img src="1388176090422.png" />)
+    myTools.sectionStartTimeStamp(<span class="str">"setup ba"</span>)
+
+    myTools.getFocus()
 
     Import_DefaultLayout()
     Setup_NewNamesDefault()
     setup_BABills()
+
+    myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> BA_Create_Slips(baClient):

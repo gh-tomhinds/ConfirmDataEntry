@@ -53,12 +53,14 @@ def Setup_NewNamesDefault():
     type(Key.DOWN)
 
 # get to Layout field
-    myTools.pressTAB(9)
-    time.sleep(1)
+
+    if int(Settings.tsVersion) > 2014:
+        myTools.pressTAB(10)
+    else:
+        myTools.pressTAB(9)
     type("t")
 
     type(Key.ENTER)
-
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def moveto_BAPage():
@@ -102,13 +104,15 @@ def setup_BABills():
 def Setup_BADefaultLayout():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    # make sure timeslips has focus
-    if int(Settings.tsVersion) > 2013:
-        click("1388176090422.png")
+    myTools.sectionStartTimeStamp("setup ba")
+
+    myTools.getFocus()
 
     Import_DefaultLayout()
     Setup_NewNamesDefault()
     setup_BABills()
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Create_Slips(baClient):

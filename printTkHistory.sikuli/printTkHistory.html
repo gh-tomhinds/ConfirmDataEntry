@@ -79,6 +79,8 @@
 </span><span class="kw">def</span> Print_TkHistory(reportName):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"print tk history"</span>)
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Print_TkHistory: '</span> + reportName)
 
@@ -152,6 +154,8 @@
     <span class="kw">if</span> exists(<img src="1397850458110.png" />):
         <span class="skw">type</span>(<span class="str">"n"</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

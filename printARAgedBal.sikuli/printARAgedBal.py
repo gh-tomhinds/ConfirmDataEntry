@@ -6,7 +6,9 @@ import compareOneReport
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Print_ARAgedBal(reportName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
- 
+
+    myTools.sectionStartTimeStamp("print aged bal")
+
     logging.debug(' ')
     logging.debug('Print_ARAgedBal: ' + reportName)
 
@@ -42,3 +44,5 @@ def Print_ARAgedBal(reportName):
 
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)            
+
+    myTools.sectionEndTimeStamp()
