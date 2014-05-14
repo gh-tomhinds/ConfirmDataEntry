@@ -176,7 +176,7 @@
 </span><span class="kw">def</span> Setup_BADefaultLayout():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"setup ba"</span>)
+    myTools.sectionStartTimeStamp(<span class="str">"ba setup"</span>)
 
     myTools.getFocus()
 
@@ -190,6 +190,8 @@
 </span><span class="kw">def</span> BA_Create_Slips(baClient):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"ba slips"</span>)
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'BA_Create_Slips'</span>)
 
@@ -211,11 +213,16 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
+    myTools.sectionEndTimeStamp()
+
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> BA_Bill(baClient,billNum):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
-    logging.debug(<span class="str">'- BA_Bill: '</span> + baClient + <span class="str">' '</span> + str(billNum))
+    myTools.sectionStartTimeStamp(<span class="str">"ba bill"</span>)
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'BA_Bill: '</span> + baClient + <span class="str">' '</span> + str(billNum))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
     <span class="skw">click</span>(<img src="1372861568498.png" />)
@@ -257,6 +264,8 @@
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

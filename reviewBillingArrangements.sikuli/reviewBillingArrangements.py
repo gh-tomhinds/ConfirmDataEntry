@@ -52,7 +52,7 @@ def baLogHeader():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     if os.path.isfile(Settings.BALogFile):
-        outFile = Settings.repFolder + "\\BA-Log.txt"
+        outFile = Settings.repFolder + "\\!BA-Log.txt"
         billLog = open(outFile, "a")
         billLog.write("\n")
         billLog.write("==================================================\n")

@@ -104,7 +104,7 @@ def setup_BABills():
 def Setup_BADefaultLayout():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp("setup ba")
+    myTools.sectionStartTimeStamp("ba setup")
 
     myTools.getFocus()
 
@@ -117,6 +117,8 @@ def Setup_BADefaultLayout():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Create_Slips(baClient):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba slips")
 
     logging.debug(' ')
     logging.debug('BA_Create_Slips')
@@ -139,11 +141,16 @@ def BA_Create_Slips(baClient):
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
 
+    myTools.sectionEndTimeStamp()
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Bill(baClient,billNum):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug('- BA_Bill: ' + baClient + ' ' + str(billNum))
+    myTools.sectionStartTimeStamp("ba bill")
+
+    logging.debug(' ')
+    logging.debug('BA_Bill: ' + baClient + ' ' + str(billNum))
 
     type("b",KeyModifier.CTRL)
     click("1372861568498.png")
@@ -185,3 +192,5 @@ def BA_Bill(baClient,billNum):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type("n")
+    
+    myTools.sectionEndTimeStamp()

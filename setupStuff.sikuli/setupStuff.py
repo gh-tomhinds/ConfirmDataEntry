@@ -61,7 +61,7 @@ def Setup_Stuff():
     Settings.dbFolder = Settings.tsFolder + "\\Sikuli" 
     logging.debug("- DB folder:        %s" %Settings.dbFolder)
 
-    Settings.BALogFile = Settings.repFolder + "\\BA-Log.txt"
+    Settings.BALogFile = Settings.repFolder + "\\!BA-Log.txt"
     # delete BA Log File
     # os.remove(Settings.BALogFile)    
 

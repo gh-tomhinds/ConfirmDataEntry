@@ -74,7 +74,7 @@
 <span class="kw">import</span> os
 <span class="kw">import</span> logging
 <span class="kw">import</span> csv
-
+<span class="kw">import</span> myTools
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Get_BillValues(billType,fullBill,phrase):
@@ -118,6 +118,8 @@
 </span><span class="kw">def</span> Review_Bill(billName):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
+    myTools.sectionStartTimeStamp(<span class="str">"ba review bill"</span>)
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Review_Bill: '</span> + billName)
 
@@ -184,6 +186,8 @@
 
     <span class="kw">else</span>:
         logging.debug(<span class="str">" - MISSING: "</span> + billName)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

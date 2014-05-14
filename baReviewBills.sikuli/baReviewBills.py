@@ -2,7 +2,7 @@ from sikuli import *
 import os
 import logging
 import csv
-
+import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Get_BillValues(billType,fullBill,phrase):
@@ -45,6 +45,8 @@ def Compare_Results(billName,valueType,savedValue,billValue):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Review_Bill(billName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba review bill")
 
     logging.debug(' ')
     logging.debug('Review_Bill: ' + billName)
@@ -112,3 +114,5 @@ def Review_Bill(billName):
 
     else:
         logging.debug(" - MISSING: " + billName)
+
+    myTools.sectionEndTimeStamp()
