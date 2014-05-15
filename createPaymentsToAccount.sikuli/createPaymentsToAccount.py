@@ -86,4 +86,5 @@ def Create_PaymentsToAccount(month):
      
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()

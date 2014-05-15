@@ -4,7 +4,7 @@ import myTools
 import compareOneReport
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Print_ARAgedBal(reportName):
+def Print_ARAgedBal(reportMonth):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("print aged bal")
@@ -28,6 +28,16 @@ def Print_ARAgedBal(reportName):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
+
+    # make month number a string
+    strMonth = str(reportMonth)
+    
+    # if month is under 10, prefix with 0        
+    if reportMonth < 10:
+        strMonth = "0" + strMonth
+
+    # name report file: ex: ARAgedBal-03
+    reportName = "ARAgedBal-" + strMonth
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

@@ -28,6 +28,6 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         makeBackup.Backup_BillData(thisMonth)
 
-    # after whole bill run is done, compare some reports
-    printARAgedBal.Print_ARAgedBal("ARAgedBal-02.csv")
-    printTkHistory.Print_TkHistory("TkHistory-01.csv")
+        # compare some values each month
+        printARAgedBal.Print_ARAgedBal(thisMonth)
+        printTkHistory.Print_TkHistory(thisMonth)

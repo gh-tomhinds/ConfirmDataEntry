@@ -100,9 +100,9 @@
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         makeBackup.Backup_BillData(thisMonth)
 
-    <span class="cmt"># after whole bill run is done, compare some reports
-</span>    printARAgedBal.Print_ARAgedBal(<span class="str">"ARAgedBal-02.csv"</span>)
-    printTkHistory.Print_TkHistory(<span class="str">"TkHistory-01.csv"</span>)
+        <span class="cmt"># compare some values each month
+</span>        printARAgedBal.Print_ARAgedBal(thisMonth)
+        printTkHistory.Print_TkHistory(thisMonth)
 </pre>
 </body>
 </html>
