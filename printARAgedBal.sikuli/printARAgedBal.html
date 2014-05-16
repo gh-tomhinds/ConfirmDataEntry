@@ -82,7 +82,7 @@
     myTools.sectionStartTimeStamp(<span class="str">"print aged bal"</span>)
 
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Print_ARAgedBal: '</span> + reportName)
+    logging.debug(<span class="str">'Print_ARAgedBal: '</span> + reportMonth)
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -101,15 +101,8 @@
 </span>    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># make month number a string
-</span>    strMonth = str(reportMonth)
-
-    <span class="cmt"># if month is under 10, prefix with 0        
-</span>    <span class="kw">if</span> reportMonth &lt; <span class="dig">10</span>:
-        strMonth = <span class="str">"0"</span> + strMonth
-
     <span class="cmt"># name report file: ex: ARAgedBal-03
-</span>    reportName = <span class="str">"ARAgedBal-"</span> + strMonth
+</span>    reportName = <span class="str">"ARAgedBal-"</span> + myTools.monthToStr(reportMonth)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)

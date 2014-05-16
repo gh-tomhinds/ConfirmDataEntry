@@ -134,15 +134,8 @@
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Backup_Data: '</span> + str(billMonth))
 
-    <span class="cmt"># make month number a string
-</span>    strMonth = str(billMonth)
-
-    <span class="cmt"># if month is under 10, prefix with 0        
-</span>    <span class="kw">if</span> billMonth &lt; <span class="dig">10</span>:
-        strMonth = <span class="str">"0"</span> + strMonth
-
     <span class="cmt"># name backup file: ex: 2015-bill-03
-</span>    strBackupFile = Settings.tsVersion + <span class="str">"-bill-"</span> + strMonth
+</span>    strBackupFile = Settings.tsVersion + <span class="str">"-bill-"</span> + myTools.monthToStr(billMonth)
     Backup_Data(strBackupFile)
 </pre>
 </body>

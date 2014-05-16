@@ -62,13 +62,6 @@ def Backup_BillData(billMonth):
     logging.debug(' ')
     logging.debug('Backup_Data: ' + str(billMonth))
 
-    # make month number a string
-    strMonth = str(billMonth)
-    
-    # if month is under 10, prefix with 0        
-    if billMonth < 10:
-        strMonth = "0" + strMonth
-
     # name backup file: ex: 2015-bill-03
-    strBackupFile = Settings.tsVersion + "-bill-" + strMonth
+    strBackupFile = Settings.tsVersion + "-bill-" + myTools.monthToStr(billMonth)
     Backup_Data(strBackupFile)

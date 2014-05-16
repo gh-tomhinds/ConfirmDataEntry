@@ -82,6 +82,18 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def monthToStr(aMonth):
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    # make month number a string
+    strMonth = str(aMonth)
+    
+    # if month is under 10, prefix with 0        
+    if aMonth < 10:
+        strMonth = "0" + strMonth
+    return(strMonth)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def startTimeStamp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     Settings.startTime = datetime.datetime.now()
