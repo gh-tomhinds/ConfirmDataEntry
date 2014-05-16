@@ -82,16 +82,20 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def monthToStr(aMonth):
+def monthToName(aMonth,aName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # make month number a string
-    strMonth = str(aMonth)
-    
+    fileName = str(aMonth)
+
     # if month is under 10, prefix with 0        
     if aMonth < 10:
-        strMonth = "0" + strMonth
-    return(strMonth)
+        fileName = "0" + fileName
+
+    # prefix the version
+    fileName = Settings.tsVersion + aName + fileName    
+        
+    return(fileName)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def startTimeStamp():

@@ -102,7 +102,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># name report file: ex: ARAgedBal-03
-</span>    reportName = <span class="str">"ARAgedBal-"</span> + myTools.monthToStr(reportMonth)
+</span>    reportName = myTools.monthToStr(reportMonth,<span class="str">"-ARAgedBal-"</span>)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)

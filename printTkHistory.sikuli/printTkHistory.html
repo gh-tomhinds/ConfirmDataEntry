@@ -136,7 +136,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># name report file: ex: TkHistory-03
-</span>    reportName = <span class="str">"TkHistory-03-"</span> + myTools.monthToStr(reportMonth)
+</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-TkHistory-"</span>)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)

@@ -64,7 +64,7 @@ def Print_TkHistory(reportMonth):
     time.sleep(1)
 
     # name report file: ex: TkHistory-03
-    reportName = "TkHistory-03-" + myTools.monthToStr(reportMonth)
+    reportName = myTools.monthToName(reportMonth,"-TkHistory-")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

@@ -154,16 +154,20 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> monthToStr(aMonth):
+</span><span class="kw">def</span> monthToName(aMonth,aName):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     <span class="cmt"># make month number a string
-</span>    strMonth = str(aMonth)
+</span>    fileName = str(aMonth)
 
     <span class="cmt"># if month is under 10, prefix with 0        
 </span>    <span class="kw">if</span> aMonth &lt; <span class="dig">10</span>:
-        strMonth = <span class="str">"0"</span> + strMonth
-    <span class="kw">return</span>(strMonth)
+        fileName = <span class="str">"0"</span> + fileName
+
+    <span class="cmt"># prefix the version
+</span>    fileName = Settings.tsVersion + aName + fileName
+
+    <span class="kw">return</span>(fileName)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> startTimeStamp():

@@ -30,7 +30,7 @@ def Print_ARAgedBal(reportMonth):
     time.sleep(1)
 
     # name report file: ex: ARAgedBal-03
-    reportName = "ARAgedBal-" + myTools.monthToStr(reportMonth)
+    reportName = myTools.monthToStr(reportMonth,"-ARAgedBal-")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)
