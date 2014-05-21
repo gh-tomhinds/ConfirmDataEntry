@@ -9,7 +9,7 @@ def Print_Clients(reportName):
 
     myTools.sectionStartTimeStamp("print clients")
 
-    reportName = Settings.tsVersion + "-" + reportName
+    reportName = Settings.tsVersion + "-" + reportName + ".csv"
 
     logging.debug(' ')
     logging.debug('Print_Clients: ' + reportName)
@@ -38,8 +38,13 @@ def Print_Clients(reportName):
     type(Key.SPACE)
     time.sleep(1)
 
+    # hide a/r fields
+    myTools.pressSHIFTTAB(5)
+    type(Key.SPACE)
+    time.sleep(1)
+
     # OK
-    myTools.pressTAB(1)
+    myTools.pressTAB(6)
     type(Key.SPACE)
     time.sleep(1)
 

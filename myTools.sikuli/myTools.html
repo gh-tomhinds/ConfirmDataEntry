@@ -154,7 +154,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> monthToName(aMonth,aName):
+</span><span class="kw">def</span> monthToName(aMonth,aName,anExt):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     <span class="cmt"># make month number a string
@@ -165,7 +165,7 @@
         fileName = <span class="str">"0"</span> + fileName
 
     <span class="cmt"># prefix the version
-</span>    fileName = Settings.tsVersion + aName + fileName
+</span>    fileName = Settings.tsVersion + aName + fileName + anExt
 
     <span class="kw">return</span>(fileName)
 

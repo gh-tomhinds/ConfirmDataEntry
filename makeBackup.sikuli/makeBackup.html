@@ -135,7 +135,7 @@
     logging.debug(<span class="str">'Backup_Data: '</span> + str(billMonth))
 
     <span class="cmt"># name backup file: ex: 2015-bill-03
-</span>    strBackupFile = Settings.tsVersion + myTools.monthToName(billMonth,<span class="str">"-bill-"</span>)
+</span>    strBackupFile = myTools.monthToName(billMonth,<span class="str">"-bill-"</span>,<span class="str">".bku"</span>)
     Backup_Data(strBackupFile)
 </pre>
 </body>

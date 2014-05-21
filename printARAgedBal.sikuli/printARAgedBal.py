@@ -10,7 +10,7 @@ def Print_ARAgedBal(reportMonth):
     myTools.sectionStartTimeStamp("print aged bal")
 
     logging.debug(' ')
-    logging.debug('Print_ARAgedBal: ' + reportMonth)
+    logging.debug('Print_ARAgedBal: ' + str(reportMonth))
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -30,7 +30,7 @@ def Print_ARAgedBal(reportMonth):
     time.sleep(1)
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToStr(reportMonth,"-ARAgedBal-")
+    reportName = myTools.monthToName(reportMonth,"-ARAgedBal-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

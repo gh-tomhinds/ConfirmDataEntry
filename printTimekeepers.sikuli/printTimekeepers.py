@@ -9,7 +9,7 @@ def Print_Timekeepers(reportName):
 
     myTools.sectionStartTimeStamp("print timekeepers")
 
-    reportName = Settings.tsVersion + "-" + reportName
+    reportName = Settings.tsVersion + "-" + reportName + ".csv"
 
     logging.debug(' ')
     logging.debug('Print_Timekeepers: ' + reportName)

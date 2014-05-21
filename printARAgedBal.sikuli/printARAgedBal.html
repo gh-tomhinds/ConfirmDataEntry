@@ -82,7 +82,7 @@
     myTools.sectionStartTimeStamp(<span class="str">"print aged bal"</span>)
 
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Print_ARAgedBal: '</span> + reportMonth)
+    logging.debug(<span class="str">'Print_ARAgedBal: '</span> + str(reportMonth))
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -102,7 +102,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># name report file: ex: ARAgedBal-03
-</span>    reportName = myTools.monthToStr(reportMonth,<span class="str">"-ARAgedBal-"</span>)
+</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-ARAgedBal-"</span>,<span class="str">".csv"</span>)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)

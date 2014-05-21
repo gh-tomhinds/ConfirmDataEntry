@@ -81,7 +81,7 @@
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"print clients"</span>)
 
-    reportName = Settings.tsVersion + <span class="str">"-"</span> + reportName
+    reportName = Settings.tsVersion + <span class="str">"-"</span> + reportName + <span class="str">".csv"</span>
 
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Print_Clients: '</span> + reportName)
@@ -110,8 +110,13 @@
     <span class="skw">type</span>(Key.SPACE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
+    <span class="cmt"># hide a/r fields
+</span>    myTools.pressSHIFTTAB(<span class="dig">5</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="cmt"># OK
-</span>    myTools.pressTAB(<span class="dig">1</span>)
+</span>    myTools.pressTAB(<span class="dig">6</span>)
     <span class="skw">type</span>(Key.SPACE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 

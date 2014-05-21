@@ -82,7 +82,7 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def monthToName(aMonth,aName):
+def monthToName(aMonth,aName,anExt):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # make month number a string
@@ -93,7 +93,7 @@ def monthToName(aMonth,aName):
         fileName = "0" + fileName
 
     # prefix the version
-    fileName = Settings.tsVersion + aName + fileName    
+    fileName = Settings.tsVersion + aName + fileName + anExt    
         
     return(fileName)
 

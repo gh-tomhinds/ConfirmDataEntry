@@ -10,7 +10,7 @@ def Print_TkHistory(reportMonth):
     myTools.sectionStartTimeStamp("print tk history")
 
     logging.debug(' ')
-    logging.debug('Print_TkHistory: ' + reportMonth)
+    logging.debug('Print_TkHistory: ' + str(reportMonth))
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -64,7 +64,7 @@ def Print_TkHistory(reportMonth):
     time.sleep(1)
 
     # name report file: ex: TkHistory-03
-    reportName = myTools.monthToName(reportMonth,"-TkHistory-")
+    reportName = myTools.monthToName(reportMonth,"-TkHistory-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)
