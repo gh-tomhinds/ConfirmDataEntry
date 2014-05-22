@@ -72,8 +72,8 @@
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
-<span class="kw">import</span> csv
 <span class="kw">import</span> myTools
+<span class="kw">import</span> initNames
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_OnePayment(client,cliNum,month):
@@ -139,25 +139,20 @@
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Create_PaymentsForMonth: '</span> + str(month))
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
-
-    <span class="cmt"># start with manually entered client, then load other clients from file
-</span>    allClients = [<span class="str">"Agawam"</span>]
-    fileClients = csv.DictReader(open(Settings.cliFile))
-
-    <span class="kw">for</span> oneClient <span class="kw">in</span> fileClients:
-        allClients.append(oneClient[<span class="str">"NN1"</span>])
-    allClients.sort()
-
+    allClients = initNames.Init_Clients()
     count = <span class="dig">0</span>
+
+    myTools.getFocus()
 
     <span class="cmt"># open a/r tran list
 </span>    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
-        Create_OnePayment(oneClient,count,month)
+        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">5</span> == <span class="dig">0</span>):
+            Create_OnePayment(oneClient,count,month)
+        <span class="kw">else</span>:
+            logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + client)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

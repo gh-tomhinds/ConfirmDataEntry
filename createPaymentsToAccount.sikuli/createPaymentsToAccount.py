@@ -58,27 +58,20 @@ def Create_PaymentsToAccount(month):
     logging.debug(' ')
     logging.debug('Create_PaysToAccount: ' + str(month))
 
-    # enter PFAs for month 1,4,7,10
-    if month in (2,3,5,6,8,9,11,12):
-        logging.debug('- skip payments for: ' + str(month))
-        myTools.sectionEndTimeStamp()
-        return
-
-    # make sure timeslips has focus
-    myTools.getFocus()
-
-    # start with manually entered client, then load other clients from file
-    allClients = ["Agawam"]
-    fileClients = csv.DictReader(open(Settings.cliFile))
-
-    for oneClient in fileClients:
-        allClients.append(oneClient["NN1"])
-    allClients.sort()
-
+    allClients = initNames.Init_Clients()
     count = 0
+
+    myTools.getFocus()
 
     # open funds list
     type("f",KeyModifier.CTRL)
+
+    for oneClient in allClients:
+        count += 1
+        if (count in range(6)) or ((count + month) % 6 == 0):
+            Create_OnePayToAccount(oneClient,count,month)
+        else:
+            logging.debug('-- skip: ' + str(month) + "-" + client)           
 
     for oneClient in allClients:
         count += 1
