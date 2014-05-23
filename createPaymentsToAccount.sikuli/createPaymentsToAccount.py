@@ -71,11 +71,7 @@ def Create_PaymentsToAccount(month):
         if (count in range(6)) or ((count + month) % 6 == 0):
             Create_OnePayToAccount(oneClient,count,month)
         else:
-            logging.debug('-- skip: ' + str(month) + "-" + client)           
-
-    for oneClient in allClients:
-        count += 1
-        Create_OnePayToAccount(oneClient,count,month)
+            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
      
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

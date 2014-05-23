@@ -152,7 +152,7 @@
         <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">5</span> == <span class="dig">0</span>):
             Create_OnePayment(oneClient,count,month)
         <span class="kw">else</span>:
-            logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + client)
+            logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + oneClient)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

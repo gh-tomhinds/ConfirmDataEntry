@@ -80,7 +80,7 @@ def Create_PaymentsForMonth(month):
         if (count in range(6)) or ((count + month) % 5 == 0):
             Create_OnePayment(oneClient,count,month)
         else:
-            logging.debug('-- skip: ' + str(month) + "-" + client)           
+            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
 
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
