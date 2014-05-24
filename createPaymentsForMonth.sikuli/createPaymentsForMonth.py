@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
-import csv
 import myTools
+import initNames
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_OnePayment(client,cliNum,month):
@@ -67,26 +67,21 @@ def Create_PaymentsForMonth(month):
     logging.debug(' ')
     logging.debug('Create_PaymentsForMonth: ' + str(month))
 
-    # make sure timeslips has focus
-    myTools.getFocus()
-
-    # start with manually entered client, then load other clients from file
-    allClients = ["Agawam"]
-    fileClients = csv.DictReader(open(Settings.cliFile))
-
-    for oneClient in fileClients:
-        allClients.append(oneClient["NN1"])
-    allClients.sort()
-
+    allClients = initNames.Init_Clients()
     count = 0
+
+    myTools.getFocus()
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
 
     for oneClient in allClients:
         count += 1
-        Create_OnePayment(oneClient,count,month)
-     
+        if (count in range(6)) or ((count + month) % 5 == 0):
+            Create_OnePayment(oneClient,count,month)
+        else:
+            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
+
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()

@@ -72,65 +72,9 @@
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
-<span class="kw">import</span> csv
 <span class="kw">import</span> myTools
+<span class="kw">import</span> initNames
 <span class="kw">import</span> makeBackup
-
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Init_Clients():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-    <span class="cmt"># start with manually entered client, then load other clients from file
-</span>    clientList = [<span class="str">"Agawam"</span>]
-    allClis = csv.DictReader(open(Settings.cliFile))
-
-    <span class="kw">for</span> oneCli <span class="kw">in</span> allClis:
-        clientList.append(oneCli[<span class="str">"NN1"</span>])
-    clientList.sort()
-
-    <span class="kw">return</span>(clientList)
-
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Init_Timekeepers():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-    <span class="cmt"># start with manually entered timekeeper, then load other tks from file
-</span>    timekeeperList = [<span class="str">"TomH"</span>]
-    allTks = csv.DictReader(open(Settings.tkFile))
-
-    <span class="kw">for</span> oneTk <span class="kw">in</span> allTks:
-        timekeeperList.append(oneTk[<span class="str">"NN1"</span>])
-    timekeeperList.sort()
-
-    <span class="kw">return</span>(timekeeperList)
-
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Init_Tasks():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-    <span class="cmt"># start with manually entered task, then load other tasks from file
-</span>    taskList = [<span class="str">"CON001"</span>]
-    allTasks = csv.DictReader(open(Settings.taskFile))
-
-    <span class="kw">for</span> oneTask <span class="kw">in</span> allTasks:
-        taskList.append(oneTask[<span class="str">"nn2"</span>])
-    taskList.sort()
-
-    <span class="kw">return</span>(taskList)
-
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> Init_Expenses():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-    <span class="cmt"># start with manually entered expense, then load other exps from file
-</span>    expenseList = [<span class="str">"E001"</span>]
-    allExps = csv.DictReader(open(Settings.expFile))
-
-    <span class="kw">for</span> oneExp <span class="kw">in</span> allExps:
-        expenseList.append(oneExp[<span class="str">"NN2"</span>])
-    expenseList.sort()
-
-    <span class="kw">return</span>(expenseList)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
@@ -401,10 +345,10 @@
     logging.debug(<span class="str">'- Create_Slips'</span>)
 
     myTools.sectionStartTimeStamp(<span class="str">"init slips"</span>)
-    clients = Init_Clients()
-    timekeepers = Init_Timekeepers()
-    tasks = Init_Tasks()
-    expenses = Init_Expenses()
+    clients = initNames.Init_Clients()
+    timekeepers = initNames.Init_Timekeepers()
+    tasks = initNames.Init_Tasks()
+    expenses = initNames.Init_Expenses()
     count = <span class="dig">0</span>
     myTools.sectionEndTimeStamp()
 
