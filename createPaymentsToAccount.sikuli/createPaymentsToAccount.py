@@ -2,6 +2,7 @@ from sikuli import *
 import logging
 import csv
 import myTools
+import initNames
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_OnePayToAccount(client,cliNum,month):
