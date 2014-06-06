@@ -2,6 +2,21 @@
 
 This project contains SIKULI code to automate some regression test plans.
 
+## Supporting Folders
+
+### !data
+
+Contains data files for various functions, such as:
+* .csv files for importing names and slips
+* .csv files for comparing bill arrangement values
+* .tsl files to import bill layouts
+
+### !reports
+
+Stores reports for comparison
+* there is a folder that holds baseline reports
+* there are folders to store newly generated reports
+
 ##  Files
 
 ### tsMain
