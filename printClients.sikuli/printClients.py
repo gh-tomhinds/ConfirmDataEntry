@@ -9,7 +9,7 @@ def Print_Clients(reportName):
 
     myTools.sectionStartTimeStamp("print clients")
 
-    reportName = Settings.tsVersion + "-" + reportName + ".csv"
+    reportName = Settings.tsVersion + "-" + reportName
 
     logging.debug(' ')
     logging.debug('Print_Clients: ' + reportName)

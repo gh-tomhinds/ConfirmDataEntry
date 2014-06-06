@@ -9,7 +9,7 @@ def Print_Funds(reportName):
 
     myTools.sectionStartTimeStamp("print funds")
 
-    reportName = Settings.tsVersion + "-" + reportName + ".csv"
+    reportName = Settings.tsVersion + "-" + reportName
 
     logging.debug(' ')
     logging.debug('Print_Funds: ' + reportName)

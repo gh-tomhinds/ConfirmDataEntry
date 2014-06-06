@@ -43,6 +43,8 @@ def Print_BillRun(month):
     logging.debug('- print bill run for month: ' + str(month))
 
     type("b",KeyModifier.CTRL)
+    time.sleep(1)
+    
     doubleClick("1368070709186.png")
     time.sleep(1)
 
@@ -64,15 +66,15 @@ def Print_BillRun(month):
     time.sleep(1)
     type(Key.ENTER)    
 
-    wait("1368071925388.png",600)
+    wait("1368071925388.png",FOREVER)
     type(Key.ENTER)    
     time.sleep(1)
 
     # approve bills
-    wait(Pattern("1368108335979.png").targetOffset(-124,-10),600)
+    wait(Pattern("1368108335979.png").targetOffset(-124,-10),FOREVER)
     click(Pattern("1368108335979.png").targetOffset(-124,-10))
     type(Key.ENTER)
-    waitVanish("1368288231948.png",600) 
+    waitVanish("1368288231948.png",FOREVER) 
 
     # close report entry / don't save
     logging.debug('-- close report window')

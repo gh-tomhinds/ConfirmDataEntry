@@ -115,6 +115,8 @@
 </span>    logging.debug(<span class="str">'- print bill run for month: '</span> + str(month))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="skw">doubleClick</span>(<img src="1368070709186.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -136,15 +138,15 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-    <span class="skw">wait</span>(<img src="1368071925388.png" />,<span class="dig">600</span>)
+    <span class="skw">wait</span>(<img src="1368071925388.png" />,FOREVER)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># approve bills
-</span>    <span class="skw">wait</span>(Pattern(<img src="1368108335979.png" />).targetOffset(-<span class="dig">124</span>,-<span class="dig">10</span>),<span class="dig">600</span>)
+</span>    <span class="skw">wait</span>(Pattern(<img src="1368108335979.png" />).targetOffset(-<span class="dig">124</span>,-<span class="dig">10</span>),FOREVER)
     <span class="skw">click</span>(Pattern(<img src="1368108335979.png" />).targetOffset(-<span class="dig">124</span>,-<span class="dig">10</span>))
     <span class="skw">type</span>(Key.ENTER)
-    waitVanish(<img src="1368288231948.png" />,<span class="dig">600</span>)
+    waitVanish(<img src="1368288231948.png" />,FOREVER)
 
     <span class="cmt"># close report entry / don't save
 </span>    logging.debug(<span class="str">'-- close report window'</span>)
