@@ -1,5 +1,5 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - #
-# tsMain
+# _main
 # - - - - - - - - - - - - - - - - - - - - - - - - - - #
 #
 # These scripts rely on the following:                
