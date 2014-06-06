@@ -38,28 +38,27 @@ import compareReports
 
 #import sendEmail
 
+##############################################################
+
 myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
-startTSandNewDB.StartTS_CreateNewDB()
+##############################################################
 
-tweakPrefs.Tweak_Prefs()
-createCategories.Create_Categories()
-createCustomFields.Create_CustomFields()
+#startTSandNewDB.StartTS_CreateNewDB()
 
-createImportEditNames.CreateImportEdit_Names()
+#tweakPrefs.Tweak_Prefs()
+#createCategories.Create_Categories()
+#createCustomFields.Create_CustomFields()
 
-<<<<<<< HEAD
+#createImportEditNames.CreateImportEdit_Names()
+
 #createSlips.Create_Slips(10,10) # pass in num-time-slips and num-exp-slips to create manually; should by 10, 10
 #runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
-=======
-createSlips.Create_Slips(10,10) # pass in num-time-slips and num-exp-slips to create manually; should by 10, 10
-runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
->>>>>>> 023299518ba0d7966d5b115e5827f045a6897706
 
-#baCommon.Setup_BADefaultLayout()
-#reviewBillingArrangements.Review_BillingArrangements()
+baCommon.Setup_BADefaultLayout()
+reviewBillingArrangements.Review_BillingArrangements()
 
 #setupCalTerms.Setup_CalTerms()
 #calendarStuff.Calendar_Stuff()
