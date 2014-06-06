@@ -9,6 +9,8 @@ import baReviewBills
 def BA_ContingencyTime_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("ba ContTime1")
+
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
@@ -41,9 +43,13 @@ def BA_ContingencyTime_Arrangement1():
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
 
+    myTools.sectionEndTimeStamp()
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ContingencyTime_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba ContTime2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -73,6 +79,8 @@ def BA_ContingencyTime_Arrangement2():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Contingency_Time():

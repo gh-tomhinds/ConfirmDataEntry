@@ -9,6 +9,8 @@ import baReviewBills
 def BA_FlatFeePlusExp_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("ba FFPlusExp")
+
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
@@ -39,6 +41,8 @@ def BA_FlatFeePlusExp_Arrangement():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_FlatFeePlus_Exp():

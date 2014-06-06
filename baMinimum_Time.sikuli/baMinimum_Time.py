@@ -9,6 +9,8 @@ import baReviewBills
 def BA_MinimumTime_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("ba MinimumTime")
+
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
@@ -40,6 +42,8 @@ def BA_MinimumTime_Arrangement():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Minimum_Time():

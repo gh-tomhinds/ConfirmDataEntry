@@ -9,6 +9,8 @@ import baReviewBills
 def BA_InterimActivity_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("ba InterimAct1")
+
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
@@ -42,9 +44,13 @@ def BA_InterimActivity_Arrangement1():
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
 
+    myTools.sectionEndTimeStamp()
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_InterimActivity_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba InterimAct2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -81,9 +87,13 @@ def BA_InterimActivity_Arrangement2():
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
 
+    myTools.sectionEndTimeStamp()
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_InterimActivity_Arrangement3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba InterimAct3")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -121,6 +131,8 @@ def BA_InterimActivity_Arrangement3():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_InterimActivity():

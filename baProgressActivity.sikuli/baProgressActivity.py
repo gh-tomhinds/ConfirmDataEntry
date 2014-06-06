@@ -9,6 +9,8 @@ import baReviewBills
 def BA_ProgressActivity_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("ba ProgressAct1")
+
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
@@ -43,9 +45,13 @@ def BA_ProgressActivity_Arrangement1():
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
 
+    myTools.sectionEndTimeStamp()
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ProgressActivity_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba ProgressAct2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -82,9 +88,13 @@ def BA_ProgressActivity_Arrangement2():
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
 
+    myTools.sectionEndTimeStamp()
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ProgressActivity_Arrangement3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    myTools.sectionStartTimeStamp("ba ProgressAct3")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -122,6 +132,8 @@ def BA_ProgressActivity_Arrangement3():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ProgressActivity():

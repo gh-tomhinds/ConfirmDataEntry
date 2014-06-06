@@ -9,6 +9,8 @@ import baReviewBills
 def BA_AdjustTimekeeperTime_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    myTools.sectionStartTimeStamp("ba AdjustTimekeeperTime")
+
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
@@ -51,6 +53,8 @@ def BA_AdjustTimekeeperTime_Arrangement():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)    
+
+    myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_AdjustTimekeeper_Time():
