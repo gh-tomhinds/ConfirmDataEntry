@@ -29,15 +29,74 @@ This script the main driver of all other scripts.
 
 ### myTools
 
-#### setupLog
-
+*** setupLog
 called by: _main
-initialized main log file
+initializes main log file
+
+*** pressTAB
+called by: many places
+presses TAB key x times
+
+*** pressSHIFTTAB
+called by: many places
+presses SHIFT+TAB key x times
+
+*** pressF6
+called by: many places
+presses F6 key x times
+
+*** pressSHIFTF6
+called by: many places
+presses SHIFT+F6 key x times
+
+*** pressDOWN
+called by: many places
+presses DOWN key x times
+
+*** pressUP
+called by: many places
+presses UP key x times
+
+*** pressLEFT
+called by: many places
+presses LEFT key x times
+
+*** pressRIGHT
+called by: many places
+presses RIGHT key x times
+
+*** getFocus
+called by: many places
+clicks the data label in the bottom task bar to ensure Timeslips has focus
+
+*** waitForExportSuccess
+called by: import scripts
+waits for the import to end successfully
+
+*** monthToName
+called by: some scripts that require file names
+takes the current month and a file extension and returns a file name
+
+*** startTimeStamp
+called by: _main
+beginning time stamp for log file
+
+*** endTimeStamp
+called by: _main
+ending time stamp for log file
+
+*** sectionStartTimeStamp
+called by: any script that is logging duration
+beginning section time stamp for log file
+
+*** sectionEndTimeStamp
+called by: any script that is logging duration
+ending section time stamp for log file
+
 
 ### setupStuff
 
-#### Setup_Stuff
-
+*** Setup_Stuff
 called by: _main
 This script sets up many of the global variables (usually paths and file names) used throughout the scripts.
 * some of these are based on the version number
