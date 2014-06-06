@@ -19,17 +19,29 @@ Stores reports for comparison
 
 ##  Files
 
-### tsMain
+### _main
 
-This file the main driver of this set of scripts.
+This script the main driver of all other scripts.
 * It sets up the logging system.
 * It generates the starting time stamp
-* It calls all scripts
+* It calls all scripts (or all scripts that call other scripts)
 * It generates the ending time stamp
+
+### myTools
+
+#### setupLog
+
+called by: _main
+initialized main log file
 
 ### setupStuff
 
-This file sets up many of the global variables used throughout the scripts
+#### Setup_Stuff
+
+called by: _main
+This script sets up many of the global variables (usually paths and file names) used throughout the scripts.
+* some of these are based on the version number
+* some of these are based on the Sikuli folder on the desktop
 
 ### closeTimeslips
 
