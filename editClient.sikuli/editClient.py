@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_CliGenInfo():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- open client list')
     type("n",KeyModifier.ALT)
@@ -73,9 +73,9 @@ def Edit_CliGenInfo():
     type("County of Hampden")
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_CliCustom():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('  - custom fields')
 
@@ -113,9 +113,9 @@ def Edit_CliCustom():
     type("t")
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_CliRatesNotes():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('  - rates and notes')
 
@@ -163,9 +163,9 @@ def Edit_CliRatesNotes():
     type(Key.END)
     type(" edit")
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_DefaultRates():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- edit default rates')
 
     # switch to first client
@@ -206,9 +206,9 @@ def Edit_DefaultRates():
                 type(Key.PAGE_DOWN)
                 counter += 1
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_InterestSetting():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- edit interest setting')
     
@@ -247,12 +247,11 @@ def Edit_InterestSetting():
     
     myTools.waitForExportSuccess()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_Client():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("edit client")
-    logging.debug(' ')
     logging.debug('Edit_Client')
 
     # make sure timeslips has focus

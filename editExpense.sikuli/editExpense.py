@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_ExpenseGenInfo():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- open expense list')
     type("n",KeyModifier.ALT)
@@ -55,9 +55,9 @@ def Edit_ExpenseGenInfo():
     type("a",KeyModifier.CTRL)
     type("Hammers, saws, etc.")        
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_ExpenseCustom():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('  - custom fields')
 
@@ -96,13 +96,12 @@ def Edit_ExpenseCustom():
     
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_Expense():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("edit expense")
 
-    logging.debug(' ')
     logging.debug('Edit_Expense')
 
     # make sure timeslips has focus

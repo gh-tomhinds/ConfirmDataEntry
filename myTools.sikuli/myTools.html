@@ -174,18 +174,18 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    Settings.startTime = datetime.datetime.now()
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
     logging.debug(Settings.startTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> endTimeStamp():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    Settings.endTime = datetime.datetime.now()
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
     logging.debug(Settings.endTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
 
     elapsedTime = Settings.endTime - Settings.startTime
     logging.debug(<span class="str">"Elapsed:    %s"</span> %elapsedTime)
@@ -198,18 +198,17 @@
     Settings.sectionStartTime = datetime.datetime.now()
 
     logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
     logging.debug(Settings.sectionStartTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
-    logging.debug(<span class="str">'- - - - - - - - - - - - - - -'</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> sectionEndTimeStamp():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>    Settings.sectionEndTime = datetime.datetime.now()
-    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'= = = = = = = = = = = = = = = = = = = ='</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
     logging.debug(Settings.sectionEndTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
-    logging.debug(<span class="str">'= = = = = = = = = = = = = = = = = = = ='</span>)
+    logging.debug(<span class="str">'---------------------------------------'</span>)
 
     sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime
 

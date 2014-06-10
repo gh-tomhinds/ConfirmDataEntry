@@ -102,18 +102,18 @@ def startTimeStamp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     Settings.startTime = datetime.datetime.now()
     logging.debug(' ')
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('---------------------------------------')
     logging.debug(Settings.startTime.strftime("Started at: %Y-%m-%d %H:%M:%S"))
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('---------------------------------------')
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def endTimeStamp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     Settings.endTime = datetime.datetime.now()
     logging.debug(' ')
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('---------------------------------------')
     logging.debug(Settings.endTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('---------------------------------------')
 
     elapsedTime = Settings.endTime - Settings.startTime
     logging.debug("Elapsed:    %s" %elapsedTime)
@@ -126,18 +126,17 @@ def sectionStartTimeStamp(aSectionName):
     Settings.sectionStartTime = datetime.datetime.now()
     
     logging.debug(' ')
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('---------------------------------------')
     logging.debug(Settings.sectionStartTime.strftime("Started at: %Y-%m-%d %H:%M:%S"))
-    logging.debug('- - - - - - - - - - - - - - -')
+    logging.debug('---------------------------------------')
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def sectionEndTimeStamp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     Settings.sectionEndTime = datetime.datetime.now()
-    logging.debug(' ')
-    logging.debug('= = = = = = = = = = = = = = = = = = = =')
+    logging.debug('---------------------------------------')
     logging.debug(Settings.sectionEndTime.strftime("Stopped at: %Y-%m-%d %H:%M:%S"))
-    logging.debug('= = = = = = = = = = = = = = = = = = = =')
+    logging.debug('---------------------------------------')
 
     sectionElapsedTime = Settings.sectionEndTime - Settings.sectionStartTime
 

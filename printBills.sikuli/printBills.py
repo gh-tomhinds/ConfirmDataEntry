@@ -3,9 +3,9 @@ import logging
 import myTools
 from datetime import date
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Set_BillDate(month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- change bill date: ' + str(month) + "/27/2013")
     time.sleep(1)
     
@@ -37,9 +37,9 @@ def Set_BillDate(month):
     type(Key.ENTER)
     time.sleep(1)  
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Print_BillRun(month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- print bill run for month: ' + str(month))
 
     type("b",KeyModifier.CTRL)
@@ -84,12 +84,11 @@ def Print_BillRun(month):
     type("n")    
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Print_Bills(month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("bills" + str(month))
-    logging.debug(' ')
     logging.debug('Print_Bills: ' + str(month))
     
     # make sure timeslips has focus

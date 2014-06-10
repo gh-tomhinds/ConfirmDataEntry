@@ -2,13 +2,12 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_Categories():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("categories")
 
-    logging.debug(' ')
     logging.debug('Create_Categories')
 
     # make sure timeslips has focus

@@ -74,9 +74,9 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_CliGenInfo():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- open client list'</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
@@ -145,9 +145,9 @@
     <span class="skw">type</span>(<span class="str">"County of Hampden"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_CliCustom():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'  - custom fields'</span>)
 
@@ -185,9 +185,9 @@
 </span>    <span class="skw">type</span>(<span class="str">"t"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_CliRatesNotes():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'  - rates and notes'</span>)
 
@@ -235,9 +235,9 @@
     <span class="skw">type</span>(Key.END)
     <span class="skw">type</span>(<span class="str">" edit"</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_DefaultRates():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- edit default rates'</span>)
 
     <span class="cmt"># switch to first client
@@ -278,9 +278,9 @@
                 <span class="skw">type</span>(Key.PAGE_DOWN)
                 counter += <span class="dig">1</span>
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_InterestSetting():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- edit interest setting'</span>)
 
@@ -319,12 +319,11 @@
 
     myTools.waitForExportSuccess()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_Client():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"edit client"</span>)
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Edit_Client'</span>)
 
     <span class="cmt"># make sure timeslips has focus

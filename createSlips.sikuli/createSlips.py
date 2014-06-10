@@ -4,9 +4,9 @@ import myTools
 import initNames
 import makeBackup
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_OneSlip(slipType,tk,act,cli,slipnum):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Create_OneSlip: ' + str(slipnum))
 
@@ -60,12 +60,11 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     type("s",KeyModifier.CTRL)
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_TimeSlips():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("import time slips")
-    logging.debug(' ')
     logging.debug('Import_TimeSlips')
     
 # start tsimport
@@ -168,7 +167,6 @@ def Import_ExpenseSlips():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("import expense slips")
-    logging.debug(' ')
     logging.debug('Import_ExpenseSlips')
     
 # start tsimport
@@ -266,13 +264,13 @@ def Import_ExpenseSlips():
     
     myTools.sectionEndTimeStamp()    
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_Slips(tmslips,exslips):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
-    logging.debug('- Create_Slips')
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("init slips")
+    logging.debug('create slips')    
+    myTools.sectionStartTimeStamp("init names")
+    
     clients = initNames.Init_Clients()
     timekeepers = initNames.Init_Timekeepers()
     tasks = initNames.Init_Tasks()
@@ -295,7 +293,7 @@ def Create_Slips(tmslips,exslips):
 
     Import_TimeSlips()
 
-    myTools.sectionStartTimeStamp("create time slips")
+    myTools.sectionStartTimeStamp("create expense slips")
     # increase count to account for imported slips
     count += 692
 
@@ -320,4 +318,4 @@ def Create_Slips(tmslips,exslips):
 
     Import_ExpenseSlips()
 
-    makeBackup.Backup_Checkpoint("slips")    
+    makeBackup.Backup_Checkpoint("slips")

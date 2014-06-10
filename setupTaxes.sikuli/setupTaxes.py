@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Change_TaxRule():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- Change_TaxRule')
 
     logging.debug('-- open Taxes')
@@ -31,9 +31,9 @@ def Change_TaxRule():
     type(Key.ENTER)
     click("1365991914214.png")
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Change_ClientSettings():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Change_ClientSettings')
 
@@ -83,9 +83,9 @@ def Change_ClientSettings():
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Change_TaskSettings():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Change_TaskSettings')
 
@@ -119,9 +119,9 @@ def Change_TaskSettings():
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Change_ExpenseSettings():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Change_ExpenseSettings')
 
@@ -159,13 +159,12 @@ def Change_ExpenseSettings():
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_Taxes():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("setup taxes")
 
-    logging.debug(' ')
     logging.debug('Setup_Taxes')
     
     # make sure timeslips has focus

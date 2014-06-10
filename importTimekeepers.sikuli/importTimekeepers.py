@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Add_TkCustomField(name, downArrow):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     type(Key.ENTER)
     type(Key.TAB)
@@ -16,13 +16,12 @@ def Add_TkCustomField(name, downArrow):
     type(Key.ENTER)
     type(Key.TAB,KeyModifier.SHIFT)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_Timekeepers():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("import timekeepers")
 
-    logging.debug(' ')
     logging.debug('Import_Timekeepers')
 
 # start tsimport
@@ -118,8 +117,6 @@ def Import_Timekeepers():
     time.sleep(1)
     type(Key.RIGHT)
     type(Key.ENTER)   
-
-#    popup("xxx")
 
     time.sleep(1)
 

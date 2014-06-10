@@ -2,9 +2,11 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_Bills():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    myTools.sectionStartTimeStamp("setup bills")
     logging.debug('- set up bill report')
 
     myTools.getFocus()
@@ -57,3 +59,5 @@ def Setup_Bills():
     type("s",KeyModifier.CTRL)
     type(Key.ENTER)
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

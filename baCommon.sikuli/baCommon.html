@@ -76,9 +76,9 @@
 <span class="kw">import</span> createSlips
 <span class="kw">import</span> sys
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Import_DefaultLayout():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- open layout list'</span>)
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
@@ -109,9 +109,9 @@
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Setup_NewNamesDefault():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- open gen settings'</span>)
     <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
@@ -134,18 +134,18 @@
 
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> moveto_BAPage():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
         myTools.pressSHIFTF6(<span class="dig">9</span>)
     <span class="kw">else</span>:
         myTools.pressF6(<span class="dig">3</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> setup_BABills():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- set up bill report'</span>)
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
@@ -172,9 +172,9 @@
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Setup_BADefaultLayout():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba setup"</span>)
 
@@ -186,13 +186,11 @@
 
     myTools.sectionEndTimeStamp()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> BA_Create_Slips(baClient):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba slips"</span>)
-
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'BA_Create_Slips'</span>)
 
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
@@ -215,13 +213,11 @@
 
     myTools.sectionEndTimeStamp()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> BA_Bill(baClient,billNum):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba bill"</span>)
-
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'BA_Bill: '</span> + baClient + <span class="str">' '</span> + str(billNum))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)

@@ -2,10 +2,9 @@ from sikuli import *
 import os
 import logging
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Compare_OneReport(reportName):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
+#---------------------------------------------------#
     logging.debug('Compare_OneReport: ' + reportName)
 
 # point to old report, new report, and output file

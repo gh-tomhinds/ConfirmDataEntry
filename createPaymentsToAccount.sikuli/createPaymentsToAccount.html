@@ -76,9 +76,9 @@
 <span class="kw">import</span> myTools
 <span class="kw">import</span> initNames
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_OnePayToAccount(client,cliNum,month):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(month) + <span class="str">"-"</span> + client)
 
@@ -123,12 +123,11 @@
     <span class="kw">if</span> exists(<img src="1398349359000.png" />):
         <span class="skw">type</span>(<span class="str">"n"</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_PaymentsToAccount(month):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"paystoaccount"</span> + str(month))
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Create_PaysToAccount: '</span> + str(month))
 
     allClients = initNames.Init_Clients()

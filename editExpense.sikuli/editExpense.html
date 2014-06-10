@@ -74,9 +74,9 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_ExpenseGenInfo():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- open expense list'</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
@@ -127,9 +127,9 @@
 </span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(<span class="str">"Hammers, saws, etc."</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_ExpenseCustom():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'  - custom fields'</span>)
 
@@ -168,13 +168,12 @@
 
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Edit_Expense():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"edit expense"</span>)
 
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Edit_Expense'</span>)
 
     <span class="cmt"># make sure timeslips has focus

@@ -75,15 +75,13 @@
 <span class="kw">import</span> myTools
 <span class="kw">import</span> compareOneReport
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Print_Timekeepers(reportName):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"print timekeepers"</span>)
 
     reportName = Settings.tsVersion + <span class="str">"-"</span> + reportName
-
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Print_Timekeepers: '</span> + reportName)
 
     <span class="cmt"># make sure timeslips has focus

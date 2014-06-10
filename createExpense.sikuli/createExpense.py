@@ -2,13 +2,12 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_Expense():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("create expense")
 
-    logging.debug(' ')
     logging.debug('Create_Expense')
 
     logging.debug('- open expense list')

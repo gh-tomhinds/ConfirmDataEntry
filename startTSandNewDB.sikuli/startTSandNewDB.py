@@ -3,9 +3,9 @@ import logging
 import myTools
 import shutil
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def delete_dataFolder():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- delete_dataFolder')
 
     if os.path.exists(Settings.dbFolder):
@@ -14,9 +14,9 @@ def delete_dataFolder():
     else:
         logging.debug("-- Missing:           %s" % Settings.dbFolder)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def checkFor_Sample():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- checkFor_Sample')
 
     time.sleep(1)     
@@ -24,9 +24,9 @@ def checkFor_Sample():
         logging.debug('-- Sample message exists')
         type(Key.ENTER)        
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def checkFor_PEP():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- checkFor_PEP')
 
     time.sleep(1)     
@@ -34,9 +34,9 @@ def checkFor_PEP():
         logging.debug('-- PEP message exists')
         type(Key.ENTER)        
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def checkFor_SPS():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- checkFor_SPS')
 
     time.sleep(1)     
@@ -44,9 +44,9 @@ def checkFor_SPS():
         logging.debug('-- SPS message exists')
         type(Key.ENTER)        
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def checkFor_BillingDate():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- checkFor_BillingDate')
 
     time.sleep(1)     
@@ -54,13 +54,12 @@ def checkFor_BillingDate():
         logging.debug('-- billing date message exists')
         type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def StartTS_CreateNewDB():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("new db")
-
-    logging.debug(' ')
+    
     logging.debug('StartTS_CreateNewDB')
 
     popup("make sure Timeslips is closed")

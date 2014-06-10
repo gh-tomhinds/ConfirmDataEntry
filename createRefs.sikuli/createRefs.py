@@ -3,13 +3,12 @@ import logging
 import csv
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_Refs():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("create refs")
 
-    logging.debug(' ')
     logging.debug('Create_Refs')
 
     # make sure timeslips has focus

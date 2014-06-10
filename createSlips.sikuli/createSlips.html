@@ -76,9 +76,9 @@
 <span class="kw">import</span> initNames
 <span class="kw">import</span> makeBackup
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- Create_OneSlip: '</span> + str(slipnum))
 
@@ -132,12 +132,11 @@
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Import_TimeSlips():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"import time slips"</span>)
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_TimeSlips'</span>)
 
 <span class="cmt"># start tsimport
@@ -240,7 +239,6 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"import expense slips"</span>)
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Import_ExpenseSlips'</span>)
 
 <span class="cmt"># start tsimport
@@ -338,13 +336,13 @@
 
     myTools.sectionEndTimeStamp()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_Slips(tmslips,exslips):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'- Create_Slips'</span>)
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'create slips'</span>)
+    myTools.sectionStartTimeStamp(<span class="str">"init names"</span>)
 
-    myTools.sectionStartTimeStamp(<span class="str">"init slips"</span>)
     clients = initNames.Init_Clients()
     timekeepers = initNames.Init_Timekeepers()
     tasks = initNames.Init_Tasks()
@@ -367,7 +365,7 @@
 
     Import_TimeSlips()
 
-    myTools.sectionStartTimeStamp(<span class="str">"create time slips"</span>)
+    myTools.sectionStartTimeStamp(<span class="str">"create expense slips"</span>)
     <span class="cmt"># increase count to account for imported slips
 </span>    count += <span class="dig">692</span>
 

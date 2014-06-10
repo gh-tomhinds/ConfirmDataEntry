@@ -3,10 +3,11 @@ import logging
 import myTools
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_ExpMarkups():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
+    myTools.sectionStartTimeStamp("setup fee alloc")
     logging.debug('Set Up Exp Markups')
     
     # make sure timeslips has focus
@@ -54,3 +55,5 @@ def Setup_ExpMarkups():
     time.sleep(1) 
     type(Key.ENTER)    
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

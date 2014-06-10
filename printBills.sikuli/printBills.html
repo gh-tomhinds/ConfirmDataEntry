@@ -75,9 +75,9 @@
 <span class="kw">import</span> myTools
 <span class="kw">from</span> datetime <span class="kw">import</span> date
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Set_BillDate(month):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- change bill date: '</span> + str(month) + <span class="str">"/27/2013"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -109,9 +109,9 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Print_BillRun(month):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- print bill run for month: '</span> + str(month))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
@@ -156,12 +156,11 @@
     <span class="skw">type</span>(<span class="str">"n"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Print_Bills(month):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"bills"</span> + str(month))
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Print_Bills: '</span> + str(month))
 
     <span class="cmt"># make sure timeslips has focus

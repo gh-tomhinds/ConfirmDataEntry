@@ -3,9 +3,9 @@ import logging
 import myTools
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_CustomFields():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Set Up Custom Fields')
     type("p", KeyModifier.ALT)
@@ -29,9 +29,9 @@ def Setup_CustomFields():
     type(Key.ENTER)
     time.sleep(2)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Export_Timekeepers():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Export Timekeepers')
 
@@ -99,13 +99,11 @@ def Export_Timekeepers():
     time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_FeeAlloc():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("setup fee alloc")
-
-    logging.debug(' ')
     logging.debug('Set Up Fee Allocation')
 
     # make sure timeslips has focus

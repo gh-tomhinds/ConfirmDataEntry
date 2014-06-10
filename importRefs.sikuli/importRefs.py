@@ -2,13 +2,12 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_Refs():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("import refs")
 
-    logging.debug(' ')
     logging.debug('Import_Refs')
 
 # start tsimport

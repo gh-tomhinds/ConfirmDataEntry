@@ -3,13 +3,11 @@ import logging
 import myTools
 import compareOneReport
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Print_ARAgedBal(reportMonth):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print aged bal")
-
-    logging.debug(' ')
     logging.debug('Print_ARAgedBal: ' + str(reportMonth))
 
     # make sure timeslips has focus

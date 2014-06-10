@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_TkGenInfo():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- open timekeeper list')
     type("n",KeyModifier.ALT)    
@@ -52,9 +52,9 @@ def Edit_TkGenInfo():
     type(Key.TAB)
     type("50.01")
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_TkCustom():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('  - custom fields')
 
@@ -87,13 +87,12 @@ def Edit_TkCustom():
     
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_Timekeeper():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("edit timekeeper")
 
-    logging.debug(' ')
     logging.debug('Edit_Timekeeper')
 
 # make sure timeslips has focus

@@ -4,9 +4,9 @@ import csv
 import myTools
 import initNames
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_OnePayToAccount(client,cliNum,month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Create_OnePTA: ' + str(month) + "-" + client)
 
@@ -51,12 +51,11 @@ def Create_OnePayToAccount(client,cliNum,month):
     if exists("1398349359000.png"):
         type("n")    
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_PaymentsToAccount(month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("paystoaccount" + str(month))
-    logging.debug(' ')
     logging.debug('Create_PaysToAccount: ' + str(month))
 
     allClients = initNames.Init_Clients()

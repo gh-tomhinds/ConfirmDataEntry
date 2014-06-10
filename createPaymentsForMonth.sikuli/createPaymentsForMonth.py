@@ -3,9 +3,9 @@ import logging
 import myTools
 import initNames
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_OnePayment(client,cliNum,month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- Create_OnePay: ' + str(month) + "-" + client)
 
@@ -59,12 +59,11 @@ def Create_OnePayment(client,cliNum,month):
     if exists("1397586037229.png"):
         type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_PaymentsForMonth(month):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("payments" + str(month))
-    logging.debug(' ')
     logging.debug('Create_PaymentsForMonth: ' + str(month))
 
     allClients = initNames.Init_Clients()

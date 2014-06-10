@@ -74,10 +74,12 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Setup_Bills():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">'- set up bill report'</span>)
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"setup bills"</span>)
+    logging.debug(<span class="str">'- set up bill report'</span>)
 
     myTools.getFocus()
 
@@ -129,6 +131,8 @@
 </span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

@@ -2,13 +2,12 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("create client")
 
-    logging.debug(' ')
     logging.debug('Create_Client: ' + nn1)
 
     # make sure timeslips has focus

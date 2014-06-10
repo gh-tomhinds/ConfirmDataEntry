@@ -74,9 +74,9 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Backup_Data(bkuName):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"make backup "</span> + bkuName)
     logging.debug(<span class="str">'Backup_Data: '</span> + bkuName)
@@ -116,9 +116,9 @@
 
     myTools.sectionEndTimeStamp()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Backup_Checkpoint(checkpointName):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Backup_Data: '</span> + checkpointName)
@@ -127,9 +127,9 @@
 </span>    strBackupFile = Settings.tsVersion + <span class="str">"-"</span> + checkpointName
     Backup_Data(strBackupFile)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Backup_BillData(billMonth):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Backup_Data: '</span> + str(billMonth))

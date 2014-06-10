@@ -2,13 +2,12 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_ClientFunds():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("edit client funds")
 
-    logging.debug(' ')
     logging.debug('Edit_ClientFunds')
 
     # make sure timeslips has focus

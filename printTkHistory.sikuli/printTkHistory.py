@@ -3,13 +3,11 @@ import logging
 import myTools
 import compareOneReport
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Print_TkHistory(reportMonth):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print tk history")
-
-    logging.debug(' ')
     logging.debug('Print_TkHistory: ' + str(reportMonth))
 
     # make sure timeslips has focus

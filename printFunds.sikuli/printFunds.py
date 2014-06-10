@@ -3,9 +3,9 @@ import logging
 import myTools
 import compareOneReport
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Print_Funds(reportName):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print funds")
 

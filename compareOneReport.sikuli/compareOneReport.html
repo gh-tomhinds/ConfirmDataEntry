@@ -74,11 +74,10 @@
 <span class="kw">import</span> os
 <span class="kw">import</span> logging
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Compare_OneReport(reportName):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
-    logging.debug(<span class="str">'Compare_OneReport: '</span> + reportName)
+<span class="cmt">#---------------------------------------------------#
+</span>    logging.debug(<span class="str">'Compare_OneReport: '</span> + reportName)
 
 <span class="cmt"># point to old report, new report, and output file
 </span>    baseFile = Settings.baseRepFolder + <span class="str">"\\"</span> + reportName[<span class="dig">5</span>:] <span class="cmt">#trim version from name</span>

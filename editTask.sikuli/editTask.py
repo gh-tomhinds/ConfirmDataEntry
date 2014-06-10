@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_TaskGenInfo():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- open task list')
     type("n",KeyModifier.ALT)
@@ -48,9 +48,9 @@ def Edit_TaskGenInfo():
     time.sleep(1)
     type("Create something new")
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_TaskCustom():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('  - custom fields')
 
@@ -83,13 +83,12 @@ def Edit_TaskCustom():
     
     time.sleep(1)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Edit_Task():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("edit task")
 
-    logging.debug(' ')
     logging.debug('Edit_Task')
 
     # make sure timeslips has focus

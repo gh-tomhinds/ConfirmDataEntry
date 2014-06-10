@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Add_ExpCustomField(name, downArrow):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     type(Key.ENTER)
     type(Key.TAB)
@@ -16,13 +16,12 @@ def Add_ExpCustomField(name, downArrow):
     type(Key.ENTER)
     type(Key.TAB,KeyModifier.SHIFT)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_Expenses():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("import expenses")
 
-    logging.debug(' ')
     logging.debug('Import_Expenses')
 
 # start tsimport

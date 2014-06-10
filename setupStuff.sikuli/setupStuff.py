@@ -1,12 +1,11 @@
 from sikuli import *
 import logging
 import os
-import datetime
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_Stuff():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
+#---------------------------------------------------#
+
     logging.debug('Setup_Stuff')
 
 # get current month and year (forget where this is used)

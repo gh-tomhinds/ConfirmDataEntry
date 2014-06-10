@@ -4,9 +4,9 @@ import myTools
 import createSlips
 import sys
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_DefaultLayout():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- open layout list')
     type("b",KeyModifier.ALT)
@@ -37,9 +37,9 @@ def Import_DefaultLayout():
     type(Key.ENTER)
     type(Key.F4,KeyModifier.CTRL)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_NewNamesDefault():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- open gen settings')
     type("p",KeyModifier.ALT)
@@ -62,18 +62,18 @@ def Setup_NewNamesDefault():
 
     type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def moveto_BAPage():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     if int(Settings.tsVersion) > 2014:
         myTools.pressSHIFTF6(9)
     else:
         myTools.pressF6(3)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def setup_BABills():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
     logging.debug('- set up bill report')
 
     type("b",KeyModifier.CTRL)
@@ -100,9 +100,9 @@ def setup_BABills():
     type(Key.ENTER)
     type(Key.F4,KeyModifier.CTRL)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Setup_BADefaultLayout():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("ba setup")
 
@@ -114,13 +114,11 @@ def Setup_BADefaultLayout():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def BA_Create_Slips(baClient):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("ba slips")
-
-    logging.debug(' ')
     logging.debug('BA_Create_Slips')
 
     type("m",KeyModifier.CTRL)
@@ -143,13 +141,11 @@ def BA_Create_Slips(baClient):
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def BA_Bill(baClient,billNum):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("ba bill")
-
-    logging.debug(' ')
     logging.debug('BA_Bill: ' + baClient + ' ' + str(billNum))
 
     type("b",KeyModifier.CTRL)

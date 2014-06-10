@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def CreateOne(name, downArrow):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('-- create ' + name)
 
@@ -17,9 +17,9 @@ def CreateOne(name, downArrow):
     type(name)
     type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def FillCliList():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- fill list')
 
@@ -34,9 +34,9 @@ def FillCliList():
         time.sleep(1)
     type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def FillTkList():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- fill list')
 
@@ -51,9 +51,9 @@ def FillTkList():
         time.sleep(1)
     type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def FillActList():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug('- fill list')
 
@@ -68,13 +68,12 @@ def FillActList():
         time.sleep(1)
     type(Key.ENTER)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Create_CustomFields():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("custom fields")
 
-    logging.debug(' ')
     logging.debug('Create_CustomFields')
 
     # make sure timeslips has focus

@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Backup_Data(bkuName):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("make backup " + bkuName)
     logging.debug('Backup_Data: ' + bkuName)
@@ -44,9 +44,9 @@ def Backup_Data(bkuName):
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Backup_Checkpoint(checkpointName):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug(' ')
     logging.debug('Backup_Data: ' + checkpointName)
@@ -55,9 +55,9 @@ def Backup_Checkpoint(checkpointName):
     strBackupFile = Settings.tsVersion + "-" + checkpointName
     Backup_Data(strBackupFile)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Backup_BillData(billMonth):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     logging.debug(' ')
     logging.debug('Backup_Data: ' + str(billMonth))

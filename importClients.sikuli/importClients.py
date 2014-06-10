@@ -2,9 +2,9 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Add_CustomField(name, downArrow):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     type(Key.ENTER)
     type(Key.TAB)
@@ -16,13 +16,12 @@ def Add_CustomField(name, downArrow):
     type(Key.ENTER)
     type(Key.TAB,KeyModifier.SHIFT)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_Clients():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("import clients")
 
-    logging.debug(' ')
     logging.debug('Import_Clients')
     
 # start tsimport

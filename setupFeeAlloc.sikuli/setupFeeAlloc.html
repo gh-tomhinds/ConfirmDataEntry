@@ -75,9 +75,9 @@
 <span class="kw">import</span> myTools
 
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Setup_CustomFields():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- Set Up Custom Fields'</span>)
     <span class="skw">type</span>(<span class="str">"p"</span>, KeyModifier.ALT)
@@ -101,9 +101,9 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Export_Timekeepers():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- Export Timekeepers'</span>)
 
@@ -171,13 +171,11 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Setup_FeeAlloc():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"setup fee alloc"</span>)
-
-    logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Set Up Fee Allocation'</span>)
 
     <span class="cmt"># make sure timeslips has focus
