@@ -2,10 +2,11 @@ from sikuli import *
 import logging
 import myTools
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def Import_BillLayout():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-    logging.debug(' ')
+#---------------------------------------------------#
+
+    myTools.sectionStartTimeStamp("import layout")
     logging.debug('Import_BillLayout')
     
     # make sure timeslips has focus
@@ -39,3 +40,5 @@ def Import_BillLayout():
     time.sleep(1)
     type(Key.ENTER)
     type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()

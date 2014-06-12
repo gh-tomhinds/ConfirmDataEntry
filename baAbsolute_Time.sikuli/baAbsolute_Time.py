@@ -10,6 +10,7 @@ def BA_AbsoluteTime_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AbsoluteTime")
+    logging.debug("ba AbsoluteTime")
 
 # open client    
     type("i",KeyModifier.CTRL)

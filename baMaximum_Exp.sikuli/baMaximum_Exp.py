@@ -10,6 +10,7 @@ def BA_MaximumExp_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MaximumExp")
+    logging.debug("ba MaximumExp")
 
 # open client    
     type("i",KeyModifier.CTRL)

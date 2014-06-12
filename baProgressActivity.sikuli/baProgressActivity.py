@@ -10,6 +10,7 @@ def BA_ProgressActivity_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ProgressAct1")
+    logging.debug("ba ProgressAct1")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -52,6 +53,7 @@ def BA_ProgressActivity_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ProgressAct2")
+    logging.debug("ba ProgressAct2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -95,6 +97,7 @@ def BA_ProgressActivity_Arrangement3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ProgressAct3")
+    logging.debug("ba ProgressAct1")
 
 # open client    
     type("i",KeyModifier.CTRL)

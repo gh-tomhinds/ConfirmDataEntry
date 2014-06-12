@@ -10,6 +10,7 @@ def BA_MaximumBoth_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MaximumBoth")
+    logging.debug("ba MaximumBoth")
 
 # open client    
     type("i",KeyModifier.CTRL)

@@ -10,6 +10,7 @@ def BA_MaximumTime_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MaximumTime")
+    logging.debug("ba MaximumTime")
 
 # open client    
     type("i",KeyModifier.CTRL)

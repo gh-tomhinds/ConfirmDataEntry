@@ -11,7 +11,6 @@ def Print_Funds(reportName):
 
     reportName = Settings.tsVersion + "-" + reportName
 
-    logging.debug(' ')
     logging.debug('Print_Funds: ' + reportName)
 
     # make sure timeslips has focus

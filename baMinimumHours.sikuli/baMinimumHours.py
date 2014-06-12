@@ -10,6 +10,7 @@ def BA_MinimumHours_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MinHours")
+    logging.debug("ba MinHours")
 
 # open client    
     type("i",KeyModifier.CTRL)

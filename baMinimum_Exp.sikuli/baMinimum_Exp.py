@@ -10,6 +10,7 @@ def BA_MinimumExp_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MinimumExp")
+    logging.debug("ba MinimumExp")
 
 # open client    
     type("i",KeyModifier.CTRL)

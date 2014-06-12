@@ -10,6 +10,7 @@ def BA_AbsoluteExp_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AbsoluteExp")
+    logging.debug("ba AbsoluteExp")
 
 # open client    
     type("i",KeyModifier.CTRL)

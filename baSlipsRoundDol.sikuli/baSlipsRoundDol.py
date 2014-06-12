@@ -10,6 +10,7 @@ def BA_Round_Dollars():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba RoundDollars")
+    logging.debug("ba RoundDollars")
 
 # open client    
     type("i",KeyModifier.CTRL)

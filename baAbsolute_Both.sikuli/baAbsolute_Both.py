@@ -10,6 +10,7 @@ def BA_AbsoluteBoth_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AbsoluteBoth")
+    logging.debug("ba AbsoluteBoth")
 
 # open client    
     type("i",KeyModifier.CTRL)

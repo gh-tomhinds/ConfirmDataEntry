@@ -10,6 +10,7 @@ def BA_MinimumBoth_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MinimumBoth")
+    logging.debug("ba MinimumBoth")
 
 # open client    
     type("i",KeyModifier.CTRL)

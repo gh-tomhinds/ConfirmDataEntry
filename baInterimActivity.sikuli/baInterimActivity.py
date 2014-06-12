@@ -10,6 +10,7 @@ def BA_InterimActivity_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimAct1")
+    logging.debug("ba InterimAct1")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -51,6 +52,7 @@ def BA_InterimActivity_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimAct2")
+    logging.debug("ba InterimAct2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -94,6 +96,7 @@ def BA_InterimActivity_Arrangement3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimAct3")
+    logging.debug("ba InterimAct3")
 
 # open client    
     type("i",KeyModifier.CTRL)

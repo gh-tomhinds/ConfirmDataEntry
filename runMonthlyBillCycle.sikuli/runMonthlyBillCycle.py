@@ -11,6 +11,7 @@ import makeBackup
 
 import printARAgedBal
 import printTkHistory
+import printTkCC
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def run_MonthlyBillCycle(startMonth,endMonth):
@@ -31,3 +32,4 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         # compare some values each month
         printARAgedBal.Print_ARAgedBal(thisMonth)
         printTkHistory.Print_TkHistory(thisMonth)
+        printTkCC.Print_TkCC(thisMonth)

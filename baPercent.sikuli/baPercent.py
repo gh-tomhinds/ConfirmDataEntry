@@ -10,6 +10,7 @@ def BA_Percent_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Percent1")
+    logging.debug("ba Percent1")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -86,6 +87,7 @@ def BA_Percent_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Percent2")
+    logging.debug("ba Percent2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -143,6 +145,7 @@ def BA_Percent_Arrangement3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Percent3")
+    logging.debug("ba Percent3")
 
 # open client    
     type("i",KeyModifier.CTRL)

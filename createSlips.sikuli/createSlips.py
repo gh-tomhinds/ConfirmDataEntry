@@ -268,9 +268,9 @@ def Import_ExpenseSlips():
 def Create_Slips(tmslips,exslips):
 #---------------------------------------------------#
 
-    logging.debug('create slips')    
     myTools.sectionStartTimeStamp("init names")
-    
+    logging.debug('Init Names')    
+
     clients = initNames.Init_Clients()
     timekeepers = initNames.Init_Timekeepers()
     tasks = initNames.Init_Tasks()

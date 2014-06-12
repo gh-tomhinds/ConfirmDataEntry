@@ -10,6 +10,7 @@ def BA_FlatFeePlusBoth_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba FFPlusBoth")
+    logging.debug("ba FFPlusBoth")
 
 # open client    
     type("i",KeyModifier.CTRL)

@@ -10,6 +10,7 @@ def BA_InterimTotal_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimTot1")
+    logging.debug("ba InterimTot1")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -46,6 +47,7 @@ def BA_InterimTotal_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimTot2")
+    logging.debug("ba InterimTot2")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -78,6 +80,7 @@ def BA_InterimTotal_Arrangement3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimTot3")
+    logging.debug("ba InterimTot3")
 
 # open client    
     type("i",KeyModifier.CTRL)

@@ -10,6 +10,7 @@ def BA_AdjustTimekeeperTime_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTimekeeperTime")
+    logging.debug("ba AdjustTimekeeperTime")
 
 # open client    
     type("i",KeyModifier.CTRL)

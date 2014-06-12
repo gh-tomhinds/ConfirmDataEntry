@@ -10,6 +10,7 @@ def BA_AdjustTask_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTask")
+    logging.debug("ba AdjustTask")
 
 # open client    
     type("i",KeyModifier.CTRL)

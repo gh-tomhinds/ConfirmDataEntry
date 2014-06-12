@@ -10,6 +10,7 @@ def BA_AdjustExpense_Arrangement():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustExp")
+    logging.debug("ba AdjustExp")
 
 # open client    
     type("i",KeyModifier.CTRL)

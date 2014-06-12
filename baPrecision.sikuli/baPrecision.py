@@ -10,6 +10,7 @@ def BA_Change_Precision():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Precision")
+    logging.debug("ba Precision")
 
 # open client    
     type("i",KeyModifier.CTRL)

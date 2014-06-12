@@ -78,7 +78,7 @@ def StartTS_CreateNewDB():
     
     logging.debug('-- wait until TS is open')
 
-    wait("1387825071114.png")
+    wait("1387825071114.png",300)
 
     checkFor_PEP()
 

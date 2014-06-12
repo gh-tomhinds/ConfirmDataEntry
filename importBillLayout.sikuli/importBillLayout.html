@@ -74,10 +74,11 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Import_BillLayout():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    logging.debug(<span class="str">' '</span>)
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"import layout"</span>)
     logging.debug(<span class="str">'Import_BillLayout'</span>)
 
     <span class="cmt"># make sure timeslips has focus
@@ -111,6 +112,8 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
 </pre>
 </body>
 </html>

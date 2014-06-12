@@ -10,6 +10,7 @@ def BA_Round_Minutes():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba RoundMins")
+    logging.debug("ba RoundMins")
 
 # open client    
     type("i",KeyModifier.CTRL)

@@ -6,7 +6,6 @@ import myTools
 def Backup_Data(bkuName):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("make backup " + bkuName)
     logging.debug('Backup_Data: ' + bkuName)
     
     # make sure timeslips has focus
@@ -42,26 +41,28 @@ def Backup_Data(bkuName):
     # OK button
     type(Key.ENTER)
 
-    myTools.sectionEndTimeStamp()
-
 #---------------------------------------------------#
 def Backup_Checkpoint(checkpointName):
 #---------------------------------------------------#
 
-    logging.debug(' ')
-    logging.debug('Backup_Data: ' + checkpointName)
+    myTools.sectionStartTimeStamp("backup checkpoint")
+    logging.debug('Backup_Checkpoint: ' + checkpointName)
 
     # name backup file: ex: 2015-slips
     strBackupFile = Settings.tsVersion + "-" + checkpointName
     Backup_Data(strBackupFile)
 
+    myTools.sectionEndTimeStamp()
+
 #---------------------------------------------------#
 def Backup_BillData(billMonth):
 #---------------------------------------------------#
 
-    logging.debug(' ')
+    myTools.sectionStartTimeStamp("backup billdata")
     logging.debug('Backup_Data: ' + str(billMonth))
 
     # name backup file: ex: 2015-bill-03
     strBackupFile = myTools.monthToName(billMonth,"-bill-",".bku")
     Backup_Data(strBackupFile)
+
+    myTools.sectionEndTimeStamp()

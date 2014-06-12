@@ -3,6 +3,7 @@ import logging
 import baCommon
 import datetime
 import myTools
+import makeBackup
 
 import baAdjustTotal_Time
 import baAdjustTotal_Exp
@@ -116,3 +117,4 @@ def Review_BillingArrangements():
     baSlipsRoundDol.BA_SlipsRoundDol()    
     baPrecision.BA_Precision()
    
+    makeBackup.Backup_Checkpoint("ba")

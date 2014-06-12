@@ -10,6 +10,7 @@ def BA_ContingencyExp_Arrangement1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContExp1")
+    logging.debug("ba ContExp1")
 
 # open client    
     type("i",KeyModifier.CTRL)
@@ -50,6 +51,7 @@ def BA_ContingencyExp_Arrangement2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContExp2")
+    logging.debug("ba ContExp2")
 
 # open client    
     type("i",KeyModifier.CTRL)

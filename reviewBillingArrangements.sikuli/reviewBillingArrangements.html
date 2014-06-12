@@ -75,6 +75,7 @@
 <span class="kw">import</span> baCommon
 <span class="kw">import</span> datetime
 <span class="kw">import</span> myTools
+<span class="kw">import</span> makeBackup
 
 <span class="kw">import</span> baAdjustTotal_Time
 <span class="kw">import</span> baAdjustTotal_Exp
@@ -187,6 +188,8 @@
     baSlipsRoundMin.BA_SlipsRoundMin()
     baSlipsRoundDol.BA_SlipsRoundDol()
     baPrecision.BA_Precision()
+
+    makeBackup.Backup_Checkpoint(<span class="str">"ba"</span>)
 </pre>
 </body>
 </html>
