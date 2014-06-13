@@ -48,6 +48,8 @@ import baSlipsRoundMin
 import baSlipsRoundDol
 import baPrecision
 
+import printPostbillReports
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def baLogHeader():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -118,3 +120,5 @@ def Review_BillingArrangements():
     baPrecision.BA_Precision()
    
     makeBackup.Backup_Checkpoint("ba")
+
+    printPostbillReports.print_postbill_reports(13)

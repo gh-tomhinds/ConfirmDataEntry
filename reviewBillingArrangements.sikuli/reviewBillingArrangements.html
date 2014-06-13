@@ -120,6 +120,8 @@
 <span class="kw">import</span> baSlipsRoundDol
 <span class="kw">import</span> baPrecision
 
+<span class="kw">import</span> printPostbillReports
+
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> baLogHeader():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -190,6 +192,8 @@
     baPrecision.BA_Precision()
 
     makeBackup.Backup_Checkpoint(<span class="str">"ba"</span>)
+
+    printPostbillReports.print_postbill_reports(<span class="dig">13</span>)
 </pre>
 </body>
 </html>

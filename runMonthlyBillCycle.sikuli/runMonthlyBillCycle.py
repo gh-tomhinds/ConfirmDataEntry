@@ -8,14 +8,11 @@ import createPaymentsForMonth
 import createPaymentsToAccount
 
 import makeBackup
+import printPostbillReports
 
-import printARAgedBal
-import printTkHistory
-import printTkCC
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def run_MonthlyBillCycle(startMonth,endMonth):
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
     for thisMonth in range(startMonth,endMonth):
 
@@ -30,6 +27,4 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         makeBackup.Backup_BillData(thisMonth)
 
         # compare some values each month
-        printARAgedBal.Print_ARAgedBal(thisMonth)
-        printTkHistory.Print_TkHistory(thisMonth)
-        printTkCC.Print_TkCC(thisMonth)
+        printPostbillReports.print_postbill_reports(thisMonth)

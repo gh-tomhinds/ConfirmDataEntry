@@ -67,39 +67,27 @@
    </head>
 <body>
 <div class="info">
-<h2>runMonthlyBillCycle.sikuli\runMonthlyBillCycle.sikuli</h2> <a href="runMonthlyBillCycle.sikuli\runMonthlyBillCycle.zip">(Download this script)</a>
+<h2>printPostbillReports.sikuli\printPostbillReports.sikuli</h2> <a href="printPostbillReports.sikuli\printPostbillReports.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 
-<span class="kw">import</span> setupBills
-<span class="kw">import</span> importBillLayout
-
-<span class="kw">import</span> printBills
-<span class="kw">import</span> createPaymentsForMonth
-<span class="kw">import</span> createPaymentsToAccount
-
-<span class="kw">import</span> makeBackup
-<span class="kw">import</span> printPostbillReports
+<span class="kw">import</span> printARAgedBal
+<span class="kw">import</span> printTkHistory
+<span class="kw">import</span> printTkCC
+<span class="kw">import</span> printFundsBal
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> run_MonthlyBillCycle(startMonth,endMonth):
+</span><span class="kw">def</span> print_postbill_reports(month):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    <span class="kw">for</span> thisMonth <span class="kw">in</span> range(startMonth,endMonth):
-
-        <span class="cmt"># set up the bill report and import the bill layout before the first month
-</span>        <span class="kw">if</span> (thisMonth == <span class="dig">1</span>):
-            setupBills.Setup_Bills()
-            importBillLayout.Import_BillLayout()
-
-        printBills.Print_Bills(thisMonth)
-        createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
-        createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
-        makeBackup.Backup_BillData(thisMonth)
-
-        <span class="cmt"># compare some values each month
-</span>        printPostbillReports.print_postbill_reports(thisMonth)
+    <span class="cmt"># print various reports to check db values and calculations
+</span>    <span class="cmt"># this function is also called from reviewBillingArrangements
+</span>
+    printARAgedBal.Print_ARAgedBal(month)
+    printTkHistory.Print_TkHistory(month)
+    printTkCC.Print_TkCC(month)
+    printFundsBal.Print_FundsBal(month)
 </pre>
 </body>
 </html>
