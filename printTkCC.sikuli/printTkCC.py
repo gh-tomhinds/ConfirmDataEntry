@@ -16,7 +16,7 @@ def Print_TkCC(reportMonth):
     logging.debug('- open report')
     type("r",KeyModifier.ALT)
     type("t")
-    time.sleep(1)   
+    time.sleep(2)   
     type("timekeeper cont")    
     time.sleep(1)
     myTools.pressDOWN(1)
