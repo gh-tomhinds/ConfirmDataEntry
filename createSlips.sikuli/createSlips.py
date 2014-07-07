@@ -5,6 +5,37 @@ import initNames
 import makeBackup
 
 #---------------------------------------------------#
+def Open_SlipList():
+#---------------------------------------------------#
+
+    # open slip list and verify it's open
+    myTools.getFocus()
+    type("m",KeyModifier.CTRL)
+    time.sleep(1)
+    click("1404745515751.png")
+
+#---------------------------------------------------#
+def Open_LastSlip():
+#---------------------------------------------------#
+
+    # go to the end of the list and open the slip so we can copy dates.
+    type(Key.END)
+    type(Key.ENTER)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def Close_SlipUI():
+#---------------------------------------------------#
+
+    logging.debug('- close slip entry; close slip list')
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    
+    myTools.sectionEndTimeStamp()
+
+#---------------------------------------------------#
 def Create_OneSlip(slipType,tk,act,cli,slipnum):
 #---------------------------------------------------#
 
@@ -36,7 +67,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     type(Key.TAB)
     # use down arrow for ref; skip every 8th one
     type(Key.HOME)
-    for ref in range(slipnum%8):
+    for ref in range(slipnum % 8):
         type(Key.DOWN)
     time.sleep(1)
 
@@ -50,12 +81,20 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     # description
     type(Key.TAB)
 
-    # start date for the first slip is 1/1/2013; increment the date every 4th slip.
+    # start date for the first slip is 1/1/2013
     type(Key.TAB)
     if slipnum == 1:
         type("1/1/2013")
-    elif (slipnum-1) % 4 == 0:
+        
+    # increment the date every 8th slip.
+    elif (slipnum - 1) % 8 == 0:
         type("+")
+
+    # every 50th slip, tab to Hold and mark it
+    if slipnum % 50 == 0:
+        myTools.pressTAB(6)
+        time.sleep(1)
+        type(Key.SPACE) 
 
     type("s",KeyModifier.CTRL)
     time.sleep(1)
@@ -279,43 +318,50 @@ def Create_Slips(tmslips,exslips):
     myTools.sectionEndTimeStamp()
 
     myTools.sectionStartTimeStamp("create time slips")
-    myTools.getFocus()
-    type("m",KeyModifier.CTRL)
-    time.sleep(1)
+    Open_SlipList()    
 
     for slip in range(tmslips):
         Create_OneSlip("t",timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+1)
         count += 1
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
-    type(Key.F4,KeyModifier.CTRL)
-    myTools.sectionEndTimeStamp()
+    Close_SlipUI()
 
-    Import_TimeSlips()
+#    Import_TimeSlips()
 
     myTools.sectionStartTimeStamp("create expense slips")
     # increase count to account for imported slips
-    count += 692
+#    count += 692
 
-    myTools.getFocus()
-
-    type("m",KeyModifier.CTRL)
-    time.sleep(1)
-
-    # for expenses, got to the end of the list and open the slip so we can copy dates.
-    type(Key.END)
-    type(Key.ENTER)
-    time.sleep(1)
+    Open_SlipList()    
+    Open_LastSlip()
 
     for slip in range(exslips):
         Create_OneSlip("e",timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+1)
+        count += 1        
+    Close_SlipUI()
+
+#    Import_ExpenseSlips()
+
+#---------------------------------------------------#
+# remove this later
+
+    myTools.sectionStartTimeStamp("create time slips")
+    Open_SlipList()    
+    Open_LastSlip()
+
+    for slip in range(tmslips):
+        Create_OneSlip("t",timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+1)
         count += 1
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
+    Close_SlipUI()
 
-    type(Key.F4,KeyModifier.CTRL)
-    myTools.sectionEndTimeStamp()
+    myTools.sectionStartTimeStamp("create expense slips")
+    Open_SlipList()
+    Open_LastSlip()
+    
+    for slip in range(exslips):
+        Create_OneSlip("e",timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+1)
+        count += 1        
+    Close_SlipUI()
 
-    Import_ExpenseSlips()
+#---------------------------------------------------#
 
     makeBackup.Backup_Checkpoint("slips")
