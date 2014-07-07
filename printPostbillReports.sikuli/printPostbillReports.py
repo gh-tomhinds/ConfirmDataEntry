@@ -4,6 +4,7 @@ import printARAgedBal
 import printTkHistory
 import printTkCC
 import printFundsBal
+import printHold
 
 #---------------------------------------------------#
 def print_postbill_reports(month):
@@ -16,3 +17,4 @@ def print_postbill_reports(month):
     printTkHistory.Print_TkHistory(month)
     printTkCC.Print_TkCC(month)
     printFundsBal.Print_FundsBal(month)
+    printHold.Print_Hold(month)
