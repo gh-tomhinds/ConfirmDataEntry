@@ -90,8 +90,8 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     elif (slipnum - 1) % 8 == 0:
         type("+")
 
-    # every 50th slip, tab to Hold and mark it
-    if slipnum % 50 == 0:
+    # every 25th slip, tab to Hold and mark it
+    if slipnum % 25 == 0:
         myTools.pressTAB(6)
         time.sleep(1)
         type(Key.SPACE) 
@@ -166,6 +166,9 @@ def Import_TimeSlips():
     myTools.pressDOWN(2)
     type(Key.ENTER)
 
+# hold
+    myTools.pressDOWN(9)
+    type(Key.ENTER)
 
 # omit 1st 10 records
     click("1386713105865-1.png")
@@ -268,6 +271,9 @@ def Import_ExpenseSlips():
     myTools.pressDOWN(2)
     type(Key.ENTER)
 
+# hold
+    myTools.pressDOWN(9)
+    type(Key.ENTER)
 
 # omit 1st 10 records
     click("1386713105865-1.png")
@@ -325,11 +331,11 @@ def Create_Slips(tmslips,exslips):
         count += 1
     Close_SlipUI()
 
-#    Import_TimeSlips()
+    Import_TimeSlips()
 
     myTools.sectionStartTimeStamp("create expense slips")
     # increase count to account for imported slips
-#    count += 692
+    count += 692
 
     Open_SlipList()    
     Open_LastSlip()
@@ -339,28 +345,28 @@ def Create_Slips(tmslips,exslips):
         count += 1        
     Close_SlipUI()
 
-#    Import_ExpenseSlips()
+    Import_ExpenseSlips()
 
 #---------------------------------------------------#
 # remove this later
-
-    myTools.sectionStartTimeStamp("create time slips")
-    Open_SlipList()    
-    Open_LastSlip()
-
-    for slip in range(tmslips):
-        Create_OneSlip("t",timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+1)
-        count += 1
-    Close_SlipUI()
-
-    myTools.sectionStartTimeStamp("create expense slips")
-    Open_SlipList()
-    Open_LastSlip()
-    
-    for slip in range(exslips):
-        Create_OneSlip("e",timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+1)
-        count += 1        
-    Close_SlipUI()
+#
+#    myTools.sectionStartTimeStamp("create time slips")
+#    Open_SlipList()    
+#    Open_LastSlip()
+#
+#    for slip in range(tmslips):
+#        Create_OneSlip("t",timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+1)
+#        count += 1
+#    Close_SlipUI()
+#
+#    myTools.sectionStartTimeStamp("create expense slips")
+#    Open_SlipList()
+#    Open_LastSlip()
+#    
+#    for slip in range(exslips):
+#        Create_OneSlip("e",timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+1)
+#        count += 1        
+#    Close_SlipUI()
 
 #---------------------------------------------------#
 

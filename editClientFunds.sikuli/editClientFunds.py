@@ -27,13 +27,10 @@ def Edit_ClientFunds():
     time.sleep(1)
 
     # loop through clients
-    # assign default rate tk 1-20, then cl 1-20, then ta 1-20, 
-    # then loop again until the end
-
     for oneClient in range(1,352):
 
-        # log every 35 clients
-        if oneClient in (35,70,105,140,175,210,245,280,315,350):               
+        # log every 20 clients
+        if oneClient % 20 == 0:               
             logging.debug('-- client: ' + str(oneClient+1))    
 
         # list

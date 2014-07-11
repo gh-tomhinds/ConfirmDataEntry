@@ -99,13 +99,10 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># loop through clients
-</span>    <span class="cmt"># assign default rate tk 1-20, then cl 1-20, then ta 1-20, 
-</span>    <span class="cmt"># then loop again until the end
-</span>
-    <span class="kw">for</span> oneClient <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">352</span>):
+</span>    <span class="kw">for</span> oneClient <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">352</span>):
 
-        <span class="cmt"># log every 35 clients
-</span>        <span class="kw">if</span> oneClient <span class="kw">in</span> (<span class="dig">35</span>,<span class="dig">70</span>,<span class="dig">105</span>,<span class="dig">140</span>,<span class="dig">175</span>,<span class="dig">210</span>,<span class="dig">245</span>,<span class="dig">280</span>,<span class="dig">315</span>,<span class="dig">350</span>):
+        <span class="cmt"># log every 20 clients
+</span>        <span class="kw">if</span> oneClient % <span class="dig">20</span> == <span class="dig">0</span>:
             logging.debug(<span class="str">'-- client: '</span> + str(oneClient+<span class="dig">1</span>))
 
         <span class="cmt"># list

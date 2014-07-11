@@ -162,8 +162,8 @@
 </span>    <span class="kw">elif</span> (slipnum - <span class="dig">1</span>) % <span class="dig">8</span> == <span class="dig">0</span>:
         <span class="skw">type</span>(<span class="str">"+"</span>)
 
-    <span class="cmt"># every 50th slip, tab to Hold and mark it
-</span>    <span class="kw">if</span> slipnum % <span class="dig">50</span> == <span class="dig">0</span>:
+    <span class="cmt"># every 25th slip, tab to Hold and mark it
+</span>    <span class="kw">if</span> slipnum % <span class="dig">25</span> == <span class="dig">0</span>:
         myTools.pressTAB(<span class="dig">6</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.SPACE)
@@ -238,6 +238,9 @@
 </span>    myTools.pressDOWN(<span class="dig">2</span>)
     <span class="skw">type</span>(Key.ENTER)
 
+<span class="cmt"># hold
+</span>    myTools.pressDOWN(<span class="dig">9</span>)
+    <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># omit 1st 10 records
 </span>    <span class="skw">click</span>(<img src="1386713105865-1.png" />)
@@ -340,6 +343,9 @@
 </span>    myTools.pressDOWN(<span class="dig">2</span>)
     <span class="skw">type</span>(Key.ENTER)
 
+<span class="cmt"># hold
+</span>    myTools.pressDOWN(<span class="dig">9</span>)
+    <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># omit 1st 10 records
 </span>    <span class="skw">click</span>(<img src="1386713105865-1.png" />)
@@ -397,12 +403,12 @@
         count += <span class="dig">1</span>
     Close_SlipUI()
 
-<span class="cmt">#    Import_TimeSlips()
-</span>
+    Import_TimeSlips()
+
     myTools.sectionStartTimeStamp(<span class="str">"create expense slips"</span>)
     <span class="cmt"># increase count to account for imported slips
-</span><span class="cmt">#    count += 692
-</span>
+</span>    count += <span class="dig">692</span>
+
     Open_SlipList()
     Open_LastSlip()
 
@@ -411,29 +417,29 @@
         count += <span class="dig">1</span>
     Close_SlipUI()
 
-<span class="cmt">#    Import_ExpenseSlips()
-</span>
+    Import_ExpenseSlips()
+
 <span class="cmt">#---------------------------------------------------#
 </span><span class="cmt"># remove this later
+</span><span class="cmt">#
+</span><span class="cmt">#    myTools.sectionStartTimeStamp("create time slips")
+</span><span class="cmt">#    Open_SlipList()    
+</span><span class="cmt">#    Open_LastSlip()
+</span><span class="cmt">#
+</span><span class="cmt">#    for slip in range(tmslips):
+</span><span class="cmt">#        Create_OneSlip("t",timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+1)
+</span><span class="cmt">#        count += 1
+</span><span class="cmt">#    Close_SlipUI()
+</span><span class="cmt">#
+</span><span class="cmt">#    myTools.sectionStartTimeStamp("create expense slips")
+</span><span class="cmt">#    Open_SlipList()
+</span><span class="cmt">#    Open_LastSlip()
+</span><span class="cmt">#    
+</span><span class="cmt">#    for slip in range(exslips):
+</span><span class="cmt">#        Create_OneSlip("e",timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+1)
+</span><span class="cmt">#        count += 1        
+</span><span class="cmt">#    Close_SlipUI()
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"create time slips"</span>)
-    Open_SlipList()
-    Open_LastSlip()
-
-    <span class="kw">for</span> slip <span class="kw">in</span> range(tmslips):
-        Create_OneSlip(<span class="str">"t"</span>,timekeepers[count%len(timekeepers)],tasks[count%len(tasks)],clients[count%len(clients)],count+<span class="dig">1</span>)
-        count += <span class="dig">1</span>
-    Close_SlipUI()
-
-    myTools.sectionStartTimeStamp(<span class="str">"create expense slips"</span>)
-    Open_SlipList()
-    Open_LastSlip()
-
-    <span class="kw">for</span> slip <span class="kw">in</span> range(exslips):
-        Create_OneSlip(<span class="str">"e"</span>,timekeepers[count%len(timekeepers)],expenses[count%len(expenses)],clients[count%len(clients)],count+<span class="dig">1</span>)
-        count += <span class="dig">1</span>
-    Close_SlipUI()
-
 <span class="cmt">#---------------------------------------------------#
 </span>
     makeBackup.Backup_Checkpoint(<span class="str">"slips"</span>)
