@@ -4,18 +4,15 @@ import myTools
 import compareOneReport
 
 #---------------------------------------------------#
-def Print_Hold(reportName):
+def Print_Hold(reportMonth):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print hold")
-
-    reportName = Settings.tsVersion + "-" + reportName
-
-    logging.debug('Print_Hold: ' + reportName)
+    logging.debug('Print_Hold: ' + str(reportMonth))
 
     # make sure timeslips has focus
     myTools.getFocus()
-    
+
     logging.debug('- open report list')
     type("r",KeyModifier.ALT)
     type("c")    
@@ -44,10 +41,16 @@ def Print_Hold(reportName):
 
     # choose CSV
     myTools.pressTAB(2)
-    type("c")    
-    type(Key.ENTER)
+    type("c")
     time.sleep(1)
 
+    # print the report
+    type(Key.ENTER)    
+    time.sleep(1)
+
+    # name report file: ex: Hold-03
+    reportName = myTools.monthToName(reportMonth,"-Hold-",".csv")   
+    
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)
     time.sleep(1)

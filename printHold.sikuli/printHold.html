@@ -76,14 +76,11 @@
 <span class="kw">import</span> compareOneReport
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Print_Hold(reportName):
+</span><span class="kw">def</span> Print_Hold(reportMonth):
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"print hold"</span>)
-
-    reportName = Settings.tsVersion + <span class="str">"-"</span> + reportName
-
-    logging.debug(<span class="str">'Print_Hold: '</span> + reportName)
+    logging.debug(<span class="str">'Print_Hold: '</span> + str(reportMonth))
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -117,8 +114,14 @@
     <span class="cmt"># choose CSV
 </span>    myTools.pressTAB(<span class="dig">2</span>)
     <span class="skw">type</span>(<span class="str">"c"</span>)
-    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># print the report
+</span>    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># name report file: ex: Hold-03
+</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-Hold-"</span>,<span class="str">".csv"</span>)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)
