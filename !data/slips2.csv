@@ -1,0 +1,2107 @@
+Transaction Type,Timekeeper Nickname 1,Client Nickname 1,Activity Nickname 1,Reference Nickname 1,Extra,Transaction Date,Hold
+Expense,CoreyM,Abington,Cleanup Supplies,UUU-Project,Slip: e703,3/29/2013,No
+Expense,ElvisP,Acton,Pavers,,Slip: e704,3/29/2013,No
+Expense,JamesR,Acushnet,Wood,AAA-Project,Slip: e705,3/30/2013,No
+Expense,SamS,Adams,First aid,ADAMS-Project01,Slip: e706,3/30/2013,No
+Expense,ShawnR,Agawam,Plants,AGAWA-Project02,Slip: e707,3/30/2013,No
+Expense,TomH,Alford,Landscape Supplies,EEE-Project,Slip: e708,3/30/2013,No
+Expense,CoreyM,Amesbury,Snacks,III-Project,Slip: e709,3/30/2013,No
+Expense,ElvisP,Amherst,Consultants,OOO-Project,Slip: e710,3/30/2013,No
+Expense,JamesR,Andover,Hand Tools,UUU-Project,Slip: e711,3/30/2013,No
+Expense,SamS,Aquinnah,Power Tools,,Slip: e712,3/30/2013,No
+Expense,ShawnR,Arlington,Cleanup Supplies,AAA-Project,Slip: e713,3/31/2013,No
+Expense,TomH,Ashburnham,Pavers,ASHBU-Project01,Slip: e714,3/31/2013,No
+Expense,CoreyM,Ashby,Wood,ASHBY-Project02,Slip: e715,3/31/2013,No
+Expense,ElvisP,Ashfield,First aid,EEE-Project,Slip: e716,3/31/2013,No
+Expense,JamesR,Ashland,Plants,III-Project,Slip: e717,3/31/2013,No
+Expense,SamS,Athol,Landscape Supplies,OOO-Project,Slip: e718,3/31/2013,No
+Expense,ShawnR,Attleboro,Snacks,UUU-Project,Slip: e719,3/31/2013,No
+Expense,TomH,Auburn,Consultants,,Slip: e720,3/31/2013,No
+Expense,CoreyM,Avon,Hand Tools,AAA-Project,Slip: e721,4/1/2013,No
+Expense,ElvisP,Ayer,Power Tools,AYER-Project01,Slip: e722,4/1/2013,No
+Expense,JamesR,Barnstable,Cleanup Supplies,BARNS-Project02,Slip: e723,4/1/2013,No
+Expense,SamS,Barre,Pavers,EEE-Project,Slip: e724,4/1/2013,No
+Expense,ShawnR,Becket,Wood,III-Project,Slip: e725,4/1/2013,Yes
+Expense,TomH,Bedford,First aid,OOO-Project,Slip: e726,4/1/2013,No
+Expense,CoreyM,Belchertown,Plants,UUU-Project,Slip: e727,4/1/2013,No
+Expense,ElvisP,Bellingham,Landscape Supplies,,Slip: e728,4/1/2013,No
+Expense,JamesR,Belmont,Snacks,AAA-Project,Slip: e729,4/2/2013,No
+Expense,SamS,Berkley,Consultants,BERKL-Project01,Slip: e730,4/2/2013,No
+Expense,ShawnR,Berlin,Hand Tools,BERLI-Project02,Slip: e731,4/2/2013,No
+Expense,TomH,Bernardston,Power Tools,EEE-Project,Slip: e732,4/2/2013,No
+Expense,CoreyM,Beverly,Cleanup Supplies,III-Project,Slip: e733,4/2/2013,No
+Expense,ElvisP,Billerica,Pavers,OOO-Project,Slip: e734,4/2/2013,No
+Expense,JamesR,Blackstone,Wood,UUU-Project,Slip: e735,4/2/2013,No
+Expense,SamS,Blandford,First aid,,Slip: e736,4/2/2013,No
+Expense,ShawnR,Bolton,Plants,AAA-Project,Slip: e737,4/3/2013,No
+Expense,TomH,Boston,Landscape Supplies,BOSTO-Project01,Slip: e738,4/3/2013,No
+Expense,CoreyM,Bourne,Snacks,BOURN-Project02,Slip: e739,4/3/2013,No
+Expense,ElvisP,Boxborough,Consultants,EEE-Project,Slip: e740,4/3/2013,No
+Expense,JamesR,Boxford,Hand Tools,III-Project,Slip: e741,4/3/2013,No
+Expense,SamS,Boylston,Power Tools,OOO-Project,Slip: e742,4/3/2013,No
+Expense,ShawnR,Braintree,Cleanup Supplies,UUU-Project,Slip: e743,4/3/2013,No
+Expense,TomH,Brewster,Pavers,,Slip: e744,4/3/2013,No
+Expense,CoreyM,Bridgewater,Wood,AAA-Project,Slip: e745,4/4/2013,No
+Expense,ElvisP,Brimfield,First aid,BRIMF-Project01,Slip: e746,4/4/2013,No
+Expense,JamesR,Brockton,Plants,BROCK-Project02,Slip: e747,4/4/2013,No
+Expense,SamS,Brookfield,Landscape Supplies,EEE-Project,Slip: e748,4/4/2013,No
+Expense,ShawnR,Brookline,Snacks,III-Project,Slip: e749,4/4/2013,No
+Expense,TomH,Buckland,Consultants,OOO-Project,Slip: e750,4/4/2013,Yes
+Expense,CoreyM,Burlington,Hand Tools,UUU-Project,Slip: e751,4/4/2013,No
+Expense,ElvisP,Cambridge,Power Tools,,Slip: e752,4/4/2013,No
+Expense,JamesR,Canton,Cleanup Supplies,AAA-Project,Slip: e753,4/5/2013,No
+Expense,SamS,Carlisle,Pavers,CARLI-Project01,Slip: e754,4/5/2013,No
+Expense,ShawnR,Carver,Wood,CARVE-Project02,Slip: e755,4/5/2013,No
+Expense,TomH,Charlemont,First aid,EEE-Project,Slip: e756,4/5/2013,No
+Expense,CoreyM,Charlton,Plants,III-Project,Slip: e757,4/5/2013,No
+Expense,ElvisP,Chatham,Landscape Supplies,OOO-Project,Slip: e758,4/5/2013,No
+Expense,JamesR,Chelmsford,Snacks,UUU-Project,Slip: e759,4/5/2013,No
+Expense,SamS,Chelsea,Consultants,,Slip: e760,4/5/2013,No
+Expense,ShawnR,Cheshire,Hand Tools,AAA-Project,Slip: e761,4/6/2013,No
+Expense,TomH,Chester,Power Tools,CHEST-Project01,Slip: e762,4/6/2013,No
+Expense,CoreyM,Chesterfield,Cleanup Supplies,CHEST-Project02,Slip: e763,4/6/2013,No
+Expense,ElvisP,Chicopee,Pavers,EEE-Project,Slip: e764,4/6/2013,No
+Expense,JamesR,Chilmark,Wood,III-Project,Slip: e765,4/6/2013,No
+Expense,SamS,Clarksburg,First aid,OOO-Project,Slip: e766,4/6/2013,No
+Expense,ShawnR,Clinton,Plants,UUU-Project,Slip: e767,4/6/2013,No
+Expense,TomH,Cohasset,Landscape Supplies,,Slip: e768,4/6/2013,No
+Expense,CoreyM,Colrain,Snacks,AAA-Project,Slip: e769,4/7/2013,No
+Expense,ElvisP,Concord,Consultants,CONCO-Project01,Slip: e770,4/7/2013,No
+Expense,JamesR,Conway,Hand Tools,CONWA-Project02,Slip: e771,4/7/2013,No
+Expense,SamS,Cummington,Power Tools,EEE-Project,Slip: e772,4/7/2013,No
+Expense,ShawnR,Dalton,Cleanup Supplies,III-Project,Slip: e773,4/7/2013,No
+Expense,TomH,Danvers,Pavers,OOO-Project,Slip: e774,4/7/2013,No
+Expense,CoreyM,Dartmouth,Wood,UUU-Project,Slip: e775,4/7/2013,Yes
+Expense,ElvisP,Dedham,First aid,,Slip: e776,4/7/2013,No
+Expense,JamesR,Deerfield,Plants,AAA-Project,Slip: e777,4/8/2013,No
+Expense,SamS,Dennis,Landscape Supplies,DENNI-Project01,Slip: e778,4/8/2013,No
+Expense,ShawnR,Dighton,Snacks,DIGHT-Project02,Slip: e779,4/8/2013,No
+Expense,TomH,Douglas,Consultants,EEE-Project,Slip: e780,4/8/2013,No
+Expense,CoreyM,Dover,Hand Tools,III-Project,Slip: e781,4/8/2013,No
+Expense,ElvisP,Dracut,Power Tools,OOO-Project,Slip: e782,4/8/2013,No
+Expense,JamesR,Dudley,Cleanup Supplies,UUU-Project,Slip: e783,4/8/2013,No
+Expense,SamS,Dunstable,Pavers,,Slip: e784,4/8/2013,No
+Expense,ShawnR,Duxbury,Wood,AAA-Project,Slip: e785,4/9/2013,No
+Expense,TomH,East Bridgewater,First aid,EASTB-Project01,Slip: e786,4/9/2013,No
+Expense,CoreyM,East Brookfield,Plants,EASTB-Project02,Slip: e787,4/9/2013,No
+Expense,ElvisP,East Longmeadow,Landscape Supplies,EEE-Project,Slip: e788,4/9/2013,No
+Expense,JamesR,Eastham,Snacks,III-Project,Slip: e789,4/9/2013,No
+Expense,SamS,Easthampton,Consultants,OOO-Project,Slip: e790,4/9/2013,No
+Expense,ShawnR,Easton,Hand Tools,UUU-Project,Slip: e791,4/9/2013,No
+Expense,TomH,Edgartown,Power Tools,,Slip: e792,4/9/2013,No
+Expense,CoreyM,Egremont,Cleanup Supplies,AAA-Project,Slip: e793,4/10/2013,No
+Expense,ElvisP,Erving,Pavers,EEE-Project,Slip: e794,4/10/2013,No
+Expense,JamesR,Essex,Wood,ESSEX-Project01,Slip: e795,4/10/2013,No
+Expense,SamS,Everett,First aid,EVERE-Project02,Slip: e796,4/10/2013,No
+Expense,ShawnR,Fairhaven,Plants,III-Project,Slip: e797,4/10/2013,No
+Expense,TomH,Fall River,Landscape Supplies,OOO-Project,Slip: e798,4/10/2013,No
+Expense,CoreyM,Falmouth,Snacks,UUU-Project,Slip: e799,4/10/2013,No
+Expense,ElvisP,Fitchburg,Consultants,,Slip: e800,4/10/2013,Yes
+Expense,JamesR,Florida,Hand Tools,AAA-Project,Slip: e801,4/11/2013,No
+Expense,SamS,Foxborough,Power Tools,EEE-Project,Slip: e802,4/11/2013,No
+Expense,ShawnR,Framingham,Cleanup Supplies,FRAMI-Project01,Slip: e803,4/11/2013,No
+Expense,TomH,Franklin,Pavers,FRANK-Project02,Slip: e804,4/11/2013,No
+Expense,CoreyM,Freetown,Wood,III-Project,Slip: e805,4/11/2013,No
+Expense,ElvisP,Gardner,First aid,OOO-Project,Slip: e806,4/11/2013,No
+Expense,JamesR,Georgetown,Plants,UUU-Project,Slip: e807,4/11/2013,No
+Expense,SamS,Gill,Landscape Supplies,,Slip: e808,4/11/2013,No
+Expense,ShawnR,Gloucester,Snacks,AAA-Project,Slip: e809,4/12/2013,No
+Expense,TomH,Goshen,Consultants,EEE-Project,Slip: e810,4/12/2013,No
+Expense,CoreyM,Gosnold,Hand Tools,GOSNO-Project01,Slip: e811,4/12/2013,No
+Expense,ElvisP,Grafton,Power Tools,GRAFT-Project02,Slip: e812,4/12/2013,No
+Expense,JamesR,Granby,Cleanup Supplies,III-Project,Slip: e813,4/12/2013,No
+Expense,SamS,Granville,Pavers,OOO-Project,Slip: e814,4/12/2013,No
+Expense,ShawnR,Great Barrington,Wood,UUU-Project,Slip: e815,4/12/2013,No
+Expense,TomH,Greenfield,First aid,,Slip: e816,4/12/2013,No
+Expense,CoreyM,Groton,Plants,AAA-Project,Slip: e817,4/13/2013,No
+Expense,ElvisP,Groveland,Landscape Supplies,EEE-Project,Slip: e818,4/13/2013,No
+Expense,JamesR,Hadley,Snacks,HADLE-Project01,Slip: e819,4/13/2013,No
+Expense,SamS,Halifax,Consultants,HALIF-Project02,Slip: e820,4/13/2013,No
+Expense,ShawnR,Hamilton,Hand Tools,III-Project,Slip: e821,4/13/2013,No
+Expense,TomH,Hampden,Power Tools,OOO-Project,Slip: e822,4/13/2013,No
+Expense,CoreyM,Hancock,Cleanup Supplies,UUU-Project,Slip: e823,4/13/2013,No
+Expense,ElvisP,Hanover,Pavers,,Slip: e824,4/13/2013,No
+Expense,JamesR,Hanson,Wood,AAA-Project,Slip: e825,4/14/2013,Yes
+Expense,SamS,Hardwick,First aid,EEE-Project,Slip: e826,4/14/2013,No
+Expense,ShawnR,Harvard,Plants,HARVA-Project01,Slip: e827,4/14/2013,No
+Expense,TomH,Harwich,Landscape Supplies,HARWI-Project02,Slip: e828,4/14/2013,No
+Expense,CoreyM,Hatfield,Snacks,III-Project,Slip: e829,4/14/2013,No
+Expense,ElvisP,Haverhill,Consultants,OOO-Project,Slip: e830,4/14/2013,No
+Expense,JamesR,Hawley,Hand Tools,UUU-Project,Slip: e831,4/14/2013,No
+Expense,SamS,Heath,Power Tools,,Slip: e832,4/14/2013,No
+Expense,ShawnR,Hingham,Cleanup Supplies,AAA-Project,Slip: e833,4/15/2013,No
+Expense,TomH,Hinsdale,Pavers,EEE-Project,Slip: e834,4/15/2013,No
+Expense,CoreyM,Holbrook,Wood,HOLBR-Project01,Slip: e835,4/15/2013,No
+Expense,ElvisP,Holden,First aid,HOLDE-Project02,Slip: e836,4/15/2013,No
+Expense,JamesR,Holland,Plants,III-Project,Slip: e837,4/15/2013,No
+Expense,SamS,Holliston,Landscape Supplies,OOO-Project,Slip: e838,4/15/2013,No
+Expense,ShawnR,Holyoke,Snacks,UUU-Project,Slip: e839,4/15/2013,No
+Expense,TomH,Hopedale,Consultants,,Slip: e840,4/15/2013,No
+Expense,CoreyM,Hopkinton,Hand Tools,AAA-Project,Slip: e841,4/16/2013,No
+Expense,ElvisP,Hubbardston,Power Tools,EEE-Project,Slip: e842,4/16/2013,No
+Expense,JamesR,Hudson,Cleanup Supplies,HUDSO-Project01,Slip: e843,4/16/2013,No
+Expense,SamS,Hull,Pavers,HULL-Project02,Slip: e844,4/16/2013,No
+Expense,ShawnR,Huntington,Wood,III-Project,Slip: e845,4/16/2013,No
+Expense,TomH,Ipswich,First aid,OOO-Project,Slip: e846,4/16/2013,No
+Expense,CoreyM,Kingston,Plants,UUU-Project,Slip: e847,4/16/2013,No
+Expense,ElvisP,Lakeville,Landscape Supplies,,Slip: e848,4/16/2013,No
+Expense,JamesR,Lancaster,Snacks,AAA-Project,Slip: e849,4/17/2013,No
+Expense,SamS,Lanesborough,Consultants,EEE-Project,Slip: e850,4/17/2013,Yes
+Expense,ShawnR,Lawrence,Hand Tools,III-Project,Slip: e851,4/17/2013,No
+Expense,TomH,Lee,Power Tools,LEE-Project01,Slip: e852,4/17/2013,No
+Expense,CoreyM,Leicester,Cleanup Supplies,LEICE-Project02,Slip: e853,4/17/2013,No
+Expense,ElvisP,Lenox,Pavers,OOO-Project,Slip: e854,4/17/2013,No
+Expense,JamesR,Leominster,Wood,UUU-Project,Slip: e855,4/17/2013,No
+Expense,SamS,Leverett,First aid,,Slip: e856,4/17/2013,No
+Expense,ShawnR,Lexington,Plants,AAA-Project,Slip: e857,4/18/2013,No
+Expense,TomH,Leyden,Landscape Supplies,EEE-Project,Slip: e858,4/18/2013,No
+Expense,CoreyM,Lincoln,Snacks,III-Project,Slip: e859,4/18/2013,No
+Expense,ElvisP,Littleton,Consultants,LITTL-Project01,Slip: e860,4/18/2013,No
+Expense,JamesR,Longmeadow,Hand Tools,LONGM-Project02,Slip: e861,4/18/2013,No
+Expense,SamS,Lowell,Power Tools,OOO-Project,Slip: e862,4/18/2013,No
+Expense,ShawnR,Ludlow,Cleanup Supplies,UUU-Project,Slip: e863,4/18/2013,No
+Expense,TomH,Lunenburg,Pavers,,Slip: e864,4/18/2013,No
+Expense,CoreyM,Lynn,Wood,AAA-Project,Slip: e865,4/19/2013,No
+Expense,ElvisP,Lynnfield,First aid,EEE-Project,Slip: e866,4/19/2013,No
+Expense,JamesR,Malden,Plants,III-Project,Slip: e867,4/19/2013,No
+Expense,SamS,Manchester-by-the-Sea,Landscape Supplies,MANCH-Project01,Slip: e868,4/19/2013,No
+Expense,ShawnR,Mansfield,Snacks,MANSF-Project02,Slip: e869,4/19/2013,No
+Expense,TomH,Marblehead,Consultants,OOO-Project,Slip: e870,4/19/2013,No
+Expense,CoreyM,Marion,Hand Tools,UUU-Project,Slip: e871,4/19/2013,No
+Expense,ElvisP,Marlborough,Power Tools,,Slip: e872,4/19/2013,No
+Expense,JamesR,Marshfield,Cleanup Supplies,AAA-Project,Slip: e873,4/20/2013,No
+Expense,SamS,Mashpee,Pavers,EEE-Project,Slip: e874,4/20/2013,No
+Expense,ShawnR,Mattapoisett,Wood,III-Project,Slip: e875,4/20/2013,Yes
+Expense,TomH,Maynard,First aid,MAYNA-Project01,Slip: e876,4/20/2013,No
+Expense,CoreyM,Medfield,Plants,MEDFI-Project02,Slip: e877,4/20/2013,No
+Expense,ElvisP,Medford,Landscape Supplies,OOO-Project,Slip: e878,4/20/2013,No
+Expense,JamesR,Medway,Snacks,UUU-Project,Slip: e879,4/20/2013,No
+Expense,SamS,Melrose,Consultants,,Slip: e880,4/20/2013,No
+Expense,ShawnR,Mendon,Hand Tools,AAA-Project,Slip: e881,4/21/2013,No
+Expense,TomH,Merrimac,Power Tools,EEE-Project,Slip: e882,4/21/2013,No
+Expense,CoreyM,Methuen,Cleanup Supplies,III-Project,Slip: e883,4/21/2013,No
+Expense,ElvisP,Middleborough,Pavers,MIDDL-Project01,Slip: e884,4/21/2013,No
+Expense,JamesR,Middlefield,Wood,MIDDL-Project02,Slip: e885,4/21/2013,No
+Expense,SamS,Middleton,First aid,OOO-Project,Slip: e886,4/21/2013,No
+Expense,ShawnR,Milford,Plants,UUU-Project,Slip: e887,4/21/2013,No
+Expense,TomH,Millbury,Landscape Supplies,,Slip: e888,4/21/2013,No
+Expense,CoreyM,Millis,Snacks,AAA-Project,Slip: e889,4/22/2013,No
+Expense,ElvisP,Millville,Consultants,EEE-Project,Slip: e890,4/22/2013,No
+Expense,JamesR,Milton,Hand Tools,III-Project,Slip: e891,4/22/2013,No
+Expense,SamS,Monroe,Power Tools,MONRO-Project01,Slip: e892,4/22/2013,No
+Expense,ShawnR,Monson,Cleanup Supplies,MONSO-Project02,Slip: e893,4/22/2013,No
+Expense,TomH,Montague,Pavers,OOO-Project,Slip: e894,4/22/2013,No
+Expense,CoreyM,Monterey,Wood,UUU-Project,Slip: e895,4/22/2013,No
+Expense,ElvisP,Montgomery,First aid,,Slip: e896,4/22/2013,No
+Expense,JamesR,Mount Washington,Plants,AAA-Project,Slip: e897,4/23/2013,No
+Expense,SamS,Nahant,Landscape Supplies,EEE-Project,Slip: e898,4/23/2013,No
+Expense,ShawnR,Nantucket,Snacks,III-Project,Slip: e899,4/23/2013,No
+Expense,TomH,Natick,Consultants,NATIC-Project01,Slip: e900,4/23/2013,Yes
+Expense,CoreyM,Needham,Hand Tools,NEEDH-Project02,Slip: e901,4/23/2013,No
+Expense,ElvisP,New Ashford,Power Tools,OOO-Project,Slip: e902,4/23/2013,No
+Expense,JamesR,New Bedford,Cleanup Supplies,UUU-Project,Slip: e903,4/23/2013,No
+Expense,SamS,New Braintree,Pavers,,Slip: e904,4/23/2013,No
+Expense,ShawnR,New Marlborough,Wood,AAA-Project,Slip: e905,4/24/2013,No
+Expense,TomH,New Salem,First aid,EEE-Project,Slip: e906,4/24/2013,No
+Expense,CoreyM,Newbury,Plants,III-Project,Slip: e907,4/24/2013,No
+Expense,ElvisP,Newburyport,Landscape Supplies,NEWBU-Project01,Slip: e908,4/24/2013,No
+Expense,JamesR,Newton,Snacks,NEWTO-Project02,Slip: e909,4/24/2013,No
+Expense,SamS,Norfolk,Consultants,OOO-Project,Slip: e910,4/24/2013,No
+Expense,ShawnR,North Adams,Hand Tools,UUU-Project,Slip: e911,4/24/2013,No
+Expense,TomH,North Andover,Power Tools,,Slip: e912,4/24/2013,No
+Expense,CoreyM,North Attleborough,Cleanup Supplies,AAA-Project,Slip: e913,4/25/2013,No
+Expense,ElvisP,North Brookfield,Pavers,EEE-Project,Slip: e914,4/25/2013,No
+Expense,JamesR,North Reading,Wood,III-Project,Slip: e915,4/25/2013,No
+Expense,SamS,Northampton,First aid,NORTH-Project01,Slip: e916,4/25/2013,No
+Expense,ShawnR,Northborough,Plants,NORTH-Project02,Slip: e917,4/25/2013,No
+Expense,TomH,Northbridge,Landscape Supplies,OOO-Project,Slip: e918,4/25/2013,No
+Expense,CoreyM,Northfield,Snacks,UUU-Project,Slip: e919,4/25/2013,No
+Expense,ElvisP,Norton,Consultants,,Slip: e920,4/25/2013,No
+Expense,JamesR,Norwell,Hand Tools,AAA-Project,Slip: e921,4/26/2013,No
+Expense,SamS,Norwood,Power Tools,EEE-Project,Slip: e922,4/26/2013,No
+Expense,ShawnR,Oak Bluffs,Cleanup Supplies,III-Project,Slip: e923,4/26/2013,No
+Expense,TomH,Oakham,Pavers,OAKHA-Project01,Slip: e924,4/26/2013,No
+Expense,CoreyM,Orange,Wood,ORANG-Project01,Slip: e925,4/26/2013,Yes
+Expense,ElvisP,Orleans,First aid,ORLEA-Project02,Slip: e926,4/26/2013,No
+Expense,JamesR,Otis,Plants,UUU-Project,Slip: e927,4/26/2013,No
+Expense,SamS,Oxford,Landscape Supplies,,Slip: e928,4/26/2013,No
+Expense,ShawnR,Palmer,Snacks,AAA-Project,Slip: e929,4/27/2013,No
+Expense,TomH,Paxton,Consultants,EEE-Project,Slip: e930,4/27/2013,No
+Expense,CoreyM,Peabody,Hand Tools,III-Project,Slip: e931,4/27/2013,No
+Expense,ElvisP,Pelham,Power Tools,OOO-Project,Slip: e932,4/27/2013,No
+Expense,JamesR,Pembroke,Cleanup Supplies,PEMBR-Project01,Slip: e933,4/27/2013,No
+Expense,SamS,Pepperell,Pavers,PEPPE-Project02,Slip: e934,4/27/2013,No
+Expense,ShawnR,Peru,Wood,UUU-Project,Slip: e935,4/27/2013,No
+Expense,TomH,Petersham,First aid,,Slip: e936,4/27/2013,No
+Expense,CoreyM,Phillipston,Plants,AAA-Project,Slip: e937,4/28/2013,No
+Expense,ElvisP,Pittsfield,Landscape Supplies,EEE-Project,Slip: e938,4/28/2013,No
+Expense,JamesR,Plainfield,Snacks,III-Project,Slip: e939,4/28/2013,No
+Expense,SamS,Plainville,Consultants,OOO-Project,Slip: e940,4/28/2013,No
+Expense,ShawnR,Plymouth,Hand Tools,PLYMO-Project01,Slip: e941,4/28/2013,No
+Expense,TomH,Plympton,Power Tools,PLYMP-Project02,Slip: e942,4/28/2013,No
+Expense,CoreyM,Princeton,Cleanup Supplies,UUU-Project,Slip: e943,4/28/2013,No
+Expense,ElvisP,Provincetown,Pavers,,Slip: e944,4/28/2013,No
+Expense,JamesR,Quincy,Wood,AAA-Project,Slip: e945,4/29/2013,No
+Expense,SamS,Randolph,First aid,EEE-Project,Slip: e946,4/29/2013,No
+Expense,ShawnR,Raynham,Plants,III-Project,Slip: e947,4/29/2013,No
+Expense,TomH,Reading,Landscape Supplies,OOO-Project,Slip: e948,4/29/2013,No
+Expense,CoreyM,Rehoboth,Snacks,REHOB-Project01,Slip: e949,4/29/2013,No
+Expense,ElvisP,Revere,Consultants,REVER-Project02,Slip: e950,4/29/2013,Yes
+Expense,JamesR,Richmond,Hand Tools,UUU-Project,Slip: e951,4/29/2013,No
+Expense,SamS,Rochester,Power Tools,,Slip: e952,4/29/2013,No
+Expense,ShawnR,Rockland,Cleanup Supplies,AAA-Project,Slip: e953,4/30/2013,No
+Expense,TomH,Rockport,Pavers,EEE-Project,Slip: e954,4/30/2013,No
+Expense,CoreyM,Rowe,Wood,III-Project,Slip: e955,4/30/2013,No
+Expense,ElvisP,Rowley,First aid,OOO-Project,Slip: e956,4/30/2013,No
+Expense,JamesR,Royalston,Plants,ROYAL-Project01,Slip: e957,4/30/2013,No
+Expense,SamS,Russell,Landscape Supplies,RUSSE-Project02,Slip: e958,4/30/2013,No
+Expense,ShawnR,Rutland,Snacks,UUU-Project,Slip: e959,4/30/2013,No
+Expense,TomH,Salem,Consultants,,Slip: e960,4/30/2013,No
+Expense,CoreyM,Salisbury,Hand Tools,AAA-Project,Slip: e961,5/1/2013,No
+Expense,ElvisP,Sandisfield,Power Tools,EEE-Project,Slip: e962,5/1/2013,No
+Expense,JamesR,Sandwich,Cleanup Supplies,III-Project,Slip: e963,5/1/2013,No
+Expense,SamS,Saugus,Pavers,OOO-Project,Slip: e964,5/1/2013,No
+Expense,ShawnR,Savoy,Wood,SAVOY-Project01,Slip: e965,5/1/2013,No
+Expense,TomH,Scituate,First aid,SCITU-Project02,Slip: e966,5/1/2013,No
+Expense,CoreyM,Seekonk,Plants,UUU-Project,Slip: e967,5/1/2013,No
+Expense,ElvisP,Sharon,Landscape Supplies,,Slip: e968,5/1/2013,No
+Expense,JamesR,Sheffield,Snacks,AAA-Project,Slip: e969,5/2/2013,No
+Expense,SamS,Shelburne,Consultants,EEE-Project,Slip: e970,5/2/2013,No
+Expense,ShawnR,Sherborn,Hand Tools,III-Project,Slip: e971,5/2/2013,No
+Expense,TomH,Shirley,Power Tools,OOO-Project,Slip: e972,5/2/2013,No
+Expense,CoreyM,Shrewsbury,Cleanup Supplies,SHREW-Project01,Slip: e973,5/2/2013,No
+Expense,ElvisP,Shutesbury,Pavers,SHUTE-Project02,Slip: e974,5/2/2013,No
+Expense,JamesR,Somerset,Wood,UUU-Project,Slip: e975,5/2/2013,Yes
+Expense,SamS,Somerville,First aid,,Slip: e976,5/2/2013,No
+Expense,ShawnR,South Hadley,Plants,AAA-Project,Slip: e977,5/3/2013,No
+Expense,TomH,Southampton,Landscape Supplies,EEE-Project,Slip: e978,5/3/2013,No
+Expense,CoreyM,Southborough,Snacks,III-Project,Slip: e979,5/3/2013,No
+Expense,ElvisP,Southbridge,Consultants,OOO-Project,Slip: e980,5/3/2013,No
+Expense,JamesR,Southwick,Hand Tools,SOUTH-Project01,Slip: e981,5/3/2013,No
+Expense,SamS,Spencer,Power Tools,SPENC-Project02,Slip: e982,5/3/2013,No
+Expense,ShawnR,Springfield,Cleanup Supplies,UUU-Project,Slip: e983,5/3/2013,No
+Expense,TomH,Sterling,Pavers,,Slip: e984,5/3/2013,No
+Expense,CoreyM,Stockbridge,Wood,AAA-Project,Slip: e985,5/4/2013,No
+Expense,ElvisP,Stoneham,First aid,EEE-Project,Slip: e986,5/4/2013,No
+Expense,JamesR,Stoughton,Plants,III-Project,Slip: e987,5/4/2013,No
+Expense,SamS,Stow,Landscape Supplies,OOO-Project,Slip: e988,5/4/2013,No
+Expense,ShawnR,Sturbridge,Snacks,STURB-Project01,Slip: e989,5/4/2013,No
+Expense,TomH,Sudbury,Consultants,SUDBU-Project02,Slip: e990,5/4/2013,No
+Expense,CoreyM,Sunderland,Hand Tools,UUU-Project,Slip: e991,5/4/2013,No
+Expense,ElvisP,Sutton,Power Tools,,Slip: e992,5/4/2013,No
+Expense,JamesR,Swampscott,Cleanup Supplies,AAA-Project,Slip: e993,5/5/2013,No
+Expense,SamS,Swansea,Pavers,EEE-Project,Slip: e994,5/5/2013,No
+Expense,ShawnR,Taunton,Wood,III-Project,Slip: e995,5/5/2013,No
+Expense,TomH,Templeton,First aid,OOO-Project,Slip: e996,5/5/2013,No
+Expense,CoreyM,Tewksbury,Plants,TEWKS-Project01,Slip: e997,5/5/2013,No
+Expense,ElvisP,Tisbury,Landscape Supplies,TISBU-Project02,Slip: e998,5/5/2013,No
+Expense,JamesR,Tolland,Snacks,UUU-Project,Slip: e999,5/5/2013,No
+Expense,SamS,Topsfield,Consultants,,Slip: e1000,5/5/2013,Yes
+Expense,ShawnR,Townsend,Hand Tools,AAA-Project,Slip: e1001,5/6/2013,No
+Expense,TomH,Truro,Power Tools,EEE-Project,Slip: e1002,5/6/2013,No
+Expense,CoreyM,Tyngsborough,Cleanup Supplies,III-Project,Slip: e1003,5/6/2013,No
+Expense,ElvisP,Tyringham,Pavers,OOO-Project,Slip: e1004,5/6/2013,No
+Expense,JamesR,Upton,Wood,UPTON-Project01,Slip: e1005,5/6/2013,No
+Expense,SamS,Uxbridge,First aid,UXBRI-Project01,Slip: e1006,5/6/2013,No
+Expense,ShawnR,Wakefield,Plants,WAKEF-Project02,Slip: e1007,5/6/2013,No
+Expense,TomH,Wales,Landscape Supplies,,Slip: e1008,5/6/2013,No
+Expense,CoreyM,Walpole,Snacks,AAA-Project,Slip: e1009,5/7/2013,No
+Expense,ElvisP,Waltham,Consultants,EEE-Project,Slip: e1010,5/7/2013,No
+Expense,JamesR,Ware,Hand Tools,III-Project,Slip: e1011,5/7/2013,No
+Expense,SamS,Wareham,Power Tools,OOO-Project,Slip: e1012,5/7/2013,No
+Expense,ShawnR,Warren,Cleanup Supplies,UUU-Project,Slip: e1013,5/7/2013,No
+Expense,TomH,Warwick,Pavers,WARWI-Project01,Slip: e1014,5/7/2013,No
+Expense,CoreyM,Washington,Wood,WASHI-Project02,Slip: e1015,5/7/2013,No
+Expense,ElvisP,Watertown,First aid,,Slip: e1016,5/7/2013,No
+Expense,JamesR,Wayland,Plants,AAA-Project,Slip: e1017,5/8/2013,No
+Expense,SamS,Webster,Landscape Supplies,EEE-Project,Slip: e1018,5/8/2013,No
+Expense,ShawnR,Wellesley,Snacks,III-Project,Slip: e1019,5/8/2013,No
+Expense,TomH,Wellfleet,Consultants,OOO-Project,Slip: e1020,5/8/2013,No
+Expense,CoreyM,Wendell,Hand Tools,UUU-Project,Slip: e1021,5/8/2013,No
+Expense,ElvisP,Wenham,Power Tools,WENHA-Project01,Slip: e1022,5/8/2013,No
+Expense,JamesR,West Boylston,Cleanup Supplies,WESTB-Project02,Slip: e1023,5/8/2013,No
+Expense,SamS,West Bridgewater,Pavers,,Slip: e1024,5/8/2013,No
+Expense,ShawnR,West Brookfield,Wood,AAA-Project,Slip: e1025,5/9/2013,Yes
+Expense,TomH,West Newbury,First aid,EEE-Project,Slip: e1026,5/9/2013,No
+Expense,CoreyM,West Springfield,Plants,III-Project,Slip: e1027,5/9/2013,No
+Expense,ElvisP,West Stockbridge,Landscape Supplies,OOO-Project,Slip: e1028,5/9/2013,No
+Expense,JamesR,West Tisbury,Snacks,UUU-Project,Slip: e1029,5/9/2013,No
+Expense,SamS,Westborough,Consultants,WESTB-Project01,Slip: e1030,5/9/2013,No
+Expense,ShawnR,Westfield,Hand Tools,WESTF-Project02,Slip: e1031,5/9/2013,No
+Expense,TomH,Westford,Power Tools,,Slip: e1032,5/9/2013,No
+Expense,CoreyM,Westhampton,Cleanup Supplies,AAA-Project,Slip: e1033,5/10/2013,No
+Expense,ElvisP,Westminster,Pavers,EEE-Project,Slip: e1034,5/10/2013,No
+Expense,JamesR,Weston,Wood,III-Project,Slip: e1035,5/10/2013,No
+Expense,SamS,Westport,First aid,OOO-Project,Slip: e1036,5/10/2013,No
+Expense,ShawnR,Westwood,Plants,UUU-Project,Slip: e1037,5/10/2013,No
+Expense,TomH,Weymouth,Landscape Supplies,WEYMO-Project01,Slip: e1038,5/10/2013,No
+Expense,CoreyM,Whately,Snacks,WHATE-Project02,Slip: e1039,5/10/2013,No
+Expense,ElvisP,Whitman,Consultants,,Slip: e1040,5/10/2013,No
+Expense,JamesR,Wilbraham,Hand Tools,AAA-Project,Slip: e1041,5/11/2013,No
+Expense,SamS,Williamsburg,Power Tools,EEE-Project,Slip: e1042,5/11/2013,No
+Expense,ShawnR,Williamstown,Cleanup Supplies,III-Project,Slip: e1043,5/11/2013,No
+Expense,TomH,Wilmington,Pavers,OOO-Project,Slip: e1044,5/11/2013,No
+Expense,CoreyM,Winchendon,Wood,UUU-Project,Slip: e1045,5/11/2013,No
+Expense,ElvisP,Winchester,First aid,WINCH-Project01,Slip: e1046,5/11/2013,No
+Expense,JamesR,Windsor,Plants,WINDS-Project02,Slip: e1047,5/11/2013,No
+Expense,SamS,Winthrop,Landscape Supplies,,Slip: e1048,5/11/2013,No
+Expense,ShawnR,Woburn,Snacks,AAA-Project,Slip: e1049,5/12/2013,No
+Expense,TomH,Worcester,Consultants,EEE-Project,Slip: e1050,5/12/2013,Yes
+Expense,CoreyM,Worthington,Hand Tools,III-Project,Slip: e1051,5/12/2013,No
+Expense,ElvisP,Wrentham,Power Tools,OOO-Project,Slip: e1052,5/12/2013,No
+Expense,JamesR,Yarmouth,Cleanup Supplies,UUU-Project,Slip: e1053,5/12/2013,No
+Expense,SamS,Abington,Pavers,OOO-Project,Slip: e1054,5/12/2013,No
+Expense,ShawnR,Acton,Wood,UUU-Project,Slip: e1055,5/12/2013,No
+Expense,TomH,Acushnet,First aid,,Slip: e1056,5/12/2013,No
+Expense,CoreyM,Adams,Plants,AAA-Project,Slip: e1057,5/13/2013,No
+Expense,ElvisP,Agawam,Landscape Supplies,AGAWA-Project01,Slip: e1058,5/13/2013,No
+Expense,JamesR,Alford,Snacks,ALFOR-Project02,Slip: e1059,5/13/2013,No
+Expense,SamS,Amesbury,Consultants,EEE-Project,Slip: e1060,5/13/2013,No
+Expense,ShawnR,Amherst,Hand Tools,III-Project,Slip: e1061,5/13/2013,No
+Expense,TomH,Andover,Power Tools,OOO-Project,Slip: e1062,5/13/2013,No
+Expense,CoreyM,Aquinnah,Cleanup Supplies,UUU-Project,Slip: e1063,5/13/2013,No
+Expense,ElvisP,Arlington,Pavers,,Slip: e1064,5/13/2013,No
+Expense,JamesR,Ashburnham,Wood,AAA-Project,Slip: e1065,5/14/2013,No
+Expense,SamS,Ashby,First aid,ASHBY-Project01,Slip: e1066,5/14/2013,No
+Expense,ShawnR,Ashfield,Plants,ASHFI-Project02,Slip: e1067,5/14/2013,No
+Expense,TomH,Ashland,Landscape Supplies,EEE-Project,Slip: e1068,5/14/2013,No
+Expense,CoreyM,Athol,Snacks,III-Project,Slip: e1069,5/14/2013,No
+Expense,ElvisP,Attleboro,Consultants,OOO-Project,Slip: e1070,5/14/2013,No
+Expense,JamesR,Auburn,Hand Tools,UUU-Project,Slip: e1071,5/14/2013,No
+Expense,SamS,Avon,Power Tools,,Slip: e1072,5/14/2013,No
+Expense,ShawnR,Ayer,Cleanup Supplies,AAA-Project,Slip: e1073,5/15/2013,No
+Expense,TomH,Barnstable,Pavers,BARNS-Project01,Slip: e1074,5/15/2013,No
+Expense,CoreyM,Barre,Wood,BARRE-Project02,Slip: e1075,5/15/2013,Yes
+Expense,ElvisP,Becket,First aid,EEE-Project,Slip: e1076,5/15/2013,No
+Expense,JamesR,Bedford,Plants,III-Project,Slip: e1077,5/15/2013,No
+Expense,SamS,Belchertown,Landscape Supplies,OOO-Project,Slip: e1078,5/15/2013,No
+Expense,ShawnR,Bellingham,Snacks,UUU-Project,Slip: e1079,5/15/2013,No
+Expense,TomH,Belmont,Consultants,,Slip: e1080,5/15/2013,No
+Expense,CoreyM,Berkley,Hand Tools,AAA-Project,Slip: e1081,5/16/2013,No
+Expense,ElvisP,Berlin,Power Tools,BERLI-Project01,Slip: e1082,5/16/2013,No
+Expense,JamesR,Bernardston,Cleanup Supplies,BERNA-Project02,Slip: e1083,5/16/2013,No
+Expense,SamS,Beverly,Pavers,EEE-Project,Slip: e1084,5/16/2013,No
+Expense,ShawnR,Billerica,Wood,III-Project,Slip: e1085,5/16/2013,No
+Expense,TomH,Blackstone,First aid,OOO-Project,Slip: e1086,5/16/2013,No
+Expense,CoreyM,Blandford,Plants,UUU-Project,Slip: e1087,5/16/2013,No
+Expense,ElvisP,Bolton,Landscape Supplies,,Slip: e1088,5/16/2013,No
+Expense,JamesR,Boston,Snacks,AAA-Project,Slip: e1089,5/17/2013,No
+Expense,SamS,Bourne,Consultants,BOURN-Project01,Slip: e1090,5/17/2013,No
+Expense,ShawnR,Boxborough,Hand Tools,BOXBO-Project02,Slip: e1091,5/17/2013,No
+Expense,TomH,Boxford,Power Tools,EEE-Project,Slip: e1092,5/17/2013,No
+Expense,CoreyM,Boylston,Cleanup Supplies,III-Project,Slip: e1093,5/17/2013,No
+Expense,ElvisP,Braintree,Pavers,OOO-Project,Slip: e1094,5/17/2013,No
+Expense,JamesR,Brewster,Wood,UUU-Project,Slip: e1095,5/17/2013,No
+Expense,SamS,Bridgewater,First aid,,Slip: e1096,5/17/2013,No
+Expense,ShawnR,Brimfield,Plants,AAA-Project,Slip: e1097,5/18/2013,No
+Expense,TomH,Brockton,Landscape Supplies,BROCK-Project01,Slip: e1098,5/18/2013,No
+Expense,CoreyM,Brookfield,Snacks,BROOK-Project02,Slip: e1099,5/18/2013,No
+Expense,ElvisP,Brookline,Consultants,EEE-Project,Slip: e1100,5/18/2013,Yes
+Expense,JamesR,Buckland,Hand Tools,III-Project,Slip: e1101,5/18/2013,No
+Expense,SamS,Burlington,Power Tools,OOO-Project,Slip: e1102,5/18/2013,No
+Expense,ShawnR,Cambridge,Cleanup Supplies,UUU-Project,Slip: e1103,5/18/2013,No
+Expense,TomH,Canton,Pavers,,Slip: e1104,5/18/2013,No
+Expense,CoreyM,Carlisle,Wood,AAA-Project,Slip: e1105,5/19/2013,No
+Expense,ElvisP,Carver,First aid,CARVE-Project01,Slip: e1106,5/19/2013,No
+Expense,JamesR,Charlemont,Plants,CHARL-Project02,Slip: e1107,5/19/2013,No
+Expense,SamS,Charlton,Landscape Supplies,EEE-Project,Slip: e1108,5/19/2013,No
+Expense,ShawnR,Chatham,Snacks,III-Project,Slip: e1109,5/19/2013,No
+Expense,TomH,Chelmsford,Consultants,OOO-Project,Slip: e1110,5/19/2013,No
+Expense,CoreyM,Chelsea,Hand Tools,UUU-Project,Slip: e1111,5/19/2013,No
+Expense,ElvisP,Cheshire,Power Tools,,Slip: e1112,5/19/2013,No
+Expense,JamesR,Chester,Cleanup Supplies,AAA-Project,Slip: e1113,5/20/2013,No
+Expense,SamS,Chesterfield,Pavers,CHEST-Project01,Slip: e1114,5/20/2013,No
+Expense,ShawnR,Chicopee,Wood,CHICO-Project02,Slip: e1115,5/20/2013,No
+Expense,TomH,Chilmark,First aid,EEE-Project,Slip: e1116,5/20/2013,No
+Expense,CoreyM,Clarksburg,Plants,III-Project,Slip: e1117,5/20/2013,No
+Expense,ElvisP,Clinton,Landscape Supplies,OOO-Project,Slip: e1118,5/20/2013,No
+Expense,JamesR,Cohasset,Snacks,UUU-Project,Slip: e1119,5/20/2013,No
+Expense,SamS,Colrain,Consultants,,Slip: e1120,5/20/2013,No
+Expense,ShawnR,Concord,Hand Tools,AAA-Project,Slip: e1121,5/21/2013,No
+Expense,TomH,Conway,Power Tools,CONWA-Project01,Slip: e1122,5/21/2013,No
+Expense,CoreyM,Cummington,Cleanup Supplies,CUMMI-Project02,Slip: e1123,5/21/2013,No
+Expense,ElvisP,Dalton,Pavers,EEE-Project,Slip: e1124,5/21/2013,No
+Expense,JamesR,Danvers,Wood,III-Project,Slip: e1125,5/21/2013,Yes
+Expense,SamS,Dartmouth,First aid,OOO-Project,Slip: e1126,5/21/2013,No
+Expense,ShawnR,Dedham,Plants,UUU-Project,Slip: e1127,5/21/2013,No
+Expense,TomH,Deerfield,Landscape Supplies,,Slip: e1128,5/21/2013,No
+Expense,CoreyM,Dennis,Snacks,AAA-Project,Slip: e1129,5/22/2013,No
+Expense,ElvisP,Dighton,Consultants,DIGHT-Project01,Slip: e1130,5/22/2013,No
+Expense,JamesR,Douglas,Hand Tools,DOUGL-Project02,Slip: e1131,5/22/2013,No
+Expense,SamS,Dover,Power Tools,EEE-Project,Slip: e1132,5/22/2013,No
+Expense,ShawnR,Dracut,Cleanup Supplies,III-Project,Slip: e1133,5/22/2013,No
+Expense,TomH,Dudley,Pavers,OOO-Project,Slip: e1134,5/22/2013,No
+Expense,CoreyM,Dunstable,Wood,UUU-Project,Slip: e1135,5/22/2013,No
+Expense,ElvisP,Duxbury,First aid,,Slip: e1136,5/22/2013,No
+Expense,JamesR,East Bridgewater,Plants,AAA-Project,Slip: e1137,5/23/2013,No
+Expense,SamS,East Brookfield,Landscape Supplies,EASTB-Project01,Slip: e1138,5/23/2013,No
+Expense,ShawnR,East Longmeadow,Snacks,EASTL-Project02,Slip: e1139,5/23/2013,No
+Expense,TomH,Eastham,Consultants,EEE-Project,Slip: e1140,5/23/2013,No
+Expense,CoreyM,Easthampton,Hand Tools,III-Project,Slip: e1141,5/23/2013,No
+Expense,ElvisP,Easton,Power Tools,OOO-Project,Slip: e1142,5/23/2013,No
+Expense,JamesR,Edgartown,Cleanup Supplies,UUU-Project,Slip: e1143,5/23/2013,No
+Expense,SamS,Egremont,Pavers,,Slip: e1144,5/23/2013,No
+Expense,ShawnR,Erving,Wood,AAA-Project,Slip: e1145,5/24/2013,No
+Expense,TomH,Essex,First aid,EEE-Project,Slip: e1146,5/24/2013,No
+Expense,CoreyM,Everett,Plants,EVERE-Project01,Slip: e1147,5/24/2013,No
+Expense,ElvisP,Fairhaven,Landscape Supplies,FAIRH-Project02,Slip: e1148,5/24/2013,No
+Expense,JamesR,Fall River,Snacks,III-Project,Slip: e1149,5/24/2013,No
+Expense,SamS,Falmouth,Consultants,OOO-Project,Slip: e1150,5/24/2013,Yes
+Expense,ShawnR,Fitchburg,Hand Tools,UUU-Project,Slip: e1151,5/24/2013,No
+Expense,TomH,Florida,Power Tools,,Slip: e1152,5/24/2013,No
+Expense,CoreyM,Foxborough,Cleanup Supplies,AAA-Project,Slip: e1153,5/25/2013,No
+Expense,ElvisP,Framingham,Pavers,EEE-Project,Slip: e1154,5/25/2013,No
+Expense,JamesR,Franklin,Wood,FRANK-Project01,Slip: e1155,5/25/2013,No
+Expense,SamS,Freetown,First aid,FREET-Project02,Slip: e1156,5/25/2013,No
+Expense,ShawnR,Gardner,Plants,III-Project,Slip: e1157,5/25/2013,No
+Expense,TomH,Georgetown,Landscape Supplies,OOO-Project,Slip: e1158,5/25/2013,No
+Expense,CoreyM,Gill,Snacks,UUU-Project,Slip: e1159,5/25/2013,No
+Expense,ElvisP,Gloucester,Consultants,,Slip: e1160,5/25/2013,No
+Expense,JamesR,Goshen,Hand Tools,AAA-Project,Slip: e1161,5/26/2013,No
+Expense,SamS,Gosnold,Power Tools,EEE-Project,Slip: e1162,5/26/2013,No
+Expense,ShawnR,Grafton,Cleanup Supplies,GRAFT-Project01,Slip: e1163,5/26/2013,No
+Expense,TomH,Granby,Pavers,GRANB-Project02,Slip: e1164,5/26/2013,No
+Expense,CoreyM,Granville,Wood,III-Project,Slip: e1165,5/26/2013,No
+Expense,ElvisP,Great Barrington,First aid,OOO-Project,Slip: e1166,5/26/2013,No
+Expense,JamesR,Greenfield,Plants,UUU-Project,Slip: e1167,5/26/2013,No
+Expense,SamS,Groton,Landscape Supplies,,Slip: e1168,5/26/2013,No
+Expense,ShawnR,Groveland,Snacks,AAA-Project,Slip: e1169,5/27/2013,No
+Expense,TomH,Hadley,Consultants,EEE-Project,Slip: e1170,5/27/2013,No
+Expense,CoreyM,Halifax,Hand Tools,HALIF-Project01,Slip: e1171,5/27/2013,No
+Expense,ElvisP,Hamilton,Power Tools,HAMIL-Project02,Slip: e1172,5/27/2013,No
+Expense,JamesR,Hampden,Cleanup Supplies,III-Project,Slip: e1173,5/27/2013,No
+Expense,SamS,Hancock,Pavers,OOO-Project,Slip: e1174,5/27/2013,No
+Expense,ShawnR,Hanover,Wood,UUU-Project,Slip: e1175,5/27/2013,Yes
+Expense,TomH,Hanson,First aid,,Slip: e1176,5/27/2013,No
+Expense,CoreyM,Hardwick,Plants,AAA-Project,Slip: e1177,5/28/2013,No
+Expense,ElvisP,Harvard,Landscape Supplies,EEE-Project,Slip: e1178,5/28/2013,No
+Expense,JamesR,Harwich,Snacks,HARWI-Project01,Slip: e1179,5/28/2013,No
+Expense,SamS,Hatfield,Consultants,HATFI-Project02,Slip: e1180,5/28/2013,No
+Expense,ShawnR,Haverhill,Hand Tools,III-Project,Slip: e1181,5/28/2013,No
+Expense,TomH,Hawley,Power Tools,OOO-Project,Slip: e1182,5/28/2013,No
+Expense,CoreyM,Heath,Cleanup Supplies,UUU-Project,Slip: e1183,5/28/2013,No
+Expense,ElvisP,Hingham,Pavers,,Slip: e1184,5/28/2013,No
+Expense,JamesR,Hinsdale,Wood,AAA-Project,Slip: e1185,5/29/2013,No
+Expense,SamS,Holbrook,First aid,EEE-Project,Slip: e1186,5/29/2013,No
+Expense,ShawnR,Holden,Plants,HOLDE-Project01,Slip: e1187,5/29/2013,No
+Expense,TomH,Holland,Landscape Supplies,HOLLA-Project02,Slip: e1188,5/29/2013,No
+Expense,CoreyM,Holliston,Snacks,III-Project,Slip: e1189,5/29/2013,No
+Expense,ElvisP,Holyoke,Consultants,OOO-Project,Slip: e1190,5/29/2013,No
+Expense,JamesR,Hopedale,Hand Tools,UUU-Project,Slip: e1191,5/29/2013,No
+Expense,SamS,Hopkinton,Power Tools,,Slip: e1192,5/29/2013,No
+Expense,ShawnR,Hubbardston,Cleanup Supplies,AAA-Project,Slip: e1193,5/30/2013,No
+Expense,TomH,Hudson,Pavers,EEE-Project,Slip: e1194,5/30/2013,No
+Expense,CoreyM,Hull,Wood,HULL-Project01,Slip: e1195,5/30/2013,No
+Expense,ElvisP,Huntington,First aid,HUNTI-Project02,Slip: e1196,5/30/2013,No
+Expense,JamesR,Ipswich,Plants,IPSWI-Project02,Slip: e1197,5/30/2013,No
+Expense,SamS,Kingston,Landscape Supplies,OOO-Project,Slip: e1198,5/30/2013,No
+Expense,ShawnR,Lakeville,Snacks,UUU-Project,Slip: e1199,5/30/2013,No
+Expense,TomH,Lancaster,Consultants,,Slip: e1200,5/30/2013,Yes
+Expense,CoreyM,Lanesborough,Hand Tools,AAA-Project,Slip: e1201,5/31/2013,No
+Expense,ElvisP,Lawrence,Power Tools,EEE-Project,Slip: e1202,5/31/2013,No
+Expense,JamesR,Lee,Cleanup Supplies,III-Project,Slip: e1203,5/31/2013,No
+Expense,SamS,Leicester,Pavers,LEICE-Project01,Slip: e1204,5/31/2013,No
+Expense,ShawnR,Lenox,Wood,LENOX-Project02,Slip: e1205,5/31/2013,No
+Expense,TomH,Leominster,First aid,OOO-Project,Slip: e1206,5/31/2013,No
+Expense,CoreyM,Leverett,Plants,UUU-Project,Slip: e1207,5/31/2013,No
+Expense,ElvisP,Lexington,Landscape Supplies,,Slip: e1208,5/31/2013,No
+Expense,JamesR,Leyden,Snacks,AAA-Project,Slip: e1209,6/1/2013,No
+Expense,SamS,Lincoln,Consultants,EEE-Project,Slip: e1210,6/1/2013,No
+Expense,ShawnR,Littleton,Hand Tools,III-Project,Slip: e1211,6/1/2013,No
+Expense,TomH,Longmeadow,Power Tools,LONGM-Project01,Slip: e1212,6/1/2013,No
+Expense,CoreyM,Lowell,Cleanup Supplies,LOWEL-Project02,Slip: e1213,6/1/2013,No
+Expense,ElvisP,Ludlow,Pavers,OOO-Project,Slip: e1214,6/1/2013,No
+Expense,JamesR,Lunenburg,Wood,UUU-Project,Slip: e1215,6/1/2013,No
+Expense,SamS,Lynn,First aid,,Slip: e1216,6/1/2013,No
+Expense,ShawnR,Lynnfield,Plants,AAA-Project,Slip: e1217,6/2/2013,No
+Expense,TomH,Malden,Landscape Supplies,EEE-Project,Slip: e1218,6/2/2013,No
+Expense,CoreyM,Manchester-by-the-Sea,Snacks,III-Project,Slip: e1219,6/2/2013,No
+Expense,ElvisP,Mansfield,Consultants,MANSF-Project01,Slip: e1220,6/2/2013,No
+Expense,JamesR,Marblehead,Hand Tools,MARBL-Project02,Slip: e1221,6/2/2013,No
+Expense,SamS,Marion,Power Tools,OOO-Project,Slip: e1222,6/2/2013,No
+Expense,ShawnR,Marlborough,Cleanup Supplies,UUU-Project,Slip: e1223,6/2/2013,No
+Expense,TomH,Marshfield,Pavers,,Slip: e1224,6/2/2013,No
+Expense,CoreyM,Mashpee,Wood,AAA-Project,Slip: e1225,6/3/2013,Yes
+Expense,ElvisP,Mattapoisett,First aid,EEE-Project,Slip: e1226,6/3/2013,No
+Expense,JamesR,Maynard,Plants,III-Project,Slip: e1227,6/3/2013,No
+Expense,SamS,Medfield,Landscape Supplies,MEDFI-Project01,Slip: e1228,6/3/2013,No
+Expense,ShawnR,Medford,Snacks,MEDFO-Project02,Slip: e1229,6/3/2013,No
+Expense,TomH,Medway,Consultants,OOO-Project,Slip: e1230,6/3/2013,No
+Expense,CoreyM,Melrose,Hand Tools,UUU-Project,Slip: e1231,6/3/2013,No
+Expense,ElvisP,Mendon,Power Tools,,Slip: e1232,6/3/2013,No
+Expense,JamesR,Merrimac,Cleanup Supplies,AAA-Project,Slip: e1233,6/4/2013,No
+Expense,SamS,Methuen,Pavers,EEE-Project,Slip: e1234,6/4/2013,No
+Expense,ShawnR,Middleborough,Wood,III-Project,Slip: e1235,6/4/2013,No
+Expense,TomH,Middlefield,First aid,MIDDL-Project01,Slip: e1236,6/4/2013,No
+Expense,CoreyM,Middleton,Plants,MIDDL-Project02,Slip: e1237,6/4/2013,No
+Expense,ElvisP,Milford,Landscape Supplies,OOO-Project,Slip: e1238,6/4/2013,No
+Expense,JamesR,Millbury,Snacks,UUU-Project,Slip: e1239,6/4/2013,No
+Expense,SamS,Millis,Consultants,,Slip: e1240,6/4/2013,No
+Expense,ShawnR,Millville,Hand Tools,AAA-Project,Slip: e1241,6/5/2013,No
+Expense,TomH,Milton,Power Tools,EEE-Project,Slip: e1242,6/5/2013,No
+Expense,CoreyM,Monroe,Cleanup Supplies,III-Project,Slip: e1243,6/5/2013,No
+Expense,ElvisP,Monson,Pavers,MONSO-Project01,Slip: e1244,6/5/2013,No
+Expense,JamesR,Montague,Wood,MONTA-Project02,Slip: e1245,6/5/2013,No
+Expense,SamS,Monterey,First aid,OOO-Project,Slip: e1246,6/5/2013,No
+Expense,ShawnR,Montgomery,Plants,UUU-Project,Slip: e1247,6/5/2013,No
+Expense,TomH,Mount Washington,Landscape Supplies,,Slip: e1248,6/5/2013,No
+Expense,CoreyM,Nahant,Snacks,AAA-Project,Slip: e1249,6/6/2013,No
+Expense,ElvisP,Nantucket,Consultants,EEE-Project,Slip: e1250,6/6/2013,Yes
+Expense,JamesR,Natick,Hand Tools,III-Project,Slip: e1251,6/6/2013,No
+Expense,SamS,Needham,Power Tools,NEEDH-Project01,Slip: e1252,6/6/2013,No
+Expense,ShawnR,New Ashford,Cleanup Supplies,NEWAS-Project02,Slip: e1253,6/6/2013,No
+Expense,TomH,New Bedford,Pavers,OOO-Project,Slip: e1254,6/6/2013,No
+Expense,CoreyM,New Braintree,Wood,UUU-Project,Slip: e1255,6/6/2013,No
+Expense,ElvisP,New Marlborough,First aid,,Slip: e1256,6/6/2013,No
+Expense,JamesR,New Salem,Plants,AAA-Project,Slip: e1257,6/7/2013,No
+Expense,SamS,Newbury,Landscape Supplies,EEE-Project,Slip: e1258,6/7/2013,No
+Expense,ShawnR,Newburyport,Snacks,III-Project,Slip: e1259,6/7/2013,No
+Expense,TomH,Newton,Consultants,NEWTO-Project01,Slip: e1260,6/7/2013,No
+Expense,CoreyM,Norfolk,Hand Tools,NORFO-Project02,Slip: e1261,6/7/2013,No
+Expense,ElvisP,North Adams,Power Tools,OOO-Project,Slip: e1262,6/7/2013,No
+Expense,JamesR,North Andover,Cleanup Supplies,UUU-Project,Slip: e1263,6/7/2013,No
+Expense,SamS,North Attleborough,Pavers,,Slip: e1264,6/7/2013,No
+Expense,ShawnR,North Brookfield,Wood,AAA-Project,Slip: e1265,6/8/2013,No
+Expense,TomH,North Reading,First aid,EEE-Project,Slip: e1266,6/8/2013,No
+Expense,CoreyM,Northampton,Plants,III-Project,Slip: e1267,6/8/2013,No
+Expense,ElvisP,Northborough,Landscape Supplies,NORTH-Project01,Slip: e1268,6/8/2013,No
+Expense,JamesR,Northbridge,Snacks,NORTH-Project02,Slip: e1269,6/8/2013,No
+Expense,SamS,Northfield,Consultants,OOO-Project,Slip: e1270,6/8/2013,No
+Expense,ShawnR,Norton,Hand Tools,UUU-Project,Slip: e1271,6/8/2013,No
+Expense,TomH,Norwell,Power Tools,,Slip: e1272,6/8/2013,No
+Expense,CoreyM,Norwood,Cleanup Supplies,AAA-Project,Slip: e1273,6/9/2013,No
+Expense,ElvisP,Oak Bluffs,Pavers,EEE-Project,Slip: e1274,6/9/2013,No
+Expense,JamesR,Oakham,Wood,III-Project,Slip: e1275,6/9/2013,Yes
+Expense,SamS,Orange,First aid,OOO-Project,Slip: e1276,6/9/2013,No
+Expense,ShawnR,Orleans,Plants,ORLEA-Project01,Slip: e1277,6/9/2013,No
+Expense,TomH,Otis,Landscape Supplies,OTIS-Project02,Slip: e1278,6/9/2013,No
+Expense,CoreyM,Oxford,Snacks,UUU-Project,Slip: e1279,6/9/2013,No
+Expense,ElvisP,Palmer,Consultants,,Slip: e1280,6/9/2013,No
+Expense,JamesR,Paxton,Hand Tools,AAA-Project,Slip: e1281,6/10/2013,No
+Expense,SamS,Peabody,Power Tools,EEE-Project,Slip: e1282,6/10/2013,No
+Expense,ShawnR,Pelham,Cleanup Supplies,III-Project,Slip: e1283,6/10/2013,No
+Expense,TomH,Pembroke,Pavers,OOO-Project,Slip: e1284,6/10/2013,No
+Expense,CoreyM,Pepperell,Wood,PEPPE-Project01,Slip: e1285,6/10/2013,No
+Expense,ElvisP,Peru,First aid,PERU-Project02,Slip: e1286,6/10/2013,No
+Expense,JamesR,Petersham,Plants,UUU-Project,Slip: e1287,6/10/2013,No
+Expense,SamS,Phillipston,Landscape Supplies,,Slip: e1288,6/10/2013,No
+Expense,ShawnR,Pittsfield,Snacks,AAA-Project,Slip: e1289,6/11/2013,No
+Expense,TomH,Plainfield,Consultants,EEE-Project,Slip: e1290,6/11/2013,No
+Expense,CoreyM,Plainville,Hand Tools,III-Project,Slip: e1291,6/11/2013,No
+Expense,ElvisP,Plymouth,Power Tools,OOO-Project,Slip: e1292,6/11/2013,No
+Expense,JamesR,Plympton,Cleanup Supplies,PLYMP-Project01,Slip: e1293,6/11/2013,No
+Expense,SamS,Princeton,Pavers,PRINC-Project02,Slip: e1294,6/11/2013,No
+Expense,ShawnR,Provincetown,Wood,UUU-Project,Slip: e1295,6/11/2013,No
+Expense,TomH,Quincy,First aid,,Slip: e1296,6/11/2013,No
+Expense,CoreyM,Randolph,Plants,AAA-Project,Slip: e1297,6/12/2013,No
+Expense,ElvisP,Raynham,Landscape Supplies,EEE-Project,Slip: e1298,6/12/2013,No
+Expense,JamesR,Reading,Snacks,III-Project,Slip: e1299,6/12/2013,No
+Expense,SamS,Rehoboth,Consultants,OOO-Project,Slip: e1300,6/12/2013,Yes
+Expense,ShawnR,Revere,Hand Tools,REVER-Project01,Slip: e1301,6/12/2013,No
+Expense,TomH,Richmond,Power Tools,RICHM-Project02,Slip: e1302,6/12/2013,No
+Expense,CoreyM,Rochester,Cleanup Supplies,UUU-Project,Slip: e1303,6/12/2013,No
+Expense,ElvisP,Rockland,Pavers,,Slip: e1304,6/12/2013,No
+Expense,JamesR,Rockport,Wood,AAA-Project,Slip: e1305,6/13/2013,No
+Expense,SamS,Rowe,First aid,EEE-Project,Slip: e1306,6/13/2013,No
+Expense,ShawnR,Rowley,Plants,III-Project,Slip: e1307,6/13/2013,No
+Expense,TomH,Royalston,Landscape Supplies,OOO-Project,Slip: e1308,6/13/2013,No
+Expense,CoreyM,Russell,Snacks,RUSSE-Project01,Slip: e1309,6/13/2013,No
+Expense,ElvisP,Rutland,Consultants,RUTLA-Project02,Slip: e1310,6/13/2013,No
+Expense,JamesR,Salem,Hand Tools,UUU-Project,Slip: e1311,6/13/2013,No
+Expense,SamS,Salisbury,Power Tools,,Slip: e1312,6/13/2013,No
+Expense,ShawnR,Sandisfield,Cleanup Supplies,AAA-Project,Slip: e1313,6/14/2013,No
+Expense,TomH,Sandwich,Pavers,EEE-Project,Slip: e1314,6/14/2013,No
+Expense,CoreyM,Saugus,Wood,III-Project,Slip: e1315,6/14/2013,No
+Expense,ElvisP,Savoy,First aid,OOO-Project,Slip: e1316,6/14/2013,No
+Expense,JamesR,Scituate,Plants,SCITU-Project01,Slip: e1317,6/14/2013,No
+Expense,SamS,Seekonk,Landscape Supplies,SEEKO-Project02,Slip: e1318,6/14/2013,No
+Expense,ShawnR,Sharon,Snacks,UUU-Project,Slip: e1319,6/14/2013,No
+Expense,TomH,Sheffield,Consultants,,Slip: e1320,6/14/2013,No
+Expense,CoreyM,Shelburne,Hand Tools,AAA-Project,Slip: e1321,6/15/2013,No
+Expense,ElvisP,Sherborn,Power Tools,EEE-Project,Slip: e1322,6/15/2013,No
+Expense,JamesR,Shirley,Cleanup Supplies,III-Project,Slip: e1323,6/15/2013,No
+Expense,SamS,Shrewsbury,Pavers,OOO-Project,Slip: e1324,6/15/2013,No
+Expense,ShawnR,Shutesbury,Wood,SHUTE-Project01,Slip: e1325,6/15/2013,Yes
+Expense,TomH,Somerset,First aid,SOMER-Project02,Slip: e1326,6/15/2013,No
+Expense,CoreyM,Somerville,Plants,UUU-Project,Slip: e1327,6/15/2013,No
+Expense,ElvisP,South Hadley,Landscape Supplies,,Slip: e1328,6/15/2013,No
+Expense,JamesR,Southampton,Snacks,AAA-Project,Slip: e1329,6/16/2013,No
+Expense,SamS,Southborough,Consultants,EEE-Project,Slip: e1330,6/16/2013,No
+Expense,ShawnR,Southbridge,Hand Tools,III-Project,Slip: e1331,6/16/2013,No
+Expense,TomH,Southwick,Power Tools,OOO-Project,Slip: e1332,6/16/2013,No
+Expense,CoreyM,Spencer,Cleanup Supplies,SPENC-Project01,Slip: e1333,6/16/2013,No
+Expense,ElvisP,Springfield,Pavers,SPRIN-Project02,Slip: e1334,6/16/2013,No
+Expense,JamesR,Sterling,Wood,UUU-Project,Slip: e1335,6/16/2013,No
+Expense,SamS,Stockbridge,First aid,,Slip: e1336,6/16/2013,No
+Expense,ShawnR,Stoneham,Plants,AAA-Project,Slip: e1337,6/17/2013,No
+Expense,TomH,Stoughton,Landscape Supplies,EEE-Project,Slip: e1338,6/17/2013,No
+Expense,CoreyM,Stow,Snacks,III-Project,Slip: e1339,6/17/2013,No
+Expense,ElvisP,Sturbridge,Consultants,OOO-Project,Slip: e1340,6/17/2013,No
+Expense,JamesR,Sudbury,Hand Tools,SUDBU-Project01,Slip: e1341,6/17/2013,No
+Expense,SamS,Sunderland,Power Tools,SUNDE-Project02,Slip: e1342,6/17/2013,No
+Expense,ShawnR,Sutton,Cleanup Supplies,UUU-Project,Slip: e1343,6/17/2013,No
+Expense,TomH,Swampscott,Pavers,,Slip: e1344,6/17/2013,No
+Expense,CoreyM,Swansea,Wood,AAA-Project,Slip: e1345,6/18/2013,No
+Expense,ElvisP,Taunton,First aid,EEE-Project,Slip: e1346,6/18/2013,No
+Expense,JamesR,Templeton,Plants,III-Project,Slip: e1347,6/18/2013,No
+Expense,SamS,Tewksbury,Landscape Supplies,OOO-Project,Slip: e1348,6/18/2013,No
+Expense,ShawnR,Tisbury,Snacks,TISBU-Project01,Slip: e1349,6/18/2013,No
+Expense,TomH,Tolland,Consultants,TOLLA-Project02,Slip: e1350,6/18/2013,Yes
+Expense,CoreyM,Topsfield,Hand Tools,UUU-Project,Slip: e1351,6/18/2013,No
+Expense,ElvisP,Townsend,Power Tools,,Slip: e1352,6/18/2013,No
+Expense,JamesR,Truro,Cleanup Supplies,AAA-Project,Slip: e1353,6/19/2013,No
+Expense,SamS,Tyngsborough,Pavers,EEE-Project,Slip: e1354,6/19/2013,No
+Expense,ShawnR,Tyringham,Wood,III-Project,Slip: e1355,6/19/2013,No
+Expense,TomH,Upton,First aid,OOO-Project,Slip: e1356,6/19/2013,No
+Expense,CoreyM,Uxbridge,Plants,UUU-Project,Slip: e1357,6/19/2013,No
+Expense,ElvisP,Wakefield,Landscape Supplies,WAKEF-Project01,Slip: e1358,6/19/2013,No
+Expense,JamesR,Wales,Snacks,WALES-Project02,Slip: e1359,6/19/2013,No
+Expense,SamS,Walpole,Consultants,,Slip: e1360,6/19/2013,No
+Expense,ShawnR,Waltham,Hand Tools,AAA-Project,Slip: e1361,6/20/2013,No
+Expense,TomH,Ware,Power Tools,EEE-Project,Slip: e1362,6/20/2013,No
+Expense,CoreyM,Wareham,Cleanup Supplies,III-Project,Slip: e1363,6/20/2013,No
+Expense,ElvisP,Warren,Pavers,OOO-Project,Slip: e1364,6/20/2013,No
+Expense,JamesR,Warwick,Wood,UUU-Project,Slip: e1365,6/20/2013,No
+Expense,SamS,Washington,First aid,WASHI-Project01,Slip: e1366,6/20/2013,No
+Expense,ShawnR,Watertown,Plants,WATER-Project02,Slip: e1367,6/20/2013,No
+Expense,TomH,Wayland,Landscape Supplies,,Slip: e1368,6/20/2013,No
+Expense,CoreyM,Webster,Snacks,AAA-Project,Slip: e1369,6/21/2013,No
+Expense,ElvisP,Wellesley,Consultants,EEE-Project,Slip: e1370,6/21/2013,No
+Expense,JamesR,Wellfleet,Hand Tools,III-Project,Slip: e1371,6/21/2013,No
+Expense,SamS,Wendell,Power Tools,OOO-Project,Slip: e1372,6/21/2013,No
+Expense,ShawnR,Wenham,Cleanup Supplies,UUU-Project,Slip: e1373,6/21/2013,No
+Expense,TomH,West Boylston,Pavers,WESTB-Project01,Slip: e1374,6/21/2013,No
+Expense,CoreyM,West Bridgewater,Wood,WESTB-Project02,Slip: e1375,6/21/2013,Yes
+Expense,ElvisP,West Brookfield,First aid,,Slip: e1376,6/21/2013,No
+Expense,JamesR,West Newbury,Plants,AAA-Project,Slip: e1377,6/22/2013,No
+Expense,SamS,West Springfield,Landscape Supplies,EEE-Project,Slip: e1378,6/22/2013,No
+Expense,ShawnR,West Stockbridge,Snacks,III-Project,Slip: e1379,6/22/2013,No
+Expense,TomH,West Tisbury,Consultants,OOO-Project,Slip: e1380,6/22/2013,No
+Expense,CoreyM,Westborough,Hand Tools,UUU-Project,Slip: e1381,6/22/2013,No
+Expense,ElvisP,Westfield,Power Tools,WESTF-Project01,Slip: e1382,6/22/2013,No
+Expense,JamesR,Westford,Cleanup Supplies,WESTF-Project02,Slip: e1383,6/22/2013,No
+Expense,SamS,Westhampton,Pavers,,Slip: e1384,6/22/2013,No
+Expense,ShawnR,Westminster,Wood,AAA-Project,Slip: e1385,6/23/2013,No
+Expense,TomH,Weston,First aid,EEE-Project,Slip: e1386,6/23/2013,No
+Expense,CoreyM,Westport,Plants,III-Project,Slip: e1387,6/23/2013,No
+Expense,ElvisP,Westwood,Landscape Supplies,OOO-Project,Slip: e1388,6/23/2013,No
+Expense,JamesR,Weymouth,Snacks,UUU-Project,Slip: e1389,6/23/2013,No
+Expense,SamS,Whately,Consultants,WHATE-Project01,Slip: e1390,6/23/2013,No
+Expense,ShawnR,Whitman,Hand Tools,WHITM-Project02,Slip: e1391,6/23/2013,No
+Expense,TomH,Wilbraham,Power Tools,,Slip: e1392,6/23/2013,No
+Expense,CoreyM,Williamsburg,Cleanup Supplies,AAA-Project,Slip: e1393,6/24/2013,No
+Expense,ElvisP,Williamstown,Pavers,EEE-Project,Slip: e1394,6/24/2013,No
+Expense,JamesR,Wilmington,Wood,III-Project,Slip: e1395,6/24/2013,No
+Expense,SamS,Winchendon,First aid,OOO-Project,Slip: e1396,6/24/2013,No
+Expense,ShawnR,Winchester,Plants,UUU-Project,Slip: e1397,6/24/2013,No
+Expense,TomH,Windsor,Landscape Supplies,WINDS-Project01,Slip: e1398,6/24/2013,No
+Expense,CoreyM,Winthrop,Snacks,WINTH-Project02,Slip: e1399,6/24/2013,No
+Expense,ElvisP,Woburn,Consultants,,Slip: e1400,6/24/2013,Yes
+Expense,JamesR,Worcester,Hand Tools,AAA-Project,Slip: e1401,6/25/2013,No
+Expense,SamS,Worthington,Power Tools,EEE-Project,Slip: e1402,6/25/2013,No
+Expense,ShawnR,Wrentham,Cleanup Supplies,III-Project,Slip: e1403,6/25/2013,No
+Expense,TomH,Yarmouth,Pavers,OOO-Project,Slip: e1404,6/25/2013,No
+Time,CoreyM,Abington,Build Structure,III-Project,Slip: t1405,6/25/2013,No
+Time,ElvisP,Acton,DemoS,OOO-Project,Slip: t1406,6/25/2013,No
+Time,JamesR,Acushnet,Fix,UUU-Project,Slip: t1407,6/25/2013,No
+Time,SamS,Adams,DesignS,,Slip: t1408,6/25/2013,No
+Time,ShawnR,Agawam,Bid,AAA-Project,Slip: t1409,6/26/2013,No
+Time,TomH,Alford,Clean,ALFOR-Project01,Slip: t1410,6/26/2013,No
+Time,CoreyM,Amesbury,DesignL,AMESB-Project02,Slip: t1411,6/26/2013,No
+Time,ElvisP,Amherst,Planting,EEE-Project,Slip: t1412,6/26/2013,No
+Time,JamesR,Andover,Lot Maintenance,III-Project,Slip: t1413,6/26/2013,No
+Time,SamS,Aquinnah,Water Feature,OOO-Project,Slip: t1414,6/26/2013,No
+Time,ShawnR,Arlington,Pave,UUU-Project,Slip: t1415,6/26/2013,No
+Time,TomH,Ashburnham,DemoL,,Slip: t1416,6/26/2013,No
+Time,CoreyM,Ashby,Build Structure,AAA-Project,Slip: t1417,6/27/2013,No
+Time,ElvisP,Ashfield,DemoS,ASHFI-Project01,Slip: t1418,6/27/2013,No
+Time,JamesR,Ashland,Fix,ASHLA-Project02,Slip: t1419,6/27/2013,No
+Time,SamS,Athol,DesignS,EEE-Project,Slip: t1420,6/27/2013,No
+Time,ShawnR,Attleboro,Bid,III-Project,Slip: t1421,6/27/2013,No
+Time,TomH,Auburn,Clean,OOO-Project,Slip: t1422,6/27/2013,No
+Time,CoreyM,Avon,DesignL,UUU-Project,Slip: t1423,6/27/2013,No
+Time,ElvisP,Ayer,Planting,,Slip: t1424,6/27/2013,No
+Time,JamesR,Barnstable,Lot Maintenance,AAA-Project,Slip: t1425,6/28/2013,Yes
+Time,SamS,Barre,Water Feature,BARRE-Project01,Slip: t1426,6/28/2013,No
+Time,ShawnR,Becket,Pave,BECKE-Project02,Slip: t1427,6/28/2013,No
+Time,TomH,Bedford,DemoL,EEE-Project,Slip: t1428,6/28/2013,No
+Time,CoreyM,Belchertown,Build Structure,III-Project,Slip: t1429,6/28/2013,No
+Time,ElvisP,Bellingham,DemoS,OOO-Project,Slip: t1430,6/28/2013,No
+Time,JamesR,Belmont,Fix,UUU-Project,Slip: t1431,6/28/2013,No
+Time,SamS,Berkley,DesignS,,Slip: t1432,6/28/2013,No
+Time,ShawnR,Berlin,Bid,AAA-Project,Slip: t1433,6/29/2013,No
+Time,TomH,Bernardston,Clean,BERNA-Project01,Slip: t1434,6/29/2013,No
+Time,CoreyM,Beverly,DesignL,BEVER-Project02,Slip: t1435,6/29/2013,No
+Time,ElvisP,Billerica,Planting,EEE-Project,Slip: t1436,6/29/2013,No
+Time,JamesR,Blackstone,Lot Maintenance,III-Project,Slip: t1437,6/29/2013,No
+Time,SamS,Blandford,Water Feature,OOO-Project,Slip: t1438,6/29/2013,No
+Time,ShawnR,Bolton,Pave,UUU-Project,Slip: t1439,6/29/2013,No
+Time,TomH,Boston,DemoL,,Slip: t1440,6/29/2013,No
+Time,CoreyM,Bourne,Build Structure,AAA-Project,Slip: t1441,6/30/2013,No
+Time,ElvisP,Boxborough,DemoS,BOXBO-Project01,Slip: t1442,6/30/2013,No
+Time,JamesR,Boxford,Fix,BOXFO-Project02,Slip: t1443,6/30/2013,No
+Time,SamS,Boylston,DesignS,EEE-Project,Slip: t1444,6/30/2013,No
+Time,ShawnR,Braintree,Bid,III-Project,Slip: t1445,6/30/2013,No
+Time,TomH,Brewster,Clean,OOO-Project,Slip: t1446,6/30/2013,No
+Time,CoreyM,Bridgewater,DesignL,UUU-Project,Slip: t1447,6/30/2013,No
+Time,ElvisP,Brimfield,Planting,,Slip: t1448,6/30/2013,No
+Time,JamesR,Brockton,Lot Maintenance,AAA-Project,Slip: t1449,7/1/2013,No
+Time,SamS,Brookfield,Water Feature,BROOK-Project01,Slip: t1450,7/1/2013,Yes
+Time,ShawnR,Brookline,Pave,BROOK-Project02,Slip: t1451,7/1/2013,No
+Time,TomH,Buckland,DemoL,EEE-Project,Slip: t1452,7/1/2013,No
+Time,CoreyM,Burlington,Build Structure,III-Project,Slip: t1453,7/1/2013,No
+Time,ElvisP,Cambridge,DemoS,OOO-Project,Slip: t1454,7/1/2013,No
+Time,JamesR,Canton,Fix,UUU-Project,Slip: t1455,7/1/2013,No
+Time,SamS,Carlisle,DesignS,,Slip: t1456,7/1/2013,No
+Time,ShawnR,Carver,Bid,AAA-Project,Slip: t1457,7/2/2013,No
+Time,TomH,Charlemont,Clean,CHARL-Project01,Slip: t1458,7/2/2013,No
+Time,CoreyM,Charlton,DesignL,CHARL-Project02,Slip: t1459,7/2/2013,No
+Time,ElvisP,Chatham,Planting,EEE-Project,Slip: t1460,7/2/2013,No
+Time,JamesR,Chelmsford,Lot Maintenance,III-Project,Slip: t1461,7/2/2013,No
+Time,SamS,Chelsea,Water Feature,OOO-Project,Slip: t1462,7/2/2013,No
+Time,ShawnR,Cheshire,Pave,UUU-Project,Slip: t1463,7/2/2013,No
+Time,TomH,Chester,DemoL,,Slip: t1464,7/2/2013,No
+Time,CoreyM,Chesterfield,Build Structure,AAA-Project,Slip: t1465,7/3/2013,No
+Time,ElvisP,Chicopee,DemoS,CHICO-Project01,Slip: t1466,7/3/2013,No
+Time,JamesR,Chilmark,Fix,CHILM-Project02,Slip: t1467,7/3/2013,No
+Time,SamS,Clarksburg,DesignS,EEE-Project,Slip: t1468,7/3/2013,No
+Time,ShawnR,Clinton,Bid,III-Project,Slip: t1469,7/3/2013,No
+Time,TomH,Cohasset,Clean,OOO-Project,Slip: t1470,7/3/2013,No
+Time,CoreyM,Colrain,DesignL,UUU-Project,Slip: t1471,7/3/2013,No
+Time,ElvisP,Concord,Planting,,Slip: t1472,7/3/2013,No
+Time,JamesR,Conway,Lot Maintenance,AAA-Project,Slip: t1473,7/4/2013,No
+Time,SamS,Cummington,Water Feature,CUMMI-Project01,Slip: t1474,7/4/2013,No
+Time,ShawnR,Dalton,Pave,DALTO-Project02,Slip: t1475,7/4/2013,Yes
+Time,TomH,Danvers,DemoL,EEE-Project,Slip: t1476,7/4/2013,No
+Time,CoreyM,Dartmouth,Build Structure,III-Project,Slip: t1477,7/4/2013,No
+Time,ElvisP,Dedham,DemoS,OOO-Project,Slip: t1478,7/4/2013,No
+Time,JamesR,Deerfield,Fix,UUU-Project,Slip: t1479,7/4/2013,No
+Time,SamS,Dennis,DesignS,,Slip: t1480,7/4/2013,No
+Time,ShawnR,Dighton,Bid,AAA-Project,Slip: t1481,7/5/2013,No
+Time,TomH,Douglas,Clean,DOUGL-Project01,Slip: t1482,7/5/2013,No
+Time,CoreyM,Dover,DesignL,DOVER-Project02,Slip: t1483,7/5/2013,No
+Time,ElvisP,Dracut,Planting,EEE-Project,Slip: t1484,7/5/2013,No
+Time,JamesR,Dudley,Lot Maintenance,III-Project,Slip: t1485,7/5/2013,No
+Time,SamS,Dunstable,Water Feature,OOO-Project,Slip: t1486,7/5/2013,No
+Time,ShawnR,Duxbury,Pave,UUU-Project,Slip: t1487,7/5/2013,No
+Time,TomH,East Bridgewater,DemoL,,Slip: t1488,7/5/2013,No
+Time,CoreyM,East Brookfield,Build Structure,AAA-Project,Slip: t1489,7/6/2013,No
+Time,ElvisP,East Longmeadow,DemoS,EASTL-Project01,Slip: t1490,7/6/2013,No
+Time,JamesR,Eastham,Fix,EASTH-Project02,Slip: t1491,7/6/2013,No
+Time,SamS,Easthampton,DesignS,EEE-Project,Slip: t1492,7/6/2013,No
+Time,ShawnR,Easton,Bid,III-Project,Slip: t1493,7/6/2013,No
+Time,TomH,Edgartown,Clean,OOO-Project,Slip: t1494,7/6/2013,No
+Time,CoreyM,Egremont,DesignL,UUU-Project,Slip: t1495,7/6/2013,No
+Time,ElvisP,Erving,Planting,,Slip: t1496,7/6/2013,No
+Time,JamesR,Essex,Lot Maintenance,AAA-Project,Slip: t1497,7/7/2013,No
+Time,SamS,Everett,Water Feature,EEE-Project,Slip: t1498,7/7/2013,No
+Time,ShawnR,Fairhaven,Pave,FAIRH-Project01,Slip: t1499,7/7/2013,No
+Time,TomH,Fall River,DemoL,FALLR-Project02,Slip: t1500,7/7/2013,Yes
+Time,CoreyM,Falmouth,Build Structure,III-Project,Slip: t1501,7/7/2013,No
+Time,ElvisP,Fitchburg,DemoS,OOO-Project,Slip: t1502,7/7/2013,No
+Time,JamesR,Florida,Fix,UUU-Project,Slip: t1503,7/7/2013,No
+Time,SamS,Foxborough,DesignS,,Slip: t1504,7/7/2013,No
+Time,ShawnR,Framingham,Bid,AAA-Project,Slip: t1505,7/8/2013,No
+Time,TomH,Franklin,Clean,EEE-Project,Slip: t1506,7/8/2013,No
+Time,CoreyM,Freetown,DesignL,FREET-Project01,Slip: t1507,7/8/2013,No
+Time,ElvisP,Gardner,Planting,GARDN-Project02,Slip: t1508,7/8/2013,No
+Time,JamesR,Georgetown,Lot Maintenance,III-Project,Slip: t1509,7/8/2013,No
+Time,SamS,Gill,Water Feature,OOO-Project,Slip: t1510,7/8/2013,No
+Time,ShawnR,Gloucester,Pave,UUU-Project,Slip: t1511,7/8/2013,No
+Time,TomH,Goshen,DemoL,,Slip: t1512,7/8/2013,No
+Time,CoreyM,Gosnold,Build Structure,AAA-Project,Slip: t1513,7/9/2013,No
+Time,ElvisP,Grafton,DemoS,EEE-Project,Slip: t1514,7/9/2013,No
+Time,JamesR,Granby,Fix,GRANB-Project01,Slip: t1515,7/9/2013,No
+Time,SamS,Granville,DesignS,GRANV-Project02,Slip: t1516,7/9/2013,No
+Time,ShawnR,Great Barrington,Bid,III-Project,Slip: t1517,7/9/2013,No
+Time,TomH,Greenfield,Clean,OOO-Project,Slip: t1518,7/9/2013,No
+Time,CoreyM,Groton,DesignL,UUU-Project,Slip: t1519,7/9/2013,No
+Time,ElvisP,Groveland,Planting,,Slip: t1520,7/9/2013,No
+Time,JamesR,Hadley,Lot Maintenance,AAA-Project,Slip: t1521,7/10/2013,No
+Time,SamS,Halifax,Water Feature,EEE-Project,Slip: t1522,7/10/2013,No
+Time,ShawnR,Hamilton,Pave,HAMIL-Project01,Slip: t1523,7/10/2013,No
+Time,TomH,Hampden,DemoL,HAMPD-Project02,Slip: t1524,7/10/2013,No
+Time,CoreyM,Hancock,Build Structure,III-Project,Slip: t1525,7/10/2013,Yes
+Time,ElvisP,Hanover,DemoS,OOO-Project,Slip: t1526,7/10/2013,No
+Time,JamesR,Hanson,Fix,UUU-Project,Slip: t1527,7/10/2013,No
+Time,SamS,Hardwick,DesignS,,Slip: t1528,7/10/2013,No
+Time,ShawnR,Harvard,Bid,AAA-Project,Slip: t1529,7/11/2013,No
+Time,TomH,Harwich,Clean,EEE-Project,Slip: t1530,7/11/2013,No
+Time,CoreyM,Hatfield,DesignL,HATFI-Project01,Slip: t1531,7/11/2013,No
+Time,ElvisP,Haverhill,Planting,HAVER-Project02,Slip: t1532,7/11/2013,No
+Time,JamesR,Hawley,Lot Maintenance,III-Project,Slip: t1533,7/11/2013,No
+Time,SamS,Heath,Water Feature,OOO-Project,Slip: t1534,7/11/2013,No
+Time,ShawnR,Hingham,Pave,UUU-Project,Slip: t1535,7/11/2013,No
+Time,TomH,Hinsdale,DemoL,,Slip: t1536,7/11/2013,No
+Time,CoreyM,Holbrook,Build Structure,AAA-Project,Slip: t1537,7/12/2013,No
+Time,ElvisP,Holden,DemoS,EEE-Project,Slip: t1538,7/12/2013,No
+Time,JamesR,Holland,Fix,HOLLA-Project01,Slip: t1539,7/12/2013,No
+Time,SamS,Holliston,DesignS,HOLLI-Project02,Slip: t1540,7/12/2013,No
+Time,ShawnR,Holyoke,Bid,III-Project,Slip: t1541,7/12/2013,No
+Time,TomH,Hopedale,Clean,OOO-Project,Slip: t1542,7/12/2013,No
+Time,CoreyM,Hopkinton,DesignL,UUU-Project,Slip: t1543,7/12/2013,No
+Time,ElvisP,Hubbardston,Planting,,Slip: t1544,7/12/2013,No
+Time,JamesR,Hudson,Lot Maintenance,AAA-Project,Slip: t1545,7/13/2013,No
+Time,SamS,Hull,Water Feature,EEE-Project,Slip: t1546,7/13/2013,No
+Time,ShawnR,Huntington,Pave,HUNTI-Project01,Slip: t1547,7/13/2013,No
+Time,TomH,Ipswich,DemoL,IPSWI-Project01,Slip: t1548,7/13/2013,No
+Time,CoreyM,Kingston,Build Structure,KINGS-Project02,Slip: t1549,7/13/2013,No
+Time,ElvisP,Lakeville,DemoS,OOO-Project,Slip: t1550,7/13/2013,Yes
+Time,JamesR,Lancaster,Fix,UUU-Project,Slip: t1551,7/13/2013,No
+Time,SamS,Lanesborough,DesignS,,Slip: t1552,7/13/2013,No
+Time,ShawnR,Lawrence,Bid,AAA-Project,Slip: t1553,7/14/2013,No
+Time,TomH,Lee,Clean,EEE-Project,Slip: t1554,7/14/2013,No
+Time,CoreyM,Leicester,DesignL,III-Project,Slip: t1555,7/14/2013,No
+Time,ElvisP,Lenox,Planting,LENOX-Project01,Slip: t1556,7/14/2013,No
+Time,JamesR,Leominster,Lot Maintenance,LEOMI-Project02,Slip: t1557,7/14/2013,No
+Time,SamS,Leverett,Water Feature,OOO-Project,Slip: t1558,7/14/2013,No
+Time,ShawnR,Lexington,Pave,UUU-Project,Slip: t1559,7/14/2013,No
+Time,TomH,Leyden,DemoL,,Slip: t1560,7/14/2013,No
+Time,CoreyM,Lincoln,Build Structure,AAA-Project,Slip: t1561,7/15/2013,No
+Time,ElvisP,Littleton,DemoS,EEE-Project,Slip: t1562,7/15/2013,No
+Time,JamesR,Longmeadow,Fix,III-Project,Slip: t1563,7/15/2013,No
+Time,SamS,Lowell,DesignS,LOWEL-Project01,Slip: t1564,7/15/2013,No
+Time,ShawnR,Ludlow,Bid,LUDLO-Project02,Slip: t1565,7/15/2013,No
+Time,TomH,Lunenburg,Clean,OOO-Project,Slip: t1566,7/15/2013,No
+Time,CoreyM,Lynn,DesignL,UUU-Project,Slip: t1567,7/15/2013,No
+Time,ElvisP,Lynnfield,Planting,,Slip: t1568,7/15/2013,No
+Time,JamesR,Malden,Lot Maintenance,AAA-Project,Slip: t1569,7/16/2013,No
+Time,SamS,Manchester-by-the-Sea,Water Feature,EEE-Project,Slip: t1570,7/16/2013,No
+Time,ShawnR,Mansfield,Pave,III-Project,Slip: t1571,7/16/2013,No
+Time,TomH,Marblehead,DemoL,MARBL-Project01,Slip: t1572,7/16/2013,No
+Time,CoreyM,Marion,Build Structure,MARIO-Project02,Slip: t1573,7/16/2013,No
+Time,ElvisP,Marlborough,DemoS,OOO-Project,Slip: t1574,7/16/2013,No
+Time,JamesR,Marshfield,Fix,UUU-Project,Slip: t1575,7/16/2013,Yes
+Time,SamS,Mashpee,DesignS,,Slip: t1576,7/16/2013,No
+Time,ShawnR,Mattapoisett,Bid,AAA-Project,Slip: t1577,7/17/2013,No
+Time,TomH,Maynard,Clean,EEE-Project,Slip: t1578,7/17/2013,No
+Time,CoreyM,Medfield,DesignL,III-Project,Slip: t1579,7/17/2013,No
+Time,ElvisP,Medford,Planting,MEDFO-Project01,Slip: t1580,7/17/2013,No
+Time,JamesR,Medway,Lot Maintenance,MEDWA-Project02,Slip: t1581,7/17/2013,No
+Time,SamS,Melrose,Water Feature,OOO-Project,Slip: t1582,7/17/2013,No
+Time,ShawnR,Mendon,Pave,UUU-Project,Slip: t1583,7/17/2013,No
+Time,TomH,Merrimac,DemoL,,Slip: t1584,7/17/2013,No
+Time,CoreyM,Methuen,Build Structure,AAA-Project,Slip: t1585,7/18/2013,No
+Time,ElvisP,Middleborough,DemoS,EEE-Project,Slip: t1586,7/18/2013,No
+Time,JamesR,Middlefield,Fix,III-Project,Slip: t1587,7/18/2013,No
+Time,SamS,Middleton,DesignS,MIDDL-Project01,Slip: t1588,7/18/2013,No
+Time,ShawnR,Milford,Bid,MILFO-Project02,Slip: t1589,7/18/2013,No
+Time,TomH,Millbury,Clean,OOO-Project,Slip: t1590,7/18/2013,No
+Time,CoreyM,Millis,DesignL,UUU-Project,Slip: t1591,7/18/2013,No
+Time,ElvisP,Millville,Planting,,Slip: t1592,7/18/2013,No
+Time,JamesR,Milton,Lot Maintenance,AAA-Project,Slip: t1593,7/19/2013,No
+Time,SamS,Monroe,Water Feature,EEE-Project,Slip: t1594,7/19/2013,No
+Time,ShawnR,Monson,Pave,III-Project,Slip: t1595,7/19/2013,No
+Time,TomH,Montague,DemoL,MONTA-Project01,Slip: t1596,7/19/2013,No
+Time,CoreyM,Monterey,Build Structure,MONTE-Project02,Slip: t1597,7/19/2013,No
+Time,ElvisP,Montgomery,DemoS,OOO-Project,Slip: t1598,7/19/2013,No
+Time,JamesR,Mount Washington,Fix,UUU-Project,Slip: t1599,7/19/2013,No
+Time,SamS,Nahant,DesignS,,Slip: t1600,7/19/2013,Yes
+Time,ShawnR,Nantucket,Bid,AAA-Project,Slip: t1601,7/20/2013,No
+Time,TomH,Natick,Clean,EEE-Project,Slip: t1602,7/20/2013,No
+Time,CoreyM,Needham,DesignL,III-Project,Slip: t1603,7/20/2013,No
+Time,ElvisP,New Ashford,Planting,NEWAS-Project01,Slip: t1604,7/20/2013,No
+Time,JamesR,New Bedford,Lot Maintenance,NEWBE-Project02,Slip: t1605,7/20/2013,No
+Time,SamS,New Braintree,Water Feature,OOO-Project,Slip: t1606,7/20/2013,No
+Time,ShawnR,New Marlborough,Pave,UUU-Project,Slip: t1607,7/20/2013,No
+Time,TomH,New Salem,DemoL,,Slip: t1608,7/20/2013,No
+Time,CoreyM,Newbury,Build Structure,AAA-Project,Slip: t1609,7/21/2013,No
+Time,ElvisP,Newburyport,DemoS,EEE-Project,Slip: t1610,7/21/2013,No
+Time,JamesR,Newton,Fix,III-Project,Slip: t1611,7/21/2013,No
+Time,SamS,Norfolk,DesignS,NORFO-Project01,Slip: t1612,7/21/2013,No
+Time,ShawnR,North Adams,Bid,NORTH-Project02,Slip: t1613,7/21/2013,No
+Time,TomH,North Andover,Clean,OOO-Project,Slip: t1614,7/21/2013,No
+Time,CoreyM,North Attleborough,DesignL,UUU-Project,Slip: t1615,7/21/2013,No
+Time,ElvisP,North Brookfield,Planting,,Slip: t1616,7/21/2013,No
+Time,JamesR,North Reading,Lot Maintenance,AAA-Project,Slip: t1617,7/22/2013,No
+Time,SamS,Northampton,Water Feature,EEE-Project,Slip: t1618,7/22/2013,No
+Time,ShawnR,Northborough,Pave,III-Project,Slip: t1619,7/22/2013,No
+Time,TomH,Northbridge,DemoL,NORTH-Project01,Slip: t1620,7/22/2013,No
+Time,CoreyM,Northfield,Build Structure,NORTH-Project02,Slip: t1621,7/22/2013,No
+Time,ElvisP,Norton,DemoS,OOO-Project,Slip: t1622,7/22/2013,No
+Time,JamesR,Norwell,Fix,UUU-Project,Slip: t1623,7/22/2013,No
+Time,SamS,Norwood,DesignS,,Slip: t1624,7/22/2013,No
+Time,ShawnR,Oak Bluffs,Bid,AAA-Project,Slip: t1625,7/23/2013,Yes
+Time,TomH,Oakham,Clean,EEE-Project,Slip: t1626,7/23/2013,No
+Time,CoreyM,Orange,DesignL,III-Project,Slip: t1627,7/23/2013,No
+Time,ElvisP,Orleans,Planting,OOO-Project,Slip: t1628,7/23/2013,No
+Time,JamesR,Otis,Lot Maintenance,OTIS-Project01,Slip: t1629,7/23/2013,No
+Time,SamS,Oxford,Water Feature,OXFOR-Project02,Slip: t1630,7/23/2013,No
+Time,ShawnR,Palmer,Pave,UUU-Project,Slip: t1631,7/23/2013,No
+Time,TomH,Paxton,DemoL,,Slip: t1632,7/23/2013,No
+Time,CoreyM,Peabody,Build Structure,AAA-Project,Slip: t1633,7/24/2013,No
+Time,ElvisP,Pelham,DemoS,EEE-Project,Slip: t1634,7/24/2013,No
+Time,JamesR,Pembroke,Fix,III-Project,Slip: t1635,7/24/2013,No
+Time,SamS,Pepperell,DesignS,OOO-Project,Slip: t1636,7/24/2013,No
+Time,ShawnR,Peru,Bid,PERU-Project01,Slip: t1637,7/24/2013,No
+Time,TomH,Petersham,Clean,PETER-Project02,Slip: t1638,7/24/2013,No
+Time,CoreyM,Phillipston,DesignL,UUU-Project,Slip: t1639,7/24/2013,No
+Time,ElvisP,Pittsfield,Planting,,Slip: t1640,7/24/2013,No
+Time,JamesR,Plainfield,Lot Maintenance,AAA-Project,Slip: t1641,7/25/2013,No
+Time,SamS,Plainville,Water Feature,EEE-Project,Slip: t1642,7/25/2013,No
+Time,ShawnR,Plymouth,Pave,III-Project,Slip: t1643,7/25/2013,No
+Time,TomH,Plympton,DemoL,OOO-Project,Slip: t1644,7/25/2013,No
+Time,CoreyM,Princeton,Build Structure,PRINC-Project01,Slip: t1645,7/25/2013,No
+Time,ElvisP,Provincetown,DemoS,PROVI-Project02,Slip: t1646,7/25/2013,No
+Time,JamesR,Quincy,Fix,UUU-Project,Slip: t1647,7/25/2013,No
+Time,SamS,Randolph,DesignS,,Slip: t1648,7/25/2013,No
+Time,ShawnR,Raynham,Bid,AAA-Project,Slip: t1649,7/26/2013,No
+Time,TomH,Reading,Clean,EEE-Project,Slip: t1650,7/26/2013,Yes
+Time,CoreyM,Rehoboth,DesignL,III-Project,Slip: t1651,7/26/2013,No
+Time,ElvisP,Revere,Planting,OOO-Project,Slip: t1652,7/26/2013,No
+Time,JamesR,Richmond,Lot Maintenance,RICHM-Project01,Slip: t1653,7/26/2013,No
+Time,SamS,Rochester,Water Feature,ROCHE-Project02,Slip: t1654,7/26/2013,No
+Time,ShawnR,Rockland,Pave,UUU-Project,Slip: t1655,7/26/2013,No
+Time,TomH,Rockport,DemoL,,Slip: t1656,7/26/2013,No
+Time,CoreyM,Rowe,Build Structure,AAA-Project,Slip: t1657,7/27/2013,No
+Time,ElvisP,Rowley,DemoS,EEE-Project,Slip: t1658,7/27/2013,No
+Time,JamesR,Royalston,Fix,III-Project,Slip: t1659,7/27/2013,No
+Time,SamS,Russell,DesignS,OOO-Project,Slip: t1660,7/27/2013,No
+Time,ShawnR,Rutland,Bid,RUTLA-Project01,Slip: t1661,7/27/2013,No
+Time,TomH,Salem,Clean,SALEM-Project02,Slip: t1662,7/27/2013,No
+Time,CoreyM,Salisbury,DesignL,UUU-Project,Slip: t1663,7/27/2013,No
+Time,ElvisP,Sandisfield,Planting,,Slip: t1664,7/27/2013,No
+Time,JamesR,Sandwich,Lot Maintenance,AAA-Project,Slip: t1665,7/28/2013,No
+Time,SamS,Saugus,Water Feature,EEE-Project,Slip: t1666,7/28/2013,No
+Time,ShawnR,Savoy,Pave,III-Project,Slip: t1667,7/28/2013,No
+Time,TomH,Scituate,DemoL,OOO-Project,Slip: t1668,7/28/2013,No
+Time,CoreyM,Seekonk,Build Structure,SEEKO-Project01,Slip: t1669,7/28/2013,No
+Time,ElvisP,Sharon,DemoS,SHARO-Project02,Slip: t1670,7/28/2013,No
+Time,JamesR,Sheffield,Fix,UUU-Project,Slip: t1671,7/28/2013,No
+Time,SamS,Shelburne,DesignS,,Slip: t1672,7/28/2013,No
+Time,ShawnR,Sherborn,Bid,AAA-Project,Slip: t1673,7/29/2013,No
+Time,TomH,Shirley,Clean,EEE-Project,Slip: t1674,7/29/2013,No
+Time,CoreyM,Shrewsbury,DesignL,III-Project,Slip: t1675,7/29/2013,Yes
+Time,ElvisP,Shutesbury,Planting,OOO-Project,Slip: t1676,7/29/2013,No
+Time,JamesR,Somerset,Lot Maintenance,SOMER-Project01,Slip: t1677,7/29/2013,No
+Time,SamS,Somerville,Water Feature,SOMER-Project02,Slip: t1678,7/29/2013,No
+Time,ShawnR,South Hadley,Pave,UUU-Project,Slip: t1679,7/29/2013,No
+Time,TomH,Southampton,DemoL,,Slip: t1680,7/29/2013,No
+Time,CoreyM,Southborough,Build Structure,AAA-Project,Slip: t1681,7/30/2013,No
+Time,ElvisP,Southbridge,DemoS,EEE-Project,Slip: t1682,7/30/2013,No
+Time,JamesR,Southwick,Fix,III-Project,Slip: t1683,7/30/2013,No
+Time,SamS,Spencer,DesignS,OOO-Project,Slip: t1684,7/30/2013,No
+Time,ShawnR,Springfield,Bid,SPRIN-Project01,Slip: t1685,7/30/2013,No
+Time,TomH,Sterling,Clean,STERL-Project02,Slip: t1686,7/30/2013,No
+Time,CoreyM,Stockbridge,DesignL,UUU-Project,Slip: t1687,7/30/2013,No
+Time,ElvisP,Stoneham,Planting,,Slip: t1688,7/30/2013,No
+Time,JamesR,Stoughton,Lot Maintenance,AAA-Project,Slip: t1689,7/31/2013,No
+Time,SamS,Stow,Water Feature,EEE-Project,Slip: t1690,7/31/2013,No
+Time,ShawnR,Sturbridge,Pave,III-Project,Slip: t1691,7/31/2013,No
+Time,TomH,Sudbury,DemoL,OOO-Project,Slip: t1692,7/31/2013,No
+Time,CoreyM,Sunderland,Build Structure,SUNDE-Project01,Slip: t1693,7/31/2013,No
+Time,ElvisP,Sutton,DemoS,SUTTO-Project02,Slip: t1694,7/31/2013,No
+Time,JamesR,Swampscott,Fix,UUU-Project,Slip: t1695,7/31/2013,No
+Time,SamS,Swansea,DesignS,,Slip: t1696,7/31/2013,No
+Time,ShawnR,Taunton,Bid,AAA-Project,Slip: t1697,8/1/2013,No
+Time,TomH,Templeton,Clean,EEE-Project,Slip: t1698,8/1/2013,No
+Time,CoreyM,Tewksbury,DesignL,III-Project,Slip: t1699,8/1/2013,No
+Time,ElvisP,Tisbury,Planting,OOO-Project,Slip: t1700,8/1/2013,Yes
+Time,JamesR,Tolland,Lot Maintenance,TOLLA-Project01,Slip: t1701,8/1/2013,No
+Time,SamS,Topsfield,Water Feature,TOPSF-Project02,Slip: t1702,8/1/2013,No
+Time,ShawnR,Townsend,Pave,UUU-Project,Slip: t1703,8/1/2013,No
+Time,TomH,Truro,DemoL,,Slip: t1704,8/1/2013,No
+Time,CoreyM,Tyngsborough,Build Structure,AAA-Project,Slip: t1705,8/2/2013,No
+Time,ElvisP,Tyringham,DemoS,EEE-Project,Slip: t1706,8/2/2013,No
+Time,JamesR,Upton,Fix,III-Project,Slip: t1707,8/2/2013,No
+Time,SamS,Uxbridge,DesignS,OOO-Project,Slip: t1708,8/2/2013,No
+Time,ShawnR,Wakefield,Bid,UUU-Project,Slip: t1709,8/2/2013,No
+Time,TomH,Wales,Clean,WALES-Project01,Slip: t1710,8/2/2013,No
+Time,CoreyM,Walpole,DesignL,WALPO-Project02,Slip: t1711,8/2/2013,No
+Time,ElvisP,Waltham,Planting,,Slip: t1712,8/2/2013,No
+Time,JamesR,Ware,Lot Maintenance,AAA-Project,Slip: t1713,8/3/2013,No
+Time,SamS,Wareham,Water Feature,EEE-Project,Slip: t1714,8/3/2013,No
+Time,ShawnR,Warren,Pave,III-Project,Slip: t1715,8/3/2013,No
+Time,TomH,Warwick,DemoL,OOO-Project,Slip: t1716,8/3/2013,No
+Time,CoreyM,Washington,Build Structure,UUU-Project,Slip: t1717,8/3/2013,No
+Time,ElvisP,Watertown,DemoS,WATER-Project01,Slip: t1718,8/3/2013,No
+Time,JamesR,Wayland,Fix,WAYLA-Project02,Slip: t1719,8/3/2013,No
+Time,SamS,Webster,DesignS,,Slip: t1720,8/3/2013,No
+Time,ShawnR,Wellesley,Bid,AAA-Project,Slip: t1721,8/4/2013,No
+Time,TomH,Wellfleet,Clean,EEE-Project,Slip: t1722,8/4/2013,No
+Time,CoreyM,Wendell,DesignL,III-Project,Slip: t1723,8/4/2013,No
+Time,ElvisP,Wenham,Planting,OOO-Project,Slip: t1724,8/4/2013,No
+Time,JamesR,West Boylston,Lot Maintenance,UUU-Project,Slip: t1725,8/4/2013,Yes
+Time,SamS,West Bridgewater,Water Feature,WESTB-Project01,Slip: t1726,8/4/2013,No
+Time,ShawnR,West Brookfield,Pave,WESTB-Project02,Slip: t1727,8/4/2013,No
+Time,TomH,West Newbury,DemoL,,Slip: t1728,8/4/2013,No
+Time,CoreyM,West Springfield,Build Structure,AAA-Project,Slip: t1729,8/5/2013,No
+Time,ElvisP,West Stockbridge,DemoS,EEE-Project,Slip: t1730,8/5/2013,No
+Time,JamesR,West Tisbury,Fix,III-Project,Slip: t1731,8/5/2013,No
+Time,SamS,Westborough,DesignS,OOO-Project,Slip: t1732,8/5/2013,No
+Time,ShawnR,Westfield,Bid,UUU-Project,Slip: t1733,8/5/2013,No
+Time,TomH,Westford,Clean,WESTF-Project01,Slip: t1734,8/5/2013,No
+Time,CoreyM,Westhampton,DesignL,WESTH-Project02,Slip: t1735,8/5/2013,No
+Time,ElvisP,Westminster,Planting,,Slip: t1736,8/5/2013,No
+Time,JamesR,Weston,Lot Maintenance,AAA-Project,Slip: t1737,8/6/2013,No
+Time,SamS,Westport,Water Feature,EEE-Project,Slip: t1738,8/6/2013,No
+Time,ShawnR,Westwood,Pave,III-Project,Slip: t1739,8/6/2013,No
+Time,TomH,Weymouth,DemoL,OOO-Project,Slip: t1740,8/6/2013,No
+Time,CoreyM,Whately,Build Structure,UUU-Project,Slip: t1741,8/6/2013,No
+Time,ElvisP,Whitman,DemoS,WHITM-Project01,Slip: t1742,8/6/2013,No
+Time,JamesR,Wilbraham,Fix,WILBR-Project02,Slip: t1743,8/6/2013,No
+Time,SamS,Williamsburg,DesignS,,Slip: t1744,8/6/2013,No
+Time,ShawnR,Williamstown,Bid,AAA-Project,Slip: t1745,8/7/2013,No
+Time,TomH,Wilmington,Clean,EEE-Project,Slip: t1746,8/7/2013,No
+Time,CoreyM,Winchendon,DesignL,III-Project,Slip: t1747,8/7/2013,No
+Time,ElvisP,Winchester,Planting,OOO-Project,Slip: t1748,8/7/2013,No
+Time,JamesR,Windsor,Lot Maintenance,UUU-Project,Slip: t1749,8/7/2013,No
+Time,SamS,Winthrop,Water Feature,WINTH-Project01,Slip: t1750,8/7/2013,Yes
+Time,ShawnR,Woburn,Pave,WOBUR-Project02,Slip: t1751,8/7/2013,No
+Time,TomH,Worcester,DemoL,,Slip: t1752,8/7/2013,No
+Time,CoreyM,Worthington,Build Structure,AAA-Project,Slip: t1753,8/8/2013,No
+Time,ElvisP,Wrentham,DemoS,EEE-Project,Slip: t1754,8/8/2013,No
+Time,JamesR,Yarmouth,Fix,III-Project,Slip: t1755,8/8/2013,No
+Time,SamS,Abington,DesignS,EEE-Project,Slip: t1756,8/8/2013,No
+Time,ShawnR,Acton,Bid,III-Project,Slip: t1757,8/8/2013,No
+Time,TomH,Acushnet,Clean,OOO-Project,Slip: t1758,8/8/2013,No
+Time,CoreyM,Adams,DesignL,UUU-Project,Slip: t1759,8/8/2013,No
+Time,ElvisP,Agawam,Planting,,Slip: t1760,8/8/2013,No
+Time,JamesR,Alford,Lot Maintenance,AAA-Project,Slip: t1761,8/9/2013,No
+Time,SamS,Amesbury,Water Feature,AMESB-Project01,Slip: t1762,8/9/2013,No
+Time,ShawnR,Amherst,Pave,AMHER-Project02,Slip: t1763,8/9/2013,No
+Time,TomH,Andover,DemoL,EEE-Project,Slip: t1764,8/9/2013,No
+Time,CoreyM,Aquinnah,Build Structure,III-Project,Slip: t1765,8/9/2013,No
+Time,ElvisP,Arlington,DemoS,OOO-Project,Slip: t1766,8/9/2013,No
+Time,JamesR,Ashburnham,Fix,UUU-Project,Slip: t1767,8/9/2013,No
+Time,SamS,Ashby,DesignS,,Slip: t1768,8/9/2013,No
+Time,ShawnR,Ashfield,Bid,AAA-Project,Slip: t1769,8/10/2013,No
+Time,TomH,Ashland,Clean,ASHLA-Project01,Slip: t1770,8/10/2013,No
+Time,CoreyM,Athol,DesignL,ATHOL-Project02,Slip: t1771,8/10/2013,No
+Time,ElvisP,Attleboro,Planting,EEE-Project,Slip: t1772,8/10/2013,No
+Time,JamesR,Auburn,Lot Maintenance,III-Project,Slip: t1773,8/10/2013,No
+Time,SamS,Avon,Water Feature,OOO-Project,Slip: t1774,8/10/2013,No
+Time,ShawnR,Ayer,Pave,UUU-Project,Slip: t1775,8/10/2013,Yes
+Time,TomH,Barnstable,DemoL,,Slip: t1776,8/10/2013,No
+Time,CoreyM,Barre,Build Structure,AAA-Project,Slip: t1777,8/11/2013,No
+Time,ElvisP,Becket,DemoS,BECKE-Project01,Slip: t1778,8/11/2013,No
+Time,JamesR,Bedford,Fix,BEDFO-Project02,Slip: t1779,8/11/2013,No
+Time,SamS,Belchertown,DesignS,EEE-Project,Slip: t1780,8/11/2013,No
+Time,ShawnR,Bellingham,Bid,III-Project,Slip: t1781,8/11/2013,No
+Time,TomH,Belmont,Clean,OOO-Project,Slip: t1782,8/11/2013,No
+Time,CoreyM,Berkley,DesignL,UUU-Project,Slip: t1783,8/11/2013,No
+Time,ElvisP,Berlin,Planting,,Slip: t1784,8/11/2013,No
+Time,JamesR,Bernardston,Lot Maintenance,AAA-Project,Slip: t1785,8/12/2013,No
+Time,SamS,Beverly,Water Feature,BEVER-Project01,Slip: t1786,8/12/2013,No
+Time,ShawnR,Billerica,Pave,BILLE-Project02,Slip: t1787,8/12/2013,No
+Time,TomH,Blackstone,DemoL,EEE-Project,Slip: t1788,8/12/2013,No
+Time,CoreyM,Blandford,Build Structure,III-Project,Slip: t1789,8/12/2013,No
+Time,ElvisP,Bolton,DemoS,OOO-Project,Slip: t1790,8/12/2013,No
+Time,JamesR,Boston,Fix,UUU-Project,Slip: t1791,8/12/2013,No
+Time,SamS,Bourne,DesignS,,Slip: t1792,8/12/2013,No
+Time,ShawnR,Boxborough,Bid,AAA-Project,Slip: t1793,8/13/2013,No
+Time,TomH,Boxford,Clean,BOXFO-Project01,Slip: t1794,8/13/2013,No
+Time,CoreyM,Boylston,DesignL,BOYLS-Project02,Slip: t1795,8/13/2013,No
+Time,ElvisP,Braintree,Planting,EEE-Project,Slip: t1796,8/13/2013,No
+Time,JamesR,Brewster,Lot Maintenance,III-Project,Slip: t1797,8/13/2013,No
+Time,SamS,Bridgewater,Water Feature,OOO-Project,Slip: t1798,8/13/2013,No
+Time,ShawnR,Brimfield,Pave,UUU-Project,Slip: t1799,8/13/2013,No
+Time,TomH,Brockton,DemoL,,Slip: t1800,8/13/2013,Yes
+Time,CoreyM,Brookfield,Build Structure,AAA-Project,Slip: t1801,8/14/2013,No
+Time,ElvisP,Brookline,DemoS,BROOK-Project01,Slip: t1802,8/14/2013,No
+Time,JamesR,Buckland,Fix,BUCKL-Project02,Slip: t1803,8/14/2013,No
+Time,SamS,Burlington,DesignS,EEE-Project,Slip: t1804,8/14/2013,No
+Time,ShawnR,Cambridge,Bid,III-Project,Slip: t1805,8/14/2013,No
+Time,TomH,Canton,Clean,OOO-Project,Slip: t1806,8/14/2013,No
+Time,CoreyM,Carlisle,DesignL,UUU-Project,Slip: t1807,8/14/2013,No
+Time,ElvisP,Carver,Planting,,Slip: t1808,8/14/2013,No
+Time,JamesR,Charlemont,Lot Maintenance,AAA-Project,Slip: t1809,8/15/2013,No
+Time,SamS,Charlton,Water Feature,CHARL-Project01,Slip: t1810,8/15/2013,No
+Time,ShawnR,Chatham,Pave,CHATH-Project02,Slip: t1811,8/15/2013,No
+Time,TomH,Chelmsford,DemoL,EEE-Project,Slip: t1812,8/15/2013,No
+Time,CoreyM,Chelsea,Build Structure,III-Project,Slip: t1813,8/15/2013,No
+Time,ElvisP,Cheshire,DemoS,OOO-Project,Slip: t1814,8/15/2013,No
+Time,JamesR,Chester,Fix,UUU-Project,Slip: t1815,8/15/2013,No
+Time,SamS,Chesterfield,DesignS,,Slip: t1816,8/15/2013,No
+Time,ShawnR,Chicopee,Bid,AAA-Project,Slip: t1817,8/16/2013,No
+Time,TomH,Chilmark,Clean,CHILM-Project01,Slip: t1818,8/16/2013,No
+Time,CoreyM,Clarksburg,DesignL,CLARK-Project02,Slip: t1819,8/16/2013,No
+Time,ElvisP,Clinton,Planting,EEE-Project,Slip: t1820,8/16/2013,No
+Time,JamesR,Cohasset,Lot Maintenance,III-Project,Slip: t1821,8/16/2013,No
+Time,SamS,Colrain,Water Feature,OOO-Project,Slip: t1822,8/16/2013,No
+Time,ShawnR,Concord,Pave,UUU-Project,Slip: t1823,8/16/2013,No
+Time,TomH,Conway,DemoL,,Slip: t1824,8/16/2013,No
+Time,CoreyM,Cummington,Build Structure,AAA-Project,Slip: t1825,8/17/2013,Yes
+Time,ElvisP,Dalton,DemoS,DALTO-Project01,Slip: t1826,8/17/2013,No
+Time,JamesR,Danvers,Fix,DANVE-Project02,Slip: t1827,8/17/2013,No
+Time,SamS,Dartmouth,DesignS,EEE-Project,Slip: t1828,8/17/2013,No
+Time,ShawnR,Dedham,Bid,III-Project,Slip: t1829,8/17/2013,No
+Time,TomH,Deerfield,Clean,OOO-Project,Slip: t1830,8/17/2013,No
+Time,CoreyM,Dennis,DesignL,UUU-Project,Slip: t1831,8/17/2013,No
+Time,ElvisP,Dighton,Planting,,Slip: t1832,8/17/2013,No
+Time,JamesR,Douglas,Lot Maintenance,AAA-Project,Slip: t1833,8/18/2013,No
+Time,SamS,Dover,Water Feature,DOVER-Project01,Slip: t1834,8/18/2013,No
+Time,ShawnR,Dracut,Pave,DRACU-Project02,Slip: t1835,8/18/2013,No
+Time,TomH,Dudley,DemoL,EEE-Project,Slip: t1836,8/18/2013,No
+Time,CoreyM,Dunstable,Build Structure,III-Project,Slip: t1837,8/18/2013,No
+Time,ElvisP,Duxbury,DemoS,OOO-Project,Slip: t1838,8/18/2013,No
+Time,JamesR,East Bridgewater,Fix,UUU-Project,Slip: t1839,8/18/2013,No
+Time,SamS,East Brookfield,DesignS,,Slip: t1840,8/18/2013,No
+Time,ShawnR,East Longmeadow,Bid,AAA-Project,Slip: t1841,8/19/2013,No
+Time,TomH,Eastham,Clean,EASTH-Project01,Slip: t1842,8/19/2013,No
+Time,CoreyM,Easthampton,DesignL,EASTH-Project02,Slip: t1843,8/19/2013,No
+Time,ElvisP,Easton,Planting,EEE-Project,Slip: t1844,8/19/2013,No
+Time,JamesR,Edgartown,Lot Maintenance,III-Project,Slip: t1845,8/19/2013,No
+Time,SamS,Egremont,Water Feature,OOO-Project,Slip: t1846,8/19/2013,No
+Time,ShawnR,Erving,Pave,UUU-Project,Slip: t1847,8/19/2013,No
+Time,TomH,Essex,DemoL,,Slip: t1848,8/19/2013,No
+Time,CoreyM,Everett,Build Structure,AAA-Project,Slip: t1849,8/20/2013,No
+Time,ElvisP,Fairhaven,DemoS,EEE-Project,Slip: t1850,8/20/2013,Yes
+Time,JamesR,Fall River,Fix,FALLR-Project01,Slip: t1851,8/20/2013,No
+Time,SamS,Falmouth,DesignS,FALMO-Project02,Slip: t1852,8/20/2013,No
+Time,ShawnR,Fitchburg,Bid,III-Project,Slip: t1853,8/20/2013,No
+Time,TomH,Florida,Clean,OOO-Project,Slip: t1854,8/20/2013,No
+Time,CoreyM,Foxborough,DesignL,UUU-Project,Slip: t1855,8/20/2013,No
+Time,ElvisP,Framingham,Planting,,Slip: t1856,8/20/2013,No
+Time,JamesR,Franklin,Lot Maintenance,AAA-Project,Slip: t1857,8/21/2013,No
+Time,SamS,Freetown,Water Feature,EEE-Project,Slip: t1858,8/21/2013,No
+Time,ShawnR,Gardner,Pave,GARDN-Project01,Slip: t1859,8/21/2013,No
+Time,TomH,Georgetown,DemoL,GEORG-Project02,Slip: t1860,8/21/2013,No
+Time,CoreyM,Gill,Build Structure,III-Project,Slip: t1861,8/21/2013,No
+Time,ElvisP,Gloucester,DemoS,OOO-Project,Slip: t1862,8/21/2013,No
+Time,JamesR,Goshen,Fix,UUU-Project,Slip: t1863,8/21/2013,No
+Time,SamS,Gosnold,DesignS,,Slip: t1864,8/21/2013,No
+Time,ShawnR,Grafton,Bid,AAA-Project,Slip: t1865,8/22/2013,No
+Time,TomH,Granby,Clean,EEE-Project,Slip: t1866,8/22/2013,No
+Time,CoreyM,Granville,DesignL,GRANV-Project01,Slip: t1867,8/22/2013,No
+Time,ElvisP,Great Barrington,Planting,GREAT-Project02,Slip: t1868,8/22/2013,No
+Time,JamesR,Greenfield,Lot Maintenance,III-Project,Slip: t1869,8/22/2013,No
+Time,SamS,Groton,Water Feature,OOO-Project,Slip: t1870,8/22/2013,No
+Time,ShawnR,Groveland,Pave,UUU-Project,Slip: t1871,8/22/2013,No
+Time,TomH,Hadley,DemoL,,Slip: t1872,8/22/2013,No
+Time,CoreyM,Halifax,Build Structure,AAA-Project,Slip: t1873,8/23/2013,No
+Time,ElvisP,Hamilton,DemoS,EEE-Project,Slip: t1874,8/23/2013,No
+Time,JamesR,Hampden,Fix,HAMPD-Project01,Slip: t1875,8/23/2013,Yes
+Time,SamS,Hancock,DesignS,HANCO-Project02,Slip: t1876,8/23/2013,No
+Time,ShawnR,Hanover,Bid,III-Project,Slip: t1877,8/23/2013,No
+Time,TomH,Hanson,Clean,OOO-Project,Slip: t1878,8/23/2013,No
+Time,CoreyM,Hardwick,DesignL,UUU-Project,Slip: t1879,8/23/2013,No
+Time,ElvisP,Harvard,Planting,,Slip: t1880,8/23/2013,No
+Time,JamesR,Harwich,Lot Maintenance,AAA-Project,Slip: t1881,8/24/2013,No
+Time,SamS,Hatfield,Water Feature,EEE-Project,Slip: t1882,8/24/2013,No
+Time,ShawnR,Haverhill,Pave,HAVER-Project01,Slip: t1883,8/24/2013,No
+Time,TomH,Hawley,DemoL,HAWLE-Project02,Slip: t1884,8/24/2013,No
+Time,CoreyM,Heath,Build Structure,III-Project,Slip: t1885,8/24/2013,No
+Time,ElvisP,Hingham,DemoS,OOO-Project,Slip: t1886,8/24/2013,No
+Time,JamesR,Hinsdale,Fix,UUU-Project,Slip: t1887,8/24/2013,No
+Time,SamS,Holbrook,DesignS,,Slip: t1888,8/24/2013,No
+Time,ShawnR,Holden,Bid,AAA-Project,Slip: t1889,8/25/2013,No
+Time,TomH,Holland,Clean,EEE-Project,Slip: t1890,8/25/2013,No
+Time,CoreyM,Holliston,DesignL,HOLLI-Project01,Slip: t1891,8/25/2013,No
+Time,ElvisP,Holyoke,Planting,HOLYO-Project02,Slip: t1892,8/25/2013,No
+Time,JamesR,Hopedale,Lot Maintenance,III-Project,Slip: t1893,8/25/2013,No
+Time,SamS,Hopkinton,Water Feature,OOO-Project,Slip: t1894,8/25/2013,No
+Time,ShawnR,Hubbardston,Pave,UUU-Project,Slip: t1895,8/25/2013,No
+Time,TomH,Hudson,DemoL,,Slip: t1896,8/25/2013,No
+Time,CoreyM,Hull,Build Structure,AAA-Project,Slip: t1897,8/26/2013,No
+Time,ElvisP,Huntington,DemoS,EEE-Project,Slip: t1898,8/26/2013,No
+Time,JamesR,Ipswich,Fix,III-Project,Slip: t1899,8/26/2013,No
+Time,SamS,Kingston,DesignS,KINGS-Project01,Slip: t1900,8/26/2013,Yes
+Time,ShawnR,Lakeville,Bid,LAKEV-Project02,Slip: t1901,8/26/2013,No
+Time,TomH,Lancaster,Clean,OOO-Project,Slip: t1902,8/26/2013,No
+Time,CoreyM,Lanesborough,DesignL,UUU-Project,Slip: t1903,8/26/2013,No
+Time,ElvisP,Lawrence,Planting,,Slip: t1904,8/26/2013,No
+Time,JamesR,Lee,Lot Maintenance,AAA-Project,Slip: t1905,8/27/2013,No
+Time,SamS,Leicester,Water Feature,EEE-Project,Slip: t1906,8/27/2013,No
+Time,ShawnR,Lenox,Pave,III-Project,Slip: t1907,8/27/2013,No
+Time,TomH,Leominster,DemoL,LEOMI-Project01,Slip: t1908,8/27/2013,No
+Time,CoreyM,Leverett,Build Structure,LEVER-Project02,Slip: t1909,8/27/2013,No
+Time,ElvisP,Lexington,DemoS,OOO-Project,Slip: t1910,8/27/2013,No
+Time,JamesR,Leyden,Fix,UUU-Project,Slip: t1911,8/27/2013,No
+Time,SamS,Lincoln,DesignS,,Slip: t1912,8/27/2013,No
+Time,ShawnR,Littleton,Bid,AAA-Project,Slip: t1913,8/28/2013,No
+Time,TomH,Longmeadow,Clean,EEE-Project,Slip: t1914,8/28/2013,No
+Time,CoreyM,Lowell,DesignL,III-Project,Slip: t1915,8/28/2013,No
+Time,ElvisP,Ludlow,Planting,LUDLO-Project01,Slip: t1916,8/28/2013,No
+Time,JamesR,Lunenburg,Lot Maintenance,LUNEN-Project02,Slip: t1917,8/28/2013,No
+Time,SamS,Lynn,Water Feature,OOO-Project,Slip: t1918,8/28/2013,No
+Time,ShawnR,Lynnfield,Pave,UUU-Project,Slip: t1919,8/28/2013,No
+Time,TomH,Malden,DemoL,,Slip: t1920,8/28/2013,No
+Time,CoreyM,Manchester-by-the-Sea,Build Structure,AAA-Project,Slip: t1921,8/29/2013,No
+Time,ElvisP,Mansfield,DemoS,EEE-Project,Slip: t1922,8/29/2013,No
+Time,JamesR,Marblehead,Fix,III-Project,Slip: t1923,8/29/2013,No
+Time,SamS,Marion,DesignS,MARIO-Project01,Slip: t1924,8/29/2013,No
+Time,ShawnR,Marlborough,Bid,MARLB-Project02,Slip: t1925,8/29/2013,Yes
+Time,TomH,Marshfield,Clean,OOO-Project,Slip: t1926,8/29/2013,No
+Time,CoreyM,Mashpee,DesignL,UUU-Project,Slip: t1927,8/29/2013,No
+Time,ElvisP,Mattapoisett,Planting,,Slip: t1928,8/29/2013,No
+Time,JamesR,Maynard,Lot Maintenance,AAA-Project,Slip: t1929,8/30/2013,No
+Time,SamS,Medfield,Water Feature,EEE-Project,Slip: t1930,8/30/2013,No
+Time,ShawnR,Medford,Pave,III-Project,Slip: t1931,8/30/2013,No
+Time,TomH,Medway,DemoL,MEDWA-Project01,Slip: t1932,8/30/2013,No
+Time,CoreyM,Melrose,Build Structure,MELRO-Project02,Slip: t1933,8/30/2013,No
+Time,ElvisP,Mendon,DemoS,OOO-Project,Slip: t1934,8/30/2013,No
+Time,JamesR,Merrimac,Fix,UUU-Project,Slip: t1935,8/30/2013,No
+Time,SamS,Methuen,DesignS,,Slip: t1936,8/30/2013,No
+Time,ShawnR,Middleborough,Bid,AAA-Project,Slip: t1937,8/31/2013,No
+Time,TomH,Middlefield,Clean,EEE-Project,Slip: t1938,8/31/2013,No
+Time,CoreyM,Middleton,DesignL,III-Project,Slip: t1939,8/31/2013,No
+Time,ElvisP,Milford,Planting,MILFO-Project01,Slip: t1940,8/31/2013,No
+Time,JamesR,Millbury,Lot Maintenance,MILLB-Project02,Slip: t1941,8/31/2013,No
+Time,SamS,Millis,Water Feature,OOO-Project,Slip: t1942,8/31/2013,No
+Time,ShawnR,Millville,Pave,UUU-Project,Slip: t1943,8/31/2013,No
+Time,TomH,Milton,DemoL,,Slip: t1944,8/31/2013,No
+Time,CoreyM,Monroe,Build Structure,AAA-Project,Slip: t1945,9/1/2013,No
+Time,ElvisP,Monson,DemoS,EEE-Project,Slip: t1946,9/1/2013,No
+Time,JamesR,Montague,Fix,III-Project,Slip: t1947,9/1/2013,No
+Time,SamS,Monterey,DesignS,MONTE-Project01,Slip: t1948,9/1/2013,No
+Time,ShawnR,Montgomery,Bid,MONTG-Project02,Slip: t1949,9/1/2013,No
+Time,TomH,Mount Washington,Clean,OOO-Project,Slip: t1950,9/1/2013,Yes
+Time,CoreyM,Nahant,DesignL,UUU-Project,Slip: t1951,9/1/2013,No
+Time,ElvisP,Nantucket,Planting,,Slip: t1952,9/1/2013,No
+Time,JamesR,Natick,Lot Maintenance,AAA-Project,Slip: t1953,9/2/2013,No
+Time,SamS,Needham,Water Feature,EEE-Project,Slip: t1954,9/2/2013,No
+Time,ShawnR,New Ashford,Pave,III-Project,Slip: t1955,9/2/2013,No
+Time,TomH,New Bedford,DemoL,NEWBE-Project01,Slip: t1956,9/2/2013,No
+Time,CoreyM,New Braintree,Build Structure,NEWBR-Project02,Slip: t1957,9/2/2013,No
+Time,ElvisP,New Marlborough,DemoS,OOO-Project,Slip: t1958,9/2/2013,No
+Time,JamesR,New Salem,Fix,UUU-Project,Slip: t1959,9/2/2013,No
+Time,SamS,Newbury,DesignS,,Slip: t1960,9/2/2013,No
+Time,ShawnR,Newburyport,Bid,AAA-Project,Slip: t1961,9/3/2013,No
+Time,TomH,Newton,Clean,EEE-Project,Slip: t1962,9/3/2013,No
+Time,CoreyM,Norfolk,DesignL,III-Project,Slip: t1963,9/3/2013,No
+Time,ElvisP,North Adams,Planting,NORTH-Project01,Slip: t1964,9/3/2013,No
+Time,JamesR,North Andover,Lot Maintenance,NORTH-Project02,Slip: t1965,9/3/2013,No
+Time,SamS,North Attleborough,Water Feature,OOO-Project,Slip: t1966,9/3/2013,No
+Time,ShawnR,North Brookfield,Pave,UUU-Project,Slip: t1967,9/3/2013,No
+Time,TomH,North Reading,DemoL,,Slip: t1968,9/3/2013,No
+Time,CoreyM,Northampton,Build Structure,AAA-Project,Slip: t1969,9/4/2013,No
+Time,ElvisP,Northborough,DemoS,EEE-Project,Slip: t1970,9/4/2013,No
+Time,JamesR,Northbridge,Fix,III-Project,Slip: t1971,9/4/2013,No
+Time,SamS,Northfield,DesignS,NORTH-Project01,Slip: t1972,9/4/2013,No
+Time,ShawnR,Norton,Bid,NORTO-Project02,Slip: t1973,9/4/2013,No
+Time,TomH,Norwell,Clean,OOO-Project,Slip: t1974,9/4/2013,No
+Time,CoreyM,Norwood,DesignL,UUU-Project,Slip: t1975,9/4/2013,Yes
+Time,ElvisP,Oak Bluffs,Planting,,Slip: t1976,9/4/2013,No
+Time,JamesR,Oakham,Lot Maintenance,AAA-Project,Slip: t1977,9/5/2013,No
+Time,SamS,Orange,Water Feature,EEE-Project,Slip: t1978,9/5/2013,No
+Time,ShawnR,Orleans,Pave,III-Project,Slip: t1979,9/5/2013,No
+Time,TomH,Otis,DemoL,OOO-Project,Slip: t1980,9/5/2013,No
+Time,CoreyM,Oxford,Build Structure,OXFOR-Project01,Slip: t1981,9/5/2013,No
+Time,ElvisP,Palmer,DemoS,PALME-Project02,Slip: t1982,9/5/2013,No
+Time,JamesR,Paxton,Fix,UUU-Project,Slip: t1983,9/5/2013,No
+Time,SamS,Peabody,DesignS,,Slip: t1984,9/5/2013,No
+Time,ShawnR,Pelham,Bid,AAA-Project,Slip: t1985,9/6/2013,No
+Time,TomH,Pembroke,Clean,EEE-Project,Slip: t1986,9/6/2013,No
+Time,CoreyM,Pepperell,DesignL,III-Project,Slip: t1987,9/6/2013,No
+Time,ElvisP,Peru,Planting,OOO-Project,Slip: t1988,9/6/2013,No
+Time,JamesR,Petersham,Lot Maintenance,PETER-Project01,Slip: t1989,9/6/2013,No
+Time,SamS,Phillipston,Water Feature,PHILL-Project02,Slip: t1990,9/6/2013,No
+Time,ShawnR,Pittsfield,Pave,UUU-Project,Slip: t1991,9/6/2013,No
+Time,TomH,Plainfield,DemoL,,Slip: t1992,9/6/2013,No
+Time,CoreyM,Plainville,Build Structure,AAA-Project,Slip: t1993,9/7/2013,No
+Time,ElvisP,Plymouth,DemoS,EEE-Project,Slip: t1994,9/7/2013,No
+Time,JamesR,Plympton,Fix,III-Project,Slip: t1995,9/7/2013,No
+Time,SamS,Princeton,DesignS,OOO-Project,Slip: t1996,9/7/2013,No
+Time,ShawnR,Provincetown,Bid,PROVI-Project01,Slip: t1997,9/7/2013,No
+Time,TomH,Quincy,Clean,QUINC-Project02,Slip: t1998,9/7/2013,No
+Time,CoreyM,Randolph,DesignL,UUU-Project,Slip: t1999,9/7/2013,No
+Time,ElvisP,Raynham,Planting,,Slip: t2000,9/7/2013,Yes
+Time,JamesR,Reading,Lot Maintenance,AAA-Project,Slip: t2001,9/8/2013,No
+Time,SamS,Rehoboth,Water Feature,EEE-Project,Slip: t2002,9/8/2013,No
+Time,ShawnR,Revere,Pave,III-Project,Slip: t2003,9/8/2013,No
+Time,TomH,Richmond,DemoL,OOO-Project,Slip: t2004,9/8/2013,No
+Time,CoreyM,Rochester,Build Structure,ROCHE-Project01,Slip: t2005,9/8/2013,No
+Time,ElvisP,Rockland,DemoS,ROCKL-Project02,Slip: t2006,9/8/2013,No
+Time,JamesR,Rockport,Fix,UUU-Project,Slip: t2007,9/8/2013,No
+Time,SamS,Rowe,DesignS,,Slip: t2008,9/8/2013,No
+Time,ShawnR,Rowley,Bid,AAA-Project,Slip: t2009,9/9/2013,No
+Time,TomH,Royalston,Clean,EEE-Project,Slip: t2010,9/9/2013,No
+Time,CoreyM,Russell,DesignL,III-Project,Slip: t2011,9/9/2013,No
+Time,ElvisP,Rutland,Planting,OOO-Project,Slip: t2012,9/9/2013,No
+Time,JamesR,Salem,Lot Maintenance,SALEM-Project01,Slip: t2013,9/9/2013,No
+Time,SamS,Salisbury,Water Feature,SALIS-Project02,Slip: t2014,9/9/2013,No
+Time,ShawnR,Sandisfield,Pave,UUU-Project,Slip: t2015,9/9/2013,No
+Time,TomH,Sandwich,DemoL,,Slip: t2016,9/9/2013,No
+Time,CoreyM,Saugus,Build Structure,AAA-Project,Slip: t2017,9/10/2013,No
+Time,ElvisP,Savoy,DemoS,EEE-Project,Slip: t2018,9/10/2013,No
+Time,JamesR,Scituate,Fix,III-Project,Slip: t2019,9/10/2013,No
+Time,SamS,Seekonk,DesignS,OOO-Project,Slip: t2020,9/10/2013,No
+Time,ShawnR,Sharon,Bid,SHARO-Project01,Slip: t2021,9/10/2013,No
+Time,TomH,Sheffield,Clean,SHEFF-Project02,Slip: t2022,9/10/2013,No
+Time,CoreyM,Shelburne,DesignL,UUU-Project,Slip: t2023,9/10/2013,No
+Time,ElvisP,Sherborn,Planting,,Slip: t2024,9/10/2013,No
+Time,JamesR,Shirley,Lot Maintenance,AAA-Project,Slip: t2025,9/11/2013,Yes
+Time,SamS,Shrewsbury,Water Feature,EEE-Project,Slip: t2026,9/11/2013,No
+Time,ShawnR,Shutesbury,Pave,III-Project,Slip: t2027,9/11/2013,No
+Time,TomH,Somerset,DemoL,OOO-Project,Slip: t2028,9/11/2013,No
+Time,CoreyM,Somerville,Build Structure,SOMER-Project01,Slip: t2029,9/11/2013,No
+Time,ElvisP,South Hadley,DemoS,SOUTH-Project02,Slip: t2030,9/11/2013,No
+Time,JamesR,Southampton,Fix,UUU-Project,Slip: t2031,9/11/2013,No
+Time,SamS,Southborough,DesignS,,Slip: t2032,9/11/2013,No
+Time,ShawnR,Southbridge,Bid,AAA-Project,Slip: t2033,9/12/2013,No
+Time,TomH,Southwick,Clean,EEE-Project,Slip: t2034,9/12/2013,No
+Time,CoreyM,Spencer,DesignL,III-Project,Slip: t2035,9/12/2013,No
+Time,ElvisP,Springfield,Planting,OOO-Project,Slip: t2036,9/12/2013,No
+Time,JamesR,Sterling,Lot Maintenance,STERL-Project01,Slip: t2037,9/12/2013,No
+Time,SamS,Stockbridge,Water Feature,STOCK-Project02,Slip: t2038,9/12/2013,No
+Time,ShawnR,Stoneham,Pave,UUU-Project,Slip: t2039,9/12/2013,No
+Time,TomH,Stoughton,DemoL,,Slip: t2040,9/12/2013,No
+Time,CoreyM,Stow,Build Structure,AAA-Project,Slip: t2041,9/13/2013,No
+Time,ElvisP,Sturbridge,DemoS,EEE-Project,Slip: t2042,9/13/2013,No
+Time,JamesR,Sudbury,Fix,III-Project,Slip: t2043,9/13/2013,No
+Time,SamS,Sunderland,DesignS,OOO-Project,Slip: t2044,9/13/2013,No
+Time,ShawnR,Sutton,Bid,SUTTO-Project01,Slip: t2045,9/13/2013,No
+Time,TomH,Swampscott,Clean,SWAMP-Project02,Slip: t2046,9/13/2013,No
+Time,CoreyM,Swansea,DesignL,UUU-Project,Slip: t2047,9/13/2013,No
+Time,ElvisP,Taunton,Planting,,Slip: t2048,9/13/2013,No
+Time,JamesR,Templeton,Lot Maintenance,AAA-Project,Slip: t2049,9/14/2013,No
+Time,SamS,Tewksbury,Water Feature,EEE-Project,Slip: t2050,9/14/2013,Yes
+Time,ShawnR,Tisbury,Pave,III-Project,Slip: t2051,9/14/2013,No
+Time,TomH,Tolland,DemoL,OOO-Project,Slip: t2052,9/14/2013,No
+Time,CoreyM,Topsfield,Build Structure,TOPSF-Project01,Slip: t2053,9/14/2013,No
+Time,ElvisP,Townsend,DemoS,TOWNS-Project02,Slip: t2054,9/14/2013,No
+Time,JamesR,Truro,Fix,UUU-Project,Slip: t2055,9/14/2013,No
+Time,SamS,Tyngsborough,DesignS,,Slip: t2056,9/14/2013,No
+Time,ShawnR,Tyringham,Bid,AAA-Project,Slip: t2057,9/15/2013,No
+Time,TomH,Upton,Clean,EEE-Project,Slip: t2058,9/15/2013,No
+Time,CoreyM,Uxbridge,DesignL,III-Project,Slip: t2059,9/15/2013,No
+Time,ElvisP,Wakefield,Planting,OOO-Project,Slip: t2060,9/15/2013,No
+Time,JamesR,Wales,Lot Maintenance,UUU-Project,Slip: t2061,9/15/2013,No
+Time,SamS,Walpole,Water Feature,WALPO-Project01,Slip: t2062,9/15/2013,No
+Time,ShawnR,Waltham,Pave,WALTH-Project02,Slip: t2063,9/15/2013,No
+Time,TomH,Ware,DemoL,,Slip: t2064,9/15/2013,No
+Time,CoreyM,Wareham,Build Structure,AAA-Project,Slip: t2065,9/16/2013,No
+Time,ElvisP,Warren,DemoS,EEE-Project,Slip: t2066,9/16/2013,No
+Time,JamesR,Warwick,Fix,III-Project,Slip: t2067,9/16/2013,No
+Time,SamS,Washington,DesignS,OOO-Project,Slip: t2068,9/16/2013,No
+Time,ShawnR,Watertown,Bid,UUU-Project,Slip: t2069,9/16/2013,No
+Time,TomH,Wayland,Clean,WAYLA-Project01,Slip: t2070,9/16/2013,No
+Time,CoreyM,Webster,DesignL,WEBST-Project02,Slip: t2071,9/16/2013,No
+Time,ElvisP,Wellesley,Planting,,Slip: t2072,9/16/2013,No
+Time,JamesR,Wellfleet,Lot Maintenance,AAA-Project,Slip: t2073,9/17/2013,No
+Time,SamS,Wendell,Water Feature,EEE-Project,Slip: t2074,9/17/2013,No
+Time,ShawnR,Wenham,Pave,III-Project,Slip: t2075,9/17/2013,Yes
+Time,TomH,West Boylston,DemoL,OOO-Project,Slip: t2076,9/17/2013,No
+Time,CoreyM,West Bridgewater,Build Structure,UUU-Project,Slip: t2077,9/17/2013,No
+Time,ElvisP,West Brookfield,DemoS,WESTB-Project01,Slip: t2078,9/17/2013,No
+Time,JamesR,West Newbury,Fix,WESTN-Project02,Slip: t2079,9/17/2013,No
+Time,SamS,West Springfield,DesignS,,Slip: t2080,9/17/2013,No
+Time,ShawnR,West Stockbridge,Bid,AAA-Project,Slip: t2081,9/18/2013,No
+Time,TomH,West Tisbury,Clean,EEE-Project,Slip: t2082,9/18/2013,No
+Time,CoreyM,Westborough,DesignL,III-Project,Slip: t2083,9/18/2013,No
+Time,ElvisP,Westfield,Planting,OOO-Project,Slip: t2084,9/18/2013,No
+Time,JamesR,Westford,Lot Maintenance,UUU-Project,Slip: t2085,9/18/2013,No
+Time,SamS,Westhampton,Water Feature,WESTH-Project01,Slip: t2086,9/18/2013,No
+Time,ShawnR,Westminster,Pave,WESTM-Project02,Slip: t2087,9/18/2013,No
+Time,TomH,Weston,DemoL,,Slip: t2088,9/18/2013,No
+Time,CoreyM,Westport,Build Structure,AAA-Project,Slip: t2089,9/19/2013,No
+Time,ElvisP,Westwood,DemoS,EEE-Project,Slip: t2090,9/19/2013,No
+Time,JamesR,Weymouth,Fix,III-Project,Slip: t2091,9/19/2013,No
+Time,SamS,Whately,DesignS,OOO-Project,Slip: t2092,9/19/2013,No
+Time,ShawnR,Whitman,Bid,UUU-Project,Slip: t2093,9/19/2013,No
+Time,TomH,Wilbraham,Clean,WILBR-Project01,Slip: t2094,9/19/2013,No
+Time,CoreyM,Williamsburg,DesignL,WILLI-Project02,Slip: t2095,9/19/2013,No
+Time,ElvisP,Williamstown,Planting,,Slip: t2096,9/19/2013,No
+Time,JamesR,Wilmington,Lot Maintenance,AAA-Project,Slip: t2097,9/20/2013,No
+Time,SamS,Winchendon,Water Feature,EEE-Project,Slip: t2098,9/20/2013,No
+Time,ShawnR,Winchester,Pave,III-Project,Slip: t2099,9/20/2013,No
+Time,TomH,Windsor,DemoL,OOO-Project,Slip: t2100,9/20/2013,Yes
+Time,CoreyM,Winthrop,Build Structure,UUU-Project,Slip: t2101,9/20/2013,No
+Time,ElvisP,Woburn,DemoS,WOBUR-Project01,Slip: t2102,9/20/2013,No
+Time,JamesR,Worcester,Fix,WORCE-Project02,Slip: t2103,9/20/2013,No
+Time,SamS,Worthington,DesignS,,Slip: t2104,9/20/2013,No
+Time,ShawnR,Wrentham,Bid,AAA-Project,Slip: t2105,9/21/2013,No
+Time,TomH,Yarmouth,Clean,EEE-Project,Slip: t2106,9/21/2013,No
+Expense,CoreyM,Abington,Plants,ABING-Project02,Slip: e2107,9/21/2013,No
+Expense,ElvisP,Acton,Landscape Supplies,EEE-Project,Slip: e2108,9/21/2013,No
+Expense,JamesR,Acushnet,Snacks,III-Project,Slip: e2109,9/21/2013,No
+Expense,SamS,Adams,Consultants,OOO-Project,Slip: e2110,9/21/2013,No
+Expense,ShawnR,Agawam,Hand Tools,UUU-Project,Slip: e2111,9/21/2013,No
+Expense,TomH,Alford,Power Tools,,Slip: e2112,9/21/2013,No
+Expense,CoreyM,Amesbury,Cleanup Supplies,AAA-Project,Slip: e2113,9/22/2013,No
+Expense,ElvisP,Amherst,Pavers,AMHER-Project01,Slip: e2114,9/22/2013,No
+Expense,JamesR,Andover,Wood,ANDOV-Project02,Slip: e2115,9/22/2013,No
+Expense,SamS,Aquinnah,First aid,EEE-Project,Slip: e2116,9/22/2013,No
+Expense,ShawnR,Arlington,Plants,III-Project,Slip: e2117,9/22/2013,No
+Expense,TomH,Ashburnham,Landscape Supplies,OOO-Project,Slip: e2118,9/22/2013,No
+Expense,CoreyM,Ashby,Snacks,UUU-Project,Slip: e2119,9/22/2013,No
+Expense,ElvisP,Ashfield,Consultants,,Slip: e2120,9/22/2013,No
+Expense,JamesR,Ashland,Hand Tools,AAA-Project,Slip: e2121,9/23/2013,No
+Expense,SamS,Athol,Power Tools,ATHOL-Project01,Slip: e2122,9/23/2013,No
+Expense,ShawnR,Attleboro,Cleanup Supplies,ATTLE-Project02,Slip: e2123,9/23/2013,No
+Expense,TomH,Auburn,Pavers,EEE-Project,Slip: e2124,9/23/2013,No
+Expense,CoreyM,Avon,Wood,III-Project,Slip: e2125,9/23/2013,Yes
+Expense,ElvisP,Ayer,First aid,OOO-Project,Slip: e2126,9/23/2013,No
+Expense,JamesR,Barnstable,Plants,UUU-Project,Slip: e2127,9/23/2013,No
+Expense,SamS,Barre,Landscape Supplies,,Slip: e2128,9/23/2013,No
+Expense,ShawnR,Becket,Snacks,AAA-Project,Slip: e2129,9/24/2013,No
+Expense,TomH,Bedford,Consultants,BEDFO-Project01,Slip: e2130,9/24/2013,No
+Expense,CoreyM,Belchertown,Hand Tools,BELCH-Project02,Slip: e2131,9/24/2013,No
+Expense,ElvisP,Bellingham,Power Tools,EEE-Project,Slip: e2132,9/24/2013,No
+Expense,JamesR,Belmont,Cleanup Supplies,III-Project,Slip: e2133,9/24/2013,No
+Expense,SamS,Berkley,Pavers,OOO-Project,Slip: e2134,9/24/2013,No
+Expense,ShawnR,Berlin,Wood,UUU-Project,Slip: e2135,9/24/2013,No
+Expense,TomH,Bernardston,First aid,,Slip: e2136,9/24/2013,No
+Expense,CoreyM,Beverly,Plants,AAA-Project,Slip: e2137,9/25/2013,No
+Expense,ElvisP,Billerica,Landscape Supplies,BILLE-Project01,Slip: e2138,9/25/2013,No
+Expense,JamesR,Blackstone,Snacks,BLACK-Project02,Slip: e2139,9/25/2013,No
+Expense,SamS,Blandford,Consultants,EEE-Project,Slip: e2140,9/25/2013,No
+Expense,ShawnR,Bolton,Hand Tools,III-Project,Slip: e2141,9/25/2013,No
+Expense,TomH,Boston,Power Tools,OOO-Project,Slip: e2142,9/25/2013,No
+Expense,CoreyM,Bourne,Cleanup Supplies,UUU-Project,Slip: e2143,9/25/2013,No
+Expense,ElvisP,Boxborough,Pavers,,Slip: e2144,9/25/2013,No
+Expense,JamesR,Boxford,Wood,AAA-Project,Slip: e2145,9/26/2013,No
+Expense,SamS,Boylston,First aid,BOYLS-Project01,Slip: e2146,9/26/2013,No
+Expense,ShawnR,Braintree,Plants,BRAIN-Project02,Slip: e2147,9/26/2013,No
+Expense,TomH,Brewster,Landscape Supplies,EEE-Project,Slip: e2148,9/26/2013,No
+Expense,CoreyM,Bridgewater,Snacks,III-Project,Slip: e2149,9/26/2013,No
+Expense,ElvisP,Brimfield,Consultants,OOO-Project,Slip: e2150,9/26/2013,Yes
+Expense,JamesR,Brockton,Hand Tools,UUU-Project,Slip: e2151,9/26/2013,No
+Expense,SamS,Brookfield,Power Tools,,Slip: e2152,9/26/2013,No
+Expense,ShawnR,Brookline,Cleanup Supplies,AAA-Project,Slip: e2153,9/27/2013,No
+Expense,TomH,Buckland,Pavers,BUCKL-Project01,Slip: e2154,9/27/2013,No
+Expense,CoreyM,Burlington,Wood,BURLI-Project02,Slip: e2155,9/27/2013,No
+Expense,ElvisP,Cambridge,First aid,EEE-Project,Slip: e2156,9/27/2013,No
+Expense,JamesR,Canton,Plants,III-Project,Slip: e2157,9/27/2013,No
+Expense,SamS,Carlisle,Landscape Supplies,OOO-Project,Slip: e2158,9/27/2013,No
+Expense,ShawnR,Carver,Snacks,UUU-Project,Slip: e2159,9/27/2013,No
+Expense,TomH,Charlemont,Consultants,,Slip: e2160,9/27/2013,No
+Expense,CoreyM,Charlton,Hand Tools,AAA-Project,Slip: e2161,9/28/2013,No
+Expense,ElvisP,Chatham,Power Tools,CHATH-Project01,Slip: e2162,9/28/2013,No
+Expense,JamesR,Chelmsford,Cleanup Supplies,CHELM-Project02,Slip: e2163,9/28/2013,No
+Expense,SamS,Chelsea,Pavers,EEE-Project,Slip: e2164,9/28/2013,No
+Expense,ShawnR,Cheshire,Wood,III-Project,Slip: e2165,9/28/2013,No
+Expense,TomH,Chester,First aid,OOO-Project,Slip: e2166,9/28/2013,No
+Expense,CoreyM,Chesterfield,Plants,UUU-Project,Slip: e2167,9/28/2013,No
+Expense,ElvisP,Chicopee,Landscape Supplies,,Slip: e2168,9/28/2013,No
+Expense,JamesR,Chilmark,Snacks,AAA-Project,Slip: e2169,9/29/2013,No
+Expense,SamS,Clarksburg,Consultants,CLARK-Project01,Slip: e2170,9/29/2013,No
+Expense,ShawnR,Clinton,Hand Tools,CLINT-Project02,Slip: e2171,9/29/2013,No
+Expense,TomH,Cohasset,Power Tools,EEE-Project,Slip: e2172,9/29/2013,No
+Expense,CoreyM,Colrain,Cleanup Supplies,III-Project,Slip: e2173,9/29/2013,No
+Expense,ElvisP,Concord,Pavers,OOO-Project,Slip: e2174,9/29/2013,No
+Expense,JamesR,Conway,Wood,UUU-Project,Slip: e2175,9/29/2013,Yes
+Expense,SamS,Cummington,First aid,,Slip: e2176,9/29/2013,No
+Expense,ShawnR,Dalton,Plants,AAA-Project,Slip: e2177,9/30/2013,No
+Expense,TomH,Danvers,Landscape Supplies,DANVE-Project01,Slip: e2178,9/30/2013,No
+Expense,CoreyM,Dartmouth,Snacks,DARTM-Project02,Slip: e2179,9/30/2013,No
+Expense,ElvisP,Dedham,Consultants,EEE-Project,Slip: e2180,9/30/2013,No
+Expense,JamesR,Deerfield,Hand Tools,III-Project,Slip: e2181,9/30/2013,No
+Expense,SamS,Dennis,Power Tools,OOO-Project,Slip: e2182,9/30/2013,No
+Expense,ShawnR,Dighton,Cleanup Supplies,UUU-Project,Slip: e2183,9/30/2013,No
+Expense,TomH,Douglas,Pavers,,Slip: e2184,9/30/2013,No
+Expense,CoreyM,Dover,Wood,AAA-Project,Slip: e2185,10/1/2013,No
+Expense,ElvisP,Dracut,First aid,DRACU-Project01,Slip: e2186,10/1/2013,No
+Expense,JamesR,Dudley,Plants,DUDLE-Project02,Slip: e2187,10/1/2013,No
+Expense,SamS,Dunstable,Landscape Supplies,EEE-Project,Slip: e2188,10/1/2013,No
+Expense,ShawnR,Duxbury,Snacks,III-Project,Slip: e2189,10/1/2013,No
+Expense,TomH,East Bridgewater,Consultants,OOO-Project,Slip: e2190,10/1/2013,No
+Expense,CoreyM,East Brookfield,Hand Tools,UUU-Project,Slip: e2191,10/1/2013,No
+Expense,ElvisP,East Longmeadow,Power Tools,,Slip: e2192,10/1/2013,No
+Expense,JamesR,Eastham,Cleanup Supplies,AAA-Project,Slip: e2193,10/2/2013,No
+Expense,SamS,Easthampton,Pavers,EASTH-Project01,Slip: e2194,10/2/2013,No
+Expense,ShawnR,Easton,Wood,EASTO-Project02,Slip: e2195,10/2/2013,No
+Expense,TomH,Edgartown,First aid,EEE-Project,Slip: e2196,10/2/2013,No
+Expense,CoreyM,Egremont,Plants,III-Project,Slip: e2197,10/2/2013,No
+Expense,ElvisP,Erving,Landscape Supplies,OOO-Project,Slip: e2198,10/2/2013,No
+Expense,JamesR,Essex,Snacks,UUU-Project,Slip: e2199,10/2/2013,No
+Expense,SamS,Everett,Consultants,,Slip: e2200,10/2/2013,Yes
+Expense,ShawnR,Fairhaven,Hand Tools,AAA-Project,Slip: e2201,10/3/2013,No
+Expense,TomH,Fall River,Power Tools,EEE-Project,Slip: e2202,10/3/2013,No
+Expense,CoreyM,Falmouth,Cleanup Supplies,FALMO-Project01,Slip: e2203,10/3/2013,No
+Expense,ElvisP,Fitchburg,Pavers,FITCH-Project02,Slip: e2204,10/3/2013,No
+Expense,JamesR,Florida,Wood,III-Project,Slip: e2205,10/3/2013,No
+Expense,SamS,Foxborough,First aid,OOO-Project,Slip: e2206,10/3/2013,No
+Expense,ShawnR,Framingham,Plants,UUU-Project,Slip: e2207,10/3/2013,No
+Expense,TomH,Franklin,Landscape Supplies,,Slip: e2208,10/3/2013,No
+Expense,CoreyM,Freetown,Snacks,AAA-Project,Slip: e2209,10/4/2013,No
+Expense,ElvisP,Gardner,Consultants,EEE-Project,Slip: e2210,10/4/2013,No
+Expense,JamesR,Georgetown,Hand Tools,GEORG-Project01,Slip: e2211,10/4/2013,No
+Expense,SamS,Gill,Power Tools,GILL-Project02,Slip: e2212,10/4/2013,No
+Expense,ShawnR,Gloucester,Cleanup Supplies,III-Project,Slip: e2213,10/4/2013,No
+Expense,TomH,Goshen,Pavers,OOO-Project,Slip: e2214,10/4/2013,No
+Expense,CoreyM,Gosnold,Wood,UUU-Project,Slip: e2215,10/4/2013,No
+Expense,ElvisP,Grafton,First aid,,Slip: e2216,10/4/2013,No
+Expense,JamesR,Granby,Plants,AAA-Project,Slip: e2217,10/5/2013,No
+Expense,SamS,Granville,Landscape Supplies,EEE-Project,Slip: e2218,10/5/2013,No
+Expense,ShawnR,Great Barrington,Snacks,GREAT-Project01,Slip: e2219,10/5/2013,No
+Expense,TomH,Greenfield,Consultants,GREEN-Project02,Slip: e2220,10/5/2013,No
+Expense,CoreyM,Groton,Hand Tools,III-Project,Slip: e2221,10/5/2013,No
+Expense,ElvisP,Groveland,Power Tools,OOO-Project,Slip: e2222,10/5/2013,No
+Expense,JamesR,Hadley,Cleanup Supplies,UUU-Project,Slip: e2223,10/5/2013,No
+Expense,SamS,Halifax,Pavers,,Slip: e2224,10/5/2013,No
+Expense,ShawnR,Hamilton,Wood,AAA-Project,Slip: e2225,10/6/2013,Yes
+Expense,TomH,Hampden,First aid,EEE-Project,Slip: e2226,10/6/2013,No
+Expense,CoreyM,Hancock,Plants,HANCO-Project01,Slip: e2227,10/6/2013,No
+Expense,ElvisP,Hanover,Landscape Supplies,HANOV-Project02,Slip: e2228,10/6/2013,No
+Expense,JamesR,Hanson,Snacks,III-Project,Slip: e2229,10/6/2013,No
+Expense,SamS,Hardwick,Consultants,OOO-Project,Slip: e2230,10/6/2013,No
+Expense,ShawnR,Harvard,Hand Tools,UUU-Project,Slip: e2231,10/6/2013,No
+Expense,TomH,Harwich,Power Tools,,Slip: e2232,10/6/2013,No
+Expense,CoreyM,Hatfield,Cleanup Supplies,AAA-Project,Slip: e2233,10/7/2013,No
+Expense,ElvisP,Haverhill,Pavers,EEE-Project,Slip: e2234,10/7/2013,No
+Expense,JamesR,Hawley,Wood,HAWLE-Project01,Slip: e2235,10/7/2013,No
+Expense,SamS,Heath,First aid,HEATH-Project02,Slip: e2236,10/7/2013,No
+Expense,ShawnR,Hingham,Plants,III-Project,Slip: e2237,10/7/2013,No
+Expense,TomH,Hinsdale,Landscape Supplies,OOO-Project,Slip: e2238,10/7/2013,No
+Expense,CoreyM,Holbrook,Snacks,UUU-Project,Slip: e2239,10/7/2013,No
+Expense,ElvisP,Holden,Consultants,,Slip: e2240,10/7/2013,No
+Expense,JamesR,Holland,Hand Tools,AAA-Project,Slip: e2241,10/8/2013,No
+Expense,SamS,Holliston,Power Tools,EEE-Project,Slip: e2242,10/8/2013,No
+Expense,ShawnR,Holyoke,Cleanup Supplies,HOLYO-Project01,Slip: e2243,10/8/2013,No
+Expense,TomH,Hopedale,Pavers,HOPED-Project02,Slip: e2244,10/8/2013,No
+Expense,CoreyM,Hopkinton,Wood,III-Project,Slip: e2245,10/8/2013,No
+Expense,ElvisP,Hubbardston,First aid,OOO-Project,Slip: e2246,10/8/2013,No
+Expense,JamesR,Hudson,Plants,UUU-Project,Slip: e2247,10/8/2013,No
+Expense,SamS,Hull,Landscape Supplies,,Slip: e2248,10/8/2013,No
+Expense,ShawnR,Huntington,Snacks,AAA-Project,Slip: e2249,10/9/2013,No
+Expense,TomH,Ipswich,Consultants,EEE-Project,Slip: e2250,10/9/2013,Yes
+Expense,CoreyM,Kingston,Hand Tools,III-Project,Slip: e2251,10/9/2013,No
+Expense,ElvisP,Lakeville,Power Tools,LAKEV-Project01,Slip: e2252,10/9/2013,No
+Expense,JamesR,Lancaster,Cleanup Supplies,LANCA-Project02,Slip: e2253,10/9/2013,No
+Expense,SamS,Lanesborough,Pavers,OOO-Project,Slip: e2254,10/9/2013,No
+Expense,ShawnR,Lawrence,Wood,UUU-Project,Slip: e2255,10/9/2013,No
+Expense,TomH,Lee,First aid,,Slip: e2256,10/9/2013,No
+Expense,CoreyM,Leicester,Plants,AAA-Project,Slip: e2257,10/10/2013,No
+Expense,ElvisP,Lenox,Landscape Supplies,EEE-Project,Slip: e2258,10/10/2013,No
+Expense,JamesR,Leominster,Snacks,III-Project,Slip: e2259,10/10/2013,No
+Expense,SamS,Leverett,Consultants,LEVER-Project01,Slip: e2260,10/10/2013,No
+Expense,ShawnR,Lexington,Hand Tools,LEXIN-Project02,Slip: e2261,10/10/2013,No
+Expense,TomH,Leyden,Power Tools,OOO-Project,Slip: e2262,10/10/2013,No
+Expense,CoreyM,Lincoln,Cleanup Supplies,UUU-Project,Slip: e2263,10/10/2013,No
+Expense,ElvisP,Littleton,Pavers,,Slip: e2264,10/10/2013,No
+Expense,JamesR,Longmeadow,Wood,AAA-Project,Slip: e2265,10/11/2013,No
+Expense,SamS,Lowell,First aid,EEE-Project,Slip: e2266,10/11/2013,No
+Expense,ShawnR,Ludlow,Plants,III-Project,Slip: e2267,10/11/2013,No
+Expense,TomH,Lunenburg,Landscape Supplies,LUNEN-Project01,Slip: e2268,10/11/2013,No
+Expense,CoreyM,Lynn,Snacks,LYNN-Project02,Slip: e2269,10/11/2013,No
+Expense,ElvisP,Lynnfield,Consultants,OOO-Project,Slip: e2270,10/11/2013,No
+Expense,JamesR,Malden,Hand Tools,UUU-Project,Slip: e2271,10/11/2013,No
+Expense,SamS,Manchester-by-the-Sea,Power Tools,,Slip: e2272,10/11/2013,No
+Expense,ShawnR,Mansfield,Cleanup Supplies,AAA-Project,Slip: e2273,10/12/2013,No
+Expense,TomH,Marblehead,Pavers,EEE-Project,Slip: e2274,10/12/2013,No
+Expense,CoreyM,Marion,Wood,III-Project,Slip: e2275,10/12/2013,Yes
+Expense,ElvisP,Marlborough,First aid,MARLB-Project01,Slip: e2276,10/12/2013,No
+Expense,JamesR,Marshfield,Plants,MARSH-Project02,Slip: e2277,10/12/2013,No
+Expense,SamS,Mashpee,Landscape Supplies,OOO-Project,Slip: e2278,10/12/2013,No
+Expense,ShawnR,Mattapoisett,Snacks,UUU-Project,Slip: e2279,10/12/2013,No
+Expense,TomH,Maynard,Consultants,,Slip: e2280,10/12/2013,No
+Expense,CoreyM,Medfield,Hand Tools,AAA-Project,Slip: e2281,10/13/2013,No
+Expense,ElvisP,Medford,Power Tools,EEE-Project,Slip: e2282,10/13/2013,No
+Expense,JamesR,Medway,Cleanup Supplies,III-Project,Slip: e2283,10/13/2013,No
+Expense,SamS,Melrose,Pavers,MELRO-Project01,Slip: e2284,10/13/2013,No
+Expense,ShawnR,Mendon,Wood,MENDO-Project02,Slip: e2285,10/13/2013,No
+Expense,TomH,Merrimac,First aid,OOO-Project,Slip: e2286,10/13/2013,No
+Expense,CoreyM,Methuen,Plants,UUU-Project,Slip: e2287,10/13/2013,No
+Expense,ElvisP,Middleborough,Landscape Supplies,,Slip: e2288,10/13/2013,No
+Expense,JamesR,Middlefield,Snacks,AAA-Project,Slip: e2289,10/14/2013,No
+Expense,SamS,Middleton,Consultants,EEE-Project,Slip: e2290,10/14/2013,No
+Expense,ShawnR,Milford,Hand Tools,III-Project,Slip: e2291,10/14/2013,No
+Expense,TomH,Millbury,Power Tools,MILLB-Project01,Slip: e2292,10/14/2013,No
+Expense,CoreyM,Millis,Cleanup Supplies,MILLI-Project02,Slip: e2293,10/14/2013,No
+Expense,ElvisP,Millville,Pavers,OOO-Project,Slip: e2294,10/14/2013,No
+Expense,JamesR,Milton,Wood,UUU-Project,Slip: e2295,10/14/2013,No
+Expense,SamS,Monroe,First aid,,Slip: e2296,10/14/2013,No
+Expense,ShawnR,Monson,Plants,AAA-Project,Slip: e2297,10/15/2013,No
+Expense,TomH,Montague,Landscape Supplies,EEE-Project,Slip: e2298,10/15/2013,No
+Expense,CoreyM,Monterey,Snacks,III-Project,Slip: e2299,10/15/2013,No
+Expense,ElvisP,Montgomery,Consultants,MONTG-Project01,Slip: e2300,10/15/2013,Yes
+Expense,JamesR,Mount Washington,Hand Tools,MOUNT-Project02,Slip: e2301,10/15/2013,No
+Expense,SamS,Nahant,Power Tools,OOO-Project,Slip: e2302,10/15/2013,No
+Expense,ShawnR,Nantucket,Cleanup Supplies,UUU-Project,Slip: e2303,10/15/2013,No
+Expense,TomH,Natick,Pavers,,Slip: e2304,10/15/2013,No
+Expense,CoreyM,Needham,Wood,AAA-Project,Slip: e2305,10/16/2013,No
+Expense,ElvisP,New Ashford,First aid,EEE-Project,Slip: e2306,10/16/2013,No
+Expense,JamesR,New Bedford,Plants,III-Project,Slip: e2307,10/16/2013,No
+Expense,SamS,New Braintree,Landscape Supplies,NEWBR-Project01,Slip: e2308,10/16/2013,No
+Expense,ShawnR,New Marlborough,Snacks,NEWMA-Project02,Slip: e2309,10/16/2013,No
+Expense,TomH,New Salem,Consultants,OOO-Project,Slip: e2310,10/16/2013,No
+Expense,CoreyM,Newbury,Hand Tools,UUU-Project,Slip: e2311,10/16/2013,No
+Expense,ElvisP,Newburyport,Power Tools,,Slip: e2312,10/16/2013,No
+Expense,JamesR,Newton,Cleanup Supplies,AAA-Project,Slip: e2313,10/17/2013,No
+Expense,SamS,Norfolk,Pavers,EEE-Project,Slip: e2314,10/17/2013,No
+Expense,ShawnR,North Adams,Wood,III-Project,Slip: e2315,10/17/2013,No
+Expense,TomH,North Andover,First aid,NORTH-Project01,Slip: e2316,10/17/2013,No
+Expense,CoreyM,North Attleborough,Plants,NORTH-Project02,Slip: e2317,10/17/2013,No
+Expense,ElvisP,North Brookfield,Landscape Supplies,OOO-Project,Slip: e2318,10/17/2013,No
+Expense,JamesR,North Reading,Snacks,UUU-Project,Slip: e2319,10/17/2013,No
+Expense,SamS,Northampton,Consultants,,Slip: e2320,10/17/2013,No
+Expense,ShawnR,Northborough,Hand Tools,AAA-Project,Slip: e2321,10/18/2013,No
+Expense,TomH,Northbridge,Power Tools,EEE-Project,Slip: e2322,10/18/2013,No
+Expense,CoreyM,Northfield,Cleanup Supplies,III-Project,Slip: e2323,10/18/2013,No
+Expense,ElvisP,Norton,Pavers,NORTO-Project01,Slip: e2324,10/18/2013,No
+Expense,JamesR,Norwell,Wood,NORWE-Project02,Slip: e2325,10/18/2013,Yes
+Expense,SamS,Norwood,First aid,OOO-Project,Slip: e2326,10/18/2013,No
+Expense,ShawnR,Oak Bluffs,Plants,UUU-Project,Slip: e2327,10/18/2013,No
+Expense,TomH,Oakham,Landscape Supplies,,Slip: e2328,10/18/2013,No
+Expense,CoreyM,Orange,Snacks,AAA-Project,Slip: e2329,10/19/2013,No
+Expense,ElvisP,Orleans,Consultants,EEE-Project,Slip: e2330,10/19/2013,No
+Expense,JamesR,Otis,Hand Tools,III-Project,Slip: e2331,10/19/2013,No
+Expense,SamS,Oxford,Power Tools,OOO-Project,Slip: e2332,10/19/2013,No
+Expense,ShawnR,Palmer,Cleanup Supplies,PALME-Project01,Slip: e2333,10/19/2013,No
+Expense,TomH,Paxton,Pavers,PAXTO-Project02,Slip: e2334,10/19/2013,No
+Expense,CoreyM,Peabody,Wood,UUU-Project,Slip: e2335,10/19/2013,No
+Expense,ElvisP,Pelham,First aid,,Slip: e2336,10/19/2013,No
+Expense,JamesR,Pembroke,Plants,AAA-Project,Slip: e2337,10/20/2013,No
+Expense,SamS,Pepperell,Landscape Supplies,EEE-Project,Slip: e2338,10/20/2013,No
+Expense,ShawnR,Peru,Snacks,III-Project,Slip: e2339,10/20/2013,No
+Expense,TomH,Petersham,Consultants,OOO-Project,Slip: e2340,10/20/2013,No
+Expense,CoreyM,Phillipston,Hand Tools,PHILL-Project01,Slip: e2341,10/20/2013,No
+Expense,ElvisP,Pittsfield,Power Tools,PITTS-Project02,Slip: e2342,10/20/2013,No
+Expense,JamesR,Plainfield,Cleanup Supplies,UUU-Project,Slip: e2343,10/20/2013,No
+Expense,SamS,Plainville,Pavers,,Slip: e2344,10/20/2013,No
+Expense,ShawnR,Plymouth,Wood,AAA-Project,Slip: e2345,10/21/2013,No
+Expense,TomH,Plympton,First aid,EEE-Project,Slip: e2346,10/21/2013,No
+Expense,CoreyM,Princeton,Plants,III-Project,Slip: e2347,10/21/2013,No
+Expense,ElvisP,Provincetown,Landscape Supplies,OOO-Project,Slip: e2348,10/21/2013,No
+Expense,JamesR,Quincy,Snacks,QUINC-Project01,Slip: e2349,10/21/2013,No
+Expense,SamS,Randolph,Consultants,RANDO-Project02,Slip: e2350,10/21/2013,Yes
+Expense,ShawnR,Raynham,Hand Tools,UUU-Project,Slip: e2351,10/21/2013,No
+Expense,TomH,Reading,Power Tools,,Slip: e2352,10/21/2013,No
+Expense,CoreyM,Rehoboth,Cleanup Supplies,AAA-Project,Slip: e2353,10/22/2013,No
+Expense,ElvisP,Revere,Pavers,EEE-Project,Slip: e2354,10/22/2013,No
+Expense,JamesR,Richmond,Wood,III-Project,Slip: e2355,10/22/2013,No
+Expense,SamS,Rochester,First aid,OOO-Project,Slip: e2356,10/22/2013,No
+Expense,ShawnR,Rockland,Plants,ROCKL-Project01,Slip: e2357,10/22/2013,No
+Expense,TomH,Rockport,Landscape Supplies,ROCKP-Project02,Slip: e2358,10/22/2013,No
+Expense,CoreyM,Rowe,Snacks,UUU-Project,Slip: e2359,10/22/2013,No
+Expense,ElvisP,Rowley,Consultants,,Slip: e2360,10/22/2013,No
+Expense,JamesR,Royalston,Hand Tools,AAA-Project,Slip: e2361,10/23/2013,No
+Expense,SamS,Russell,Power Tools,EEE-Project,Slip: e2362,10/23/2013,No
+Expense,ShawnR,Rutland,Cleanup Supplies,III-Project,Slip: e2363,10/23/2013,No
+Expense,TomH,Salem,Pavers,OOO-Project,Slip: e2364,10/23/2013,No
+Expense,CoreyM,Salisbury,Wood,SALIS-Project01,Slip: e2365,10/23/2013,No
+Expense,ElvisP,Sandisfield,First aid,SANDI-Project02,Slip: e2366,10/23/2013,No
+Expense,JamesR,Sandwich,Plants,UUU-Project,Slip: e2367,10/23/2013,No
+Expense,SamS,Saugus,Landscape Supplies,,Slip: e2368,10/23/2013,No
+Expense,ShawnR,Savoy,Snacks,AAA-Project,Slip: e2369,10/24/2013,No
+Expense,TomH,Scituate,Consultants,EEE-Project,Slip: e2370,10/24/2013,No
+Expense,CoreyM,Seekonk,Hand Tools,III-Project,Slip: e2371,10/24/2013,No
+Expense,ElvisP,Sharon,Power Tools,OOO-Project,Slip: e2372,10/24/2013,No
+Expense,JamesR,Sheffield,Cleanup Supplies,SHEFF-Project01,Slip: e2373,10/24/2013,No
+Expense,SamS,Shelburne,Pavers,SHELB-Project02,Slip: e2374,10/24/2013,No
+Expense,ShawnR,Sherborn,Wood,UUU-Project,Slip: e2375,10/24/2013,Yes
+Expense,TomH,Shirley,First aid,,Slip: e2376,10/24/2013,No
+Expense,CoreyM,Shrewsbury,Plants,AAA-Project,Slip: e2377,10/25/2013,No
+Expense,ElvisP,Shutesbury,Landscape Supplies,EEE-Project,Slip: e2378,10/25/2013,No
+Expense,JamesR,Somerset,Snacks,III-Project,Slip: e2379,10/25/2013,No
+Expense,SamS,Somerville,Consultants,OOO-Project,Slip: e2380,10/25/2013,No
+Expense,ShawnR,South Hadley,Hand Tools,SOUTH-Project01,Slip: e2381,10/25/2013,No
+Expense,TomH,Southampton,Power Tools,SOUTH-Project02,Slip: e2382,10/25/2013,No
+Expense,CoreyM,Southborough,Cleanup Supplies,UUU-Project,Slip: e2383,10/25/2013,No
+Expense,ElvisP,Southbridge,Pavers,,Slip: e2384,10/25/2013,No
+Expense,JamesR,Southwick,Wood,AAA-Project,Slip: e2385,10/26/2013,No
+Expense,SamS,Spencer,First aid,EEE-Project,Slip: e2386,10/26/2013,No
+Expense,ShawnR,Springfield,Plants,III-Project,Slip: e2387,10/26/2013,No
+Expense,TomH,Sterling,Landscape Supplies,OOO-Project,Slip: e2388,10/26/2013,No
+Expense,CoreyM,Stockbridge,Snacks,STOCK-Project01,Slip: e2389,10/26/2013,No
+Expense,ElvisP,Stoneham,Consultants,STONE-Project02,Slip: e2390,10/26/2013,No
+Expense,JamesR,Stoughton,Hand Tools,UUU-Project,Slip: e2391,10/26/2013,No
+Expense,SamS,Stow,Power Tools,,Slip: e2392,10/26/2013,No
+Expense,ShawnR,Sturbridge,Cleanup Supplies,AAA-Project,Slip: e2393,10/27/2013,No
+Expense,TomH,Sudbury,Pavers,EEE-Project,Slip: e2394,10/27/2013,No
+Expense,CoreyM,Sunderland,Wood,III-Project,Slip: e2395,10/27/2013,No
+Expense,ElvisP,Sutton,First aid,OOO-Project,Slip: e2396,10/27/2013,No
+Expense,JamesR,Swampscott,Plants,SWAMP-Project01,Slip: e2397,10/27/2013,No
+Expense,SamS,Swansea,Landscape Supplies,SWANS-Project02,Slip: e2398,10/27/2013,No
+Expense,ShawnR,Taunton,Snacks,UUU-Project,Slip: e2399,10/27/2013,No
+Expense,TomH,Templeton,Consultants,,Slip: e2400,10/27/2013,Yes
+Expense,CoreyM,Tewksbury,Hand Tools,AAA-Project,Slip: e2401,10/28/2013,No
+Expense,ElvisP,Tisbury,Power Tools,EEE-Project,Slip: e2402,10/28/2013,No
+Expense,JamesR,Tolland,Cleanup Supplies,III-Project,Slip: e2403,10/28/2013,No
+Expense,SamS,Topsfield,Pavers,OOO-Project,Slip: e2404,10/28/2013,No
+Expense,ShawnR,Townsend,Wood,TOWNS-Project01,Slip: e2405,10/28/2013,No
+Expense,TomH,Truro,First aid,TRURO-Project02,Slip: e2406,10/28/2013,No
+Expense,CoreyM,Tyngsborough,Plants,UUU-Project,Slip: e2407,10/28/2013,No
+Expense,ElvisP,Tyringham,Landscape Supplies,,Slip: e2408,10/28/2013,No
+Expense,JamesR,Upton,Snacks,AAA-Project,Slip: e2409,10/29/2013,No
+Expense,SamS,Uxbridge,Consultants,EEE-Project,Slip: e2410,10/29/2013,No
+Expense,ShawnR,Wakefield,Hand Tools,III-Project,Slip: e2411,10/29/2013,No
+Expense,TomH,Wales,Power Tools,OOO-Project,Slip: e2412,10/29/2013,No
+Expense,CoreyM,Walpole,Cleanup Supplies,UUU-Project,Slip: e2413,10/29/2013,No
+Expense,ElvisP,Waltham,Pavers,WALTH-Project01,Slip: e2414,10/29/2013,No
+Expense,JamesR,Ware,Wood,WARE-Project02,Slip: e2415,10/29/2013,No
+Expense,SamS,Wareham,First aid,,Slip: e2416,10/29/2013,No
+Expense,ShawnR,Warren,Plants,AAA-Project,Slip: e2417,10/30/2013,No
+Expense,TomH,Warwick,Landscape Supplies,EEE-Project,Slip: e2418,10/30/2013,No
+Expense,CoreyM,Washington,Snacks,III-Project,Slip: e2419,10/30/2013,No
+Expense,ElvisP,Watertown,Consultants,OOO-Project,Slip: e2420,10/30/2013,No
+Expense,JamesR,Wayland,Hand Tools,UUU-Project,Slip: e2421,10/30/2013,No
+Expense,SamS,Webster,Power Tools,WEBST-Project01,Slip: e2422,10/30/2013,No
+Expense,ShawnR,Wellesley,Cleanup Supplies,WELLE-Project02,Slip: e2423,10/30/2013,No
+Expense,TomH,Wellfleet,Pavers,,Slip: e2424,10/30/2013,No
+Expense,CoreyM,Wendell,Wood,AAA-Project,Slip: e2425,10/31/2013,Yes
+Expense,ElvisP,Wenham,First aid,EEE-Project,Slip: e2426,10/31/2013,No
+Expense,JamesR,West Boylston,Plants,III-Project,Slip: e2427,10/31/2013,No
+Expense,SamS,West Bridgewater,Landscape Supplies,OOO-Project,Slip: e2428,10/31/2013,No
+Expense,ShawnR,West Brookfield,Snacks,UUU-Project,Slip: e2429,10/31/2013,No
+Expense,TomH,West Newbury,Consultants,WESTN-Project01,Slip: e2430,10/31/2013,No
+Expense,CoreyM,West Springfield,Hand Tools,WESTS-Project02,Slip: e2431,10/31/2013,No
+Expense,ElvisP,West Stockbridge,Power Tools,,Slip: e2432,10/31/2013,No
+Expense,JamesR,West Tisbury,Cleanup Supplies,AAA-Project,Slip: e2433,11/1/2013,No
+Expense,SamS,Westborough,Pavers,EEE-Project,Slip: e2434,11/1/2013,No
+Expense,ShawnR,Westfield,Wood,III-Project,Slip: e2435,11/1/2013,No
+Expense,TomH,Westford,First aid,OOO-Project,Slip: e2436,11/1/2013,No
+Expense,CoreyM,Westhampton,Plants,UUU-Project,Slip: e2437,11/1/2013,No
+Expense,ElvisP,Westminster,Landscape Supplies,WESTM-Project01,Slip: e2438,11/1/2013,No
+Expense,JamesR,Weston,Snacks,WESTO-Project02,Slip: e2439,11/1/2013,No
+Expense,SamS,Westport,Consultants,,Slip: e2440,11/1/2013,No
+Expense,ShawnR,Westwood,Hand Tools,AAA-Project,Slip: e2441,11/2/2013,No
+Expense,TomH,Weymouth,Power Tools,EEE-Project,Slip: e2442,11/2/2013,No
+Expense,CoreyM,Whately,Cleanup Supplies,III-Project,Slip: e2443,11/2/2013,No
+Expense,ElvisP,Whitman,Pavers,OOO-Project,Slip: e2444,11/2/2013,No
+Expense,JamesR,Wilbraham,Wood,UUU-Project,Slip: e2445,11/2/2013,No
+Expense,SamS,Williamsburg,First aid,WILLI-Project01,Slip: e2446,11/2/2013,No
+Expense,ShawnR,Williamstown,Plants,WILLI-Project02,Slip: e2447,11/2/2013,No
+Expense,TomH,Wilmington,Landscape Supplies,,Slip: e2448,11/2/2013,No
+Expense,CoreyM,Winchendon,Snacks,AAA-Project,Slip: e2449,11/3/2013,No
+Expense,ElvisP,Winchester,Consultants,EEE-Project,Slip: e2450,11/3/2013,Yes
+Expense,JamesR,Windsor,Hand Tools,III-Project,Slip: e2451,11/3/2013,No
+Expense,SamS,Winthrop,Power Tools,OOO-Project,Slip: e2452,11/3/2013,No
+Expense,ShawnR,Woburn,Cleanup Supplies,UUU-Project,Slip: e2453,11/3/2013,No
+Expense,TomH,Worcester,Pavers,WORCE-Project01,Slip: e2454,11/3/2013,No
+Expense,CoreyM,Worthington,Wood,WORTH-Project02,Slip: e2455,11/3/2013,No
+Expense,ElvisP,Wrentham,First aid,,Slip: e2456,11/3/2013,No
+Expense,JamesR,Yarmouth,Plants,AAA-Project,Slip: e2457,11/4/2013,No
+Expense,SamS,Abington,Landscape Supplies,ABING-Project01,Slip: e2458,11/4/2013,No
+Expense,ShawnR,Acton,Snacks,ACTON-Project02,Slip: e2459,11/4/2013,No
+Expense,TomH,Acushnet,Consultants,EEE-Project,Slip: e2460,11/4/2013,No
+Expense,CoreyM,Adams,Hand Tools,III-Project,Slip: e2461,11/4/2013,No
+Expense,ElvisP,Agawam,Power Tools,OOO-Project,Slip: e2462,11/4/2013,No
+Expense,JamesR,Alford,Cleanup Supplies,UUU-Project,Slip: e2463,11/4/2013,No
+Expense,SamS,Amesbury,Pavers,,Slip: e2464,11/4/2013,No
+Expense,ShawnR,Amherst,Wood,AAA-Project,Slip: e2465,11/5/2013,No
+Expense,TomH,Andover,First aid,ANDOV-Project01,Slip: e2466,11/5/2013,No
+Expense,CoreyM,Aquinnah,Plants,AQUIN-Project02,Slip: e2467,11/5/2013,No
+Expense,ElvisP,Arlington,Landscape Supplies,EEE-Project,Slip: e2468,11/5/2013,No
+Expense,JamesR,Ashburnham,Snacks,III-Project,Slip: e2469,11/5/2013,No
+Expense,SamS,Ashby,Consultants,OOO-Project,Slip: e2470,11/5/2013,No
+Expense,ShawnR,Ashfield,Hand Tools,UUU-Project,Slip: e2471,11/5/2013,No
+Expense,TomH,Ashland,Power Tools,,Slip: e2472,11/5/2013,No
+Expense,CoreyM,Athol,Cleanup Supplies,AAA-Project,Slip: e2473,11/6/2013,No
+Expense,ElvisP,Attleboro,Pavers,ATTLE-Project01,Slip: e2474,11/6/2013,No
+Expense,JamesR,Auburn,Wood,AUBUR-Project02,Slip: e2475,11/6/2013,Yes
+Expense,SamS,Avon,First aid,EEE-Project,Slip: e2476,11/6/2013,No
+Expense,ShawnR,Ayer,Plants,III-Project,Slip: e2477,11/6/2013,No
+Expense,TomH,Barnstable,Landscape Supplies,OOO-Project,Slip: e2478,11/6/2013,No
+Expense,CoreyM,Barre,Snacks,UUU-Project,Slip: e2479,11/6/2013,No
+Expense,ElvisP,Becket,Consultants,,Slip: e2480,11/6/2013,No
+Expense,JamesR,Bedford,Hand Tools,AAA-Project,Slip: e2481,11/7/2013,No
+Expense,SamS,Belchertown,Power Tools,BELCH-Project01,Slip: e2482,11/7/2013,No
+Expense,ShawnR,Bellingham,Cleanup Supplies,BELLI-Project02,Slip: e2483,11/7/2013,No
+Expense,TomH,Belmont,Pavers,EEE-Project,Slip: e2484,11/7/2013,No
+Expense,CoreyM,Berkley,Wood,III-Project,Slip: e2485,11/7/2013,No
+Expense,ElvisP,Berlin,First aid,OOO-Project,Slip: e2486,11/7/2013,No
+Expense,JamesR,Bernardston,Plants,UUU-Project,Slip: e2487,11/7/2013,No
+Expense,SamS,Beverly,Landscape Supplies,,Slip: e2488,11/7/2013,No
+Expense,ShawnR,Billerica,Snacks,AAA-Project,Slip: e2489,11/8/2013,No
+Expense,TomH,Blackstone,Consultants,BLACK-Project01,Slip: e2490,11/8/2013,No
+Expense,CoreyM,Blandford,Hand Tools,BLAND-Project02,Slip: e2491,11/8/2013,No
+Expense,ElvisP,Bolton,Power Tools,EEE-Project,Slip: e2492,11/8/2013,No
+Expense,JamesR,Boston,Cleanup Supplies,III-Project,Slip: e2493,11/8/2013,No
+Expense,SamS,Bourne,Pavers,OOO-Project,Slip: e2494,11/8/2013,No
+Expense,ShawnR,Boxborough,Wood,UUU-Project,Slip: e2495,11/8/2013,No
+Expense,TomH,Boxford,First aid,,Slip: e2496,11/8/2013,No
+Expense,CoreyM,Boylston,Plants,AAA-Project,Slip: e2497,11/9/2013,No
+Expense,ElvisP,Braintree,Landscape Supplies,BRAIN-Project01,Slip: e2498,11/9/2013,No
+Expense,JamesR,Brewster,Snacks,BREWS-Project02,Slip: e2499,11/9/2013,No
+Expense,SamS,Bridgewater,Consultants,EEE-Project,Slip: e2500,11/9/2013,Yes
+Expense,ShawnR,Brimfield,Hand Tools,III-Project,Slip: e2501,11/9/2013,No
+Expense,TomH,Brockton,Power Tools,OOO-Project,Slip: e2502,11/9/2013,No
+Expense,CoreyM,Brookfield,Cleanup Supplies,UUU-Project,Slip: e2503,11/9/2013,No
+Expense,ElvisP,Brookline,Pavers,,Slip: e2504,11/9/2013,No
+Expense,JamesR,Buckland,Wood,AAA-Project,Slip: e2505,11/10/2013,No
+Expense,SamS,Burlington,First aid,BURLI-Project01,Slip: e2506,11/10/2013,No
+Expense,ShawnR,Cambridge,Plants,CAMBR-Project02,Slip: e2507,11/10/2013,No
+Expense,TomH,Canton,Landscape Supplies,EEE-Project,Slip: e2508,11/10/2013,No
+Expense,CoreyM,Carlisle,Snacks,III-Project,Slip: e2509,11/10/2013,No
+Expense,ElvisP,Carver,Consultants,OOO-Project,Slip: e2510,11/10/2013,No
+Expense,JamesR,Charlemont,Hand Tools,UUU-Project,Slip: e2511,11/10/2013,No
+Expense,SamS,Charlton,Power Tools,,Slip: e2512,11/10/2013,No
+Expense,ShawnR,Chatham,Cleanup Supplies,AAA-Project,Slip: e2513,11/11/2013,No
+Expense,TomH,Chelmsford,Pavers,CHELM-Project01,Slip: e2514,11/11/2013,No
+Expense,CoreyM,Chelsea,Wood,CHELS-Project02,Slip: e2515,11/11/2013,No
+Expense,ElvisP,Cheshire,First aid,EEE-Project,Slip: e2516,11/11/2013,No
+Expense,JamesR,Chester,Plants,III-Project,Slip: e2517,11/11/2013,No
+Expense,SamS,Chesterfield,Landscape Supplies,OOO-Project,Slip: e2518,11/11/2013,No
+Expense,ShawnR,Chicopee,Snacks,UUU-Project,Slip: e2519,11/11/2013,No
+Expense,TomH,Chilmark,Consultants,,Slip: e2520,11/11/2013,No
+Expense,CoreyM,Clarksburg,Hand Tools,AAA-Project,Slip: e2521,11/12/2013,No
+Expense,ElvisP,Clinton,Power Tools,CLINT-Project01,Slip: e2522,11/12/2013,No
+Expense,JamesR,Cohasset,Cleanup Supplies,COHAS-Project02,Slip: e2523,11/12/2013,No
+Expense,SamS,Colrain,Pavers,EEE-Project,Slip: e2524,11/12/2013,No
+Expense,ShawnR,Concord,Wood,III-Project,Slip: e2525,11/12/2013,Yes
+Expense,TomH,Conway,First aid,OOO-Project,Slip: e2526,11/12/2013,No
+Expense,CoreyM,Cummington,Plants,UUU-Project,Slip: e2527,11/12/2013,No
+Expense,ElvisP,Dalton,Landscape Supplies,,Slip: e2528,11/12/2013,No
+Expense,JamesR,Danvers,Snacks,AAA-Project,Slip: e2529,11/13/2013,No
+Expense,SamS,Dartmouth,Consultants,DARTM-Project01,Slip: e2530,11/13/2013,No
+Expense,ShawnR,Dedham,Hand Tools,DEDHA-Project02,Slip: e2531,11/13/2013,No
+Expense,TomH,Deerfield,Power Tools,EEE-Project,Slip: e2532,11/13/2013,No
+Expense,CoreyM,Dennis,Cleanup Supplies,III-Project,Slip: e2533,11/13/2013,No
+Expense,ElvisP,Dighton,Pavers,OOO-Project,Slip: e2534,11/13/2013,No
+Expense,JamesR,Douglas,Wood,UUU-Project,Slip: e2535,11/13/2013,No
+Expense,SamS,Dover,First aid,,Slip: e2536,11/13/2013,No
+Expense,ShawnR,Dracut,Plants,AAA-Project,Slip: e2537,11/14/2013,No
+Expense,TomH,Dudley,Landscape Supplies,DUDLE-Project01,Slip: e2538,11/14/2013,No
+Expense,CoreyM,Dunstable,Snacks,DUNST-Project02,Slip: e2539,11/14/2013,No
+Expense,ElvisP,Duxbury,Consultants,EEE-Project,Slip: e2540,11/14/2013,No
+Expense,JamesR,East Bridgewater,Hand Tools,III-Project,Slip: e2541,11/14/2013,No
+Expense,SamS,East Brookfield,Power Tools,OOO-Project,Slip: e2542,11/14/2013,No
+Expense,ShawnR,East Longmeadow,Cleanup Supplies,UUU-Project,Slip: e2543,11/14/2013,No
+Expense,TomH,Eastham,Pavers,,Slip: e2544,11/14/2013,No
+Expense,CoreyM,Easthampton,Wood,AAA-Project,Slip: e2545,11/15/2013,No
+Expense,ElvisP,Easton,First aid,EASTO-Project01,Slip: e2546,11/15/2013,No
+Expense,JamesR,Edgartown,Plants,EDGAR-Project02,Slip: e2547,11/15/2013,No
+Expense,SamS,Egremont,Landscape Supplies,EGREM-Project02,Slip: e2548,11/15/2013,No
+Expense,ShawnR,Erving,Snacks,III-Project,Slip: e2549,11/15/2013,No
+Expense,TomH,Essex,Consultants,OOO-Project,Slip: e2550,11/15/2013,Yes
+Expense,CoreyM,Everett,Hand Tools,UUU-Project,Slip: e2551,11/15/2013,No
+Expense,ElvisP,Fairhaven,Power Tools,,Slip: e2552,11/15/2013,No
+Expense,JamesR,Fall River,Cleanup Supplies,AAA-Project,Slip: e2553,11/16/2013,No
+Expense,SamS,Falmouth,Pavers,EEE-Project,Slip: e2554,11/16/2013,No
+Expense,ShawnR,Fitchburg,Wood,FITCH-Project01,Slip: e2555,11/16/2013,No
+Expense,TomH,Florida,First aid,FLORI-Project02,Slip: e2556,11/16/2013,No
+Expense,CoreyM,Foxborough,Plants,III-Project,Slip: e2557,11/16/2013,No
+Expense,ElvisP,Framingham,Landscape Supplies,OOO-Project,Slip: e2558,11/16/2013,No
+Expense,JamesR,Franklin,Snacks,UUU-Project,Slip: e2559,11/16/2013,No
+Expense,SamS,Freetown,Consultants,,Slip: e2560,11/16/2013,No
+Expense,ShawnR,Gardner,Hand Tools,AAA-Project,Slip: e2561,11/17/2013,No
+Expense,TomH,Georgetown,Power Tools,EEE-Project,Slip: e2562,11/17/2013,No
+Expense,CoreyM,Gill,Cleanup Supplies,GILL-Project01,Slip: e2563,11/17/2013,No
+Expense,ElvisP,Gloucester,Pavers,GLOUC-Project02,Slip: e2564,11/17/2013,No
+Expense,JamesR,Goshen,Wood,III-Project,Slip: e2565,11/17/2013,No
+Expense,SamS,Gosnold,First aid,OOO-Project,Slip: e2566,11/17/2013,No
+Expense,ShawnR,Grafton,Plants,UUU-Project,Slip: e2567,11/17/2013,No
+Expense,TomH,Granby,Landscape Supplies,,Slip: e2568,11/17/2013,No
+Expense,CoreyM,Granville,Snacks,AAA-Project,Slip: e2569,11/18/2013,No
+Expense,ElvisP,Great Barrington,Consultants,EEE-Project,Slip: e2570,11/18/2013,No
+Expense,JamesR,Greenfield,Hand Tools,GREEN-Project01,Slip: e2571,11/18/2013,No
+Expense,SamS,Groton,Power Tools,GROTO-Project02,Slip: e2572,11/18/2013,No
+Expense,ShawnR,Groveland,Cleanup Supplies,III-Project,Slip: e2573,11/18/2013,No
+Expense,TomH,Hadley,Pavers,OOO-Project,Slip: e2574,11/18/2013,No
+Expense,CoreyM,Halifax,Wood,UUU-Project,Slip: e2575,11/18/2013,Yes
+Expense,ElvisP,Hamilton,First aid,,Slip: e2576,11/18/2013,No
+Expense,JamesR,Hampden,Plants,AAA-Project,Slip: e2577,11/19/2013,No
+Expense,SamS,Hancock,Landscape Supplies,EEE-Project,Slip: e2578,11/19/2013,No
+Expense,ShawnR,Hanover,Snacks,HANOV-Project01,Slip: e2579,11/19/2013,No
+Expense,TomH,Hanson,Consultants,HANSO-Project02,Slip: e2580,11/19/2013,No
+Expense,CoreyM,Hardwick,Hand Tools,III-Project,Slip: e2581,11/19/2013,No
+Expense,ElvisP,Harvard,Power Tools,OOO-Project,Slip: e2582,11/19/2013,No
+Expense,JamesR,Harwich,Cleanup Supplies,UUU-Project,Slip: e2583,11/19/2013,No
+Expense,SamS,Hatfield,Pavers,,Slip: e2584,11/19/2013,No
+Expense,ShawnR,Haverhill,Wood,AAA-Project,Slip: e2585,11/20/2013,No
+Expense,TomH,Hawley,First aid,EEE-Project,Slip: e2586,11/20/2013,No
+Expense,CoreyM,Heath,Plants,HEATH-Project01,Slip: e2587,11/20/2013,No
+Expense,ElvisP,Hingham,Landscape Supplies,HINGH-Project02,Slip: e2588,11/20/2013,No
+Expense,JamesR,Hinsdale,Snacks,III-Project,Slip: e2589,11/20/2013,No
+Expense,SamS,Holbrook,Consultants,OOO-Project,Slip: e2590,11/20/2013,No
+Expense,ShawnR,Holden,Hand Tools,UUU-Project,Slip: e2591,11/20/2013,No
+Expense,TomH,Holland,Power Tools,,Slip: e2592,11/20/2013,No
+Expense,CoreyM,Holliston,Cleanup Supplies,AAA-Project,Slip: e2593,11/21/2013,No
+Expense,ElvisP,Holyoke,Pavers,EEE-Project,Slip: e2594,11/21/2013,No
+Expense,JamesR,Hopedale,Wood,HOPED-Project01,Slip: e2595,11/21/2013,No
+Expense,SamS,Hopkinton,First aid,HOPKI-Project02,Slip: e2596,11/21/2013,No
+Expense,ShawnR,Hubbardston,Plants,III-Project,Slip: e2597,11/21/2013,No
+Expense,TomH,Hudson,Landscape Supplies,OOO-Project,Slip: e2598,11/21/2013,No
+Expense,CoreyM,Hull,Snacks,UUU-Project,Slip: e2599,11/21/2013,No
+Expense,ElvisP,Huntington,Consultants,,Slip: e2600,11/21/2013,Yes
+Expense,JamesR,Ipswich,Hand Tools,AAA-Project,Slip: e2601,11/22/2013,No
+Expense,SamS,Kingston,Power Tools,EEE-Project,Slip: e2602,11/22/2013,No
+Expense,ShawnR,Lakeville,Cleanup Supplies,III-Project,Slip: e2603,11/22/2013,No
+Expense,TomH,Lancaster,Pavers,LANCA-Project01,Slip: e2604,11/22/2013,No
+Expense,CoreyM,Lanesborough,Wood,LANES-Project02,Slip: e2605,11/22/2013,No
+Expense,ElvisP,Lawrence,First aid,OOO-Project,Slip: e2606,11/22/2013,No
+Expense,JamesR,Lee,Plants,UUU-Project,Slip: e2607,11/22/2013,No
+Expense,SamS,Leicester,Landscape Supplies,,Slip: e2608,11/22/2013,No
+Expense,ShawnR,Lenox,Snacks,AAA-Project,Slip: e2609,11/23/2013,No
+Expense,TomH,Leominster,Consultants,EEE-Project,Slip: e2610,11/23/2013,No
+Expense,CoreyM,Leverett,Hand Tools,III-Project,Slip: e2611,11/23/2013,No
+Expense,ElvisP,Lexington,Power Tools,LEXIN-Project01,Slip: e2612,11/23/2013,No
+Expense,JamesR,Leyden,Cleanup Supplies,LEYDE-Project02,Slip: e2613,11/23/2013,No
+Expense,SamS,Lincoln,Pavers,OOO-Project,Slip: e2614,11/23/2013,No
+Expense,ShawnR,Littleton,Wood,UUU-Project,Slip: e2615,11/23/2013,No
+Expense,TomH,Longmeadow,First aid,,Slip: e2616,11/23/2013,No
+Expense,CoreyM,Lowell,Plants,AAA-Project,Slip: e2617,11/24/2013,No
+Expense,ElvisP,Ludlow,Landscape Supplies,EEE-Project,Slip: e2618,11/24/2013,No
+Expense,JamesR,Lunenburg,Snacks,III-Project,Slip: e2619,11/24/2013,No
+Expense,SamS,Lynn,Consultants,LYNN-Project01,Slip: e2620,11/24/2013,No
+Expense,ShawnR,Lynnfield,Hand Tools,LYNNF-Project02,Slip: e2621,11/24/2013,No
+Expense,TomH,Malden,Power Tools,OOO-Project,Slip: e2622,11/24/2013,No
+Expense,CoreyM,Manchester-by-the-Sea,Cleanup Supplies,UUU-Project,Slip: e2623,11/24/2013,No
+Expense,ElvisP,Mansfield,Pavers,,Slip: e2624,11/24/2013,No
+Expense,JamesR,Marblehead,Wood,AAA-Project,Slip: e2625,11/25/2013,Yes
+Expense,SamS,Marion,First aid,EEE-Project,Slip: e2626,11/25/2013,No
+Expense,ShawnR,Marlborough,Plants,III-Project,Slip: e2627,11/25/2013,No
+Expense,TomH,Marshfield,Landscape Supplies,MARSH-Project01,Slip: e2628,11/25/2013,No
+Expense,CoreyM,Mashpee,Snacks,MASHP-Project02,Slip: e2629,11/25/2013,No
+Expense,ElvisP,Mattapoisett,Consultants,OOO-Project,Slip: e2630,11/25/2013,No
+Expense,JamesR,Maynard,Hand Tools,UUU-Project,Slip: e2631,11/25/2013,No
+Expense,SamS,Medfield,Power Tools,,Slip: e2632,11/25/2013,No
+Expense,ShawnR,Medford,Cleanup Supplies,AAA-Project,Slip: e2633,11/26/2013,No
+Expense,TomH,Medway,Pavers,EEE-Project,Slip: e2634,11/26/2013,No
+Expense,CoreyM,Melrose,Wood,III-Project,Slip: e2635,11/26/2013,No
+Expense,ElvisP,Mendon,First aid,MENDO-Project01,Slip: e2636,11/26/2013,No
+Expense,JamesR,Merrimac,Plants,MERRI-Project02,Slip: e2637,11/26/2013,No
+Expense,SamS,Methuen,Landscape Supplies,OOO-Project,Slip: e2638,11/26/2013,No
+Expense,ShawnR,Middleborough,Snacks,UUU-Project,Slip: e2639,11/26/2013,No
+Expense,TomH,Middlefield,Consultants,,Slip: e2640,11/26/2013,No
+Expense,CoreyM,Middleton,Hand Tools,AAA-Project,Slip: e2641,11/27/2013,No
+Expense,ElvisP,Milford,Power Tools,EEE-Project,Slip: e2642,11/27/2013,No
+Expense,JamesR,Millbury,Cleanup Supplies,III-Project,Slip: e2643,11/27/2013,No
+Expense,SamS,Millis,Pavers,MILLI-Project01,Slip: e2644,11/27/2013,No
+Expense,ShawnR,Millville,Wood,MILLV-Project02,Slip: e2645,11/27/2013,No
+Expense,TomH,Milton,First aid,OOO-Project,Slip: e2646,11/27/2013,No
+Expense,CoreyM,Monroe,Plants,UUU-Project,Slip: e2647,11/27/2013,No
+Expense,ElvisP,Monson,Landscape Supplies,,Slip: e2648,11/27/2013,No
+Expense,JamesR,Montague,Snacks,AAA-Project,Slip: e2649,11/28/2013,No
+Expense,SamS,Monterey,Consultants,EEE-Project,Slip: e2650,11/28/2013,Yes
+Expense,ShawnR,Montgomery,Hand Tools,III-Project,Slip: e2651,11/28/2013,No
+Expense,TomH,Mount Washington,Power Tools,MOUNT-Project01,Slip: e2652,11/28/2013,No
+Expense,CoreyM,Nahant,Cleanup Supplies,NAHAN-Project02,Slip: e2653,11/28/2013,No
+Expense,ElvisP,Nantucket,Pavers,OOO-Project,Slip: e2654,11/28/2013,No
+Expense,JamesR,Natick,Wood,UUU-Project,Slip: e2655,11/28/2013,No
+Expense,SamS,Needham,First aid,,Slip: e2656,11/28/2013,No
+Expense,ShawnR,New Ashford,Plants,AAA-Project,Slip: e2657,11/29/2013,No
+Expense,TomH,New Bedford,Landscape Supplies,EEE-Project,Slip: e2658,11/29/2013,No
+Expense,CoreyM,New Braintree,Snacks,III-Project,Slip: e2659,11/29/2013,No
+Expense,ElvisP,New Marlborough,Consultants,NEWMA-Project01,Slip: e2660,11/29/2013,No
+Expense,JamesR,New Salem,Hand Tools,NEWSA-Project02,Slip: e2661,11/29/2013,No
+Expense,SamS,Newbury,Power Tools,OOO-Project,Slip: e2662,11/29/2013,No
+Expense,ShawnR,Newburyport,Cleanup Supplies,UUU-Project,Slip: e2663,11/29/2013,No
+Expense,TomH,Newton,Pavers,,Slip: e2664,11/29/2013,No
+Expense,CoreyM,Norfolk,Wood,AAA-Project,Slip: e2665,11/30/2013,No
+Expense,ElvisP,North Adams,First aid,EEE-Project,Slip: e2666,11/30/2013,No
+Expense,JamesR,North Andover,Plants,III-Project,Slip: e2667,11/30/2013,No
+Expense,SamS,North Attleborough,Landscape Supplies,NORTH-Project01,Slip: e2668,11/30/2013,No
+Expense,ShawnR,North Brookfield,Snacks,NORTH-Project02,Slip: e2669,11/30/2013,No
+Expense,TomH,North Reading,Consultants,OOO-Project,Slip: e2670,11/30/2013,No
+Expense,CoreyM,Northampton,Hand Tools,UUU-Project,Slip: e2671,11/30/2013,No
+Expense,ElvisP,Northborough,Power Tools,,Slip: e2672,11/30/2013,No
+Expense,JamesR,Northbridge,Cleanup Supplies,AAA-Project,Slip: e2673,12/1/2013,No
+Expense,SamS,Northfield,Pavers,EEE-Project,Slip: e2674,12/1/2013,No
+Expense,ShawnR,Norton,Wood,III-Project,Slip: e2675,12/1/2013,Yes
+Expense,TomH,Norwell,First aid,NORWE-Project01,Slip: e2676,12/1/2013,No
+Expense,CoreyM,Norwood,Plants,NORWO-Project02,Slip: e2677,12/1/2013,No
+Expense,ElvisP,Oak Bluffs,Landscape Supplies,OOO-Project,Slip: e2678,12/1/2013,No
+Expense,JamesR,Oakham,Snacks,UUU-Project,Slip: e2679,12/1/2013,No
+Expense,SamS,Orange,Consultants,,Slip: e2680,12/1/2013,No
+Expense,ShawnR,Orleans,Hand Tools,AAA-Project,Slip: e2681,12/2/2013,No
+Expense,TomH,Otis,Power Tools,EEE-Project,Slip: e2682,12/2/2013,No
+Expense,CoreyM,Oxford,Cleanup Supplies,III-Project,Slip: e2683,12/2/2013,No
+Expense,ElvisP,Palmer,Pavers,OOO-Project,Slip: e2684,12/2/2013,No
+Expense,JamesR,Paxton,Wood,PAXTO-Project01,Slip: e2685,12/2/2013,No
+Expense,SamS,Peabody,First aid,PEABO-Project02,Slip: e2686,12/2/2013,No
+Expense,ShawnR,Pelham,Plants,UUU-Project,Slip: e2687,12/2/2013,No
+Expense,TomH,Pembroke,Landscape Supplies,,Slip: e2688,12/2/2013,No
+Expense,CoreyM,Pepperell,Snacks,AAA-Project,Slip: e2689,12/3/2013,No
+Expense,ElvisP,Peru,Consultants,EEE-Project,Slip: e2690,12/3/2013,No
+Expense,JamesR,Petersham,Hand Tools,III-Project,Slip: e2691,12/3/2013,No
+Expense,SamS,Phillipston,Power Tools,OOO-Project,Slip: e2692,12/3/2013,No
+Expense,ShawnR,Pittsfield,Cleanup Supplies,PITTS-Project01,Slip: e2693,12/3/2013,No
+Expense,TomH,Plainfield,Pavers,PLAIN-Project02,Slip: e2694,12/3/2013,No
+Expense,CoreyM,Plainville,Wood,UUU-Project,Slip: e2695,12/3/2013,No
+Expense,ElvisP,Plymouth,First aid,,Slip: e2696,12/3/2013,No
+Expense,JamesR,Plympton,Plants,AAA-Project,Slip: e2697,12/4/2013,No
+Expense,SamS,Princeton,Landscape Supplies,EEE-Project,Slip: e2698,12/4/2013,No
+Expense,ShawnR,Provincetown,Snacks,III-Project,Slip: e2699,12/4/2013,No
+Expense,TomH,Quincy,Consultants,OOO-Project,Slip: e2700,12/4/2013,Yes
+Expense,CoreyM,Randolph,Hand Tools,RANDO-Project01,Slip: e2701,12/4/2013,No
+Expense,ElvisP,Raynham,Power Tools,RAYNH-Project02,Slip: e2702,12/4/2013,No
+Expense,JamesR,Reading,Cleanup Supplies,UUU-Project,Slip: e2703,12/4/2013,No
+Expense,SamS,Rehoboth,Pavers,,Slip: e2704,12/4/2013,No
+Expense,ShawnR,Revere,Wood,AAA-Project,Slip: e2705,12/5/2013,No
+Expense,TomH,Richmond,First aid,EEE-Project,Slip: e2706,12/5/2013,No
+Expense,CoreyM,Rochester,Plants,III-Project,Slip: e2707,12/5/2013,No
+Expense,ElvisP,Rockland,Landscape Supplies,OOO-Project,Slip: e2708,12/5/2013,No
+Expense,JamesR,Rockport,Snacks,ROCKP-Project01,Slip: e2709,12/5/2013,No
+Expense,SamS,Rowe,Consultants,ROWE-Project02,Slip: e2710,12/5/2013,No
+Expense,ShawnR,Rowley,Hand Tools,UUU-Project,Slip: e2711,12/5/2013,No
+Expense,TomH,Royalston,Power Tools,,Slip: e2712,12/5/2013,No
+Expense,CoreyM,Russell,Cleanup Supplies,AAA-Project,Slip: e2713,12/6/2013,No
+Expense,ElvisP,Rutland,Pavers,EEE-Project,Slip: e2714,12/6/2013,No
+Expense,JamesR,Salem,Wood,III-Project,Slip: e2715,12/6/2013,No
+Expense,SamS,Salisbury,First aid,OOO-Project,Slip: e2716,12/6/2013,No
+Expense,ShawnR,Sandisfield,Plants,SANDI-Project01,Slip: e2717,12/6/2013,No
+Expense,TomH,Sandwich,Landscape Supplies,SANDW-Project02,Slip: e2718,12/6/2013,No
+Expense,CoreyM,Saugus,Snacks,UUU-Project,Slip: e2719,12/6/2013,No
+Expense,ElvisP,Savoy,Consultants,,Slip: e2720,12/6/2013,No
+Expense,JamesR,Scituate,Hand Tools,AAA-Project,Slip: e2721,12/7/2013,No
+Expense,SamS,Seekonk,Power Tools,EEE-Project,Slip: e2722,12/7/2013,No
+Expense,ShawnR,Sharon,Cleanup Supplies,III-Project,Slip: e2723,12/7/2013,No
+Expense,TomH,Sheffield,Pavers,OOO-Project,Slip: e2724,12/7/2013,No
+Expense,CoreyM,Shelburne,Wood,SHELB-Project01,Slip: e2725,12/7/2013,Yes
+Expense,ElvisP,Sherborn,First aid,SHERB-Project02,Slip: e2726,12/7/2013,No
+Expense,JamesR,Shirley,Plants,UUU-Project,Slip: e2727,12/7/2013,No
+Expense,SamS,Shrewsbury,Landscape Supplies,,Slip: e2728,12/7/2013,No
+Expense,ShawnR,Shutesbury,Snacks,AAA-Project,Slip: e2729,12/8/2013,No
+Expense,TomH,Somerset,Consultants,EEE-Project,Slip: e2730,12/8/2013,No
+Expense,CoreyM,Somerville,Hand Tools,III-Project,Slip: e2731,12/8/2013,No
+Expense,ElvisP,South Hadley,Power Tools,OOO-Project,Slip: e2732,12/8/2013,No
+Expense,JamesR,Southampton,Cleanup Supplies,SOUTH-Project01,Slip: e2733,12/8/2013,No
+Expense,SamS,Southborough,Pavers,SOUTH-Project02,Slip: e2734,12/8/2013,No
+Expense,ShawnR,Southbridge,Wood,UUU-Project,Slip: e2735,12/8/2013,No
+Expense,TomH,Southwick,First aid,,Slip: e2736,12/8/2013,No
+Expense,CoreyM,Spencer,Plants,AAA-Project,Slip: e2737,12/9/2013,No
+Expense,ElvisP,Springfield,Landscape Supplies,EEE-Project,Slip: e2738,12/9/2013,No
+Expense,JamesR,Sterling,Snacks,III-Project,Slip: e2739,12/9/2013,No
+Expense,SamS,Stockbridge,Consultants,OOO-Project,Slip: e2740,12/9/2013,No
+Expense,ShawnR,Stoneham,Hand Tools,STONE-Project01,Slip: e2741,12/9/2013,No
+Expense,TomH,Stoughton,Power Tools,STOUG-Project02,Slip: e2742,12/9/2013,No
+Expense,CoreyM,Stow,Cleanup Supplies,UUU-Project,Slip: e2743,12/9/2013,No
+Expense,ElvisP,Sturbridge,Pavers,,Slip: e2744,12/9/2013,No
+Expense,JamesR,Sudbury,Wood,AAA-Project,Slip: e2745,12/10/2013,No
+Expense,SamS,Sunderland,First aid,EEE-Project,Slip: e2746,12/10/2013,No
+Expense,ShawnR,Sutton,Plants,III-Project,Slip: e2747,12/10/2013,No
+Expense,TomH,Swampscott,Landscape Supplies,OOO-Project,Slip: e2748,12/10/2013,No
+Expense,CoreyM,Swansea,Snacks,SWANS-Project01,Slip: e2749,12/10/2013,No
+Expense,ElvisP,Taunton,Consultants,TAUNT-Project02,Slip: e2750,12/10/2013,Yes
+Expense,JamesR,Templeton,Hand Tools,UUU-Project,Slip: e2751,12/10/2013,No
+Expense,SamS,Tewksbury,Power Tools,,Slip: e2752,12/10/2013,No
+Expense,ShawnR,Tisbury,Cleanup Supplies,AAA-Project,Slip: e2753,12/11/2013,No
+Expense,TomH,Tolland,Pavers,EEE-Project,Slip: e2754,12/11/2013,No
+Expense,CoreyM,Topsfield,Wood,III-Project,Slip: e2755,12/11/2013,No
+Expense,ElvisP,Townsend,First aid,OOO-Project,Slip: e2756,12/11/2013,No
+Expense,JamesR,Truro,Plants,TRURO-Project01,Slip: e2757,12/11/2013,No
+Expense,SamS,Tyngsborough,Landscape Supplies,TYNGS-Project02,Slip: e2758,12/11/2013,No
+Expense,ShawnR,Tyringham,Snacks,UUU-Project,Slip: e2759,12/11/2013,No
+Expense,TomH,Upton,Consultants,,Slip: e2760,12/11/2013,No
+Expense,CoreyM,Uxbridge,Hand Tools,AAA-Project,Slip: e2761,12/12/2013,No
+Expense,ElvisP,Wakefield,Power Tools,EEE-Project,Slip: e2762,12/12/2013,No
+Expense,JamesR,Wales,Cleanup Supplies,III-Project,Slip: e2763,12/12/2013,No
+Expense,SamS,Walpole,Pavers,OOO-Project,Slip: e2764,12/12/2013,No
+Expense,ShawnR,Waltham,Wood,UUU-Project,Slip: e2765,12/12/2013,No
+Expense,TomH,Ware,First aid,WARE-Project01,Slip: e2766,12/12/2013,No
+Expense,CoreyM,Wareham,Plants,WAREH-Project02,Slip: e2767,12/12/2013,No
+Expense,ElvisP,Warren,Landscape Supplies,,Slip: e2768,12/12/2013,No
+Expense,JamesR,Warwick,Snacks,AAA-Project,Slip: e2769,12/13/2013,No
+Expense,SamS,Washington,Consultants,EEE-Project,Slip: e2770,12/13/2013,No
+Expense,ShawnR,Watertown,Hand Tools,III-Project,Slip: e2771,12/13/2013,No
+Expense,TomH,Wayland,Power Tools,OOO-Project,Slip: e2772,12/13/2013,No
+Expense,CoreyM,Webster,Cleanup Supplies,UUU-Project,Slip: e2773,12/13/2013,No
+Expense,ElvisP,Wellesley,Pavers,WELLE-Project01,Slip: e2774,12/13/2013,No
+Expense,JamesR,Wellfleet,Wood,WELLF-Project02,Slip: e2775,12/13/2013,Yes
+Expense,SamS,Wendell,First aid,,Slip: e2776,12/13/2013,No
+Expense,ShawnR,Wenham,Plants,AAA-Project,Slip: e2777,12/14/2013,No
+Expense,TomH,West Boylston,Landscape Supplies,EEE-Project,Slip: e2778,12/14/2013,No
+Expense,CoreyM,West Bridgewater,Snacks,III-Project,Slip: e2779,12/14/2013,No
+Expense,ElvisP,West Brookfield,Consultants,OOO-Project,Slip: e2780,12/14/2013,No
+Expense,JamesR,West Newbury,Hand Tools,UUU-Project,Slip: e2781,12/14/2013,No
+Expense,SamS,West Springfield,Power Tools,WESTS-Project01,Slip: e2782,12/14/2013,No
+Expense,ShawnR,West Stockbridge,Cleanup Supplies,WESTS-Project02,Slip: e2783,12/14/2013,No
+Expense,TomH,West Tisbury,Pavers,,Slip: e2784,12/14/2013,No
+Expense,CoreyM,Westborough,Wood,AAA-Project,Slip: e2785,12/15/2013,No
+Expense,ElvisP,Westfield,First aid,EEE-Project,Slip: e2786,12/15/2013,No
+Expense,JamesR,Westford,Plants,III-Project,Slip: e2787,12/15/2013,No
+Expense,SamS,Westhampton,Landscape Supplies,OOO-Project,Slip: e2788,12/15/2013,No
+Expense,ShawnR,Westminster,Snacks,UUU-Project,Slip: e2789,12/15/2013,No
+Expense,TomH,Weston,Consultants,WESTO-Project01,Slip: e2790,12/15/2013,No
+Expense,CoreyM,Westport,Hand Tools,WESTP-Project02,Slip: e2791,12/15/2013,No
+Expense,ElvisP,Westwood,Power Tools,,Slip: e2792,12/15/2013,No
+Expense,JamesR,Weymouth,Cleanup Supplies,AAA-Project,Slip: e2793,12/16/2013,No
+Expense,SamS,Whately,Pavers,EEE-Project,Slip: e2794,12/16/2013,No
+Expense,ShawnR,Whitman,Wood,III-Project,Slip: e2795,12/16/2013,No
+Expense,TomH,Wilbraham,First aid,OOO-Project,Slip: e2796,12/16/2013,No
+Expense,CoreyM,Williamsburg,Plants,UUU-Project,Slip: e2797,12/16/2013,No
+Expense,ElvisP,Williamstown,Landscape Supplies,WILLI-Project01,Slip: e2798,12/16/2013,No
+Expense,JamesR,Wilmington,Snacks,WILMI-Project02,Slip: e2799,12/16/2013,No
+Expense,SamS,Winchendon,Consultants,,Slip: e2800,12/16/2013,Yes
+Expense,ShawnR,Winchester,Hand Tools,AAA-Project,Slip: e2801,12/17/2013,No
+Expense,TomH,Windsor,Power Tools,EEE-Project,Slip: e2802,12/17/2013,No
+Expense,CoreyM,Winthrop,Cleanup Supplies,III-Project,Slip: e2803,12/17/2013,No
+Expense,ElvisP,Woburn,Pavers,OOO-Project,Slip: e2804,12/17/2013,No
+Expense,JamesR,Worcester,Wood,UUU-Project,Slip: e2805,12/17/2013,No
+Expense,SamS,Worthington,First aid,WORTH-Project01,Slip: e2806,12/17/2013,No
+Expense,ShawnR,Wrentham,Plants,WRENT-Project02,Slip: e2807,12/17/2013,No
+Expense,TomH,Yarmouth,Landscape Supplies,,Slip: e2808,12/17/2013,No
