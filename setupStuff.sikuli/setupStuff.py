@@ -31,8 +31,8 @@ def Setup_Stuff():
     Settings.taskFile = Settings.dataFolder + '\\tasks.csv'
     Settings.expFile = Settings.dataFolder + '\\expenses.csv'
     Settings.refFile = Settings.dataFolder + '\\refs.csv'
-    Settings.tSlipsFile = Settings.dataFolder + '\\tslips.csv'
-    Settings.eSlipsFile = Settings.dataFolder + '\\eslips.csv'
+    Settings.tSlipsFile = Settings.dataFolder + '\\slips1.csv'
+    Settings.eSlipsFile = Settings.dataFolder + '\\slips2.csv'
 
 # get TS version
     Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
