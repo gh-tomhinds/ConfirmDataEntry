@@ -148,6 +148,10 @@
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
+
+        <span class="cmt"># always create payments for first 5 clients 
+</span>        <span class="cmt"># then create payments for 1 out of 5 next clients
+</span>
         <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">5</span> == <span class="dig">0</span>):
             Create_OnePayment(oneClient,count,month)
         <span class="kw">else</span>:

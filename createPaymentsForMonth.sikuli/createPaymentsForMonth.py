@@ -76,6 +76,10 @@ def Create_PaymentsForMonth(month):
 
     for oneClient in allClients:
         count += 1
+        
+        # always create payments for first 5 clients 
+        # then create payments for 1 out of 5 next clients
+        
         if (count in range(6)) or ((count + month) % 5 == 0):
             Create_OnePayment(oneClient,count,month)
         else:
