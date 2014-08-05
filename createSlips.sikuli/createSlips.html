@@ -163,10 +163,25 @@
         <span class="skw">type</span>(<span class="str">"+"</span>)
 
     <span class="cmt"># every 25th slip, tab to Hold and mark it
+</span>    <span class="cmt"># note: no slip with Hold will also be recurring (see next if)
 </span>    <span class="kw">if</span> slipnum % <span class="dig">25</span> == <span class="dig">0</span>:
         myTools.pressTAB(<span class="dig">6</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.SPACE)
+
+    <span class="cmt"># recur the slips 4 ,5, 6, 10; one slip of each bill status type
+</span>    <span class="cmt"># also add one hour DoNotBill time
+</span>    <span class="cmt"># note: no slip with Recur will also be on Hold (see previous if)
+</span>    <span class="kw">if</span> slipnum <span class="kw">in</span> (<span class="dig">4</span>, <span class="dig">5</span>, <span class="dig">6</span>, <span class="dig">10</span>):
+        myTools.pressTAB(<span class="dig">7</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.SPACE)
+
+        <span class="skw">click</span>(<img src="1407270589401.png" />)
+        myTools.pressTAB(<span class="dig">7</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"1"</span>)
+        <span class="skw">click</span>(<img src="1407270746072.png" />)
 
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)

@@ -91,10 +91,25 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         type("+")
 
     # every 25th slip, tab to Hold and mark it
+    # note: no slip with Hold will also be recurring (see next if)
     if slipnum % 25 == 0:
         myTools.pressTAB(6)
         time.sleep(1)
         type(Key.SPACE) 
+
+    # recur the slips 4 ,5, 6, 10; one slip of each bill status type
+    # also add one hour DoNotBill time
+    # note: no slip with Recur will also be on Hold (see previous if)
+    if slipnum in (4, 5, 6, 10):
+        myTools.pressTAB(7)
+        time.sleep(1)
+        type(Key.SPACE)       
+
+        click("1407270589401.png")
+        myTools.pressTAB(7)
+        time.sleep(1)
+        type("1")        
+        click("1407270746072.png")    
 
     type("s",KeyModifier.CTRL)
     time.sleep(1)
