@@ -24,6 +24,7 @@ import importRefs
 import setupFeeAlloc
 import setupExpMarkups
 import setupTaxes
+import setupClientHold
 
 import makeBackup
 
@@ -61,6 +62,7 @@ def CreateImportEdit_Names():
     setupFeeAlloc.Setup_FeeAlloc()
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
+    setupClientHold.Setup_ClientHold()
 
     printTimekeepers.Print_Timekeepers("Timekeepers-01.csv")
     printClients.Print_Clients("Clients-01.csv")

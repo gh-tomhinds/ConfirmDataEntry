@@ -96,6 +96,7 @@
 <span class="kw">import</span> setupFeeAlloc
 <span class="kw">import</span> setupExpMarkups
 <span class="kw">import</span> setupTaxes
+<span class="kw">import</span> setupClientHold
 
 <span class="kw">import</span> makeBackup
 
@@ -133,6 +134,7 @@
     setupFeeAlloc.Setup_FeeAlloc()
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
+    setupClientHold.Setup_ClientHold()
 
     printTimekeepers.Print_Timekeepers(<span class="str">"Timekeepers-01.csv"</span>)
     printClients.Print_Clients(<span class="str">"Clients-01.csv"</span>)
