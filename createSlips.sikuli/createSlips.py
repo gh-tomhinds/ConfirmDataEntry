@@ -97,10 +97,11 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         time.sleep(1)
         type(Key.SPACE) 
 
-    # recur the slips 4 ,5, 6, 10; one slip of each bill status type
+    # recur the slips 6 ,7, 9, 10; one slip of each bill status type
     # also add one hour DoNotBill time
     # note: no slip with Recur will also be on Hold (see previous if)
-    if slipnum in (4, 5, 6, 10):
+    # the slipType check below is so bill arrangement scripts don't run this part
+    if slipType == "t" and slipnum in (6, 7, 9, 10):
         myTools.pressTAB(7)
         time.sleep(1)
         type(Key.SPACE)       

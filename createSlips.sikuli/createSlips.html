@@ -169,10 +169,11 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.SPACE)
 
-    <span class="cmt"># recur the slips 4 ,5, 6, 10; one slip of each bill status type
+    <span class="cmt"># recur the slips 6 ,7, 9, 10; one slip of each bill status type
 </span>    <span class="cmt"># also add one hour DoNotBill time
 </span>    <span class="cmt"># note: no slip with Recur will also be on Hold (see previous if)
-</span>    <span class="kw">if</span> slipnum <span class="kw">in</span> (<span class="dig">4</span>, <span class="dig">5</span>, <span class="dig">6</span>, <span class="dig">10</span>):
+</span>    <span class="cmt"># the slipType check below is so bill arrangement scripts don't run this part
+</span>    <span class="kw">if</span> slipType == <span class="str">"t"</span> <span class="kw">and</span> slipnum <span class="kw">in</span> (<span class="dig">6</span>, <span class="dig">7</span>, <span class="dig">9</span>, <span class="dig">10</span>):
         myTools.pressTAB(<span class="dig">7</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.SPACE)
