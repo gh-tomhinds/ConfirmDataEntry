@@ -19,19 +19,21 @@ def Create_Task():
     type("n",KeyModifier.CTRL)
 
     logging.debug('  - names')
+    # NN1
     type("Skipping")
+    # NN2
     type(Key.TAB)
     type("1234")
+    # Full name
     type(Key.ENTER)
     type("Skipping Around in Circles")
-
+    # category
     type(Key.TAB)
     type("o")
-    type(Key.TAB)
-
     time.sleep(1)
+    
     logging.debug('  - rates')
-    type(Key.TAB)    
+    myTools.pressTAB(2)
     type("1")
     type(Key.TAB)    
     type("2")    
@@ -75,14 +77,19 @@ def Create_Task():
     logging.debug('  - defaults')
     time.sleep(1)
     myTools.pressTAB(2)
+    # time spent
     type("11.2")    
     type(Key.TAB)
+    # time est
     type("11.1")    
     type(Key.TAB)
+    # bill status
     type("b")
     type(Key.TAB)
+    # hold
     type("o")
     type(Key.TAB)
+    # description
     type("Frolicking and Playing")
 
     logging.debug('- save and close task list')

@@ -48,7 +48,7 @@ def Hold_Exp_AllBills_Amount():
     myTools.pressTAB(1)
     time.sleep(1)
 
-    # set to "on all bills" until 1000 hours
+    # set to "on all bills" until $1000 
     myTools.pressDOWN(2)
     myTools.pressTAB(1)
     type("1000")

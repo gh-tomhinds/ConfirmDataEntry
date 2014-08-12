@@ -48,21 +48,19 @@ def CreateImportEdit_Names():
     importClients.Import_Clients()
     editClient.Edit_Client()    
     editClientFunds.Edit_ClientFunds()
-
     printFunds.Print_Funds("FundsSettings-01.csv")   
+    setupClientHold.Setup_ClientHold()
+    setupFeeAlloc.Setup_FeeAlloc()    
     
     importTasks.Import_Tasks()
     editTask.Edit_Task()
     importExpenses.Import_Expenses()
     editExpense.Edit_Expense()
+    setupExpMarkups.Setup_ExpMarkups()
+    setupTaxes.Setup_Taxes()
     
     createRefs.Create_Refs()
     importRefs.Import_Refs()
-
-    setupFeeAlloc.Setup_FeeAlloc()
-    setupExpMarkups.Setup_ExpMarkups()
-    setupTaxes.Setup_Taxes()
-    setupClientHold.Setup_ClientHold()
 
     printTimekeepers.Print_Timekeepers("Timekeepers-01.csv")
     printClients.Print_Clients("Clients-01.csv")

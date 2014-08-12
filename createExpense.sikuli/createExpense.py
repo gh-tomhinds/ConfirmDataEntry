@@ -19,19 +19,22 @@ def Create_Expense():
     type("n",KeyModifier.CTRL)
 
     logging.debug('  - names')
+    # nn1
     type("Lip stick")
+    # nn2
     type(Key.TAB)
     type("Z123")
+    # full name
     type(Key.ENTER)
     type("Makeup")
-
+    # category
     type(Key.TAB)
     type("m")
-    type(Key.TAB)
-
     time.sleep(1)
+    
+    # prices
+    myTools.pressTAB(2)
     logging.debug('  - prices')
-    type(Key.TAB)    
     type("1.1001")
     type(Key.TAB)    
     if int(Settings.tsVersion) > 2012:
@@ -75,10 +78,13 @@ def Create_Expense():
         type("1.1020")    
 
         time.sleep(1)
+        # level
         type(Key.TAB)    
         type("2")
+        
         type(Key.TAB)        
 
+    # quantity
     type("1116.789")
     type(Pattern("Description.png").targetOffset(29,0), "Stuff to make us pretty") 
 
