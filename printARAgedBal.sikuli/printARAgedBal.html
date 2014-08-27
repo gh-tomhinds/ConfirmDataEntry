@@ -110,7 +110,8 @@
     <span class="kw">if</span> exists(<img src="1372861767712.png" />):
         <span class="skw">type</span>(Key.ENTER)
 
-    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
+    <span class="cmt"># wait for report to complete
+</span>    myTools.waitForReport()
 
     <span class="cmt"># compare the report with baseline
 </span>    compareOneReport.Compare_OneReport(reportName)

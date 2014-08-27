@@ -61,12 +61,10 @@ def Print_TkCC(reportMonth):
     type(Key.ENTER)    
 
     if exists("1372861767712.png"):
-        type(Key.ENTER)  
+        type(Key.ENTER)
 
-
-    #this report is long; wait for "calculating" box to disappear
-    while exists("1402586543101.png"):
-        time.sleep(3)
+    # wait for report to complete
+    myTools.waitForReport()
 
     # compare the report with baseline
     compareOneReport.Compare_OneReport(reportName)

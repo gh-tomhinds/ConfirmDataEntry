@@ -71,8 +71,9 @@ def Print_TkHistory(reportMonth):
 
     if exists("1372861767712.png"):
         type(Key.ENTER)  
-        
-    time.sleep(5)
+
+    # wait for report to complete
+    myTools.waitForReport()
 
     # compare the report with baseline
     compareOneReport.Compare_OneReport(reportName)

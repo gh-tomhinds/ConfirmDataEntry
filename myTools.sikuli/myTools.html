@@ -154,6 +154,14 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> waitForReport():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#wait for "calculating" box to disappear
+</span>    <span class="kw">while</span> exists(<img src="1402586543101.png" />):
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> monthToName(aMonth,aName,anExt):
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>

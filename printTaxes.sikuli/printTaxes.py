@@ -8,7 +8,7 @@ def Print_Taxes(reportMonth):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print taxes")
-    logging.debug('Print_Hold: ' + str(reportMonth))
+    logging.debug('Print_Taxes: ' + str(reportMonth))
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -58,8 +58,9 @@ def Print_Taxes(reportMonth):
 
     if exists("1372861767712.png"):
         type(Key.ENTER)  
-        
-    time.sleep(5)
+
+    # wait for report to complete
+    myTools.waitForReport()
 
     # compare the report with baseline
     compareOneReport.Compare_OneReport(reportName)

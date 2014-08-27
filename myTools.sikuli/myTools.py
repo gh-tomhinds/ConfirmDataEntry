@@ -82,6 +82,14 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def waitForReport():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+    time.sleep(1)    
+    #wait for "calculating" box to disappear
+    while exists("1402586543101.png"):
+        time.sleep(2)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def monthToName(aMonth,aName,anExt):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
