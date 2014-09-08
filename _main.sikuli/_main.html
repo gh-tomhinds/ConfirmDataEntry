@@ -95,6 +95,7 @@
 <span class="kw">import</span> createCustomFields
 
 <span class="kw">import</span> createSlips
+<span class="kw">import</span> createSlipsManually
 
 <span class="kw">import</span> reviewBillingArrangements
 <span class="kw">import</span> baCommon
@@ -127,6 +128,8 @@ createCustomFields.Create_CustomFields()
 createImportEditNames.CreateImportEdit_Names()
 
 createSlips.Create_Slips(<span class="dig">10</span>,<span class="dig">10</span>) <span class="cmt"># pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+<span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+</span>
 runMonthlyBillCycle.run_MonthlyBillCycle(<span class="dig">1</span>,<span class="dig">13</span>) <span class="cmt"># pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
 
 baCommon.Setup_BADefaultLayout()
