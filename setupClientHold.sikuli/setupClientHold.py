@@ -15,7 +15,7 @@ def Hold_Time_NextBill_Hours():
 
     # move to page with Hold fields
     if int(Settings.tsVersion) > 2014:
-        myTools.pressF6(6)        
+        myTools.pressF6(5)        
     else:
         myTools.pressF6(3)
 
