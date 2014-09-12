@@ -1,703 +1,703 @@
-Transaction Type,Timekeeper Nickname 1,Client Nickname 1,Activity Nickname 1,Reference Nickname 1,Extra,Transaction Date,Hold
-Time,CoreyM,Abington,Build Structure,AAA-Project,Slip: t1,1/1/2013,No
-Time,ElvisP,Acton,DemoS,ACTON-Project01,Slip: t2,1/1/2013,No
-Time,JamesR,Acushnet,Fix,ACUSH-Project02,Slip: t3,1/1/2013,No
-Time,SamS,Adams,DesignS,EEE-Project,Slip: t4,1/1/2013,No
-Time,ShawnR,Agawam,Bid,III-Project,Slip: t5,1/1/2013,No
-Time,TomH,Alford,Clean,OOO-Project,Slip: t6,1/1/2013,No
-Time,CoreyM,Amesbury,DesignL,UUU-Project,Slip: t7,1/1/2013,No
-Time,ElvisP,Amherst,Planting,,Slip: t8,1/1/2013,No
-Time,JamesR,Andover,Lot Maintenance,AAA-Project,Slip: t9,1/2/2013,No
-Time,SamS,Aquinnah,Water Feature,AQUIN-Project01,Slip: t10,1/2/2013,No
-Time,ShawnR,Arlington,Pave,ARLIN-Project02,Slip: t11,1/2/2013,No
-Time,TomH,Ashburnham,DemoL,EEE-Project,Slip: t12,1/2/2013,No
-Time,CoreyM,Ashby,Build Structure,III-Project,Slip: t13,1/2/2013,No
-Time,ElvisP,Ashfield,DemoS,OOO-Project,Slip: t14,1/2/2013,No
-Time,JamesR,Ashland,Fix,UUU-Project,Slip: t15,1/2/2013,No
-Time,SamS,Athol,DesignS,,Slip: t16,1/2/2013,No
-Time,ShawnR,Attleboro,Bid,AAA-Project,Slip: t17,1/3/2013,No
-Time,TomH,Auburn,Clean,AUBUR-Project01,Slip: t18,1/3/2013,No
-Time,CoreyM,Avon,DesignL,AVON-Project02,Slip: t19,1/3/2013,No
-Time,ElvisP,Ayer,Planting,EEE-Project,Slip: t20,1/3/2013,No
-Time,JamesR,Barnstable,Lot Maintenance,III-Project,Slip: t21,1/3/2013,No
-Time,SamS,Barre,Water Feature,OOO-Project,Slip: t22,1/3/2013,No
-Time,ShawnR,Becket,Pave,UUU-Project,Slip: t23,1/3/2013,No
-Time,TomH,Bedford,DemoL,,Slip: t24,1/3/2013,No
-Time,CoreyM,Belchertown,Build Structure,AAA-Project,Slip: t25,1/4/2013,Yes
-Time,ElvisP,Bellingham,DemoS,BELLI-Project01,Slip: t26,1/4/2013,No
-Time,JamesR,Belmont,Fix,BELMO-Project02,Slip: t27,1/4/2013,No
-Time,SamS,Berkley,DesignS,EEE-Project,Slip: t28,1/4/2013,No
-Time,ShawnR,Berlin,Bid,III-Project,Slip: t29,1/4/2013,No
-Time,TomH,Bernardston,Clean,OOO-Project,Slip: t30,1/4/2013,No
-Time,CoreyM,Beverly,DesignL,UUU-Project,Slip: t31,1/4/2013,No
-Time,ElvisP,Billerica,Planting,,Slip: t32,1/4/2013,No
-Time,JamesR,Blackstone,Lot Maintenance,AAA-Project,Slip: t33,1/5/2013,No
-Time,SamS,Blandford,Water Feature,BLAND-Project01,Slip: t34,1/5/2013,No
-Time,ShawnR,Bolton,Pave,BOLTO-Project02,Slip: t35,1/5/2013,No
-Time,TomH,Boston,DemoL,EEE-Project,Slip: t36,1/5/2013,No
-Time,CoreyM,Bourne,Build Structure,III-Project,Slip: t37,1/5/2013,No
-Time,ElvisP,Boxborough,DemoS,OOO-Project,Slip: t38,1/5/2013,No
-Time,JamesR,Boxford,Fix,UUU-Project,Slip: t39,1/5/2013,No
-Time,SamS,Boylston,DesignS,,Slip: t40,1/5/2013,No
-Time,ShawnR,Braintree,Bid,AAA-Project,Slip: t41,1/6/2013,No
-Time,TomH,Brewster,Clean,BREWS-Project01,Slip: t42,1/6/2013,No
-Time,CoreyM,Bridgewater,DesignL,BRIDG-Project02,Slip: t43,1/6/2013,No
-Time,ElvisP,Brimfield,Planting,EEE-Project,Slip: t44,1/6/2013,No
-Time,JamesR,Brockton,Lot Maintenance,III-Project,Slip: t45,1/6/2013,No
-Time,SamS,Brookfield,Water Feature,OOO-Project,Slip: t46,1/6/2013,No
-Time,ShawnR,Brookline,Pave,UUU-Project,Slip: t47,1/6/2013,No
-Time,TomH,Buckland,DemoL,,Slip: t48,1/6/2013,No
-Time,CoreyM,Burlington,Build Structure,AAA-Project,Slip: t49,1/7/2013,No
-Time,ElvisP,Cambridge,DemoS,CAMBR-Project01,Slip: t50,1/7/2013,Yes
-Time,JamesR,Canton,Fix,CANTO-Project02,Slip: t51,1/7/2013,No
-Time,SamS,Carlisle,DesignS,EEE-Project,Slip: t52,1/7/2013,No
-Time,ShawnR,Carver,Bid,III-Project,Slip: t53,1/7/2013,No
-Time,TomH,Charlemont,Clean,OOO-Project,Slip: t54,1/7/2013,No
-Time,CoreyM,Charlton,DesignL,UUU-Project,Slip: t55,1/7/2013,No
-Time,ElvisP,Chatham,Planting,,Slip: t56,1/7/2013,No
-Time,JamesR,Chelmsford,Lot Maintenance,AAA-Project,Slip: t57,1/8/2013,No
-Time,SamS,Chelsea,Water Feature,CHELS-Project01,Slip: t58,1/8/2013,No
-Time,ShawnR,Cheshire,Pave,CHESH-Project02,Slip: t59,1/8/2013,No
-Time,TomH,Chester,DemoL,EEE-Project,Slip: t60,1/8/2013,No
-Time,CoreyM,Chesterfield,Build Structure,III-Project,Slip: t61,1/8/2013,No
-Time,ElvisP,Chicopee,DemoS,OOO-Project,Slip: t62,1/8/2013,No
-Time,JamesR,Chilmark,Fix,UUU-Project,Slip: t63,1/8/2013,No
-Time,SamS,Clarksburg,DesignS,,Slip: t64,1/8/2013,No
-Time,ShawnR,Clinton,Bid,AAA-Project,Slip: t65,1/9/2013,No
-Time,TomH,Cohasset,Clean,COHAS-Project01,Slip: t66,1/9/2013,No
-Time,CoreyM,Colrain,DesignL,COLRA-Project02,Slip: t67,1/9/2013,No
-Time,ElvisP,Concord,Planting,EEE-Project,Slip: t68,1/9/2013,No
-Time,JamesR,Conway,Lot Maintenance,III-Project,Slip: t69,1/9/2013,No
-Time,SamS,Cummington,Water Feature,OOO-Project,Slip: t70,1/9/2013,No
-Time,ShawnR,Dalton,Pave,UUU-Project,Slip: t71,1/9/2013,No
-Time,TomH,Danvers,DemoL,,Slip: t72,1/9/2013,No
-Time,CoreyM,Dartmouth,Build Structure,AAA-Project,Slip: t73,1/10/2013,No
-Time,ElvisP,Dedham,DemoS,DEDHA-Project01,Slip: t74,1/10/2013,No
-Time,JamesR,Deerfield,Fix,DEERF-Project02,Slip: t75,1/10/2013,Yes
-Time,SamS,Dennis,DesignS,EEE-Project,Slip: t76,1/10/2013,No
-Time,ShawnR,Dighton,Bid,III-Project,Slip: t77,1/10/2013,No
-Time,TomH,Douglas,Clean,OOO-Project,Slip: t78,1/10/2013,No
-Time,CoreyM,Dover,DesignL,UUU-Project,Slip: t79,1/10/2013,No
-Time,ElvisP,Dracut,Planting,,Slip: t80,1/10/2013,No
-Time,JamesR,Dudley,Lot Maintenance,AAA-Project,Slip: t81,1/11/2013,No
-Time,SamS,Dunstable,Water Feature,DUNST-Project01,Slip: t82,1/11/2013,No
-Time,ShawnR,Duxbury,Pave,DUXBU-Project02,Slip: t83,1/11/2013,No
-Time,TomH,East Bridgewater,DemoL,EEE-Project,Slip: t84,1/11/2013,No
-Time,CoreyM,East Brookfield,Build Structure,III-Project,Slip: t85,1/11/2013,No
-Time,ElvisP,East Longmeadow,DemoS,OOO-Project,Slip: t86,1/11/2013,No
-Time,JamesR,Eastham,Fix,UUU-Project,Slip: t87,1/11/2013,No
-Time,SamS,Easthampton,DesignS,,Slip: t88,1/11/2013,No
-Time,ShawnR,Easton,Bid,AAA-Project,Slip: t89,1/12/2013,No
-Time,TomH,Edgartown,Clean,EDGAR-Project01,Slip: t90,1/12/2013,No
-Time,CoreyM,Egremont,DesignL,EGREM-Project01,Slip: t91,1/12/2013,No
-Time,ElvisP,Erving,Planting,ERVIN-Project02,Slip: t92,1/12/2013,No
-Time,JamesR,Essex,Lot Maintenance,III-Project,Slip: t93,1/12/2013,No
-Time,SamS,Everett,Water Feature,OOO-Project,Slip: t94,1/12/2013,No
-Time,ShawnR,Fairhaven,Pave,UUU-Project,Slip: t95,1/12/2013,No
-Time,TomH,Fall River,DemoL,,Slip: t96,1/12/2013,No
-Time,CoreyM,Falmouth,Build Structure,AAA-Project,Slip: t97,1/13/2013,No
-Time,ElvisP,Fitchburg,DemoS,EEE-Project,Slip: t98,1/13/2013,No
-Time,JamesR,Florida,Fix,FLORI-Project01,Slip: t99,1/13/2013,No
-Time,SamS,Foxborough,DesignS,FOXBO-Project02,Slip: t100,1/13/2013,Yes
-Time,ShawnR,Framingham,Bid,III-Project,Slip: t101,1/13/2013,No
-Time,TomH,Franklin,Clean,OOO-Project,Slip: t102,1/13/2013,No
-Time,CoreyM,Freetown,DesignL,UUU-Project,Slip: t103,1/13/2013,No
-Time,ElvisP,Gardner,Planting,,Slip: t104,1/13/2013,No
-Time,JamesR,Georgetown,Lot Maintenance,AAA-Project,Slip: t105,1/14/2013,No
-Time,SamS,Gill,Water Feature,EEE-Project,Slip: t106,1/14/2013,No
-Time,ShawnR,Gloucester,Pave,GLOUC-Project01,Slip: t107,1/14/2013,No
-Time,TomH,Goshen,DemoL,GOSHE-Project02,Slip: t108,1/14/2013,No
-Time,CoreyM,Gosnold,Build Structure,III-Project,Slip: t109,1/14/2013,No
-Time,ElvisP,Grafton,DemoS,OOO-Project,Slip: t110,1/14/2013,No
-Time,JamesR,Granby,Fix,UUU-Project,Slip: t111,1/14/2013,No
-Time,SamS,Granville,DesignS,,Slip: t112,1/14/2013,No
-Time,ShawnR,Great Barrington,Bid,AAA-Project,Slip: t113,1/15/2013,No
-Time,TomH,Greenfield,Clean,EEE-Project,Slip: t114,1/15/2013,No
-Time,CoreyM,Groton,DesignL,GROTO-Project01,Slip: t115,1/15/2013,No
-Time,ElvisP,Groveland,Planting,GROVE-Project02,Slip: t116,1/15/2013,No
-Time,JamesR,Hadley,Lot Maintenance,III-Project,Slip: t117,1/15/2013,No
-Time,SamS,Halifax,Water Feature,OOO-Project,Slip: t118,1/15/2013,No
-Time,ShawnR,Hamilton,Pave,UUU-Project,Slip: t119,1/15/2013,No
-Time,TomH,Hampden,DemoL,,Slip: t120,1/15/2013,No
-Time,CoreyM,Hancock,Build Structure,AAA-Project,Slip: t121,1/16/2013,No
-Time,ElvisP,Hanover,DemoS,EEE-Project,Slip: t122,1/16/2013,No
-Time,JamesR,Hanson,Fix,HANSO-Project01,Slip: t123,1/16/2013,No
-Time,SamS,Hardwick,DesignS,HARDW-Project02,Slip: t124,1/16/2013,No
-Time,ShawnR,Harvard,Bid,III-Project,Slip: t125,1/16/2013,Yes
-Time,TomH,Harwich,Clean,OOO-Project,Slip: t126,1/16/2013,No
-Time,CoreyM,Hatfield,DesignL,UUU-Project,Slip: t127,1/16/2013,No
-Time,ElvisP,Haverhill,Planting,,Slip: t128,1/16/2013,No
-Time,JamesR,Hawley,Lot Maintenance,AAA-Project,Slip: t129,1/17/2013,No
-Time,SamS,Heath,Water Feature,EEE-Project,Slip: t130,1/17/2013,No
-Time,ShawnR,Hingham,Pave,HINGH-Project01,Slip: t131,1/17/2013,No
-Time,TomH,Hinsdale,DemoL,HINSD-Project02,Slip: t132,1/17/2013,No
-Time,CoreyM,Holbrook,Build Structure,III-Project,Slip: t133,1/17/2013,No
-Time,ElvisP,Holden,DemoS,OOO-Project,Slip: t134,1/17/2013,No
-Time,JamesR,Holland,Fix,UUU-Project,Slip: t135,1/17/2013,No
-Time,SamS,Holliston,DesignS,,Slip: t136,1/17/2013,No
-Time,ShawnR,Holyoke,Bid,AAA-Project,Slip: t137,1/18/2013,No
-Time,TomH,Hopedale,Clean,EEE-Project,Slip: t138,1/18/2013,No
-Time,CoreyM,Hopkinton,DesignL,HOPKI-Project01,Slip: t139,1/18/2013,No
-Time,ElvisP,Hubbardston,Planting,HUBBA-Project02,Slip: t140,1/18/2013,No
-Time,JamesR,Hudson,Lot Maintenance,III-Project,Slip: t141,1/18/2013,No
-Time,SamS,Hull,Water Feature,OOO-Project,Slip: t142,1/18/2013,No
-Time,ShawnR,Huntington,Pave,UUU-Project,Slip: t143,1/18/2013,No
-Time,TomH,Ipswich,DemoL,,Slip: t144,1/18/2013,No
-Time,CoreyM,Kingston,Build Structure,AAA-Project,Slip: t145,1/19/2013,No
-Time,ElvisP,Lakeville,DemoS,EEE-Project,Slip: t146,1/19/2013,No
-Time,JamesR,Lancaster,Fix,III-Project,Slip: t147,1/19/2013,No
-Time,SamS,Lanesborough,DesignS,LANES-Project01,Slip: t148,1/19/2013,No
-Time,ShawnR,Lawrence,Bid,LAWRE-Project02,Slip: t149,1/19/2013,No
-Time,TomH,Lee,Clean,OOO-Project,Slip: t150,1/19/2013,Yes
-Time,CoreyM,Leicester,DesignL,UUU-Project,Slip: t151,1/19/2013,No
-Time,ElvisP,Lenox,Planting,,Slip: t152,1/19/2013,No
-Time,JamesR,Leominster,Lot Maintenance,AAA-Project,Slip: t153,1/20/2013,No
-Time,SamS,Leverett,Water Feature,EEE-Project,Slip: t154,1/20/2013,No
-Time,ShawnR,Lexington,Pave,III-Project,Slip: t155,1/20/2013,No
-Time,TomH,Leyden,DemoL,LEYDE-Project01,Slip: t156,1/20/2013,No
-Time,CoreyM,Lincoln,Build Structure,LINCO-Project02,Slip: t157,1/20/2013,No
-Time,ElvisP,Littleton,DemoS,OOO-Project,Slip: t158,1/20/2013,No
-Time,JamesR,Longmeadow,Fix,UUU-Project,Slip: t159,1/20/2013,No
-Time,SamS,Lowell,DesignS,,Slip: t160,1/20/2013,No
-Time,ShawnR,Ludlow,Bid,AAA-Project,Slip: t161,1/21/2013,No
-Time,TomH,Lunenburg,Clean,EEE-Project,Slip: t162,1/21/2013,No
-Time,CoreyM,Lynn,DesignL,III-Project,Slip: t163,1/21/2013,No
-Time,ElvisP,Lynnfield,Planting,LYNNF-Project01,Slip: t164,1/21/2013,No
-Time,JamesR,Malden,Lot Maintenance,MALDE-Project02,Slip: t165,1/21/2013,No
-Time,SamS,Manchester-by-the-Sea,Water Feature,OOO-Project,Slip: t166,1/21/2013,No
-Time,ShawnR,Mansfield,Pave,UUU-Project,Slip: t167,1/21/2013,No
-Time,TomH,Marblehead,DemoL,,Slip: t168,1/21/2013,No
-Time,CoreyM,Marion,Build Structure,AAA-Project,Slip: t169,1/22/2013,No
-Time,ElvisP,Marlborough,DemoS,EEE-Project,Slip: t170,1/22/2013,No
-Time,JamesR,Marshfield,Fix,III-Project,Slip: t171,1/22/2013,No
-Time,SamS,Mashpee,DesignS,MASHP-Project01,Slip: t172,1/22/2013,No
-Time,ShawnR,Mattapoisett,Bid,MATTA-Project02,Slip: t173,1/22/2013,No
-Time,TomH,Maynard,Clean,OOO-Project,Slip: t174,1/22/2013,No
-Time,CoreyM,Medfield,DesignL,UUU-Project,Slip: t175,1/22/2013,Yes
-Time,ElvisP,Medford,Planting,,Slip: t176,1/22/2013,No
-Time,JamesR,Medway,Lot Maintenance,AAA-Project,Slip: t177,1/23/2013,No
-Time,SamS,Melrose,Water Feature,EEE-Project,Slip: t178,1/23/2013,No
-Time,ShawnR,Mendon,Pave,III-Project,Slip: t179,1/23/2013,No
-Time,TomH,Merrimac,DemoL,MERRI-Project01,Slip: t180,1/23/2013,No
-Time,CoreyM,Methuen,Build Structure,METHU-Project02,Slip: t181,1/23/2013,No
-Time,ElvisP,Middleborough,DemoS,OOO-Project,Slip: t182,1/23/2013,No
-Time,JamesR,Middlefield,Fix,UUU-Project,Slip: t183,1/23/2013,No
-Time,SamS,Middleton,DesignS,,Slip: t184,1/23/2013,No
-Time,ShawnR,Milford,Bid,AAA-Project,Slip: t185,1/24/2013,No
-Time,TomH,Millbury,Clean,EEE-Project,Slip: t186,1/24/2013,No
-Time,CoreyM,Millis,DesignL,III-Project,Slip: t187,1/24/2013,No
-Time,ElvisP,Millville,Planting,MILLV-Project01,Slip: t188,1/24/2013,No
-Time,JamesR,Milton,Lot Maintenance,MILTO-Project02,Slip: t189,1/24/2013,No
-Time,SamS,Monroe,Water Feature,OOO-Project,Slip: t190,1/24/2013,No
-Time,ShawnR,Monson,Pave,UUU-Project,Slip: t191,1/24/2013,No
-Time,TomH,Montague,DemoL,,Slip: t192,1/24/2013,No
-Time,CoreyM,Monterey,Build Structure,AAA-Project,Slip: t193,1/25/2013,No
-Time,ElvisP,Montgomery,DemoS,EEE-Project,Slip: t194,1/25/2013,No
-Time,JamesR,Mount Washington,Fix,III-Project,Slip: t195,1/25/2013,No
-Time,SamS,Nahant,DesignS,NAHAN-Project01,Slip: t196,1/25/2013,No
-Time,ShawnR,Nantucket,Bid,NANTU-Project02,Slip: t197,1/25/2013,No
-Time,TomH,Natick,Clean,OOO-Project,Slip: t198,1/25/2013,No
-Time,CoreyM,Needham,DesignL,UUU-Project,Slip: t199,1/25/2013,No
-Time,ElvisP,New Ashford,Planting,,Slip: t200,1/25/2013,Yes
-Time,JamesR,New Bedford,Lot Maintenance,AAA-Project,Slip: t201,1/26/2013,No
-Time,SamS,New Braintree,Water Feature,EEE-Project,Slip: t202,1/26/2013,No
-Time,ShawnR,New Marlborough,Pave,III-Project,Slip: t203,1/26/2013,No
-Time,TomH,New Salem,DemoL,NEWSA-Project01,Slip: t204,1/26/2013,No
-Time,CoreyM,Newbury,Build Structure,NEWBU-Project02,Slip: t205,1/26/2013,No
-Time,ElvisP,Newburyport,DemoS,OOO-Project,Slip: t206,1/26/2013,No
-Time,JamesR,Newton,Fix,UUU-Project,Slip: t207,1/26/2013,No
-Time,SamS,Norfolk,DesignS,,Slip: t208,1/26/2013,No
-Time,ShawnR,North Adams,Bid,AAA-Project,Slip: t209,1/27/2013,No
-Time,TomH,North Andover,Clean,EEE-Project,Slip: t210,1/27/2013,No
-Time,CoreyM,North Attleborough,DesignL,III-Project,Slip: t211,1/27/2013,No
-Time,ElvisP,North Brookfield,Planting,NORTH-Project01,Slip: t212,1/27/2013,No
-Time,JamesR,North Reading,Lot Maintenance,NORTH-Project02,Slip: t213,1/27/2013,No
-Time,SamS,Northampton,Water Feature,OOO-Project,Slip: t214,1/27/2013,No
-Time,ShawnR,Northborough,Pave,UUU-Project,Slip: t215,1/27/2013,No
-Time,TomH,Northbridge,DemoL,,Slip: t216,1/27/2013,No
-Time,CoreyM,Northfield,Build Structure,AAA-Project,Slip: t217,1/28/2013,No
-Time,ElvisP,Norton,DemoS,EEE-Project,Slip: t218,1/28/2013,No
-Time,JamesR,Norwell,Fix,III-Project,Slip: t219,1/28/2013,No
-Time,SamS,Norwood,DesignS,NORWO-Project01,Slip: t220,1/28/2013,No
-Time,ShawnR,Oak Bluffs,Bid,OAKBL-Project02,Slip: t221,1/28/2013,No
-Time,TomH,Oakham,Clean,OOO-Project,Slip: t222,1/28/2013,No
-Time,CoreyM,Orange,DesignL,UUU-Project,Slip: t223,1/28/2013,No
-Time,ElvisP,Orleans,Planting,,Slip: t224,1/28/2013,No
-Time,JamesR,Otis,Lot Maintenance,AAA-Project,Slip: t225,1/29/2013,Yes
-Time,SamS,Oxford,Water Feature,EEE-Project,Slip: t226,1/29/2013,No
-Time,ShawnR,Palmer,Pave,III-Project,Slip: t227,1/29/2013,No
-Time,TomH,Paxton,DemoL,OOO-Project,Slip: t228,1/29/2013,No
-Time,CoreyM,Peabody,Build Structure,PEABO-Project01,Slip: t229,1/29/2013,No
-Time,ElvisP,Pelham,DemoS,PELHA-Project02,Slip: t230,1/29/2013,No
-Time,JamesR,Pembroke,Fix,UUU-Project,Slip: t231,1/29/2013,No
-Time,SamS,Pepperell,DesignS,,Slip: t232,1/29/2013,No
-Time,ShawnR,Peru,Bid,AAA-Project,Slip: t233,1/30/2013,No
-Time,TomH,Petersham,Clean,EEE-Project,Slip: t234,1/30/2013,No
-Time,CoreyM,Phillipston,DesignL,III-Project,Slip: t235,1/30/2013,No
-Time,ElvisP,Pittsfield,Planting,OOO-Project,Slip: t236,1/30/2013,No
-Time,JamesR,Plainfield,Lot Maintenance,PLAIN-Project01,Slip: t237,1/30/2013,No
-Time,SamS,Plainville,Water Feature,PLAIN-Project02,Slip: t238,1/30/2013,No
-Time,ShawnR,Plymouth,Pave,UUU-Project,Slip: t239,1/30/2013,No
-Time,TomH,Plympton,DemoL,,Slip: t240,1/30/2013,No
-Time,CoreyM,Princeton,Build Structure,AAA-Project,Slip: t241,1/31/2013,No
-Time,ElvisP,Provincetown,DemoS,EEE-Project,Slip: t242,1/31/2013,No
-Time,JamesR,Quincy,Fix,III-Project,Slip: t243,1/31/2013,No
-Time,SamS,Randolph,DesignS,OOO-Project,Slip: t244,1/31/2013,No
-Time,ShawnR,Raynham,Bid,RAYNH-Project01,Slip: t245,1/31/2013,No
-Time,TomH,Reading,Clean,READI-Project02,Slip: t246,1/31/2013,No
-Time,CoreyM,Rehoboth,DesignL,UUU-Project,Slip: t247,1/31/2013,No
-Time,ElvisP,Revere,Planting,,Slip: t248,1/31/2013,No
-Time,JamesR,Richmond,Lot Maintenance,AAA-Project,Slip: t249,2/1/2013,No
-Time,SamS,Rochester,Water Feature,EEE-Project,Slip: t250,2/1/2013,Yes
-Time,ShawnR,Rockland,Pave,III-Project,Slip: t251,2/1/2013,No
-Time,TomH,Rockport,DemoL,OOO-Project,Slip: t252,2/1/2013,No
-Time,CoreyM,Rowe,Build Structure,ROWE-Project01,Slip: t253,2/1/2013,No
-Time,ElvisP,Rowley,DemoS,ROWLE-Project02,Slip: t254,2/1/2013,No
-Time,JamesR,Royalston,Fix,UUU-Project,Slip: t255,2/1/2013,No
-Time,SamS,Russell,DesignS,,Slip: t256,2/1/2013,No
-Time,ShawnR,Rutland,Bid,AAA-Project,Slip: t257,2/2/2013,No
-Time,TomH,Salem,Clean,EEE-Project,Slip: t258,2/2/2013,No
-Time,CoreyM,Salisbury,DesignL,III-Project,Slip: t259,2/2/2013,No
-Time,ElvisP,Sandisfield,Planting,OOO-Project,Slip: t260,2/2/2013,No
-Time,JamesR,Sandwich,Lot Maintenance,SANDW-Project01,Slip: t261,2/2/2013,No
-Time,SamS,Saugus,Water Feature,SAUGU-Project02,Slip: t262,2/2/2013,No
-Time,ShawnR,Savoy,Pave,UUU-Project,Slip: t263,2/2/2013,No
-Time,TomH,Scituate,DemoL,,Slip: t264,2/2/2013,No
-Time,CoreyM,Seekonk,Build Structure,AAA-Project,Slip: t265,2/3/2013,No
-Time,ElvisP,Sharon,DemoS,EEE-Project,Slip: t266,2/3/2013,No
-Time,JamesR,Sheffield,Fix,III-Project,Slip: t267,2/3/2013,No
-Time,SamS,Shelburne,DesignS,OOO-Project,Slip: t268,2/3/2013,No
-Time,ShawnR,Sherborn,Bid,SHERB-Project01,Slip: t269,2/3/2013,No
-Time,TomH,Shirley,Clean,SHIRL-Project02,Slip: t270,2/3/2013,No
-Time,CoreyM,Shrewsbury,DesignL,UUU-Project,Slip: t271,2/3/2013,No
-Time,ElvisP,Shutesbury,Planting,,Slip: t272,2/3/2013,No
-Time,JamesR,Somerset,Lot Maintenance,AAA-Project,Slip: t273,2/4/2013,No
-Time,SamS,Somerville,Water Feature,EEE-Project,Slip: t274,2/4/2013,No
-Time,ShawnR,South Hadley,Pave,III-Project,Slip: t275,2/4/2013,Yes
-Time,TomH,Southampton,DemoL,OOO-Project,Slip: t276,2/4/2013,No
-Time,CoreyM,Southborough,Build Structure,SOUTH-Project01,Slip: t277,2/4/2013,No
-Time,ElvisP,Southbridge,DemoS,SOUTH-Project02,Slip: t278,2/4/2013,No
-Time,JamesR,Southwick,Fix,UUU-Project,Slip: t279,2/4/2013,No
-Time,SamS,Spencer,DesignS,,Slip: t280,2/4/2013,No
-Time,ShawnR,Springfield,Bid,AAA-Project,Slip: t281,2/5/2013,No
-Time,TomH,Sterling,Clean,EEE-Project,Slip: t282,2/5/2013,No
-Time,CoreyM,Stockbridge,DesignL,III-Project,Slip: t283,2/5/2013,No
-Time,ElvisP,Stoneham,Planting,OOO-Project,Slip: t284,2/5/2013,No
-Time,JamesR,Stoughton,Lot Maintenance,STOUG-Project01,Slip: t285,2/5/2013,No
-Time,SamS,Stow,Water Feature,STOW-Project02,Slip: t286,2/5/2013,No
-Time,ShawnR,Sturbridge,Pave,UUU-Project,Slip: t287,2/5/2013,No
-Time,TomH,Sudbury,DemoL,,Slip: t288,2/5/2013,No
-Time,CoreyM,Sunderland,Build Structure,AAA-Project,Slip: t289,2/6/2013,No
-Time,ElvisP,Sutton,DemoS,EEE-Project,Slip: t290,2/6/2013,No
-Time,JamesR,Swampscott,Fix,III-Project,Slip: t291,2/6/2013,No
-Time,SamS,Swansea,DesignS,OOO-Project,Slip: t292,2/6/2013,No
-Time,ShawnR,Taunton,Bid,TAUNT-Project01,Slip: t293,2/6/2013,No
-Time,TomH,Templeton,Clean,TEMPL-Project02,Slip: t294,2/6/2013,No
-Time,CoreyM,Tewksbury,DesignL,UUU-Project,Slip: t295,2/6/2013,No
-Time,ElvisP,Tisbury,Planting,,Slip: t296,2/6/2013,No
-Time,JamesR,Tolland,Lot Maintenance,AAA-Project,Slip: t297,2/7/2013,No
-Time,SamS,Topsfield,Water Feature,EEE-Project,Slip: t298,2/7/2013,No
-Time,ShawnR,Townsend,Pave,III-Project,Slip: t299,2/7/2013,No
-Time,TomH,Truro,DemoL,OOO-Project,Slip: t300,2/7/2013,Yes
-Time,CoreyM,Tyngsborough,Build Structure,TYNGS-Project01,Slip: t301,2/7/2013,No
-Time,ElvisP,Tyringham,DemoS,TYRIN-Project02,Slip: t302,2/7/2013,No
-Time,JamesR,Upton,Fix,UUU-Project,Slip: t303,2/7/2013,No
-Time,SamS,Uxbridge,DesignS,,Slip: t304,2/7/2013,No
-Time,ShawnR,Wakefield,Bid,AAA-Project,Slip: t305,2/8/2013,No
-Time,TomH,Wales,Clean,EEE-Project,Slip: t306,2/8/2013,No
-Time,CoreyM,Walpole,DesignL,III-Project,Slip: t307,2/8/2013,No
-Time,ElvisP,Waltham,Planting,OOO-Project,Slip: t308,2/8/2013,No
-Time,JamesR,Ware,Lot Maintenance,UUU-Project,Slip: t309,2/8/2013,No
-Time,SamS,Wareham,Water Feature,WAREH-Project01,Slip: t310,2/8/2013,No
-Time,ShawnR,Warren,Pave,WARRE-Project02,Slip: t311,2/8/2013,No
-Time,TomH,Warwick,DemoL,,Slip: t312,2/8/2013,No
-Time,CoreyM,Washington,Build Structure,AAA-Project,Slip: t313,2/9/2013,No
-Time,ElvisP,Watertown,DemoS,EEE-Project,Slip: t314,2/9/2013,No
-Time,JamesR,Wayland,Fix,III-Project,Slip: t315,2/9/2013,No
-Time,SamS,Webster,DesignS,OOO-Project,Slip: t316,2/9/2013,No
-Time,ShawnR,Wellesley,Bid,UUU-Project,Slip: t317,2/9/2013,No
-Time,TomH,Wellfleet,Clean,WELLF-Project01,Slip: t318,2/9/2013,No
-Time,CoreyM,Wendell,DesignL,WENDE-Project02,Slip: t319,2/9/2013,No
-Time,ElvisP,Wenham,Planting,,Slip: t320,2/9/2013,No
-Time,JamesR,West Boylston,Lot Maintenance,AAA-Project,Slip: t321,2/10/2013,No
-Time,SamS,West Bridgewater,Water Feature,EEE-Project,Slip: t322,2/10/2013,No
-Time,ShawnR,West Brookfield,Pave,III-Project,Slip: t323,2/10/2013,No
-Time,TomH,West Newbury,DemoL,OOO-Project,Slip: t324,2/10/2013,No
-Time,CoreyM,West Springfield,Build Structure,UUU-Project,Slip: t325,2/10/2013,Yes
-Time,ElvisP,West Stockbridge,DemoS,WESTS-Project01,Slip: t326,2/10/2013,No
-Time,JamesR,West Tisbury,Fix,WESTT-Project02,Slip: t327,2/10/2013,No
-Time,SamS,Westborough,DesignS,,Slip: t328,2/10/2013,No
-Time,ShawnR,Westfield,Bid,AAA-Project,Slip: t329,2/11/2013,No
-Time,TomH,Westford,Clean,EEE-Project,Slip: t330,2/11/2013,No
-Time,CoreyM,Westhampton,DesignL,III-Project,Slip: t331,2/11/2013,No
-Time,ElvisP,Westminster,Planting,OOO-Project,Slip: t332,2/11/2013,No
-Time,JamesR,Weston,Lot Maintenance,UUU-Project,Slip: t333,2/11/2013,No
-Time,SamS,Westport,Water Feature,WESTP-Project01,Slip: t334,2/11/2013,No
-Time,ShawnR,Westwood,Pave,WESTW-Project02,Slip: t335,2/11/2013,No
-Time,TomH,Weymouth,DemoL,,Slip: t336,2/11/2013,No
-Time,CoreyM,Whately,Build Structure,AAA-Project,Slip: t337,2/12/2013,No
-Time,ElvisP,Whitman,DemoS,EEE-Project,Slip: t338,2/12/2013,No
-Time,JamesR,Wilbraham,Fix,III-Project,Slip: t339,2/12/2013,No
-Time,SamS,Williamsburg,DesignS,OOO-Project,Slip: t340,2/12/2013,No
-Time,ShawnR,Williamstown,Bid,UUU-Project,Slip: t341,2/12/2013,No
-Time,TomH,Wilmington,Clean,WILMI-Project01,Slip: t342,2/12/2013,No
-Time,CoreyM,Winchendon,DesignL,WINCH-Project02,Slip: t343,2/12/2013,No
-Time,ElvisP,Winchester,Planting,,Slip: t344,2/12/2013,No
-Time,JamesR,Windsor,Lot Maintenance,AAA-Project,Slip: t345,2/13/2013,No
-Time,SamS,Winthrop,Water Feature,EEE-Project,Slip: t346,2/13/2013,No
-Time,ShawnR,Woburn,Pave,III-Project,Slip: t347,2/13/2013,No
-Time,TomH,Worcester,DemoL,OOO-Project,Slip: t348,2/13/2013,No
-Time,CoreyM,Worthington,Build Structure,UUU-Project,Slip: t349,2/13/2013,No
-Time,ElvisP,Wrentham,DemoS,WRENT-Project01,Slip: t350,2/13/2013,Yes
-Time,JamesR,Yarmouth,Fix,YARMO-Project02,Slip: t351,2/13/2013,No
-Time,SamS,Abington,DesignS,,Slip: t352,2/13/2013,No
-Time,ShawnR,Acton,Bid,AAA-Project,Slip: t353,2/14/2013,No
-Time,TomH,Acushnet,Clean,ACUSH-Project01,Slip: t354,2/14/2013,No
-Time,CoreyM,Adams,DesignL,ADAMS-Project02,Slip: t355,2/14/2013,No
-Time,ElvisP,Agawam,Planting,EEE-Project,Slip: t356,2/14/2013,No
-Time,JamesR,Alford,Lot Maintenance,III-Project,Slip: t357,2/14/2013,No
-Time,SamS,Amesbury,Water Feature,OOO-Project,Slip: t358,2/14/2013,No
-Time,ShawnR,Amherst,Pave,UUU-Project,Slip: t359,2/14/2013,No
-Time,TomH,Andover,DemoL,,Slip: t360,2/14/2013,No
-Time,CoreyM,Aquinnah,Build Structure,AAA-Project,Slip: t361,2/15/2013,No
-Time,ElvisP,Arlington,DemoS,ARLIN-Project01,Slip: t362,2/15/2013,No
-Time,JamesR,Ashburnham,Fix,ASHBU-Project02,Slip: t363,2/15/2013,No
-Time,SamS,Ashby,DesignS,EEE-Project,Slip: t364,2/15/2013,No
-Time,ShawnR,Ashfield,Bid,III-Project,Slip: t365,2/15/2013,No
-Time,TomH,Ashland,Clean,OOO-Project,Slip: t366,2/15/2013,No
-Time,CoreyM,Athol,DesignL,UUU-Project,Slip: t367,2/15/2013,No
-Time,ElvisP,Attleboro,Planting,,Slip: t368,2/15/2013,No
-Time,JamesR,Auburn,Lot Maintenance,AAA-Project,Slip: t369,2/16/2013,No
-Time,SamS,Avon,Water Feature,AVON-Project01,Slip: t370,2/16/2013,No
-Time,ShawnR,Ayer,Pave,AYER-Project02,Slip: t371,2/16/2013,No
-Time,TomH,Barnstable,DemoL,EEE-Project,Slip: t372,2/16/2013,No
-Time,CoreyM,Barre,Build Structure,III-Project,Slip: t373,2/16/2013,No
-Time,ElvisP,Becket,DemoS,OOO-Project,Slip: t374,2/16/2013,No
-Time,JamesR,Bedford,Fix,UUU-Project,Slip: t375,2/16/2013,Yes
-Time,SamS,Belchertown,DesignS,,Slip: t376,2/16/2013,No
-Time,ShawnR,Bellingham,Bid,AAA-Project,Slip: t377,2/17/2013,No
-Time,TomH,Belmont,Clean,BELMO-Project01,Slip: t378,2/17/2013,No
-Time,CoreyM,Berkley,DesignL,BERKL-Project02,Slip: t379,2/17/2013,No
-Time,ElvisP,Berlin,Planting,EEE-Project,Slip: t380,2/17/2013,No
-Time,JamesR,Bernardston,Lot Maintenance,III-Project,Slip: t381,2/17/2013,No
-Time,SamS,Beverly,Water Feature,OOO-Project,Slip: t382,2/17/2013,No
-Time,ShawnR,Billerica,Pave,UUU-Project,Slip: t383,2/17/2013,No
-Time,TomH,Blackstone,DemoL,,Slip: t384,2/17/2013,No
-Time,CoreyM,Blandford,Build Structure,AAA-Project,Slip: t385,2/18/2013,No
-Time,ElvisP,Bolton,DemoS,BOLTO-Project01,Slip: t386,2/18/2013,No
-Time,JamesR,Boston,Fix,BOSTO-Project02,Slip: t387,2/18/2013,No
-Time,SamS,Bourne,DesignS,EEE-Project,Slip: t388,2/18/2013,No
-Time,ShawnR,Boxborough,Bid,III-Project,Slip: t389,2/18/2013,No
-Time,TomH,Boxford,Clean,OOO-Project,Slip: t390,2/18/2013,No
-Time,CoreyM,Boylston,DesignL,UUU-Project,Slip: t391,2/18/2013,No
-Time,ElvisP,Braintree,Planting,,Slip: t392,2/18/2013,No
-Time,JamesR,Brewster,Lot Maintenance,AAA-Project,Slip: t393,2/19/2013,No
-Time,SamS,Bridgewater,Water Feature,BRIDG-Project01,Slip: t394,2/19/2013,No
-Time,ShawnR,Brimfield,Pave,BRIMF-Project02,Slip: t395,2/19/2013,No
-Time,TomH,Brockton,DemoL,EEE-Project,Slip: t396,2/19/2013,No
-Time,CoreyM,Brookfield,Build Structure,III-Project,Slip: t397,2/19/2013,No
-Time,ElvisP,Brookline,DemoS,OOO-Project,Slip: t398,2/19/2013,No
-Time,JamesR,Buckland,Fix,UUU-Project,Slip: t399,2/19/2013,No
-Time,SamS,Burlington,DesignS,,Slip: t400,2/19/2013,Yes
-Time,ShawnR,Cambridge,Bid,AAA-Project,Slip: t401,2/20/2013,No
-Time,TomH,Canton,Clean,CANTO-Project01,Slip: t402,2/20/2013,No
-Time,CoreyM,Carlisle,DesignL,CARLI-Project02,Slip: t403,2/20/2013,No
-Time,ElvisP,Carver,Planting,EEE-Project,Slip: t404,2/20/2013,No
-Time,JamesR,Charlemont,Lot Maintenance,III-Project,Slip: t405,2/20/2013,No
-Time,SamS,Charlton,Water Feature,OOO-Project,Slip: t406,2/20/2013,No
-Time,ShawnR,Chatham,Pave,UUU-Project,Slip: t407,2/20/2013,No
-Time,TomH,Chelmsford,DemoL,,Slip: t408,2/20/2013,No
-Time,CoreyM,Chelsea,Build Structure,AAA-Project,Slip: t409,2/21/2013,No
-Time,ElvisP,Cheshire,DemoS,CHESH-Project01,Slip: t410,2/21/2013,No
-Time,JamesR,Chester,Fix,CHEST-Project02,Slip: t411,2/21/2013,No
-Time,SamS,Chesterfield,DesignS,EEE-Project,Slip: t412,2/21/2013,No
-Time,ShawnR,Chicopee,Bid,III-Project,Slip: t413,2/21/2013,No
-Time,TomH,Chilmark,Clean,OOO-Project,Slip: t414,2/21/2013,No
-Time,CoreyM,Clarksburg,DesignL,UUU-Project,Slip: t415,2/21/2013,No
-Time,ElvisP,Clinton,Planting,,Slip: t416,2/21/2013,No
-Time,JamesR,Cohasset,Lot Maintenance,AAA-Project,Slip: t417,2/22/2013,No
-Time,SamS,Colrain,Water Feature,COLRA-Project01,Slip: t418,2/22/2013,No
-Time,ShawnR,Concord,Pave,CONCO-Project02,Slip: t419,2/22/2013,No
-Time,TomH,Conway,DemoL,EEE-Project,Slip: t420,2/22/2013,No
-Time,CoreyM,Cummington,Build Structure,III-Project,Slip: t421,2/22/2013,No
-Time,ElvisP,Dalton,DemoS,OOO-Project,Slip: t422,2/22/2013,No
-Time,JamesR,Danvers,Fix,UUU-Project,Slip: t423,2/22/2013,No
-Time,SamS,Dartmouth,DesignS,,Slip: t424,2/22/2013,No
-Time,ShawnR,Dedham,Bid,AAA-Project,Slip: t425,2/23/2013,Yes
-Time,TomH,Deerfield,Clean,DEERF-Project01,Slip: t426,2/23/2013,No
-Time,CoreyM,Dennis,DesignL,DENNI-Project02,Slip: t427,2/23/2013,No
-Time,ElvisP,Dighton,Planting,EEE-Project,Slip: t428,2/23/2013,No
-Time,JamesR,Douglas,Lot Maintenance,III-Project,Slip: t429,2/23/2013,No
-Time,SamS,Dover,Water Feature,OOO-Project,Slip: t430,2/23/2013,No
-Time,ShawnR,Dracut,Pave,UUU-Project,Slip: t431,2/23/2013,No
-Time,TomH,Dudley,DemoL,,Slip: t432,2/23/2013,No
-Time,CoreyM,Dunstable,Build Structure,AAA-Project,Slip: t433,2/24/2013,No
-Time,ElvisP,Duxbury,DemoS,DUXBU-Project01,Slip: t434,2/24/2013,No
-Time,JamesR,East Bridgewater,Fix,EASTB-Project02,Slip: t435,2/24/2013,No
-Time,SamS,East Brookfield,DesignS,EEE-Project,Slip: t436,2/24/2013,No
-Time,ShawnR,East Longmeadow,Bid,III-Project,Slip: t437,2/24/2013,No
-Time,TomH,Eastham,Clean,OOO-Project,Slip: t438,2/24/2013,No
-Time,CoreyM,Easthampton,DesignL,UUU-Project,Slip: t439,2/24/2013,No
-Time,ElvisP,Easton,Planting,,Slip: t440,2/24/2013,No
-Time,JamesR,Edgartown,Lot Maintenance,AAA-Project,Slip: t441,2/25/2013,No
-Time,SamS,Egremont,Water Feature,EEE-Project,Slip: t442,2/25/2013,No
-Time,ShawnR,Erving,Pave,ERVIN-Project01,Slip: t443,2/25/2013,No
-Time,TomH,Essex,DemoL,ESSEX-Project02,Slip: t444,2/25/2013,No
-Time,CoreyM,Everett,Build Structure,III-Project,Slip: t445,2/25/2013,No
-Time,ElvisP,Fairhaven,DemoS,OOO-Project,Slip: t446,2/25/2013,No
-Time,JamesR,Fall River,Fix,UUU-Project,Slip: t447,2/25/2013,No
-Time,SamS,Falmouth,DesignS,,Slip: t448,2/25/2013,No
-Time,ShawnR,Fitchburg,Bid,AAA-Project,Slip: t449,2/26/2013,No
-Time,TomH,Florida,Clean,EEE-Project,Slip: t450,2/26/2013,Yes
-Time,CoreyM,Foxborough,DesignL,FOXBO-Project01,Slip: t451,2/26/2013,No
-Time,ElvisP,Framingham,Planting,FRAMI-Project02,Slip: t452,2/26/2013,No
-Time,JamesR,Franklin,Lot Maintenance,III-Project,Slip: t453,2/26/2013,No
-Time,SamS,Freetown,Water Feature,OOO-Project,Slip: t454,2/26/2013,No
-Time,ShawnR,Gardner,Pave,UUU-Project,Slip: t455,2/26/2013,No
-Time,TomH,Georgetown,DemoL,,Slip: t456,2/26/2013,No
-Time,CoreyM,Gill,Build Structure,AAA-Project,Slip: t457,2/27/2013,No
-Time,ElvisP,Gloucester,DemoS,EEE-Project,Slip: t458,2/27/2013,No
-Time,JamesR,Goshen,Fix,GOSHE-Project01,Slip: t459,2/27/2013,No
-Time,SamS,Gosnold,DesignS,GOSNO-Project02,Slip: t460,2/27/2013,No
-Time,ShawnR,Grafton,Bid,III-Project,Slip: t461,2/27/2013,No
-Time,TomH,Granby,Clean,OOO-Project,Slip: t462,2/27/2013,No
-Time,CoreyM,Granville,DesignL,UUU-Project,Slip: t463,2/27/2013,No
-Time,ElvisP,Great Barrington,Planting,,Slip: t464,2/27/2013,No
-Time,JamesR,Greenfield,Lot Maintenance,AAA-Project,Slip: t465,2/28/2013,No
-Time,SamS,Groton,Water Feature,EEE-Project,Slip: t466,2/28/2013,No
-Time,ShawnR,Groveland,Pave,GROVE-Project01,Slip: t467,2/28/2013,No
-Time,TomH,Hadley,DemoL,HADLE-Project02,Slip: t468,2/28/2013,No
-Time,CoreyM,Halifax,Build Structure,III-Project,Slip: t469,2/28/2013,No
-Time,ElvisP,Hamilton,DemoS,OOO-Project,Slip: t470,2/28/2013,No
-Time,JamesR,Hampden,Fix,UUU-Project,Slip: t471,2/28/2013,No
-Time,SamS,Hancock,DesignS,,Slip: t472,2/28/2013,No
-Time,ShawnR,Hanover,Bid,AAA-Project,Slip: t473,3/1/2013,No
-Time,TomH,Hanson,Clean,EEE-Project,Slip: t474,3/1/2013,No
-Time,CoreyM,Hardwick,DesignL,HARDW-Project01,Slip: t475,3/1/2013,Yes
-Time,ElvisP,Harvard,Planting,HARVA-Project02,Slip: t476,3/1/2013,No
-Time,JamesR,Harwich,Lot Maintenance,III-Project,Slip: t477,3/1/2013,No
-Time,SamS,Hatfield,Water Feature,OOO-Project,Slip: t478,3/1/2013,No
-Time,ShawnR,Haverhill,Pave,UUU-Project,Slip: t479,3/1/2013,No
-Time,TomH,Hawley,DemoL,,Slip: t480,3/1/2013,No
-Time,CoreyM,Heath,Build Structure,AAA-Project,Slip: t481,3/2/2013,No
-Time,ElvisP,Hingham,DemoS,EEE-Project,Slip: t482,3/2/2013,No
-Time,JamesR,Hinsdale,Fix,HINSD-Project01,Slip: t483,3/2/2013,No
-Time,SamS,Holbrook,DesignS,HOLBR-Project02,Slip: t484,3/2/2013,No
-Time,ShawnR,Holden,Bid,III-Project,Slip: t485,3/2/2013,No
-Time,TomH,Holland,Clean,OOO-Project,Slip: t486,3/2/2013,No
-Time,CoreyM,Holliston,DesignL,UUU-Project,Slip: t487,3/2/2013,No
-Time,ElvisP,Holyoke,Planting,,Slip: t488,3/2/2013,No
-Time,JamesR,Hopedale,Lot Maintenance,AAA-Project,Slip: t489,3/3/2013,No
-Time,SamS,Hopkinton,Water Feature,EEE-Project,Slip: t490,3/3/2013,No
-Time,ShawnR,Hubbardston,Pave,HUBBA-Project01,Slip: t491,3/3/2013,No
-Time,TomH,Hudson,DemoL,HUDSO-Project02,Slip: t492,3/3/2013,No
-Time,CoreyM,Hull,Build Structure,III-Project,Slip: t493,3/3/2013,No
-Time,ElvisP,Huntington,DemoS,OOO-Project,Slip: t494,3/3/2013,No
-Time,JamesR,Ipswich,Fix,UUU-Project,Slip: t495,3/3/2013,No
-Time,SamS,Kingston,DesignS,,Slip: t496,3/3/2013,No
-Time,ShawnR,Lakeville,Bid,AAA-Project,Slip: t497,3/4/2013,No
-Time,TomH,Lancaster,Clean,EEE-Project,Slip: t498,3/4/2013,No
-Time,CoreyM,Lanesborough,DesignL,III-Project,Slip: t499,3/4/2013,No
-Time,ElvisP,Lawrence,Planting,LAWRE-Project01,Slip: t500,3/4/2013,Yes
-Time,JamesR,Lee,Lot Maintenance,LEE-Project02,Slip: t501,3/4/2013,No
-Time,SamS,Leicester,Water Feature,OOO-Project,Slip: t502,3/4/2013,No
-Time,ShawnR,Lenox,Pave,UUU-Project,Slip: t503,3/4/2013,No
-Time,TomH,Leominster,DemoL,,Slip: t504,3/4/2013,No
-Time,CoreyM,Leverett,Build Structure,AAA-Project,Slip: t505,3/5/2013,No
-Time,ElvisP,Lexington,DemoS,EEE-Project,Slip: t506,3/5/2013,No
-Time,JamesR,Leyden,Fix,III-Project,Slip: t507,3/5/2013,No
-Time,SamS,Lincoln,DesignS,LINCO-Project01,Slip: t508,3/5/2013,No
-Time,ShawnR,Littleton,Bid,LITTL-Project02,Slip: t509,3/5/2013,No
-Time,TomH,Longmeadow,Clean,OOO-Project,Slip: t510,3/5/2013,No
-Time,CoreyM,Lowell,DesignL,UUU-Project,Slip: t511,3/5/2013,No
-Time,ElvisP,Ludlow,Planting,,Slip: t512,3/5/2013,No
-Time,JamesR,Lunenburg,Lot Maintenance,AAA-Project,Slip: t513,3/6/2013,No
-Time,SamS,Lynn,Water Feature,EEE-Project,Slip: t514,3/6/2013,No
-Time,ShawnR,Lynnfield,Pave,III-Project,Slip: t515,3/6/2013,No
-Time,TomH,Malden,DemoL,MALDE-Project01,Slip: t516,3/6/2013,No
-Time,CoreyM,Manchester-by-the-Sea,Build Structure,MANCH-Project02,Slip: t517,3/6/2013,No
-Time,ElvisP,Mansfield,DemoS,OOO-Project,Slip: t518,3/6/2013,No
-Time,JamesR,Marblehead,Fix,UUU-Project,Slip: t519,3/6/2013,No
-Time,SamS,Marion,DesignS,,Slip: t520,3/6/2013,No
-Time,ShawnR,Marlborough,Bid,AAA-Project,Slip: t521,3/7/2013,No
-Time,TomH,Marshfield,Clean,EEE-Project,Slip: t522,3/7/2013,No
-Time,CoreyM,Mashpee,DesignL,III-Project,Slip: t523,3/7/2013,No
-Time,ElvisP,Mattapoisett,Planting,MATTA-Project01,Slip: t524,3/7/2013,No
-Time,JamesR,Maynard,Lot Maintenance,MAYNA-Project02,Slip: t525,3/7/2013,Yes
-Time,SamS,Medfield,Water Feature,OOO-Project,Slip: t526,3/7/2013,No
-Time,ShawnR,Medford,Pave,UUU-Project,Slip: t527,3/7/2013,No
-Time,TomH,Medway,DemoL,,Slip: t528,3/7/2013,No
-Time,CoreyM,Melrose,Build Structure,AAA-Project,Slip: t529,3/8/2013,No
-Time,ElvisP,Mendon,DemoS,EEE-Project,Slip: t530,3/8/2013,No
-Time,JamesR,Merrimac,Fix,III-Project,Slip: t531,3/8/2013,No
-Time,SamS,Methuen,DesignS,METHU-Project01,Slip: t532,3/8/2013,No
-Time,ShawnR,Middleborough,Bid,MIDDL-Project02,Slip: t533,3/8/2013,No
-Time,TomH,Middlefield,Clean,OOO-Project,Slip: t534,3/8/2013,No
-Time,CoreyM,Middleton,DesignL,UUU-Project,Slip: t535,3/8/2013,No
-Time,ElvisP,Milford,Planting,,Slip: t536,3/8/2013,No
-Time,JamesR,Millbury,Lot Maintenance,AAA-Project,Slip: t537,3/9/2013,No
-Time,SamS,Millis,Water Feature,EEE-Project,Slip: t538,3/9/2013,No
-Time,ShawnR,Millville,Pave,III-Project,Slip: t539,3/9/2013,No
-Time,TomH,Milton,DemoL,MILTO-Project01,Slip: t540,3/9/2013,No
-Time,CoreyM,Monroe,Build Structure,MONRO-Project02,Slip: t541,3/9/2013,No
-Time,ElvisP,Monson,DemoS,OOO-Project,Slip: t542,3/9/2013,No
-Time,JamesR,Montague,Fix,UUU-Project,Slip: t543,3/9/2013,No
-Time,SamS,Monterey,DesignS,,Slip: t544,3/9/2013,No
-Time,ShawnR,Montgomery,Bid,AAA-Project,Slip: t545,3/10/2013,No
-Time,TomH,Mount Washington,Clean,EEE-Project,Slip: t546,3/10/2013,No
-Time,CoreyM,Nahant,DesignL,III-Project,Slip: t547,3/10/2013,No
-Time,ElvisP,Nantucket,Planting,NANTU-Project01,Slip: t548,3/10/2013,No
-Time,JamesR,Natick,Lot Maintenance,NATIC-Project02,Slip: t549,3/10/2013,No
-Time,SamS,Needham,Water Feature,OOO-Project,Slip: t550,3/10/2013,Yes
-Time,ShawnR,New Ashford,Pave,UUU-Project,Slip: t551,3/10/2013,No
-Time,TomH,New Bedford,DemoL,,Slip: t552,3/10/2013,No
-Time,CoreyM,New Braintree,Build Structure,AAA-Project,Slip: t553,3/11/2013,No
-Time,ElvisP,New Marlborough,DemoS,EEE-Project,Slip: t554,3/11/2013,No
-Time,JamesR,New Salem,Fix,III-Project,Slip: t555,3/11/2013,No
-Time,SamS,Newbury,DesignS,NEWBU-Project01,Slip: t556,3/11/2013,No
-Time,ShawnR,Newburyport,Bid,NEWBU-Project02,Slip: t557,3/11/2013,No
-Time,TomH,Newton,Clean,OOO-Project,Slip: t558,3/11/2013,No
-Time,CoreyM,Norfolk,DesignL,UUU-Project,Slip: t559,3/11/2013,No
-Time,ElvisP,North Adams,Planting,,Slip: t560,3/11/2013,No
-Time,JamesR,North Andover,Lot Maintenance,AAA-Project,Slip: t561,3/12/2013,No
-Time,SamS,North Attleborough,Water Feature,EEE-Project,Slip: t562,3/12/2013,No
-Time,ShawnR,North Brookfield,Pave,III-Project,Slip: t563,3/12/2013,No
-Time,TomH,North Reading,DemoL,NORTH-Project01,Slip: t564,3/12/2013,No
-Time,CoreyM,Northampton,Build Structure,NORTH-Project02,Slip: t565,3/12/2013,No
-Time,ElvisP,Northborough,DemoS,OOO-Project,Slip: t566,3/12/2013,No
-Time,JamesR,Northbridge,Fix,UUU-Project,Slip: t567,3/12/2013,No
-Time,SamS,Northfield,DesignS,,Slip: t568,3/12/2013,No
-Time,ShawnR,Norton,Bid,AAA-Project,Slip: t569,3/13/2013,No
-Time,TomH,Norwell,Clean,EEE-Project,Slip: t570,3/13/2013,No
-Time,CoreyM,Norwood,DesignL,III-Project,Slip: t571,3/13/2013,No
-Time,ElvisP,Oak Bluffs,Planting,OAKBL-Project01,Slip: t572,3/13/2013,No
-Time,JamesR,Oakham,Lot Maintenance,OAKHA-Project02,Slip: t573,3/13/2013,No
-Time,SamS,Orange,Water Feature,ORANG-Project02,Slip: t574,3/13/2013,No
-Time,ShawnR,Orleans,Pave,UUU-Project,Slip: t575,3/13/2013,Yes
-Time,TomH,Otis,DemoL,,Slip: t576,3/13/2013,No
-Time,CoreyM,Oxford,Build Structure,AAA-Project,Slip: t577,3/14/2013,No
-Time,ElvisP,Palmer,DemoS,EEE-Project,Slip: t578,3/14/2013,No
-Time,JamesR,Paxton,Fix,III-Project,Slip: t579,3/14/2013,No
-Time,SamS,Peabody,DesignS,OOO-Project,Slip: t580,3/14/2013,No
-Time,ShawnR,Pelham,Bid,PELHA-Project01,Slip: t581,3/14/2013,No
-Time,TomH,Pembroke,Clean,PEMBR-Project02,Slip: t582,3/14/2013,No
-Time,CoreyM,Pepperell,DesignL,UUU-Project,Slip: t583,3/14/2013,No
-Time,ElvisP,Peru,Planting,,Slip: t584,3/14/2013,No
-Time,JamesR,Petersham,Lot Maintenance,AAA-Project,Slip: t585,3/15/2013,No
-Time,SamS,Phillipston,Water Feature,EEE-Project,Slip: t586,3/15/2013,No
-Time,ShawnR,Pittsfield,Pave,III-Project,Slip: t587,3/15/2013,No
-Time,TomH,Plainfield,DemoL,OOO-Project,Slip: t588,3/15/2013,No
-Time,CoreyM,Plainville,Build Structure,PLAIN-Project01,Slip: t589,3/15/2013,No
-Time,ElvisP,Plymouth,DemoS,PLYMO-Project02,Slip: t590,3/15/2013,No
-Time,JamesR,Plympton,Fix,UUU-Project,Slip: t591,3/15/2013,No
-Time,SamS,Princeton,DesignS,,Slip: t592,3/15/2013,No
-Time,ShawnR,Provincetown,Bid,AAA-Project,Slip: t593,3/16/2013,No
-Time,TomH,Quincy,Clean,EEE-Project,Slip: t594,3/16/2013,No
-Time,CoreyM,Randolph,DesignL,III-Project,Slip: t595,3/16/2013,No
-Time,ElvisP,Raynham,Planting,OOO-Project,Slip: t596,3/16/2013,No
-Time,JamesR,Reading,Lot Maintenance,READI-Project01,Slip: t597,3/16/2013,No
-Time,SamS,Rehoboth,Water Feature,REHOB-Project02,Slip: t598,3/16/2013,No
-Time,ShawnR,Revere,Pave,UUU-Project,Slip: t599,3/16/2013,No
-Time,TomH,Richmond,DemoL,,Slip: t600,3/16/2013,Yes
-Time,CoreyM,Rochester,Build Structure,AAA-Project,Slip: t601,3/17/2013,No
-Time,ElvisP,Rockland,DemoS,EEE-Project,Slip: t602,3/17/2013,No
-Time,JamesR,Rockport,Fix,III-Project,Slip: t603,3/17/2013,No
-Time,SamS,Rowe,DesignS,OOO-Project,Slip: t604,3/17/2013,No
-Time,ShawnR,Rowley,Bid,ROWLE-Project01,Slip: t605,3/17/2013,No
-Time,TomH,Royalston,Clean,ROYAL-Project02,Slip: t606,3/17/2013,No
-Time,CoreyM,Russell,DesignL,UUU-Project,Slip: t607,3/17/2013,No
-Time,ElvisP,Rutland,Planting,,Slip: t608,3/17/2013,No
-Time,JamesR,Salem,Lot Maintenance,AAA-Project,Slip: t609,3/18/2013,No
-Time,SamS,Salisbury,Water Feature,EEE-Project,Slip: t610,3/18/2013,No
-Time,ShawnR,Sandisfield,Pave,III-Project,Slip: t611,3/18/2013,No
-Time,TomH,Sandwich,DemoL,OOO-Project,Slip: t612,3/18/2013,No
-Time,CoreyM,Saugus,Build Structure,SAUGU-Project01,Slip: t613,3/18/2013,No
-Time,ElvisP,Savoy,DemoS,SAVOY-Project02,Slip: t614,3/18/2013,No
-Time,JamesR,Scituate,Fix,UUU-Project,Slip: t615,3/18/2013,No
-Time,SamS,Seekonk,DesignS,,Slip: t616,3/18/2013,No
-Time,ShawnR,Sharon,Bid,AAA-Project,Slip: t617,3/19/2013,No
-Time,TomH,Sheffield,Clean,EEE-Project,Slip: t618,3/19/2013,No
-Time,CoreyM,Shelburne,DesignL,III-Project,Slip: t619,3/19/2013,No
-Time,ElvisP,Sherborn,Planting,OOO-Project,Slip: t620,3/19/2013,No
-Time,JamesR,Shirley,Lot Maintenance,SHIRL-Project01,Slip: t621,3/19/2013,No
-Time,SamS,Shrewsbury,Water Feature,SHREW-Project02,Slip: t622,3/19/2013,No
-Time,ShawnR,Shutesbury,Pave,UUU-Project,Slip: t623,3/19/2013,No
-Time,TomH,Somerset,DemoL,,Slip: t624,3/19/2013,No
-Time,CoreyM,Somerville,Build Structure,AAA-Project,Slip: t625,3/20/2013,Yes
-Time,ElvisP,South Hadley,DemoS,EEE-Project,Slip: t626,3/20/2013,No
-Time,JamesR,Southampton,Fix,III-Project,Slip: t627,3/20/2013,No
-Time,SamS,Southborough,DesignS,OOO-Project,Slip: t628,3/20/2013,No
-Time,ShawnR,Southbridge,Bid,SOUTH-Project01,Slip: t629,3/20/2013,No
-Time,TomH,Southwick,Clean,SOUTH-Project02,Slip: t630,3/20/2013,No
-Time,CoreyM,Spencer,DesignL,UUU-Project,Slip: t631,3/20/2013,No
-Time,ElvisP,Springfield,Planting,,Slip: t632,3/20/2013,No
-Time,JamesR,Sterling,Lot Maintenance,AAA-Project,Slip: t633,3/21/2013,No
-Time,SamS,Stockbridge,Water Feature,EEE-Project,Slip: t634,3/21/2013,No
-Time,ShawnR,Stoneham,Pave,III-Project,Slip: t635,3/21/2013,No
-Time,TomH,Stoughton,DemoL,OOO-Project,Slip: t636,3/21/2013,No
-Time,CoreyM,Stow,Build Structure,STOW-Project01,Slip: t637,3/21/2013,No
-Time,ElvisP,Sturbridge,DemoS,STURB-Project02,Slip: t638,3/21/2013,No
-Time,JamesR,Sudbury,Fix,UUU-Project,Slip: t639,3/21/2013,No
-Time,SamS,Sunderland,DesignS,,Slip: t640,3/21/2013,No
-Time,ShawnR,Sutton,Bid,AAA-Project,Slip: t641,3/22/2013,No
-Time,TomH,Swampscott,Clean,EEE-Project,Slip: t642,3/22/2013,No
-Time,CoreyM,Swansea,DesignL,III-Project,Slip: t643,3/22/2013,No
-Time,ElvisP,Taunton,Planting,OOO-Project,Slip: t644,3/22/2013,No
-Time,JamesR,Templeton,Lot Maintenance,TEMPL-Project01,Slip: t645,3/22/2013,No
-Time,SamS,Tewksbury,Water Feature,TEWKS-Project02,Slip: t646,3/22/2013,No
-Time,ShawnR,Tisbury,Pave,UUU-Project,Slip: t647,3/22/2013,No
-Time,TomH,Tolland,DemoL,,Slip: t648,3/22/2013,No
-Time,CoreyM,Topsfield,Build Structure,AAA-Project,Slip: t649,3/23/2013,No
-Time,ElvisP,Townsend,DemoS,EEE-Project,Slip: t650,3/23/2013,Yes
-Time,JamesR,Truro,Fix,III-Project,Slip: t651,3/23/2013,No
-Time,SamS,Tyngsborough,DesignS,OOO-Project,Slip: t652,3/23/2013,No
-Time,ShawnR,Tyringham,Bid,TYRIN-Project01,Slip: t653,3/23/2013,No
-Time,TomH,Upton,Clean,UPTON-Project02,Slip: t654,3/23/2013,No
-Time,CoreyM,Uxbridge,DesignL,UXBRI-Project02,Slip: t655,3/23/2013,No
-Time,ElvisP,Wakefield,Planting,,Slip: t656,3/23/2013,No
-Time,JamesR,Wales,Lot Maintenance,AAA-Project,Slip: t657,3/24/2013,No
-Time,SamS,Walpole,Water Feature,EEE-Project,Slip: t658,3/24/2013,No
-Time,ShawnR,Waltham,Pave,III-Project,Slip: t659,3/24/2013,No
-Time,TomH,Ware,DemoL,OOO-Project,Slip: t660,3/24/2013,No
-Time,CoreyM,Wareham,Build Structure,UUU-Project,Slip: t661,3/24/2013,No
-Time,ElvisP,Warren,DemoS,WARRE-Project01,Slip: t662,3/24/2013,No
-Time,JamesR,Warwick,Fix,WARWI-Project02,Slip: t663,3/24/2013,No
-Time,SamS,Washington,DesignS,,Slip: t664,3/24/2013,No
-Time,ShawnR,Watertown,Bid,AAA-Project,Slip: t665,3/25/2013,No
-Time,TomH,Wayland,Clean,EEE-Project,Slip: t666,3/25/2013,No
-Time,CoreyM,Webster,DesignL,III-Project,Slip: t667,3/25/2013,No
-Time,ElvisP,Wellesley,Planting,OOO-Project,Slip: t668,3/25/2013,No
-Time,JamesR,Wellfleet,Lot Maintenance,UUU-Project,Slip: t669,3/25/2013,No
-Time,SamS,Wendell,Water Feature,WENDE-Project01,Slip: t670,3/25/2013,No
-Time,ShawnR,Wenham,Pave,WENHA-Project02,Slip: t671,3/25/2013,No
-Time,TomH,West Boylston,DemoL,,Slip: t672,3/25/2013,No
-Time,CoreyM,West Bridgewater,Build Structure,AAA-Project,Slip: t673,3/26/2013,No
-Time,ElvisP,West Brookfield,DemoS,EEE-Project,Slip: t674,3/26/2013,No
-Time,JamesR,West Newbury,Fix,III-Project,Slip: t675,3/26/2013,Yes
-Time,SamS,West Springfield,DesignS,OOO-Project,Slip: t676,3/26/2013,No
-Time,ShawnR,West Stockbridge,Bid,UUU-Project,Slip: t677,3/26/2013,No
-Time,TomH,West Tisbury,Clean,WESTT-Project01,Slip: t678,3/26/2013,No
-Time,CoreyM,Westborough,DesignL,WESTB-Project02,Slip: t679,3/26/2013,No
-Time,ElvisP,Westfield,Planting,,Slip: t680,3/26/2013,No
-Time,JamesR,Westford,Lot Maintenance,AAA-Project,Slip: t681,3/27/2013,No
-Time,SamS,Westhampton,Water Feature,EEE-Project,Slip: t682,3/27/2013,No
-Time,ShawnR,Westminster,Pave,III-Project,Slip: t683,3/27/2013,No
-Time,TomH,Weston,DemoL,OOO-Project,Slip: t684,3/27/2013,No
-Time,CoreyM,Westport,Build Structure,UUU-Project,Slip: t685,3/27/2013,No
-Time,ElvisP,Westwood,DemoS,WESTW-Project01,Slip: t686,3/27/2013,No
-Time,JamesR,Weymouth,Fix,WEYMO-Project02,Slip: t687,3/27/2013,No
-Time,SamS,Whately,DesignS,,Slip: t688,3/27/2013,No
-Time,ShawnR,Whitman,Bid,AAA-Project,Slip: t689,3/28/2013,No
-Time,TomH,Wilbraham,Clean,EEE-Project,Slip: t690,3/28/2013,No
-Time,CoreyM,Williamsburg,DesignL,III-Project,Slip: t691,3/28/2013,No
-Time,ElvisP,Williamstown,Planting,OOO-Project,Slip: t692,3/28/2013,No
-Time,JamesR,Wilmington,Lot Maintenance,UUU-Project,Slip: t693,3/28/2013,No
-Time,SamS,Winchendon,Water Feature,WINCH-Project01,Slip: t694,3/28/2013,No
-Time,ShawnR,Winchester,Pave,WINCH-Project02,Slip: t695,3/28/2013,No
-Time,TomH,Windsor,DemoL,,Slip: t696,3/28/2013,No
-Time,CoreyM,Winthrop,Build Structure,AAA-Project,Slip: t697,3/29/2013,No
-Time,ElvisP,Woburn,DemoS,EEE-Project,Slip: t698,3/29/2013,No
-Time,JamesR,Worcester,Fix,III-Project,Slip: t699,3/29/2013,No
-Time,SamS,Worthington,DesignS,OOO-Project,Slip: t700,3/29/2013,Yes
-Time,ShawnR,Wrentham,Bid,UUU-Project,Slip: t701,3/29/2013,No
-Time,TomH,Yarmouth,Clean,YARMO-Project01,Slip: t702,3/29/2013,No
+"Transaction Type","Timekeeper Nickname 1","Client Nickname 1","Activity Nickname 1","Reference Nickname 1","Extra","Transaction Date","Hold",
+"Time","CoreyM","Abington","Build Structure","AAA-Project","Slip: t1","01/01/2013","No"
+"Time","JamesR","Acton","DemoS","ACTON-Project01","Slip: t2","01/01/2013","No"
+"Time","SamS","Acushnet","Fix","ACUSH-Project02","Slip: t3","01/01/2013","No"
+"Time","ShawnR","Adams","DesignS","EEE-Project","Slip: t4","01/01/2013","No"
+"Time","TomH","Agawam","Bid","III-Project","Slip: t5","01/01/2013","No"
+"Time","CoreyM","Alford","Clean","OOO-Project","Slip: t6","01/01/2013","No"
+"Time","JamesR","Amesbury","DesignL","UUU-Project","Slip: t7","01/01/2013","No"
+"Time","SamS","Amherst","Planting","","Slip: t8","01/01/2013","No"
+"Time","ShawnR","Andover","Lot Maintenance","AAA-Project","Slip: t9","01/02/2013","No"
+"Time","TomH","Aquinnah","Water Feature","AQUIN-Project01","Slip: t10","01/02/2013","No"
+"Time","CoreyM","Arlington","Pave","ARLIN-Project02","Slip: t11","01/02/2013","No"
+"Time","JamesR","Ashburnham","Build Structure","EEE-Project","Slip: t12","01/02/2013","No"
+"Time","SamS","Ashby","DemoS","III-Project","Slip: t13","01/02/2013","No"
+"Time","ShawnR","Ashfield","Fix","OOO-Project","Slip: t14","01/02/2013","No"
+"Time","TomH","Ashland","DesignS","UUU-Project","Slip: t15","01/02/2013","No"
+"Time","CoreyM","Athol","Bid","","Slip: t16","01/02/2013","No"
+"Time","JamesR","Attleboro","Clean","AAA-Project","Slip: t17","01/03/2013","No"
+"Time","SamS","Auburn","DesignL","AUBUR-Project01","Slip: t18","01/03/2013","No"
+"Time","ShawnR","Avon","Planting","AVON-Project02","Slip: t19","01/03/2013","No"
+"Time","TomH","Ayer","Lot Maintenance","EEE-Project","Slip: t20","01/03/2013","No"
+"Time","CoreyM","Barnstable","Water Feature","III-Project","Slip: t21","01/03/2013","No"
+"Time","JamesR","Barre","Pave","OOO-Project","Slip: t22","01/03/2013","No"
+"Time","SamS","Becket","Build Structure","UUU-Project","Slip: t23","01/03/2013","No"
+"Time","ShawnR","Bedford","DemoS","","Slip: t24","01/03/2013","No"
+"Time","TomH","Belchertown","Fix","AAA-Project","Slip: t25","01/04/2013","Yes"
+"Time","CoreyM","Bellingham","DesignS","BELLI-Project01","Slip: t26","01/04/2013","No"
+"Time","JamesR","Belmont","Bid","BELMO-Project02","Slip: t27","01/04/2013","No"
+"Time","SamS","Berkley","Clean","EEE-Project","Slip: t28","01/04/2013","No"
+"Time","ShawnR","Berlin","DesignL","III-Project","Slip: t29","01/04/2013","No"
+"Time","TomH","Bernardston","Planting","OOO-Project","Slip: t30","01/04/2013","No"
+"Time","CoreyM","Beverly","Lot Maintenance","UUU-Project","Slip: t31","01/04/2013","No"
+"Time","JamesR","Billerica","Water Feature","","Slip: t32","01/04/2013","No"
+"Time","SamS","Blackstone","Pave","AAA-Project","Slip: t33","01/05/2013","No"
+"Time","ShawnR","Blandford","Build Structure","BLAND-Project01","Slip: t34","01/05/2013","No"
+"Time","TomH","Bolton","DemoS","BOLTO-Project02","Slip: t35","01/05/2013","No"
+"Time","CoreyM","Boston","Fix","EEE-Project","Slip: t36","01/05/2013","No"
+"Time","JamesR","Bourne","DesignS","III-Project","Slip: t37","01/05/2013","No"
+"Time","SamS","Boxborough","Bid","OOO-Project","Slip: t38","01/05/2013","No"
+"Time","ShawnR","Boxford","Clean","UUU-Project","Slip: t39","01/05/2013","No"
+"Time","TomH","Boylston","DesignL","","Slip: t40","01/05/2013","No"
+"Time","CoreyM","Braintree","Planting","AAA-Project","Slip: t41","01/06/2013","No"
+"Time","JamesR","Brewster","Lot Maintenance","BREWS-Project01","Slip: t42","01/06/2013","No"
+"Time","SamS","Bridgewater","Water Feature","BRIDG-Project02","Slip: t43","01/06/2013","No"
+"Time","ShawnR","Brimfield","Pave","EEE-Project","Slip: t44","01/06/2013","No"
+"Time","TomH","Brockton","Build Structure","III-Project","Slip: t45","01/06/2013","No"
+"Time","CoreyM","Brookfield","DemoS","OOO-Project","Slip: t46","01/06/2013","No"
+"Time","JamesR","Brookline","Fix","UUU-Project","Slip: t47","01/06/2013","No"
+"Time","SamS","Buckland","DesignS","","Slip: t48","01/06/2013","No"
+"Time","ShawnR","Burlington","Bid","AAA-Project","Slip: t49","01/07/2013","No"
+"Time","TomH","Cambridge","Clean","CAMBR-Project01","Slip: t50","01/07/2013","Yes"
+"Time","CoreyM","Canton","DesignL","CANTO-Project02","Slip: t51","01/07/2013","No"
+"Time","JamesR","Carlisle","Planting","EEE-Project","Slip: t52","01/07/2013","No"
+"Time","SamS","Carver","Lot Maintenance","III-Project","Slip: t53","01/07/2013","No"
+"Time","ShawnR","Charlemont","Water Feature","OOO-Project","Slip: t54","01/07/2013","No"
+"Time","TomH","Charlton","Pave","UUU-Project","Slip: t55","01/07/2013","No"
+"Time","CoreyM","Chatham","Build Structure","","Slip: t56","01/07/2013","No"
+"Time","JamesR","Chelmsford","DemoS","AAA-Project","Slip: t57","01/08/2013","No"
+"Time","SamS","Chelsea","Fix","CHELS-Project01","Slip: t58","01/08/2013","No"
+"Time","ShawnR","Cheshire","DesignS","CHESH-Project02","Slip: t59","01/08/2013","No"
+"Time","TomH","Chester","Bid","EEE-Project","Slip: t60","01/08/2013","No"
+"Time","CoreyM","Chesterfield","Clean","III-Project","Slip: t61","01/08/2013","No"
+"Time","JamesR","Chicopee","DesignL","OOO-Project","Slip: t62","01/08/2013","No"
+"Time","SamS","Chilmark","Planting","UUU-Project","Slip: t63","01/08/2013","No"
+"Time","ShawnR","Clarksburg","Lot Maintenance","","Slip: t64","01/08/2013","No"
+"Time","TomH","Clinton","Water Feature","AAA-Project","Slip: t65","01/09/2013","No"
+"Time","CoreyM","Cohasset","Pave","COHAS-Project01","Slip: t66","01/09/2013","No"
+"Time","JamesR","Colrain","Build Structure","COLRA-Project02","Slip: t67","01/09/2013","No"
+"Time","SamS","Concord","DemoS","EEE-Project","Slip: t68","01/09/2013","No"
+"Time","ShawnR","Conway","Fix","III-Project","Slip: t69","01/09/2013","No"
+"Time","TomH","Cummington","DesignS","OOO-Project","Slip: t70","01/09/2013","No"
+"Time","CoreyM","Dalton","Bid","UUU-Project","Slip: t71","01/09/2013","No"
+"Time","JamesR","Danvers","Clean","","Slip: t72","01/09/2013","No"
+"Time","SamS","Dartmouth","DesignL","AAA-Project","Slip: t73","01/10/2013","No"
+"Time","ShawnR","Dedham","Planting","DEDHA-Project01","Slip: t74","01/10/2013","No"
+"Time","TomH","Deerfield","Lot Maintenance","DEERF-Project02","Slip: t75","01/10/2013","Yes"
+"Time","CoreyM","Dennis","Water Feature","EEE-Project","Slip: t76","01/10/2013","No"
+"Time","JamesR","Dighton","Pave","III-Project","Slip: t77","01/10/2013","No"
+"Time","SamS","Douglas","Build Structure","OOO-Project","Slip: t78","01/10/2013","No"
+"Time","ShawnR","Dover","DemoS","UUU-Project","Slip: t79","01/10/2013","No"
+"Time","TomH","Dracut","Fix","","Slip: t80","01/10/2013","No"
+"Time","CoreyM","Dudley","DesignS","AAA-Project","Slip: t81","01/11/2013","No"
+"Time","JamesR","Dunstable","Bid","DUNST-Project01","Slip: t82","01/11/2013","No"
+"Time","SamS","Duxbury","Clean","DUXBU-Project02","Slip: t83","01/11/2013","No"
+"Time","ShawnR","East Bridgewater","DesignL","EEE-Project","Slip: t84","01/11/2013","No"
+"Time","TomH","East Brookfield","Planting","III-Project","Slip: t85","01/11/2013","No"
+"Time","CoreyM","East Longmeadow","Lot Maintenance","OOO-Project","Slip: t86","01/11/2013","No"
+"Time","JamesR","Eastham","Water Feature","UUU-Project","Slip: t87","01/11/2013","No"
+"Time","SamS","Easthampton","Pave","","Slip: t88","01/11/2013","No"
+"Time","ShawnR","Easton","Build Structure","AAA-Project","Slip: t89","01/12/2013","No"
+"Time","TomH","Edgartown","DemoS","EDGAR-Project01","Slip: t90","01/12/2013","No"
+"Time","CoreyM","Egremont","Fix","EGREM-Project01","Slip: t91","01/12/2013","No"
+"Time","JamesR","Erving","DesignS","ERVIN-Project02","Slip: t92","01/12/2013","No"
+"Time","SamS","Essex","Bid","III-Project","Slip: t93","01/12/2013","No"
+"Time","ShawnR","Everett","Clean","OOO-Project","Slip: t94","01/12/2013","No"
+"Time","TomH","Fairhaven","DesignL","UUU-Project","Slip: t95","01/12/2013","No"
+"Time","CoreyM","Fall River","Planting","","Slip: t96","01/12/2013","No"
+"Time","JamesR","Falmouth","Lot Maintenance","AAA-Project","Slip: t97","01/13/2013","No"
+"Time","SamS","Fitchburg","Water Feature","EEE-Project","Slip: t98","01/13/2013","No"
+"Time","ShawnR","Florida","Pave","FLORI-Project01","Slip: t99","01/13/2013","No"
+"Time","TomH","Foxborough","Build Structure","FOXBO-Project02","Slip: t100","01/13/2013","Yes"
+"Time","CoreyM","Framingham","DemoS","III-Project","Slip: t101","01/13/2013","No"
+"Time","JamesR","Franklin","Fix","OOO-Project","Slip: t102","01/13/2013","No"
+"Time","SamS","Freetown","DesignS","UUU-Project","Slip: t103","01/13/2013","No"
+"Time","ShawnR","Gardner","Bid","","Slip: t104","01/13/2013","No"
+"Time","TomH","Georgetown","Clean","AAA-Project","Slip: t105","01/14/2013","No"
+"Time","CoreyM","Gill","DesignL","EEE-Project","Slip: t106","01/14/2013","No"
+"Time","JamesR","Gloucester","Planting","GLOUC-Project01","Slip: t107","01/14/2013","No"
+"Time","SamS","Goshen","Lot Maintenance","GOSHE-Project02","Slip: t108","01/14/2013","No"
+"Time","ShawnR","Gosnold","Water Feature","III-Project","Slip: t109","01/14/2013","No"
+"Time","TomH","Grafton","Pave","OOO-Project","Slip: t110","01/14/2013","No"
+"Time","CoreyM","Granby","Build Structure","UUU-Project","Slip: t111","01/14/2013","No"
+"Time","JamesR","Granville","DemoS","","Slip: t112","01/14/2013","No"
+"Time","SamS","Great Barrington","Fix","AAA-Project","Slip: t113","01/15/2013","No"
+"Time","ShawnR","Greenfield","DesignS","EEE-Project","Slip: t114","01/15/2013","No"
+"Time","TomH","Groton","Bid","GROTO-Project01","Slip: t115","01/15/2013","No"
+"Time","CoreyM","Groveland","Clean","GROVE-Project02","Slip: t116","01/15/2013","No"
+"Time","JamesR","Hadley","DesignL","III-Project","Slip: t117","01/15/2013","No"
+"Time","SamS","Halifax","Planting","OOO-Project","Slip: t118","01/15/2013","No"
+"Time","ShawnR","Hamilton","Lot Maintenance","UUU-Project","Slip: t119","01/15/2013","No"
+"Time","TomH","Hampden","Water Feature","","Slip: t120","01/15/2013","No"
+"Time","CoreyM","Hancock","Pave","AAA-Project","Slip: t121","01/16/2013","No"
+"Time","JamesR","Hanover","Build Structure","EEE-Project","Slip: t122","01/16/2013","No"
+"Time","SamS","Hanson","DemoS","HANSO-Project01","Slip: t123","01/16/2013","No"
+"Time","ShawnR","Hardwick","Fix","HARDW-Project02","Slip: t124","01/16/2013","No"
+"Time","TomH","Harvard","DesignS","III-Project","Slip: t125","01/16/2013","Yes"
+"Time","CoreyM","Harwich","Bid","OOO-Project","Slip: t126","01/16/2013","No"
+"Time","JamesR","Hatfield","Clean","UUU-Project","Slip: t127","01/16/2013","No"
+"Time","SamS","Haverhill","DesignL","","Slip: t128","01/16/2013","No"
+"Time","ShawnR","Hawley","Planting","AAA-Project","Slip: t129","01/17/2013","No"
+"Time","TomH","Heath","Lot Maintenance","EEE-Project","Slip: t130","01/17/2013","No"
+"Time","CoreyM","Hingham","Water Feature","HINGH-Project01","Slip: t131","01/17/2013","No"
+"Time","JamesR","Hinsdale","Pave","HINSD-Project02","Slip: t132","01/17/2013","No"
+"Time","SamS","Holbrook","Build Structure","III-Project","Slip: t133","01/17/2013","No"
+"Time","ShawnR","Holden","DemoS","OOO-Project","Slip: t134","01/17/2013","No"
+"Time","TomH","Holland","Fix","UUU-Project","Slip: t135","01/17/2013","No"
+"Time","CoreyM","Holliston","DesignS","","Slip: t136","01/17/2013","No"
+"Time","JamesR","Holyoke","Bid","AAA-Project","Slip: t137","01/18/2013","No"
+"Time","SamS","Hopedale","Clean","EEE-Project","Slip: t138","01/18/2013","No"
+"Time","ShawnR","Hopkinton","DesignL","HOPKI-Project01","Slip: t139","01/18/2013","No"
+"Time","TomH","Hubbardston","Planting","HUBBA-Project02","Slip: t140","01/18/2013","No"
+"Time","CoreyM","Hudson","Lot Maintenance","III-Project","Slip: t141","01/18/2013","No"
+"Time","JamesR","Hull","Water Feature","OOO-Project","Slip: t142","01/18/2013","No"
+"Time","SamS","Huntington","Pave","UUU-Project","Slip: t143","01/18/2013","No"
+"Time","ShawnR","Ipswich","Build Structure","","Slip: t144","01/18/2013","No"
+"Time","TomH","Kingston","DemoS","AAA-Project","Slip: t145","01/19/2013","No"
+"Time","CoreyM","Lakeville","Fix","EEE-Project","Slip: t146","01/19/2013","No"
+"Time","JamesR","Lancaster","DesignS","III-Project","Slip: t147","01/19/2013","No"
+"Time","SamS","Lanesborough","Bid","LANES-Project01","Slip: t148","01/19/2013","No"
+"Time","ShawnR","Lawrence","Clean","LAWRE-Project02","Slip: t149","01/19/2013","No"
+"Time","TomH","Lee","DesignL","OOO-Project","Slip: t150","01/19/2013","Yes"
+"Time","CoreyM","Leicester","Planting","UUU-Project","Slip: t151","01/19/2013","No"
+"Time","JamesR","Lenox","Lot Maintenance","","Slip: t152","01/19/2013","No"
+"Time","SamS","Leominster","Water Feature","AAA-Project","Slip: t153","01/20/2013","No"
+"Time","ShawnR","Leverett","Pave","EEE-Project","Slip: t154","01/20/2013","No"
+"Time","TomH","Lexington","Build Structure","III-Project","Slip: t155","01/20/2013","No"
+"Time","CoreyM","Leyden","DemoS","LEYDE-Project01","Slip: t156","01/20/2013","No"
+"Time","JamesR","Lincoln","Fix","LINCO-Project02","Slip: t157","01/20/2013","No"
+"Time","SamS","Littleton","DesignS","OOO-Project","Slip: t158","01/20/2013","No"
+"Time","ShawnR","Longmeadow","Bid","UUU-Project","Slip: t159","01/20/2013","No"
+"Time","TomH","Lowell","Clean","","Slip: t160","01/20/2013","No"
+"Time","CoreyM","Ludlow","DesignL","AAA-Project","Slip: t161","01/21/2013","No"
+"Time","JamesR","Lunenburg","Planting","EEE-Project","Slip: t162","01/21/2013","No"
+"Time","SamS","Lynn","Lot Maintenance","III-Project","Slip: t163","01/21/2013","No"
+"Time","ShawnR","Lynnfield","Water Feature","LYNNF-Project01","Slip: t164","01/21/2013","No"
+"Time","TomH","Malden","Pave","MALDE-Project02","Slip: t165","01/21/2013","No"
+"Time","CoreyM","Manchester-by-the-Sea","Build Structure","OOO-Project","Slip: t166","01/21/2013","No"
+"Time","JamesR","Mansfield","DemoS","UUU-Project","Slip: t167","01/21/2013","No"
+"Time","SamS","Marblehead","Fix","","Slip: t168","01/21/2013","No"
+"Time","ShawnR","Marion","DesignS","AAA-Project","Slip: t169","01/22/2013","No"
+"Time","TomH","Marlborough","Bid","EEE-Project","Slip: t170","01/22/2013","No"
+"Time","CoreyM","Marshfield","Clean","III-Project","Slip: t171","01/22/2013","No"
+"Time","JamesR","Mashpee","DesignL","MASHP-Project01","Slip: t172","01/22/2013","No"
+"Time","SamS","Mattapoisett","Planting","MATTA-Project02","Slip: t173","01/22/2013","No"
+"Time","ShawnR","Maynard","Lot Maintenance","OOO-Project","Slip: t174","01/22/2013","No"
+"Time","TomH","Medfield","Water Feature","UUU-Project","Slip: t175","01/22/2013","Yes"
+"Time","CoreyM","Medford","Pave","","Slip: t176","01/22/2013","No"
+"Time","JamesR","Medway","Build Structure","AAA-Project","Slip: t177","01/23/2013","No"
+"Time","SamS","Melrose","DemoS","EEE-Project","Slip: t178","01/23/2013","No"
+"Time","ShawnR","Mendon","Fix","III-Project","Slip: t179","01/23/2013","No"
+"Time","TomH","Merrimac","DesignS","MERRI-Project01","Slip: t180","01/23/2013","No"
+"Time","CoreyM","Methuen","Bid","METHU-Project02","Slip: t181","01/23/2013","No"
+"Time","JamesR","Middleborough","Clean","OOO-Project","Slip: t182","01/23/2013","No"
+"Time","SamS","Middlefield","DesignL","UUU-Project","Slip: t183","01/23/2013","No"
+"Time","ShawnR","Middleton","Planting","","Slip: t184","01/23/2013","No"
+"Time","TomH","Milford","Lot Maintenance","AAA-Project","Slip: t185","01/24/2013","No"
+"Time","CoreyM","Millbury","Water Feature","EEE-Project","Slip: t186","01/24/2013","No"
+"Time","JamesR","Millis","Pave","III-Project","Slip: t187","01/24/2013","No"
+"Time","SamS","Millville","Build Structure","MILLV-Project01","Slip: t188","01/24/2013","No"
+"Time","ShawnR","Milton","DemoS","MILTO-Project02","Slip: t189","01/24/2013","No"
+"Time","TomH","Monroe","Fix","OOO-Project","Slip: t190","01/24/2013","No"
+"Time","CoreyM","Monson","DesignS","UUU-Project","Slip: t191","01/24/2013","No"
+"Time","JamesR","Montague","Bid","","Slip: t192","01/24/2013","No"
+"Time","SamS","Monterey","Clean","AAA-Project","Slip: t193","01/25/2013","No"
+"Time","ShawnR","Montgomery","DesignL","EEE-Project","Slip: t194","01/25/2013","No"
+"Time","TomH","Mount Washington","Planting","III-Project","Slip: t195","01/25/2013","No"
+"Time","CoreyM","Nahant","Lot Maintenance","NAHAN-Project01","Slip: t196","01/25/2013","No"
+"Time","JamesR","Nantucket","Water Feature","NANTU-Project02","Slip: t197","01/25/2013","No"
+"Time","SamS","Natick","Pave","OOO-Project","Slip: t198","01/25/2013","No"
+"Time","ShawnR","Needham","Build Structure","UUU-Project","Slip: t199","01/25/2013","No"
+"Time","TomH","New Ashford","DemoS","","Slip: t200","01/25/2013","Yes"
+"Time","CoreyM","New Bedford","Fix","AAA-Project","Slip: t201","01/26/2013","No"
+"Time","JamesR","New Braintree","DesignS","EEE-Project","Slip: t202","01/26/2013","No"
+"Time","SamS","New Marlborough","Bid","III-Project","Slip: t203","01/26/2013","No"
+"Time","ShawnR","New Salem","Clean","NEWSA-Project01","Slip: t204","01/26/2013","No"
+"Time","TomH","Newbury","DesignL","NEWBU-Project02","Slip: t205","01/26/2013","No"
+"Time","CoreyM","Newburyport","Planting","OOO-Project","Slip: t206","01/26/2013","No"
+"Time","JamesR","Newton","Lot Maintenance","UUU-Project","Slip: t207","01/26/2013","No"
+"Time","SamS","Norfolk","Water Feature","","Slip: t208","01/26/2013","No"
+"Time","ShawnR","North Adams","Pave","AAA-Project","Slip: t209","01/27/2013","No"
+"Time","TomH","North Andover","Build Structure","EEE-Project","Slip: t210","01/27/2013","No"
+"Time","CoreyM","North Attleborough","DemoS","III-Project","Slip: t211","01/27/2013","No"
+"Time","JamesR","North Brookfield","Fix","NORTH-Project01","Slip: t212","01/27/2013","No"
+"Time","SamS","North Reading","DesignS","NORTH-Project02","Slip: t213","01/27/2013","No"
+"Time","ShawnR","Northampton","Bid","OOO-Project","Slip: t214","01/27/2013","No"
+"Time","TomH","Northborough","Clean","UUU-Project","Slip: t215","01/27/2013","No"
+"Time","CoreyM","Northbridge","DesignL","","Slip: t216","01/27/2013","No"
+"Time","JamesR","Northfield","Planting","AAA-Project","Slip: t217","01/28/2013","No"
+"Time","SamS","Norton","Lot Maintenance","EEE-Project","Slip: t218","01/28/2013","No"
+"Time","ShawnR","Norwell","Water Feature","III-Project","Slip: t219","01/28/2013","No"
+"Time","TomH","Norwood","Pave","NORWO-Project01","Slip: t220","01/28/2013","No"
+"Time","CoreyM","Oak Bluffs","Build Structure","OAKBL-Project02","Slip: t221","01/28/2013","No"
+"Time","JamesR","Oakham","DemoS","OOO-Project","Slip: t222","01/28/2013","No"
+"Time","SamS","Orange","Fix","UUU-Project","Slip: t223","01/28/2013","No"
+"Time","ShawnR","Orleans","DesignS","","Slip: t224","01/28/2013","No"
+"Time","TomH","Otis","Bid","AAA-Project","Slip: t225","01/29/2013","Yes"
+"Time","CoreyM","Oxford","Clean","EEE-Project","Slip: t226","01/29/2013","No"
+"Time","JamesR","Palmer","DesignL","III-Project","Slip: t227","01/29/2013","No"
+"Time","SamS","Paxton","Planting","OOO-Project","Slip: t228","01/29/2013","No"
+"Time","ShawnR","Peabody","Lot Maintenance","PEABO-Project01","Slip: t229","01/29/2013","No"
+"Time","TomH","Pelham","Water Feature","PELHA-Project02","Slip: t230","01/29/2013","No"
+"Time","CoreyM","Pembroke","Pave","UUU-Project","Slip: t231","01/29/2013","No"
+"Time","JamesR","Pepperell","Build Structure","","Slip: t232","01/29/2013","No"
+"Time","SamS","Peru","DemoS","AAA-Project","Slip: t233","01/30/2013","No"
+"Time","ShawnR","Petersham","Fix","EEE-Project","Slip: t234","01/30/2013","No"
+"Time","TomH","Phillipston","DesignS","III-Project","Slip: t235","01/30/2013","No"
+"Time","CoreyM","Pittsfield","Bid","OOO-Project","Slip: t236","01/30/2013","No"
+"Time","JamesR","Plainfield","Clean","PLAIN-Project01","Slip: t237","01/30/2013","No"
+"Time","SamS","Plainville","DesignL","PLAIN-Project02","Slip: t238","01/30/2013","No"
+"Time","ShawnR","Plymouth","Planting","UUU-Project","Slip: t239","01/30/2013","No"
+"Time","TomH","Plympton","Lot Maintenance","","Slip: t240","01/30/2013","No"
+"Time","CoreyM","Princeton","Water Feature","AAA-Project","Slip: t241","01/31/2013","No"
+"Time","JamesR","Provincetown","Pave","EEE-Project","Slip: t242","01/31/2013","No"
+"Time","SamS","Quincy","Build Structure","III-Project","Slip: t243","01/31/2013","No"
+"Time","ShawnR","Randolph","DemoS","OOO-Project","Slip: t244","01/31/2013","No"
+"Time","TomH","Raynham","Fix","RAYNH-Project01","Slip: t245","01/31/2013","No"
+"Time","CoreyM","Reading","DesignS","READI-Project02","Slip: t246","01/31/2013","No"
+"Time","JamesR","Rehoboth","Bid","UUU-Project","Slip: t247","01/31/2013","No"
+"Time","SamS","Revere","Clean","","Slip: t248","01/31/2013","No"
+"Time","ShawnR","Richmond","DesignL","AAA-Project","Slip: t249","02/01/2013","No"
+"Time","TomH","Rochester","Planting","EEE-Project","Slip: t250","02/01/2013","Yes"
+"Time","CoreyM","Rockland","Lot Maintenance","III-Project","Slip: t251","02/01/2013","No"
+"Time","JamesR","Rockport","Water Feature","OOO-Project","Slip: t252","02/01/2013","No"
+"Time","SamS","Rowe","Pave","ROWE-Project01","Slip: t253","02/01/2013","No"
+"Time","ShawnR","Rowley","Build Structure","ROWLE-Project02","Slip: t254","02/01/2013","No"
+"Time","TomH","Royalston","DemoS","UUU-Project","Slip: t255","02/01/2013","No"
+"Time","CoreyM","Russell","Fix","","Slip: t256","02/01/2013","No"
+"Time","JamesR","Rutland","DesignS","AAA-Project","Slip: t257","02/02/2013","No"
+"Time","SamS","Salem","Bid","EEE-Project","Slip: t258","02/02/2013","No"
+"Time","ShawnR","Salisbury","Clean","III-Project","Slip: t259","02/02/2013","No"
+"Time","TomH","Sandisfield","DesignL","OOO-Project","Slip: t260","02/02/2013","No"
+"Time","CoreyM","Sandwich","Planting","SANDW-Project01","Slip: t261","02/02/2013","No"
+"Time","JamesR","Saugus","Lot Maintenance","SAUGU-Project02","Slip: t262","02/02/2013","No"
+"Time","SamS","Savoy","Water Feature","UUU-Project","Slip: t263","02/02/2013","No"
+"Time","ShawnR","Scituate","Pave","","Slip: t264","02/02/2013","No"
+"Time","TomH","Seekonk","Build Structure","AAA-Project","Slip: t265","02/03/2013","No"
+"Time","CoreyM","Sharon","DemoS","EEE-Project","Slip: t266","02/03/2013","No"
+"Time","JamesR","Sheffield","Fix","III-Project","Slip: t267","02/03/2013","No"
+"Time","SamS","Shelburne","DesignS","OOO-Project","Slip: t268","02/03/2013","No"
+"Time","ShawnR","Sherborn","Bid","SHERB-Project01","Slip: t269","02/03/2013","No"
+"Time","TomH","Shirley","Clean","SHIRL-Project02","Slip: t270","02/03/2013","No"
+"Time","CoreyM","Shrewsbury","DesignL","UUU-Project","Slip: t271","02/03/2013","No"
+"Time","JamesR","Shutesbury","Planting","","Slip: t272","02/03/2013","No"
+"Time","SamS","Somerset","Lot Maintenance","AAA-Project","Slip: t273","02/04/2013","No"
+"Time","ShawnR","Somerville","Water Feature","EEE-Project","Slip: t274","02/04/2013","No"
+"Time","TomH","South Hadley","Pave","III-Project","Slip: t275","02/04/2013","Yes"
+"Time","CoreyM","Southampton","Build Structure","OOO-Project","Slip: t276","02/04/2013","No"
+"Time","JamesR","Southborough","DemoS","SOUTH-Project01","Slip: t277","02/04/2013","No"
+"Time","SamS","Southbridge","Fix","SOUTH-Project02","Slip: t278","02/04/2013","No"
+"Time","ShawnR","Southwick","DesignS","UUU-Project","Slip: t279","02/04/2013","No"
+"Time","TomH","Spencer","Bid","","Slip: t280","02/04/2013","No"
+"Time","CoreyM","Springfield","Clean","AAA-Project","Slip: t281","02/05/2013","No"
+"Time","JamesR","Sterling","DesignL","EEE-Project","Slip: t282","02/05/2013","No"
+"Time","SamS","Stockbridge","Planting","III-Project","Slip: t283","02/05/2013","No"
+"Time","ShawnR","Stoneham","Lot Maintenance","OOO-Project","Slip: t284","02/05/2013","No"
+"Time","TomH","Stoughton","Water Feature","STOUG-Project01","Slip: t285","02/05/2013","No"
+"Time","CoreyM","Stow","Pave","STOW-Project02","Slip: t286","02/05/2013","No"
+"Time","JamesR","Sturbridge","Build Structure","UUU-Project","Slip: t287","02/05/2013","No"
+"Time","SamS","Sudbury","DemoS","","Slip: t288","02/05/2013","No"
+"Time","ShawnR","Sunderland","Fix","AAA-Project","Slip: t289","02/06/2013","No"
+"Time","TomH","Sutton","DesignS","EEE-Project","Slip: t290","02/06/2013","No"
+"Time","CoreyM","Swampscott","Bid","III-Project","Slip: t291","02/06/2013","No"
+"Time","JamesR","Swansea","Clean","OOO-Project","Slip: t292","02/06/2013","No"
+"Time","SamS","Taunton","DesignL","TAUNT-Project01","Slip: t293","02/06/2013","No"
+"Time","ShawnR","Templeton","Planting","TEMPL-Project02","Slip: t294","02/06/2013","No"
+"Time","TomH","Tewksbury","Lot Maintenance","UUU-Project","Slip: t295","02/06/2013","No"
+"Time","CoreyM","Tisbury","Water Feature","","Slip: t296","02/06/2013","No"
+"Time","JamesR","Tolland","Pave","AAA-Project","Slip: t297","02/07/2013","No"
+"Time","SamS","Topsfield","Build Structure","EEE-Project","Slip: t298","02/07/2013","No"
+"Time","ShawnR","Townsend","DemoS","III-Project","Slip: t299","02/07/2013","No"
+"Time","TomH","Truro","Fix","OOO-Project","Slip: t300","02/07/2013","Yes"
+"Time","CoreyM","Tyngsborough","DesignS","TYNGS-Project01","Slip: t301","02/07/2013","No"
+"Time","JamesR","Tyringham","Bid","TYRIN-Project02","Slip: t302","02/07/2013","No"
+"Time","SamS","Upton","Clean","UUU-Project","Slip: t303","02/07/2013","No"
+"Time","ShawnR","Uxbridge","DesignL","","Slip: t304","02/07/2013","No"
+"Time","TomH","Wakefield","Planting","AAA-Project","Slip: t305","02/08/2013","No"
+"Time","CoreyM","Wales","Lot Maintenance","EEE-Project","Slip: t306","02/08/2013","No"
+"Time","JamesR","Walpole","Water Feature","III-Project","Slip: t307","02/08/2013","No"
+"Time","SamS","Waltham","Pave","OOO-Project","Slip: t308","02/08/2013","No"
+"Time","ShawnR","Ware","Build Structure","UUU-Project","Slip: t309","02/08/2013","No"
+"Time","TomH","Wareham","DemoS","WAREH-Project01","Slip: t310","02/08/2013","No"
+"Time","CoreyM","Warren","Fix","WARRE-Project02","Slip: t311","02/08/2013","No"
+"Time","JamesR","Warwick","DesignS","","Slip: t312","02/08/2013","No"
+"Time","SamS","Washington","Bid","AAA-Project","Slip: t313","02/09/2013","No"
+"Time","ShawnR","Watertown","Clean","EEE-Project","Slip: t314","02/09/2013","No"
+"Time","TomH","Wayland","DesignL","III-Project","Slip: t315","02/09/2013","No"
+"Time","CoreyM","Webster","Planting","OOO-Project","Slip: t316","02/09/2013","No"
+"Time","JamesR","Wellesley","Lot Maintenance","UUU-Project","Slip: t317","02/09/2013","No"
+"Time","SamS","Wellfleet","Water Feature","WELLF-Project01","Slip: t318","02/09/2013","No"
+"Time","ShawnR","Wendell","Pave","WENDE-Project02","Slip: t319","02/09/2013","No"
+"Time","TomH","Wenham","Build Structure","","Slip: t320","02/09/2013","No"
+"Time","CoreyM","West Boylston","DemoS","AAA-Project","Slip: t321","02/10/2013","No"
+"Time","JamesR","West Bridgewater","Fix","EEE-Project","Slip: t322","02/10/2013","No"
+"Time","SamS","West Brookfield","DesignS","III-Project","Slip: t323","02/10/2013","No"
+"Time","ShawnR","West Newbury","Bid","OOO-Project","Slip: t324","02/10/2013","No"
+"Time","TomH","West Springfield","Clean","UUU-Project","Slip: t325","02/10/2013","Yes"
+"Time","CoreyM","West Stockbridge","DesignL","WESTS-Project01","Slip: t326","02/10/2013","No"
+"Time","JamesR","West Tisbury","Planting","WESTT-Project02","Slip: t327","02/10/2013","No"
+"Time","SamS","Westborough","Lot Maintenance","","Slip: t328","02/10/2013","No"
+"Time","ShawnR","Westfield","Water Feature","AAA-Project","Slip: t329","02/11/2013","No"
+"Time","TomH","Westford","Pave","EEE-Project","Slip: t330","02/11/2013","No"
+"Time","CoreyM","Westhampton","Build Structure","III-Project","Slip: t331","02/11/2013","No"
+"Time","JamesR","Westminster","DemoS","OOO-Project","Slip: t332","02/11/2013","No"
+"Time","SamS","Weston","Fix","UUU-Project","Slip: t333","02/11/2013","No"
+"Time","ShawnR","Westport","DesignS","WESTP-Project01","Slip: t334","02/11/2013","No"
+"Time","TomH","Westwood","Bid","WESTW-Project02","Slip: t335","02/11/2013","No"
+"Time","CoreyM","Weymouth","Clean","","Slip: t336","02/11/2013","No"
+"Time","JamesR","Whately","DesignL","AAA-Project","Slip: t337","02/12/2013","No"
+"Time","SamS","Whitman","Planting","EEE-Project","Slip: t338","02/12/2013","No"
+"Time","ShawnR","Wilbraham","Lot Maintenance","III-Project","Slip: t339","02/12/2013","No"
+"Time","TomH","Williamsburg","Water Feature","OOO-Project","Slip: t340","02/12/2013","No"
+"Time","CoreyM","Williamstown","Pave","UUU-Project","Slip: t341","02/12/2013","No"
+"Time","JamesR","Wilmington","Build Structure","WILMI-Project01","Slip: t342","02/12/2013","No"
+"Time","SamS","Winchendon","DemoS","WINCH-Project02","Slip: t343","02/12/2013","No"
+"Time","ShawnR","Winchester","Fix","","Slip: t344","02/12/2013","No"
+"Time","TomH","Windsor","DesignS","AAA-Project","Slip: t345","02/13/2013","No"
+"Time","CoreyM","Winthrop","Bid","EEE-Project","Slip: t346","02/13/2013","No"
+"Time","JamesR","Woburn","Clean","III-Project","Slip: t347","02/13/2013","No"
+"Time","SamS","Worcester","DesignL","OOO-Project","Slip: t348","02/13/2013","No"
+"Time","ShawnR","Worthington","Planting","UUU-Project","Slip: t349","02/13/2013","No"
+"Time","TomH","Wrentham","Lot Maintenance","WRENT-Project01","Slip: t350","02/13/2013","Yes"
+"Time","CoreyM","Yarmouth","Water Feature","YARMO-Project02","Slip: t351","02/13/2013","No"
+"Time","JamesR","Abington","Pave","","Slip: t352","02/13/2013","No"
+"Time","SamS","Acton","Build Structure","AAA-Project","Slip: t353","02/14/2013","No"
+"Time","ShawnR","Acushnet","DemoS","ACUSH-Project01","Slip: t354","02/14/2013","No"
+"Time","TomH","Adams","Fix","ADAMS-Project02","Slip: t355","02/14/2013","No"
+"Time","CoreyM","Agawam","DesignS","EEE-Project","Slip: t356","02/14/2013","No"
+"Time","JamesR","Alford","Bid","III-Project","Slip: t357","02/14/2013","No"
+"Time","SamS","Amesbury","Clean","OOO-Project","Slip: t358","02/14/2013","No"
+"Time","ShawnR","Amherst","DesignL","UUU-Project","Slip: t359","02/14/2013","No"
+"Time","TomH","Andover","Planting","","Slip: t360","02/14/2013","No"
+"Time","CoreyM","Aquinnah","Lot Maintenance","AAA-Project","Slip: t361","02/15/2013","No"
+"Time","JamesR","Arlington","Water Feature","ARLIN-Project01","Slip: t362","02/15/2013","No"
+"Time","SamS","Ashburnham","Pave","ASHBU-Project02","Slip: t363","02/15/2013","No"
+"Time","ShawnR","Ashby","Build Structure","EEE-Project","Slip: t364","02/15/2013","No"
+"Time","TomH","Ashfield","DemoS","III-Project","Slip: t365","02/15/2013","No"
+"Time","CoreyM","Ashland","Fix","OOO-Project","Slip: t366","02/15/2013","No"
+"Time","JamesR","Athol","DesignS","UUU-Project","Slip: t367","02/15/2013","No"
+"Time","SamS","Attleboro","Bid","","Slip: t368","02/15/2013","No"
+"Time","ShawnR","Auburn","Clean","AAA-Project","Slip: t369","02/16/2013","No"
+"Time","TomH","Avon","DesignL","AVON-Project01","Slip: t370","02/16/2013","No"
+"Time","CoreyM","Ayer","Planting","AYER-Project02","Slip: t371","02/16/2013","No"
+"Time","JamesR","Barnstable","Lot Maintenance","EEE-Project","Slip: t372","02/16/2013","No"
+"Time","SamS","Barre","Water Feature","III-Project","Slip: t373","02/16/2013","No"
+"Time","ShawnR","Becket","Pave","OOO-Project","Slip: t374","02/16/2013","No"
+"Time","TomH","Bedford","Build Structure","UUU-Project","Slip: t375","02/16/2013","Yes"
+"Time","CoreyM","Belchertown","DemoS","","Slip: t376","02/16/2013","No"
+"Time","JamesR","Bellingham","Fix","AAA-Project","Slip: t377","02/17/2013","No"
+"Time","SamS","Belmont","DesignS","BELMO-Project01","Slip: t378","02/17/2013","No"
+"Time","ShawnR","Berkley","Bid","BERKL-Project02","Slip: t379","02/17/2013","No"
+"Time","TomH","Berlin","Clean","EEE-Project","Slip: t380","02/17/2013","No"
+"Time","CoreyM","Bernardston","DesignL","III-Project","Slip: t381","02/17/2013","No"
+"Time","JamesR","Beverly","Planting","OOO-Project","Slip: t382","02/17/2013","No"
+"Time","SamS","Billerica","Lot Maintenance","UUU-Project","Slip: t383","02/17/2013","No"
+"Time","ShawnR","Blackstone","Water Feature","","Slip: t384","02/17/2013","No"
+"Time","TomH","Blandford","Pave","AAA-Project","Slip: t385","02/18/2013","No"
+"Time","CoreyM","Bolton","Build Structure","BOLTO-Project01","Slip: t386","02/18/2013","No"
+"Time","JamesR","Boston","DemoS","BOSTO-Project02","Slip: t387","02/18/2013","No"
+"Time","SamS","Bourne","Fix","EEE-Project","Slip: t388","02/18/2013","No"
+"Time","ShawnR","Boxborough","DesignS","III-Project","Slip: t389","02/18/2013","No"
+"Time","TomH","Boxford","Bid","OOO-Project","Slip: t390","02/18/2013","No"
+"Time","CoreyM","Boylston","Clean","UUU-Project","Slip: t391","02/18/2013","No"
+"Time","JamesR","Braintree","DesignL","","Slip: t392","02/18/2013","No"
+"Time","SamS","Brewster","Planting","AAA-Project","Slip: t393","02/19/2013","No"
+"Time","ShawnR","Bridgewater","Lot Maintenance","BRIDG-Project01","Slip: t394","02/19/2013","No"
+"Time","TomH","Brimfield","Water Feature","BRIMF-Project02","Slip: t395","02/19/2013","No"
+"Time","CoreyM","Brockton","Pave","EEE-Project","Slip: t396","02/19/2013","No"
+"Time","JamesR","Brookfield","Build Structure","III-Project","Slip: t397","02/19/2013","No"
+"Time","SamS","Brookline","DemoS","OOO-Project","Slip: t398","02/19/2013","No"
+"Time","ShawnR","Buckland","Fix","UUU-Project","Slip: t399","02/19/2013","No"
+"Time","TomH","Burlington","DesignS","","Slip: t400","02/19/2013","Yes"
+"Time","CoreyM","Cambridge","Bid","AAA-Project","Slip: t401","02/20/2013","No"
+"Time","JamesR","Canton","Clean","CANTO-Project01","Slip: t402","02/20/2013","No"
+"Time","SamS","Carlisle","DesignL","CARLI-Project02","Slip: t403","02/20/2013","No"
+"Time","ShawnR","Carver","Planting","EEE-Project","Slip: t404","02/20/2013","No"
+"Time","TomH","Charlemont","Lot Maintenance","III-Project","Slip: t405","02/20/2013","No"
+"Time","CoreyM","Charlton","Water Feature","OOO-Project","Slip: t406","02/20/2013","No"
+"Time","JamesR","Chatham","Pave","UUU-Project","Slip: t407","02/20/2013","No"
+"Time","SamS","Chelmsford","Build Structure","","Slip: t408","02/20/2013","No"
+"Time","ShawnR","Chelsea","DemoS","AAA-Project","Slip: t409","02/21/2013","No"
+"Time","TomH","Cheshire","Fix","CHESH-Project01","Slip: t410","02/21/2013","No"
+"Time","CoreyM","Chester","DesignS","CHEST-Project02","Slip: t411","02/21/2013","No"
+"Time","JamesR","Chesterfield","Bid","EEE-Project","Slip: t412","02/21/2013","No"
+"Time","SamS","Chicopee","Clean","III-Project","Slip: t413","02/21/2013","No"
+"Time","ShawnR","Chilmark","DesignL","OOO-Project","Slip: t414","02/21/2013","No"
+"Time","TomH","Clarksburg","Planting","UUU-Project","Slip: t415","02/21/2013","No"
+"Time","CoreyM","Clinton","Lot Maintenance","","Slip: t416","02/21/2013","No"
+"Time","JamesR","Cohasset","Water Feature","AAA-Project","Slip: t417","02/22/2013","No"
+"Time","SamS","Colrain","Pave","COLRA-Project01","Slip: t418","02/22/2013","No"
+"Time","ShawnR","Concord","Build Structure","CONCO-Project02","Slip: t419","02/22/2013","No"
+"Time","TomH","Conway","DemoS","EEE-Project","Slip: t420","02/22/2013","No"
+"Time","CoreyM","Cummington","Fix","III-Project","Slip: t421","02/22/2013","No"
+"Time","JamesR","Dalton","DesignS","OOO-Project","Slip: t422","02/22/2013","No"
+"Time","SamS","Danvers","Bid","UUU-Project","Slip: t423","02/22/2013","No"
+"Time","ShawnR","Dartmouth","Clean","","Slip: t424","02/22/2013","No"
+"Time","TomH","Dedham","DesignL","AAA-Project","Slip: t425","02/23/2013","Yes"
+"Time","CoreyM","Deerfield","Planting","DEERF-Project01","Slip: t426","02/23/2013","No"
+"Time","JamesR","Dennis","Lot Maintenance","DENNI-Project02","Slip: t427","02/23/2013","No"
+"Time","SamS","Dighton","Water Feature","EEE-Project","Slip: t428","02/23/2013","No"
+"Time","ShawnR","Douglas","Pave","III-Project","Slip: t429","02/23/2013","No"
+"Time","TomH","Dover","Build Structure","OOO-Project","Slip: t430","02/23/2013","No"
+"Time","CoreyM","Dracut","DemoS","UUU-Project","Slip: t431","02/23/2013","No"
+"Time","JamesR","Dudley","Fix","","Slip: t432","02/23/2013","No"
+"Time","SamS","Dunstable","DesignS","AAA-Project","Slip: t433","02/24/2013","No"
+"Time","ShawnR","Duxbury","Bid","DUXBU-Project01","Slip: t434","02/24/2013","No"
+"Time","TomH","East Bridgewater","Clean","EASTB-Project02","Slip: t435","02/24/2013","No"
+"Time","CoreyM","East Brookfield","DesignL","EEE-Project","Slip: t436","02/24/2013","No"
+"Time","JamesR","East Longmeadow","Planting","III-Project","Slip: t437","02/24/2013","No"
+"Time","SamS","Eastham","Lot Maintenance","OOO-Project","Slip: t438","02/24/2013","No"
+"Time","ShawnR","Easthampton","Water Feature","UUU-Project","Slip: t439","02/24/2013","No"
+"Time","TomH","Easton","Pave","","Slip: t440","02/24/2013","No"
+"Time","CoreyM","Edgartown","Build Structure","AAA-Project","Slip: t441","02/25/2013","No"
+"Time","JamesR","Egremont","DemoS","EEE-Project","Slip: t442","02/25/2013","No"
+"Time","SamS","Erving","Fix","ERVIN-Project01","Slip: t443","02/25/2013","No"
+"Time","ShawnR","Essex","DesignS","ESSEX-Project02","Slip: t444","02/25/2013","No"
+"Time","TomH","Everett","Bid","III-Project","Slip: t445","02/25/2013","No"
+"Time","CoreyM","Fairhaven","Clean","OOO-Project","Slip: t446","02/25/2013","No"
+"Time","JamesR","Fall River","DesignL","UUU-Project","Slip: t447","02/25/2013","No"
+"Time","SamS","Falmouth","Planting","","Slip: t448","02/25/2013","No"
+"Time","ShawnR","Fitchburg","Lot Maintenance","AAA-Project","Slip: t449","02/26/2013","No"
+"Time","TomH","Florida","Water Feature","EEE-Project","Slip: t450","02/26/2013","Yes"
+"Time","CoreyM","Foxborough","Pave","FOXBO-Project01","Slip: t451","02/26/2013","No"
+"Time","JamesR","Framingham","Build Structure","FRAMI-Project02","Slip: t452","02/26/2013","No"
+"Time","SamS","Franklin","DemoS","III-Project","Slip: t453","02/26/2013","No"
+"Time","ShawnR","Freetown","Fix","OOO-Project","Slip: t454","02/26/2013","No"
+"Time","TomH","Gardner","DesignS","UUU-Project","Slip: t455","02/26/2013","No"
+"Time","CoreyM","Georgetown","Bid","","Slip: t456","02/26/2013","No"
+"Time","JamesR","Gill","Clean","AAA-Project","Slip: t457","02/27/2013","No"
+"Time","SamS","Gloucester","DesignL","EEE-Project","Slip: t458","02/27/2013","No"
+"Time","ShawnR","Goshen","Planting","GOSHE-Project01","Slip: t459","02/27/2013","No"
+"Time","TomH","Gosnold","Lot Maintenance","GOSNO-Project02","Slip: t460","02/27/2013","No"
+"Time","CoreyM","Grafton","Water Feature","III-Project","Slip: t461","02/27/2013","No"
+"Time","JamesR","Granby","Pave","OOO-Project","Slip: t462","02/27/2013","No"
+"Time","SamS","Granville","Build Structure","UUU-Project","Slip: t463","02/27/2013","No"
+"Time","ShawnR","Great Barrington","DemoS","","Slip: t464","02/27/2013","No"
+"Time","TomH","Greenfield","Fix","AAA-Project","Slip: t465","02/28/2013","No"
+"Time","CoreyM","Groton","DesignS","EEE-Project","Slip: t466","02/28/2013","No"
+"Time","JamesR","Groveland","Bid","GROVE-Project01","Slip: t467","02/28/2013","No"
+"Time","SamS","Hadley","Clean","HADLE-Project02","Slip: t468","02/28/2013","No"
+"Time","ShawnR","Halifax","DesignL","III-Project","Slip: t469","02/28/2013","No"
+"Time","TomH","Hamilton","Planting","OOO-Project","Slip: t470","02/28/2013","No"
+"Time","CoreyM","Hampden","Lot Maintenance","UUU-Project","Slip: t471","02/28/2013","No"
+"Time","JamesR","Hancock","Water Feature","","Slip: t472","02/28/2013","No"
+"Time","SamS","Hanover","Pave","AAA-Project","Slip: t473","03/01/2013","No"
+"Time","ShawnR","Hanson","Build Structure","EEE-Project","Slip: t474","03/01/2013","No"
+"Time","TomH","Hardwick","DemoS","HARDW-Project01","Slip: t475","03/01/2013","Yes"
+"Time","CoreyM","Harvard","Fix","HARVA-Project02","Slip: t476","03/01/2013","No"
+"Time","JamesR","Harwich","DesignS","III-Project","Slip: t477","03/01/2013","No"
+"Time","SamS","Hatfield","Bid","OOO-Project","Slip: t478","03/01/2013","No"
+"Time","ShawnR","Haverhill","Clean","UUU-Project","Slip: t479","03/01/2013","No"
+"Time","TomH","Hawley","DesignL","","Slip: t480","03/01/2013","No"
+"Time","CoreyM","Heath","Planting","AAA-Project","Slip: t481","03/02/2013","No"
+"Time","JamesR","Hingham","Lot Maintenance","EEE-Project","Slip: t482","03/02/2013","No"
+"Time","SamS","Hinsdale","Water Feature","HINSD-Project01","Slip: t483","03/02/2013","No"
+"Time","ShawnR","Holbrook","Pave","HOLBR-Project02","Slip: t484","03/02/2013","No"
+"Time","TomH","Holden","Build Structure","III-Project","Slip: t485","03/02/2013","No"
+"Time","CoreyM","Holland","DemoS","OOO-Project","Slip: t486","03/02/2013","No"
+"Time","JamesR","Holliston","Fix","UUU-Project","Slip: t487","03/02/2013","No"
+"Time","SamS","Holyoke","DesignS","","Slip: t488","03/02/2013","No"
+"Time","ShawnR","Hopedale","Bid","AAA-Project","Slip: t489","03/03/2013","No"
+"Time","TomH","Hopkinton","Clean","EEE-Project","Slip: t490","03/03/2013","No"
+"Time","CoreyM","Hubbardston","DesignL","HUBBA-Project01","Slip: t491","03/03/2013","No"
+"Time","JamesR","Hudson","Planting","HUDSO-Project02","Slip: t492","03/03/2013","No"
+"Time","SamS","Hull","Lot Maintenance","III-Project","Slip: t493","03/03/2013","No"
+"Time","ShawnR","Huntington","Water Feature","OOO-Project","Slip: t494","03/03/2013","No"
+"Time","TomH","Ipswich","Pave","UUU-Project","Slip: t495","03/03/2013","No"
+"Time","CoreyM","Kingston","Build Structure","","Slip: t496","03/03/2013","No"
+"Time","JamesR","Lakeville","DemoS","AAA-Project","Slip: t497","03/04/2013","No"
+"Time","SamS","Lancaster","Fix","EEE-Project","Slip: t498","03/04/2013","No"
+"Time","ShawnR","Lanesborough","DesignS","III-Project","Slip: t499","03/04/2013","No"
+"Time","TomH","Lawrence","Bid","LAWRE-Project01","Slip: t500","03/04/2013","Yes"
+"Time","CoreyM","Lee","Clean","LEE-Project02","Slip: t501","03/04/2013","No"
+"Time","JamesR","Leicester","DesignL","OOO-Project","Slip: t502","03/04/2013","No"
+"Time","SamS","Lenox","Planting","UUU-Project","Slip: t503","03/04/2013","No"
+"Time","ShawnR","Leominster","Lot Maintenance","","Slip: t504","03/04/2013","No"
+"Time","TomH","Leverett","Water Feature","AAA-Project","Slip: t505","03/05/2013","No"
+"Time","CoreyM","Lexington","Pave","EEE-Project","Slip: t506","03/05/2013","No"
+"Time","JamesR","Leyden","Build Structure","III-Project","Slip: t507","03/05/2013","No"
+"Time","SamS","Lincoln","DemoS","LINCO-Project01","Slip: t508","03/05/2013","No"
+"Time","ShawnR","Littleton","Fix","LITTL-Project02","Slip: t509","03/05/2013","No"
+"Time","TomH","Longmeadow","DesignS","OOO-Project","Slip: t510","03/05/2013","No"
+"Time","CoreyM","Lowell","Bid","UUU-Project","Slip: t511","03/05/2013","No"
+"Time","JamesR","Ludlow","Clean","","Slip: t512","03/05/2013","No"
+"Time","SamS","Lunenburg","DesignL","AAA-Project","Slip: t513","03/06/2013","No"
+"Time","ShawnR","Lynn","Planting","EEE-Project","Slip: t514","03/06/2013","No"
+"Time","TomH","Lynnfield","Lot Maintenance","III-Project","Slip: t515","03/06/2013","No"
+"Time","CoreyM","Malden","Water Feature","MALDE-Project01","Slip: t516","03/06/2013","No"
+"Time","JamesR","Manchester-by-the-Sea","Pave","MANCH-Project02","Slip: t517","03/06/2013","No"
+"Time","SamS","Mansfield","Build Structure","OOO-Project","Slip: t518","03/06/2013","No"
+"Time","ShawnR","Marblehead","DemoS","UUU-Project","Slip: t519","03/06/2013","No"
+"Time","TomH","Marion","Fix","","Slip: t520","03/06/2013","No"
+"Time","CoreyM","Marlborough","DesignS","AAA-Project","Slip: t521","03/07/2013","No"
+"Time","JamesR","Marshfield","Bid","EEE-Project","Slip: t522","03/07/2013","No"
+"Time","SamS","Mashpee","Clean","III-Project","Slip: t523","03/07/2013","No"
+"Time","ShawnR","Mattapoisett","DesignL","MATTA-Project01","Slip: t524","03/07/2013","No"
+"Time","TomH","Maynard","Planting","MAYNA-Project02","Slip: t525","03/07/2013","Yes"
+"Time","CoreyM","Medfield","Lot Maintenance","OOO-Project","Slip: t526","03/07/2013","No"
+"Time","JamesR","Medford","Water Feature","UUU-Project","Slip: t527","03/07/2013","No"
+"Time","SamS","Medway","Pave","","Slip: t528","03/07/2013","No"
+"Time","ShawnR","Melrose","Build Structure","AAA-Project","Slip: t529","03/08/2013","No"
+"Time","TomH","Mendon","DemoS","EEE-Project","Slip: t530","03/08/2013","No"
+"Time","CoreyM","Merrimac","Fix","III-Project","Slip: t531","03/08/2013","No"
+"Time","JamesR","Methuen","DesignS","METHU-Project01","Slip: t532","03/08/2013","No"
+"Time","SamS","Middleborough","Bid","MIDDL-Project02","Slip: t533","03/08/2013","No"
+"Time","ShawnR","Middlefield","Clean","OOO-Project","Slip: t534","03/08/2013","No"
+"Time","TomH","Middleton","DesignL","UUU-Project","Slip: t535","03/08/2013","No"
+"Time","CoreyM","Milford","Planting","","Slip: t536","03/08/2013","No"
+"Time","JamesR","Millbury","Lot Maintenance","AAA-Project","Slip: t537","03/09/2013","No"
+"Time","SamS","Millis","Water Feature","EEE-Project","Slip: t538","03/09/2013","No"
+"Time","ShawnR","Millville","Pave","III-Project","Slip: t539","03/09/2013","No"
+"Time","TomH","Milton","Build Structure","MILTO-Project01","Slip: t540","03/09/2013","No"
+"Time","CoreyM","Monroe","DemoS","MONRO-Project02","Slip: t541","03/09/2013","No"
+"Time","JamesR","Monson","Fix","OOO-Project","Slip: t542","03/09/2013","No"
+"Time","SamS","Montague","DesignS","UUU-Project","Slip: t543","03/09/2013","No"
+"Time","ShawnR","Monterey","Bid","","Slip: t544","03/09/2013","No"
+"Time","TomH","Montgomery","Clean","AAA-Project","Slip: t545","03/10/2013","No"
+"Time","CoreyM","Mount Washington","DesignL","EEE-Project","Slip: t546","03/10/2013","No"
+"Time","JamesR","Nahant","Planting","III-Project","Slip: t547","03/10/2013","No"
+"Time","SamS","Nantucket","Lot Maintenance","NANTU-Project01","Slip: t548","03/10/2013","No"
+"Time","ShawnR","Natick","Water Feature","NATIC-Project02","Slip: t549","03/10/2013","No"
+"Time","TomH","Needham","Pave","OOO-Project","Slip: t550","03/10/2013","Yes"
+"Time","CoreyM","New Ashford","Build Structure","UUU-Project","Slip: t551","03/10/2013","No"
+"Time","JamesR","New Bedford","DemoS","","Slip: t552","03/10/2013","No"
+"Time","SamS","New Braintree","Fix","AAA-Project","Slip: t553","03/11/2013","No"
+"Time","ShawnR","New Marlborough","DesignS","EEE-Project","Slip: t554","03/11/2013","No"
+"Time","TomH","New Salem","Bid","III-Project","Slip: t555","03/11/2013","No"
+"Time","CoreyM","Newbury","Clean","NEWBU-Project01","Slip: t556","03/11/2013","No"
+"Time","JamesR","Newburyport","DesignL","NEWBU-Project02","Slip: t557","03/11/2013","No"
+"Time","SamS","Newton","Planting","OOO-Project","Slip: t558","03/11/2013","No"
+"Time","ShawnR","Norfolk","Lot Maintenance","UUU-Project","Slip: t559","03/11/2013","No"
+"Time","TomH","North Adams","Water Feature","","Slip: t560","03/11/2013","No"
+"Time","CoreyM","North Andover","Pave","AAA-Project","Slip: t561","03/12/2013","No"
+"Time","JamesR","North Attleborough","Build Structure","EEE-Project","Slip: t562","03/12/2013","No"
+"Time","SamS","North Brookfield","DemoS","III-Project","Slip: t563","03/12/2013","No"
+"Time","ShawnR","North Reading","Fix","NORTH-Project01","Slip: t564","03/12/2013","No"
+"Time","TomH","Northampton","DesignS","NORTH-Project02","Slip: t565","03/12/2013","No"
+"Time","CoreyM","Northborough","Bid","OOO-Project","Slip: t566","03/12/2013","No"
+"Time","JamesR","Northbridge","Clean","UUU-Project","Slip: t567","03/12/2013","No"
+"Time","SamS","Northfield","DesignL","","Slip: t568","03/12/2013","No"
+"Time","ShawnR","Norton","Planting","AAA-Project","Slip: t569","03/13/2013","No"
+"Time","TomH","Norwell","Lot Maintenance","EEE-Project","Slip: t570","03/13/2013","No"
+"Time","CoreyM","Norwood","Water Feature","III-Project","Slip: t571","03/13/2013","No"
+"Time","JamesR","Oak Bluffs","Pave","OAKBL-Project01","Slip: t572","03/13/2013","No"
+"Time","SamS","Oakham","Build Structure","OAKHA-Project02","Slip: t573","03/13/2013","No"
+"Time","ShawnR","Orange","DemoS","ORANG-Project02","Slip: t574","03/13/2013","No"
+"Time","TomH","Orleans","Fix","UUU-Project","Slip: t575","03/13/2013","Yes"
+"Time","CoreyM","Otis","DesignS","","Slip: t576","03/13/2013","No"
+"Time","JamesR","Oxford","Bid","AAA-Project","Slip: t577","03/14/2013","No"
+"Time","SamS","Palmer","Clean","EEE-Project","Slip: t578","03/14/2013","No"
+"Time","ShawnR","Paxton","DesignL","III-Project","Slip: t579","03/14/2013","No"
+"Time","TomH","Peabody","Planting","OOO-Project","Slip: t580","03/14/2013","No"
+"Time","CoreyM","Pelham","Lot Maintenance","PELHA-Project01","Slip: t581","03/14/2013","No"
+"Time","JamesR","Pembroke","Water Feature","PEMBR-Project02","Slip: t582","03/14/2013","No"
+"Time","SamS","Pepperell","Pave","UUU-Project","Slip: t583","03/14/2013","No"
+"Time","ShawnR","Peru","Build Structure","","Slip: t584","03/14/2013","No"
+"Time","TomH","Petersham","DemoS","AAA-Project","Slip: t585","03/15/2013","No"
+"Time","CoreyM","Phillipston","Fix","EEE-Project","Slip: t586","03/15/2013","No"
+"Time","JamesR","Pittsfield","DesignS","III-Project","Slip: t587","03/15/2013","No"
+"Time","SamS","Plainfield","Bid","OOO-Project","Slip: t588","03/15/2013","No"
+"Time","ShawnR","Plainville","Clean","PLAIN-Project01","Slip: t589","03/15/2013","No"
+"Time","TomH","Plymouth","DesignL","PLYMO-Project02","Slip: t590","03/15/2013","No"
+"Time","CoreyM","Plympton","Planting","UUU-Project","Slip: t591","03/15/2013","No"
+"Time","JamesR","Princeton","Lot Maintenance","","Slip: t592","03/15/2013","No"
+"Time","SamS","Provincetown","Water Feature","AAA-Project","Slip: t593","03/16/2013","No"
+"Time","ShawnR","Quincy","Pave","EEE-Project","Slip: t594","03/16/2013","No"
+"Time","TomH","Randolph","Build Structure","III-Project","Slip: t595","03/16/2013","No"
+"Time","CoreyM","Raynham","DemoS","OOO-Project","Slip: t596","03/16/2013","No"
+"Time","JamesR","Reading","Fix","READI-Project01","Slip: t597","03/16/2013","No"
+"Time","SamS","Rehoboth","DesignS","REHOB-Project02","Slip: t598","03/16/2013","No"
+"Time","ShawnR","Revere","Bid","UUU-Project","Slip: t599","03/16/2013","No"
+"Time","TomH","Richmond","Clean","","Slip: t600","03/16/2013","Yes"
+"Time","CoreyM","Rochester","DesignL","AAA-Project","Slip: t601","03/17/2013","No"
+"Time","JamesR","Rockland","Planting","EEE-Project","Slip: t602","03/17/2013","No"
+"Time","SamS","Rockport","Lot Maintenance","III-Project","Slip: t603","03/17/2013","No"
+"Time","ShawnR","Rowe","Water Feature","OOO-Project","Slip: t604","03/17/2013","No"
+"Time","TomH","Rowley","Pave","ROWLE-Project01","Slip: t605","03/17/2013","No"
+"Time","CoreyM","Royalston","Build Structure","ROYAL-Project02","Slip: t606","03/17/2013","No"
+"Time","JamesR","Russell","DemoS","UUU-Project","Slip: t607","03/17/2013","No"
+"Time","SamS","Rutland","Fix","","Slip: t608","03/17/2013","No"
+"Time","ShawnR","Salem","DesignS","AAA-Project","Slip: t609","03/18/2013","No"
+"Time","TomH","Salisbury","Bid","EEE-Project","Slip: t610","03/18/2013","No"
+"Time","CoreyM","Sandisfield","Clean","III-Project","Slip: t611","03/18/2013","No"
+"Time","JamesR","Sandwich","DesignL","OOO-Project","Slip: t612","03/18/2013","No"
+"Time","SamS","Saugus","Planting","SAUGU-Project01","Slip: t613","03/18/2013","No"
+"Time","ShawnR","Savoy","Lot Maintenance","SAVOY-Project02","Slip: t614","03/18/2013","No"
+"Time","TomH","Scituate","Water Feature","UUU-Project","Slip: t615","03/18/2013","No"
+"Time","CoreyM","Seekonk","Pave","","Slip: t616","03/18/2013","No"
+"Time","JamesR","Sharon","Build Structure","AAA-Project","Slip: t617","03/19/2013","No"
+"Time","SamS","Sheffield","DemoS","EEE-Project","Slip: t618","03/19/2013","No"
+"Time","ShawnR","Shelburne","Fix","III-Project","Slip: t619","03/19/2013","No"
+"Time","TomH","Sherborn","DesignS","OOO-Project","Slip: t620","03/19/2013","No"
+"Time","CoreyM","Shirley","Bid","SHIRL-Project01","Slip: t621","03/19/2013","No"
+"Time","JamesR","Shrewsbury","Clean","SHREW-Project02","Slip: t622","03/19/2013","No"
+"Time","SamS","Shutesbury","DesignL","UUU-Project","Slip: t623","03/19/2013","No"
+"Time","ShawnR","Somerset","Planting","","Slip: t624","03/19/2013","No"
+"Time","TomH","Somerville","Lot Maintenance","AAA-Project","Slip: t625","03/20/2013","Yes"
+"Time","CoreyM","South Hadley","Water Feature","EEE-Project","Slip: t626","03/20/2013","No"
+"Time","JamesR","Southampton","Pave","III-Project","Slip: t627","03/20/2013","No"
+"Time","SamS","Southborough","Build Structure","OOO-Project","Slip: t628","03/20/2013","No"
+"Time","ShawnR","Southbridge","DemoS","SOUTH-Project01","Slip: t629","03/20/2013","No"
+"Time","TomH","Southwick","Fix","SOUTH-Project02","Slip: t630","03/20/2013","No"
+"Time","CoreyM","Spencer","DesignS","UUU-Project","Slip: t631","03/20/2013","No"
+"Time","JamesR","Springfield","Bid","","Slip: t632","03/20/2013","No"
+"Time","SamS","Sterling","Clean","AAA-Project","Slip: t633","03/21/2013","No"
+"Time","ShawnR","Stockbridge","DesignL","EEE-Project","Slip: t634","03/21/2013","No"
+"Time","TomH","Stoneham","Planting","III-Project","Slip: t635","03/21/2013","No"
+"Time","CoreyM","Stoughton","Lot Maintenance","OOO-Project","Slip: t636","03/21/2013","No"
+"Time","JamesR","Stow","Water Feature","STOW-Project01","Slip: t637","03/21/2013","No"
+"Time","SamS","Sturbridge","Pave","STURB-Project02","Slip: t638","03/21/2013","No"
+"Time","ShawnR","Sudbury","Build Structure","UUU-Project","Slip: t639","03/21/2013","No"
+"Time","TomH","Sunderland","DemoS","","Slip: t640","03/21/2013","No"
+"Time","CoreyM","Sutton","Fix","AAA-Project","Slip: t641","03/22/2013","No"
+"Time","JamesR","Swampscott","DesignS","EEE-Project","Slip: t642","03/22/2013","No"
+"Time","SamS","Swansea","Bid","III-Project","Slip: t643","03/22/2013","No"
+"Time","ShawnR","Taunton","Clean","OOO-Project","Slip: t644","03/22/2013","No"
+"Time","TomH","Templeton","DesignL","TEMPL-Project01","Slip: t645","03/22/2013","No"
+"Time","CoreyM","Tewksbury","Planting","TEWKS-Project02","Slip: t646","03/22/2013","No"
+"Time","JamesR","Tisbury","Lot Maintenance","UUU-Project","Slip: t647","03/22/2013","No"
+"Time","SamS","Tolland","Water Feature","","Slip: t648","03/22/2013","No"
+"Time","ShawnR","Topsfield","Pave","AAA-Project","Slip: t649","03/23/2013","No"
+"Time","TomH","Townsend","Build Structure","EEE-Project","Slip: t650","03/23/2013","Yes"
+"Time","CoreyM","Truro","DemoS","III-Project","Slip: t651","03/23/2013","No"
+"Time","JamesR","Tyngsborough","Fix","OOO-Project","Slip: t652","03/23/2013","No"
+"Time","SamS","Tyringham","DesignS","TYRIN-Project01","Slip: t653","03/23/2013","No"
+"Time","ShawnR","Upton","Bid","UPTON-Project02","Slip: t654","03/23/2013","No"
+"Time","TomH","Uxbridge","Clean","UXBRI-Project02","Slip: t655","03/23/2013","No"
+"Time","CoreyM","Wakefield","DesignL","","Slip: t656","03/23/2013","No"
+"Time","JamesR","Wales","Planting","AAA-Project","Slip: t657","03/24/2013","No"
+"Time","SamS","Walpole","Lot Maintenance","EEE-Project","Slip: t658","03/24/2013","No"
+"Time","ShawnR","Waltham","Water Feature","III-Project","Slip: t659","03/24/2013","No"
+"Time","TomH","Ware","Pave","OOO-Project","Slip: t660","03/24/2013","No"
+"Time","CoreyM","Wareham","Build Structure","UUU-Project","Slip: t661","03/24/2013","No"
+"Time","JamesR","Warren","DemoS","WARRE-Project01","Slip: t662","03/24/2013","No"
+"Time","SamS","Warwick","Fix","WARWI-Project02","Slip: t663","03/24/2013","No"
+"Time","ShawnR","Washington","DesignS","","Slip: t664","03/24/2013","No"
+"Time","TomH","Watertown","Bid","AAA-Project","Slip: t665","03/25/2013","No"
+"Time","CoreyM","Wayland","Clean","EEE-Project","Slip: t666","03/25/2013","No"
+"Time","JamesR","Webster","DesignL","III-Project","Slip: t667","03/25/2013","No"
+"Time","SamS","Wellesley","Planting","OOO-Project","Slip: t668","03/25/2013","No"
+"Time","ShawnR","Wellfleet","Lot Maintenance","UUU-Project","Slip: t669","03/25/2013","No"
+"Time","TomH","Wendell","Water Feature","WENDE-Project01","Slip: t670","03/25/2013","No"
+"Time","CoreyM","Wenham","Pave","WENHA-Project02","Slip: t671","03/25/2013","No"
+"Time","JamesR","West Boylston","Build Structure","","Slip: t672","03/25/2013","No"
+"Time","SamS","West Bridgewater","DemoS","AAA-Project","Slip: t673","03/26/2013","No"
+"Time","ShawnR","West Brookfield","Fix","EEE-Project","Slip: t674","03/26/2013","No"
+"Time","TomH","West Newbury","DesignS","III-Project","Slip: t675","03/26/2013","Yes"
+"Time","CoreyM","West Springfield","Bid","OOO-Project","Slip: t676","03/26/2013","No"
+"Time","JamesR","West Stockbridge","Clean","UUU-Project","Slip: t677","03/26/2013","No"
+"Time","SamS","West Tisbury","DesignL","WESTT-Project01","Slip: t678","03/26/2013","No"
+"Time","ShawnR","Westborough","Planting","WESTB-Project02","Slip: t679","03/26/2013","No"
+"Time","TomH","Westfield","Lot Maintenance","","Slip: t680","03/26/2013","No"
+"Time","CoreyM","Westford","Water Feature","AAA-Project","Slip: t681","03/27/2013","No"
+"Time","JamesR","Westhampton","Pave","EEE-Project","Slip: t682","03/27/2013","No"
+"Time","SamS","Westminster","Build Structure","III-Project","Slip: t683","03/27/2013","No"
+"Time","ShawnR","Weston","DemoS","OOO-Project","Slip: t684","03/27/2013","No"
+"Time","TomH","Westport","Fix","UUU-Project","Slip: t685","03/27/2013","No"
+"Time","CoreyM","Westwood","DesignS","WESTW-Project01","Slip: t686","03/27/2013","No"
+"Time","JamesR","Weymouth","Bid","WEYMO-Project02","Slip: t687","03/27/2013","No"
+"Time","SamS","Whately","Clean","","Slip: t688","03/27/2013","No"
+"Time","ShawnR","Whitman","DesignL","AAA-Project","Slip: t689","03/28/2013","No"
+"Time","TomH","Wilbraham","Planting","EEE-Project","Slip: t690","03/28/2013","No"
+"Time","CoreyM","Williamsburg","Lot Maintenance","III-Project","Slip: t691","03/28/2013","No"
+"Time","JamesR","Williamstown","Water Feature","OOO-Project","Slip: t692","03/28/2013","No"
+"Time","SamS","Wilmington","Pave","UUU-Project","Slip: t693","03/28/2013","No"
+"Time","ShawnR","Winchendon","Build Structure","WINCH-Project01","Slip: t694","03/28/2013","No"
+"Time","TomH","Winchester","DemoS","WINCH-Project02","Slip: t695","03/28/2013","No"
+"Time","CoreyM","Windsor","Fix","","Slip: t696","03/28/2013","No"
+"Time","JamesR","Winthrop","DesignS","AAA-Project","Slip: t697","03/29/2013","No"
+"Time","SamS","Woburn","Bid","EEE-Project","Slip: t698","03/29/2013","No"
+"Time","ShawnR","Worcester","Clean","III-Project","Slip: t699","03/29/2013","No"
+"Time","TomH","Worthington","DesignL","OOO-Project","Slip: t700","03/29/2013","Yes"
+"Time","CoreyM","Wrentham","Planting","UUU-Project","Slip: t701","03/29/2013","No"
+"Time","JamesR","Yarmouth","Lot Maintenance","YARMO-Project01","Slip: t702","03/29/2013","No"
