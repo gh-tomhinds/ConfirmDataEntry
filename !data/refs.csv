@@ -12,7 +12,7 @@ CHICO-Project01,one-chico,Chicopee
 CUMMI-Project01,one-cummi,Cummington
 EASTH-Project01,one-easth,Easthampton
 WESTH-Project01,one-westh,Westhampton
-EASTL-Project01,one-eastl,East Longmeadow
+EASTL-Project01,one-eastl,East.Longmeadow
 GOSHE-Project01,one-goshe,Goshen
 GRANB-Project01,one-granb,Granby
 GRANV-Project01,one-granv,Granville
@@ -32,14 +32,14 @@ PLAIN-Project01,one-plain,Plainfield
 RUSSE-Project01,one-russe,Russell
 SHUTE-Project01,one-shute,Shutesbury
 SOUTH-Project01,one-south,Southampton
-SOUTH-Project01,one-south,South Hadley
+SOUTH-Project01,one-south,South.Hadley
 SOUTH-Project01,one-south,Southwick
 WALES-Project01,one-wales,Wales
 WARE-Project01,one-ware,Ware
 WARRE-Project01,one-warre,Warren
 WESTF-Project01,one-westf,Westfield
 MONTG-Project01,one-montg,Montgomery
-WESTS-Project01,one-wests,West Springfield
+WESTS-Project01,one-wests,West.Springfield
 WHATE-Project01,one-whate,Whately
 WILBR-Project01,one-wilbr,Wilbraham
 WILLI-Project01,one-willi,Williamsburg
@@ -64,7 +64,7 @@ LENOX-Project01,one-lenox,Lenox
 MIDDL-Project01,one-middl,Middlefield
 NEWMA-Project01,one-newma,New Marlborough
 MONTE-Project01,one-monte,Monterey
-NORTH-Project01,one-north,North Adams
+NORTH-Project01,one-north,North.Adams
 CLARK-Project01,one-clark,Clarksburg
 FLORI-Project01,one-flori,Florida
 OTIS-Project01,one-otis,Otis
@@ -76,7 +76,7 @@ MOUNT-Project01,one-mount,Mount Washington
 EGREM-Project01,one-egrem,Egremont
 STOCK-Project01,one-stock,Stockbridge
 TYRIN-Project01,one-tyrin,Tyringham
-WESTS-Project01,one-wests,West Stockbridge
+WESTS-Project01,one-wests,West.Stockbridge
 WILLI-Project01,one-willi,Williamstown
 WINDS-Project01,one-winds,Windsor
 GREEN-Project01,one-green,Greenfield
@@ -130,7 +130,7 @@ BOYLS-Project01,one-boyls,Boylston
 BROOK-Project01,one-brook,Brookfield
 CHARL-Project01,one-charl,Charlton
 CLINT-Project01,one-clint,Clinton
-EASTB-Project01,one-eastb,East Brookfield
+EASTB-Project01,one-eastb,East.Brookfield
 DOUGL-Project01,one-dougl,Douglas
 GRAFT-Project01,one-graft,Grafton
 HOLDE-Project01,one-holde,Holden
@@ -142,7 +142,7 @@ MILLV-Project01,one-millv,Millville
 NEWBR-Project01,one-newbr,New Braintree
 NORTH-Project01,one-north,Northborough
 NORTH-Project01,one-north,Northbridge
-NORTH-Project01,one-north,North Brookfield
+NORTH-Project01,one-north,North.Brookfield
 OXFOR-Project01,one-oxfor,Oxford
 PRINC-Project01,one-princ,Princeton
 RUTLA-Project01,one-rutla,Rutland
@@ -156,8 +156,8 @@ UXBRI-Project01,one-uxbri,Uxbridge
 WEBST-Project01,one-webst,Webster
 DUDLE-Project01,one-dudle,Dudley
 WESTB-Project01,one-westb,Westborough
-WESTB-Project01,one-westb,West Boylston
-WESTB-Project01,one-westb,West Brookfield
+WESTB-Project01,one-westb,West.Boylston
+WESTB-Project01,one-westb,West.Brookfield
 SUTTO-Project01,one-sutto,Sutton
 WORCE-Project01,one-worce,Worcester
 PAXTO-Project01,one-paxto,Paxton
@@ -197,10 +197,10 @@ GEORG-Project01,one-georg,Georgetown
 GROVE-Project01,one-grove,Groveland
 LAWRE-Project01,one-lawre,Lawrence
 METHU-Project01,one-methu,Methuen
-NORTH-Project01,one-north,North Andover
+NORTH-Project01,one-north,North.Andover
 LOWEL-Project01,one-lowel,Lowell
 MERRI-Project01,one-merri,Merrimac
-NORTH-Project01,one-north,North Reading
+NORTH-Project01,one-north,North.Reading
 READI-Project01,one-readi,Reading
 TEWKS-Project01,one-tewks,Tewksbury
 TYNGS-Project01,one-tyngs,Tyngsborough
@@ -233,7 +233,7 @@ ROWLE-Project01,one-rowle,Rowley
 SALEM-Project01,one-salem,Salem
 TOPSF-Project01,one-topsf,Topsfield
 WENHA-Project01,one-wenha,Wenham
-WESTN-Project01,one-westn,West Newbury
+WESTN-Project01,one-westn,West.Newbury
 BELLI-Project01,one-belli,Bellingham
 CANTO-Project01,one-canto,Canton
 COHAS-Project01,one-cohas,Cohasset
@@ -277,7 +277,7 @@ AVON-Project01,one-avon,Avon
 BRIDG-Project01,one-bridg,Bridgewater
 CARVE-Project01,one-carve,Carver
 DUXBU-Project01,one-duxbu,Duxbury
-EASTB-Project01,one-eastb,East Bridgewater
+EASTB-Project01,one-eastb,East.Bridgewater
 EASTO-Project01,one-easto,Easton
 HALIF-Project01,one-halif,Halifax
 HANOV-Project01,one-hanov,Hanover
@@ -292,7 +292,7 @@ KINGS-Project01,one-kings,Kingston
 PLYMP-Project01,one-plymp,Plympton
 RANDO-Project01,one-rando,Randolph
 ROCKL-Project01,one-rockl,Rockland
-WESTB-Project01,one-westb,West Bridgewater
+WESTB-Project01,one-westb,West.Bridgewater
 WHITM-Project01,one-whitm,Whitman
 LEXIN-Project01,one-lexin,Lexington
 BROOK-Project01,one-brook,Brookline
@@ -314,7 +314,7 @@ OAKBL-Project01,one-oakbl,Oak Bluffs
 SANDW-Project01,one-sandw,Sandwich
 TISBU-Project01,one-tisbu,Tisbury
 WAREH-Project01,one-wareh,Wareham
-WESTT-Project01,one-westt,West Tisbury
+WESTT-Project01,one-westt,West.Tisbury
 BARNS-Project01,one-barns,Barnstable
 BREWS-Project01,one-brews,Brewster
 CHATH-Project01,one-chath,Chatham
@@ -339,7 +339,7 @@ MARIO-Project01,one-mario,Marion
 MATTA-Project01,one-matta,Mattapoisett
 NEWBE-Project01,one-newbe,New Bedford
 ACUSH-Project01,one-acush,Acushnet
-NORTH-Project01,one-north,North Attleborough
+NORTH-Project01,one-north,North.Attleborough
 PLAIN-Project01,one-plain,Plainville
 NORTO-Project01,one-norto,Norton
 RAYNH-Project01,one-raynh,Raynham
@@ -363,7 +363,7 @@ CHICO-Project02,two-chico,Chicopee
 CUMMI-Project02,two-cummi,Cummington
 EASTH-Project02,two-easth,Easthampton
 WESTH-Project02,two-westh,Westhampton
-EASTL-Project02,two-eastl,East Longmeadow
+EASTL-Project02,two-eastl,East.Longmeadow
 GOSHE-Project02,two-goshe,Goshen
 GRANB-Project02,two-granb,Granby
 GRANV-Project02,two-granv,Granville
@@ -383,14 +383,14 @@ PLAIN-Project02,two-plain,Plainfield
 RUSSE-Project02,two-russe,Russell
 SHUTE-Project02,two-shute,Shutesbury
 SOUTH-Project02,two-south,Southampton
-SOUTH-Project02,two-south,South Hadley
+SOUTH-Project02,two-south,South.Hadley
 SOUTH-Project02,two-south,Southwick
 WALES-Project02,two-wales,Wales
 WARE-Project02,two-ware,Ware
 WARRE-Project02,two-warre,Warren
 WESTF-Project02,two-westf,Westfield
 MONTG-Project02,two-montg,Montgomery
-WESTS-Project02,two-wests,West Springfield
+WESTS-Project02,two-wests,West.Springfield
 WHATE-Project02,two-whate,Whately
 WILBR-Project02,two-wilbr,Wilbraham
 WILLI-Project02,two-willi,Williamsburg
@@ -415,7 +415,7 @@ LENOX-Project02,two-lenox,Lenox
 MIDDL-Project02,two-middl,Middlefield
 NEWMA-Project02,two-newma,New Marlborough
 MONTE-Project02,two-monte,Monterey
-NORTH-Project02,two-north,North Adams
+NORTH-Project02,two-north,North.Adams
 CLARK-Project02,two-clark,Clarksburg
 FLORI-Project02,two-flori,Florida
 OTIS-Project02,two-otis,Otis
@@ -427,7 +427,7 @@ MOUNT-Project02,two-mount,Mount Washington
 EGREM-Project02,two-egrem,Egremont
 STOCK-Project02,two-stock,Stockbridge
 TYRIN-Project02,two-tyrin,Tyringham
-WESTS-Project02,two-wests,West Stockbridge
+WESTS-Project02,two-wests,West.Stockbridge
 WILLI-Project02,two-willi,Williamstown
 WINDS-Project02,two-winds,Windsor
 GREEN-Project02,two-green,Greenfield
@@ -481,7 +481,7 @@ BOYLS-Project02,two-boyls,Boylston
 BROOK-Project02,two-brook,Brookfield
 CHARL-Project02,two-charl,Charlton
 CLINT-Project02,two-clint,Clinton
-EASTB-Project02,two-eastb,East Brookfield
+EASTB-Project02,two-eastb,East.Brookfield
 DOUGL-Project02,two-dougl,Douglas
 GRAFT-Project02,two-graft,Grafton
 HOLDE-Project02,two-holde,Holden
@@ -493,7 +493,7 @@ MILLV-Project02,two-millv,Millville
 NEWBR-Project02,two-newbr,New Braintree
 NORTH-Project02,two-north,Northborough
 NORTH-Project02,two-north,Northbridge
-NORTH-Project02,two-north,North Brookfield
+NORTH-Project02,two-north,North.Brookfield
 OXFOR-Project02,two-oxfor,Oxford
 PRINC-Project02,two-princ,Princeton
 RUTLA-Project02,two-rutla,Rutland
@@ -507,8 +507,8 @@ UXBRI-Project02,two-uxbri,Uxbridge
 WEBST-Project02,two-webst,Webster
 DUDLE-Project02,two-dudle,Dudley
 WESTB-Project02,two-westb,Westborough
-WESTB-Project02,two-westb,West Boylston
-WESTB-Project02,two-westb,West Brookfield
+WESTB-Project02,two-westb,West.Boylston
+WESTB-Project02,two-westb,West.Brookfield
 SUTTO-Project02,two-sutto,Sutton
 WORCE-Project02,two-worce,Worcester
 PAXTO-Project02,two-paxto,Paxton
@@ -548,10 +548,10 @@ GEORG-Project02,two-georg,Georgetown
 GROVE-Project02,two-grove,Groveland
 LAWRE-Project02,two-lawre,Lawrence
 METHU-Project02,two-methu,Methuen
-NORTH-Project02,two-north,North Andover
+NORTH-Project02,two-north,North.Andover
 LOWEL-Project02,two-lowel,Lowell
 MERRI-Project02,two-merri,Merrimac
-NORTH-Project02,two-north,North Reading
+NORTH-Project02,two-north,North.Reading
 READI-Project02,two-readi,Reading
 TEWKS-Project02,two-tewks,Tewksbury
 TYNGS-Project02,two-tyngs,Tyngsborough
@@ -584,7 +584,7 @@ ROWLE-Project02,two-rowle,Rowley
 SALEM-Project02,two-salem,Salem
 TOPSF-Project02,two-topsf,Topsfield
 WENHA-Project02,two-wenha,Wenham
-WESTN-Project02,two-westn,West Newbury
+WESTN-Project02,two-westn,West.Newbury
 BELLI-Project02,two-belli,Bellingham
 CANTO-Project02,two-canto,Canton
 COHAS-Project02,two-cohas,Cohasset
@@ -628,7 +628,7 @@ AVON-Project02,two-avon,Avon
 BRIDG-Project02,two-bridg,Bridgewater
 CARVE-Project02,two-carve,Carver
 DUXBU-Project02,two-duxbu,Duxbury
-EASTB-Project02,two-eastb,East Bridgewater
+EASTB-Project02,two-eastb,East.Bridgewater
 EASTO-Project02,two-easto,Easton
 HALIF-Project02,two-halif,Halifax
 HANOV-Project02,two-hanov,Hanover
@@ -643,7 +643,7 @@ KINGS-Project02,two-kings,Kingston
 PLYMP-Project02,two-plymp,Plympton
 RANDO-Project02,two-rando,Randolph
 ROCKL-Project02,two-rockl,Rockland
-WESTB-Project02,two-westb,West Bridgewater
+WESTB-Project02,two-westb,West.Bridgewater
 WHITM-Project02,two-whitm,Whitman
 LEXIN-Project02,two-lexin,Lexington
 BROOK-Project02,two-brook,Brookline
@@ -665,7 +665,7 @@ OAKBL-Project02,two-oakbl,Oak Bluffs
 SANDW-Project02,two-sandw,Sandwich
 TISBU-Project02,two-tisbu,Tisbury
 WAREH-Project02,two-wareh,Wareham
-WESTT-Project02,two-westt,West Tisbury
+WESTT-Project02,two-westt,West.Tisbury
 BARNS-Project02,two-barns,Barnstable
 BREWS-Project02,two-brews,Brewster
 CHATH-Project02,two-chath,Chatham
@@ -690,7 +690,7 @@ MARIO-Project02,two-mario,Marion
 MATTA-Project02,two-matta,Mattapoisett
 NEWBE-Project02,two-newbe,New Bedford
 ACUSH-Project02,two-acush,Acushnet
-NORTH-Project02,two-north,North Attleborough
+NORTH-Project02,two-north,North.Attleborough
 PLAIN-Project02,two-plain,Plainville
 NORTO-Project02,two-norto,Norton
 RAYNH-Project02,two-raynh,Raynham
