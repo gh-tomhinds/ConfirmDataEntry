@@ -1,0 +1,225 @@
+
+Bill: BA-AdjTot-Time1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjTot-Exp1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjTot-Both1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjTK-Time1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjTK-Exp1-------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjTK-Both1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjTask1---------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-AdjExpense1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Absolute-Time1---------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Absolute-Exp1----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Absolute-Both1---------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Minimum-Time1----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Minimum-Exp1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Minimum-Both1----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Maximum-Time1----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Maximum-Exp1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Maximum-Both1----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-FFPlus-Time1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-FFPlus-Exp1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-FFPlus-Both1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Cont-Time1-------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Cont-Time2-------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Cont-Exp1--------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Cont-Exp2--------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Cont-Both1-------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Cont-Both2-------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-MinimumHours1----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Percent1---------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Percent2---------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Percent3---------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-ProgressTot1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-ProgressTot2-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-ProgressTot3-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-ProgressAct1-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-ProgressAct2-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-ProgressAct3-----------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-InterimTot1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-InterimTot2------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-InterimTot3------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-InterimAct1------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-InterimAct2------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-InterimAct3------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-RoundMin1--------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-RoundDol1--------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
+
+Bill: BA-Precision1-------------------------------------
+ Fees matches.
+ Costs matches.
+ Total matches.
