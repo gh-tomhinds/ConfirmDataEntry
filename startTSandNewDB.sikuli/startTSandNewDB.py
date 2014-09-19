@@ -107,31 +107,40 @@ def StartTS_CreateNewDB():
         type("n")
         type("d")
         
-    time.sleep(1)    
+    time.sleep(1)
+    
+# Empty database, press Next
     type("n",KeyModifier.ALT)
 
 # new db path and settings
     logging.debug('- enter path')
     type(Settings.dbFolder)
     type(Key.ENTER)
+
+# Firm name
     type("Timeslips Handyman Services")
     type(Key.ENTER)    
     logging.debug('- db settings')
+
+# Decimals
     time.sleep(1)     
     type(Key.ENTER)        
+
+# set Fiscal month to July
     myTools.pressDOWN(6)
-    type(Key.ENTER)            
+    type(Key.ENTER)
+
+# starting invoice number    
     type("12345")
     type(Key.ENTER)
 
 # bill with firm heading    
     myTools.pressDOWN(2)
-
-# unmark cover page
+# mark cover page
     type(Key.TAB,KeyModifier.SHIFT)
     type(Key.SPACE)
     time.sleep(1)        
-    type(Key.ENTER)
+    type(Key.ENTER)    
     
 #    click("Idonotuseana.png")    
     time.sleep(1)        
@@ -141,14 +150,19 @@ def StartTS_CreateNewDB():
     type(Key.SPACE)
     time.sleep(1)        
     type(Key.ENTER)
-    
+
+# Ready to Create Your Database
     time.sleep(1)     
     type(Key.ENTER)
+
+# Wait for db to be created    
     wait("1351889503018.png",FOREVER)
+
+# press Finish    
     type(Key.ENTER)
     time.sleep(1)
 
-# address
+# Firm name/address
     type(Key.TAB)
     type("239 Western Avenue")
     myTools.pressTAB(2)
@@ -162,6 +176,13 @@ def StartTS_CreateNewDB():
     type(Key.TAB)
     type("508-768-6100")
     time.sleep(1)
+
+# project separator
+    myTools.pressF6(6)
+    time.sleep(1)
+    type(".")
+
+# close General settings
     type(Key.ENTER)    
 
 # getting started
