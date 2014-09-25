@@ -173,16 +173,64 @@
 </span>    <span class="cmt"># also add one hour DoNotBill time
 </span>    <span class="cmt"># note: no slip with Recur will also be on Hold (see previous if)
 </span>    <span class="cmt"># the slipType check below is so bill arrangement scripts don't run this part
-</span>    <span class="kw">if</span> slipType == <span class="str">"t"</span> <span class="kw">and</span> slipnum <span class="kw">in</span> (<span class="dig">6</span>, <span class="dig">7</span>, <span class="dig">9</span>, <span class="dig">10</span>):
-        myTools.pressTAB(<span class="dig">7</span>)
+</span>    <span class="kw">if</span> slipType == <span class="str">"t"</span> <span class="kw">and</span> slipnum <span class="kw">in</span> range(<span class="dig">6</span>,<span class="dig">11</span>):
+
+        <span class="cmt"># recurring
+</span>        myTools.pressTAB(<span class="dig">7</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.SPACE)
 
-        <span class="skw">click</span>(<img src="1407270589401.png" />)
-        myTools.pressTAB(<span class="dig">7</span>)
+        <span class="cmt"># open section
+</span>        <span class="skw">click</span>(<img src="1407270589401.png" />)
+
+        <span class="cmt"># markup
+</span>        myTools.pressTAB(<span class="dig">5</span>)
+        <span class="kw">if</span> slipnum <span class="kw">in</span> (<span class="dig">7</span>,<span class="dig">8</span>):
+            <span class="skw">type</span>(<span class="str">"-10.12347"</span>)
+        <span class="kw">else</span>:
+            <span class="skw">type</span>(<span class="str">"11.23457"</span>)
+
+        <span class="cmt"># adjustment
+</span>        myTools.pressTAB(<span class="dig">1</span>)
+        <span class="kw">if</span> slipnum <span class="kw">in</span> (<span class="dig">7</span>,<span class="dig">8</span>):
+            <span class="skw">type</span>(<span class="str">"-10.12347"</span>)
+        <span class="kw">else</span>:
+            <span class="skw">type</span>(<span class="str">"11.23457"</span>)
+
+        <span class="cmt"># DNB time
+</span>        myTools.pressTAB(<span class="dig">1</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(<span class="str">"1"</span>)
+
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">click</span>(<img src="1407270746072.png" />)
+
+    <span class="kw">elif</span> slipType == <span class="str">"e"</span> <span class="kw">and</span> slipnum <span class="kw">in</span> range(<span class="dig">706</span>,<span class="dig">711</span>):
+
+        <span class="cmt"># recurring
+</span>        myTools.pressTAB(<span class="dig">7</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(Key.SPACE)
+
+        <span class="cmt"># open section
+</span>        <span class="skw">click</span>(<img src="1411409464297.png" />)
+
+        <span class="cmt"># markup
+</span>        myTools.pressTAB(<span class="dig">1</span>)
+        <span class="kw">if</span> slipnum <span class="kw">in</span> (<span class="dig">706</span>,<span class="dig">708</span>):
+            <span class="skw">type</span>(<span class="str">"-10.12347"</span>)
+        <span class="kw">else</span>:
+            <span class="skw">type</span>(<span class="str">"11.23457"</span>)
+
+        <span class="cmt"># adjustment
+</span>        myTools.pressTAB(<span class="dig">1</span>)
+        <span class="kw">if</span> slipnum <span class="kw">in</span> (<span class="dig">706</span>,<span class="dig">708</span>):
+            <span class="skw">type</span>(<span class="str">"-10.12347"</span>)
+        <span class="kw">else</span>:
+            <span class="skw">type</span>(<span class="str">"11.23457"</span>)
+
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">click</span>(<img src="1411409538652.png" />)
 
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)

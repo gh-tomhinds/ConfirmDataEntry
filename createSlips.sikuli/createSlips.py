@@ -101,16 +101,64 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     # also add one hour DoNotBill time
     # note: no slip with Recur will also be on Hold (see previous if)
     # the slipType check below is so bill arrangement scripts don't run this part
-    if slipType == "t" and slipnum in (6, 7, 9, 10):
+    if slipType == "t" and slipnum in range(6,11):
+        
+        # recurring
         myTools.pressTAB(7)
         time.sleep(1)
         type(Key.SPACE)       
-
+        
+        # open section
         click("1407270589401.png")
-        myTools.pressTAB(7)
+
+        # markup
+        myTools.pressTAB(5)
+        if slipnum in (7,8): 
+            type("-10.12347")
+        else:
+            type("11.23457")            
+
+        # adjustment
+        myTools.pressTAB(1)
+        if slipnum in (7,8): 
+            type("-10.12347")
+        else:
+            type("11.23457")            
+
+        # DNB time
+        myTools.pressTAB(1)
         time.sleep(1)
         type("1")        
+        
+        time.sleep(1)        
         click("1407270746072.png")    
+
+    elif slipType == "e" and slipnum in range(706,711):
+
+        # recurring
+        myTools.pressTAB(7)
+        time.sleep(1)
+        type(Key.SPACE)
+        
+        # open section
+        click("1411409464297.png")
+
+        # markup
+        myTools.pressTAB(1)
+        if slipnum in (706,708):
+            type("-10.12347")
+        else:
+            type("11.23457")
+
+        # adjustment
+        myTools.pressTAB(1)
+        if slipnum in (706,708):
+            type("-10.12347")
+        else:
+            type("11.23457")
+        
+        time.sleep(1)        
+        click("1411409538652.png")
 
     type("s",KeyModifier.CTRL)
     time.sleep(1)
