@@ -114,8 +114,6 @@
     Create_Minimum_RateRule()
     Create_Maximum_RateRule()
 
-
-
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_TimeOnly_RateRule():
 <span class="cmt">#---------------------------------------------------#
@@ -373,29 +371,10 @@
     <span class="skw">click</span>(<img src="1365991914214.png" />)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Change_ClientSettings():
+</span><span class="kw">def</span> Export_ClientSettings():
 <span class="cmt">#---------------------------------------------------#
 </span>
-    logging.debug(<span class="str">'- Change_ClientSettings'</span>)
-
-    logging.debug(<span class="str">'-- change a client'</span>)
-    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    myTools.pressF6(<span class="dig">4</span>)
-    <span class="kw">if</span> Settings.tsVersion == <span class="str">"2015"</span>:
-        myTools.pressF6(<span class="dig">3</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    myTools.pressTAB(<span class="dig">3</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"my"</span>)
-
-    logging.debug(<span class="str">'-- save client'</span>)
-    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-    logging.debug(<span class="str">'-- export settings'</span>)
+    logging.debug(<span class="str">'-- export client settings'</span>)
     <span class="skw">click</span>(<img src="1384206308056.png" />)
 
     <span class="cmt"># clear all and highlight tax profile
@@ -419,6 +398,73 @@
     <span class="skw">type</span>(Key.ENTER)
 
     myTools.waitForExportSuccess()
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Export_TemplateSettings():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'-- export template settings'</span>)
+    <span class="skw">click</span>(<img src="1384206308056.png" />)
+
+    <span class="cmt"># clear all and highlight tax profile
+</span>    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.UP)
+    <span class="skw">type</span>(Key.DOWN)
+
+    <span class="cmt"># mark tax profile
+</span>    <span class="skw">type</span>(Key.F4)
+
+    <span class="cmt"># switch to Templates
+</span>
+    <span class="kw">if</span> Settings.tsVersion &gt; <span class="str">"2014"</span>:
+        myTools.pressSHIFTTAB(<span class="dig">1</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        <span class="skw">type</span>(<span class="str">"t"</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+        myTools.pressTAB(<span class="dig">1</span>)
+    <span class="kw">else</span>:
+        <span class="skw">click</span>(<img src="1411654803624.png" />)
+
+    <span class="cmt"># mark Default
+</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.F4)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># click export
+</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.waitForExportSuccess()
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Change_ClientSettings():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- Change_ClientSettings'</span>)
+
+    logging.debug(<span class="str">'-- change a client'</span>)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressF6(<span class="dig">4</span>)
+    <span class="kw">if</span> Settings.tsVersion &gt; <span class="str">"2014"</span>:
+        myTools.pressF6(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    myTools.pressTAB(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"my"</span>)
+
+    logging.debug(<span class="str">'-- save client'</span>)
+    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+
+    Export_ClientSettings()
+    Export_TemplateSettings()
 
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

@@ -42,8 +42,6 @@ def Create_RateRules():
     Create_Minimum_RateRule()
     Create_Maximum_RateRule()
 
-
-
 #---------------------------------------------------#
 def Create_TimeOnly_RateRule():
 #---------------------------------------------------#
@@ -301,29 +299,10 @@ def Change_TaxRule():
     click("1365991914214.png")
 
 #---------------------------------------------------#
-def Change_ClientSettings():
+def Export_ClientSettings():
 #---------------------------------------------------#
-
-    logging.debug('- Change_ClientSettings')
-
-    logging.debug('-- change a client')
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type(Key.ENTER)
-    time.sleep(1)
-
-    myTools.pressF6(4)
-    if Settings.tsVersion == "2015":
-        myTools.pressF6(3)       
-    time.sleep(1)
     
-    myTools.pressTAB(3)   
-    time.sleep(1)
-    type("my")
-
-    logging.debug('-- save client')
-    type("s",KeyModifier.CTRL)
-    logging.debug('-- export settings')
+    logging.debug('-- export client settings')
     click("1384206308056.png")    
     
     # clear all and highlight tax profile
@@ -346,8 +325,75 @@ def Change_ClientSettings():
     time.sleep(1)
     type(Key.ENTER)
 
-    myTools.waitForExportSuccess()
+    myTools.waitForExportSuccess()   
+
+#---------------------------------------------------#
+def Export_TemplateSettings():
+#---------------------------------------------------#
     
+    logging.debug('-- export template settings')
+    click("1384206308056.png")    
+    
+    # clear all and highlight tax profile
+    type(Key.DELETE)
+    time.sleep(1)
+    type(Key.UP)
+    type(Key.DOWN)
+
+    # mark tax profile
+    type(Key.F4)
+
+    # switch to Templates
+    
+    if Settings.tsVersion > "2014":
+        myTools.pressSHIFTTAB(1)
+        time.sleep(1)
+        type("t")
+        time.sleep(1)
+        myTools.pressTAB(1)
+    else:        
+        click("1411654803624.png")    
+
+    # mark Default
+    type(Key.TAB)    
+    type(Key.F4)
+    time.sleep(1)
+
+    # click export
+    type(Key.TAB)
+    type(Key.ENTER)
+    time.sleep(1)
+    type(Key.ENTER)
+
+    myTools.waitForExportSuccess()   
+
+#---------------------------------------------------#
+def Change_ClientSettings():
+#---------------------------------------------------#
+
+    logging.debug('- Change_ClientSettings')
+
+    logging.debug('-- change a client')
+    type("i",KeyModifier.CTRL)
+    time.sleep(1)
+    type(Key.ENTER)
+    time.sleep(1)
+
+    myTools.pressF6(4)
+    if Settings.tsVersion > "2014":
+        myTools.pressF6(3)       
+    time.sleep(1)
+    
+    myTools.pressTAB(3)   
+    time.sleep(1)
+    type("my")
+
+    logging.debug('-- save client')
+    type("s",KeyModifier.CTRL)
+
+    Export_ClientSettings()
+    Export_TemplateSettings()
+
     time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
