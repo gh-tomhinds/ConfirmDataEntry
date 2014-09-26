@@ -114,21 +114,21 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         # markup
         myTools.pressTAB(5)
         if slipnum in (7,8): 
-            type("-10.12347")
+            type("-50.12347")
         else:
-            type("11.23457")            
+            type("51.23457")            
 
         # adjustment
         myTools.pressTAB(1)
         if slipnum in (7,8): 
-            type("-10.12347")
+            type("-50.12347")
         else:
-            type("11.23457")            
+            type("51.23457")            
 
         # DNB time
         myTools.pressTAB(1)
         time.sleep(1)
-        type("1")        
+        type(".75")
         
         time.sleep(1)        
         click("1407270746072.png")    
@@ -146,16 +146,16 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         # markup
         myTools.pressTAB(1)
         if slipnum in (706,708):
-            type("-10.12347")
+            type("-50.12347")
         else:
-            type("11.23457")
+            type("51.23457")
 
         # adjustment
         myTools.pressTAB(1)
         if slipnum in (706,708):
-            type("-10.12347")
+            type("-50.12347")
         else:
-            type("11.23457")
+            type("51.23457")
         
         time.sleep(1)        
         click("1411409538652.png")
