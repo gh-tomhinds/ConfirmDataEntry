@@ -7,6 +7,7 @@ import printBills
 import createPaymentsForMonth
 import createPaymentsToAccount
 import createCreditsForMonth
+import createFinanceChargesForMonth
 
 import makeBackup
 import printPostbillReports
@@ -26,7 +27,8 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         createCreditsForMonth.Create_CreditsForMonth(thisMonth)
-        
+        createFinanceChargesForMonth.Create_FinanceCharges(thisMonth)
+
         makeBackup.Backup_BillData(thisMonth)
 
         # compare some values each month

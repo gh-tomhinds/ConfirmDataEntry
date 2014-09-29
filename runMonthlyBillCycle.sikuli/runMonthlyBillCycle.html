@@ -79,6 +79,7 @@
 <span class="kw">import</span> createPaymentsForMonth
 <span class="kw">import</span> createPaymentsToAccount
 <span class="kw">import</span> createCreditsForMonth
+<span class="kw">import</span> createFinanceChargesForMonth
 
 <span class="kw">import</span> makeBackup
 <span class="kw">import</span> printPostbillReports
@@ -98,6 +99,7 @@
         createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         createCreditsForMonth.Create_CreditsForMonth(thisMonth)
+        createFinanceChargesForMonth.Create_FinanceCharges(thisMonth)
 
         makeBackup.Backup_BillData(thisMonth)
 
