@@ -108,6 +108,23 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Attachment_Add(number):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="cmt"># open section
+</span>    <span class="skw">click</span>(<img src="1411763213105.png" />)
+
+    <span class="cmt"># move to attachment field
+</span>    myTools.pressSHIFTTAB(<span class="dig">2</span>)
+
+    <span class="cmt"># build name and paste it
+</span>    attachmentName = Settings.imgFolder + <span class="str">"\\"</span> + str(number) + <span class="str">".bmp"</span>
+    paste(attachmentName)
+
+    <span class="cmt"># close section
+</span>    <span class="skw">click</span>(<img src="1411763820390.png" />)
+
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
 <span class="cmt">#---------------------------------------------------#
 </span>
@@ -169,7 +186,7 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(Key.SPACE)
 
-    <span class="cmt"># recur the slips 6 ,7, 9, 10; one slip of each bill status type
+    <span class="cmt"># recur the slips 6 thru 10; one slip of each bill status type
 </span>    <span class="cmt"># also add one hour DoNotBill time
 </span>    <span class="cmt"># note: no slip with Recur will also be on Hold (see previous if)
 </span>    <span class="cmt"># the slipType check below is so bill arrangement scripts don't run this part
@@ -202,8 +219,11 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(<span class="str">".75"</span>)
 
-        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">click</span>(<img src="1407270746072.png" />)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+        <span class="cmt"># add an attachment image
+</span>        Attachment_Add(slipnum)
 
     <span class="kw">elif</span> slipType == <span class="str">"e"</span> <span class="kw">and</span> slipnum <span class="kw">in</span> range(<span class="dig">706</span>,<span class="dig">711</span>):
 
@@ -231,6 +251,9 @@
 
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">click</span>(<img src="1411409538652.png" />)
+
+        <span class="cmt"># add an attachment image
+</span>        Attachment_Add(slipnum)
 
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)

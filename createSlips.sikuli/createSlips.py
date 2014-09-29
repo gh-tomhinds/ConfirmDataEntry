@@ -36,6 +36,23 @@ def Close_SlipUI():
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
+def Attachment_Add(number):
+#---------------------------------------------------#
+
+    # open section
+    click("1411763213105.png")
+
+    # move to attachment field
+    myTools.pressSHIFTTAB(2)
+    
+    # build name and paste it
+    attachmentName = Settings.imgFolder + "\\" + str(number) + ".bmp"
+    paste(attachmentName)
+
+    # close section
+    click("1411763820390.png")
+
+#---------------------------------------------------#
 def Create_OneSlip(slipType,tk,act,cli,slipnum):
 #---------------------------------------------------#
 
@@ -97,7 +114,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         time.sleep(1)
         type(Key.SPACE) 
 
-    # recur the slips 6 ,7, 9, 10; one slip of each bill status type
+    # recur the slips 6 thru 10; one slip of each bill status type
     # also add one hour DoNotBill time
     # note: no slip with Recur will also be on Hold (see previous if)
     # the slipType check below is so bill arrangement scripts don't run this part
@@ -130,8 +147,11 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         time.sleep(1)
         type(".75")
         
-        time.sleep(1)        
         click("1407270746072.png")    
+        time.sleep(1)        
+
+        # add an attachment image
+        Attachment_Add(slipnum)
 
     elif slipType == "e" and slipnum in range(706,711):
 
@@ -159,6 +179,9 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         
         time.sleep(1)        
         click("1411409538652.png")
+
+        # add an attachment image
+        Attachment_Add(slipnum)
 
     type("s",KeyModifier.CTRL)
     time.sleep(1)
