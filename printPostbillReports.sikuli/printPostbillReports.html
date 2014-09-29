@@ -79,6 +79,7 @@
 <span class="kw">import</span> printHold
 <span class="kw">import</span> printTaxes
 <span class="kw">import</span> printTOWorksheet
+<span class="kw">import</span> printFeeAlloc
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> print_postbill_reports(month):
@@ -94,6 +95,7 @@
     printHold.Print_Hold(month)
     printTaxes.Print_Taxes(month)
     printTOWorksheet.Print_Worksheet(month)
+    printFeeAlloc.Print_FeeAlloc(month)
 </pre>
 </body>
 </html>
