@@ -34,6 +34,8 @@ def Setup_Stuff():
     Settings.tSlipsFile = Settings.dataFolder + '\\slips1.csv'
     Settings.eSlipsFile = Settings.dataFolder + '\\slips2.csv'
 
+    Settings.imgFolder = Settings.dataFolder + '\\images'
+
 # get TS version
     Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
     time.sleep(1)
