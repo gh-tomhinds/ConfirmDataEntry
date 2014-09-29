@@ -61,7 +61,7 @@ def Export_Timekeepers():
     type("10")
 
     type(Key.TAB)
-    type("e")
+    type("j")
     type(Key.TAB)
     type("5")
 
