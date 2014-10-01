@@ -1,0 +1,159 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>createFinanceChargesForMonth.sikuli\createFinanceChargesForMonth.sikuli</h2> <a href="createFinanceChargesForMonth.sikuli\createFinanceChargesForMonth.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+<span class="kw">import</span> initNames
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Create_OneFinanceCharge(client,cliNum,month):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- Create_OneFinance: '</span> + str(month) + <span class="str">"-"</span> + client)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># choose client
+</span>    <span class="skw">type</span>(client)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># switch page
+</span>    <span class="kw">if</span> Settings.tsVersion &gt; <span class="str">"2014"</span>:
+        myTools.pressF6(<span class="dig">7</span>)
+    <span class="kw">else</span>:
+        myTools.pressF6(<span class="dig">4</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># go to field
+</span>    <span class="kw">if</span> Settings.tsVersion &gt; <span class="str">"2014"</span>:
+        myTools.pressSHIFTTAB(<span class="dig">4</span>)
+    <span class="kw">else</span>:
+        myTools.pressSHIFTTAB(<span class="dig">3</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># set "next bill"
+</span>    <span class="skw">type</span>(<span class="str">"ne"</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># enter finance charge   
+</span>    financeCharge = str(cliNum) + <span class="str">".99"</span>
+    <span class="skw">type</span>(financeCharge)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.pressTAB(<span class="dig">1</span>)
+
+    <span class="cmt"># description
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    financeText = <span class="str">"Finance charge for: "</span> + client + <span class="str">": Month: "</span> + str(month)
+    paste(financeText)
+
+    <span class="cmt"># save
+</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close client info
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Create_FinanceCharges(month):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"finance"</span> + str(month))
+    logging.debug(<span class="str">'Create_FinanceCharges: '</span> + str(month))
+
+    allClients = initNames.Init_Clients()
+    count = <span class="dig">0</span>
+
+    myTools.getFocus()
+
+    <span class="cmt"># client list
+</span>    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+
+    <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
+        count += <span class="dig">1</span>
+
+        <span class="cmt"># always create finance charge for first 5 clients 
+</span>        <span class="cmt"># then create finance charge for 1 out of 35 next clients
+</span>
+        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">35</span> == <span class="dig">0</span>):
+            Create_OneFinanceCharge(oneClient,count,month)
+        <span class="kw">else</span>:
+            logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + oneClient)
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()
+</pre>
+</body>
+</html>
