@@ -230,10 +230,8 @@ def Edit_InterestSetting():
     time.sleep(1)
     type(Key.DELETE)
 
-    if int(Settings.tsVersion) > 2014:
-        myTools.pressDOWN(5)
-    else:
-        myTools.pressDOWN(6)
+    # interest rate
+    myTools.pressDOWN(5)
     
     type(Key.F4)
     time.sleep(1)
