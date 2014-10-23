@@ -97,6 +97,7 @@
 <span class="kw">import</span> setupExpMarkups
 <span class="kw">import</span> setupTaxes
 <span class="kw">import</span> setupClientHold
+<span class="kw">import</span> setupPayDist
 
 <span class="kw">import</span> makeBackup
 
@@ -109,6 +110,8 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
 <span class="cmt">#    editDefaultClient.Edit_DefaultClient()
+</span>
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     createClient.Create_Client(<span class="str">"ZZZlient"</span>,<span class="str">"Client001"</span>,<span class="str">"9999 - First Client"</span>,<span class="str">"In Ref to"</span>,<span class="str">"Client Notes"</span>)
     createTask.Create_Task()
@@ -130,6 +133,7 @@
     editExpense.Edit_Expense()
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
+    setupPayDist.Setup_PayDist()
 
     createRefs.Create_Refs()
     importRefs.Import_Refs()

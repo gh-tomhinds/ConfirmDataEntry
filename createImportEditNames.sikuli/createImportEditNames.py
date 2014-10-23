@@ -25,6 +25,7 @@ import setupFeeAlloc
 import setupExpMarkups
 import setupTaxes
 import setupClientHold
+import setupPayDist
 
 import makeBackup
 
@@ -37,7 +38,9 @@ def CreateImportEdit_Names():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
  
 #    editDefaultClient.Edit_DefaultClient()
-    
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
     createClient.Create_Client("ZZZlient","Client001","9999 - First Client","In Ref to","Client Notes")
     createTask.Create_Task()
     createExpense.Create_Expense()
@@ -50,7 +53,7 @@ def CreateImportEdit_Names():
     editClientFunds.Edit_ClientFunds()
     printFunds.Print_Funds("FundsSettings-01.csv")   
     setupClientHold.Setup_ClientHold()
-    setupFeeAlloc.Setup_FeeAlloc()    
+    setupFeeAlloc.Setup_FeeAlloc()
     
     importTasks.Import_Tasks()
     editTask.Edit_Task()
@@ -58,7 +61,8 @@ def CreateImportEdit_Names():
     editExpense.Edit_Expense()
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
-    
+    setupPayDist.Setup_PayDist()
+
     createRefs.Create_Refs()
     importRefs.Import_Refs()
 
