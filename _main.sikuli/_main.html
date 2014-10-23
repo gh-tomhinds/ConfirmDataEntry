@@ -70,20 +70,20 @@
 <h2>_main.sikuli\_main.sikuli</h2> <a href="_main.sikuli\_main.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
-<span class="cmt"># _main</span>
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
-<span class="cmt">#</span>
-<span class="cmt"># These scripts rely on the following:                </span>
-<span class="cmt">#</span>
-<span class="cmt"># 1) Windows Explorer windows opens in primary monitor </span>
-<span class="cmt"># 2) Timeslips is installed below C:\Program Files (x86)  </span>
-<span class="cmt"># 3) Timeslips install folder is in format: Timeslips 2014</span>
-<span class="cmt">#</span>
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
-
-<span class="cmt"># import my sikuli scripts</span>
-<span class="kw">import</span> myTools
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="cmt"># _main
+</span><span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="cmt">#
+</span><span class="cmt"># These scripts rely on the following:                
+</span><span class="cmt">#
+</span><span class="cmt"># 1) Windows Explorer windows opens in primary monitor 
+</span><span class="cmt"># 2) Timeslips is installed below C:\Program Files (x86)  
+</span><span class="cmt"># 3) Timeslips install folder is in format: Timeslips 2014
+</span><span class="cmt">#
+</span><span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+<span class="cmt"># import my sikuli scripts
+</span><span class="kw">import</span> myTools
 
 <span class="kw">import</span> setupStuff
 <span class="kw">import</span> startTSandNewDB
@@ -97,10 +97,12 @@
 <span class="kw">import</span> createSlips
 <span class="kw">import</span> createSlipsManually
 
-<span class="kw">import</span> reviewBillingArrangements
-<span class="kw">import</span> baCommon
+<span class="kw">import</span> setupSplitBills
 
 <span class="kw">import</span> runMonthlyBillCycle
+
+<span class="kw">import</span> reviewBillingArrangements
+<span class="kw">import</span> baCommon
 
 <span class="kw">import</span> makeBackup
 <span class="kw">import</span> setupCalTerms
@@ -109,16 +111,16 @@
 <span class="kw">import</span> printExpenses
 <span class="kw">import</span> compareReports
 
-<span class="cmt">#import sendEmail</span>
-
-<span class="cmt">##############################################################</span>
-
+<span class="cmt">#import sendEmail
+</span>
+<span class="cmt">##############################################################
+</span>
 myTools.setupLog()
 myTools.startTimeStamp()
 setupStuff.Setup_Stuff()
 
-<span class="cmt">##############################################################</span>
-
+<span class="cmt">##############################################################
+</span>
 startTSandNewDB.StartTS_CreateNewDB()
 
 tweakPrefs.Tweak_Prefs()
@@ -127,24 +129,26 @@ createCustomFields.Create_CustomFields()
 
 createImportEditNames.CreateImportEdit_Names()
 
-<span class="cmt">#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
-<span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+createSlips.Create_Slips(<span class="dig">10</span>,<span class="dig">10</span>) <span class="cmt"># pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+<span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+</span>
+setupSplitBills.Setup_SplitBills()
 
-<span class="cmt">#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
+runMonthlyBillCycle.run_MonthlyBillCycle(<span class="dig">1</span>,<span class="dig">13</span>) <span class="cmt"># pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
 
-<span class="cmt">#baCommon.Setup_BADefaultLayout()</span>
-<span class="cmt">#reviewBillingArrangements.Review_BillingArrangements()</span>
+baCommon.Setup_BADefaultLayout()
+reviewBillingArrangements.Review_BillingArrangements()
 
-<span class="cmt">#setupCalTerms.Setup_CalTerms()</span>
-<span class="cmt">#calendarStuff.Calendar_Stuff()</span>
-<span class="cmt">#printTasks.Print_Tasks()</span>
-<span class="cmt">#printExpenses.Print_Expenses()</span>
-<span class="cmt">#compareReports.Compare_Reports()</span>
-
+<span class="cmt">#setupCalTerms.Setup_CalTerms()
+</span><span class="cmt">#calendarStuff.Calendar_Stuff()
+</span><span class="cmt">#printTasks.Print_Tasks()
+</span><span class="cmt">#printExpenses.Print_Expenses()
+</span><span class="cmt">#compareReports.Compare_Reports()
+</span>
 myTools.endTimeStamp()
 
-<span class="cmt">#sendEmail.Send_Email()</span>
-
+<span class="cmt">#sendEmail.Send_Email()
+</span>
 exit()
 </pre>
 </body>
