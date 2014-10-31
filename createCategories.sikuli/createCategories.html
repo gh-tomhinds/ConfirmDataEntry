@@ -89,7 +89,7 @@
     <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
 
     <span class="cmt"># hot keys changed for TS2014
-</span>    <span class="kw">if</span> Settings.tsVersion == <span class="str">"2013"</span>:
+</span>    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
         <span class="skw">type</span>(<span class="str">"i"</span>)
     <span class="kw">else</span>:
         <span class="skw">type</span>(<span class="str">"o"</span>)

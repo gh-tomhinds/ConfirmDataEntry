@@ -40,8 +40,8 @@ def Export_Timekeepers():
     time.sleep(1)    
     type(Key.ENTER)
     time.sleep(1)   
-    
-    if Settings.tsVersion == "2015":
+
+    if int(Settings.tsVersion) > 2014:    
         myTools.pressF6(4)
         myTools.pressTAB(2)        
     else:
@@ -70,7 +70,7 @@ def Export_Timekeepers():
     click("1383851432431.png")
     time.sleep(1)
 
-    if Settings.tsVersion == "2015":
+    if int(Settings.tsVersion) > 2014:    
         type(Key.DOWN)
         # sometimes a keypress is needed to make INS work
     else:    

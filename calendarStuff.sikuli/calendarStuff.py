@@ -33,7 +33,7 @@ def Create_CalEntries():
         type(calEvent["startDate"])
         type(Key.TAB)
         # TS2013 requires extra TAB
-        if Settings.tsVersion == "2013":
+        if int(Settings.tsVersion) < 2014:    
             type(Key.TAB)
 # start time
         if calEvent["startTime"] != "no":
@@ -43,7 +43,7 @@ def Create_CalEntries():
         type(calEvent["endDate"])
         type(Key.TAB)
         # TS2013 requires extra TAB
-        if Settings.tsVersion == "2013":
+        if int(Settings.tsVersion) < 2014:
             type(Key.TAB)
 # end time
         if calEvent["endTime"] != "no":

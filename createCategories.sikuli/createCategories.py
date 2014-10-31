@@ -17,7 +17,7 @@ def Create_Categories():
     type("p",KeyModifier.ALT)
     
     # hot keys changed for TS2014
-    if Settings.tsVersion == "2013":
+    if int(Settings.tsVersion) < 2014:
         type("i")
     else:
         type("o")

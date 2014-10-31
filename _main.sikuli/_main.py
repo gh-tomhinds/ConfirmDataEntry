@@ -49,13 +49,13 @@ setupStuff.Setup_Stuff()
 
 ##############################################################
 
-#startTSandNewDB.StartTS_CreateNewDB()
+startTSandNewDB.StartTS_CreateNewDB()
 
 #tweakPrefs.Tweak_Prefs()
 #createCategories.Create_Categories()
 #createCustomFields.Create_CustomFields()
 
-createImportEditNames.CreateImportEdit_Names()
+#createImportEditNames.CreateImportEdit_Names()
 
 #createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 ##createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10

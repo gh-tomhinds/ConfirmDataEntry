@@ -46,8 +46,8 @@
          h2 {
             display: inline;
             font-weight: normal;
-         }  
-         
+         }
+
          .info {
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
@@ -105,7 +105,7 @@
 </span>        <span class="skw">type</span>(calEvent[<span class="str">"startDate"</span>])
         <span class="skw">type</span>(Key.TAB)
         <span class="cmt"># TS2013 requires extra TAB
-</span>        <span class="kw">if</span> Settings.tsVersion == <span class="str">"2013"</span>:
+</span>        <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
             <span class="skw">type</span>(Key.TAB)
 <span class="cmt"># start time
 </span>        <span class="kw">if</span> calEvent[<span class="str">"startTime"</span>] != <span class="str">"no"</span>:
@@ -115,7 +115,7 @@
 </span>        <span class="skw">type</span>(calEvent[<span class="str">"endDate"</span>])
         <span class="skw">type</span>(Key.TAB)
         <span class="cmt"># TS2013 requires extra TAB
-</span>        <span class="kw">if</span> Settings.tsVersion == <span class="str">"2013"</span>:
+</span>        <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
             <span class="skw">type</span>(Key.TAB)
 <span class="cmt"># end time
 </span>        <span class="kw">if</span> calEvent[<span class="str">"endTime"</span>] != <span class="str">"no"</span>:
