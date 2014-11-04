@@ -37,8 +37,10 @@ def Import_BillLayout():
     type(Key.INSERT)
     type("a",KeyModifier.ALT)
     type(Key.ENTER)
-    time.sleep(1)
+
+    wait("1415050608582.png",FOREVER)
     type(Key.ENTER)
+    
     type(Key.F4,KeyModifier.CTRL)
 
     myTools.sectionEndTimeStamp()

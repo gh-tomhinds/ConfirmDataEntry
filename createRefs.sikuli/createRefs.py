@@ -20,22 +20,29 @@ def Create_Refs():
 
 # Also use Default template
     logging.debug('- open Client Reference Setup')
-    type("a")
+    type(Key.HOME)
     click(Pattern("ML1-2.png").targetOffset(6,10))
 
 # Also use template
     type("t", KeyModifier.ALT)
     type("d")
+    time.sleep(1)
 
 # Export
     type("e", KeyModifier.ALT)    
     time.sleep(1)
 
 # choose all clients
-    click(Pattern("ActonAcushne.png").targetOffset(-7,-6))
-    type(Key.END, KeyModifier.SHIFT)
-    type(Key.SPACE)
-    
+
+    if int(Settings.tsVersion) > 2014:
+        myTools.pressTAB(1)
+        type(Key.INSERT)        
+    else:
+        click(Pattern("ActonAcushne.png").targetOffset(-7,-6))
+        type(Key.END, KeyModifier.SHIFT)
+        type(Key.SPACE)
+    time.sleep(1)
+
 # click Export
     type(Key.TAB)
     type(Key.SPACE)
@@ -45,8 +52,8 @@ def Create_Refs():
     type(Key.ENTER)
     
 # click OK
-    time.sleep(1)
-    type(Key.ENTER)
+    wait("1398732235702.png", FOREVER)
+    type(Key.ENTER)  
     
 # click OK
     type("d",KeyModifier.ALT)
