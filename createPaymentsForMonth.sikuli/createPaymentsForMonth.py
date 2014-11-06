@@ -54,10 +54,22 @@ def Create_OnePayment(client,cliNum,month):
     type(client + " - " + str(cliNum) + " - " + payDate)
     type(Key.ENTER)
     time.sleep(1)
+
+    # save
     type("s",KeyModifier.CTRL)
     
     if exists("1397586037229.png"):
         type(Key.ENTER)
+    time.sleep(1)
+
+    # clear applies and mark future invoice
+    if client in ["East.Bridgewater","North.Attleborough","West.Boylston"]:
+        click("1415287478328.png")
+        time.sleep(1)
+        click("1415287586028.png")
+        time.sleep(1)
+        # save
+        type("s",KeyModifier.CTRL)       
 
 #---------------------------------------------------#
 def Create_PaymentsForMonth(month):
@@ -80,7 +92,7 @@ def Create_PaymentsForMonth(month):
         # always create payments for first 5 clients 
         # then create payments for 1 out of 5 next clients
         
-        if (count in range(6)) or ((count + month) % 5 == 0):
+        if (count in range(6)) or ((count + month) % 5 == 0) or (oneClient in ["East.Bridgewater","North.Attleborough","West.Boylston"]):
             Create_OnePayment(oneClient,count,month)
         else:
             logging.debug('-- skip: ' + str(month) + "-" + oneClient)           

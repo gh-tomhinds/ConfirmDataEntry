@@ -67,89 +67,81 @@
    </head>
 <body>
 <div class="info">
-<h2>createPaymentsToAccount.sikuli\createPaymentsToAccount.sikuli</h2> <a href="createPaymentsToAccount.sikuli\createPaymentsToAccount.zip">(Download this script)</a>
+<h2>createTransfers.sikuli\createTransfers.sikuli</h2> <a href="createTransfers.sikuli\createTransfers.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
-<span class="kw">import</span> csv
 <span class="kw">import</span> myTools
-<span class="kw">import</span> initNames
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Create_OnePayToAccount(client,cliNum,month):
+</span><span class="kw">def</span> Create_OneTransfer(client,cliNum,month):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(month) + <span class="str">"-"</span> + client)
+    logging.debug(<span class="str">'- Create_OneTransfer: '</span> + str(month) + <span class="str">"-"</span> + client)
 
-    <span class="cmt"># new payment
+    <span class="cmt"># new transaction
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># type (skip)
-</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># switch to Transfer
+</span>
+    <span class="skw">type</span>(Key.UP)    <span class="cmt"># this is to get by a UI defect</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># deposit slip (skip)
-</span>    <span class="skw">type</span>(Key.TAB)
-
-    <span class="cmt"># client
-</span>    <span class="skw">type</span>(client)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># skip account
-</span>    <span class="skw">type</span>(Key.TAB)
-
-    <span class="cmt"># date
-</span>    payDate = str(month) + <span class="str">"/28/2013"</span>
-    <span class="skw">type</span>(payDate)
+    <span class="cmt"># client
+</span>    <span class="skw">type</span>(client)
     <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># skip check number
-</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># date
+</span>    tranDate = str(month) + <span class="str">"/28/2013"</span>
+    <span class="skw">type</span>(tranDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># Amount
-</span>    amount = <span class="dig">25</span> + month/float(<span class="dig">100</span>)
+</span>    amount = <span class="dig">10</span> + cliNum
     <span class="skw">type</span>(str(amount))
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># Description
 </span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
-    <span class="skw">type</span>(client + <span class="str">" - "</span> + str(cliNum) + <span class="str">" - "</span> + payDate)
+    <span class="skw">type</span>(client + <span class="str">" - "</span> + str(cliNum) + <span class="str">" - "</span> + tranDate)
     <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># payment list
+</span>    <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
 
-    <span class="kw">if</span> exists(<img src="1398349359000.png" />):
-        <span class="skw">type</span>(<span class="str">"n"</span>)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Create_PaymentsToAccount(month):
+</span><span class="kw">def</span> Create_Transfers(month):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"paystoaccount"</span> + str(month))
-    logging.debug(<span class="str">'Create_PaysToAccount: '</span> + str(month))
+    myTools.sectionStartTimeStamp(<span class="str">"transfers"</span> + str(month))
+    logging.debug(<span class="str">'Create_Transfers: '</span> + str(month))
 
-    allClients = initNames.Init_Clients()
+    allClients = [<span class="str">"East.Bridgewater"</span>,<span class="str">"North.Attleborough"</span>,<span class="str">"West.Boylston"</span>]
     count = <span class="dig">0</span>
 
     myTools.getFocus()
 
-    <span class="cmt"># open funds list
-</span>    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.CTRL)
+    <span class="cmt"># open a/r tran list
+</span>    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
 
-    <span class="cmt"># create PTA for first 5 clients and then every 6th client
-</span>
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
-        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">6</span> == <span class="dig">0</span>):
-            Create_OnePayToAccount(oneClient,count,month)
-        <span class="kw">else</span>:
-            logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + oneClient)
+        Create_OneTransfer(oneClient,count,month)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-
     myTools.sectionEndTimeStamp()
 </pre>
 </body>

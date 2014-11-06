@@ -66,6 +66,8 @@ def Create_PaymentsToAccount(month):
     # open funds list
     type("f",KeyModifier.CTRL)
 
+    # create PTA for first 5 clients and then every 6th client
+
     for oneClient in allClients:
         count += 1
         if (count in range(6)) or ((count + month) % 6 == 0):
