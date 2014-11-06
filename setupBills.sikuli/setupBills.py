@@ -57,7 +57,11 @@ def Setup_Bills():
 
 # SAVE and Close
     type("s",KeyModifier.CTRL)
-    type(Key.ENTER)
+    
+    # delay to get by error
+    time.sleep(2)
+    
+    type(Key.ENTER)    
     type(Key.F4,KeyModifier.CTRL)
 
     myTools.sectionEndTimeStamp()
