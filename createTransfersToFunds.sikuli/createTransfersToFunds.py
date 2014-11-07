@@ -3,22 +3,23 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def Create_OneTransfer(client,cliNum,month):
+def Create_OneFundsTransfer(client,cliNum,month):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OneTransfer: ' + str(month) + "-" + client)
+    logging.debug('- Create_OneFundsTransfer: ' + str(month) + "-" + client)
 
     # new transaction
     type("n",KeyModifier.CTRL)
     time.sleep(1)
 
-    # switch to Transfer
+    # switch to Transfer to Funds
 
     type(Key.UP)    # this is to get by a UI defect
-    time.sleep(1)
-    
+    time.sleep(1)    
     type("t")
-    time.sleep(1)   
+    time.sleep(1)
+    type(Key.DOWN)
+    time.sleep(1)    
     type(Key.TAB)
        
     # client
@@ -32,8 +33,8 @@ def Create_OneTransfer(client,cliNum,month):
     type(Key.TAB)       
             
     # Amount
-    amount = 10 + int(cliNum) + month/float(100)
-    type(str(amount))
+#    amount = 15 + cliNum
+#    type(str(amount))
     type(Key.TAB)
         
     # Description
@@ -45,17 +46,23 @@ def Create_OneTransfer(client,cliNum,month):
 
     # payment list
     type(Key.DOWN)
-    time.sleep(1) 
+    time.sleep(1)
+    type(Key.TAB)
+
+    # funds account
+    type(Key.END)
+    time.sleep(1)
+
     type("s",KeyModifier.CTRL)   
 
 #---------------------------------------------------#
-def Create_Transfers(month):
+def Create_TransfersToFunds(month):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("transfers" + str(month))
-    logging.debug('Create_Transfers: ' + str(month))
+    myTools.sectionStartTimeStamp("transfer funds" + str(month))
+    logging.debug('Create_TransfersFunds: ' + str(month))
 
-    allClients = ["East.Bridgewater","North.Adams","West.Boylston"]
+    allClients = ["East.Brookfield","North.Andover","West.Bridgewater"]
     count = 0
 
     myTools.getFocus()
@@ -66,7 +73,7 @@ def Create_Transfers(month):
 
     for oneClient in allClients:
         count += 1
-        Create_OneTransfer(oneClient,count,month)       
+        Create_OneFundsTransfer(oneClient,count,month)       
 
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

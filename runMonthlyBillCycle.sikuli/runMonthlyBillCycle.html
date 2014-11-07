@@ -78,6 +78,7 @@
 <span class="kw">import</span> printBills
 <span class="kw">import</span> createPaymentsForMonth
 <span class="kw">import</span> createTransfers
+<span class="kw">import</span> createTransferstoFunds
 <span class="kw">import</span> createPaymentsToAccount
 <span class="kw">import</span> createCreditsForMonth
 <span class="kw">import</span> createFinanceChargesForMonth
@@ -99,6 +100,7 @@
         printBills.Print_Bills(thisMonth)
         createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
         createTransfers.Create_Transfers(thisMonth)
+        createTransfersToFunds.Create_TransfersToFunds(thisMonth)
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         createCreditsForMonth.Create_CreditsForMonth(thisMonth)
         createFinanceChargesForMonth.Create_FinanceCharges(thisMonth)

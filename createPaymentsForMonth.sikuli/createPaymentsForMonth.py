@@ -63,7 +63,7 @@ def Create_OnePayment(client,cliNum,month):
     time.sleep(1)
 
     # clear applies and mark future invoice
-    if client in ["East.Bridgewater","North.Attleborough","West.Boylston"]:
+    if client in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]:
         click("1415287478328.png")
         time.sleep(1)
         click("1415287586028.png")
@@ -92,7 +92,7 @@ def Create_PaymentsForMonth(month):
         # always create payments for first 5 clients 
         # then create payments for 1 out of 5 next clients
         
-        if (count in range(6)) or ((count + month) % 5 == 0) or (oneClient in ["East.Bridgewater","North.Attleborough","West.Boylston"]):
+        if (count in range(6)) or ((count + month) % 5 == 0) or (oneClient in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]):
             Create_OnePayment(oneClient,count,month)
         else:
             logging.debug('-- skip: ' + str(month) + "-" + oneClient)           

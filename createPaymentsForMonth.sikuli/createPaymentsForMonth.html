@@ -135,7 +135,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># clear applies and mark future invoice
-</span>    <span class="kw">if</span> client <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"North.Attleborough"</span>,<span class="str">"West.Boylston"</span>]:
+</span>    <span class="kw">if</span> client <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"East.Brookfield"</span>,<span class="str">"North.Adams"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Boylston"</span>,<span class="str">"West.Bridgewater"</span>]:
         <span class="skw">click</span>(<img src="1415287478328.png" />)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">click</span>(<img src="1415287586028.png" />)
@@ -164,7 +164,7 @@
         <span class="cmt"># always create payments for first 5 clients 
 </span>        <span class="cmt"># then create payments for 1 out of 5 next clients
 </span>
-        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">5</span> == <span class="dig">0</span>) <span class="kw">or</span> (oneClient <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"North.Attleborough"</span>,<span class="str">"West.Boylston"</span>]):
+        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">5</span> == <span class="dig">0</span>) <span class="kw">or</span> (oneClient <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"East.Brookfield"</span>,<span class="str">"North.Adams"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Boylston"</span>,<span class="str">"West.Bridgewater"</span>]):
             Create_OnePayment(oneClient,count,month)
         <span class="kw">else</span>:
             logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + oneClient)

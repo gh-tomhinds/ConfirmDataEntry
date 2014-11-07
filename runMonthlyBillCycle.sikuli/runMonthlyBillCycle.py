@@ -6,6 +6,7 @@ import importBillLayout
 import printBills
 import createPaymentsForMonth
 import createTransfers
+import createTransferstoFunds
 import createPaymentsToAccount
 import createCreditsForMonth
 import createFinanceChargesForMonth
@@ -27,6 +28,7 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         printBills.Print_Bills(thisMonth)
         createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
         createTransfers.Create_Transfers(thisMonth)        
+        createTransfersToFunds.Create_TransfersToFunds(thisMonth)        
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         createCreditsForMonth.Create_CreditsForMonth(thisMonth)
         createFinanceChargesForMonth.Create_FinanceCharges(thisMonth)
