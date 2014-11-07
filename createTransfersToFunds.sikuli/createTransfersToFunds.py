@@ -33,8 +33,6 @@ def Create_OneFundsTransfer(client,cliNum,month):
     type(Key.TAB)       
             
     # Amount
-#    amount = 15 + cliNum
-#    type(str(amount))
     type(Key.TAB)
         
     # Description
