@@ -76,9 +76,10 @@
 <span class="kw">import</span> importBillLayout
 
 <span class="kw">import</span> printBills
+<span class="kw">import</span> createSpecCredits
 <span class="kw">import</span> createPaymentsForMonth
 <span class="kw">import</span> createTransfers
-<span class="kw">import</span> createTransferstoFunds
+<span class="kw">import</span> createTransfersToFunds
 <span class="kw">import</span> createPaymentsToAccount
 <span class="kw">import</span> createCreditsForMonth
 <span class="kw">import</span> createFinanceChargesForMonth
@@ -98,6 +99,7 @@
             importBillLayout.Import_BillLayout()
 
         printBills.Print_Bills(thisMonth)
+        createSpecCredits.Create_SpecCredits(thisMonth)
         createPaymentsForMonth.Create_PaymentsForMonth(thisMonth)
         createTransfers.Create_Transfers(thisMonth)
         createTransfersToFunds.Create_TransfersToFunds(thisMonth)
