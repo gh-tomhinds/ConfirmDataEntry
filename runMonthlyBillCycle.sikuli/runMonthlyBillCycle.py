@@ -24,7 +24,7 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         # set up the bill report and import the bill layout before the first month
         if (thisMonth == 1):
             setupBills.Setup_Bills()
-            importBillLayout.Import_BillLayout()         
+            importBillLayout.Import_BillLayout("Bill with Taxes")
         
         printBills.Print_Bills(thisMonth)
         createSpecCredits.Create_SpecCredits(thisMonth)        
