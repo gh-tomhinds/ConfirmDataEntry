@@ -75,33 +75,17 @@
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createSlips
 <span class="kw">import</span> sys
+<span class="kw">from</span> importBillLayout <span class="kw">import</span> Import_Layout
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Import_DefaultLayout():
 <span class="cmt">#---------------------------------------------------#
 </span>
-    logging.debug(<span class="str">'- open layout list'</span>)
-    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
-    <span class="skw">type</span>(<span class="str">"t"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    logging.debug(<span class="str">'- import layout'</span>)
-    <span class="skw">click</span>(Pattern(<img src="1366207860086.png" />).targetOffset(<span class="dig">3</span>,-<span class="dig">9</span>))
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-
-    logging.debug(<span class="str">'- save layout'</span>)
-    <span class="skw">type</span>(Settings.dataFolder + <span class="str">"\\Low Detail.tsl"</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"Low Detail"</span>)
-    <span class="skw">type</span>(<span class="str">"l"</span>,KeyModifier.ALT)
-    <span class="skw">type</span>(<span class="str">"s"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    Import_Layout(<span class="str">"Low Detail"</span>)
 
     logging.debug(<span class="str">'- assign layout'</span>)
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
-    <span class="skw">click</span>(<img src="1372778077901.png" />)
+    <span class="skw">click</span>(<img src="template_list.png" />)
     <span class="skw">type</span>(Key.INSERT)
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(Key.ENTER)
@@ -164,7 +148,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-    <span class="kw">if</span> exists(<img src="1387468197615.png" />):
+    <span class="kw">if</span> exists(<img src="replace_msg.png" />):
         <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># SAVE and Close
@@ -221,7 +205,7 @@
     logging.debug(<span class="str">'BA_Bill: '</span> + baClient + <span class="str">' '</span> + str(billNum))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
-    <span class="skw">click</span>(<img src="1372861568498.png" />)
+    <span class="skw">click</span>(<img src="remove_filters.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">type</span>(Key.DOWN)
@@ -239,22 +223,22 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + baClient + str(billNum) + <span class="str">".txt"</span>)
 
-<span class="cmt">#    for checkmark in findAll("1372861662125.png"):
+<span class="cmt">#    for checkmark in findAll("checkmark.png"):
 </span><span class="cmt">#        click(checkmark)
 </span>
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="kw">if</span> exists(<img src="1372861767712.png" />):
+    <span class="kw">if</span> exists(<img src="replace_msg.png" />):
         <span class="skw">type</span>(Key.ENTER)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="skw">click</span>(<img src="1372861816835.png" />)
+    <span class="skw">click</span>(<img src="approve_bill.png" />)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="kw">if</span> exists(<img src="1387471435110.png" />):
+    <span class="kw">if</span> exists(<img src="select_report_to_print.png" />):
         <span class="skw">type</span>(Key.ESC)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

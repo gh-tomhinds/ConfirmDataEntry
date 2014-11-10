@@ -75,27 +75,22 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Import_BillLayout():
+</span><span class="kw">def</span> Import_Layout(this_layout):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"import layout"</span>)
-    logging.debug(<span class="str">'Import_BillLayout'</span>)
-
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
-
     logging.debug(<span class="str">'- open layout list'</span>)
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"t"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     logging.debug(<span class="str">'- import layout'</span>)
-    <span class="skw">click</span>(Pattern(<img src="1366207860086.png" />).targetOffset(<span class="dig">3</span>,-<span class="dig">9</span>))
+    <span class="skw">click</span>(Pattern(<img src="import_button.png" />).targetOffset(<span class="dig">3</span>,-<span class="dig">9</span>))
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="skw">type</span>(Settings.dataFolder + <span class="str">"\\Bill with Taxes.tsl"</span>)
+    layoutFilePath = Settings.dataFolder + <span class="str">"\\"</span> + this_layout + <span class="str">".tsl"</span>
+    <span class="skw">type</span>(layoutFilePath)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-    <span class="skw">type</span>(<span class="str">"Bill with Taxes"</span>)
+    <span class="skw">type</span>(this_layout)
 
     logging.debug(<span class="str">'- save layout'</span>)
     <span class="skw">type</span>(<span class="str">"l"</span>,KeyModifier.ALT)
@@ -104,17 +99,33 @@
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Assign_Layout(this_layout):
+<span class="cmt">#---------------------------------------------------#
+</span>
     logging.debug(<span class="str">'- assign layout'</span>)
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(Key.INSERT)
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(Key.ENTER)
 
-    <span class="skw">wait</span>(<img src="1415050608582.png" />,FOREVER)
+    <span class="skw">wait</span>(<img src="assigned_message.png" />,FOREVER)
     <span class="skw">type</span>(Key.ENTER)
 
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Import_BillLayout(layoutName):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"import layout"</span>)
+    logging.debug(<span class="str">'Import_BillLayout'</span>)
 
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    Import_Layout(layoutName)
+    Assign_Layout()
+
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()
 </pre>
 </body>

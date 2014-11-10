@@ -3,33 +3,17 @@ import logging
 import myTools
 import createSlips
 import sys
+from importBillLayout import Import_Layout
 
 #---------------------------------------------------#
 def Import_DefaultLayout():
 #---------------------------------------------------#
 
-    logging.debug('- open layout list')
-    type("b",KeyModifier.ALT)
-    type("t")
-    time.sleep(1)
-    logging.debug('- import layout')
-    click(Pattern("1366207860086.png").targetOffset(3,-9))
-    time.sleep(2)
-
-    logging.debug('- save layout')
-    type(Settings.dataFolder + "\\Low Detail.tsl")
-    type(Key.ENTER)
-    time.sleep(1)
-    type("Low Detail")
-    type("l",KeyModifier.ALT)
-    type("s")
-    time.sleep(1)
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
+    Import_Layout("Low Detail")
 
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)
-    click("1372778077901.png")   
+    click("template_list.png")
     type(Key.INSERT)
     type("a",KeyModifier.ALT)
     type(Key.ENTER)
@@ -92,7 +76,7 @@ def setup_BABills():
     time.sleep(1)
     type(Key.ENTER)
     
-    if exists("1387468197615.png"):
+    if exists("replace_msg.png"):
         type(Key.ENTER)        
 
 # SAVE and Close
@@ -149,7 +133,7 @@ def BA_Bill(baClient,billNum):
     logging.debug('BA_Bill: ' + baClient + ' ' + str(billNum))
 
     type("b",KeyModifier.CTRL)
-    click("1372861568498.png")
+    click("remove_filters.png")
     time.sleep(1)
     type(Key.ENTER)
     type(Key.DOWN)
@@ -167,22 +151,22 @@ def BA_Bill(baClient,billNum):
     time.sleep(1)
     type(Settings.repFolder + "\\" + baClient + str(billNum) + ".txt")
 
-#    for checkmark in findAll("1372861662125.png"):
+#    for checkmark in findAll("checkmark.png"):
 #        click(checkmark)
 
     time.sleep(1)
     type(Key.ENTER)  
     time.sleep(1)
 
-    if exists("1372861767712.png"):
+    if exists("replace_msg.png"):
         type(Key.ENTER)  
         time.sleep(1)
      
-    click("1372861816835.png")
+    click("approve_bill.png")
     type(Key.ENTER)  
     time.sleep(1)
 
-    if exists("1387471435110.png"):
+    if exists("select_report_to_print.png"):
         type(Key.ESC)  
 
     type(Key.F4,KeyModifier.CTRL)

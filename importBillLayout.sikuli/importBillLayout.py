@@ -3,27 +3,22 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def Import_BillLayout():
+def Import_Layout(this_layout):
 #---------------------------------------------------#
-
-    myTools.sectionStartTimeStamp("import layout")
-    logging.debug('Import_BillLayout')
-    
-    # make sure timeslips has focus
-    myTools.getFocus()
 
     logging.debug('- open layout list')
     type("b",KeyModifier.ALT)
     type("t")
     time.sleep(1)
     logging.debug('- import layout')
-    click(Pattern("1366207860086.png").targetOffset(3,-9))
+    click(Pattern("import_button.png").targetOffset(3,-9))
     time.sleep(2)
 
-    type(Settings.dataFolder + "\\Bill with Taxes.tsl")
+    layoutFilePath = Settings.dataFolder + "\\" + this_layout + ".tsl"
+    type(layoutFilePath)
     type(Key.ENTER)
     time.sleep(2)
-    type("Bill with Taxes")
+    type(this_layout)
     
     logging.debug('- save layout')    
     type("l",KeyModifier.ALT)
@@ -32,15 +27,31 @@ def Import_BillLayout():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
 
+#---------------------------------------------------#
+def Assign_Layout(this_layout):
+#---------------------------------------------------#
+
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)
     type(Key.INSERT)
     type("a",KeyModifier.ALT)
     type(Key.ENTER)
 
-    wait("1415050608582.png",FOREVER)
+    wait("assigned_message.png",FOREVER)
     type(Key.ENTER)
     
-    type(Key.F4,KeyModifier.CTRL)
+#---------------------------------------------------#
+def Import_BillLayout(layoutName):
+#---------------------------------------------------#
 
-    myTools.sectionEndTimeStamp()
+    myTools.sectionStartTimeStamp("import layout")
+    logging.debug('Import_BillLayout')
+    
+    # make sure timeslips has focus
+    myTools.getFocus()
+
+    Import_Layout(layoutName)
+    Assign_Layout()
+
+    type(Key.F4,KeyModifier.CTRL)
+    myTools.sectionEndTimeStamp()    
