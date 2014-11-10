@@ -48,9 +48,7 @@ def Create_OneCredit(client,cliNum,month):
 
     # save
     type("s",KeyModifier.CTRL)
-    
-    if exists("1397586037229.png"):
-        type(Key.ENTER)
+    myTools.checkForUnappliedAmount()
 
 #---------------------------------------------------#
 def Create_CreditsForMonth(month):

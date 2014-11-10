@@ -59,8 +59,9 @@ def Create_OnePayment(client,cliNum,month):
     type("s",KeyModifier.CTRL)
     myTools.checkForUnappliedAmount()
 
-    # clear applies and mark future invoice
+    # clear applies and mark future invoice (this is for transfers in other scripts)
     if client in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]:
+        logging.debug("-- clear applied")        
         click("1415287478328.png")
         time.sleep(1)
         click("1415287586028.png")
