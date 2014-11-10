@@ -90,6 +90,13 @@ def waitForReport():
         time.sleep(2)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def checkForUnappliedAmount():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #   
+    if exists("1397586037229.png"):
+        type(Key.ENTER)
+    time.sleep(1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def monthToName(aMonth,aName,anExt):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
