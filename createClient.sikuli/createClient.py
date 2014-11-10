@@ -74,7 +74,7 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
     if int(Settings.tsVersion) > 2014:
         type(Key.F6)
     else:
-        click("Inreferencet-1.png")
+        click("in_ref_to.png")
     type(inrefto)
 
 # notes
@@ -93,7 +93,7 @@ def Create_Client(nn1,nn2,fullname,inrefto,clinotes):
     type("s",KeyModifier.CTRL)
     time.sleep(1)
     
-    if exists("1386699132805.png"):
+    if exists("do_not_show.png"):
         logging.debug('- conflict check')    
         type(Key.ENTER)
 

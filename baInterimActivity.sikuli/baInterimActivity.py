@@ -82,7 +82,7 @@ def BA_InterimActivity_Arrangement2():
     time.sleep(1)
 
     if int(Settings.tsVersion) > 2014:
-        if exists("1388160064596-1.png"):
+        if exists("are_you_sure.png"):
             type("y",KeyModifier.ALT)
 
     type(Key.F4,KeyModifier.CTRL)
@@ -128,7 +128,7 @@ def BA_InterimActivity_Arrangement3():
     time.sleep(1)
 
     if int(Settings.tsVersion) > 2014:
-        if exists("1388160064596.png"):
+        if exists("are_you_sure.png"):
             type("y",KeyModifier.ALT)
 
     type(Key.F4,KeyModifier.CTRL)

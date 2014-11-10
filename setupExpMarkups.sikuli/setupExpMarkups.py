@@ -31,7 +31,7 @@ def Setup_ExpMarkups():
     type("s", KeyModifier.CTRL)
 
     logging.debug('- export settings')
-    click("1383856692334.png")
+    click("export_btn.png")
     time.sleep(1)
     
     type(Key.DELETE)
@@ -48,7 +48,7 @@ def Setup_ExpMarkups():
     time.sleep(1)
     type(Key.ENTER)    
 
-    wait("1383856805063.png", FOREVER)
+    wait("export_successful.png", FOREVER)
     type(Key.ENTER)    
 
     type(Key.F4,KeyModifier.CTRL)

@@ -20,7 +20,7 @@ def checkFor_Sample():
     logging.debug('- checkFor_Sample')
 
     time.sleep(1)     
-    if exists("Youarepresen.png"):
+    if exists("demo_database_msg.png"):
         logging.debug('-- Sample message exists')
         type(Key.ENTER)        
 
@@ -30,7 +30,7 @@ def checkFor_PEP():
     logging.debug('- checkFor_PEP')
 
     time.sleep(1)     
-    if exists("ProductEnhan.png"):
+    if exists("pep.png"):
         logging.debug('-- PEP message exists')
         type(Key.ENTER)        
 
@@ -40,7 +40,7 @@ def checkFor_SPS():
     logging.debug('- checkFor_SPS')
 
     time.sleep(1)     
-    if exists("SagePavment.png"):
+    if exists("sps.png"):
         logging.debug('-- SPS message exists')
         type(Key.ENTER)        
 
@@ -50,7 +50,7 @@ def checkFor_BillingDate():
     logging.debug('- checkFor_BillingDate')
 
     time.sleep(1)     
-    if exists("1386630096436.png"):
+    if exists("bill_date.png"):
         logging.debug('-- billing date message exists')
         type(Key.ENTER)
 
@@ -78,21 +78,21 @@ def StartTS_CreateNewDB():
     
     logging.debug('-- wait until TS is open')
 
-    wait("1387825071114.png",300)
+    wait("sage_timeslips.png",300)
 
     checkFor_PEP()
 
 # start the new db process
     logging.debug('- Check for database')
 
-    if exists("DatabaseNotF.png"):
+    if exists("database_not_found.png"):
         logging.debug('-- db not found')
         type(Key.ENTER)
         time.sleep(2)
         type("n")
     else:
         logging.debug('-- db found')
-        if exists("1386630258779.png"):
+        if exists("supervisor.png"):
             type(Key.ENTER)        
             time.sleep(1)
         checkFor_Sample()
@@ -142,7 +142,7 @@ def StartTS_CreateNewDB():
     time.sleep(1)        
     type(Key.ENTER)    
     
-#    click("Idonotuseana.png")    
+#    click("do_not_use_tal.png")    
     time.sleep(1)        
     type(Key.ENTER)
 
@@ -156,7 +156,7 @@ def StartTS_CreateNewDB():
     type(Key.ENTER)
 
 # Wait for db to be created    
-    wait("1351889503018.png",FOREVER)
+    wait("finish.png",FOREVER)
 
 # press Finish    
     type(Key.ENTER)
@@ -187,7 +187,7 @@ def StartTS_CreateNewDB():
 
 # getting started
     logging.debug('- getting started wiz')
-    wait("EIltly0UlIIH.png",FOREVER)
+    wait("enter_your_name.png",FOREVER)
     type("Xander Yakuza Zork")
     type(Key.TAB)
     time.sleep(1)     
@@ -195,12 +195,12 @@ def StartTS_CreateNewDB():
     type("XanderZ")
     type(Key.TAB)
     type("XZork")
-    click("1351889503018-1.png")
+    click("finish.png")
 
 # backup
     time.sleep(1)
-    if exists("BackUpCurren.png"):
-        click("N0.png")
+    if exists("backup_database.png"):
+        click("no_btn.png")
         time.sleep(1)
         type("n")
 

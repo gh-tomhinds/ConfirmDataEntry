@@ -296,14 +296,14 @@ def Change_TaxRule():
     type("s",KeyModifier.ALT)
     type("i",KeyModifier.ALT)
     type(Key.ENTER)
-    click("1365991914214.png")
+    click("done_btn.png")
 
 #---------------------------------------------------#
 def Export_ClientSettings():
 #---------------------------------------------------#
     
     logging.debug('-- export client settings')
-    click("1384206308056.png")    
+    click("export_btn.png")    
     
     # clear all and highlight tax profile
     type(Key.DELETE)
@@ -332,7 +332,7 @@ def Export_TemplateSettings():
 #---------------------------------------------------#
     
     logging.debug('-- export template settings')
-    click("1384206308056.png")    
+    click("export_btn.png")
     
     # clear all and highlight tax profile
     type(Key.DELETE)
@@ -352,7 +352,7 @@ def Export_TemplateSettings():
         time.sleep(1)
         myTools.pressTAB(1)
     else:        
-        click("1411654803624.png")    
+        click("templates.png")    
 
     # mark Default
     type(Key.TAB)    
@@ -417,7 +417,7 @@ def Change_TaskSettings():
     logging.debug('-- save task')
     type("s",KeyModifier.CTRL)
     logging.debug('-- export settings')
-    rightClick("1387404402223.png")
+    rightClick("taxes_that_apply.png")
     time.sleep(1)
     type("e")
     time.sleep(1)
@@ -456,7 +456,7 @@ def Change_ExpenseSettings():
     type("s",KeyModifier.CTRL)
 
     logging.debug('-- export settings')
-    rightClick("1366001759780.png")
+    rightClick("set_up_taxes.png")
     time.sleep(1)
     type("e")
     time.sleep(1)

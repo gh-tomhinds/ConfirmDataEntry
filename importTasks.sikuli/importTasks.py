@@ -33,7 +33,7 @@ def Import_Tasks():
     type(Key.ENTER)
     time.sleep(2)
 
-    wait("1386702753073.png",FOREVER)
+    wait("tsimport_menubar.png",FOREVER)
     time.sleep(5)
 
     logging.debug('- set up task template')
@@ -52,7 +52,7 @@ def Import_Tasks():
     type(Key.ENTER)
 
     #choose source
-    wait("1386702883681.png",FOREVER)
+    wait("put_data_into.png",FOREVER)
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
@@ -113,7 +113,7 @@ def Import_Tasks():
         Add_TaskCustomField(customField, customFields.index(customField))
 
 # omit 1st record
-    click("Limitrecords.png")
+    click("limit_records.png")
     type(Key.TAB)
     type("2")
     time.sleep(1)    
@@ -126,8 +126,8 @@ def Import_Tasks():
     type(Key.ENTER)   
      
 # verify data
-    wait("1386704518399.png",FOREVER)
-    if exists(Pattern("FailedImport-1.png").similar(0.95)):
+    wait("number_records_imported.png",FOREVER)
+    if exists(Pattern("failed.png").similar(0.95)):
         logging.debug('- import complete - no failed names')
     else:
         logging.debug('- import complete - some failed names')

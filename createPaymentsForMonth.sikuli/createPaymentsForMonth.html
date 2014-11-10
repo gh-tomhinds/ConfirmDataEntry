@@ -134,9 +134,9 @@
     <span class="cmt"># clear applies and mark future invoice (this is for transfers in other scripts)
 </span>    <span class="kw">if</span> client <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"East.Brookfield"</span>,<span class="str">"North.Adams"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Boylston"</span>,<span class="str">"West.Bridgewater"</span>]:
         logging.debug(<span class="str">"-- clear applied"</span>)
-        <span class="skw">click</span>(<img src="1415287478328.png" />)
+        <span class="skw">click</span>(<img src="clear_applies.png" />)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-        <span class="skw">click</span>(<img src="1415287586028.png" />)
+        <span class="skw">click</span>(<img src="apply_remaining_to_future.png" />)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="cmt"># save
 </span>        <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)

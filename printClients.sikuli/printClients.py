@@ -57,7 +57,7 @@ def Print_Clients(reportName):
     time.sleep(1)
     type(Key.ENTER)    
 
-    if exists("1372861767712.png"):
+    if exists("replace_it.png"):
         type(Key.ENTER)  
 
     # wait for report to complete

@@ -67,7 +67,7 @@ def Export_Timekeepers():
 
     type("s", KeyModifier.CTRL)
 
-    click("1383851432431.png")
+    click("export_btn.png")
     time.sleep(1)
 
     if int(Settings.tsVersion) > 2014:    

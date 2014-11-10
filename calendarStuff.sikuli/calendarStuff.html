@@ -143,7 +143,7 @@
                 <span class="skw">type</span>(Key.DOWN)
 <span class="cmt"># schedule
 </span>        <span class="kw">if</span> calEvent[<span class="str">"everyone"</span>] == <span class="str">"yes"</span>:
-            <span class="skw">click</span>(<img src="SdweduleAtte.png" />)
+            <span class="skw">click</span>(<img src="schedule_attendees.png" />)
             time.<span class="skw">sleep</span>(<span class="dig">1</span>)
             <span class="skw">type</span>(Key.INSERT)
             <span class="skw">type</span>(Key.ENTER)
@@ -152,7 +152,7 @@
 <span class="cmt"># notes field
 </span>        <span class="skw">type</span>(calEvent[<span class="str">"notes"</span>])
         <span class="skw">type</span>(<span class="str">" - Event: "</span> + str(eventCount))
-        <span class="skw">click</span>(<img src="SaveClose.png" />)
+        <span class="skw">click</span>(<img src="save_and_close.png" />)
 
     <span class="skw">type</span>(Key.F4,KEY_CTRL)
 

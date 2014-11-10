@@ -7,7 +7,7 @@ def Export_ClientSettings():
 #---------------------------------------------------#
     
     logging.debug('-- export client settings')
-    click("1384206308056.png")    
+    click("export_btn.png")    
     time.sleep(1)
 
     # move to Export To list

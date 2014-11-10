@@ -86,7 +86,7 @@ def Create_Expense():
 
     # quantity
     type("1116.789")
-    type(Pattern("Description.png").targetOffset(29,0), "Stuff to make us pretty") 
+    type(Pattern("description_field.png").targetOffset(29,0), "Stuff to make us pretty") 
 
     logging.debug('- save and close expense list')
     type("s",KeyModifier.CTRL)

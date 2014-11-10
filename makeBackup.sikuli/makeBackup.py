@@ -32,11 +32,11 @@ def Backup_Data(bkuName):
     time.sleep(1)
 
     
-    if exists("1397592513401.png"):
+    if exists("replace_old_one.png"):
         type(Key.ENTER)
         logging.debug('- overwrite backup')
         
-    wait("1397592560374.png",FOREVER)
+    wait("backup_successful.png",FOREVER)
     
     # OK button
     type(Key.ENTER)

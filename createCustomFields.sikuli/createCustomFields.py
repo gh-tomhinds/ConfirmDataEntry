@@ -23,7 +23,7 @@ def FillCliList():
 
     logging.debug('- fill list')
 
-    doubleClick("ListList-1.png")
+    doubleClick("custom_list.png")
     listItems = ['Barnstable','Berkshire','Bristol','Dukes','Essex','Franklin','Hampden','Hampshire','Middlesex','Nantucket','Norfolk','Plymouth','Suffolk','Worcester']
 
     for listItem in listItems:
@@ -40,7 +40,7 @@ def FillTkList():
 
     logging.debug('- fill list')
 
-    doubleClick("ListList-1.png")
+    doubleClick("custom_list.png")
     listItems = ['Brisket','Pork','Ribs','Chicken','Turkey']
 
     for listItem in listItems:
@@ -57,7 +57,7 @@ def FillActList():
 
     logging.debug('- fill list')
 
-    doubleClick("ListList-1.png")
+    doubleClick("custom_list.png")
     listItems = ["Construction","General","Landscape","Hardware","Supplies","Materials","Other"]
 
     for listItem in listItems:

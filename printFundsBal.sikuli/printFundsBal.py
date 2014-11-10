@@ -58,7 +58,7 @@ def Print_FundsBal(reportMonth):
     time.sleep(1)
     type(Key.ENTER)    
 
-    if exists("1372861767712.png"):
+    if exists("replace_it.png"):
         type(Key.ENTER)  
 
     # wait for report to complete
@@ -70,7 +70,7 @@ def Print_FundsBal(reportMonth):
     # close the report
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)            
-    if exists("1397850458110.png"):
+    if exists("preferences_msg.png"):
         type("n")
     type(Key.F4,KeyModifier.CTRL)
         

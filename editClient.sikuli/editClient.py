@@ -226,7 +226,7 @@ def Edit_InterestSetting():
     type("5")
     type("s", KeyModifier.CTRL)
     time.sleep(1)
-    click(Pattern("1368122194605.png").targetOffset(0,8))
+    click(Pattern("export_button.png").targetOffset(0,8))
     time.sleep(1)
     type(Key.DELETE)
 
@@ -262,7 +262,6 @@ def Edit_Client():
     logging.debug('- save')
     type("s",KeyModifier.CTRL)
     time.sleep(1)
-#    click("1364940449992.png")
 
     Edit_DefaultRates()
     Edit_InterestSetting()

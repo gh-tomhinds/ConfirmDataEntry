@@ -31,7 +31,7 @@ def Setup_Discounts():
     time.sleep(1)
 
     type("s", KeyModifier.CTRL)
-    click("1377193090523.png")
+    click("export_btn.png")
     time.sleep(1)
     
     type(Key.DELETE)
@@ -50,7 +50,7 @@ def Setup_Discounts():
     time.sleep(1)
     type(Key.ENTER)    
 
-    wait("1377193370762.png", FOREVER)
+    wait("export_successful.png", FOREVER)
     type(Key.ENTER)    
 
     type(Key.F4,KeyModifier.CTRL)

@@ -21,7 +21,7 @@ def Create_Refs():
 # Also use Default template
     logging.debug('- open Client Reference Setup')
     type(Key.HOME)
-    click(Pattern("ML1-2.png").targetOffset(6,10))
+    click(Pattern("reference_setup.png").targetOffset(6,10))
 
 # Also use template
     type("t", KeyModifier.ALT)
@@ -38,7 +38,7 @@ def Create_Refs():
         myTools.pressTAB(1)
         type(Key.INSERT)        
     else:
-        click(Pattern("ActonAcushne.png").targetOffset(-7,-6))
+        click(Pattern("acton_client.png").targetOffset(-7,-6))
         type(Key.END, KeyModifier.SHIFT)
         type(Key.SPACE)
     time.sleep(1)
@@ -52,7 +52,7 @@ def Create_Refs():
     type(Key.ENTER)
     
 # click OK
-    wait("1398732235702.png", FOREVER)
+    wait("export_successful.png", FOREVER)
     type(Key.ENTER)  
     
 # click OK
@@ -60,7 +60,7 @@ def Create_Refs():
     type(Key.ENTER)
 
 # switch to template clients
-    rightClick("1387312562680.png")
+    rightClick("02351_nn2.png")
     type("t")    
     time.sleep(1)
 

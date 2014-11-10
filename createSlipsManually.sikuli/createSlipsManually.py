@@ -12,7 +12,7 @@ def Open_SlipList():
     myTools.getFocus()
     type("m",KeyModifier.CTRL)
     time.sleep(1)
-    click("1404745515751.png")
+    click("number_of_slips.png")
 
 #---------------------------------------------------#
 def Open_LastSlip():
@@ -104,11 +104,11 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         time.sleep(1)
         type(Key.SPACE)       
 
-        click("1407270589401.png")
+        click("donotbill_open_button.png")
         myTools.pressTAB(7)
         time.sleep(1)
         type("1")        
-        click("1407270746072.png")    
+        click("donotbill_close_button.png")    
 
     type("s",KeyModifier.CTRL)
     time.sleep(1)

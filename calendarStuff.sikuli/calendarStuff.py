@@ -71,7 +71,7 @@ def Create_CalEntries():
                 type(Key.DOWN)
 # schedule
         if calEvent["everyone"] == "yes":
-            click("SdweduleAtte.png")
+            click("schedule_attendees.png")
             time.sleep(1)
             type(Key.INSERT)          
             type(Key.ENTER)          
@@ -80,7 +80,7 @@ def Create_CalEntries():
 # notes field
         type(calEvent["notes"])
         type(" - Event: " + str(eventCount))
-        click("SaveClose.png")
+        click("save_and_close.png")
 
     type(Key.F4,KEY_CTRL)
 

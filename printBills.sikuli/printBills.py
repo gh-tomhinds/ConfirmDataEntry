@@ -45,7 +45,7 @@ def Print_BillRun(month):
     type("b",KeyModifier.CTRL)
     time.sleep(1)
     
-    doubleClick("1368070709186.png")
+    doubleClick("slip_trans_date.png")
     time.sleep(1)
 
     # choose TODAY to get to manual date entry
@@ -66,19 +66,19 @@ def Print_BillRun(month):
     time.sleep(1)
     type(Key.ENTER)    
 
-    wait("1368071925388.png",FOREVER)
+    wait("bills_saved_to_pdf.png",FOREVER)
     type(Key.ENTER)    
     time.sleep(1)
 
     # approve bills
-    wait(Pattern("1368108335979.png").targetOffset(-124,-10),FOREVER)
-    click(Pattern("1368108335979.png").targetOffset(-124,-10))
+    wait(Pattern("approve_bills.png").targetOffset(-124,-10),FOREVER)
+    click("approve_bills.png")
     type(Key.ENTER)
-    waitVanish("1368288231948.png",FOREVER) 
+    waitVanish("approving_statusbar.png",FOREVER) 
 
     # close report entry / don't save
     logging.debug('-- close report window')
-    click("1368113563889.png")
+    click("report_generate_bills.png")
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(2)
     type("n")    

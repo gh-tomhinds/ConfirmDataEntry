@@ -50,7 +50,7 @@ def Tweak_Prefs():
         myTools.pressF6(6)
     else:
         myTools.pressF6(8)
-    click(Pattern("DatesExtra.png").targetOffset(-118,-1))
+    click(Pattern("dates_extra_chk.png").targetOffset(-118,-1))
     time.sleep(1)
 
     # spelling

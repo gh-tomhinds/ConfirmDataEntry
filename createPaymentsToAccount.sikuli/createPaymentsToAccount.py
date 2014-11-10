@@ -48,7 +48,7 @@ def Create_OnePayToAccount(client,cliNum,month):
     time.sleep(.5)
     type("s",KeyModifier.CTRL)
 
-    if exists("1398349359000.png"):
+    if exists("you_deposited_money.png"):
         type("n")    
 
 #---------------------------------------------------#
