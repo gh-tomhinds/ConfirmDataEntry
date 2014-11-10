@@ -12,7 +12,7 @@ def Open_SlipList():
     myTools.getFocus()
     type("m",KeyModifier.CTRL)
     time.sleep(1)
-    click("1404745515751.png")
+    click("number_of_slips_button.png")
 
 #---------------------------------------------------#
 def Open_LastSlip():
@@ -40,7 +40,7 @@ def Attachment_Add(number):
 #---------------------------------------------------#
 
     # open section
-    click("1411763213105.png")
+    click("attachments_open_button.png")
 
     # move to attachment field
     myTools.pressSHIFTTAB(2)
@@ -50,7 +50,7 @@ def Attachment_Add(number):
     paste(attachmentName)
 
     # close section
-    click("1411763820390.png")
+    click("attachments_close_button.png")
 
 #---------------------------------------------------#
 def Create_OneSlip(slipType,tk,act,cli,slipnum):
@@ -126,7 +126,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         type(Key.SPACE)       
         
         # open section
-        click("1407270589401.png")
+        click("donotbill_open_button.png")
 
         # markup
         myTools.pressTAB(5)
@@ -147,7 +147,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         time.sleep(1)
         type(".75")
         
-        click("1407270746072.png")    
+        click("donotbill_close_button.png")    
         time.sleep(1)        
 
         # add an attachment image
@@ -161,7 +161,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
         type(Key.SPACE)
         
         # open section
-        click("1411409464297.png")
+        click("adjustment_open_button.png")
 
         # markup
         myTools.pressTAB(1)
@@ -178,7 +178,7 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
             type("51.23457")
         
         time.sleep(1)        
-        click("1411409538652.png")
+        click("adjustment_close_button.png")
 
         # add an attachment image
         Attachment_Add(slipnum)
@@ -202,7 +202,7 @@ def Import_TimeSlips():
     type(Key.ENTER)
     time.sleep(2)
 
-    wait("1386702753073.png",FOREVER)
+    wait("tsimport_toolbar.png",FOREVER)
     time.sleep(2)
 
     logging.debug('- set up slip template')
@@ -216,7 +216,7 @@ def Import_TimeSlips():
     type(Key.ENTER)
 
 #choose source
-    wait("1386702883681.png")
+    wait("put_data_into.png")
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
@@ -258,7 +258,7 @@ def Import_TimeSlips():
     type(Key.ENTER)
 
 # omit 1st 10 records
-    click("1386713105865-1.png")
+    click("limit_records.png")
     type(Key.TAB)
     type("12")
     time.sleep(1)        
@@ -271,8 +271,8 @@ def Import_TimeSlips():
     type(Key.ENTER)   
      
 # verify data
-    wait("1386704518399.png",FOREVER)
-    if exists(Pattern("FailedImport-1.png").similar(0.95)):
+    wait("number_of_records.png",FOREVER)
+    if exists(Pattern("failed.png").similar(0.95)):
         logging.debug('- import complete - no failed names')
     else:
         logging.debug('- import complete - some failed names')
@@ -307,7 +307,7 @@ def Import_ExpenseSlips():
     type(Key.ENTER)
     time.sleep(2)
 
-    wait("1386702753073.png",FOREVER)
+    wait("tsimport_toolbar.png",FOREVER)
     time.sleep(2)
 
     logging.debug('- set up slip template')
@@ -321,7 +321,7 @@ def Import_ExpenseSlips():
     type(Key.ENTER)
 
 #choose source
-    wait("1386702883681.png")
+    wait("put_data_into.png")
     time.sleep(1)
     type("g",KeyModifier.ALT)
     time.sleep(1)
@@ -363,7 +363,7 @@ def Import_ExpenseSlips():
     type(Key.ENTER)
 
 # omit 1st 10 records
-    click("1386713105865-1.png")
+    click("limit_records.png")
     type(Key.TAB)
     type("12")
     time.sleep(1)        
@@ -376,8 +376,8 @@ def Import_ExpenseSlips():
     type(Key.ENTER)   
      
 # verify data
-    wait("1386704518399.png",FOREVER)
-    if exists(Pattern("FailedImport-1.png").similar(0.95)):
+    wait("number_of_records.png",FOREVER)
+    if exists(Pattern("failed.png").similar(0.95)):
         logging.debug('- import complete - no failed names')
     else:
         logging.debug('- import complete - some failed names')

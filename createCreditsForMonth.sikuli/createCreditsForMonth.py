@@ -43,7 +43,7 @@ def Create_OneCredit(client,cliNum,month):
 
     # Invoice list; go to last entry
     type(Key.END, KeyModifier.CTRL)
-    click("1407941359306.png")
+    click("apply_one_button.png")
     time.sleep(1) 
 
     # save

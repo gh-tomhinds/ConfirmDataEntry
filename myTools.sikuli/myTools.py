@@ -70,15 +70,15 @@ def pressRIGHT(number):
 def getFocus():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     if int(Settings.tsVersion) > 2013:
-        click("1397240284893.png")
+        click("billing_date_statusbar.png")
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def waitForExportSuccess():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     if int(Settings.tsVersion) > 2014:
-        wait("1398732299997.png", FOREVER)
+        wait("export_successful_small.png", FOREVER)
     else:        
-        wait("1398732235702.png", FOREVER)
+        wait("export_successful_wide.png", FOREVER)
     type(Key.ENTER)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -86,14 +86,14 @@ def waitForReport():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
     time.sleep(1)    
     #wait for "calculating" box to disappear
-    while exists("1402586543101.png"):
+    while exists("completed.png"):
         time.sleep(2)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkForUnappliedAmount():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #   
     time.sleep(1)
-    if exists("1397586037229.png"):
+    if exists("go_back_edit_transaction.png"):
         logging.debug("-- unapplied amount")
         type(Key.ENTER)
         time.sleep(1)

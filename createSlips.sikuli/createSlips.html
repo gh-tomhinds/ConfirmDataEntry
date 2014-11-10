@@ -84,7 +84,7 @@
 </span>    myTools.getFocus()
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">click</span>(<img src="1404745515751.png" />)
+    <span class="skw">click</span>(<img src="number_of_slips_button.png" />)
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Open_LastSlip():
@@ -112,7 +112,7 @@
 <span class="cmt">#---------------------------------------------------#
 </span>
     <span class="cmt"># open section
-</span>    <span class="skw">click</span>(<img src="1411763213105.png" />)
+</span>    <span class="skw">click</span>(<img src="attachments_open_button.png" />)
 
     <span class="cmt"># move to attachment field
 </span>    myTools.pressSHIFTTAB(<span class="dig">2</span>)
@@ -122,7 +122,7 @@
     paste(attachmentName)
 
     <span class="cmt"># close section
-</span>    <span class="skw">click</span>(<img src="1411763820390.png" />)
+</span>    <span class="skw">click</span>(<img src="attachments_close_button.png" />)
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Create_OneSlip(slipType,tk,act,cli,slipnum):
@@ -198,7 +198,7 @@
         <span class="skw">type</span>(Key.SPACE)
 
         <span class="cmt"># open section
-</span>        <span class="skw">click</span>(<img src="1407270589401.png" />)
+</span>        <span class="skw">click</span>(<img src="donotbill_open_button.png" />)
 
         <span class="cmt"># markup
 </span>        myTools.pressTAB(<span class="dig">5</span>)
@@ -219,7 +219,7 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(<span class="str">".75"</span>)
 
-        <span class="skw">click</span>(<img src="1407270746072.png" />)
+        <span class="skw">click</span>(<img src="donotbill_close_button.png" />)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
         <span class="cmt"># add an attachment image
@@ -233,7 +233,7 @@
         <span class="skw">type</span>(Key.SPACE)
 
         <span class="cmt"># open section
-</span>        <span class="skw">click</span>(<img src="1411409464297.png" />)
+</span>        <span class="skw">click</span>(<img src="adjustment_open_button.png" />)
 
         <span class="cmt"># markup
 </span>        myTools.pressTAB(<span class="dig">1</span>)
@@ -250,7 +250,7 @@
             <span class="skw">type</span>(<span class="str">"51.23457"</span>)
 
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-        <span class="skw">click</span>(<img src="1411409538652.png" />)
+        <span class="skw">click</span>(<img src="adjustment_close_button.png" />)
 
         <span class="cmt"># add an attachment image
 </span>        Attachment_Add(slipnum)
@@ -274,7 +274,7 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="skw">wait</span>(<img src="1386702753073.png" />,FOREVER)
+    <span class="skw">wait</span>(<img src="tsimport_toolbar.png" />,FOREVER)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
     logging.debug(<span class="str">'- set up slip template'</span>)
@@ -288,7 +288,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#choose source
-</span>    <span class="skw">wait</span>(<img src="1386702883681.png" />)
+</span>    <span class="skw">wait</span>(<img src="put_data_into.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"g"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -330,7 +330,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># omit 1st 10 records
-</span>    <span class="skw">click</span>(<img src="1386713105865-1.png" />)
+</span>    <span class="skw">click</span>(<img src="limit_records.png" />)
     <span class="skw">type</span>(Key.TAB)
     <span class="skw">type</span>(<span class="str">"12"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -343,8 +343,8 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># verify data
-</span>    <span class="skw">wait</span>(<img src="1386704518399.png" />,FOREVER)
-    <span class="kw">if</span> exists(Pattern(<img src="FailedImport-1.png" />).similar(<span class="dig">0.95</span>)):
+</span>    <span class="skw">wait</span>(<img src="number_of_records.png" />,FOREVER)
+    <span class="kw">if</span> exists(Pattern(<img src="failed.png" />).similar(<span class="dig">0.95</span>)):
         logging.debug(<span class="str">'- import complete - no failed names'</span>)
     <span class="kw">else</span>:
         logging.debug(<span class="str">'- import complete - some failed names'</span>)
@@ -379,7 +379,7 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="skw">wait</span>(<img src="1386702753073.png" />,FOREVER)
+    <span class="skw">wait</span>(<img src="tsimport_toolbar.png" />,FOREVER)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
     logging.debug(<span class="str">'- set up slip template'</span>)
@@ -393,7 +393,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#choose source
-</span>    <span class="skw">wait</span>(<img src="1386702883681.png" />)
+</span>    <span class="skw">wait</span>(<img src="put_data_into.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"g"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -435,7 +435,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># omit 1st 10 records
-</span>    <span class="skw">click</span>(<img src="1386713105865-1.png" />)
+</span>    <span class="skw">click</span>(<img src="limit_records.png" />)
     <span class="skw">type</span>(Key.TAB)
     <span class="skw">type</span>(<span class="str">"12"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -448,8 +448,8 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># verify data
-</span>    <span class="skw">wait</span>(<img src="1386704518399.png" />,FOREVER)
-    <span class="kw">if</span> exists(Pattern(<img src="FailedImport-1.png" />).similar(<span class="dig">0.95</span>)):
+</span>    <span class="skw">wait</span>(<img src="number_of_records.png" />,FOREVER)
+    <span class="kw">if</span> exists(Pattern(<img src="failed.png" />).similar(<span class="dig">0.95</span>)):
         logging.debug(<span class="str">'- import complete - no failed names'</span>)
     <span class="kw">else</span>:
         logging.debug(<span class="str">'- import complete - some failed names'</span>)
