@@ -57,10 +57,7 @@ def Create_OnePayment(client,cliNum,month):
 
     # save
     type("s",KeyModifier.CTRL)
-    
-    if exists("1397586037229.png"):
-        type(Key.ENTER)
-    time.sleep(1)
+    myTools.checkForUnappliedAmount()
 
     # clear applies and mark future invoice
     if client in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]:

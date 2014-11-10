@@ -3,6 +3,51 @@ import logging
 import myTools
 
 #---------------------------------------------------#
+def Filter_Invoices():
+#---------------------------------------------------#
+
+    # selection
+    click("1415390994179.png")
+    time.sleep(1)
+    doubleClick("1415391053826.png")
+    time.sleep(1)
+    # unselect all
+    type(Key.DELETE)
+    # select invoice
+    myTools.pressDOWN(5)    
+    type(Key.F4)
+    time.sleep(1)
+    # OK
+    myTools.pressTAB(1)
+    type(Key.ENTER)
+    time.sleep(1)
+    # OK    
+    type(Key.ENTER)
+    time.sleep(1)
+    # Update
+    myTools.pressTAB(1)
+    type(Key.ENTER)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def Clear_Filter():
+#---------------------------------------------------#
+
+    # selection
+    click("1415390994179.png")
+    time.sleep(1)
+    # clear
+    click("1415391577558.png")
+    time.sleep(1)
+    # OK    
+    type(Key.ENTER)
+    time.sleep(1)
+    # Update
+    myTools.pressTAB(1)
+    type(Key.ENTER)
+    time.sleep(1)    
+
+#---------------------------------------------------#
 def Create_SpecCredits(month):
 #---------------------------------------------------#
 
@@ -14,6 +59,8 @@ def Create_SpecCredits(month):
     # open a/r tran list
     type("t",KeyModifier.CTRL)
     time.sleep(2)
+
+    Filter_Invoices()
 
     # move to last transaction (which should be an invoice) and open in
     type(Key.END)
@@ -63,9 +110,14 @@ def Create_SpecCredits(month):
     time.sleep(1)    
 
     #save
-    type("s",KeyModifier.CTRL)   
+    type("s",KeyModifier.CTRL)
+    myTools.checkForUnappliedAmount()
 
     # close
     type(Key.F4,KeyModifier.CTRL)
+
+    Clear_Filter()
+
+    # close   
     type(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()

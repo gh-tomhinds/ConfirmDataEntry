@@ -129,10 +129,7 @@
 
     <span class="cmt"># save
 </span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-
-    <span class="kw">if</span> exists(<img src="1397586037229.png" />):
-        <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.checkForUnappliedAmount()
 
     <span class="cmt"># clear applies and mark future invoice
 </span>    <span class="kw">if</span> client <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"East.Brookfield"</span>,<span class="str">"North.Adams"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Boylston"</span>,<span class="str">"West.Bridgewater"</span>]:
