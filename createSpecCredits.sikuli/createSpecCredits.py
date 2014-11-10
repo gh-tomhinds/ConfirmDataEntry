@@ -7,9 +7,9 @@ def Filter_Invoices():
 #---------------------------------------------------#
 
     # selection
-    click("1415390994179.png")
+    click("selection_button.png")
     time.sleep(1)
-    doubleClick("1415391053826.png")
+    doubleClick("trans_type.png")
     time.sleep(1)
     # unselect all
     type(Key.DELETE)
@@ -37,7 +37,7 @@ def Clear_Filter():
     click("1415390994179.png")
     time.sleep(1)
     # clear
-    click("1415391577558.png")
+    click("remove_all.png")
     time.sleep(1)
     # OK    
     type(Key.ENTER)
@@ -69,7 +69,7 @@ def Create_SpecCredits(month):
     time.sleep(1)
 
     # apply a new special credit
-    click("1415376820659.png")
+    click("apply_new.png")
     myTools.pressDOWN(5)    
     type(Key.ENTER)
     time.sleep(1)
