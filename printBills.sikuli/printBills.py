@@ -72,7 +72,7 @@ def Print_BillRun(month):
 
     # approve bills
     wait(Pattern("approve_bills.png").targetOffset(-124,-10),FOREVER)
-    click("approve_bills.png")
+    click(Pattern("approve_bills.png").targetOffset(-116,-8))
     type(Key.ENTER)
     waitVanish("approving_statusbar.png",FOREVER) 
 
