@@ -61,7 +61,7 @@ def Create_OnePayment(client,cliNum,month):
 
     # clear applies and mark future invoice (this is for transfers in other scripts)
     if client in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]:
-        logging.debug("-- clear applied")        
+        logging.debug("-- CLEAR APPLIED")        
         click("clear_applies.png")
         time.sleep(1)
         click("apply_remaining_to_future.png")

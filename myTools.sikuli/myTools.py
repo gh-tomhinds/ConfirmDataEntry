@@ -94,7 +94,7 @@ def checkForUnappliedAmount():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #   
     time.sleep(1)
     if exists("go_back_edit_transaction.png"):
-        logging.debug("-- unapplied amount")
+        logging.debug("-- UNAPPLIED AMOUNT")
         type(Key.ENTER)
         time.sleep(1)
 
