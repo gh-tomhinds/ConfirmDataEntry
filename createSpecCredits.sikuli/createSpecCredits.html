@@ -81,21 +81,32 @@
     <span class="cmt"># selection
 </span>    <span class="skw">click</span>(<img src="selection_button.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">doubleClick</span>(<img src="trans_type.png" />)
+
+    <span class="cmt"># clear any existing filters
+</span>    <span class="kw">if</span> exists(<img src="remove_all.png" />):
+        <span class="skw">click</span>(<img src="remove_all.png" />)
+
+    <span class="cmt"># add tran type filter
+</span>    <span class="skw">doubleClick</span>(<img src="trans_type.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="cmt"># unselect all
 </span>    <span class="skw">type</span>(Key.DELETE)
+
     <span class="cmt"># select invoice
 </span>    myTools.pressDOWN(<span class="dig">5</span>)
     <span class="skw">type</span>(Key.F4)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="cmt"># OK
 </span>    myTools.pressTAB(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="cmt"># OK    
 </span>    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="cmt"># Update
 </span>    myTools.pressTAB(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
@@ -106,7 +117,7 @@
 <span class="cmt">#---------------------------------------------------#
 </span>
     <span class="cmt"># selection
-</span>    <span class="skw">click</span>(<img src="1415390994179.png" />)
+</span>    <span class="skw">click</span>(<img src="selection_button.png" />)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="cmt"># clear
 </span>    <span class="skw">click</span>(<img src="remove_all.png" />)

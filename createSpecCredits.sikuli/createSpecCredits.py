@@ -9,21 +9,32 @@ def Filter_Invoices():
     # selection
     click("selection_button.png")
     time.sleep(1)
+
+    # clear any existing filters
+    if exists("remove_all.png"):
+        click("remove_all.png")   
+
+    # add tran type filter
     doubleClick("trans_type.png")
     time.sleep(1)
+    
     # unselect all
     type(Key.DELETE)
+    
     # select invoice
     myTools.pressDOWN(5)    
     type(Key.F4)
     time.sleep(1)
+    
     # OK
     myTools.pressTAB(1)
     type(Key.ENTER)
     time.sleep(1)
+    
     # OK    
     type(Key.ENTER)
     time.sleep(1)
+    
     # Update
     myTools.pressTAB(1)
     type(Key.ENTER)
@@ -34,7 +45,7 @@ def Clear_Filter():
 #---------------------------------------------------#
 
     # selection
-    click("1415390994179.png")
+    click("selection_button.png")
     time.sleep(1)
     # clear
     click("remove_all.png")
