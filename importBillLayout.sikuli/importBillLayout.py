@@ -51,7 +51,7 @@ def Import_BillLayout(layoutName):
     myTools.getFocus()
 
     Import_Layout(layoutName)
-    Assign_Layout()
+    Assign_Layout(layoutName)
 
     type(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()    
