@@ -90,6 +90,13 @@ def waitForReport():
         time.sleep(2)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
+def waitForTransaction():
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+    wait("ar_balance.png", FOREVER)
+    time.sleep(1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - #
 def checkForUnappliedAmount():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #   
     time.sleep(1)

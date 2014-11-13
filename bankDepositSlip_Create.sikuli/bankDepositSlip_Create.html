@@ -1,0 +1,318 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>bankDepositSlip_Create.sikuli\bankDepositSlip_Create.sikuli</h2> <a href="bankDepositSlip_Create.sikuli\bankDepositSlip_Create.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># creates new bank deposit slips each month
+</span><span class="cmt"># adds new transactions to them
+</span>
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> logging
+<span class="kw">import</span> myTools
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> Payment_CreateOne(pay_client,pay_month,pay_count):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- Pay_Create: '</span> + str(pay_month) + <span class="str">"-"</span> + pay_client)
+
+    <span class="cmt"># new payment
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    myTools.waitForTransaction()
+
+    <span class="cmt"># type
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># source
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># check number
+</span>    check_num = <span class="str">"pay-"</span> + str(pay_count) + <span class="str">"-"</span> + str(pay_month)
+    <span class="skw">type</span>(check_num)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># client
+</span>    <span class="skw">type</span>(pay_client)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># date
+</span>    pay_date = str(pay_month) + <span class="str">"/28/2013"</span>
+    <span class="skw">type</span>(pay_date)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># skip deposit slip
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Amount
+</span>    pay_amount = <span class="dig">30</span> + pay_count + pay_month/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(pay_amount))
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(<span class="str">"bds-pay: "</span> + pay_client + <span class="str">" - "</span> + pay_date)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close / save
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    myTools.checkForUnappliedAmount()
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> PayToAccount_CreateOne(pta_client,pta_month,pta_count):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- PTA_Create: '</span> + str(pta_month) + <span class="str">"-"</span> + pta_client)
+
+    <span class="cmt"># new pta
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+    myTools.waitForTransaction()
+
+    <span class="cmt"># skip type
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># skip deposit slip
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># client
+</span>    <span class="skw">type</span>(pta_client)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># account
+</span>    <span class="skw">type</span>(Key.END)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># date
+</span>    pta_date = str(pta_month) + <span class="str">"/28/2013"</span>
+    <span class="skw">type</span>(pta_date)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># check number
+</span>    check_num = <span class="str">"pta-"</span> + str(pta_count) + <span class="str">"-"</span> + str(pta_month)
+    <span class="skw">type</span>(check_num)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Amount
+</span>    pta_amount = <span class="dig">20</span> + pta_count + pta_month/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(pta_amount))
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(<span class="str">"bds-pta: "</span> + pta_client + <span class="str">" - "</span> + pta_date)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close / save
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="kw">if</span> exists(<img src="you_deposited_money.png" />):
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> DepToAccount_CreateOne(dep_client,dep_month,dep_count):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'- DEP_Create: '</span> + str(dep_month) + <span class="str">"-"</span> + dep_client)
+
+    <span class="cmt"># new dep
+</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+    myTools.waitForTransaction()
+
+    <span class="cmt"># skip type
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># skip deposit slip
+</span>    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># client
+</span>    <span class="skw">type</span>(dep_client)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># account
+</span>    <span class="skw">type</span>(Key.END)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># date
+</span>    dep_date = str(dep_month) + <span class="str">"/28/2013"</span>
+    <span class="skw">type</span>(dep_date)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># check number
+</span>    check_num = <span class="str">"dep-"</span> + str(dep_count) + <span class="str">"-"</span> + str(dep_month)
+    <span class="skw">type</span>(check_num)
+    <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># Amount
+</span>    dep_amount = <span class="dig">10</span> + dep_count + dep_month/float(<span class="dig">100</span>)
+    <span class="skw">type</span>(str(dep_amount))
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description
+</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(<span class="str">"bds-dep: "</span> + dep_client + <span class="str">" - "</span> + dep_date)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close / save
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="kw">if</span> exists(<img src="you_deposited_money.png" />):
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> BankDepositSlip_CreateOne(bds_month):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    <span class="cmt"># open bank deposit slip list
+</span>    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.ALT)
+    <span class="skw">type</span>(<span class="str">"b"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="create_bankdepositslip.png" />):
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+
+    <span class="cmt"># create a new deposit slip
+</span>    <span class="skw">rightClick</span>(<img src="deposit_number.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># for even months, use "new bank" otherwise use "default"
+</span>    <span class="kw">if</span> bds_month % <span class="dig">2</span> == <span class="dig">0</span>:
+        <span class="skw">type</span>(Key.END)
+    <span class="kw">else</span>:
+        <span class="skw">type</span>(Key.HOME)
+
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># date
+</span>    bds_date = str(bds_month) + <span class="str">"/28/2013"</span>
+    <span class="skw">type</span>(bds_date)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># planned
+</span>    bds_planned = bds_month * <span class="dig">10</span>
+    <span class="skw">type</span>(str(bds_planned))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># close
+</span>    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span><span class="kw">def</span> BankDepositSlips_Create(bds_month):
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+</span>
+    myTools.sectionStartTimeStamp(<span class="str">"bank deposit slip"</span>)
+    logging.debug(<span class="str">'BankDepositSlip_Create'</span>)
+
+    <span class="cmt"># make sure timeslips has focus
+</span>    myTools.getFocus()
+
+    BankDepositSlip_CreateOne(bds_month)
+
+    clientList = [<span class="str">"Hadley"</span>,<span class="str">"Halifax"</span>]
+    bds_count = <span class="dig">0</span>
+
+    <span class="cmt"># add transactions to deposit slip
+</span>    <span class="kw">for</span> bds_client <span class="kw">in</span> clientList:
+        bds_count += <span class="dig">1</span>
+        Payment_CreateOne(bds_client,bds_month,bds_count)
+        PayToAccount_CreateOne(bds_client,bds_month,bds_count)
+        DepToAccount_CreateOne(bds_client,bds_month,bds_count)
+
+    <span class="cmt"># close
+</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+
+    <span class="kw">if</span> exists(<img src="please_note.png" />):
+        <span class="skw">type</span>(Key.ENTER)
+</pre>
+</body>
+</html>

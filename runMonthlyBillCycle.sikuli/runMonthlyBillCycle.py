@@ -11,6 +11,7 @@ import createTransfersToFunds
 import createPaymentsToAccount
 import createCreditsForMonth
 import createFinanceChargesForMonth
+import bankDepositSlip_Create
 
 import makeBackup
 import printPostbillReports
@@ -34,6 +35,7 @@ def run_MonthlyBillCycle(startMonth,endMonth):
         createPaymentsToAccount.Create_PaymentsToAccount(thisMonth)
         createCreditsForMonth.Create_CreditsForMonth(thisMonth)
         createFinanceChargesForMonth.Create_FinanceCharges(thisMonth)
+        bankDepositSlip_Create.BankDepositSlips_Create(thisMonth)
 
         makeBackup.Backup_BillData(thisMonth)
 

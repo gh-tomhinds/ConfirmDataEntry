@@ -26,6 +26,7 @@ import setupExpMarkups
 import setupTaxes
 import setupClientHold
 import setupPayDist
+import fundsSetup
 
 import makeBackup
 
@@ -62,6 +63,7 @@ def CreateImportEdit_Names():
     setupExpMarkups.Setup_ExpMarkups()
     setupTaxes.Setup_Taxes()
     setupPayDist.Setup_PayDist()
+    fundsSetup.FundsAccouts_Setup()
 
     createRefs.Create_Refs()
     importRefs.Import_Refs()

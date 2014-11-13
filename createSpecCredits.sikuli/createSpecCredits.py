@@ -73,7 +73,7 @@ def Create_SpecCredits(month):
 
     Filter_Invoices()
 
-    # move to last transaction (which should be an invoice) and open in
+    # move to last transaction (which should be an invoice) and open
     type(Key.END)
     time.sleep(1)
     type(Key.ENTER)
