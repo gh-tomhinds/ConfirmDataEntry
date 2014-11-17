@@ -130,15 +130,15 @@ setupStuff.Setup_Stuff()
 <span class="cmt">#createImportEditNames.CreateImportEdit_Names()
 </span>
 <span class="cmt">#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-</span><span class="cmt">##createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+</span><span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 </span>
-<span class="cmt">#setupSplitBills.Setup_SplitBills()
-</span>
+setupSplitBills.Setup_SplitBills()
+
 runMonthlyBillCycle.run_MonthlyBillCycle(<span class="dig">1</span>,<span class="dig">13</span>) <span class="cmt"># pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
 
-<span class="cmt">#baCommon.Setup_BADefaultLayout()
-</span><span class="cmt">#reviewBillingArrangements.Review_BillingArrangements()
-</span>
+baCommon.Setup_BADefaultLayout()
+reviewBillingArrangements.Review_BillingArrangements()
+
 <span class="cmt">#setupCalTerms.Setup_CalTerms()
 </span><span class="cmt">#calendarStuff.Calendar_Stuff()
 </span><span class="cmt">#printTasks.Print_Tasks()

@@ -111,10 +111,14 @@
 
     <span class="cmt"># bank account
 </span>    <span class="skw">type</span>(Key.END)
-    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        myTools.pressTAB(<span class="dig">1</span>)
+    <span class="kw">else</span>:
+        myTools.pressTAB(<span class="dig">2</span>)
 
     <span class="cmt"># applies to
-</span>    myTools.pressTAB(<span class="dig">1</span>)
+</span>    <span class="skw">type</span>(Key.END)
+    myTools.pressTAB(<span class="dig">1</span>)
 
     <span class="cmt"># current balance
 </span>    fundsBalance = fundsCount * <span class="dig">10</span> + fundsCount/float(<span class="dig">100</span>)

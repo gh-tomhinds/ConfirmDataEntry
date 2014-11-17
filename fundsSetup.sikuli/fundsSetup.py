@@ -39,9 +39,13 @@ def FundsAccount_Create(fundsClient,fundsCount):
     
     # bank account
     type(Key.END)
-    myTools.pressTAB(2)
-    
+    if int(Settings.tsVersion) > 2014:        
+        myTools.pressTAB(1)
+    else:
+        myTools.pressTAB(2)
+
     # applies to
+    type(Key.END)
     myTools.pressTAB(1)
     
     # current balance
