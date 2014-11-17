@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -69,4 +69,4 @@ def BA_AdjustTotal_Exp():
     # print a bill to text
     ba_Common.BA_Bill("BA-AdjTot-Exp",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-AdjTot-Exp1")
+    ba_ReviewBills.Review_Bill("BA-AdjTot-Exp1")

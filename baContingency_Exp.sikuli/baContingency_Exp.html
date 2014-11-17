@@ -75,7 +75,7 @@
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createClient
 <span class="kw">import</span> ba_Common
-<span class="kw">import</span> baReviewBills
+<span class="kw">import</span> ba_ReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> BA_ContingencyExp_Arrangement1():
@@ -169,7 +169,7 @@
     <span class="cmt"># print a bill to text
 </span>    ba_Common.BA_Bill(<span class="str">"BA-Cont-Exp"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
-</span>    baReviewBills.Review_Bill(<span class="str">"BA-Cont-Exp1"</span>)
+</span>    ba_ReviewBills.Review_Bill(<span class="str">"BA-Cont-Exp1"</span>)
 
     <span class="cmt"># create some more slips
 </span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Cont-Exp"</span>)
@@ -178,7 +178,7 @@
     <span class="cmt"># print the 2nd bill to text
 </span>    ba_Common.BA_Bill(<span class="str">"BA-Cont-Exp"</span>,<span class="dig">2</span>)
     <span class="cmt"># compare 2nd bill's values
-</span>    baReviewBills.Review_Bill(<span class="str">"BA-Cont-Exp2"</span>)
+</span>    ba_ReviewBills.Review_Bill(<span class="str">"BA-Cont-Exp2"</span>)
 </pre>
 </body>
 </html>

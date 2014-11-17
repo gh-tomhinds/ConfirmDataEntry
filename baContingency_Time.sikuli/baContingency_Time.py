@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ContingencyTime_Arrangement1():
@@ -97,7 +97,7 @@ def BA_Contingency_Time():
     # print a bill to text
     ba_Common.BA_Bill("BA-Cont-Time",1)
     # compare bill values
-    baReviewBills.Review_Bill("BA-Cont-Time1")
+    ba_ReviewBills.Review_Bill("BA-Cont-Time1")
 
     # create some more slips
     ba_Common.BA_Create_Slips("BA-Cont-Time")
@@ -106,4 +106,4 @@ def BA_Contingency_Time():
     # print 2nd bill to text
     ba_Common.BA_Bill("BA-Cont-Time",2)
     # compare 2nd bill's values
-    baReviewBills.Review_Bill("BA-Cont-Time2")
+    ba_ReviewBills.Review_Bill("BA-Cont-Time2")

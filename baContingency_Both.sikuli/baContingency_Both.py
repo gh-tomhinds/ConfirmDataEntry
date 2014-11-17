@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ContingencyBoth_Arrangement1():
@@ -108,7 +108,7 @@ def BA_Contingency_Both():
     # print a bill to text
     ba_Common.BA_Bill("BA-Cont-Both",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-Cont-Both1")
+    ba_ReviewBills.Review_Bill("BA-Cont-Both1")
 
     # create some more slips
     ba_Common.BA_Create_Slips("BA-Cont-Both")
@@ -117,4 +117,4 @@ def BA_Contingency_Both():
     # print a bill to text
     ba_Common.BA_Bill("BA-Cont-Both",2)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-Cont-Both2")
+    ba_ReviewBills.Review_Bill("BA-Cont-Both2")

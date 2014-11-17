@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ProgressTotal_Arrangement1():
@@ -125,7 +125,7 @@ def BA_ProgressTotal():
     # print a bill to text
     ba_Common.BA_Bill("BA-ProgressTot",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-ProgressTot1")
+    ba_ReviewBills.Review_Bill("BA-ProgressTot1")
 
     # create some slips
     ba_Common.BA_Create_Slips("BA-ProgressTot")
@@ -134,7 +134,7 @@ def BA_ProgressTotal():
     # print a bill to text
     ba_Common.BA_Bill("BA-ProgressTot",2)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-ProgressTot2")
+    ba_ReviewBills.Review_Bill("BA-ProgressTot2")
 
     # create some slips
     ba_Common.BA_Create_Slips("BA-ProgressTot")
@@ -143,4 +143,4 @@ def BA_ProgressTotal():
     # print a bill to text
     ba_Common.BA_Bill("BA-ProgressTot",3)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-ProgressTot3")
+    ba_ReviewBills.Review_Bill("BA-ProgressTot3")

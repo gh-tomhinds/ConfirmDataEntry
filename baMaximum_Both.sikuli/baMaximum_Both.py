@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_MaximumBoth_Arrangement():
@@ -70,4 +70,4 @@ def BA_Maximum_Both():
     # print a bill to text
     ba_Common.BA_Bill("BA-Maximum-Both",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-Maximum-Both1")
+    ba_ReviewBills.Review_Bill("BA-Maximum-Both1")

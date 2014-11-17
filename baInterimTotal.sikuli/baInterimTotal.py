@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_InterimTotal_Arrangement1():
@@ -125,7 +125,7 @@ def BA_InterimTotal():
     # print a bill to text
     ba_Common.BA_Bill("BA-InterimTot",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-InterimTot1")
+    ba_ReviewBills.Review_Bill("BA-InterimTot1")
 
     # create some slips
     ba_Common.BA_Create_Slips("BA-InterimTot")
@@ -134,7 +134,7 @@ def BA_InterimTotal():
     # print a bill to text
     ba_Common.BA_Bill("BA-InterimTot",2)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-InterimTot2")
+    ba_ReviewBills.Review_Bill("BA-InterimTot2")
 
     # create some slips
     ba_Common.BA_Create_Slips("BA-InterimTot")
@@ -143,4 +143,4 @@ def BA_InterimTotal():
     # print a bill to text
     ba_Common.BA_Bill("BA-InterimTot",3)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-InterimTot3")
+    ba_ReviewBills.Review_Bill("BA-InterimTot3")

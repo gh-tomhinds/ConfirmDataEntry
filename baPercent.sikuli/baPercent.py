@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Percent_Arrangement1():
@@ -214,7 +214,7 @@ def BA_Percent():
     # print a bill to text
     ba_Common.BA_Bill("BA-Percent",1)
     # compare bill values
-    baReviewBills.Review_Bill("BA-Percent1")
+    ba_ReviewBills.Review_Bill("BA-Percent1")
 
     # create some more slips
     ba_Common.BA_Create_Slips("BA-Percent")
@@ -223,7 +223,7 @@ def BA_Percent():
     # print a bill to text
     ba_Common.BA_Bill("BA-Percent",2)
     # compare bill values
-    baReviewBills.Review_Bill("BA-Percent2")
+    ba_ReviewBills.Review_Bill("BA-Percent2")
 
     # create some more slips
     ba_Common.BA_Create_Slips("BA-Percent")
@@ -232,5 +232,5 @@ def BA_Percent():
     # print a bill to text
     ba_Common.BA_Bill("BA-Percent",3)
     # compare bill values
-    baReviewBills.Review_Bill("BA-Percent3")
+    ba_ReviewBills.Review_Bill("BA-Percent3")
 

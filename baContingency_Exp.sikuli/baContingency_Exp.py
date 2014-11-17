@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_ContingencyExp_Arrangement1():
@@ -97,7 +97,7 @@ def BA_Contingency_Exp():
     # print a bill to text
     ba_Common.BA_Bill("BA-Cont-Exp",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-Cont-Exp1")
+    ba_ReviewBills.Review_Bill("BA-Cont-Exp1")
 
     # create some more slips
     ba_Common.BA_Create_Slips("BA-Cont-Exp")
@@ -106,4 +106,4 @@ def BA_Contingency_Exp():
     # print the 2nd bill to text
     ba_Common.BA_Bill("BA-Cont-Exp",2)
     # compare 2nd bill's values
-    baReviewBills.Review_Bill("BA-Cont-Exp2")
+    ba_ReviewBills.Review_Bill("BA-Cont-Exp2")

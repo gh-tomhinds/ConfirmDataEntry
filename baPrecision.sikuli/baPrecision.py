@@ -3,7 +3,7 @@ import logging
 import myTools
 import createClient
 import ba_Common
-import baReviewBills
+import ba_ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def BA_Change_Precision():
@@ -54,4 +54,4 @@ def BA_Precision():
     # print a bill to text
     ba_Common.BA_Bill("BA-Precision",1)
     # compare at bill values
-    baReviewBills.Review_Bill("BA-Precision1")
+    ba_ReviewBills.Review_Bill("BA-Precision1")
