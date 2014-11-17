@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_MaximumExp_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for exp
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # switch to maximum
@@ -51,10 +51,10 @@ def BA_Maximum_Exp():
     # create a new client    
     createClient.Create_Client("BA-Maximum-Exp","BA-Maximum-Exp","Maximum FF - Exp","Maximum FF - Exp","Maximum FF - Exp")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Maximum-Exp")
+    ba_Common.BA_Create_Slips("BA-Maximum-Exp")
     # set up billing arrangement
     BA_MaximumExp_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Maximum-Exp",1)
+    ba_Common.BA_Bill("BA-Maximum-Exp",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-Maximum-Exp1")

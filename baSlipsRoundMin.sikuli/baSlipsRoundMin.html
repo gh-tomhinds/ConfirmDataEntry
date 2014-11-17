@@ -74,7 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createClient
-<span class="kw">import</span> baCommon
+<span class="kw">import</span> ba_Common
 <span class="kw">import</span> baReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -120,11 +120,11 @@
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-RoundMin"</span>,<span class="str">"BA-RoundMin"</span>,<span class="str">"Rounding Minutes"</span>,<span class="str">"Rounding Minutes"</span>,<span class="str">"Rounding Minutes"</span>)
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-RoundMin"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-RoundMin"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_Round_Minutes()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-RoundMin"</span>,<span class="dig">1</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-RoundMin"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-RoundMin1"</span>)
 </pre>

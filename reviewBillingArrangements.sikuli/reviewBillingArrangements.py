@@ -1,6 +1,6 @@
 from sikuli import *
 import logging
-import baCommon
+import ba_Common
 import datetime
 import myTools
 import makeBackup

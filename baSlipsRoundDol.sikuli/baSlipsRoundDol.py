@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -50,10 +50,10 @@ def BA_SlipsRoundDol():
     # create a new client    
     createClient.Create_Client("BA-RoundDol","BA-RoundDol","Rounding Dollars","Rounding Dollars","Rounding Dollars")
     # create some slips
-    baCommon.BA_Create_Slips("BA-RoundDol")
+    ba_Common.BA_Create_Slips("BA-RoundDol")
     # set up billing arrangement
     BA_Round_Dollars() 
     # print a bill to text
-    baCommon.BA_Bill("BA-RoundDol",1)
+    ba_Common.BA_Bill("BA-RoundDol",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-RoundDol1")

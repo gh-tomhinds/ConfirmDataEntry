@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_AbsoluteExp_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for exp
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # switch to absolute
@@ -53,10 +53,10 @@ def BA_Absolute_Exp():
     # create a new client    
     createClient.Create_Client("BA-Absolute-Exp","BA-Absolute-Exp","Absolute FF - Expense","Absolute FF - Expense","Absolute FF - Expense")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Absolute-Exp")
+    ba_Common.BA_Create_Slips("BA-Absolute-Exp")
     # set up billing arrangement
     BA_AbsoluteExp_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Absolute-Exp",1)
+    ba_Common.BA_Bill("BA-Absolute-Exp",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-Absolute-Exp1")

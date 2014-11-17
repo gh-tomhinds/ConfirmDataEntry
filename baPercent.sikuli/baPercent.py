@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_Percent_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to contingency
@@ -97,7 +97,7 @@ def BA_Percent_Arrangement2():
     time.sleep(1)
 
 # enter details    
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     type(Key.ENTER)
     time.sleep(1)    
@@ -155,7 +155,7 @@ def BA_Percent_Arrangement3():
     time.sleep(1)
 
 # enter details    
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     type(Key.ENTER)
     time.sleep(1)    
@@ -208,29 +208,29 @@ def BA_Percent():
     # create a new client    
     createClient.Create_Client("BA-Percent","BA-Percent","Percent Comp","Percent Comp","Percent Comp")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Percent")
+    ba_Common.BA_Create_Slips("BA-Percent")
     # set up billing arrangement
     BA_Percent_Arrangement1() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Percent",1)
+    ba_Common.BA_Bill("BA-Percent",1)
     # compare bill values
     baReviewBills.Review_Bill("BA-Percent1")
 
     # create some more slips
-    baCommon.BA_Create_Slips("BA-Percent")
+    ba_Common.BA_Create_Slips("BA-Percent")
     # set up billing arrangement
     BA_Percent_Arrangement2() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Percent",2)
+    ba_Common.BA_Bill("BA-Percent",2)
     # compare bill values
     baReviewBills.Review_Bill("BA-Percent2")
 
     # create some more slips
-    baCommon.BA_Create_Slips("BA-Percent")
+    ba_Common.BA_Create_Slips("BA-Percent")
     # set up billing arrangement
     BA_Percent_Arrangement3() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Percent",3)
+    ba_Common.BA_Bill("BA-Percent",3)
     # compare bill values
     baReviewBills.Review_Bill("BA-Percent3")
 

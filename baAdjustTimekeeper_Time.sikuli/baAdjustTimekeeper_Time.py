@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_AdjustTimekeeperTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()        
+    ba_Common.moveto_BAPage()        
     myTools.pressTAB(4)
     
 # switch to adjust by timekeeper    
@@ -67,10 +67,10 @@ def BA_AdjustTimekeeper_Time():
     # create a new client    
     createClient.Create_Client("BA-AdjTK-Time","BA-AdjTK-Time","Adjust Timekeeper - Time","Adjust Timekeeper - Time","Adjust Timekeeper - Time")
     # create some slips
-    baCommon.BA_Create_Slips("BA-AdjTK-Time")
+    ba_Common.BA_Create_Slips("BA-AdjTK-Time")
     # set up billing arrangement
     BA_AdjustTimekeeperTime_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-AdjTK-Time",1)
+    ba_Common.BA_Bill("BA-AdjTK-Time",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-AdjTK-Time1")

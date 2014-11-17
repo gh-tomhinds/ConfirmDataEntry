@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_ContingencyBoth_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for both
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(3)
     
     type(Key.RIGHT)
@@ -68,7 +68,7 @@ def BA_ContingencyBoth_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for both
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
     time.sleep(1)    
@@ -102,19 +102,19 @@ def BA_Contingency_Both():
     # create a new client    
     createClient.Create_Client("BA-Cont-Both","BA-Cont-Both","Contingency - Both","Contingency - Both","Contingency - Both")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Cont-Both")
+    ba_Common.BA_Create_Slips("BA-Cont-Both")
     # set up billing arrangement
     BA_ContingencyBoth_Arrangement1() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Cont-Both",1)
+    ba_Common.BA_Bill("BA-Cont-Both",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-Cont-Both1")
 
     # create some more slips
-    baCommon.BA_Create_Slips("BA-Cont-Both")
+    ba_Common.BA_Create_Slips("BA-Cont-Both")
     # change billing arrangement
     BA_ContingencyBoth_Arrangement2() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Cont-Both",2)
+    ba_Common.BA_Bill("BA-Cont-Both",2)
     # compare at bill values
     baReviewBills.Review_Bill("BA-Cont-Both2")

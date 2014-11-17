@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_InterimActivity_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to Interim
@@ -62,7 +62,7 @@ def BA_InterimActivity_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -106,7 +106,7 @@ def BA_InterimActivity_Arrangement3():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -144,28 +144,28 @@ def BA_InterimActivity():
     # create a new client    
     createClient.Create_Client("BA-InterimAct","BA-InterimAct","Interim Activity FF","Interim Activity FF","Interim Activity FF")
     # create some slips
-    baCommon.BA_Create_Slips("BA-InterimAct")
+    ba_Common.BA_Create_Slips("BA-InterimAct")
     # set up billing arrangement
     BA_InterimActivity_Arrangement1() 
     # print a bill to text
-    baCommon.BA_Bill("BA-InterimAct",1)
+    ba_Common.BA_Bill("BA-InterimAct",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-InterimAct1")
 
     # create some slips
-    baCommon.BA_Create_Slips("BA-InterimAct")
+    ba_Common.BA_Create_Slips("BA-InterimAct")
     # set up billing arrangement
     BA_InterimActivity_Arrangement2() 
     # print a bill to text
-    baCommon.BA_Bill("BA-InterimAct",2)
+    ba_Common.BA_Bill("BA-InterimAct",2)
     # compare at bill values
     baReviewBills.Review_Bill("BA-InterimAct2")
 
     # create some slips
-    baCommon.BA_Create_Slips("BA-InterimAct")
+    ba_Common.BA_Create_Slips("BA-InterimAct")
     # set up billing arrangement
     BA_InterimActivity_Arrangement3() 
     # print a bill to text
-    baCommon.BA_Bill("BA-InterimAct",3)
+    ba_Common.BA_Bill("BA-InterimAct",3)
     # compare at bill values
     baReviewBills.Review_Bill("BA-InterimAct3")

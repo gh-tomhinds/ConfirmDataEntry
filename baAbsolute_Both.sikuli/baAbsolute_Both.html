@@ -74,7 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createClient
-<span class="kw">import</span> baCommon
+<span class="kw">import</span> ba_Common
 <span class="kw">import</span> baReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for both
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">3</span>)
 
     <span class="skw">type</span>(Key.RIGHT)
@@ -136,11 +136,11 @@
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-Absolute-Both"</span>,<span class="str">"BA-Absolute-Both"</span>,<span class="str">"Absolute FF - Both"</span>,<span class="str">"Absolute FF - Both"</span>,<span class="str">"Absolute FF - Both"</span>)
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-Absolute-Both"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Absolute-Both"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_AbsoluteBoth_Arrangement()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-Absolute-Both"</span>,<span class="dig">1</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-Absolute-Both"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-Absolute-Both1"</span>)
 </pre>

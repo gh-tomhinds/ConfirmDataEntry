@@ -74,7 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createClient
-<span class="kw">import</span> baCommon
+<span class="kw">import</span> ba_Common
 <span class="kw">import</span> baReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">4</span>)
 
 <span class="cmt"># switch to Interim
@@ -134,7 +134,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
 
 <span class="cmt"># enter details    
@@ -178,7 +178,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
 
 <span class="cmt"># enter details    
@@ -216,29 +216,29 @@
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-InterimAct"</span>,<span class="str">"BA-InterimAct"</span>,<span class="str">"Interim Activity FF"</span>,<span class="str">"Interim Activity FF"</span>,<span class="str">"Interim Activity FF"</span>)
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-InterimAct"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-InterimAct"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_InterimActivity_Arrangement1()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-InterimAct"</span>,<span class="dig">1</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-InterimAct"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-InterimAct1"</span>)
 
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-InterimAct"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-InterimAct"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_InterimActivity_Arrangement2()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-InterimAct"</span>,<span class="dig">2</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-InterimAct"</span>,<span class="dig">2</span>)
     <span class="cmt"># compare at bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-InterimAct2"</span>)
 
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-InterimAct"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-InterimAct"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_InterimActivity_Arrangement3()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-InterimAct"</span>,<span class="dig">3</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-InterimAct"</span>,<span class="dig">3</span>)
     <span class="cmt"># compare at bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-InterimAct3"</span>)
 </pre>

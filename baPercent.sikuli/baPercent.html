@@ -74,7 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createClient
-<span class="kw">import</span> baCommon
+<span class="kw">import</span> ba_Common
 <span class="kw">import</span> baReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">4</span>)
 
 <span class="cmt"># switch to contingency
@@ -169,7 +169,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># enter details    
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -227,7 +227,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># enter details    
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -280,29 +280,29 @@
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-Percent"</span>,<span class="str">"BA-Percent"</span>,<span class="str">"Percent Comp"</span>,<span class="str">"Percent Comp"</span>,<span class="str">"Percent Comp"</span>)
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-Percent"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Percent"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_Percent_Arrangement1()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-Percent"</span>,<span class="dig">1</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-Percent"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-Percent1"</span>)
 
     <span class="cmt"># create some more slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-Percent"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Percent"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_Percent_Arrangement2()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-Percent"</span>,<span class="dig">2</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-Percent"</span>,<span class="dig">2</span>)
     <span class="cmt"># compare bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-Percent2"</span>)
 
     <span class="cmt"># create some more slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-Percent"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Percent"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_Percent_Arrangement3()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-Percent"</span>,<span class="dig">3</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-Percent"</span>,<span class="dig">3</span>)
     <span class="cmt"># compare bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-Percent3"</span>)
 </pre>

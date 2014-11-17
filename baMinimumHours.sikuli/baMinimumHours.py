@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_MinimumHours_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to minimum
@@ -56,10 +56,10 @@ def BA_MinimumHours():
     # create a new client    
     createClient.Create_Client("BA-MinimumHours","BA-MinimumHours","Minimum Hours FF","Minimum Hours FF","Minimum Hours FF")
     # create some slips
-    baCommon.BA_Create_Slips("BA-MinimumHours")
+    ba_Common.BA_Create_Slips("BA-MinimumHours")
     # set up billing arrangement
     BA_MinimumHours_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-MinimumHours",1)
+    ba_Common.BA_Bill("BA-MinimumHours",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-MinimumHours1")

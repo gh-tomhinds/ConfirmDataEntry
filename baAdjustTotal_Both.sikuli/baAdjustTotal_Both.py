@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -19,7 +19,7 @@ def BA_AdjustTotalBoth_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for both
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(3)
     
     type(Key.RIGHT)
@@ -68,10 +68,10 @@ def BA_AdjustTotal_Both():
     # create a new client    
     createClient.Create_Client("BA-AdjTot-Both","BA-AdjTot-Both","Adjust Total - Both","Adjust Total - Both","Adjust Total - Both")
     # create some slips
-    baCommon.BA_Create_Slips("BA-AdjTot-Both")
+    ba_Common.BA_Create_Slips("BA-AdjTot-Both")
     # set up billing arrangement
     BA_AdjustTotalBoth_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-AdjTot-Both",1)
+    ba_Common.BA_Bill("BA-AdjTot-Both",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-AdjTot-Both1")

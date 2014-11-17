@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_ProgressActivity_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to Progress
@@ -63,7 +63,7 @@ def BA_ProgressActivity_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -107,7 +107,7 @@ def BA_ProgressActivity_Arrangement3():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -145,28 +145,28 @@ def BA_ProgressActivity():
     # create a new client    
     createClient.Create_Client("BA-ProgressAct","BA-ProgressAct","Progress Activity FF","Progress Activity FF","Progress Activity FF")
     # create some slips
-    baCommon.BA_Create_Slips("BA-ProgressAct")
+    ba_Common.BA_Create_Slips("BA-ProgressAct")
     # set up billing arrangement
     BA_ProgressActivity_Arrangement1() 
     # print a bill to text
-    baCommon.BA_Bill("BA-ProgressAct",1)
+    ba_Common.BA_Bill("BA-ProgressAct",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-ProgressAct1")
 
     # create some slips
-    baCommon.BA_Create_Slips("BA-ProgressAct")
+    ba_Common.BA_Create_Slips("BA-ProgressAct")
     # set up billing arrangement
     BA_ProgressActivity_Arrangement2() 
     # print a bill to text
-    baCommon.BA_Bill("BA-ProgressAct",2)
+    ba_Common.BA_Bill("BA-ProgressAct",2)
     # compare at bill values
     baReviewBills.Review_Bill("BA-ProgressAct2")
 
     # create some slips
-    baCommon.BA_Create_Slips("BA-ProgressAct")
+    ba_Common.BA_Create_Slips("BA-ProgressAct")
     # set up billing arrangement
     BA_ProgressActivity_Arrangement3() 
     # print a bill to text
-    baCommon.BA_Bill("BA-ProgressAct",3)
+    ba_Common.BA_Bill("BA-ProgressAct",3)
     # compare at bill values
     baReviewBills.Review_Bill("BA-ProgressAct3")

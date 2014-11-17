@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_FlatFeePlusTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to flat fee plus charges
@@ -53,10 +53,10 @@ def BA_FlatFeePlus_Time():
     # create a new client    
     createClient.Create_Client("BA-FFPlus-Time","BA-FFPlus-Time","FF Plus - Time","FF Plus - Time","FF Plus - Time")
     # create some slips
-    baCommon.BA_Create_Slips("BA-FFPlus-Time")
+    ba_Common.BA_Create_Slips("BA-FFPlus-Time")
     # set up billing arrangement
     BA_FlatFeePlusTime_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-FFPlus-Time",1)
+    ba_Common.BA_Bill("BA-FFPlus-Time",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-FFPlus-Time1")

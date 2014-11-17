@@ -74,7 +74,7 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 <span class="kw">import</span> createClient
-<span class="kw">import</span> baCommon
+<span class="kw">import</span> ba_Common
 <span class="kw">import</span> baReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for exp
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
 
 <span class="cmt"># switch to contingency
@@ -133,7 +133,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for exp
-</span>    baCommon.moveto_BAPage()
+</span>    ba_Common.moveto_BAPage()
     myTools.pressTAB(<span class="dig">6</span>)
 
 <span class="cmt"># enter details    
@@ -163,20 +163,20 @@
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-Cont-Exp"</span>,<span class="str">"BA-Cont-Exp"</span>,<span class="str">"Contingency - Exp"</span>,<span class="str">"Contingency - Exp"</span>,<span class="str">"Contingency - Exp"</span>)
     <span class="cmt"># create some slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-Cont-Exp"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Cont-Exp"</span>)
     <span class="cmt"># set up billing arrangement
 </span>    BA_ContingencyExp_Arrangement1()
     <span class="cmt"># print a bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-Cont-Exp"</span>,<span class="dig">1</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-Cont-Exp"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-Cont-Exp1"</span>)
 
     <span class="cmt"># create some more slips
-</span>    baCommon.BA_Create_Slips(<span class="str">"BA-Cont-Exp"</span>)
+</span>    ba_Common.BA_Create_Slips(<span class="str">"BA-Cont-Exp"</span>)
     <span class="cmt"># change billing arrangement
 </span>    BA_ContingencyExp_Arrangement2()
     <span class="cmt"># print the 2nd bill to text
-</span>    baCommon.BA_Bill(<span class="str">"BA-Cont-Exp"</span>,<span class="dig">2</span>)
+</span>    ba_Common.BA_Bill(<span class="str">"BA-Cont-Exp"</span>,<span class="dig">2</span>)
     <span class="cmt"># compare 2nd bill's values
 </span>    baReviewBills.Review_Bill(<span class="str">"BA-Cont-Exp2"</span>)
 </pre>

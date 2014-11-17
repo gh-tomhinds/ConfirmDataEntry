@@ -30,7 +30,7 @@ import setupSplitBills
 import runMonthlyBillCycle
 
 import reviewBillingArrangements
-import baCommon
+import ba_Common
 
 import makeBackup
 import setupCalTerms
@@ -60,11 +60,11 @@ setupStuff.Setup_Stuff()
 #createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 #createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
-setupSplitBills.Setup_SplitBills()
+#setupSplitBills.Setup_SplitBills()
 
-runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
-baCommon.Setup_BADefaultLayout()
+ba_Common.Setup_BADefaultLayout()
 reviewBillingArrangements.Review_BillingArrangements()
 
 #setupCalTerms.Setup_CalTerms()

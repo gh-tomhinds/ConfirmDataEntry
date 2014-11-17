@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_MaximumTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to maximum
@@ -53,10 +53,10 @@ def BA_Maximum_Time():
     # create a new client    
     createClient.Create_Client("BA-Maximum-Time","BA-Maximum-Time","Maximum FF - Time","Maximum FF - Time","Maximum FF - Time")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Maximum-Time")
+    ba_Common.BA_Create_Slips("BA-Maximum-Time")
     # set up billing arrangement
     BA_MaximumTime_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Maximum-Time",1)
+    ba_Common.BA_Bill("BA-Maximum-Time",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-Maximum-Time1")

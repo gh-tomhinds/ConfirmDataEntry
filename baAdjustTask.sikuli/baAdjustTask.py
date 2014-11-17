@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_AdjustTask_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()       
+    ba_Common.moveto_BAPage()       
     myTools.pressTAB(4)
     
 # switch to adjust by tasks    
@@ -67,10 +67,10 @@ def BA_AdjustTask():
     # create a new client    
     createClient.Create_Client("BA-AdjTask","BA-AdjTask","Adjust Task","Adjust Task","Adjust Task")
     # create some slips
-    baCommon.BA_Create_Slips("BA-AdjTask")
+    ba_Common.BA_Create_Slips("BA-AdjTask")
     # set up billing arrangement
     BA_AdjustTask_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-AdjTask",1)
+    ba_Common.BA_Bill("BA-AdjTask",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-AdjTask1")

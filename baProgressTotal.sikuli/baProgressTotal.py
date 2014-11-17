@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_ProgressTotal_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to minimum
@@ -57,7 +57,7 @@ def BA_ProgressTotal_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -90,7 +90,7 @@ def BA_ProgressTotal_Arrangement3():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -119,28 +119,28 @@ def BA_ProgressTotal():
     # create a new client    
     createClient.Create_Client("BA-ProgressTot","BA-ProgressTot","Progress Total FF","Progress Total FF","Progress Total FF")
     # create some slips
-    baCommon.BA_Create_Slips("BA-ProgressTot")
+    ba_Common.BA_Create_Slips("BA-ProgressTot")
     # set up billing arrangement
     BA_ProgressTotal_Arrangement1() 
     # print a bill to text
-    baCommon.BA_Bill("BA-ProgressTot",1)
+    ba_Common.BA_Bill("BA-ProgressTot",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-ProgressTot1")
 
     # create some slips
-    baCommon.BA_Create_Slips("BA-ProgressTot")
+    ba_Common.BA_Create_Slips("BA-ProgressTot")
     # set up billing arrangement
     BA_ProgressTotal_Arrangement2() 
     # print a bill to text
-    baCommon.BA_Bill("BA-ProgressTot",2)
+    ba_Common.BA_Bill("BA-ProgressTot",2)
     # compare at bill values
     baReviewBills.Review_Bill("BA-ProgressTot2")
 
     # create some slips
-    baCommon.BA_Create_Slips("BA-ProgressTot")
+    ba_Common.BA_Create_Slips("BA-ProgressTot")
     # set up billing arrangement
     BA_ProgressTotal_Arrangement3() 
     # print a bill to text
-    baCommon.BA_Bill("BA-ProgressTot",3)
+    ba_Common.BA_Bill("BA-ProgressTot",3)
     # compare at bill values
     baReviewBills.Review_Bill("BA-ProgressTot3")

@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_AbsoluteBoth_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for both
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(3)
     
     type(Key.RIGHT)
@@ -64,10 +64,10 @@ def BA_Absolute_Both():
     # create a new client    
     createClient.Create_Client("BA-Absolute-Both","BA-Absolute-Both","Absolute FF - Both","Absolute FF - Both","Absolute FF - Both")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Absolute-Both")
+    ba_Common.BA_Create_Slips("BA-Absolute-Both")
     # set up billing arrangement
     BA_AbsoluteBoth_Arrangement() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Absolute-Both",1)
+    ba_Common.BA_Bill("BA-Absolute-Both",1)
     # compare at bill values
     baReviewBills.Review_Bill("BA-Absolute-Both1")

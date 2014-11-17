@@ -2,7 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import createClient
-import baCommon
+import ba_Common
 import baReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -20,7 +20,7 @@ def BA_ContingencyTime_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to contingency
@@ -61,7 +61,7 @@ def BA_ContingencyTime_Arrangement2():
     time.sleep(1)
 
 # get to arrangement fields
-    baCommon.moveto_BAPage()
+    ba_Common.moveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -91,19 +91,19 @@ def BA_Contingency_Time():
     # create a new client    
     createClient.Create_Client("BA-Cont-Time","BA-Cont-Time","Contingency - Time","Contingency - Time","Contingency - Time")
     # create some slips
-    baCommon.BA_Create_Slips("BA-Cont-Time")
+    ba_Common.BA_Create_Slips("BA-Cont-Time")
     # set up billing arrangement
     BA_ContingencyTime_Arrangement1() 
     # print a bill to text
-    baCommon.BA_Bill("BA-Cont-Time",1)
+    ba_Common.BA_Bill("BA-Cont-Time",1)
     # compare bill values
     baReviewBills.Review_Bill("BA-Cont-Time1")
 
     # create some more slips
-    baCommon.BA_Create_Slips("BA-Cont-Time")
+    ba_Common.BA_Create_Slips("BA-Cont-Time")
     # change billing arrangement
     BA_ContingencyTime_Arrangement2() 
     # print 2nd bill to text
-    baCommon.BA_Bill("BA-Cont-Time",2)
+    ba_Common.BA_Bill("BA-Cont-Time",2)
     # compare 2nd bill's values
     baReviewBills.Review_Bill("BA-Cont-Time2")
