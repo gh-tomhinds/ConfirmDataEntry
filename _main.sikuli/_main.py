@@ -30,7 +30,7 @@ import setupSplitBills
 import runMonthlyBillCycle
 
 import reviewBillingArrangements
-import ba_Common
+import ba__Common
 
 import makeBackup
 import setupCalTerms
@@ -64,7 +64,7 @@ setupStuff.Setup_Stuff()
 
 #runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
-ba_Common.Setup_BADefaultLayout()
+ba__Common.Setup_BADefaultLayout()
 reviewBillingArrangements.Review_BillingArrangements()
 
 #setupCalTerms.Setup_CalTerms()
