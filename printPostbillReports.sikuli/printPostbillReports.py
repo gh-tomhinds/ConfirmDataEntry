@@ -8,6 +8,7 @@ import printHold
 import printTaxes
 import printTOWorksheet
 import printFeeAlloc
+import reportBudgets
 
 #---------------------------------------------------#
 def print_postbill_reports(month):
@@ -24,3 +25,6 @@ def print_postbill_reports(month):
     printTaxes.Print_Taxes(month)
     printTOWorksheet.Print_Worksheet(month)
     printFeeAlloc.Print_FeeAlloc(month)
+    reportBudgets.printCliBudget(month)
+    reportBudgets.printTkBudget(month)
+    reportBudgets.printFirmBudget(month)

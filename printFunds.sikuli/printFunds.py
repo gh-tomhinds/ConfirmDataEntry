@@ -10,7 +10,6 @@ def Print_Funds(reportName):
     myTools.sectionStartTimeStamp("print funds")
 
     reportName = Settings.tsVersion + "-" + reportName
-
     logging.debug('Print_Funds: ' + reportName)
 
     # make sure timeslips has focus

@@ -73,113 +73,132 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> datetime
 <span class="kw">import</span> logging
-<span class="cmt">#reload(logging)
-</span>
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> setupLog():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    Settings.myLogFile = os.environ[<span class="str">'USERPROFILE'</span>] + <span class="str">'\desktop\Sikuli\Sikuli.log'</span>
+<span class="cmt">#---------------------------------------------------#
+</span>
+    Settings.myLogFile = os.environ[<span class="str">'USERPROFILE'</span>] + <span class="str">'\desktop\Sikuli\Sikuli.log'</span>
     logging.basicConfig(filename=Settings.myLogFile, level=logging.DEBUG, format=<span class="str">'%(message)s'</span>, filemode=<span class="str">'w'</span>)
     <span class="cmt"># Level = DEBUG, INFO, WARNING, ERROR, CRITICAL
 </span>
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressTAB(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.TAB)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressSHIFTTAB(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.TAB,KeyModifier.SHIFT)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressF6(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.F6)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressSHIFTF6(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.F6,KeyModifier.SHIFT)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressDOWN(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.DOWN)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressUP(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.UP)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressLEFT(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.LEFT)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> pressRIGHT(number):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> number != <span class="dig">0</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> number != <span class="dig">0</span>:
         <span class="kw">for</span> i <span class="kw">in</span> range(number):
             <span class="skw">type</span>(Key.RIGHT)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> getFocus():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
         <span class="skw">click</span>(<img src="billing_date_statusbar.png" />)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> waitForExportSuccess():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
         <span class="skw">wait</span>(<img src="export_successful_small.png" />, FOREVER)
     <span class="kw">else</span>:
         <span class="skw">wait</span>(<img src="export_successful_wide.png" />, FOREVER)
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> waitForReport():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="cmt">#wait for "calculating" box to disappear
 </span>    <span class="kw">while</span> exists(<img src="completed.png" />):
         time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> doNotSaveReport():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="kw">if</span> exists(<img src="save_msg.png" />):
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> waitForTransaction():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     <span class="skw">wait</span>(<img src="ar_balance.png" />, FOREVER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> checkForUnappliedAmount():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #   
-</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+<span class="cmt">#---------------------------------------------------#
+</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="kw">if</span> exists(<img src="go_back_edit_transaction.png" />):
         logging.debug(<span class="str">"-- UNAPPLIED AMOUNT"</span>)
         <span class="skw">type</span>(Key.ENTER)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> monthToName(aMonth,aName,anExt):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     <span class="cmt"># make month number a string
 </span>    fileName = str(aMonth)
@@ -193,18 +212,18 @@
 
     <span class="kw">return</span>(fileName)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> startTimeStamp():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    Settings.startTime = datetime.datetime.now()
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'---------------------------------------'</span>)
     logging.debug(Settings.startTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
     logging.debug(<span class="str">'---------------------------------------'</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> endTimeStamp():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    Settings.endTime = datetime.datetime.now()
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'---------------------------------------'</span>)
@@ -214,9 +233,9 @@
     elapsedTime = Settings.endTime - Settings.startTime
     logging.debug(<span class="str">"Elapsed:    %s"</span> %elapsedTime)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> sectionStartTimeStamp(aSectionName):
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>
     Settings.sectionName = aSectionName
     Settings.sectionStartTime = datetime.datetime.now()
@@ -226,9 +245,9 @@
     logging.debug(Settings.sectionStartTime.strftime(<span class="str">"Started at: %Y-%m-%d %H:%M:%S"</span>))
     logging.debug(<span class="str">'---------------------------------------'</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> sectionEndTimeStamp():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
+<span class="cmt">#---------------------------------------------------#
 </span>    Settings.sectionEndTime = datetime.datetime.now()
     logging.debug(<span class="str">'---------------------------------------'</span>)
     logging.debug(Settings.sectionEndTime.strftime(<span class="str">"Stopped at: %Y-%m-%d %H:%M:%S"</span>))
