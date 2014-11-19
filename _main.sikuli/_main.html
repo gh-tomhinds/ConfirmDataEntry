@@ -121,27 +121,28 @@ setupStuff.Setup_Stuff()
 
 <span class="cmt">##############################################################
 </span>
-<span class="cmt">#startTSandNewDB.StartTS_CreateNewDB()
+startTSandNewDB.StartTS_CreateNewDB()
+
+tweakPrefs.Tweak_Prefs()
+createCategories.Create_Categories()
+createCustomFields.Create_CustomFields()
+
+createImportEditNames.CreateImportEdit_Names()
+
+createSlips.Create_Slips(<span class="dig">10</span>,<span class="dig">10</span>) <span class="cmt"># pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+<span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 </span>
-<span class="cmt">#tweakPrefs.Tweak_Prefs()
-</span><span class="cmt">#createCategories.Create_Categories()
-</span><span class="cmt">#createCustomFields.Create_CustomFields()
-</span>
-<span class="cmt">#createImportEditNames.CreateImportEdit_Names()
-</span>
-<span class="cmt">#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-</span><span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-</span>
-<span class="cmt">#setupSplitBills.Setup_SplitBills()
-</span>
-<span class="cmt">#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
-</span>
+setupSplitBills.Setup_SplitBills()
+
+runMonthlyBillCycle.run_MonthlyBillCycle(<span class="dig">1</span>,<span class="dig">13</span>) <span class="cmt"># pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
+
 ba__Common.Setup_BADefaultLayout()
 reviewBillingArrangements.Review_BillingArrangements()
 
-<span class="cmt">#setupCalTerms.Setup_CalTerms()
-</span><span class="cmt">#calendarStuff.Calendar_Stuff()
-</span><span class="cmt">#printTasks.Print_Tasks()
+setupCalTerms.Setup_CalTerms()
+calendarStuff.Calendar_Stuff()
+
+<span class="cmt">#printTasks.Print_Tasks()
 </span><span class="cmt">#printExpenses.Print_Expenses()
 </span><span class="cmt">#compareReports.Compare_Reports()
 </span>

@@ -27,6 +27,7 @@ import setupTaxes
 import setupClientHold
 import setupPayDist
 import fundsSetup
+import BudgetSetup
 
 import makeBackup
 
@@ -67,6 +68,8 @@ def CreateImportEdit_Names():
 
     createRefs.Create_Refs()
     importRefs.Import_Refs()
+
+    BudgetSetup.fBudgetSetup()
 
     printTimekeepers.Print_Timekeepers("Timekeepers-01.csv")
     printClients.Print_Clients("Clients-01.csv")

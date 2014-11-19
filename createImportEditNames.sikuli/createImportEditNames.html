@@ -99,6 +99,7 @@
 <span class="kw">import</span> setupClientHold
 <span class="kw">import</span> setupPayDist
 <span class="kw">import</span> fundsSetup
+<span class="kw">import</span> BudgetSetup
 
 <span class="kw">import</span> makeBackup
 
@@ -139,6 +140,8 @@
 
     createRefs.Create_Refs()
     importRefs.Import_Refs()
+
+    BudgetSetup.fBudgetSetup()
 
     printTimekeepers.Print_Timekeepers(<span class="str">"Timekeepers-01.csv"</span>)
     printClients.Print_Clients(<span class="str">"Clients-01.csv"</span>)
