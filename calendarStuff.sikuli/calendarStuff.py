@@ -19,70 +19,86 @@ def Create_CalEntries():
 
         logging.debug(' - create: ' + calEvent["subject"])
 
-        type("a",KEY_ALT)        
+        type("l", KeyModifier.ALT)
         type("n")    
         time.sleep(1)
-# subject
+        
+        # subject
         type(calEvent["subject"])
         type(Key.TAB)
-# categories    
+        
+        # categories
         for downarrow in range(1,eventCount%10):
             type(Key.DOWN)
         type(Key.TAB)
-# start date
+        
+        # start date
         type(calEvent["startDate"])
         type(Key.TAB)
         # TS2013 requires extra TAB
         if int(Settings.tsVersion) < 2014:    
             type(Key.TAB)
-# start time
+            
+        # start time
         if calEvent["startTime"] != "no":
             type(calEvent["startTime"])
         type(Key.TAB)
-# end date
+        
+        # end date
         type(calEvent["endDate"])
         type(Key.TAB)
+        
         # TS2013 requires extra TAB
         if int(Settings.tsVersion) < 2014:
             type(Key.TAB)
-# end time
+            
+        # end time
         if calEvent["endTime"] != "no":
             type(calEvent["endTime"])
         type(Key.TAB)
-# all day
+        
+        # all day
         if calEvent["allday"] == "yes":
             type(Key.SPACE)          
         type(Key.TAB)
-# private
+        
+        # private
         if calEvent["private"] == "yes":
             type(Key.SPACE)          
         type(Key.TAB)
-# location
+        
+        # location
         type(calEvent["location"])
         type(Key.TAB)
-# mark for slip creation
+        
+        # mark for slip creation
         type(Key.TAB)
-# tabs
+        
+        # tabs
         type(Key.TAB)
-# create meeting for
+        
+        # create meeting for
         if calEvent["everyone"] == "no":
             type(Key.HOME)
             for downarrow in range(eventCount%5):
                 type(Key.DOWN)
-# schedule
+                
+        # schedule
         if calEvent["everyone"] == "yes":
             click("schedule_attendees.png")
             time.sleep(1)
             type(Key.INSERT)          
-            type(Key.ENTER)          
-# switch to Notes tab
-        type(Key.F6)    
-# notes field
+            type(Key.ENTER)
+            
+        # switch to Notes tab
+        type(Key.F6)
+        
+        # notes field
         type(calEvent["notes"])
         type(" - Event: " + str(eventCount))
         click("save_and_close.png")
 
-    type(Key.F4,KEY_CTRL)
+    type(Key.F4, KeyModifier.CTRL)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Calendar_Stuff():
@@ -91,7 +107,7 @@ def Calendar_Stuff():
     logging.debug(' ')
     logging.debug('Calendar_Stuff')
 
-    type("a",KEY_ALT)
+    type("l", KeyModifier.ALT)
     type(Key.ENTER)
     time.sleep(1)     
     Create_CalEntries()

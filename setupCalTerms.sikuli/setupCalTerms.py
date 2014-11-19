@@ -9,6 +9,7 @@ def SetUpEntryTerm():
     time.sleep(1)
     logging.debug('- set up entry terminology')
 # open general settings
+    myTools.getFocus()
     type("p",KEY_ALT)
     type(Key.ENTER)
     time.sleep(1)
