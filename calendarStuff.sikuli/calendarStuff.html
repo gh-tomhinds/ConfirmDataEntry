@@ -73,6 +73,7 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> csv
+<span class="kw">import</span> makeBackup
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span><span class="kw">def</span> Create_CalEntries():
@@ -183,6 +184,7 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     Create_CalEntries()
+    makeBackup.Backup_Checkpoint(<span class="str">"cal"</span>)
 </pre>
 </body>
 </html>

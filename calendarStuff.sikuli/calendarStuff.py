@@ -1,6 +1,7 @@
 from sikuli import *
 import logging
 import csv
+import makeBackup
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def Create_CalEntries():
@@ -111,3 +112,6 @@ def Calendar_Stuff():
     type(Key.ENTER)
     time.sleep(1)     
     Create_CalEntries()
+    makeBackup.Backup_Checkpoint("cal")
+
+    
