@@ -51,7 +51,7 @@ def BA_Absolute_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Absolute-Time","BA-AdjTot-Time","Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
+    createClient.Create_Client("BA-Absolute-Time","BA-Absolute-Time","Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
     # create some slips
     ba__Common.BA_Create_Slips("BA-Absolute-Time")
     # set up billing arrangement
