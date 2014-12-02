@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ContingencyTime_Arrangement1():
+def fContingencyTime_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContTime1")
@@ -20,7 +20,7 @@ def BA_ContingencyTime_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to contingency
@@ -47,7 +47,7 @@ def BA_ContingencyTime_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ContingencyTime_Arrangement2():
+def fContingencyTime_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContTime2")
@@ -61,7 +61,7 @@ def BA_ContingencyTime_Arrangement2():
     time.sleep(1)
 
 # get to arrangement fields
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -85,25 +85,25 @@ def BA_ContingencyTime_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Contingency_Time():
+def fContingency_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Cont-Time","BA-Cont-Time","Contingency - Time","Contingency - Time","Contingency - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Cont-Time")
+    ba__Common.fCreate_BASlips("BA-Cont-Time")
     # set up billing arrangement
-    BA_ContingencyTime_Arrangement1() 
+    fContingencyTime_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Cont-Time",1)
+    ba__Common.fPrint_BABill("BA-Cont-Time",1)
     # compare bill values
-    ba__ReviewBills.Review_Bill("BA-Cont-Time1")
+    ba__ReviewBills.fReview_BABill("BA-Cont-Time1")
 
     # create some more slips
-    ba__Common.BA_Create_Slips("BA-Cont-Time")
+    ba__Common.fCreate_BASlips("BA-Cont-Time")
     # change billing arrangement
-    BA_ContingencyTime_Arrangement2() 
+    fContingencyTime_Setup2() 
     # print 2nd bill to text
-    ba__Common.BA_Bill("BA-Cont-Time",2)
+    ba__Common.fPrint_BABill("BA-Cont-Time",2)
     # compare 2nd bill's values
-    ba__ReviewBills.Review_Bill("BA-Cont-Time2")
+    ba__ReviewBills.fReview_BABill("BA-Cont-Time2")

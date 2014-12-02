@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ContingencyExp_Arrangement1():
+def fContingencyExp_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContExp1")
@@ -20,7 +20,7 @@ def BA_ContingencyExp_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for exp
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # switch to contingency
@@ -47,7 +47,7 @@ def BA_ContingencyExp_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ContingencyExp_Arrangement2():
+def fContingencyExp_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContExp2")
@@ -61,7 +61,7 @@ def BA_ContingencyExp_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for exp
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(6)
     
 # enter details    
@@ -85,25 +85,25 @@ def BA_ContingencyExp_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Contingency_Exp():
+def fContingency_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Cont-Exp","BA-Cont-Exp","Contingency - Exp","Contingency - Exp","Contingency - Exp")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Cont-Exp")
+    ba__Common.fCreate_BASlips("BA-Cont-Exp")
     # set up billing arrangement
-    BA_ContingencyExp_Arrangement1() 
+    fContingencyExp_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Cont-Exp",1)
+    ba__Common.fPrint_BABill("BA-Cont-Exp",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Cont-Exp1")
+    ba__ReviewBills.fReview_BABill("BA-Cont-Exp1")
 
     # create some more slips
-    ba__Common.BA_Create_Slips("BA-Cont-Exp")
+    ba__Common.fCreate_BASlips("BA-Cont-Exp")
     # change billing arrangement
-    BA_ContingencyExp_Arrangement2() 
+    fContingencyExp_Setup2() 
     # print the 2nd bill to text
-    ba__Common.BA_Bill("BA-Cont-Exp",2)
+    ba__Common.fPrint_BABill("BA-Cont-Exp",2)
     # compare 2nd bill's values
-    ba__ReviewBills.Review_Bill("BA-Cont-Exp2")
+    ba__ReviewBills.fReview_BABill("BA-Cont-Exp2")

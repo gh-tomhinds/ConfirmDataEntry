@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AbsoluteExp_Arrangement():
+def fAbsoluteExp_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AbsoluteExp")
@@ -20,7 +20,7 @@ def BA_AbsoluteExp_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for exp
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # switch to absolute
@@ -47,16 +47,16 @@ def BA_AbsoluteExp_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Absolute_Exp():
+def fAbsolute_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Absolute-Exp","BA-Absolute-Exp","Absolute FF - Expense","Absolute FF - Expense","Absolute FF - Expense")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Absolute-Exp")
+    ba__Common.fCreate_BASlips("BA-Absolute-Exp")
     # set up billing arrangement
-    BA_AbsoluteExp_Arrangement() 
+    fAbsoluteExp_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Absolute-Exp",1)
+    ba__Common.fPrint_BABill("BA-Absolute-Exp",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Absolute-Exp1")
+    ba__ReviewBills.fReview_BABill("BA-Absolute-Exp1")

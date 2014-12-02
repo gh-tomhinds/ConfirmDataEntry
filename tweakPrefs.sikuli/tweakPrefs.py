@@ -3,12 +3,12 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def Tweak_Prefs():
+def fTweak_Prefs():
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("preferences")
 
-    logging.debug('Tweak_Prefs')
+    logging.debug('fTweak_Prefs')
 
     # make sure timeslips has focus
     myTools.getFocus()

@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AdjustTask_Arrangement():
+def fAdjustTask_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTask")
@@ -20,7 +20,7 @@ def BA_AdjustTask_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()       
+    ba__Common.fMoveto_BAPage()       
     myTools.pressTAB(4)
     
 # switch to adjust by tasks    
@@ -58,7 +58,7 @@ def BA_AdjustTask_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AdjustTask():
+def fAdjustTask():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
@@ -67,10 +67,10 @@ def BA_AdjustTask():
     # create a new client    
     createClient.Create_Client("BA-AdjTask","BA-AdjTask","Adjust Task","Adjust Task","Adjust Task")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-AdjTask")
+    ba__Common.fCreate_BASlips("BA-AdjTask")
     # set up billing arrangement
-    BA_AdjustTask_Arrangement() 
+    fAdjustTask_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-AdjTask",1)
+    ba__Common.fPrint_BABill("BA-AdjTask",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-AdjTask1")
+    ba__ReviewBills.fReview_BABill("BA-AdjTask1")

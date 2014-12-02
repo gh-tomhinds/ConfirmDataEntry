@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Change_Precision():
+def fPrecision_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Precision")
@@ -42,16 +42,16 @@ def BA_Change_Precision():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Precision():
+def fPrecision():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Precision","BA-Precision","Precision Settings","Precision Settings","Precision Settings")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Precision")
+    ba__Common.fCreate_BASlips("BA-Precision")
     # set up billing arrangement
-    BA_Change_Precision() 
+    fPrecision_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Precision",1)
+    ba__Common.fPrint_BABill("BA-Precision",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Precision1")
+    ba__ReviewBills.fReview_BABill("BA-Precision1")

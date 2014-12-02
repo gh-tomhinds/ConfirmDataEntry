@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_MinimumTime_Arrangement():
+def fMinimumTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MinimumTime")
@@ -20,7 +20,7 @@ def BA_MinimumTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to minimum
@@ -47,16 +47,16 @@ def BA_MinimumTime_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Minimum_Time():
+def fMinimum_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Minimum-Time","BA-Minimum-Time","Minimum FF - Time","Minimum FF - Time","Minimum FF - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Minimum-Time")
+    ba__Common.fCreate_BASlips("BA-Minimum-Time")
     # set up billing arrangement
-    BA_MinimumTime_Arrangement() 
+    fMinimumTime_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Minimum-Time",1)
+    ba__Common.fPrint_BABill("BA-Minimum-Time",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Minimum-Time1")
+    ba__ReviewBills.fReview_BABill("BA-Minimum-Time1")

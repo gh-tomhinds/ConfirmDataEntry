@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ContingencyBoth_Arrangement1():
+def fContingencyBoth_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContBoth1")
@@ -20,7 +20,7 @@ def BA_ContingencyBoth_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for both
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(3)
     
     type(Key.RIGHT)
@@ -54,7 +54,7 @@ def BA_ContingencyBoth_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ContingencyBoth_Arrangement2():
+def fContingencyBoth_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ContBoth2")
@@ -68,7 +68,7 @@ def BA_ContingencyBoth_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for both
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
     time.sleep(1)    
@@ -96,25 +96,25 @@ def BA_ContingencyBoth_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Contingency_Both():
+def fContingency_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Cont-Both","BA-Cont-Both","Contingency - Both","Contingency - Both","Contingency - Both")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Cont-Both")
+    ba__Common.fCreate_BASlips("BA-Cont-Both")
     # set up billing arrangement
-    BA_ContingencyBoth_Arrangement1() 
+    fContingencyBoth_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Cont-Both",1)
+    ba__Common.fPrint_BABill("BA-Cont-Both",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Cont-Both1")
+    ba__ReviewBills.fReview_BABill("BA-Cont-Both1")
 
     # create some more slips
-    ba__Common.BA_Create_Slips("BA-Cont-Both")
+    ba__Common.fCreate_BASlips("BA-Cont-Both")
     # change billing arrangement
-    BA_ContingencyBoth_Arrangement2() 
+    fContingencyBoth_Setup2() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Cont-Both",2)
+    ba__Common.fPrint_BABill("BA-Cont-Both",2)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Cont-Both2")
+    ba__ReviewBills.fReview_BABill("BA-Cont-Both2")

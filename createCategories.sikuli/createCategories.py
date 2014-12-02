@@ -3,12 +3,12 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def Create_Categories():
+def fCreate_Categories():
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("categories")
 
-    logging.debug('Create_Categories')
+    logging.debug('fCreate_Categories')
 
     # make sure timeslips has focus
     myTools.getFocus()

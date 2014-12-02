@@ -75,22 +75,21 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> CreateOne(name, downArrow):
+</span><span class="kw">def</span> fCreateOne(pName, pDownArrow):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    logging.debug(<span class="str">'-- create '</span> + name)
+    logging.debug(<span class="str">'-- create '</span> + pName)
 
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="kw">for</span> i <span class="kw">in</span> range(downArrow+<span class="dig">1</span>):
-        <span class="skw">type</span>(Key.DOWN)
+    myTools.pressDOWN(pDownArrow+<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(name)
+    <span class="skw">type</span>(pName)
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> FillCliList():
+</span><span class="kw">def</span> fFillCliList():
 <span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- fill list'</span>)
@@ -107,7 +106,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> FillTkList():
+</span><span class="kw">def</span> fFillTkList():
 <span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- fill list'</span>)
@@ -124,7 +123,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> FillActList():
+</span><span class="kw">def</span> fFillActList():
 <span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- fill list'</span>)
@@ -141,7 +140,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Create_CustomFields():
+</span><span class="kw">def</span> fCreate_CustomFields():
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"custom fields"</span>)
@@ -160,8 +159,8 @@
 
     customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>,<span class="str">'Timekeeper'</span>]
     <span class="kw">for</span> customField <span class="kw">in</span> customFields:
-        CreateOne(customField, customFields.index(customField))
-    FillCliList()
+        fCreateOne(customField, customFields.index(customField))
+    fFillCliList()
 
     logging.debug(<span class="str">'- add TIMEKEEPER custom fields'</span>)
 
@@ -170,8 +169,8 @@
 
     customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
     <span class="kw">for</span> customField <span class="kw">in</span> customFields:
-        CreateOne(customField, customFields.index(customField))
-    FillTkList()
+        fCreateOne(customField, customFields.index(customField))
+    fFillTkList()
 
     logging.debug(<span class="str">'- add ACTIVITY custom fields'</span>)
 
@@ -180,8 +179,8 @@
 
     customFields = [<span class="str">'Date'</span>,<span class="str">'Hours'</span>,<span class="str">'List'</span>,<span class="str">'Money'</span>,<span class="str">'Number'</span>,<span class="str">'Percent'</span>,<span class="str">'Text'</span>]
     <span class="kw">for</span> customField <span class="kw">in</span> customFields:
-        CreateOne(customField, customFields.index(customField))
-    FillActList()
+        fCreateOne(customField, customFields.index(customField))
+    fFillActList()
 
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">10</span>)

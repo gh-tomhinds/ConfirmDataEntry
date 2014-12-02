@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Percent_Arrangement1():
+def fPercent_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Percent1")
@@ -20,7 +20,7 @@ def BA_Percent_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to contingency
@@ -83,7 +83,7 @@ def BA_Percent_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Percent_Arrangement2():
+def fPercent_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Percent2")
@@ -97,7 +97,7 @@ def BA_Percent_Arrangement2():
     time.sleep(1)
 
 # enter details    
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     type(Key.ENTER)
     time.sleep(1)    
@@ -141,7 +141,7 @@ def BA_Percent_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Percent_Arrangement3():
+def fPercent_Setup3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba Percent3")
@@ -155,7 +155,7 @@ def BA_Percent_Arrangement3():
     time.sleep(1)
 
 # enter details    
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     type(Key.ENTER)
     time.sleep(1)    
@@ -202,35 +202,35 @@ def BA_Percent_Arrangement3():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Percent():
+def fPercent():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Percent","BA-Percent","Percent Comp","Percent Comp","Percent Comp")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Percent")
+    ba__Common.fCreate_BASlips("BA-Percent")
     # set up billing arrangement
-    BA_Percent_Arrangement1() 
+    fPercent_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Percent",1)
+    ba__Common.fPrint_BABill("BA-Percent",1)
     # compare bill values
-    ba__ReviewBills.Review_Bill("BA-Percent1")
+    ba__ReviewBills.fReview_BABill("BA-Percent1")
 
     # create some more slips
-    ba__Common.BA_Create_Slips("BA-Percent")
+    ba__Common.fCreate_BASlips("BA-Percent")
     # set up billing arrangement
-    BA_Percent_Arrangement2() 
+    fPercent_Setup2() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Percent",2)
+    ba__Common.fPrint_BABill("BA-Percent",2)
     # compare bill values
-    ba__ReviewBills.Review_Bill("BA-Percent2")
+    ba__ReviewBills.fReview_BABill("BA-Percent2")
 
     # create some more slips
-    ba__Common.BA_Create_Slips("BA-Percent")
+    ba__Common.fCreate_BASlips("BA-Percent")
     # set up billing arrangement
-    BA_Percent_Arrangement3() 
+    fPercent_Setup3() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Percent",3)
+    ba__Common.fPrint_BABill("BA-Percent",3)
     # compare bill values
-    ba__ReviewBills.Review_Bill("BA-Percent3")
+    ba__ReviewBills.fReview_BABill("BA-Percent3")
 

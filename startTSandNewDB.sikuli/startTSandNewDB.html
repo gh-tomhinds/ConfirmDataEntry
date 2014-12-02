@@ -76,9 +76,9 @@
 <span class="kw">import</span> shutil
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> delete_dataFolder():
+</span><span class="kw">def</span> fDelete_DataFolder():
 <span class="cmt">#---------------------------------------------------#
-</span>    logging.debug(<span class="str">'- delete_dataFolder'</span>)
+</span>    logging.debug(<span class="str">'- fDeleteDataFolder'</span>)
 
     <span class="kw">if</span> os.path.exists(Settings.dbFolder):
         logging.debug(<span class="str">"-- Delete folder:     %s"</span> % Settings.dbFolder)
@@ -87,7 +87,23 @@
         logging.debug(<span class="str">"-- Missing:           %s"</span> % Settings.dbFolder)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> checkFor_Sample():
+</span><span class="kw">def</span> fStart_TS():
+<span class="cmt">#---------------------------------------------------#
+</span>    logging.debug(<span class="str">'- fStartTS'</span>)
+
+    <span class="cmt"># show desktop
+</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.KEY_WIN)
+
+    <span class="cmt"># start timeslips
+</span>    App.open(Settings.tsEXE)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
+
+    logging.debug(<span class="str">'-- wait until TS is open'</span>)
+
+    <span class="skw">wait</span>(<img src="sage_timeslips.png" />,<span class="dig">300</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fCheckFor_Sample():
 <span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- checkFor_Sample'</span>)
 
@@ -97,7 +113,7 @@
         <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> checkFor_PEP():
+</span><span class="kw">def</span> fCheckFor_PEP():
 <span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- checkFor_PEP'</span>)
 
@@ -107,7 +123,7 @@
         <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> checkFor_SPS():
+</span><span class="kw">def</span> fCheckFor_SPS():
 <span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- checkFor_SPS'</span>)
 
@@ -117,7 +133,7 @@
         <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> checkFor_BillingDate():
+</span><span class="kw">def</span> fCheckFor_BillingDate():
 <span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- checkFor_BillingDate'</span>)
 
@@ -127,7 +143,7 @@
         <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> StartTS_CreateNewDB():
+</span><span class="kw">def</span> fStartTS_CreateNewDB():
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"new db"</span>)
@@ -136,23 +152,9 @@
 
     <span class="skw">popup</span>(<span class="str">"make sure Timeslips is closed"</span>)
 
-<span class="cmt"># delete the data folder
-</span>    delete_dataFolder()
-
-<span class="cmt"># show desktop
-</span>    <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.KEY_WIN)
-
-<span class="cmt"># start timeslips
-</span>    logging.debug(<span class="str">'- start Timeslips'</span>)
-
-    App.open(Settings.tsEXE)
-    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
-
-    logging.debug(<span class="str">'-- wait until TS is open'</span>)
-
-    <span class="skw">wait</span>(<img src="sage_timeslips.png" />,<span class="dig">300</span>)
-
-    checkFor_PEP()
+    fDelete_DataFolder()
+    fStart_TS()
+    fCheckFor_PEP()
 
 <span class="cmt"># start the new db process
 </span>    logging.debug(<span class="str">'- Check for database'</span>)
@@ -167,10 +169,10 @@
         <span class="kw">if</span> exists(<img src="supervisor.png" />):
             <span class="skw">type</span>(Key.ENTER)
             time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-        checkFor_Sample()
-        checkFor_PEP()
-        checkFor_BillingDate()
-        checkFor_SPS()
+        fCheckFor_Sample()
+        fCheckFor_PEP()
+        fCheckFor_BillingDate()
+        fCheckFor_SPS()
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
         <span class="cmt"># File &gt; New &gt; Database
@@ -276,9 +278,9 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">type</span>(<span class="str">"n"</span>)
 
-    checkFor_BillingDate()
-    checkFor_SPS()
-    checkFor_PEP()
+    fCheckFor_BillingDate()
+    fCheckFor_SPS()
+    fCheckFor_PEP()
 
     myTools.sectionEndTimeStamp()
 </pre>

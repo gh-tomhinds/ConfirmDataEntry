@@ -78,7 +78,7 @@
 <span class="kw">from</span> importBillLayout <span class="kw">import</span> Import_Layout
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Import_DefaultLayout():
+</span><span class="kw">def</span> fImport_DefaultLayout():
 <span class="cmt">#---------------------------------------------------#
 </span>
     Import_Layout(<span class="str">"Low Detail"</span>)
@@ -94,7 +94,7 @@
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Setup_NewNamesDefault():
+</span><span class="kw">def</span> fSetup_NewNamesDefault():
 <span class="cmt">#---------------------------------------------------#
 </span>
     logging.debug(<span class="str">'- open gen settings'</span>)
@@ -119,7 +119,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> moveto_BAPage():
+</span><span class="kw">def</span> fMoveto_BAPage():
 <span class="cmt">#---------------------------------------------------#
 </span>
     <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
@@ -128,7 +128,7 @@
         myTools.pressF6(<span class="dig">3</span>)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> setup_BABills():
+</span><span class="kw">def</span> fSetup_BABills():
 <span class="cmt">#---------------------------------------------------#
 </span>    logging.debug(<span class="str">'- set up bill report'</span>)
 
@@ -157,39 +157,39 @@
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Setup_BADefaultLayout():
+</span><span class="kw">def</span> fSetup_BADefaultLayout():
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba setup"</span>)
 
     myTools.getFocus()
 
-    Import_DefaultLayout()
-    Setup_NewNamesDefault()
-    setup_BABills()
+    fImport_DefaultLayout()
+    fSetup_NewNamesDefault()
+    fSetup_BABills()
 
     myTools.sectionEndTimeStamp()
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> BA_Create_Slips(baClient):
+</span><span class="kw">def</span> fCreate_BASlips(pBAClient):
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba slips"</span>)
-    logging.debug(<span class="str">'BA_Create_Slips'</span>)
+    logging.debug(<span class="str">'fCreate_BASlips'</span>)
 
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"TomH"</span>,<span class="str">"con001"</span>,baClient,<span class="dig">1</span>)
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"CoreyM"</span>,<span class="str">"gen004"</span>,baClient,<span class="dig">2</span>)
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"SamS"</span>,<span class="str">"gen005"</span>,baClient,<span class="dig">3</span>)
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"ShawnR"</span>,<span class="str">"lnd010"</span>,baClient,<span class="dig">4</span>)
+    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"TomH"</span>,<span class="str">"con001"</span>,pBAClient,<span class="dig">1</span>)
+    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"CoreyM"</span>,<span class="str">"gen004"</span>,pBAClient,<span class="dig">2</span>)
+    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"SamS"</span>,<span class="str">"gen005"</span>,pBAClient,<span class="dig">3</span>)
+    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"ShawnR"</span>,<span class="str">"lnd010"</span>,pBAClient,<span class="dig">4</span>)
 
 <span class="cmt"># create some expense slips
-</span>    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"ShawnR"</span>,<span class="str">"e004"</span>,baClient,<span class="dig">5</span>)
-    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"SamS"</span>,<span class="str">"e005"</span>,baClient,<span class="dig">6</span>)
-    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"CoreyM"</span>,<span class="str">"e006"</span>,baClient,<span class="dig">7</span>)
-    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"TomH"</span>,<span class="str">"e003"</span>,baClient,<span class="dig">8</span>)
+</span>    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"ShawnR"</span>,<span class="str">"e004"</span>,pBAClient,<span class="dig">5</span>)
+    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"SamS"</span>,<span class="str">"e005"</span>,pBAClient,<span class="dig">6</span>)
+    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"CoreyM"</span>,<span class="str">"e006"</span>,pBAClient,<span class="dig">7</span>)
+    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"TomH"</span>,<span class="str">"e003"</span>,pBAClient,<span class="dig">8</span>)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -198,11 +198,11 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> BA_Bill(baClient,billNum):
+</span><span class="kw">def</span> fPrint_BABill(pBAClient,pBillNum):
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba bill"</span>)
-    logging.debug(<span class="str">'BA_Bill: '</span> + baClient + <span class="str">' '</span> + str(billNum))
+    logging.debug(<span class="str">'BA_Bill: '</span> + pBAClient + <span class="str">' '</span> + str(pBillNum))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
     <span class="skw">click</span>(<img src="remove_filters.png" />)
@@ -211,7 +211,7 @@
     <span class="skw">type</span>(Key.DOWN)
     <span class="skw">type</span>(Key.TAB)
     <span class="skw">type</span>(Key.SPACE)
-    <span class="skw">type</span>(baClient)
+    <span class="skw">type</span>(pBAClient)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4)
     <span class="skw">type</span>(Key.ENTER)
@@ -221,7 +221,7 @@
     <span class="skw">type</span>(<span class="str">"t"</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + baClient + str(billNum) + <span class="str">".txt"</span>)
+    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + pBAClient + str(pBillNum) + <span class="str">".txt"</span>)
 
 <span class="cmt">#    for checkmark in findAll("checkmark.png"):
 </span><span class="cmt">#        click(checkmark)

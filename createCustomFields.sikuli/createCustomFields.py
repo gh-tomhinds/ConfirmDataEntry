@@ -3,22 +3,21 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def CreateOne(name, downArrow):
+def fCreateOne(pName, pDownArrow):
 #---------------------------------------------------#
 
-    logging.debug('-- create ' + name)
+    logging.debug('-- create ' + pName)
 
     type("n",KeyModifier.ALT)
     time.sleep(1)
-    for i in range(downArrow+1):
-        type(Key.DOWN)
+    myTools.pressDOWN(pDownArrow+1)
     type(Key.ENTER)
     time.sleep(1)
-    type(name)
+    type(pName)
     type(Key.ENTER)
 
 #---------------------------------------------------#
-def FillCliList():
+def fFillCliList():
 #---------------------------------------------------#
 
     logging.debug('- fill list')
@@ -35,7 +34,7 @@ def FillCliList():
     type(Key.ENTER)
 
 #---------------------------------------------------#
-def FillTkList():
+def fFillTkList():
 #---------------------------------------------------#
 
     logging.debug('- fill list')
@@ -52,7 +51,7 @@ def FillTkList():
     type(Key.ENTER)
 
 #---------------------------------------------------#
-def FillActList():
+def fFillActList():
 #---------------------------------------------------#
 
     logging.debug('- fill list')
@@ -69,7 +68,7 @@ def FillActList():
     type(Key.ENTER)
 
 #---------------------------------------------------#
-def Create_CustomFields():
+def fCreate_CustomFields():
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("custom fields")
@@ -88,8 +87,8 @@ def Create_CustomFields():
     
     customFields = ['Date','Hours','List','Money','Number','Percent','Text','Timekeeper']
     for customField in customFields:
-        CreateOne(customField, customFields.index(customField))
-    FillCliList()
+        fCreateOne(customField, customFields.index(customField))
+    fFillCliList()
 
     logging.debug('- add TIMEKEEPER custom fields')
 
@@ -98,8 +97,8 @@ def Create_CustomFields():
 
     customFields = ['Date','Hours','List','Money','Number','Percent','Text']
     for customField in customFields:
-        CreateOne(customField, customFields.index(customField))
-    FillTkList()
+        fCreateOne(customField, customFields.index(customField))
+    fFillTkList()
 
     logging.debug('- add ACTIVITY custom fields')
 
@@ -108,8 +107,8 @@ def Create_CustomFields():
 
     customFields = ['Date','Hours','List','Money','Number','Percent','Text']
     for customField in customFields:
-        CreateOne(customField, customFields.index(customField))
-    FillActList()
+        fCreateOne(customField, customFields.index(customField))
+    fFillActList()
     
     type(Key.ENTER)
     time.sleep(10)

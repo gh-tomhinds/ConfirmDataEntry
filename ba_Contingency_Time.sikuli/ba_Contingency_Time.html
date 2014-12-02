@@ -78,7 +78,7 @@
 <span class="kw">import</span> ba__ReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_ContingencyTime_Arrangement1():
+</span><span class="kw">def</span> fContingencyTime_Setup1():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba ContTime1"</span>)
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    ba__Common.moveto_BAPage()
+</span>    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">4</span>)
 
 <span class="cmt"># switch to contingency
@@ -119,7 +119,7 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_ContingencyTime_Arrangement2():
+</span><span class="kw">def</span> fContingencyTime_Setup2():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba ContTime2"</span>)
@@ -133,7 +133,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement fields
-</span>    ba__Common.moveto_BAPage()
+</span>    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
 
 <span class="cmt"># enter details    
@@ -157,28 +157,28 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_Contingency_Time():
+</span><span class="kw">def</span> fContingency_Time():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-Cont-Time"</span>,<span class="str">"BA-Cont-Time"</span>,<span class="str">"Contingency - Time"</span>,<span class="str">"Contingency - Time"</span>,<span class="str">"Contingency - Time"</span>)
     <span class="cmt"># create some slips
-</span>    ba__Common.BA_Create_Slips(<span class="str">"BA-Cont-Time"</span>)
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-Cont-Time"</span>)
     <span class="cmt"># set up billing arrangement
-</span>    BA_ContingencyTime_Arrangement1()
+</span>    fContingencyTime_Setup1()
     <span class="cmt"># print a bill to text
-</span>    ba__Common.BA_Bill(<span class="str">"BA-Cont-Time"</span>,<span class="dig">1</span>)
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-Cont-Time"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare bill values
-</span>    ba__ReviewBills.Review_Bill(<span class="str">"BA-Cont-Time1"</span>)
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-Cont-Time1"</span>)
 
     <span class="cmt"># create some more slips
-</span>    ba__Common.BA_Create_Slips(<span class="str">"BA-Cont-Time"</span>)
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-Cont-Time"</span>)
     <span class="cmt"># change billing arrangement
-</span>    BA_ContingencyTime_Arrangement2()
+</span>    fContingencyTime_Setup2()
     <span class="cmt"># print 2nd bill to text
-</span>    ba__Common.BA_Bill(<span class="str">"BA-Cont-Time"</span>,<span class="dig">2</span>)
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-Cont-Time"</span>,<span class="dig">2</span>)
     <span class="cmt"># compare 2nd bill's values
-</span>    ba__ReviewBills.Review_Bill(<span class="str">"BA-Cont-Time2"</span>)
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-Cont-Time2"</span>)
 </pre>
 </body>
 </html>

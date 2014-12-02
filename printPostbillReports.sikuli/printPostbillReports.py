@@ -15,7 +15,7 @@ def print_postbill_reports(month):
 #---------------------------------------------------#
 
     # print various reports to check db values and calculations
-    # this function is also called from reviewBillingArrangements
+    # this function is also called from ba__Main
 
     printARAgedBal.Print_ARAgedBal(month)
     printTkHistory.Print_TkHistory(month)

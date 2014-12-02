@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Round_Dollars():
+def fSlipsRoundDol_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba RoundDollars")
@@ -44,16 +44,16 @@ def BA_Round_Dollars():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_SlipsRoundDol():
+def fSlipsRoundDol():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-RoundDol","BA-RoundDol","Rounding Dollars","Rounding Dollars","Rounding Dollars")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-RoundDol")
+    ba__Common.fCreate_BASlips("BA-RoundDol")
     # set up billing arrangement
-    BA_Round_Dollars() 
+    fSlipsRoundDol_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-RoundDol",1)
+    ba__Common.fPrint_BABill("BA-RoundDol",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-RoundDol1")
+    ba__ReviewBills.fReview_BABill("BA-RoundDol1")

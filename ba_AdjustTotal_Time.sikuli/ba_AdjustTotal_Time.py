@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AdjustTotalTime_Arrangement():
+def fAdjustTotalTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTotalTime")
@@ -19,7 +19,7 @@ def BA_AdjustTotalTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
 
 # switch to adjust total charges    
@@ -56,7 +56,7 @@ def BA_AdjustTotalTime_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AdjustTotal_Time():
+def fAdjustTotal_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
@@ -65,10 +65,10 @@ def BA_AdjustTotal_Time():
     # create a new client    
     createClient.Create_Client("BA-AdjTot-Time","BA-AdjTot-Time","Adjust Total - Time","Adjust Total - Time","Adjust Total - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-AdjTot-Time")
+    ba__Common.fCreate_BASlips("BA-AdjTot-Time")
     # set up billing arrangement
-    BA_AdjustTotalTime_Arrangement() 
+    fAdjustTotalTime_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-AdjTot-Time",1)
+    ba__Common.fPrint_BABill("BA-AdjTot-Time",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-AdjTot-Time1")
+    ba__ReviewBills.fReview_BABill("BA-AdjTot-Time1")

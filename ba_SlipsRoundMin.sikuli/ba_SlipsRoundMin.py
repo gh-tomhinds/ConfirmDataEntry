@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Round_Minutes():
+def fSlipsRoundMin_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba RoundMins")
@@ -42,16 +42,16 @@ def BA_Round_Minutes():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_SlipsRoundMin():
+def fSlipsRoundMin():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-RoundMin","BA-RoundMin","Rounding Minutes","Rounding Minutes","Rounding Minutes")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-RoundMin")
+    ba__Common.fCreate_BASlips("BA-RoundMin")
     # set up billing arrangement
-    BA_Round_Minutes() 
+    fSlipsRoundMin_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-RoundMin",1)
+    ba__Common.fPrint_BABill("BA-RoundMin",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-RoundMin1")
+    ba__ReviewBills.fReview_BABill("BA-RoundMin1")

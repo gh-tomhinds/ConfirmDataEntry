@@ -29,7 +29,7 @@ import setupSplitBills
 
 import runMonthlyBillCycle
 
-import reviewBillingArrangements
+import ba__Main
 import ba__Common
 
 import makeBackup
@@ -49,26 +49,26 @@ setupStuff.Setup_Stuff()
 
 ##############################################################
 
-startTSandNewDB.StartTS_CreateNewDB()
+startTSandNewDB.fStartTS_CreateNewDB()
 
-tweakPrefs.Tweak_Prefs()
-createCategories.Create_Categories()
-createCustomFields.Create_CustomFields()
+#tweakPrefs.fTweak_Prefs()
+#createCategories.fCreate_Categories()
+#createCustomFields.fCreate_CustomFields()
 
-createImportEditNames.CreateImportEdit_Names()
+#createImportEditNames.CreateImportEdit_Names()
 
-createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 #createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
-setupSplitBills.Setup_SplitBills()
+#setupSplitBills.Setup_SplitBills()
 
-runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
-ba__Common.Setup_BADefaultLayout()
-reviewBillingArrangements.Review_BillingArrangements()
+#ba__Common.fSetup_BADefaultLayout()
+#ba__Main.fReview_Arrangements()
 
-setupCalTerms.Setup_CalTerms()
-calendarStuff.Calendar_Stuff()
+#setupCalTerms.Setup_CalTerms()
+#calendarStuff.Calendar_Stuff()
 
 #printTasks.Print_Tasks()
 #printExpenses.Print_Expenses()

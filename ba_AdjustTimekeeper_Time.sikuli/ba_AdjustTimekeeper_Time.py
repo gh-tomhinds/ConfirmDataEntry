@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AdjustTimekeeperTime_Arrangement():
+def fAdjustTimekeeperTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTimekeeperTime")
@@ -20,7 +20,7 @@ def BA_AdjustTimekeeperTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()        
+    ba__Common.fMoveto_BAPage()        
     myTools.pressTAB(4)
     
 # switch to adjust by timekeeper    
@@ -58,7 +58,7 @@ def BA_AdjustTimekeeperTime_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AdjustTimekeeper_Time():
+def fAdjustTimekeeper_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
@@ -67,10 +67,10 @@ def BA_AdjustTimekeeper_Time():
     # create a new client    
     createClient.Create_Client("BA-AdjTK-Time","BA-AdjTK-Time","Adjust Timekeeper - Time","Adjust Timekeeper - Time","Adjust Timekeeper - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-AdjTK-Time")
+    ba__Common.fCreate_BASlips("BA-AdjTK-Time")
     # set up billing arrangement
-    BA_AdjustTimekeeperTime_Arrangement() 
+    fAdjustTimekeeperTime_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-AdjTK-Time",1)
+    ba__Common.fPrint_BABill("BA-AdjTK-Time",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-AdjTK-Time1")
+    ba__ReviewBills.fReview_BABill("BA-AdjTK-Time1")

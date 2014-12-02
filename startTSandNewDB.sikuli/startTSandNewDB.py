@@ -4,9 +4,9 @@ import myTools
 import shutil
 
 #---------------------------------------------------#
-def delete_dataFolder():
+def fDelete_DataFolder():
 #---------------------------------------------------#
-    logging.debug('- delete_dataFolder')
+    logging.debug('- fDeleteDataFolder')
 
     if os.path.exists(Settings.dbFolder):
         logging.debug("-- Delete folder:     %s" % Settings.dbFolder)
@@ -15,7 +15,23 @@ def delete_dataFolder():
         logging.debug("-- Missing:           %s" % Settings.dbFolder)
 
 #---------------------------------------------------#
-def checkFor_Sample():
+def fStart_TS():
+#---------------------------------------------------#
+    logging.debug('- fStartTS')
+
+    # show desktop
+    type("d",KeyModifier.KEY_WIN)
+
+    # start timeslips
+    App.open(Settings.tsEXE)   
+    time.sleep(3)
+    
+    logging.debug('-- wait until TS is open')
+
+    wait("sage_timeslips.png",300)
+
+#---------------------------------------------------#
+def fCheckFor_Sample():
 #---------------------------------------------------#
     logging.debug('- checkFor_Sample')
 
@@ -25,7 +41,7 @@ def checkFor_Sample():
         type(Key.ENTER)        
 
 #---------------------------------------------------#
-def checkFor_PEP():
+def fCheckFor_PEP():
 #---------------------------------------------------#
     logging.debug('- checkFor_PEP')
 
@@ -35,7 +51,7 @@ def checkFor_PEP():
         type(Key.ENTER)        
 
 #---------------------------------------------------#
-def checkFor_SPS():
+def fCheckFor_SPS():
 #---------------------------------------------------#
     logging.debug('- checkFor_SPS')
 
@@ -45,7 +61,7 @@ def checkFor_SPS():
         type(Key.ENTER)        
 
 #---------------------------------------------------#
-def checkFor_BillingDate():
+def fCheckFor_BillingDate():
 #---------------------------------------------------#
     logging.debug('- checkFor_BillingDate')
 
@@ -55,7 +71,7 @@ def checkFor_BillingDate():
         type(Key.ENTER)
 
 #---------------------------------------------------#
-def StartTS_CreateNewDB():
+def fStartTS_CreateNewDB():
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("new db")
@@ -64,23 +80,9 @@ def StartTS_CreateNewDB():
 
     popup("make sure Timeslips is closed")
 
-# delete the data folder
-    delete_dataFolder()
-
-# show desktop
-    type("d",KeyModifier.KEY_WIN)
-
-# start timeslips
-    logging.debug('- start Timeslips')
-
-    App.open(Settings.tsEXE)   
-    time.sleep(3)
-    
-    logging.debug('-- wait until TS is open')
-
-    wait("sage_timeslips.png",300)
-
-    checkFor_PEP()
+    fDelete_DataFolder()
+    fStart_TS()
+    fCheckFor_PEP()
 
 # start the new db process
     logging.debug('- Check for database')
@@ -95,10 +97,10 @@ def StartTS_CreateNewDB():
         if exists("supervisor.png"):
             type(Key.ENTER)        
             time.sleep(1)
-        checkFor_Sample()
-        checkFor_PEP()
-        checkFor_BillingDate()
-        checkFor_SPS()
+        fCheckFor_Sample()
+        fCheckFor_PEP()
+        fCheckFor_BillingDate()
+        fCheckFor_SPS()
         time.sleep(1)
 
         # File > New > Database
@@ -204,8 +206,8 @@ def StartTS_CreateNewDB():
         time.sleep(1)
         type("n")
 
-    checkFor_BillingDate()
-    checkFor_SPS()
-    checkFor_PEP()
+    fCheckFor_BillingDate()
+    fCheckFor_SPS()
+    fCheckFor_PEP()
 
     myTools.sectionEndTimeStamp()

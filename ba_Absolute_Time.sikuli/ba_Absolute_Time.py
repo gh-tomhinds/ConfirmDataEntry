@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_AbsoluteTime_Arrangement():
+def fAbsoluteTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AbsoluteTime")
@@ -20,7 +20,7 @@ def BA_AbsoluteTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to absolute
@@ -47,16 +47,16 @@ def BA_AbsoluteTime_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Absolute_Time():
+def fAbsolute_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Absolute-Time","BA-Absolute-Time","Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Absolute-Time")
+    ba__Common.fCreate_BASlips("BA-Absolute-Time")
     # set up billing arrangement
-    BA_AbsoluteTime_Arrangement() 
+    fAbsoluteTime_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Absolute-Time",1)
+    ba__Common.fPrint_BABill("BA-Absolute-Time",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Absolute-Time1")
+    ba__ReviewBills.fReview_BABill("BA-Absolute-Time1")

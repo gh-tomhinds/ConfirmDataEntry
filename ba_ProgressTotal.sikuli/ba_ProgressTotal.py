@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ProgressTotal_Arrangement1():
+def fProgressTotal_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ProgressTot1")
@@ -20,7 +20,7 @@ def BA_ProgressTotal_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to minimum
@@ -43,7 +43,7 @@ def BA_ProgressTotal_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ProgressTotal_Arrangement2():
+def fProgressTotal_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ProgressTot2")
@@ -57,7 +57,7 @@ def BA_ProgressTotal_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -76,7 +76,7 @@ def BA_ProgressTotal_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ProgressTotal_Arrangement3():
+def fProgressTotal_Setup3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba ProgressTot3")
@@ -90,7 +90,7 @@ def BA_ProgressTotal_Arrangement3():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -113,34 +113,34 @@ def BA_ProgressTotal_Arrangement3():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_ProgressTotal():
+def fProgressTotal():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-ProgressTot","BA-ProgressTot","Progress Total FF","Progress Total FF","Progress Total FF")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-ProgressTot")
+    ba__Common.fCreate_BASlips("BA-ProgressTot")
     # set up billing arrangement
-    BA_ProgressTotal_Arrangement1() 
+    fProgressTotal_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-ProgressTot",1)
+    ba__Common.fPrint_BABill("BA-ProgressTot",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-ProgressTot1")
+    ba__ReviewBills.fReview_BABill("BA-ProgressTot1")
 
     # create some slips
-    ba__Common.BA_Create_Slips("BA-ProgressTot")
+    ba__Common.fCreate_BASlips("BA-ProgressTot")
     # set up billing arrangement
-    BA_ProgressTotal_Arrangement2() 
+    fProgressTotal_Setup2() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-ProgressTot",2)
+    ba__Common.fPrint_BABill("BA-ProgressTot",2)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-ProgressTot2")
+    ba__ReviewBills.fReview_BABill("BA-ProgressTot2")
 
     # create some slips
-    ba__Common.BA_Create_Slips("BA-ProgressTot")
+    ba__Common.fCreate_BASlips("BA-ProgressTot")
     # set up billing arrangement
-    BA_ProgressTotal_Arrangement3() 
+    fProgressTotal_Setup3() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-ProgressTot",3)
+    ba__Common.fPrint_BABill("BA-ProgressTot",3)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-ProgressTot3")
+    ba__ReviewBills.fReview_BABill("BA-ProgressTot3")

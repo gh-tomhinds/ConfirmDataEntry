@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_FlatFeePlusBoth_Arrangement():
+def fFlatFeePlusBoth_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba FFPlusBoth")
@@ -20,7 +20,7 @@ def BA_FlatFeePlusBoth_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for both
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(3)
     
     type(Key.RIGHT)
@@ -55,16 +55,16 @@ def BA_FlatFeePlusBoth_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_FlatFeePlus_Both():
+def fFlatFeePlus_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-FFPlus-Both","BA-FFPlus-Both","FF Plus - Both","FF Plus - Both","FF Plus - Both")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-FFPlus-Both")
+    ba__Common.fCreate_BASlips("BA-FFPlus-Both")
     # set up billing arrangement
-    BA_FlatFeePlusBoth_Arrangement() 
+    fFlatFeePlusBoth_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-FFPlus-Both",1)
+    ba__Common.fPrint_BABill("BA-FFPlus-Both",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-FFPlus-Both1")
+    ba__ReviewBills.fReview_BABill("BA-FFPlus-Both1")

@@ -51,7 +51,7 @@ import ba_Precision
 import printPostbillReports
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def baLogHeader():
+def fLogHeader():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     if os.path.isfile(Settings.BALogFile):
@@ -64,60 +64,60 @@ def baLogHeader():
         billLog.write("==================================================\n")
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Review_BillingArrangements():
+def fReview_Arrangements():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     logging.debug(' ')
-    logging.debug('Review_BillingArrangements')
+    logging.debug('Review_Arrangements')
     
     # make sure timeslips has focus
     myTools.getFocus()
 
-    baLogHeader()
+    fLogHeader()
 
-    ba_AdjustTotal_Time.BA_AdjustTotal_Time()
-    ba_AdjustTotal_Exp.BA_AdjustTotal_Exp()
-    ba_AdjustTotal_Both.BA_AdjustTotal_Both()
+    ba_AdjustTotal_Time.fAdjustTotal_Time()
+    ba_AdjustTotal_Exp.fAdjustTotal_Exp()
+    ba_AdjustTotal_Both.fAdjustTotal_Both()
     
-    ba_AdjustTimekeeper_Time.BA_AdjustTimekeeper_Time()
-    ba_AdjustTimekeeper_Exp.BA_AdjustTimekeeper_Exp()
-    ba_AdjustTimekeeper_Both.BA_AdjustTimekeeper_Both()
+    ba_AdjustTimekeeper_Time.fAdjustTimekeeper_Time()
+    ba_AdjustTimekeeper_Exp.fAdjustTimekeeper_Exp()
+    ba_AdjustTimekeeper_Both.fAdjustTimekeeper_Both()
 
-    ba_AdjustTask.BA_AdjustTask()
-    ba_AdjustExpense.BA_AdjustExpense()
+    ba_AdjustTask.fAdjustTask()
+    ba_AdjustExpense.fAdjustExpense()
 
-    ba_Absolute_Time.BA_Absolute_Time()
-    ba_Absolute_Exp.BA_Absolute_Exp()
-    ba_Absolute_Both.BA_Absolute_Both()
+    ba_Absolute_Time.fAbsolute_Time()
+    ba_Absolute_Exp.fAbsolute_Exp()
+    ba_Absolute_Both.fAbsolute_Both()
 
-    ba_Minimum_Time.BA_Minimum_Time()
-    ba_Minimum_Exp.BA_Minimum_Exp()
-    ba_Minimum_Both.BA_Minimum_Both()
+    ba_Minimum_Time.fMinimum_Time()
+    ba_Minimum_Exp.fMinimum_Exp()
+    ba_Minimum_Both.fMinimum_Both()
     
-    ba_Maximum_Time.BA_Maximum_Time()
-    ba_Maximum_Exp.BA_Maximum_Exp()
-    ba_Maximum_Both.BA_Maximum_Both()
+    ba_Maximum_Time.fMaximum_Time()
+    ba_Maximum_Exp.fMaximum_Exp()
+    ba_Maximum_Both.fMaximum_Both()
 
-    ba_FlatFeePlus_Time.BA_FlatFeePlus_Time()
-    ba_FlatFeePlus_Exp.BA_FlatFeePlus_Exp()
-    ba_FlatFeePlus_Both.BA_FlatFeePlus_Both()
+    ba_FlatFeePlus_Time.fFlatFeePlus_Time()
+    ba_FlatFeePlus_Exp.fFlatFeePlus_Exp()
+    ba_FlatFeePlus_Both.fFlatFeePlus_Both()
 
-    ba_Contingency_Time.BA_Contingency_Time()
-    ba_Contingency_Exp.BA_Contingency_Exp()
-    ba_Contingency_Both.BA_Contingency_Both()
+    ba_Contingency_Time.fContingency_Time()
+    ba_Contingency_Exp.fContingency_Exp()
+    ba_Contingency_Both.fContingency_Both()
 
-    ba_MinimumHours.BA_MinimumHours()
+    ba_MinimumHours.fMinimumHours()
 
-    ba_Percent.BA_Percent()
+    ba_Percent.fPercent()
 
-    ba_ProgressTotal.BA_ProgressTotal()
-    ba_ProgressActivity.BA_ProgressActivity()    
-    ba_InterimTotal.BA_InterimTotal()    
-    ba_InterimActivity.BA_InterimActivity()    
+    ba_ProgressTotal.fProgressTotal()
+    ba_ProgressActivity.fProgressActivity()    
+    ba_InterimTotal.fInterimTotal()    
+    ba_InterimActivity.fInterimActivity()    
 
-    ba_SlipsRoundMin.BA_SlipsRoundMin()    
-    ba_SlipsRoundDol.BA_SlipsRoundDol()    
-    ba_Precision.BA_Precision()
+    ba_SlipsRoundMin.fSlipsRoundMin()
+    ba_SlipsRoundDol.fSlipsRoundDol()
+    ba_Precision.fPrecision()
    
     makeBackup.Backup_Checkpoint("ba")
 

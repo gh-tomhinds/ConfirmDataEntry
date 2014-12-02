@@ -6,7 +6,7 @@ import sys
 from importBillLayout import Import_Layout
 
 #---------------------------------------------------#
-def Import_DefaultLayout():
+def fImport_DefaultLayout():
 #---------------------------------------------------#
 
     Import_Layout("Low Detail")
@@ -22,7 +22,7 @@ def Import_DefaultLayout():
     type(Key.F4,KeyModifier.CTRL)
 
 #---------------------------------------------------#
-def Setup_NewNamesDefault():
+def fSetup_NewNamesDefault():
 #---------------------------------------------------#
 
     logging.debug('- open gen settings')
@@ -47,7 +47,7 @@ def Setup_NewNamesDefault():
     type(Key.ENTER)
 
 #---------------------------------------------------#
-def moveto_BAPage():
+def fMoveto_BAPage():
 #---------------------------------------------------#
 
     if int(Settings.tsVersion) > 2014:
@@ -56,7 +56,7 @@ def moveto_BAPage():
         myTools.pressF6(3)
 
 #---------------------------------------------------#
-def setup_BABills():
+def fSetup_BABills():
 #---------------------------------------------------#
     logging.debug('- set up bill report')
 
@@ -85,39 +85,39 @@ def setup_BABills():
     type(Key.F4,KeyModifier.CTRL)
 
 #---------------------------------------------------#
-def Setup_BADefaultLayout():
+def fSetup_BADefaultLayout():
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("ba setup")
 
     myTools.getFocus()
 
-    Import_DefaultLayout()
-    Setup_NewNamesDefault()
-    setup_BABills()
+    fImport_DefaultLayout()
+    fSetup_NewNamesDefault()
+    fSetup_BABills()
 
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
-def BA_Create_Slips(baClient):
+def fCreate_BASlips(pBAClient):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("ba slips")
-    logging.debug('BA_Create_Slips')
+    logging.debug('fCreate_BASlips')
 
     type("m",KeyModifier.CTRL)
     time.sleep(1)
 
-    createSlips.Create_OneSlip("t","TomH","con001",baClient,1)
-    createSlips.Create_OneSlip("t","CoreyM","gen004",baClient,2)
-    createSlips.Create_OneSlip("t","SamS","gen005",baClient,3)
-    createSlips.Create_OneSlip("t","ShawnR","lnd010",baClient,4)
+    createSlips.Create_OneSlip("t","TomH","con001",pBAClient,1)
+    createSlips.Create_OneSlip("t","CoreyM","gen004",pBAClient,2)
+    createSlips.Create_OneSlip("t","SamS","gen005",pBAClient,3)
+    createSlips.Create_OneSlip("t","ShawnR","lnd010",pBAClient,4)
 
 # create some expense slips
-    createSlips.Create_OneSlip("e","ShawnR","e004",baClient,5)
-    createSlips.Create_OneSlip("e","SamS","e005",baClient,6)
-    createSlips.Create_OneSlip("e","CoreyM","e006",baClient,7)
-    createSlips.Create_OneSlip("e","TomH","e003",baClient,8)
+    createSlips.Create_OneSlip("e","ShawnR","e004",pBAClient,5)
+    createSlips.Create_OneSlip("e","SamS","e005",pBAClient,6)
+    createSlips.Create_OneSlip("e","CoreyM","e006",pBAClient,7)
+    createSlips.Create_OneSlip("e","TomH","e003",pBAClient,8)
 
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
@@ -126,11 +126,11 @@ def BA_Create_Slips(baClient):
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
-def BA_Bill(baClient,billNum):
+def fPrint_BABill(pBAClient,pBillNum):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("ba bill")
-    logging.debug('BA_Bill: ' + baClient + ' ' + str(billNum))
+    logging.debug('BA_Bill: ' + pBAClient + ' ' + str(pBillNum))
 
     type("b",KeyModifier.CTRL)
     click("remove_filters.png")
@@ -139,7 +139,7 @@ def BA_Bill(baClient,billNum):
     type(Key.DOWN)
     type(Key.TAB)
     type(Key.SPACE)
-    type(baClient)
+    type(pBAClient)
     time.sleep(1)
     type(Key.F4)
     type(Key.ENTER)
@@ -149,7 +149,7 @@ def BA_Bill(baClient,billNum):
     type("t")
     type(Key.ENTER)  
     time.sleep(1)
-    type(Settings.repFolder + "\\" + baClient + str(billNum) + ".txt")
+    type(Settings.repFolder + "\\" + pBAClient + str(pBillNum) + ".txt")
 
 #    for checkmark in findAll("checkmark.png"):
 #        click(checkmark)

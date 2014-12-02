@@ -78,7 +78,7 @@
 <span class="kw">import</span> ba__ReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_ProgressTotal_Arrangement1():
+</span><span class="kw">def</span> fProgressTotal_Setup1():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba ProgressTot1"</span>)
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    ba__Common.moveto_BAPage()
+</span>    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">4</span>)
 
 <span class="cmt"># switch to minimum
@@ -115,7 +115,7 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_ProgressTotal_Arrangement2():
+</span><span class="kw">def</span> fProgressTotal_Setup2():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba ProgressTot2"</span>)
@@ -129,7 +129,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    ba__Common.moveto_BAPage()
+</span>    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
 
 <span class="cmt"># enter details    
@@ -148,7 +148,7 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_ProgressTotal_Arrangement3():
+</span><span class="kw">def</span> fProgressTotal_Setup3():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba ProgressTot3"</span>)
@@ -162,7 +162,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    ba__Common.moveto_BAPage()
+</span>    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">5</span>)
 
 <span class="cmt"># enter details    
@@ -185,37 +185,37 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_ProgressTotal():
+</span><span class="kw">def</span> fProgressTotal():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-ProgressTot"</span>,<span class="str">"BA-ProgressTot"</span>,<span class="str">"Progress Total FF"</span>,<span class="str">"Progress Total FF"</span>,<span class="str">"Progress Total FF"</span>)
     <span class="cmt"># create some slips
-</span>    ba__Common.BA_Create_Slips(<span class="str">"BA-ProgressTot"</span>)
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-ProgressTot"</span>)
     <span class="cmt"># set up billing arrangement
-</span>    BA_ProgressTotal_Arrangement1()
+</span>    fProgressTotal_Setup1()
     <span class="cmt"># print a bill to text
-</span>    ba__Common.BA_Bill(<span class="str">"BA-ProgressTot"</span>,<span class="dig">1</span>)
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-ProgressTot"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
-</span>    ba__ReviewBills.Review_Bill(<span class="str">"BA-ProgressTot1"</span>)
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-ProgressTot1"</span>)
 
     <span class="cmt"># create some slips
-</span>    ba__Common.BA_Create_Slips(<span class="str">"BA-ProgressTot"</span>)
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-ProgressTot"</span>)
     <span class="cmt"># set up billing arrangement
-</span>    BA_ProgressTotal_Arrangement2()
+</span>    fProgressTotal_Setup2()
     <span class="cmt"># print a bill to text
-</span>    ba__Common.BA_Bill(<span class="str">"BA-ProgressTot"</span>,<span class="dig">2</span>)
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-ProgressTot"</span>,<span class="dig">2</span>)
     <span class="cmt"># compare at bill values
-</span>    ba__ReviewBills.Review_Bill(<span class="str">"BA-ProgressTot2"</span>)
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-ProgressTot2"</span>)
 
     <span class="cmt"># create some slips
-</span>    ba__Common.BA_Create_Slips(<span class="str">"BA-ProgressTot"</span>)
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-ProgressTot"</span>)
     <span class="cmt"># set up billing arrangement
-</span>    BA_ProgressTotal_Arrangement3()
+</span>    fProgressTotal_Setup3()
     <span class="cmt"># print a bill to text
-</span>    ba__Common.BA_Bill(<span class="str">"BA-ProgressTot"</span>,<span class="dig">3</span>)
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-ProgressTot"</span>,<span class="dig">3</span>)
     <span class="cmt"># compare at bill values
-</span>    ba__ReviewBills.Review_Bill(<span class="str">"BA-ProgressTot3"</span>)
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-ProgressTot3"</span>)
 </pre>
 </body>
 </html>

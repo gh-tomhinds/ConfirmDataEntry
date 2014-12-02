@@ -78,7 +78,7 @@
 <span class="kw">import</span> ba__ReviewBills
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_AdjustTimekeeperTime_Arrangement():
+</span><span class="kw">def</span> fAdjustTimekeeperTime_Setup():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"ba AdjustTimekeeperTime"</span>)
@@ -92,7 +92,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt"># get to arrangement field for time
-</span>    ba__Common.moveto_BAPage()
+</span>    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">4</span>)
 
 <span class="cmt"># switch to adjust by timekeeper    
@@ -130,7 +130,7 @@
     myTools.sectionEndTimeStamp()
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> BA_AdjustTimekeeper_Time():
+</span><span class="kw">def</span> fAdjustTimekeeper_Time():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     logging.debug(<span class="str">' '</span>)
@@ -139,13 +139,13 @@
     <span class="cmt"># create a new client    
 </span>    createClient.Create_Client(<span class="str">"BA-AdjTK-Time"</span>,<span class="str">"BA-AdjTK-Time"</span>,<span class="str">"Adjust Timekeeper - Time"</span>,<span class="str">"Adjust Timekeeper - Time"</span>,<span class="str">"Adjust Timekeeper - Time"</span>)
     <span class="cmt"># create some slips
-</span>    ba__Common.BA_Create_Slips(<span class="str">"BA-AdjTK-Time"</span>)
+</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-AdjTK-Time"</span>)
     <span class="cmt"># set up billing arrangement
-</span>    BA_AdjustTimekeeperTime_Arrangement()
+</span>    fAdjustTimekeeperTime_Setup()
     <span class="cmt"># print a bill to text
-</span>    ba__Common.BA_Bill(<span class="str">"BA-AdjTK-Time"</span>,<span class="dig">1</span>)
+</span>    ba__Common.fPrint_BABill(<span class="str">"BA-AdjTK-Time"</span>,<span class="dig">1</span>)
     <span class="cmt"># compare at bill values
-</span>    ba__ReviewBills.Review_Bill(<span class="str">"BA-AdjTK-Time1"</span>)
+</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-AdjTK-Time1"</span>)
 </pre>
 </body>
 </html>

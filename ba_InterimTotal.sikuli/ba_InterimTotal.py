@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimTotal_Arrangement1():
+def fInterimTotal_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimTot1")
@@ -20,7 +20,7 @@ def BA_InterimTotal_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to interim
@@ -43,7 +43,7 @@ def BA_InterimTotal_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimTotal_Arrangement2():
+def fInterimTotal_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimTot2")
@@ -57,7 +57,7 @@ def BA_InterimTotal_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -76,7 +76,7 @@ def BA_InterimTotal_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimTotal_Arrangement3():
+def fInterimTotal_Setup3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimTot3")
@@ -90,7 +90,7 @@ def BA_InterimTotal_Arrangement3():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -113,34 +113,34 @@ def BA_InterimTotal_Arrangement3():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimTotal():
+def fInterimTotal():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-InterimTot","BA-InterimTot","Interim Total FF","Interim Total FF","Interim Total FF")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-InterimTot")
+    ba__Common.fCreate_BASlips("BA-InterimTot")
     # set up billing arrangement
-    BA_InterimTotal_Arrangement1() 
+    fInterimTotal_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-InterimTot",1)
+    ba__Common.fPrint_BABill("BA-InterimTot",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-InterimTot1")
+    ba__ReviewBills.fReview_BABill("BA-InterimTot1")
 
     # create some slips
-    ba__Common.BA_Create_Slips("BA-InterimTot")
+    ba__Common.fCreate_BASlips("BA-InterimTot")
     # set up billing arrangement
-    BA_InterimTotal_Arrangement2() 
+    fInterimTotal_Setup2() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-InterimTot",2)
+    ba__Common.fPrint_BABill("BA-InterimTot",2)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-InterimTot2")
+    ba__ReviewBills.fReview_BABill("BA-InterimTot2")
 
     # create some slips
-    ba__Common.BA_Create_Slips("BA-InterimTot")
+    ba__Common.fCreate_BASlips("BA-InterimTot")
     # set up billing arrangement
-    BA_InterimTotal_Arrangement3() 
+    fInterimTotal_Setup3() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-InterimTot",3)
+    ba__Common.fPrint_BABill("BA-InterimTot",3)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-InterimTot3")
+    ba__ReviewBills.fReview_BABill("BA-InterimTot3")

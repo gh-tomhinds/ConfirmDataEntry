@@ -5,51 +5,51 @@ import csv
 import myTools
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Get_BillValues(billType,fullBill,phrase):
+def fGet_BillValues(pBillType,pFullBill,pPhrase):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # searches the bill text file for a phrase and returns the value associated with it
 
-    logging.debug('- Get_BillValues: ' + billType)
+    logging.debug('- Get_BillValues: ' + pBillType)
 
-    for billLine in fullBill:
-        if billLine.find(phrase) != -1:
+    for billLine in pFullBill:
+        if billLine.find(pPhrase) != -1:
             # after finding the line, remove the phrase, $, commas, and trailing spaces
-            billLine = billLine.replace(phrase,"")
+            billLine = billLine.replace(pPhrase,"")
             billLine = billLine.replace("$","")
             billLine = billLine.replace(",","")
             billLine = billLine.strip()            
             return(billLine)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Compare_Results(billName,valueType,savedValue,billValue):
+def fCompare_Results(pBillName,pValueType,pSavedValue,pBillValue):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug("- Compare_Results: " + billName + ": " + valueType)
+    logging.debug("- Compare_Results: " + pBillName + ": " + pValueType)
 
     outFile = Settings.repFolder + "\\BA-Log.txt"
     billLog = open(outFile, "a")
 
-    print(savedValue)
-    print(billValue)
+    print(pSavedValue)
+    print(pBillValue)
 
-    if float(savedValue) == float(billValue):
-        billLog.write(" " + valueType + " matches.\n")
+    if float(pSavedValue) == float(pBillValue):
+        billLog.write(" " + pValueType + " matches.\n")
     else:
-        billLog.write(" !!!" + valueType + " does not match.")
-        billLog.write(" Expected: " + savedValue + ", ")        
-        billLog.write(" Actual: " + billValue + "\n")        
+        billLog.write(" !!!" + pValueType + " does not match.")
+        billLog.write(" Expected: " + pSavedValue + ", ")        
+        billLog.write(" Actual: " + pBillValue + "\n")        
 
     billLog.close()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def Review_Bill(billName):
+def fReview_BABill(pBillName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba review bill")
 
     logging.debug(' ')
-    logging.debug('Review_Bill: ' + billName)
+    logging.debug('Review_Bill: ' + pBillName)
 
     # open the file that contain bill data
     baDataFile = Settings.dataFolder + "\\baData.csv"
@@ -61,20 +61,20 @@ def Review_Bill(billName):
 
     for oneBill in allBills:
         if stopLooking == False:
-            if oneBill["name"] == billName:
+            if oneBill["name"] == pBillName:
                 savedFeesValue = oneBill["fees"]
                 savedCostsValue = oneBill["costs"]
                 savedTotalValue = oneBill["total"]
                 stopLooking = True
 
-    billPath = Settings.repFolder + "\\" + billName + ".txt"
+    billPath = Settings.repFolder + "\\" + pBillName + ".txt"
 
     if os.path.exists(billPath):
 
         # set up default strings used to identify specific lines on the bill
-        if "Progress" in billName and "3" in billName:
+        if "Progress" in pBillName and "3" in pBillName:
             timeText = "Net Time Charges"
-        elif "Progress" in billName:
+        elif "Progress" in pBillName:
             timeText = "Progress billing amount"
         else:            
             timeText = "For professional services rendered"
@@ -91,28 +91,28 @@ def Review_Bill(billName):
         billFile.close()
 
         # read values from printed bill
-        billFeesValue = Get_BillValues("Fees",billLines,timeText)
+        billFeesValue = fGet_BillValues("Fees",billLines,timeText)
         print("* * *")        
         print(billFeesValue)
-        billCostsValue = Get_BillValues("Costs",billLines,expText)
-        billTotalValue = Get_BillValues("Total",billLines,totalText)
+        billCostsValue = fGet_BillValues("Costs",billLines,expText)
+        billTotalValue = fGet_BillValues("Total",billLines,totalText)
 
         # open log file
         outFile = Settings.repFolder + "\\BA-Log.txt"
         billLog = open(outFile, "a")
         
         # print results      
-        billLog.write("\nBill: " +  billName)
-        for dashes in range(50-len(billName)):
+        billLog.write("\nBill: " +  pBillName)
+        for dashes in range(50-len(pBillName)):
             billLog.write("-")
         billLog.write("\n")
         billLog.close()
 
-        Compare_Results(billName,"Fees",savedFeesValue,billFeesValue)
-        Compare_Results(billName,"Costs",savedCostsValue,billCostsValue)
-        Compare_Results(billName,"Total",savedTotalValue,billTotalValue)
+        fCompare_Results(pBillName,"Fees",savedFeesValue,billFeesValue)
+        fCompare_Results(pBillName,"Costs",savedCostsValue,billCostsValue)
+        fCompare_Results(pBillName,"Total",savedTotalValue,billTotalValue)
 
     else:
-        logging.debug(" - MISSING: " + billName)
+        logging.debug(" - MISSING: " + pBillName)
 
     myTools.sectionEndTimeStamp()

@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimActivity_Arrangement1():
+def fInterimActivity_Setup1():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimAct1")
@@ -20,7 +20,7 @@ def BA_InterimActivity_Arrangement1():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to Interim
@@ -48,7 +48,7 @@ def BA_InterimActivity_Arrangement1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimActivity_Arrangement2():
+def fInterimActivity_Setup2():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimAct2")
@@ -62,7 +62,7 @@ def BA_InterimActivity_Arrangement2():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -92,7 +92,7 @@ def BA_InterimActivity_Arrangement2():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimActivity_Arrangement3():
+def fInterimActivity_Setup3():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba InterimAct3")
@@ -106,7 +106,7 @@ def BA_InterimActivity_Arrangement3():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # enter details    
@@ -138,34 +138,34 @@ def BA_InterimActivity_Arrangement3():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_InterimActivity():
+def fInterimActivity():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-InterimAct","BA-InterimAct","Interim Activity FF","Interim Activity FF","Interim Activity FF")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-InterimAct")
+    ba__Common.fCreate_BASlips("BA-InterimAct")
     # set up billing arrangement
-    BA_InterimActivity_Arrangement1() 
+    fInterimActivity_Setup1() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-InterimAct",1)
+    ba__Common.fPrint_BABill("BA-InterimAct",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-InterimAct1")
+    ba__ReviewBills.fReview_BABill("BA-InterimAct1")
 
     # create some slips
-    ba__Common.BA_Create_Slips("BA-InterimAct")
+    ba__Common.fCreate_BASlips("BA-InterimAct")
     # set up billing arrangement
-    BA_InterimActivity_Arrangement2() 
+    fInterimActivity_Setup2() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-InterimAct",2)
+    ba__Common.fPrint_BABill("BA-InterimAct",2)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-InterimAct2")
+    ba__ReviewBills.fReview_BABill("BA-InterimAct2")
 
     # create some slips
-    ba__Common.BA_Create_Slips("BA-InterimAct")
+    ba__Common.fCreate_BASlips("BA-InterimAct")
     # set up billing arrangement
-    BA_InterimActivity_Arrangement3() 
+    fInterimActivity_Setup3() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-InterimAct",3)
+    ba__Common.fPrint_BABill("BA-InterimAct",3)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-InterimAct3")
+    ba__ReviewBills.fReview_BABill("BA-InterimAct3")

@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_FlatFeePlusTime_Arrangement():
+def fFlatFeePlusTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba FFPlusTime")
@@ -20,7 +20,7 @@ def BA_FlatFeePlusTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to flat fee plus charges
@@ -47,16 +47,16 @@ def BA_FlatFeePlusTime_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_FlatFeePlus_Time():
+def fFlatFeePlus_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-FFPlus-Time","BA-FFPlus-Time","FF Plus - Time","FF Plus - Time","FF Plus - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-FFPlus-Time")
+    ba__Common.fCreate_BASlips("BA-FFPlus-Time")
     # set up billing arrangement
-    BA_FlatFeePlusTime_Arrangement() 
+    fFlatFeePlusTime_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-FFPlus-Time",1)
+    ba__Common.fPrint_BABill("BA-FFPlus-Time",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-FFPlus-Time1")
+    ba__ReviewBills.fReview_BABill("BA-FFPlus-Time1")

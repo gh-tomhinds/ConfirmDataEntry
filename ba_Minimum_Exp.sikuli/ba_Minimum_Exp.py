@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_MinimumExp_Arrangement():
+def fMinimumExp_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MinimumExp")
@@ -20,7 +20,7 @@ def BA_MinimumExp_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for exp
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # switch to minimum
@@ -45,16 +45,16 @@ def BA_MinimumExp_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Minimum_Exp():
+def fMinimum_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Minimum-Exp","BA-Minimum-Exp","Minimum FF - Exp","Minimum FF - Exp","Minimum FF - Exp")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Minimum-Exp")
+    ba__Common.fCreate_BASlips("BA-Minimum-Exp")
     # set up billing arrangement
-    BA_MinimumExp_Arrangement() 
+    fMinimumExp_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Minimum-Exp",1)
+    ba__Common.fPrint_BABill("BA-Minimum-Exp",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Minimum-Exp1")
+    ba__ReviewBills.fReview_BABill("BA-Minimum-Exp1")

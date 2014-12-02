@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_MinimumBoth_Arrangement():
+def fMinimumBoth_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MinimumBoth")
@@ -20,7 +20,7 @@ def BA_MinimumBoth_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for both
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(3)
     
     type(Key.RIGHT)
@@ -58,16 +58,16 @@ def BA_MinimumBoth_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Minimum_Both():
+def fMinimum_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Minimum-Both","BA-Minimum-Both","Minimum FF - Both","Minimum FF - Both","Minimum FF - Both")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Minimum-Both")
+    ba__Common.fCreate_BASlips("BA-Minimum-Both")
     # set up billing arrangement
-    BA_MinimumBoth_Arrangement() 
+    fMinimumBoth_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Minimum-Both",1)
+    ba__Common.fPrint_BABill("BA-Minimum-Both",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Minimum-Both1")
+    ba__ReviewBills.fReview_BABill("BA-Minimum-Both1")

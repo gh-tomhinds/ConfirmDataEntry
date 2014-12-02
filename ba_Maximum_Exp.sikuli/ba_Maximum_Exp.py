@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_MaximumExp_Arrangement():
+def fMaximumExp_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MaximumExp")
@@ -20,7 +20,7 @@ def BA_MaximumExp_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for exp
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(5)
     
 # switch to maximum
@@ -45,16 +45,16 @@ def BA_MaximumExp_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Maximum_Exp():
+def fMaximum_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Maximum-Exp","BA-Maximum-Exp","Maximum FF - Exp","Maximum FF - Exp","Maximum FF - Exp")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Maximum-Exp")
+    ba__Common.fCreate_BASlips("BA-Maximum-Exp")
     # set up billing arrangement
-    BA_MaximumExp_Arrangement() 
+    fMaximumExp_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Maximum-Exp",1)
+    ba__Common.fPrint_BABill("BA-Maximum-Exp",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Maximum-Exp1")
+    ba__ReviewBills.fReview_BABill("BA-Maximum-Exp1")

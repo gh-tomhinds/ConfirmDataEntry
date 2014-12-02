@@ -6,7 +6,7 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_MaximumTime_Arrangement():
+def fMaximumTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba MaximumTime")
@@ -20,7 +20,7 @@ def BA_MaximumTime_Arrangement():
     time.sleep(1)
 
 # get to arrangement field for time
-    ba__Common.moveto_BAPage()
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(4)
     
 # switch to maximum
@@ -47,16 +47,16 @@ def BA_MaximumTime_Arrangement():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def BA_Maximum_Time():
+def fMaximum_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
     createClient.Create_Client("BA-Maximum-Time","BA-Maximum-Time","Maximum FF - Time","Maximum FF - Time","Maximum FF - Time")
     # create some slips
-    ba__Common.BA_Create_Slips("BA-Maximum-Time")
+    ba__Common.fCreate_BASlips("BA-Maximum-Time")
     # set up billing arrangement
-    BA_MaximumTime_Arrangement() 
+    fMaximumTime_Setup() 
     # print a bill to text
-    ba__Common.BA_Bill("BA-Maximum-Time",1)
+    ba__Common.fPrint_BABill("BA-Maximum-Time",1)
     # compare at bill values
-    ba__ReviewBills.Review_Bill("BA-Maximum-Time1")
+    ba__ReviewBills.fReview_BABill("BA-Maximum-Time1")
