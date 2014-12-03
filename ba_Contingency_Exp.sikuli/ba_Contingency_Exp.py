@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -89,7 +89,7 @@ def fContingency_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Cont-Exp","BA-Cont-Exp","Contingency - Exp","Contingency - Exp","Contingency - Exp")
+    client_Create.fCreate_Client("BA-Cont-Exp","BA-Cont-Exp","Contingency - Exp","Contingency - Exp","Contingency - Exp")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Cont-Exp")
     # set up billing arrangement

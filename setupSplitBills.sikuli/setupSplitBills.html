@@ -75,7 +75,50 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Setup_SplitBills():
+</span><span class="kw">def</span> fSetup_Primary(pPrimaryClient):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="cmt"># new primary
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># beverly
+</span>    <span class="skw">type</span>(pPrimaryClient)
+
+    <span class="cmt"># split bill info
+</span>    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(pPrimaryClient)
+
+    <span class="cmt"># recurring
+</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+
+    <span class="cmt"># OK
+</span>    myTools.pressTAB(<span class="dig">3</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_Secondary(pSecondaryClient,pTimePercentage):
+<span class="cmt">#---------------------------------------------------#
+</span>
+    <span class="skw">type</span>(Key.SPACE)
+
+    <span class="skw">type</span>(pSecondaryClient)
+
+    <span class="cmt"># percentages
+</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(str(pTimePercentage))
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(str(pTimePercentage+<span class="dig">5</span>))
+
+    <span class="cmt"># ok
+</span>    myTools.pressTAB(<span class="dig">3</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_SplitBills():
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"setup split"</span>)
@@ -89,60 +132,12 @@
     <span class="skw">type</span>(<span class="str">"i"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># new primary
-</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="cmt"># beverly
-</span>    <span class="skw">type</span>(<span class="str">"bev"</span>)
-
-    <span class="cmt"># split bill info
-</span>    myTools.pressTAB(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"Beverly"</span>)
-
-    <span class="cmt"># recurring
-</span>    myTools.pressTAB(<span class="dig">2</span>)
-    <span class="skw">type</span>(Key.SPACE)
-
-    <span class="cmt"># OK
-</span>    myTools.pressTAB(<span class="dig">3</span>)
-    <span class="skw">type</span>(Key.SPACE)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    fSetup_Primary(<span class="str">"Beverly"</span>)
 
     <span class="cmt"># new secondary
 </span>    myTools.pressTAB(<span class="dig">7</span>)
-    <span class="skw">type</span>(Key.SPACE)
-
-    <span class="cmt"># peabody
-</span>    <span class="skw">type</span>(<span class="str">"pea"</span>)
-
-    <span class="cmt"># percentages
-</span>    myTools.pressTAB(<span class="dig">2</span>)
-    <span class="skw">type</span>(<span class="str">"15"</span>)
-    myTools.pressTAB(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"20"</span>)
-
-    <span class="cmt"># ok
-</span>    myTools.pressTAB(<span class="dig">3</span>)
-    <span class="skw">type</span>(Key.SPACE)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="cmt"># new secondary
-</span>    <span class="skw">type</span>(Key.SPACE)
-
-    <span class="cmt"># saugus
-</span>    <span class="skw">type</span>(<span class="str">"sau"</span>)
-
-    <span class="cmt"># percentages
-</span>    myTools.pressTAB(<span class="dig">2</span>)
-    <span class="skw">type</span>(<span class="str">"20"</span>)
-    myTools.pressTAB(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"25"</span>)
-
-    <span class="cmt"># ok
-</span>    myTools.pressTAB(<span class="dig">3</span>)
-    <span class="skw">type</span>(Key.SPACE)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    fSetup_Secondary(<span class="str">"Peabody"</span>,<span class="dig">15</span>)
+    fSetup_Secondary(<span class="str">"Saugus"</span>,<span class="dig">20</span>)
 
     <span class="cmt"># done
 </span>    myTools.pressTAB(<span class="dig">4</span>)

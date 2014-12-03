@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -63,7 +63,7 @@ def fAdjustTotal_Time():
     logging.debug('BA_AdjustTotal_Time')
 
     # create a new client    
-    createClient.Create_Client("BA-AdjTot-Time","BA-AdjTot-Time","Adjust Total - Time","Adjust Total - Time","Adjust Total - Time")
+    client_Create.fCreate_Client("BA-AdjTot-Time","BA-AdjTot-Time","Adjust Total - Time","Adjust Total - Time","Adjust Total - Time")
     # create some slips
     ba__Common.fCreate_BASlips("BA-AdjTot-Time")
     # set up billing arrangement

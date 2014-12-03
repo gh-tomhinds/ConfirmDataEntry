@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -62,7 +62,7 @@ def fAbsolute_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Absolute-Both","BA-Absolute-Both","Absolute FF - Both","Absolute FF - Both","Absolute FF - Both")
+    client_Create.fCreate_Client("BA-Absolute-Both","BA-Absolute-Both","Absolute FF - Both","Absolute FF - Both","Absolute FF - Both")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Absolute-Both")
     # set up billing arrangement

@@ -60,7 +60,7 @@ startTSandNewDB.fStartTS_CreateNewDB()
 #createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 #createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
-#setupSplitBills.Setup_SplitBills()
+#setupSplitBills.fSetup_SplitBills()
 
 #runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 

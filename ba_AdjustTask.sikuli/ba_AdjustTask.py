@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -65,7 +65,7 @@ def fAdjustTask():
     logging.debug('BA_AdjustTask')
 
     # create a new client    
-    createClient.Create_Client("BA-AdjTask","BA-AdjTask","Adjust Task","Adjust Task","Adjust Task")
+    client_Create.fCreate_Client("BA-AdjTask","BA-AdjTask","Adjust Task","Adjust Task","Adjust Task")
     # create some slips
     ba__Common.fCreate_BASlips("BA-AdjTask")
     # set up billing arrangement

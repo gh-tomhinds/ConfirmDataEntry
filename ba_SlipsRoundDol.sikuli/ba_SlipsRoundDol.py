@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -48,7 +48,7 @@ def fSlipsRoundDol():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-RoundDol","BA-RoundDol","Rounding Dollars","Rounding Dollars","Rounding Dollars")
+    client_Create.fCreate_Client("BA-RoundDol","BA-RoundDol","Rounding Dollars","Rounding Dollars","Rounding Dollars")
     # create some slips
     ba__Common.fCreate_BASlips("BA-RoundDol")
     # set up billing arrangement

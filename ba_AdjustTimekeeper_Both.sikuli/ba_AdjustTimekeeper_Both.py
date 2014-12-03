@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -72,7 +72,7 @@ def fAdjustTimekeeper_Both():
     logging.debug('BA_AdjustTimekeeper_Both')
 
     # create a new client    
-    createClient.Create_Client("BA-AdjTK-Both","BA-AdjTK-Both","Adjust Timekeeper - Both","Adjust Timekeeper - Both","Adjust Timekeeper - Both")
+    client_Create.fCreate_Client("BA-AdjTK-Both","BA-AdjTK-Both","Adjust Timekeeper - Both","Adjust Timekeeper - Both","Adjust Timekeeper - Both")
     # create some slips
     ba__Common.fCreate_BASlips("BA-AdjTK-Both")
     # set up billing arrangement

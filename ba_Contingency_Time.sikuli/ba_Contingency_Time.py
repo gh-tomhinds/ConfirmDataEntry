@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -89,7 +89,7 @@ def fContingency_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Cont-Time","BA-Cont-Time","Contingency - Time","Contingency - Time","Contingency - Time")
+    client_Create.fCreate_Client("BA-Cont-Time","BA-Cont-Time","Contingency - Time","Contingency - Time","Contingency - Time")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Cont-Time")
     # set up billing arrangement

@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -117,7 +117,7 @@ def fProgressTotal():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-ProgressTot","BA-ProgressTot","Progress Total FF","Progress Total FF","Progress Total FF")
+    client_Create.fCreate_Client("BA-ProgressTot","BA-ProgressTot","Progress Total FF","Progress Total FF","Progress Total FF")
     # create some slips
     ba__Common.fCreate_BASlips("BA-ProgressTot")
     # set up billing arrangement

@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -142,7 +142,7 @@ def fInterimActivity():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-InterimAct","BA-InterimAct","Interim Activity FF","Interim Activity FF","Interim Activity FF")
+    client_Create.fCreate_Client("BA-InterimAct","BA-InterimAct","Interim Activity FF","Interim Activity FF","Interim Activity FF")
     # create some slips
     ba__Common.fCreate_BASlips("BA-InterimAct")
     # set up billing arrangement

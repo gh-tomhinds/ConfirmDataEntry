@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -59,7 +59,7 @@ def fFlatFeePlus_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-FFPlus-Both","BA-FFPlus-Both","FF Plus - Both","FF Plus - Both","FF Plus - Both")
+    client_Create.fCreate_Client("BA-FFPlus-Both","BA-FFPlus-Both","FF Plus - Both","FF Plus - Both","FF Plus - Both")
     # create some slips
     ba__Common.fCreate_BASlips("BA-FFPlus-Both")
     # set up billing arrangement

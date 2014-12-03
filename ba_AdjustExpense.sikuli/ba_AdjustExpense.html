@@ -73,7 +73,7 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
-<span class="kw">import</span> createClient
+<span class="kw">import</span> client_Create
 <span class="kw">import</span> ba__Common
 <span class="kw">import</span> ba__ReviewBills
 
@@ -137,7 +137,7 @@
     logging.debug(<span class="str">'BA_AdjustExpense'</span>)
 
     <span class="cmt"># create a new client    
-</span>    createClient.Create_Client(<span class="str">"BA-AdjExpense"</span>,<span class="str">"BA-AdjExpense"</span>,<span class="str">"Adjust Expense"</span>,<span class="str">"Adjust Expense"</span>,<span class="str">"Adjust Expense"</span>)
+</span>    client_Create.fCreate_Client(<span class="str">"BA-AdjExpense"</span>,<span class="str">"BA-AdjExpense"</span>,<span class="str">"Adjust Expense"</span>,<span class="str">"Adjust Expense"</span>,<span class="str">"Adjust Expense"</span>)
     <span class="cmt"># create some slips
 </span>    ba__Common.fCreate_BASlips(<span class="str">"BA-AdjExpense"</span>)
     <span class="cmt"># set up billing arrangement

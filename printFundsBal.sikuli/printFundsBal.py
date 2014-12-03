@@ -4,11 +4,11 @@ import myTools
 import compareOneReport
 
 #---------------------------------------------------#
-def Print_FundsBal(reportMonth):
+def fPrint_FundsBal(reportMonth):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print fundsbal")
-    logging.debug('Print_FundsBal: ' + str(reportMonth))
+    logging.debug('fPrint_FundsBal: ' + str(reportMonth))
 
     # make sure timeslips has focus
     myTools.getFocus()

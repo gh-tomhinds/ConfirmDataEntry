@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -49,7 +49,7 @@ def fMinimum_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Minimum-Exp","BA-Minimum-Exp","Minimum FF - Exp","Minimum FF - Exp","Minimum FF - Exp")
+    client_Create.fCreate_Client("BA-Minimum-Exp","BA-Minimum-Exp","Minimum FF - Exp","Minimum FF - Exp","Minimum FF - Exp")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Minimum-Exp")
     # set up billing arrangement

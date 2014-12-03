@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -54,7 +54,7 @@ def fMinimumHours():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-MinimumHours","BA-MinimumHours","Minimum Hours FF","Minimum Hours FF","Minimum Hours FF")
+    client_Create.fCreate_Client("BA-MinimumHours","BA-MinimumHours","Minimum Hours FF","Minimum Hours FF","Minimum Hours FF")
     # create some slips
     ba__Common.fCreate_BASlips("BA-MinimumHours")
     # set up billing arrangement

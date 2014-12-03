@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -206,7 +206,7 @@ def fPercent():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Percent","BA-Percent","Percent Comp","Percent Comp","Percent Comp")
+    client_Create.fCreate_Client("BA-Percent","BA-Percent","Percent Comp","Percent Comp","Percent Comp")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Percent")
     # set up billing arrangement

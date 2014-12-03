@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -62,7 +62,7 @@ def fMaximum_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Maximum-Both","BA-Maximum-Both","Maximum FF - Both","Maximum FF - Both","Maximum FF - Both")
+    client_Create.fCreate_Client("BA-Maximum-Both","BA-Maximum-Both","Maximum FF - Both","Maximum FF - Both","Maximum FF - Both")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Maximum-Both")
     # set up billing arrangement

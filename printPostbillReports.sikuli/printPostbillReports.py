@@ -20,7 +20,7 @@ def print_postbill_reports(month):
     printARAgedBal.Print_ARAgedBal(month)
     printTkHistory.Print_TkHistory(month)
     printTkCC.Print_TkCC(month)
-    printFundsBal.Print_FundsBal(month)
+    printFundsBal.fPrint_FundsBal(month)
     printHold.Print_Hold(month)
     printTaxes.Print_Taxes(month)
     printTOWorksheet.Print_Worksheet(month)

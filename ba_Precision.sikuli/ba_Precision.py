@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -46,7 +46,7 @@ def fPrecision():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Precision","BA-Precision","Precision Settings","Precision Settings","Precision Settings")
+    client_Create.fCreate_Client("BA-Precision","BA-Precision","Precision Settings","Precision Settings","Precision Settings")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Precision")
     # set up billing arrangement

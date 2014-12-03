@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -51,7 +51,7 @@ def fAbsolute_Time():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Absolute-Time","BA-Absolute-Time","Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
+    client_Create.fCreate_Client("BA-Absolute-Time","BA-Absolute-Time","Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Absolute-Time")
     # set up billing arrangement

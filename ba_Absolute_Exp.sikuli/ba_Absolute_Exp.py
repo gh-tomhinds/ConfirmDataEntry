@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -51,7 +51,7 @@ def fAbsolute_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-Absolute-Exp","BA-Absolute-Exp","Absolute FF - Expense","Absolute FF - Expense","Absolute FF - Expense")
+    client_Create.fCreate_Client("BA-Absolute-Exp","BA-Absolute-Exp","Absolute FF - Expense","Absolute FF - Expense","Absolute FF - Expense")
     # create some slips
     ba__Common.fCreate_BASlips("BA-Absolute-Exp")
     # set up billing arrangement

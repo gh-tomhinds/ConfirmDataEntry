@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -117,7 +117,7 @@ def fInterimTotal():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     # create a new client    
-    createClient.Create_Client("BA-InterimTot","BA-InterimTot","Interim Total FF","Interim Total FF","Interim Total FF")
+    client_Create.fCreate_Client("BA-InterimTot","BA-InterimTot","Interim Total FF","Interim Total FF","Interim Total FF")
     # create some slips
     ba__Common.fCreate_BASlips("BA-InterimTot")
     # set up billing arrangement

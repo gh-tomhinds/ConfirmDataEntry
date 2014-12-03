@@ -3,7 +3,50 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def Setup_SplitBills():
+def fSetup_Primary(pPrimaryClient):
+#---------------------------------------------------#
+
+    # new primary
+    type("n",KeyModifier.ALT)
+    time.sleep(1)
+    
+    # beverly
+    type(pPrimaryClient)
+    
+    # split bill info
+    myTools.pressTAB(1)    
+    type(pPrimaryClient)
+    
+    # recurring
+    myTools.pressTAB(2)
+    type(Key.SPACE)
+
+    # OK
+    myTools.pressTAB(3)
+    type(Key.SPACE)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def fSetup_Secondary(pSecondaryClient,pTimePercentage):
+#---------------------------------------------------#
+
+    type(Key.SPACE)
+        
+    type(pSecondaryClient)
+
+    # percentages
+    myTools.pressTAB(2)
+    type(str(pTimePercentage))
+    myTools.pressTAB(1)
+    type(str(pTimePercentage+5))
+
+    # ok
+    myTools.pressTAB(3)
+    type(Key.SPACE)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def fSetup_SplitBills():
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("setup split")
@@ -17,60 +60,12 @@ def Setup_SplitBills():
     type("i")
     time.sleep(1)
 
-    # new primary
-    type("n",KeyModifier.ALT)
-    time.sleep(1)
-    
-    # beverly
-    type("bev")
-    
-    # split bill info
-    myTools.pressTAB(1)    
-    type("Beverly")
-    
-    # recurring
-    myTools.pressTAB(2)
-    type(Key.SPACE)
-
-    # OK
-    myTools.pressTAB(3)
-    type(Key.SPACE)
-    time.sleep(1)
+    fSetup_Primary("Beverly")
 
     # new secondary
-    myTools.pressTAB(7)
-    type(Key.SPACE)
-        
-    # peabody
-    type("pea")
-
-    # percentages
-    myTools.pressTAB(2)
-    type("15")
-    myTools.pressTAB(1)
-    type("20")
-
-    # ok
-    myTools.pressTAB(3)
-    type(Key.SPACE)
-    time.sleep(1)
-
-    # new secondary
-    type(Key.SPACE)
-
-    # saugus
-    type("sau")
-
-    # percentages
-    myTools.pressTAB(2)
-    type("20")
-    myTools.pressTAB(1)
-    type("25")
-
-    # ok
-    myTools.pressTAB(3)
-    type(Key.SPACE)
-    time.sleep(1)
+    myTools.pressTAB(7)   
+    fSetup_Secondary("Peabody",15)
+    fSetup_Secondary("Saugus",20)
 
     # done
     myTools.pressTAB(4)

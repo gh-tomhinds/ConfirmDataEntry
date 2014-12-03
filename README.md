@@ -134,39 +134,39 @@ This file create one of each type of client custom fields.
 * CreateOne - Creates a specific custom field
 * FillList - Fills the List type custom field with values
 
-### createClient
+### client_Create
 
 This file contains code to create one client. 
 Initially, it's called with values to create the first client in the database. 
 Then it's called to by each billing arrangement script to create a new client for that specific billing arrangement. 
 
-### createTask
+### task_Create
 
 This file contains code to create the initial task. 
 
-### createExpense
+### expense_Create
 
 This file contains code to create the initial expense. 
 
-### importTimekeepers
+### timekeeper_Imports
 
 This file contains code to open TSImport to import additional timekeepers from a file.
 That data file is: Desktop\Sikuli\DataFiles\timekeepers.csv.
 
-### editTimekeeper
+### timekeeper_Edit
 
 This file contains code to edit the initial timekeeper that was created in startTSandNewDB.
 
-### importClients
+### client_Import
 
 This file contains code to open TSImport to import additional timekeepers from a file.
 That data file is: Desktop\Sikuli\DataFiles\towns.csv.
 * Import_Clients - Opens TSImport, sets up the template, imports data
 * Add_CustomField - Adds the custom fields to the template
 
-### editClient
+### client_Edit
 
-This file contains code to edit the initial client that was created in createClient, then also edit default rate and interest for all clients.
+This file contains code to edit the initial client that was created in client_Create, then also edit default rate and interest for all clients.
 * EditClient - Drives the process
 * Edit_CliGenInfo - edits values in the Contact Info page for initial client
 * Edit_CliCustom - edits values in the Custom page for initial client
@@ -174,39 +174,39 @@ This file contains code to edit the initial client that was created in createCli
 * Edit_DefaultRates - loops through all clients, editing default rate settings
 * Edit_InterestSetting - edits interest setting and exports it to all other clients
 
-### importTasks
+### task_Import
 
 This file contains code to open TSImport to import additional tasks from a file.
 That data file is: Desktop\Sikuli\DataFiles\tasks.csv.
 
-### editTask
+### task_Edit
 
-This file contains code to edit the initial client that was created in createTask.
+This file contains code to edit the initial client that was created in task_Create.
 
-### importExpenses
+### expense_Import
 
 This file contains code to open TSImport to import additional expenses from a file.
 That data file is: Desktop\Sikuli\DataFiles\expenses.csv.
 
-### editExpense
+### expense_Edit
 
-This file contains code to edit the initial client that was created in createExpense.
+This file contains code to edit the initial client that was created in expense_Create.
 
-### createRefs
+### ref_Create
 
 This file contains code that changes reference settings, exports them to all clients, then creates global references (from names in a data file) that are used by all clients.
 That data file is: Desktop\Sikuli\DataFiles\templateRefs.csv.
 
-### importRefs
+### ref_Import
 
 This file contains code that sets up a TSImport template and imports client-specific references for each client.
 That data file that is imported is: Desktop\Sikuli\DataFiles\refs.csv.
 
-### setupFeeAlloc
+### client_FeeAlloc
 
-### setupExpMarkups
+### expense_Markup
 
-### setupTaxes
+### taxes_Setup
 
 ### createSlips
 
@@ -224,13 +224,13 @@ That data file that is imported is: Desktop\Sikuli\DataFiles\refs.csv.
 
 ### calendarStuff
 
-### printClients
+### report_ClientInfo
 
 ### printTasks
 
 ### printExpenses
 
-### printTimekeepers
+### report_TimekeeperInfo
 
 ### compareReports
 

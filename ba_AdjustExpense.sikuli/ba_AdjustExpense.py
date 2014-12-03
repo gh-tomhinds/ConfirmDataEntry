@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import createClient
+import client_Create
 import ba__Common
 import ba__ReviewBills
 
@@ -65,7 +65,7 @@ def fAdjustExpense():
     logging.debug('BA_AdjustExpense')
 
     # create a new client    
-    createClient.Create_Client("BA-AdjExpense","BA-AdjExpense","Adjust Expense","Adjust Expense","Adjust Expense")
+    client_Create.fCreate_Client("BA-AdjExpense","BA-AdjExpense","Adjust Expense","Adjust Expense","Adjust Expense")
     # create some slips
     ba__Common.fCreate_BASlips("BA-AdjExpense")
     # set up billing arrangement

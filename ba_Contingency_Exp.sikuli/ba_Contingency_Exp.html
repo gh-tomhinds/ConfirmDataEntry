@@ -73,7 +73,7 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
-<span class="kw">import</span> createClient
+<span class="kw">import</span> client_Create
 <span class="kw">import</span> ba__Common
 <span class="kw">import</span> ba__ReviewBills
 
@@ -161,7 +161,7 @@
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
 </span>
     <span class="cmt"># create a new client    
-</span>    createClient.Create_Client(<span class="str">"BA-Cont-Exp"</span>,<span class="str">"BA-Cont-Exp"</span>,<span class="str">"Contingency - Exp"</span>,<span class="str">"Contingency - Exp"</span>,<span class="str">"Contingency - Exp"</span>)
+</span>    client_Create.fCreate_Client(<span class="str">"BA-Cont-Exp"</span>,<span class="str">"BA-Cont-Exp"</span>,<span class="str">"Contingency - Exp"</span>,<span class="str">"Contingency - Exp"</span>,<span class="str">"Contingency - Exp"</span>)
     <span class="cmt"># create some slips
 </span>    ba__Common.fCreate_BASlips(<span class="str">"BA-Cont-Exp"</span>)
     <span class="cmt"># set up billing arrangement
