@@ -73,9 +73,9 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
-<span class="kw">import</span> createSlips
+<span class="kw">import</span> slips_Create
 <span class="kw">import</span> sys
-<span class="kw">from</span> importBillLayout <span class="kw">import</span> Import_Layout
+<span class="kw">from</span> bill_ImportLayout <span class="kw">import</span> fImport_Layout
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> fImport_DefaultLayout():
@@ -180,16 +180,16 @@
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"TomH"</span>,<span class="str">"con001"</span>,pBAClient,<span class="dig">1</span>)
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"CoreyM"</span>,<span class="str">"gen004"</span>,pBAClient,<span class="dig">2</span>)
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"SamS"</span>,<span class="str">"gen005"</span>,pBAClient,<span class="dig">3</span>)
-    createSlips.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"ShawnR"</span>,<span class="str">"lnd010"</span>,pBAClient,<span class="dig">4</span>)
+    slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"TomH"</span>,<span class="str">"con001"</span>,pBAClient,<span class="dig">1</span>)
+    slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"CoreyM"</span>,<span class="str">"gen004"</span>,pBAClient,<span class="dig">2</span>)
+    slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"SamS"</span>,<span class="str">"gen005"</span>,pBAClient,<span class="dig">3</span>)
+    slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"ShawnR"</span>,<span class="str">"lnd010"</span>,pBAClient,<span class="dig">4</span>)
 
 <span class="cmt"># create some expense slips
-</span>    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"ShawnR"</span>,<span class="str">"e004"</span>,pBAClient,<span class="dig">5</span>)
-    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"SamS"</span>,<span class="str">"e005"</span>,pBAClient,<span class="dig">6</span>)
-    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"CoreyM"</span>,<span class="str">"e006"</span>,pBAClient,<span class="dig">7</span>)
-    createSlips.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"TomH"</span>,<span class="str">"e003"</span>,pBAClient,<span class="dig">8</span>)
+</span>    slips_Create.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"ShawnR"</span>,<span class="str">"e004"</span>,pBAClient,<span class="dig">5</span>)
+    slips_Create.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"SamS"</span>,<span class="str">"e005"</span>,pBAClient,<span class="dig">6</span>)
+    slips_Create.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"CoreyM"</span>,<span class="str">"e006"</span>,pBAClient,<span class="dig">7</span>)
+    slips_Create.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"TomH"</span>,<span class="str">"e003"</span>,pBAClient,<span class="dig">8</span>)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)

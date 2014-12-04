@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import compareOneReport
+import reports_Compare
 
 #---------------------------------------------------#
 def fPrint_ClientInfo(reportName):
@@ -64,7 +64,7 @@ def fPrint_ClientInfo(reportName):
     myTools.waitForReport()
 
     # compare the report with baseline
-    compareOneReport.Compare_OneReport(reportName)
+    reports_Compare.Compare_OneReport(reportName)
 
     type(Key.F4,KeyModifier.CTRL)
 

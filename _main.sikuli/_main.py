@@ -22,12 +22,11 @@ import names_Create
 import settings_Categories
 import settings_CustomFields
 
-import createSlips
-import createSlipsManually
+import slips_Create
+import slips_CreateManually
 
 import bill_Split
-
-import runMonthlyBillCycle
+import bill_MonthlyCycle
 
 import ba__Main
 import ba__Common
@@ -54,12 +53,12 @@ _global_Settings.fSetup_Envirnoment()
 
 #names_Create.fCreateImportEdit_Names()
 
-#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+#slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+#slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
 #bill_Split.fSetup_SplitBills()
 
-#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
 #ba__Main.fReview_Arrangements()

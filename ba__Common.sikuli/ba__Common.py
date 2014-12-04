@@ -1,9 +1,9 @@
 from sikuli import *
 import logging
 import myTools
-import createSlips
+import slips_Create
 import sys
-from importBillLayout import Import_Layout
+from bill_ImportLayout import fImport_Layout
 
 #---------------------------------------------------#
 def fImport_DefaultLayout():
@@ -108,16 +108,16 @@ def fCreate_BASlips(pBAClient):
     type("m",KeyModifier.CTRL)
     time.sleep(1)
 
-    createSlips.Create_OneSlip("t","TomH","con001",pBAClient,1)
-    createSlips.Create_OneSlip("t","CoreyM","gen004",pBAClient,2)
-    createSlips.Create_OneSlip("t","SamS","gen005",pBAClient,3)
-    createSlips.Create_OneSlip("t","ShawnR","lnd010",pBAClient,4)
+    slips_Create.Create_OneSlip("t","TomH","con001",pBAClient,1)
+    slips_Create.Create_OneSlip("t","CoreyM","gen004",pBAClient,2)
+    slips_Create.Create_OneSlip("t","SamS","gen005",pBAClient,3)
+    slips_Create.Create_OneSlip("t","ShawnR","lnd010",pBAClient,4)
 
 # create some expense slips
-    createSlips.Create_OneSlip("e","ShawnR","e004",pBAClient,5)
-    createSlips.Create_OneSlip("e","SamS","e005",pBAClient,6)
-    createSlips.Create_OneSlip("e","CoreyM","e006",pBAClient,7)
-    createSlips.Create_OneSlip("e","TomH","e003",pBAClient,8)
+    slips_Create.Create_OneSlip("e","ShawnR","e004",pBAClient,5)
+    slips_Create.Create_OneSlip("e","SamS","e005",pBAClient,6)
+    slips_Create.Create_OneSlip("e","CoreyM","e006",pBAClient,7)
+    slips_Create.Create_OneSlip("e","TomH","e003",pBAClient,8)
 
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)

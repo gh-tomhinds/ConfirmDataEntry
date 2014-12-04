@@ -73,7 +73,7 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
-<span class="kw">import</span> compareOneReport
+<span class="kw">import</span> reports_Compare
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> Print_Hold(reportMonth):
@@ -135,7 +135,7 @@
 </span>    myTools.waitForReport()
 
     <span class="cmt"># compare the report with baseline
-</span>    compareOneReport.Compare_OneReport(reportName)
+</span>    reports_Compare.Compare_OneReport(reportName)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 

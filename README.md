@@ -208,13 +208,13 @@ That data file that is imported is: Desktop\Sikuli\DataFiles\refs.csv.
 
 ### taxes_Setup
 
-### createSlips
+### slips_Create
 
 ### createPayments
 
-### importBillLayout
+### bill_ImportLayout
 
-### printBills
+### bill_Print
 
 ### baCommon
 

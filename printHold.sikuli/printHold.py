@@ -1,7 +1,7 @@
 from sikuli import *
 import logging
 import myTools
-import compareOneReport
+import reports_Compare
 
 #---------------------------------------------------#
 def Print_Hold(reportMonth):
@@ -63,7 +63,7 @@ def Print_Hold(reportMonth):
     myTools.waitForReport()
 
     # compare the report with baseline
-    compareOneReport.Compare_OneReport(reportName)
+    reports_Compare.Compare_OneReport(reportName)
 
     type(Key.F4,KeyModifier.CTRL)
 

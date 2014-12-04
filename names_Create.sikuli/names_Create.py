@@ -1,7 +1,5 @@
 from sikuli import *
 
-#import editDefaultClient
-
 import client_Create
 import task_Create
 import expense_Create

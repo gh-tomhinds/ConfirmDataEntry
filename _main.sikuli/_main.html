@@ -94,12 +94,11 @@
 <span class="kw">import</span> settings_Categories
 <span class="kw">import</span> settings_CustomFields
 
-<span class="kw">import</span> createSlips
-<span class="kw">import</span> createSlipsManually
+<span class="kw">import</span> slips_Create
+<span class="kw">import</span> slips_CreateManually
 
 <span class="kw">import</span> bill_Split
-
-<span class="kw">import</span> runMonthlyBillCycle
+<span class="kw">import</span> bill_MonthlyCycle
 
 <span class="kw">import</span> ba__Main
 <span class="kw">import</span> ba__Common
@@ -126,12 +125,12 @@ _global_Settings.fSetup_Envirnoment()
 </span>
 <span class="cmt">#names_Create.fCreateImportEdit_Names()
 </span>
-<span class="cmt">#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-</span><span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+<span class="cmt">#slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+</span><span class="cmt">#slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 </span>
 <span class="cmt">#bill_Split.fSetup_SplitBills()
 </span>
-<span class="cmt">#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+<span class="cmt">#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 </span>
 <span class="cmt">#ba__Common.fSetup_BADefaultLayout()
 </span><span class="cmt">#ba__Main.fReview_Arrangements()
