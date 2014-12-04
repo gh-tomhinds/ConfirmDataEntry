@@ -85,31 +85,28 @@
 <span class="cmt"># import my sikuli scripts
 </span><span class="kw">import</span> myTools
 
-<span class="kw">import</span> setupStuff
-<span class="kw">import</span> startTSandNewDB
-<span class="kw">import</span> tweakPrefs
+<span class="kw">import</span> _global_Settings
+<span class="kw">import</span> db_New
+<span class="kw">import</span> settings_Prefs
 
-<span class="kw">import</span> createImportEditNames
+<span class="kw">import</span> names_Create
 
-<span class="kw">import</span> createCategories
-<span class="kw">import</span> createCustomFields
+<span class="kw">import</span> settings_Categories
+<span class="kw">import</span> settings_CustomFields
 
 <span class="kw">import</span> createSlips
 <span class="kw">import</span> createSlipsManually
 
-<span class="kw">import</span> setupSplitBills
+<span class="kw">import</span> bill_Split
 
 <span class="kw">import</span> runMonthlyBillCycle
 
 <span class="kw">import</span> ba__Main
 <span class="kw">import</span> ba__Common
 
-<span class="kw">import</span> makeBackup
-<span class="kw">import</span> setupCalTerms
-<span class="kw">import</span> calendarStuff
-<span class="kw">import</span> printTasks
-<span class="kw">import</span> printExpenses
-<span class="kw">import</span> compareReports
+<span class="kw">import</span> backup_Data
+<span class="kw">import</span> calendar_Terms
+<span class="kw">import</span> calendar_Entries
 
 <span class="cmt">#import sendEmail
 </span>
@@ -117,35 +114,31 @@
 </span>
 myTools.setupLog()
 myTools.startTimeStamp()
-setupStuff.Setup_Stuff()
+_global_Settings.fSetup_Envirnoment()
 
 <span class="cmt">##############################################################
 </span>
-startTSandNewDB.fStartTS_CreateNewDB()
-
-<span class="cmt">#tweakPrefs.fTweak_Prefs()
-</span><span class="cmt">#createCategories.fCreate_Categories()
-</span><span class="cmt">#createCustomFields.fCreate_CustomFields()
+<span class="cmt">#db_New.fStartTS_CreateNewDB()
 </span>
-<span class="cmt">#createImportEditNames.CreateImportEdit_Names()
+<span class="cmt">#settings_Prefs.fTweak_Prefs()
+</span><span class="cmt">#settings_Categories.fCreate_Categories()
+</span><span class="cmt">#settings_CustomFields.fCreate_CustomFields()
+</span>
+<span class="cmt">#names_Create.fCreateImportEdit_Names()
 </span>
 <span class="cmt">#createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 </span><span class="cmt">#createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 </span>
-<span class="cmt">#setupSplitBills.fSetup_SplitBills()
+<span class="cmt">#bill_Split.fSetup_SplitBills()
 </span>
 <span class="cmt">#runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 </span>
 <span class="cmt">#ba__Common.fSetup_BADefaultLayout()
 </span><span class="cmt">#ba__Main.fReview_Arrangements()
 </span>
-<span class="cmt">#setupCalTerms.Setup_CalTerms()
-</span><span class="cmt">#calendarStuff.Calendar_Stuff()
-</span>
-<span class="cmt">#printTasks.Print_Tasks()
-</span><span class="cmt">#printExpenses.Print_Expenses()
-</span><span class="cmt">#compareReports.Compare_Reports()
-</span>
+<span class="cmt">#calendar_Terms.fSetup_CalTerms()
+</span>calendar_Entries.fCalendar_Entries()
+
 myTools.endTimeStamp()
 
 <span class="cmt">#sendEmail.Send_Email()

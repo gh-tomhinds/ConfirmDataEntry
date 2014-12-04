@@ -13,31 +13,28 @@
 # import my sikuli scripts
 import myTools
 
-import setupStuff
-import startTSandNewDB
-import tweakPrefs
+import _global_Settings
+import db_New
+import settings_Prefs
 
-import createImportEditNames
+import names_Create
 
-import createCategories
-import createCustomFields
+import settings_Categories
+import settings_CustomFields
 
 import createSlips
 import createSlipsManually
 
-import setupSplitBills
+import bill_Split
 
 import runMonthlyBillCycle
 
 import ba__Main
 import ba__Common
 
-import makeBackup
-import setupCalTerms
-import calendarStuff
-import printTasks
-import printExpenses
-import compareReports
+import backup_Data
+import calendar_Terms
+import calendar_Entries
 
 #import sendEmail
 
@@ -45,34 +42,30 @@ import compareReports
 
 myTools.setupLog()
 myTools.startTimeStamp()
-setupStuff.Setup_Stuff()
+_global_Settings.fSetup_Envirnoment()
 
 ##############################################################
 
-startTSandNewDB.fStartTS_CreateNewDB()
+#db_New.fStartTS_CreateNewDB()
 
-#tweakPrefs.fTweak_Prefs()
-#createCategories.fCreate_Categories()
-#createCustomFields.fCreate_CustomFields()
+#settings_Prefs.fTweak_Prefs()
+#settings_Categories.fCreate_Categories()
+#settings_CustomFields.fCreate_CustomFields()
 
-#createImportEditNames.CreateImportEdit_Names()
+#names_Create.fCreateImportEdit_Names()
 
 #createSlips.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 #createSlipsManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
-#setupSplitBills.fSetup_SplitBills()
+#bill_Split.fSetup_SplitBills()
 
 #runMonthlyBillCycle.run_MonthlyBillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
 #ba__Main.fReview_Arrangements()
 
-#setupCalTerms.Setup_CalTerms()
-#calendarStuff.Calendar_Stuff()
-
-#printTasks.Print_Tasks()
-#printExpenses.Print_Expenses()
-#compareReports.Compare_Reports()
+#calendar_Terms.fSetup_CalTerms()
+calendar_Entries.fCalendar_Entries()
 
 myTools.endTimeStamp()
 

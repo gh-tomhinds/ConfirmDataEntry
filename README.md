@@ -93,7 +93,7 @@ presses SHIFT+TAB key x times
     called by: any script that is logging duration
     ending section time stamp for log file
 
-### setupStuff
+### _global_Settings
 
 **Setup_Stuff**
 called by: _main
@@ -110,7 +110,7 @@ After a while that seemed silly. Now it simply reminds you to close Timeslips be
 
 This file contains code to delete the folder containing the test data. It will be rebuilt.
 
-### startTSandNewDB
+### db_New
 
 This file contains code to create a new empty database.
 * StartTS_CreateNewDB - Opens Timeslips and walks through the data creation process.
@@ -119,15 +119,15 @@ This file contains code to create a new empty database.
 * checkFor_PEP - closes the PEP message
 * checkFor_Sample - closes the Sample Database message
 
-### tweakPrefs
+### settings_Prefs
 
 This file first resets preferences to their default, then sets several preferences to values that help speed data entry. These changes are saved in a new preference file.
 
-### createCategories
+### settings_Categories
 
 This file creates a set of categories for use with new tasks and expenses.
 
-### createCustomFields
+### settings_CustomFields
 
 This file create one of each type of client custom fields.
 * Create_CustomFields - opens the Custom fields dialog box and calls CreateOne for each type of custom field; then calls FillList
@@ -155,7 +155,7 @@ That data file is: Desktop\Sikuli\DataFiles\timekeepers.csv.
 
 ### timekeeper_Edit
 
-This file contains code to edit the initial timekeeper that was created in startTSandNewDB.
+This file contains code to edit the initial timekeeper that was created in db_New.
 
 ### client_Import
 
@@ -220,9 +220,9 @@ That data file that is imported is: Desktop\Sikuli\DataFiles\refs.csv.
 
 ### reviewBillingArrangements
 
-### setupCalTerms
+### calendar_Terms
 
-### calendarStuff
+### calendar_Entries
 
 ### report_ClientInfo
 

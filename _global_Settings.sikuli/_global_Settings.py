@@ -4,15 +4,17 @@ import os
 import datetime
 
 #---------------------------------------------------#
-def Setup_Stuff():
+def fSetup_Time():
 #---------------------------------------------------#
-
-    logging.debug('Setup_Stuff')
 
 # get current month and year (forget where this is used)
     rightNow = datetime.datetime.now()
     Settings.thisMonth = rightNow.month
     Settings.thisYear = rightNow.year
+
+#---------------------------------------------------#
+def fSetup_Folders():
+#---------------------------------------------------#
 
 # point to Sikuli folder on desktop
     Settings.sikFolder = os.environ['USERPROFILE']+'\\desktop\\Sikuli'
@@ -25,7 +27,13 @@ def Setup_Stuff():
 # point to source data folder on desktop and data files
     Settings.dataFolder = Settings.scriptFolder + '\\!data'
     logging.debug("- Data folder:      %s" %Settings.dataFolder)
-    
+
+    Settings.imgFolder = Settings.dataFolder + '\\images'
+
+#---------------------------------------------------#
+def fSetup_DataFiles():
+#---------------------------------------------------#
+
     Settings.cliFile = Settings.dataFolder + '\\towns.csv'
     Settings.tkFile = Settings.dataFolder + '\\timekeepers.csv'
     Settings.taskFile = Settings.dataFolder + '\\tasks.csv'
@@ -34,11 +42,9 @@ def Setup_Stuff():
     Settings.tSlipsFile = Settings.dataFolder + '\\slips1.csv'
     Settings.eSlipsFile = Settings.dataFolder + '\\slips2.csv'
 
-    Settings.imgFolder = Settings.dataFolder + '\\images'
-
-# get TS version
-    Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
-    time.sleep(1)
+#---------------------------------------------------#
+def fSetup_AppFolders():
+#---------------------------------------------------#
 
 # point to report paths
     Settings.rootRepFolder = Settings.scriptFolder + "\\!reports"
@@ -54,21 +60,46 @@ def Setup_Stuff():
     Settings.tsFolder = "C:\\Program Files (x86)\\Timeslips " + Settings.tsVersion
     logging.debug("- Timeslips folder: %s" %Settings.tsFolder)
 
+    Settings.dbFolder = Settings.tsFolder + "\\Sikuli" 
+    logging.debug("- DB folder:        %s" %Settings.dbFolder)
+
+#---------------------------------------------------#
+def fSetup_AppFiles():
+#---------------------------------------------------#
+
     Settings.tsEXE = Settings.tsFolder + "\\timeslip.exe" 
     logging.debug("- Timeslips EXE:    %s" %Settings.tsEXE)
 
     Settings.tsimpEXE = Settings.tsFolder + "\\tsimport.exe" 
     logging.debug("- TSImport EXE:     %s" %Settings.tsimpEXE)
 
-    Settings.dbFolder = Settings.tsFolder + "\\Sikuli" 
-    logging.debug("- DB folder:        %s" %Settings.dbFolder)
+#---------------------------------------------------#
+def fSetup_LogFiles():
+#---------------------------------------------------#
 
+# point to Billing Arrangement log file
     Settings.BALogFile = Settings.repFolder + "\\!BA-Log.txt"
-    # delete BA Log File
-    # os.remove(Settings.BALogFile)    
 
     # set up duration log and add version to it
     Settings.durationFile = Settings.sikFolder + "\\Durations-" + Settings.tsVersion + ".csv" 
     durationLog = open(Settings.durationFile, "a")
     durationLog.write(" ," + str(Settings.tsVersion) + "\n")
-    durationLog.close()   
+    durationLog.close()
+
+#---------------------------------------------------#
+def fSetup_Envirnoment():
+#---------------------------------------------------#
+
+    logging.debug('Setup_Stuff')
+
+    fSetup_Time()
+    fSetup_Folders()
+    fSetup_DataFiles()
+
+# get TS version
+    Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
+    time.sleep(1)
+
+    fSetup_AppFolders()
+    fSetup_AppFiles()
+    fSetup_LogFiles()    

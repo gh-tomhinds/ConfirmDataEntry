@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>setupStuff.sikuli\setupStuff.sikuli</h2> <a href="setupStuff.sikuli\setupStuff.zip">(Download this script)</a>
+<h2>_global_Settings.sikuli\_global_Settings.sikuli</h2> <a href="_global_Settings.sikuli\_global_Settings.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -76,16 +76,18 @@
 <span class="kw">import</span> datetime
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Setup_Stuff():
+</span><span class="kw">def</span> fSetup_Time():
 <span class="cmt">#---------------------------------------------------#
 </span>
-    logging.debug(<span class="str">'Setup_Stuff'</span>)
-
 <span class="cmt"># get current month and year (forget where this is used)
 </span>    rightNow = datetime.datetime.now()
     Settings.thisMonth = rightNow.month
     Settings.thisYear = rightNow.year
 
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_Folders():
+<span class="cmt">#---------------------------------------------------#
+</span>
 <span class="cmt"># point to Sikuli folder on desktop
 </span>    Settings.sikFolder = os.environ[<span class="str">'USERPROFILE'</span>]+<span class="str">'\\desktop\\Sikuli'</span>
     logging.debug(<span class="str">"- Sikuli folder:    %s"</span> %Settings.sikFolder)
@@ -98,6 +100,12 @@
 </span>    Settings.dataFolder = Settings.scriptFolder + <span class="str">'\\!data'</span>
     logging.debug(<span class="str">"- Data folder:      %s"</span> %Settings.dataFolder)
 
+    Settings.imgFolder = Settings.dataFolder + <span class="str">'\\images'</span>
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_DataFiles():
+<span class="cmt">#---------------------------------------------------#
+</span>
     Settings.cliFile = Settings.dataFolder + <span class="str">'\\towns.csv'</span>
     Settings.tkFile = Settings.dataFolder + <span class="str">'\\timekeepers.csv'</span>
     Settings.taskFile = Settings.dataFolder + <span class="str">'\\tasks.csv'</span>
@@ -106,12 +114,10 @@
     Settings.tSlipsFile = Settings.dataFolder + <span class="str">'\\slips1.csv'</span>
     Settings.eSlipsFile = Settings.dataFolder + <span class="str">'\\slips2.csv'</span>
 
-    Settings.imgFolder = Settings.dataFolder + <span class="str">'\\images'</span>
-
-<span class="cmt"># get TS version
-</span>    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_AppFolders():
+<span class="cmt">#---------------------------------------------------#
+</span>
 <span class="cmt"># point to report paths
 </span>    Settings.rootRepFolder = Settings.scriptFolder + <span class="str">"\\!reports"</span>
     logging.debug(<span class="str">"- Rep root folder:  %s"</span> %Settings.rootRepFolder)
@@ -126,24 +132,49 @@
 </span>    Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion
     logging.debug(<span class="str">"- Timeslips folder: %s"</span> %Settings.tsFolder)
 
+    Settings.dbFolder = Settings.tsFolder + <span class="str">"\\Sikuli"</span>
+    logging.debug(<span class="str">"- DB folder:        %s"</span> %Settings.dbFolder)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_AppFiles():
+<span class="cmt">#---------------------------------------------------#
+</span>
     Settings.tsEXE = Settings.tsFolder + <span class="str">"\\timeslip.exe"</span>
     logging.debug(<span class="str">"- Timeslips EXE:    %s"</span> %Settings.tsEXE)
 
     Settings.tsimpEXE = Settings.tsFolder + <span class="str">"\\tsimport.exe"</span>
     logging.debug(<span class="str">"- TSImport EXE:     %s"</span> %Settings.tsimpEXE)
 
-    Settings.dbFolder = Settings.tsFolder + <span class="str">"\\Sikuli"</span>
-    logging.debug(<span class="str">"- DB folder:        %s"</span> %Settings.dbFolder)
-
-    Settings.BALogFile = Settings.repFolder + <span class="str">"\\!BA-Log.txt"</span>
-    <span class="cmt"># delete BA Log File
-</span>    <span class="cmt"># os.remove(Settings.BALogFile)    
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_LogFiles():
+<span class="cmt">#---------------------------------------------------#
 </span>
+<span class="cmt"># point to Billing Arrangement log file
+</span>    Settings.BALogFile = Settings.repFolder + <span class="str">"\\!BA-Log.txt"</span>
+
     <span class="cmt"># set up duration log and add version to it
 </span>    Settings.durationFile = Settings.sikFolder + <span class="str">"\\Durations-"</span> + Settings.tsVersion + <span class="str">".csv"</span>
     durationLog = open(Settings.durationFile, <span class="str">"a"</span>)
     durationLog.write(<span class="str">" ,"</span> + str(Settings.tsVersion) + <span class="str">"\n"</span>)
     durationLog.close()
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> fSetup_Envirnoment():
+<span class="cmt">#---------------------------------------------------#
+</span>
+    logging.debug(<span class="str">'Setup_Stuff'</span>)
+
+    fSetup_Time()
+    fSetup_Folders()
+    fSetup_DataFiles()
+
+<span class="cmt"># get TS version
+</span>    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    fSetup_AppFolders()
+    fSetup_AppFiles()
+    fSetup_LogFiles()
 </pre>
 </body>
 </html>

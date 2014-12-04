@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>makeBackup.sikuli\makeBackup.sikuli</h2> <a href="makeBackup.sikuli\makeBackup.zip">(Download this script)</a>
+<h2>bill_Split.sikuli\bill_Split.sikuli</h2> <a href="bill_Split.sikuli\bill_Split.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -75,67 +75,73 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Backup_Data(bkuName):
+</span><span class="kw">def</span> fSetup_Primary(pPrimaryClient):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    logging.debug(<span class="str">'Backup_Data: '</span> + bkuName)
-
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
-
-    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
-    <span class="skw">type</span>(<span class="str">"b"</span>)
+    <span class="cmt"># new primary
+</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># no subfolders
-</span>    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.ALT)
+    <span class="cmt"># beverly
+</span>    <span class="skw">type</span>(pPrimaryClient)
+
+    <span class="cmt"># split bill info
+</span>    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(pPrimaryClient)
+
+    <span class="cmt"># recurring
+</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.SPACE)
+
+    <span class="cmt"># OK
+</span>    myTools.pressTAB(<span class="dig">3</span>)
+    <span class="skw">type</span>(Key.SPACE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="cmt"># YES button
-</span>    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="cmt"># enter backup name
-</span>    <span class="skw">type</span>(bkuName)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="cmt"># SAVE button
-</span>    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-
-    <span class="kw">if</span> exists(<img src="replace_old_one.png" />):
-        <span class="skw">type</span>(Key.ENTER)
-        logging.debug(<span class="str">'- overwrite backup'</span>)
-
-    <span class="skw">wait</span>(<img src="backup_successful.png" />,FOREVER)
-
-    <span class="cmt"># OK button
-</span>    <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Backup_Checkpoint(checkpointName):
+</span><span class="kw">def</span> fSetup_Secondary(pSecondaryClient,pTimePercentage):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"backup checkpoint"</span>)
-    logging.debug(<span class="str">'Backup_Checkpoint: '</span> + checkpointName)
+    <span class="skw">type</span>(Key.SPACE)
 
-    <span class="cmt"># name backup file: ex: 2015-slips
-</span>    strBackupFile = Settings.tsVersion + <span class="str">"-"</span> + checkpointName
-    Backup_Data(strBackupFile)
+    <span class="skw">type</span>(pSecondaryClient)
 
-    myTools.sectionEndTimeStamp()
+    <span class="cmt"># percentages
+</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(str(pTimePercentage))
+    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="skw">type</span>(str(pTimePercentage+<span class="dig">5</span>))
+
+    <span class="cmt"># ok
+</span>    myTools.pressTAB(<span class="dig">3</span>)
+    <span class="skw">type</span>(Key.SPACE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Backup_BillData(billMonth):
+</span><span class="kw">def</span> fSetup_SplitBills():
 <span class="cmt">#---------------------------------------------------#
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"backup billdata"</span>)
-    logging.debug(<span class="str">'Backup_Data: '</span> + str(billMonth))
+    myTools.sectionStartTimeStamp(<span class="str">"setup split"</span>)
+    logging.debug(<span class="str">'- set up split bills'</span>)
 
-    <span class="cmt"># name backup file: ex: 2015-bill-03
-</span>    strBackupFile = myTools.monthToName(billMonth,<span class="str">"-bill-"</span>,<span class="str">".bku"</span>)
-    Backup_Data(strBackupFile)
+    myTools.getFocus()
+
+    <span class="cmt"># open split billing rule list
+</span>    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"i"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    fSetup_Primary(<span class="str">"Beverly"</span>)
+
+    <span class="cmt"># new secondary
+</span>    myTools.pressTAB(<span class="dig">7</span>)
+    fSetup_Secondary(<span class="str">"Peabody"</span>,<span class="dig">15</span>)
+    fSetup_Secondary(<span class="str">"Saugus"</span>,<span class="dig">20</span>)
+
+    <span class="cmt"># done
+</span>    myTools.pressTAB(<span class="dig">4</span>)
+    <span class="skw">type</span>(Key.SPACE)
 
     myTools.sectionEndTimeStamp()
 </pre>
