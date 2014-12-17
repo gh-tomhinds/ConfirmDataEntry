@@ -28,7 +28,7 @@ def fStart_TS():
     
     logging.debug('-- wait until TS is open')
 
-    wait("sage_timeslips.png",300)
+    wait("sage_timeslips.png",60)
 
 #---------------------------------------------------#
 def fCheckFor_Sample():
@@ -114,6 +114,11 @@ def fStartTS_CreateNewDB():
 # Empty database, press Next
     type("n",KeyModifier.ALT)
 
+# For TS2016, choose Local, press Next
+    if int(Settings.tsVersion) > 2015:
+        myTools.pressDOWN(1)
+        type("n",KeyModifier.ALT)        
+
 # new db path and settings
     logging.debug('- enter path')
     type(Settings.dbFolder)
@@ -164,6 +169,9 @@ def fStartTS_CreateNewDB():
     type(Key.ENTER)
     time.sleep(1)
 
+# wait for address info
+    wait("address_info.png",60)
+
 # Firm name/address
     type(Key.TAB)
     type("239 Western Avenue")
@@ -197,7 +205,7 @@ def fStartTS_CreateNewDB():
     type("XanderZ")
     type(Key.TAB)
     type("XZork")
-    click("finish.png")
+    type("f",KeyModifier.ALT)
 
 # backup
     time.sleep(1)
