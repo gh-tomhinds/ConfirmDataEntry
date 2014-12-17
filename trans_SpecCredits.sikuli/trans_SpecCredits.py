@@ -13,6 +13,7 @@ def fFilter_Invoices():
     # clear any existing filters
     if exists("remove_all.png"):
         click("remove_all.png")   
+        time.sleep(1)
 
     # add tran type filter
     doubleClick("trans_type.png")
@@ -38,7 +39,7 @@ def fFilter_Invoices():
     # Update
     myTools.pressTAB(1)
     type(Key.ENTER)
-    time.sleep(1)
+    myTools.waitForTransList()    
 
 #---------------------------------------------------#
 def fClear_Filter():
@@ -56,7 +57,7 @@ def fClear_Filter():
     # Update
     myTools.pressTAB(1)
     type(Key.ENTER)
-    time.sleep(1)    
+    myTools.waitForTransList()    
 
 #---------------------------------------------------#
 def fCreate_SpecCredits(month):
@@ -69,7 +70,7 @@ def fCreate_SpecCredits(month):
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
-    time.sleep(2)
+    myTools.waitForTransList()    
 
     fFilter_Invoices()
 
@@ -80,6 +81,7 @@ def fCreate_SpecCredits(month):
     time.sleep(1)
 
     # apply a new special credit
+    wait("apply_new.png",60)
     click("apply_new.png")
     myTools.pressDOWN(5)    
     type(Key.ENTER)

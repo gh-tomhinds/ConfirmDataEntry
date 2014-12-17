@@ -132,7 +132,10 @@
 </span>    Settings.tsFolder = <span class="str">"C:\\Program Files (x86)\\Timeslips "</span> + Settings.tsVersion
     logging.debug(<span class="str">"- Timeslips folder: %s"</span> %Settings.tsFolder)
 
-    Settings.dbFolder = Settings.tsFolder + <span class="str">"\\Sikuli"</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2015</span>:
+        Settings.dbFolder = <span class="str">"C:\\Sikuli"</span>
+    <span class="kw">else</span>:
+        Settings.dbFolder = Settings.tsFolder + <span class="str">"\\Sikuli"</span>
     logging.debug(<span class="str">"- DB folder:        %s"</span> %Settings.dbFolder)
 
 <span class="cmt">#---------------------------------------------------#

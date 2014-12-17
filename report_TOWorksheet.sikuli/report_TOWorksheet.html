@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>printHold.sikuli\printHold.sikuli</h2> <a href="printHold.sikuli\printHold.zip">(Download this script)</a>
+<h2>report_TOWorksheet.sikuli\report_TOWorksheet.sikuli</h2> <a href="report_TOWorksheet.sikuli\report_TOWorksheet.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -76,22 +76,22 @@
 <span class="kw">import</span> reports_Compare
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Print_Hold(reportMonth):
+</span><span class="kw">def</span> Print_Worksheet(reportMonth):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"print hold"</span>)
-    logging.debug(<span class="str">'Print_Hold: '</span> + str(reportMonth))
+    myTools.sectionStartTimeStamp(<span class="str">"print worksheet"</span>)
+    logging.debug(<span class="str">'Print_Worksheet: '</span> + str(reportMonth))
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
 
     logging.debug(<span class="str">'- open report list'</span>)
     <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.ALT)
-    <span class="skw">type</span>(<span class="str">"c"</span>)
+    <span class="skw">type</span>(<span class="str">"b"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    logging.debug(<span class="str">'- set up hold report'</span>)
-    <span class="skw">type</span>(<span class="str">"ch"</span>)
+    logging.debug(<span class="str">'- set up worksheet'</span>)
+    <span class="skw">type</span>(<span class="str">"t"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"o"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -120,8 +120,8 @@
 </span>    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># name report file: ex: Hold-03
-</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-Hold-"</span>,<span class="str">".csv"</span>)
+    <span class="cmt"># name report file: ex: Worksheet-03
+</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-Worksheet-"</span>,<span class="str">".csv"</span>)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)

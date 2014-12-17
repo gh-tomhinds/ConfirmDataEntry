@@ -72,34 +72,34 @@
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 
-<span class="kw">import</span> printARAgedBal
-<span class="kw">import</span> printTkHistory
-<span class="kw">import</span> printTkCC
-<span class="kw">import</span> printFundsBal
-<span class="kw">import</span> printHold
-<span class="kw">import</span> printTaxes
-<span class="kw">import</span> printTOWorksheet
-<span class="kw">import</span> printFeeAlloc
+<span class="kw">import</span> report_AgedARBal
+<span class="kw">import</span> report_TkHistory
+<span class="kw">import</span> report_TkCC
+<span class="kw">import</span> report_FundsBal
+<span class="kw">import</span> report_Hold
+<span class="kw">import</span> report_Taxes
+<span class="kw">import</span> report_TOWorksheet
+<span class="kw">import</span> report_FeeAlloc
 <span class="kw">import</span> report_Budgets
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> print_postbill_reports(month):
+</span><span class="kw">def</span> fPrint_PostbillReports(pMonth):
 <span class="cmt">#---------------------------------------------------#
 </span>
     <span class="cmt"># print various reports to check db values and calculations
 </span>    <span class="cmt"># this function is also called from ba__Main
 </span>
-    printARAgedBal.Print_ARAgedBal(month)
-    printTkHistory.Print_TkHistory(month)
-    printTkCC.Print_TkCC(month)
-    printFundsBal.fPrint_FundsBal(month)
-    printHold.Print_Hold(month)
-    printTaxes.Print_Taxes(month)
-    printTOWorksheet.Print_Worksheet(month)
-    printFeeAlloc.Print_FeeAlloc(month)
-    report_Budgets.printCliBudget(month)
-    report_Budgets.printTkBudget(month)
-    report_Budgets.printFirmBudget(month)
+    report_AgedARBal.Print_ARAgedBal(pMonth)
+    report_TkHistory.Print_TkHistory(pMonth)
+    report_TkCC.Print_TkCC(pMonth)
+    report_FundsBal.fPrint_FundsBal(pMonth)
+    report_Hold.Print_Hold(pMonth)
+    report_Taxes.Print_Taxes(pMonth)
+    report_TOWorksheet.Print_Worksheet(pMonth)
+    report_FeeAlloc.Print_FeeAlloc(pMonth)
+    report_Budgets.printCliBudget(pMonth)
+    report_Budgets.printTkBudget(pMonth)
+    report_Budgets.printFirmBudget(pMonth)
 </pre>
 </body>
 </html>

@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>printFeeAlloc.sikuli\printFeeAlloc.sikuli</h2> <a href="printFeeAlloc.sikuli\printFeeAlloc.zip">(Download this script)</a>
+<h2>report_TkHistory.sikuli\report_TkHistory.sikuli</h2> <a href="report_TkHistory.sikuli\report_TkHistory.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -76,11 +76,11 @@
 <span class="kw">import</span> reports_Compare
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Print_FeeAlloc(reportMonth):
+</span><span class="kw">def</span> Print_TkHistory(reportMonth):
 <span class="cmt">#---------------------------------------------------#
 </span>
-    myTools.sectionStartTimeStamp(<span class="str">"print fee alloc"</span>)
-    logging.debug(<span class="str">'Print_FeeAlloc: '</span> + str(reportMonth))
+    myTools.sectionStartTimeStamp(<span class="str">"print tk history"</span>)
+    logging.debug(<span class="str">'Print_TkHistory: '</span> + str(reportMonth))
 
     <span class="cmt"># make sure timeslips has focus
 </span>    myTools.getFocus()
@@ -88,18 +88,20 @@
     logging.debug(<span class="str">'- open report'</span>)
     <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"t"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-
-    <span class="skw">type</span>(<span class="str">"fee"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
+    <span class="skw">type</span>(<span class="str">"timekeeper history"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"o"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># remove all filters
+</span>    myTools.pressTAB(<span class="dig">4</span>)
+    <span class="skw">type</span>(Key.ENTER)
 
     logging.debug(<span class="str">'- default options'</span>)
 
     <span class="cmt"># options button
-</span>    myTools.pressSHIFTTAB(<span class="dig">4</span>)
+</span>    myTools.pressTAB(<span class="dig">3</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -108,9 +110,16 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
+    <span class="cmt"># period = quarterly
+</span>    myTools.pressSHIFTTAB(<span class="dig">2</span>)
+    <span class="skw">type</span>(<span class="str">"q"</span>)
+
+    <span class="cmt"># unmark "show analysis"
+</span>    myTools.pressSHIFTTAB(<span class="dig">8</span>)
+    <span class="skw">type</span>(Key.SPACE)
+
     <span class="cmt"># close dialog
-</span>    myTools.pressTAB(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
+</span>    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     logging.debug(<span class="str">'- print report'</span>)
@@ -124,8 +133,8 @@
 </span>    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># name report file: ex: FeeAlloc-03
-</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-FeeAlloc-"</span>,<span class="str">".csv"</span>)
+    <span class="cmt"># name report file: ex: TkHistory-03
+</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-TkHistory-"</span>,<span class="str">".csv"</span>)
 
     <span class="cmt"># fill in path and name; press ENTER
 </span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)

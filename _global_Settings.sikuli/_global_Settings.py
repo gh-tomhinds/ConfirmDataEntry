@@ -60,7 +60,10 @@ def fSetup_AppFolders():
     Settings.tsFolder = "C:\\Program Files (x86)\\Timeslips " + Settings.tsVersion
     logging.debug("- Timeslips folder: %s" %Settings.tsFolder)
 
-    Settings.dbFolder = Settings.tsFolder + "\\Sikuli" 
+    if int(Settings.tsVersion) > 2015:
+        Settings.dbFolder = "C:\\Sikuli"
+    else:        
+        Settings.dbFolder = Settings.tsFolder + "\\Sikuli"
     logging.debug("- DB folder:        %s" %Settings.dbFolder)
 
 #---------------------------------------------------#
