@@ -44,17 +44,22 @@ def fPrint_BillRun(pMonth):
 
     type("b",KeyModifier.CTRL)
     time.sleep(1)
-    
+
+    wait("slip_trans_date.png",60)
     doubleClick("slip_trans_date.png")
-    time.sleep(1)
+    wait("apply_this_rule.png",60)
 
     # choose TODAY to get to manual date entry
+    logging.debug('-- choose TODAY')
+    
     type(Key.DOWN)
     type(Key.ENTER)
     time.sleep(1)
 
     # type in dates
+    logging.debug('-- enter date range')    
     myTools.pressTAB(6)
+    time.sleep(1)
     type("1/1/2013")
     type(Key.TAB)
     billDate = str(pMonth) + "/27/2013"
@@ -62,6 +67,7 @@ def fPrint_BillRun(pMonth):
     time.sleep(1)
 
     # print bills to PDF
+    logging.debug('-- print')    
     type(Key.ENTER)    
     time.sleep(1)
     type(Key.ENTER)    
@@ -71,6 +77,8 @@ def fPrint_BillRun(pMonth):
     time.sleep(1)
 
     # approve bills
+    logging.debug('-- approve')
+    
     wait(Pattern("approve_bills.png").targetOffset(-124,-10),FOREVER)
     click(Pattern("approve_bills.png").targetOffset(-116,-8))
     type(Key.ENTER)
