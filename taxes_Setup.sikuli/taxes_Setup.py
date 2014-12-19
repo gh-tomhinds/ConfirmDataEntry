@@ -241,6 +241,8 @@ def fCreate_TaxProfile():
     
     # new profile    
     type("n",KeyModifier.ALT)   
+    time.sleep(1)
+    
     type("MyTaxes")
     time.sleep(1)
 
@@ -259,13 +261,14 @@ def fCreate_TaxProfile():
     # Maximum rule
     myTools.pressTAB(1)
     type("max")
+    time.sleep(1)
 
     # OK
     time.sleep(1)
     type(Key.ENTER)    
 
     # DONE
-    myTools.pressTAB(6)
+    myTools.pressSHIFTTAB(2)
     type(Key.ENTER)
 
 #---------------------------------------------------#
@@ -394,82 +397,6 @@ def fChange_ClientSettings():
     fExport_TemplateSettings()
 
     time.sleep(1)
-    type(Key.F4,KeyModifier.CTRL)
-    type(Key.F4,KeyModifier.CTRL)
-
-#---------------------------------------------------#
-def xChange_TaskSettings():
-#---------------------------------------------------#
-
-    logging.debug('- Change_TaskSettings')
-
-    logging.debug('-- change a task')
-    type("y",KeyModifier.CTRL)
-    time.sleep(1)
-    type(Key.ENTER)
-    time.sleep(1)
-    type(Key.F6)
-    time.sleep(1)
-    myTools.pressTAB(3)   
-    time.sleep(1)
-    type(Key.F4)
-    logging.debug('-- save task')
-    type("s",KeyModifier.CTRL)
-    logging.debug('-- export settings')
-    rightClick("taxes_that_apply.png")
-    time.sleep(1)
-    type("e")
-    time.sleep(1)
-    type(Key.TAB)    
-    type(Key.PAGE_DOWN,KeyModifier.SHIFT)
-    type(Key.F4)    
-    type(Key.TAB)    
-    type(Key.ENTER)    
-    time.sleep(1)
-    type(Key.ENTER)    
-    time.sleep(1)
-    type(Key.ENTER)    
-    type("s",KeyModifier.CTRL)
-    type(Key.F4,KeyModifier.CTRL)
-    type(Key.F4,KeyModifier.CTRL)
-
-#---------------------------------------------------#
-def xChange_ExpenseSettings():
-#---------------------------------------------------#
-
-    logging.debug('- Change_ExpenseSettings')
-
-    logging.debug('-- change an expense')
-    type("y",KeyModifier.CTRL + KeyModifier.SHIFT)
-    time.sleep(1)
-    type(Key.ENTER)
-    time.sleep(1)
-    type(Key.F6)
-    time.sleep(1)
-    myTools.pressTAB(3)   
-    myTools.pressDOWN(8)
-    time.sleep(1)
-
-    type(Key.F4)
-    logging.debug('-- save expense')
-    type("s",KeyModifier.CTRL)
-
-    logging.debug('-- export settings')
-    rightClick("set_up_taxes.png")
-    time.sleep(1)
-    type("e")
-    time.sleep(1)
-
-    type(Key.TAB)    
-    type(Key.PAGE_DOWN,KeyModifier.SHIFT)
-    type(Key.F4)    
-    type(Key.TAB)    
-    type(Key.ENTER)    
-    time.sleep(1)
-    type(Key.ENTER)    
-    time.sleep(1)
-    type(Key.ENTER)    
-    type("s",KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)
 

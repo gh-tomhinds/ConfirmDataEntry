@@ -10,7 +10,7 @@ def fPrint_TimekeeperInfo(pReportName):
     myTools.sectionStartTimeStamp("print timekeepers")
 
     reportName = Settings.tsVersion + "-" + pReportName
-    logging.debug('fPrint_TimekeeperInfo: ' + pReportName)
+    logging.debug('fPrint_TimekeeperInfo: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -53,7 +53,7 @@ def fPrint_TimekeeperInfo(pReportName):
     time.sleep(1)
 
     # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + pReportName)
+    type(Settings.repFolder + "\\" + reportName)
     time.sleep(1)
     type(Key.ENTER)    
 
@@ -64,7 +64,7 @@ def fPrint_TimekeeperInfo(pReportName):
     myTools.waitForReport()
 
     # compare the report with baseline
-    reports_Compare.Compare_OneReport(pReportName)
+    reports_Compare.Compare_OneReport(reportName)
 
     type(Key.F4,KeyModifier.CTRL)
 

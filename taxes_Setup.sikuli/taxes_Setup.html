@@ -313,6 +313,8 @@
 
     <span class="cmt"># new profile    
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="skw">type</span>(<span class="str">"MyTaxes"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -331,13 +333,14 @@
     <span class="cmt"># Maximum rule
 </span>    myTools.pressTAB(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"max"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># OK
 </span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
     <span class="cmt"># DONE
-</span>    myTools.pressTAB(<span class="dig">6</span>)
+</span>    myTools.pressSHIFTTAB(<span class="dig">2</span>)
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#
@@ -466,82 +469,6 @@
     fExport_TemplateSettings()
 
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> xChange_TaskSettings():
-<span class="cmt">#---------------------------------------------------#
-</span>
-    logging.debug(<span class="str">'- Change_TaskSettings'</span>)
-
-    logging.debug(<span class="str">'-- change a task'</span>)
-    <span class="skw">type</span>(<span class="str">"y"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F6)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    myTools.pressTAB(<span class="dig">3</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F4)
-    logging.debug(<span class="str">'-- save task'</span>)
-    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-    logging.debug(<span class="str">'-- export settings'</span>)
-    <span class="skw">rightClick</span>(<img src="taxes_that_apply.png" />)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"e"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.TAB)
-    <span class="skw">type</span>(Key.PAGE_DOWN,KeyModifier.SHIFT)
-    <span class="skw">type</span>(Key.F4)
-    <span class="skw">type</span>(Key.TAB)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
-
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> xChange_ExpenseSettings():
-<span class="cmt">#---------------------------------------------------#
-</span>
-    logging.debug(<span class="str">'- Change_ExpenseSettings'</span>)
-
-    logging.debug(<span class="str">'-- change an expense'</span>)
-    <span class="skw">type</span>(<span class="str">"y"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.F6)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    myTools.pressTAB(<span class="dig">3</span>)
-    myTools.pressDOWN(<span class="dig">8</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="skw">type</span>(Key.F4)
-    logging.debug(<span class="str">'-- save expense'</span>)
-    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-
-    logging.debug(<span class="str">'-- export settings'</span>)
-    <span class="skw">rightClick</span>(<img src="set_up_taxes.png" />)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"e"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="skw">type</span>(Key.TAB)
-    <span class="skw">type</span>(Key.PAGE_DOWN,KeyModifier.SHIFT)
-    <span class="skw">type</span>(Key.F4)
-    <span class="skw">type</span>(Key.TAB)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.ENTER)
-    <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 

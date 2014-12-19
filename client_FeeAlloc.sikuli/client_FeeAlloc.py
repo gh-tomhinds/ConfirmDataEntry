@@ -27,7 +27,7 @@ def fSetup_CustomFields():
 
     myTools.pressTAB(7)
     type(Key.ENTER)
-    time.sleep(2)
+    time.sleep(3) # extra time to restructure table
 
 #---------------------------------------------------#
 def fExport_Timekeepers():

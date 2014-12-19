@@ -4,12 +4,12 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fPrint_ClientInfo(reportName):
+def fPrint_ClientInfo(pReportName):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print clients")
 
-    reportName = Settings.tsVersion + "-" + reportName
+    reportName = Settings.tsVersion + "-" + pReportName
     logging.debug('fPrint_ClientInfo: ' + reportName)
 
     # make sure timeslips has focus

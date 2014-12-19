@@ -76,12 +76,12 @@
 <span class="kw">import</span> reports_Compare
 
 <span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fPrint_ClientInfo(reportName):
+</span><span class="kw">def</span> fPrint_ClientInfo(pReportName):
 <span class="cmt">#---------------------------------------------------#
 </span>
     myTools.sectionStartTimeStamp(<span class="str">"print clients"</span>)
 
-    reportName = Settings.tsVersion + <span class="str">"-"</span> + reportName
+    reportName = Settings.tsVersion + <span class="str">"-"</span> + pReportName
     logging.debug(<span class="str">'fPrint_ClientInfo: '</span> + reportName)
 
     <span class="cmt"># make sure timeslips has focus

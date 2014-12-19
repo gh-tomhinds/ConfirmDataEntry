@@ -2,6 +2,23 @@ from sikuli import *
 import logging
 import myTools
 
+
+#---------------------------------------------------#
+def fWaitFor_ConflictCheck():
+#---------------------------------------------------#
+
+    if exists("do_not_show.png"):
+        logging.debug('- conflict check')    
+        type(Key.ENTER)
+
+    wait("no_conflicts_found.png",15) or wait("search_for.png",15)
+    if exists("no_conflicts_found.png"):
+        type(Key.ENTER)
+    else:
+        # close results list
+        type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+
 #---------------------------------------------------#
 def fCreate_Client(nn1,nn2,fullname,inrefto,clinotes):
 #---------------------------------------------------#
@@ -86,28 +103,13 @@ def fCreate_Client(nn1,nn2,fullname,inrefto,clinotes):
     if int(Settings.tsVersion) > 2014:
         type(Key.F6,KeyModifier.SHIFT)
 
-
     type(clinotes)
     
     logging.debug('- save')
     type("s",KeyModifier.CTRL)
     time.sleep(1)
-    
-    if exists("do_not_show.png"):
-        logging.debug('- conflict check')    
-        type(Key.ENTER)
 
-    # sleep while searching  
-    time.sleep(15)
-
-    # always try to close results list
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
-    
-    # switch to first page of client info to swallow ENTER in case there were results
-    type("1",KeyModifier.CTRL)
-    type(Key.ENTER)
-    time.sleep(1)
+    fWaitFor_ConflictCheck()
 
     # close client info
     type(Key.F4,KeyModifier.CTRL)
