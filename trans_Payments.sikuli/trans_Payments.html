@@ -83,7 +83,7 @@
 
     <span class="cmt"># new payment
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.waitForTransEntry()
 
     <span class="cmt"># type
 </span>    <span class="skw">type</span>(Key.TAB)
@@ -155,6 +155,7 @@
 
     <span class="cmt"># open a/r tran list
 </span>    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
+    myTools.waitForTransList()
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>

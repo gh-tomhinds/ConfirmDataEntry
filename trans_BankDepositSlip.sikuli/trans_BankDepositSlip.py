@@ -13,7 +13,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count):
 
     # new payment
     type("n",KeyModifier.CTRL)
-    myTools.waitForTransaction()
+    myTools.waitForTransEntry()
     
     # type
     type(Key.TAB)
@@ -67,7 +67,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count):
 
     # new pta
     type("n",KeyModifier.CTRL + KeyModifier.SHIFT)
-    myTools.waitForTransaction()
+    myTools.waitForTransEntry()
     
     # skip type
     type(Key.TAB)      
@@ -123,7 +123,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count):
 
     # new dep
     type("d",KeyModifier.CTRL + KeyModifier.SHIFT)
-    myTools.waitForTransaction()
+    myTools.waitForTransEntry()
     
     # skip type
     type(Key.TAB)      

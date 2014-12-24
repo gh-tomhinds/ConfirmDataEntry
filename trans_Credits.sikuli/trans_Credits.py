@@ -11,8 +11,8 @@ def fCreate_OneCredit(client,cliNum,month):
 
     # new payment
     type("n",KeyModifier.CTRL)
-    time.sleep(1)
-       
+    myTools.waitForTransEntry()
+    
     # type = credit
     type(Key.HOME)
     myTools.pressDOWN(1)
@@ -64,7 +64,8 @@ def fCreate_CreditsForMonth(month):
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
-
+    myTools.waitForTransList()
+    
     for oneClient in allClients:
         count += 1
         

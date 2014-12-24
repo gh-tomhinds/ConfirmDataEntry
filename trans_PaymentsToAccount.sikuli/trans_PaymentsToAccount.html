@@ -84,7 +84,7 @@
 
     <span class="cmt"># new payment
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.waitForTransEntry()
 
     <span class="cmt"># type (skip)
 </span>    <span class="skw">type</span>(Key.TAB)
@@ -137,6 +137,7 @@
 
     <span class="cmt"># open funds list
 </span>    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.CTRL)
+    myTools.waitForFundsList()
 
     <span class="cmt"># create PTA for first 5 clients and then every 6th client
 </span>

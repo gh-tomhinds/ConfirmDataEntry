@@ -70,18 +70,19 @@ def fCreate_SpecCredits(month):
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
-    myTools.waitForTransList()    
+    myTools.waitForTransList()
 
     fFilter_Invoices()
 
-    # move to last transaction (which should be an invoice) and open
+    # move to last transaction (which should be an invoice)
     type(Key.END)
     time.sleep(1)
+    
+    # open it
     type(Key.ENTER)
-    time.sleep(1)
+    myTools.waitForTransEntry()
 
     # apply a new special credit
-    wait("apply_new.png",60)
     click("apply_new.png")
     myTools.pressDOWN(5)    
     type(Key.ENTER)

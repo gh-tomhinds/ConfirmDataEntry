@@ -107,19 +107,26 @@ def waitForTransList():
     time.sleep(1)
 
 #---------------------------------------------------#
+def waitForTransEntry():
+#---------------------------------------------------#
+    time.sleep(1)
+    wait("ar_balance.png",60)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def waitForFundsList():
+#---------------------------------------------------#
+    time.sleep(1)
+    wait("funds_account.png",60)
+    time.sleep(1)
+
+#---------------------------------------------------#
 def doNotSaveReport():
 #---------------------------------------------------#
         
     time.sleep(1)
     if exists("save_msg.png"):
         type("n")
-
-#---------------------------------------------------#
-def waitForTransaction():
-#---------------------------------------------------#
-
-    wait("ar_balance.png", FOREVER)
-    time.sleep(1)
 
 #---------------------------------------------------#
 def checkForUnappliedAmount():

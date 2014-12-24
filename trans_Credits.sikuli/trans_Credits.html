@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>tran_Credits.sikuli\tran_Credits.sikuli</h2> <a href="tran_Credits.sikuli\tran_Credits.zip">(Download this script)</a>
+<h2>trans_Credits.sikuli\trans_Credits.sikuli</h2> <a href="trans_Credits.sikuli\trans_Credits.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -83,7 +83,7 @@
 
     <span class="cmt"># new payment
 </span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.waitForTransEntry()
 
     <span class="cmt"># type = credit
 </span>    <span class="skw">type</span>(Key.HOME)
@@ -136,6 +136,7 @@
 
     <span class="cmt"># open a/r tran list
 </span>    <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.CTRL)
+    myTools.waitForTransList()
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>

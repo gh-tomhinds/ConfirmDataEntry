@@ -12,7 +12,7 @@ def fCreate_OnePayToAccount(client,cliNum,month):
 
     # new payment
     type("n",KeyModifier.CTRL)
-    time.sleep(1)
+    myTools.waitForTransEntry()   
        
     # type (skip)
     type(Key.TAB)
@@ -65,6 +65,7 @@ def fCreate_PaymentsToAccount(month):
 
     # open funds list
     type("f",KeyModifier.CTRL)
+    myTools.waitForFundsList()    
 
     # create PTA for first 5 clients and then every 6th client
 

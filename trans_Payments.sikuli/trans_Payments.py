@@ -11,7 +11,7 @@ def fCreate_OnePayment(client,cliNum,month):
 
     # new payment
     type("n",KeyModifier.CTRL)
-    time.sleep(1)
+    myTools.waitForTransEntry()
        
     # type
     type(Key.TAB)
@@ -83,6 +83,7 @@ def fCreate_PaymentsForMonth(month):
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
+    myTools.waitForTransList()
 
     for oneClient in allClients:
         count += 1

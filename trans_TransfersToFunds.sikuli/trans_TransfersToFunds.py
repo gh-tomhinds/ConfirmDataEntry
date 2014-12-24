@@ -10,7 +10,7 @@ def fCreate_OneFundsTransfer(client,cliNum,month):
 
     # new transaction
     type("n",KeyModifier.CTRL)
-    time.sleep(1)
+    myTools.waitForTransEntry()
 
     # switch to Transfer to Funds
 
@@ -67,7 +67,7 @@ def fCreate_TransfersToFunds(month):
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
-    time.sleep(2)
+    myTools.waitForTransList()
 
     for oneClient in allClients:
         count += 1

@@ -179,19 +179,26 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> waitForTransEntry():
+<span class="cmt">#---------------------------------------------------#
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">wait</span>(<img src="ar_balance.png" />,<span class="dig">60</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
+</span><span class="kw">def</span> waitForFundsList():
+<span class="cmt">#---------------------------------------------------#
+</span>    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">wait</span>(<img src="funds_account.png" />,<span class="dig">60</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> doNotSaveReport():
 <span class="cmt">#---------------------------------------------------#
 </span>
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="kw">if</span> exists(<img src="save_msg.png" />):
         <span class="skw">type</span>(<span class="str">"n"</span>)
-
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> waitForTransaction():
-<span class="cmt">#---------------------------------------------------#
-</span>
-    <span class="skw">wait</span>(<img src="ar_balance.png" />, FOREVER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#
 </span><span class="kw">def</span> checkForUnappliedAmount():
