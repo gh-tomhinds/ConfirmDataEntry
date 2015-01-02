@@ -33,12 +33,16 @@ def fAssign_Layout():
 
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)
+    wait("selected_layout.png")
     type(Key.INSERT)
+    time.sleep(2)    
     type("a",KeyModifier.ALT)
+    time.sleep(1)
     type(Key.ENTER)
 
     wait("assigned_message.png",FOREVER)
     type(Key.ENTER)
+    time.sleep(1)    
     
 #---------------------------------------------------#
 def fImport_BillLayout(pLayoutName):

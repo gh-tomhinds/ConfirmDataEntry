@@ -11,7 +11,13 @@ def fWaitFor_ConflictCheck():
         logging.debug('- conflict check')    
         type(Key.ENTER)
 
-    wait("no_conflicts_found.png",15) or wait("search_for.png",15)
+    # wait until conflict results displayed
+    while True:
+        if exists ("no_conflicts_found.png") or exists("search_for.png"):
+            break
+        else:
+            time.sleep(2)
+
     if exists("no_conflicts_found.png"):
         type(Key.ENTER)
     else:

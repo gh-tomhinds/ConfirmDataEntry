@@ -83,7 +83,13 @@
         logging.debug(<span class="str">'- conflict check'</span>)
         <span class="skw">type</span>(Key.ENTER)
 
-    <span class="skw">wait</span>(<img src="no_conflicts_found.png" />,<span class="dig">15</span>) <span class="kw">or</span> <span class="skw">wait</span>(<img src="search_for.png" />,<span class="dig">15</span>)
+    <span class="cmt"># wait until conflict results displayed
+</span>    <span class="kw">while</span> True:
+        <span class="kw">if</span> exists (<img src="no_conflicts_found.png" />) <span class="kw">or</span> exists(<img src="search_for.png" />):
+            <span class="kw">break</span>
+        <span class="kw">else</span>:
+            time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
     <span class="kw">if</span> exists(<img src="no_conflicts_found.png" />):
         <span class="skw">type</span>(Key.ENTER)
     <span class="kw">else</span>:
