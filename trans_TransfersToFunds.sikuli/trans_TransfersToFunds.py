@@ -3,10 +3,10 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def fCreate_OneFundsTransfer(client,cliNum,month):
+def fCreate_OneFundsTransfer(pClient,pCliNum,pMonth):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OneFundsTransfer: ' + str(month) + "-" + client)
+    logging.debug('- Create_OneFundsTransfer: ' + str(pMonth) + "-" + pClient)
 
     # new transaction
     type("n",KeyModifier.CTRL)
@@ -23,11 +23,11 @@ def fCreate_OneFundsTransfer(client,cliNum,month):
     type(Key.TAB)
        
     # client
-    type(client)        
+    type(pClient)
     type(Key.TAB)
         
     # date
-    tranDate = str(month) + "/28/2013"
+    tranDate = str(pMonth) + "/28/2013"
     type(tranDate)
     time.sleep(1)
     type(Key.TAB)       
@@ -37,7 +37,7 @@ def fCreate_OneFundsTransfer(client,cliNum,month):
         
     # Description
     type("a",KeyModifier.CTRL)
-    type(client + " - " + str(cliNum) + " - " + tranDate)
+    type(pClient + " - " + str(pCliNum) + " - " + tranDate)
     type(Key.ENTER)
     time.sleep(1)
     type(Key.TAB)
@@ -54,11 +54,11 @@ def fCreate_OneFundsTransfer(client,cliNum,month):
     type("s",KeyModifier.CTRL)   
 
 #---------------------------------------------------#
-def fCreate_TransfersToFunds(month):
+def fCreate_TransfersToFunds(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("transfer funds" + str(month))
-    logging.debug('Create_TransfersFunds: ' + str(month))
+    myTools.sectionStartTimeStamp("transfer funds" + str(pMonth))
+    logging.debug('Create_TransfersFunds: ' + str(pMonth))
 
     allClients = ["East.Brookfield","North.Andover","West.Bridgewater"]
     count = 0
@@ -71,7 +71,7 @@ def fCreate_TransfersToFunds(month):
 
     for oneClient in allClients:
         count += 1
-        fCreate_OneFundsTransfer(oneClient,count,month)       
+        fCreate_OneFundsTransfer(oneClient,count,pMonth)
 
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

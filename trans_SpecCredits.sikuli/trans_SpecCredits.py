@@ -60,11 +60,11 @@ def fClear_Filter():
     myTools.waitForTransList()    
 
 #---------------------------------------------------#
-def fCreate_SpecCredits(month):
+def fCreate_SpecCredits(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("specialCredits" + str(month))
-    logging.debug('Create_SpecCredits: ' + str(month))
+    myTools.sectionStartTimeStamp("specialCredits" + str(pMonth))
+    logging.debug('Create_SpecCredits: ' + str(pMonth))
 
     myTools.getFocus()
 
@@ -95,7 +95,7 @@ def fCreate_SpecCredits(month):
     type(Key.TAB)
         
     # date
-    tranDate = str(month) + "/28/2013"
+    tranDate = str(pMonth) + "/28/2013"
     type(tranDate)
     time.sleep(1)
     type(Key.TAB)       
@@ -107,19 +107,19 @@ def fCreate_SpecCredits(month):
     myTools.pressTAB(2)
 
     # Fees
-    feeAmount = 5 + month/float(100)
+    feeAmount = 5 + pMonth/float(100)
     type(str(feeAmount))
     time.sleep(1)    
     type(Key.TAB)
 
     # Costs
-    costAmount = 4 + month/float(100)
+    costAmount = 4 + pMonth/float(100)
     type(str(costAmount))
     time.sleep(1)    
     type(Key.TAB)
 
     # Interest
-    interestAmount = 3 + month/float(100)
+    interestAmount = 3 + pMonth/float(100)
     type(str(interestAmount))
     time.sleep(1)    
 
