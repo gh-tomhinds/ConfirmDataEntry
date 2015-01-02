@@ -88,18 +88,24 @@
 <span class="kw">import</span> backup_Data
 <span class="kw">import</span> reports_PostBill
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fRun_BillCycle(startMonth,endMonth):
-<span class="cmt">#---------------------------------------------------#
-</span>
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fRun_BillCycle(startMonth,endMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
     <span class="kw">for</span> thisMonth <span class="kw">in</span> range(startMonth,endMonth):
 
-        <span class="cmt"># set up the bill report and import the bill layout before the first month
-</span>        <span class="kw">if</span> (thisMonth == <span class="dig">1</span>):
+        <span class="cmt"># set up the bill report and import the bill layout before the first month</span>
+        <span class="kw">if</span> (thisMonth == <span class="dig">1</span>):
             bill_Setup.fSetup_BillReport()
             bill_ImportLayout.fImport_BillLayout(<span class="str">"Bill with Taxes"</span>)
 
         bill_Print.fPrint_Bills(thisMonth)
+
+        <span class="cmt"># back up data and compare some values each month</span>
+        backup_Data.fBackup_BillData(thisMonth,<span class="str">"a"</span>)
+        reports_PostBill.fPrint_PostbillReports(thisMonth,<span class="str">"a"</span>)
+
+        <span class="cmt"># enter transactions for month</span>
         trans_SpecCredits.fCreate_SpecCredits(thisMonth)
         trans_Payments.fCreate_PaymentsForMonth(thisMonth)
         trans_Transfers.fCreate_Transfers(thisMonth)
@@ -109,10 +115,9 @@
         client_FinanceCharges.fCreate_FinanceCharges(thisMonth)
         trans_BankDepositSlip.fBankDepositSlips_Create(thisMonth)
 
-        backup_Data.fBackup_BillData(thisMonth)
-
-        <span class="cmt"># compare some values each month
-</span>        reports_PostBill.fPrint_PostbillReports(thisMonth)
+        <span class="cmt"># back up data and compare some values each month</span>
+        backup_Data.fBackup_BillData(thisMonth,<span class="str">"b"</span>)
+        reports_PostBill.fPrint_PostbillReports(thisMonth,<span class="str">"b"</span>)
 </pre>
 </body>
 </html>

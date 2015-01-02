@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_ARAgedBal(reportMonth):
+def Print_ARAgedBal(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print aged bal")
-    logging.debug('Print_ARAgedBal: ' + str(reportMonth))
+
+    # name report file: ex: ARAgedBal-03
+    reportName = myTools.monthToName(pReportMonth,"-ARAgedBal-",pRepExt)    
+    logging.debug('Print_ARAgedBal: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -26,9 +29,6 @@ def Print_ARAgedBal(reportMonth):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
-
-    # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(reportMonth,"-ARAgedBal-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

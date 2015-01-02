@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_Taxes(reportMonth):
+def Print_Taxes(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print taxes")
-    logging.debug('Print_Taxes: ' + str(reportMonth))
+
+    # name report file: ex: Hold-03
+    reportName = myTools.monthToName(pReportMonth,"-Taxes-",pRepExt)
+    logging.debug('Print_Taxes: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -48,9 +51,6 @@ def Print_Taxes(reportMonth):
     type(Key.ENTER)    
     time.sleep(1)
 
-    # name report file: ex: Hold-03
-    reportName = myTools.monthToName(reportMonth,"-Taxes-",".csv")   
-    
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)
     time.sleep(1)

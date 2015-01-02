@@ -28,6 +28,12 @@ def fRun_BillCycle(startMonth,endMonth):
             bill_ImportLayout.fImport_BillLayout("Bill with Taxes")
         
         bill_Print.fPrint_Bills(thisMonth)
+
+        # back up data and compare some values each month
+        backup_Data.fBackup_BillData(thisMonth,"a")        
+        reports_PostBill.fPrint_PostbillReports(thisMonth,"a")
+
+        # enter transactions for month
         trans_SpecCredits.fCreate_SpecCredits(thisMonth)        
         trans_Payments.fCreate_PaymentsForMonth(thisMonth)
         trans_Transfers.fCreate_Transfers(thisMonth)        
@@ -37,7 +43,6 @@ def fRun_BillCycle(startMonth,endMonth):
         client_FinanceCharges.fCreate_FinanceCharges(thisMonth)
         trans_BankDepositSlip.fBankDepositSlips_Create(thisMonth)
 
-        backup_Data.fBackup_BillData(thisMonth)
-
-        # compare some values each month
-        reports_PostBill.fPrint_PostbillReports(thisMonth)
+        # back up data and compare some values each month
+        backup_Data.fBackup_BillData(thisMonth,"b")        
+        reports_PostBill.fPrint_PostbillReports(thisMonth,"b")

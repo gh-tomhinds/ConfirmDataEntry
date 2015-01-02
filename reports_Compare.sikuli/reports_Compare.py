@@ -44,17 +44,30 @@ def Compare_OneReport(pReportName):
     newRepLine = 0
     errorFound = False
 
-# compare each line in base report to new report; jump out on first mismatch
-    logging.debug('- compare files')
-    for baseRepLine in baseRepLines:        
-        if baseRepLine != newRepLines[newRepLine]:
-            errorFound = True
-            logging.debug(" - FAILED : " + pReportName)
-            logging.debug(" Line: %d \n" % (newRepLine+1))
-            logging.debug(" Base: " + baseRepLine)
-            logging.debug(" New:  " + newRepLines[newRepLine])
-            break
-        newRepLine += 1
+# compare lengths of files
+    logging.debug('- compare lengths')
+    
+    if len(baseRepLines) < len(newRepLines):
+        errorFound = True        
+        logging.debug(" - FAILED : " + pReportName)
+        logging.debug(" - new report has more lines")
+    elif len(baseRepLines) > len(newRepLines):
+        errorFound = True        
+        logging.debug(" - FAILED : " + pReportName)
+        logging.debug(" - base report has more lines")
+
+    # compare each line in base report to new report; jump out on first mismatch
+    else:
+        logging.debug('- compare files')
+        for baseRepLine in baseRepLines:
+            if baseRepLine != newRepLines[newRepLine]:
+                errorFound = True
+                logging.debug(" - FAILED : " + pReportName)
+                logging.debug(" Line: %d \n" % (newRepLine+1))
+                logging.debug(" Base: " + baseRepLine)
+                logging.debug(" New:  " + newRepLines[newRepLine])
+                break
+            newRepLine += 1
     
     if errorFound != True:
         logging.debug(" - passed : " + pReportName)

@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_Worksheet(reportMonth):
+def Print_Worksheet(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print worksheet")
-    logging.debug('Print_Worksheet: ' + str(reportMonth))
+
+    # name report file: ex: Worksheet-03
+    reportName = myTools.monthToName(pReportMonth,"-Worksheet-",pRepExt)
+    logging.debug('Print_Worksheet: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -47,9 +50,6 @@ def Print_Worksheet(reportMonth):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
-
-    # name report file: ex: Worksheet-03
-    reportName = myTools.monthToName(reportMonth,"-Worksheet-",".csv")   
     
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

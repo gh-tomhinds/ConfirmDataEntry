@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_TkCC(reportMonth):
+def Print_TkCC(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print tkcc")
-    logging.debug('Print_TkCC: ' + str(reportMonth))
+
+    # name report file: ex: TkCC-03
+    reportName = myTools.monthToName(pReportMonth,"-TkCC-",pRepExt)
+    logging.debug('Print_TkCC: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -51,9 +54,6 @@ def Print_TkCC(reportMonth):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
-
-    # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(reportMonth,"-TkCC-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

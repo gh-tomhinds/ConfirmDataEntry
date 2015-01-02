@@ -1,4 +1,5 @@
 from sikuli import *
+import logging
 
 import report_AgedARBal
 import report_TkHistory
@@ -11,20 +12,26 @@ import report_FeeAlloc
 import report_Budgets
 
 #---------------------------------------------------#
-def fPrint_PostbillReports(pMonth):
+def fPrint_PostbillReports(pMonth,pAorB):
 #---------------------------------------------------#
 
     # print various reports to check db values and calculations
-    # this function is also called from ba__Main
 
-    report_AgedARBal.Print_ARAgedBal(pMonth)
-    report_TkHistory.Print_TkHistory(pMonth)
-    report_TkCC.Print_TkCC(pMonth)
-    report_FundsBal.fPrint_FundsBal(pMonth)
-    report_Hold.Print_Hold(pMonth)
-    report_Taxes.Print_Taxes(pMonth)
-    report_TOWorksheet.Print_Worksheet(pMonth)
-    report_FeeAlloc.Print_FeeAlloc(pMonth)
-    report_Budgets.printCliBudget(pMonth)
-    report_Budgets.printTkBudget(pMonth)
-    report_Budgets.printFirmBudget(pMonth)
+    repExt = pAorB + ".csv"
+
+    report_AgedARBal.Print_ARAgedBal(pMonth,repExt)
+    report_TkHistory.Print_TkHistory(pMonth,repExt)
+    report_TkCC.Print_TkCC(pMonth,repExt)
+    report_FundsBal.fPrint_FundsBal(pMonth,repExt)
+    report_Hold.Print_Hold(pMonth,repExt)
+    report_Taxes.Print_Taxes(pMonth,repExt)
+    report_TOWorksheet.Print_Worksheet(pMonth,repExt)    
+    report_Budgets.printCliBudget(pMonth,repExt)
+    report_Budgets.printTkBudget(pMonth,repExt)
+    report_Budgets.printFirmBudget(pMonth,repExt)
+    
+    if (pMonth == 1) and (pAorB == "a"):        
+        # fee allocation cannot be run without some payments entered
+        logging.debug('SKIP FEE ALLOCATION REPORT')
+    else:
+        report_FeeAlloc.Print_FeeAlloc(pMonth,repExt)

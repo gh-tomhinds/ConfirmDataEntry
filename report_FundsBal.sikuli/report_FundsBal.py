@@ -4,16 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fPrint_FundsBal(reportMonth):
+def fPrint_FundsBal(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print fundsbal")
-    logging.debug('fPrint_FundsBal: ' + str(reportMonth))
 
-    # make sure timeslips has focus
-    myTools.getFocus()
-
-    logging.debug('- open report')
+    # name report file: ex: TkCC-03
+    reportName = myTools.monthToName(pReportMonth,"-FundsBal-",pRepExt)    
+    logging.debug('fPrint_FundsBal: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -49,9 +47,6 @@ def fPrint_FundsBal(reportMonth):
     type("c")    
     type(Key.ENTER)
     time.sleep(1)
-
-    # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(reportMonth,"-FundsBal-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

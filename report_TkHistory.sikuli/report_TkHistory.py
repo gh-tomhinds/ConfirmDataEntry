@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_TkHistory(reportMonth):
+def Print_TkHistory(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print tk history")
-    logging.debug('Print_TkHistory: ' + str(reportMonth))
+
+    # name report file: ex: TkHistory-03
+    reportName = myTools.monthToName(pReportMonth,"-TkHistory-",pRepExt)   
+    logging.debug('Print_TkHistory: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -60,9 +63,6 @@ def Print_TkHistory(reportMonth):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
-
-    # name report file: ex: TkHistory-03
-    reportName = myTools.monthToName(reportMonth,"-TkHistory-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

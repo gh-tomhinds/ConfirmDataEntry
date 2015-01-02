@@ -70,20 +70,20 @@
 <h2>_main.sikuli\_main.sikuli</h2> <a href="_main.sikuli\_main.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="cmt"># _main
-</span><span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="cmt">#
-</span><span class="cmt"># These scripts rely on the following:                
-</span><span class="cmt">#
-</span><span class="cmt"># 1) Windows Explorer windows opens in primary monitor 
-</span><span class="cmt"># 2) Timeslips is installed below C:\Program Files (x86)  
-</span><span class="cmt"># 3) Timeslips install folder is in format: Timeslips 2014
-</span><span class="cmt">#
-</span><span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-<span class="cmt"># import my sikuli scripts
-</span><span class="kw">import</span> myTools
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="cmt"># _main</span>
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="cmt">#</span>
+<span class="cmt"># These scripts rely on the following:                </span>
+<span class="cmt">#</span>
+<span class="cmt"># 1) Windows Explorer windows opens in primary monitor </span>
+<span class="cmt"># 2) Timeslips is installed below C:\Program Files (x86)  </span>
+<span class="cmt"># 3) Timeslips install folder is in format: Timeslips 2014</span>
+<span class="cmt">#</span>
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+<span class="cmt"># import my sikuli scripts</span>
+<span class="kw">import</span> myTools
 
 <span class="kw">import</span> _global_Settings
 <span class="kw">import</span> db_New
@@ -107,41 +107,41 @@
 <span class="kw">import</span> calendar_Terms
 <span class="kw">import</span> calendar_Entries
 
-<span class="cmt">#import sendEmail
-</span>
-<span class="cmt">##############################################################
-</span>
+<span class="cmt">#import sendEmail</span>
+
+<span class="cmt">##############################################################</span>
+
 myTools.setupLog()
 myTools.startTimeStamp()
 _global_Settings.fSetup_Envirnoment()
 
-<span class="cmt">##############################################################
-</span>
-<span class="cmt">#db_New.fStartTS_CreateNewDB()
-</span>
-<span class="cmt">#settings_Prefs.fTweak_Prefs()
-</span><span class="cmt">#settings_Categories.fCreate_Categories()
-</span><span class="cmt">#settings_CustomFields.fCreate_CustomFields()
-</span>
-<span class="cmt">#names_Create.fCreateImportEdit_Names()
-</span>
-<span class="cmt">#slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-</span><span class="cmt">#slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-</span>
-<span class="cmt">#bill_Split.fSetup_SplitBills()
-</span>
-<span class="cmt">#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
-</span>
-<span class="cmt">#ba__Common.fSetup_BADefaultLayout()
-</span><span class="cmt">#ba__Main.fReview_Arrangements()
-</span>
-<span class="cmt">#calendar_Terms.fSetup_CalTerms()
-</span>calendar_Entries.fCalendar_Entries()
+<span class="cmt">##############################################################</span>
+
+<span class="cmt">#db_New.fStartTS_CreateNewDB()</span>
+
+<span class="cmt">#settings_Prefs.fTweak_Prefs()</span>
+<span class="cmt">#settings_Categories.fCreate_Categories()</span>
+<span class="cmt">#settings_CustomFields.fCreate_CustomFields()</span>
+
+<span class="cmt">#names_Create.fCreateImportEdit_Names()</span>
+
+<span class="cmt">#slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+<span class="cmt">#slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10</span>
+
+<span class="cmt">#bill_Split.fSetup_SplitBills()</span>
+
+bill_MonthlyCycle.fRun_BillCycle(<span class="dig">1</span>,<span class="dig">13</span>) <span class="cmt"># pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
+
+<span class="cmt">#ba__Common.fSetup_BADefaultLayout()</span>
+<span class="cmt">#ba__Main.fReview_Arrangements()</span>
+
+<span class="cmt">#calendar_Terms.fSetup_CalTerms()</span>
+<span class="cmt">#calendar_Entries.fCalendar_Entries()</span>
 
 myTools.endTimeStamp()
 
-<span class="cmt">#sendEmail.Send_Email()
-</span>
+<span class="cmt">#sendEmail.Send_Email()</span>
+
 exit()
 </pre>
 </body>

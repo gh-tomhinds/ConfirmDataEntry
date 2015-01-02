@@ -58,13 +58,13 @@ _global_Settings.fSetup_Envirnoment()
 
 #bill_Split.fSetup_SplitBills()
 
-#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
 #ba__Main.fReview_Arrangements()
 
 #calendar_Terms.fSetup_CalTerms()
-calendar_Entries.fCalendar_Entries()
+#calendar_Entries.fCalendar_Entries()
 
 myTools.endTimeStamp()
 

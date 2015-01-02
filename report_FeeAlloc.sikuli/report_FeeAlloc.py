@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_FeeAlloc(reportMonth):
+def Print_FeeAlloc(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print fee alloc")
-    logging.debug('Print_FeeAlloc: ' + str(reportMonth))
+
+    # name report file: ex: FeeAlloc-03
+    reportName = myTools.monthToName(pReportMonth,"-FeeAlloc-",pRepExt)
+    logging.debug('Print_FeeAlloc: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -51,9 +54,6 @@ def Print_FeeAlloc(reportMonth):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
-
-    # name report file: ex: FeeAlloc-03
-    reportName = myTools.monthToName(reportMonth,"-FeeAlloc-",".csv")
 
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)

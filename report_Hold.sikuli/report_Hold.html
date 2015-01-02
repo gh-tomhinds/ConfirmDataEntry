@@ -75,15 +75,18 @@
 <span class="kw">import</span> myTools
 <span class="kw">import</span> reports_Compare
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Print_Hold(reportMonth):
-<span class="cmt">#---------------------------------------------------#
-</span>
-    myTools.sectionStartTimeStamp(<span class="str">"print hold"</span>)
-    logging.debug(<span class="str">'Print_Hold: '</span> + str(reportMonth))
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Print_Hold(pReportMonth,pRepExt):
+<span class="cmt">#---------------------------------------------------#</span>
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
+    myTools.sectionStartTimeStamp(<span class="str">"print hold"</span>)
+
+    <span class="cmt"># name report file: ex: Hold-03</span>
+    reportName = myTools.monthToName(pReportMonth,<span class="str">"-Hold-"</span>,pRepExt)
+    logging.debug(<span class="str">'Print_Hold: '</span> + reportName)
+
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
 
     logging.debug(<span class="str">'- open report list'</span>)
     <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.ALT)
@@ -96,46 +99,43 @@
     <span class="skw">type</span>(<span class="str">"o"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># Options
-</span>    myTools.pressSHIFTTAB(<span class="dig">4</span>)
+    <span class="cmt"># Options</span>
+    myTools.pressSHIFTTAB(<span class="dig">4</span>)
     <span class="skw">type</span>(Key.SPACE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># Default
-</span>    myTools.pressSHIFTTAB(<span class="dig">4</span>)
+    <span class="cmt"># Default</span>
+    myTools.pressSHIFTTAB(<span class="dig">4</span>)
     <span class="skw">type</span>(Key.SPACE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># OK
-</span>    myTools.pressTAB(<span class="dig">1</span>)
+    <span class="cmt"># OK</span>
+    myTools.pressTAB(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.SPACE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># choose CSV
-</span>    myTools.pressTAB(<span class="dig">2</span>)
+    <span class="cmt"># choose CSV</span>
+    myTools.pressTAB(<span class="dig">2</span>)
     <span class="skw">type</span>(<span class="str">"c"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># print the report
-</span>    <span class="skw">type</span>(Key.ENTER)
+    <span class="cmt"># print the report</span>
+    <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># name report file: ex: Hold-03
-</span>    reportName = myTools.monthToName(reportMonth,<span class="str">"-Hold-"</span>,<span class="str">".csv"</span>)
-
-    <span class="cmt"># fill in path and name; press ENTER
-</span>    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)
+    <span class="cmt"># fill in path and name; press ENTER</span>
+    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + reportName)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
     <span class="kw">if</span> exists(<img src="replace_it.png" />):
         <span class="skw">type</span>(Key.ENTER)
 
-    <span class="cmt"># wait for report to complete
-</span>    myTools.waitForReport()
+    <span class="cmt"># wait for report to complete</span>
+    myTools.waitForReport()
 
-    <span class="cmt"># compare the report with baseline
-</span>    reports_Compare.Compare_OneReport(reportName)
+    <span class="cmt"># compare the report with baseline</span>
+    reports_Compare.Compare_OneReport(reportName)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 

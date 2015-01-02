@@ -4,11 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_Hold(reportMonth):
+def Print_Hold(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print hold")
-    logging.debug('Print_Hold: ' + str(reportMonth))
+
+    # name report file: ex: Hold-03
+    reportName = myTools.monthToName(pReportMonth,"-Hold-",pRepExt)
+    logging.debug('Print_Hold: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -48,9 +51,6 @@ def Print_Hold(reportMonth):
     type(Key.ENTER)    
     time.sleep(1)
 
-    # name report file: ex: Hold-03
-    reportName = myTools.monthToName(reportMonth,"-Hold-",".csv")   
-    
     # fill in path and name; press ENTER
     type(Settings.repFolder + "\\" + reportName)
     time.sleep(1)

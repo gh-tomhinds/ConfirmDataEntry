@@ -74,59 +74,72 @@
 <span class="kw">import</span> os
 <span class="kw">import</span> logging
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> Compare_OneReport(pReportName):
-<span class="cmt">#---------------------------------------------------#
-</span>    logging.debug(<span class="str">'Compare_OneReport: '</span> + pReportName)
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> Compare_OneReport(pReportName):
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'Compare_OneReport: '</span> + pReportName)
 
-<span class="cmt"># point to old report, new report, and output file
-</span>    logging.debug(<span class="str">'- set file names'</span>)
+<span class="cmt"># point to old report, new report, and output file</span>
+    logging.debug(<span class="str">'- set file names'</span>)
     baseFile = Settings.baseRepFolder + <span class="str">"\\"</span> + pReportName[<span class="dig">5</span>:] <span class="cmt">#trim version from name</span>
     newFile = Settings.repFolder + <span class="str">"\\"</span> + pReportName
 
     <span class="kw">global</span> newRepLine
 
-<span class="cmt"># don't compare if old report doesn't exist
-</span>    logging.debug(<span class="str">'- check for base file'</span>)
+<span class="cmt"># don't compare if old report doesn't exist</span>
+    logging.debug(<span class="str">'- check for base file'</span>)
     <span class="kw">if</span> <span class="kw">not</span> os.path.exists(baseFile):
         logging.debug(<span class="str">" - "</span> + pReportName[<span class="dig">5</span>:] + <span class="str">" MISSING"</span>)
         <span class="kw">return</span>
 
-<span class="cmt"># don't compare if new report doesn't exist
-</span>    logging.debug(<span class="str">'- check for printed file'</span>)
+<span class="cmt"># don't compare if new report doesn't exist</span>
+    logging.debug(<span class="str">'- check for printed file'</span>)
     <span class="kw">if</span> <span class="kw">not</span> os.path.exists(baseFile):
         logging.debug(<span class="str">" - "</span> + pReportName + <span class="str">" MISSING"</span>)
         <span class="kw">return</span>
 
-<span class="cmt"># open report files
-</span>    logging.debug(<span class="str">'- load files'</span>)
+<span class="cmt"># open report files</span>
+    logging.debug(<span class="str">'- load files'</span>)
 
     baseRep = open(baseFile)
     newRep = open(newFile)
 
-<span class="cmt"># read lines of the report files
-</span>    baseRepLines = baseRep.read().splitlines()
+<span class="cmt"># read lines of the report files</span>
+    baseRepLines = baseRep.read().splitlines()
     newRepLines = newRep.read().splitlines()
 
-<span class="cmt"># close report files
-</span>    baseRep.close()
+<span class="cmt"># close report files</span>
+    baseRep.close()
     newRep.close()
 
-<span class="cmt"># open reset line counter and error flag
-</span>    newRepLine = <span class="dig">0</span>
+<span class="cmt"># open reset line counter and error flag</span>
+    newRepLine = <span class="dig">0</span>
     errorFound = False
 
-<span class="cmt"># compare each line in base report to new report; jump out on first mismatch
-</span>    logging.debug(<span class="str">'- compare files'</span>)
-    <span class="kw">for</span> baseRepLine <span class="kw">in</span> baseRepLines:
-        <span class="kw">if</span> baseRepLine != newRepLines[newRepLine]:
-            errorFound = True
-            logging.debug(<span class="str">" - FAILED : "</span> + pReportName)
-            logging.debug(<span class="str">" Line: %d \n"</span> % (newRepLine+<span class="dig">1</span>))
-            logging.debug(<span class="str">" Base: "</span> + baseRepLine)
-            logging.debug(<span class="str">" New:  "</span> + newRepLines[newRepLine])
-            <span class="kw">break</span>
-        newRepLine += <span class="dig">1</span>
+<span class="cmt"># compare lengths of files</span>
+    logging.debug(<span class="str">'- compare lengths'</span>)
+
+    <span class="kw">if</span> len(baseRepLines) &lt; len(newRepLines):
+        errorFound = True
+        logging.debug(<span class="str">" - FAILED : "</span> + pReportName)
+        logging.debug(<span class="str">" - new report has more lines"</span>)
+    <span class="kw">elif</span> len(baseRepLines) &gt; len(newRepLines):
+        errorFound = True
+        logging.debug(<span class="str">" - FAILED : "</span> + pReportName)
+        logging.debug(<span class="str">" - base report has more lines"</span>)
+
+    <span class="cmt"># compare each line in base report to new report; jump out on first mismatch</span>
+    <span class="kw">else</span>:
+        logging.debug(<span class="str">'- compare files'</span>)
+        <span class="kw">for</span> baseRepLine <span class="kw">in</span> baseRepLines:
+            <span class="kw">if</span> baseRepLine != newRepLines[newRepLine]:
+                errorFound = True
+                logging.debug(<span class="str">" - FAILED : "</span> + pReportName)
+                logging.debug(<span class="str">" Line: %d \n"</span> % (newRepLine+<span class="dig">1</span>))
+                logging.debug(<span class="str">" Base: "</span> + baseRepLine)
+                logging.debug(<span class="str">" New:  "</span> + newRepLines[newRepLine])
+                <span class="kw">break</span>
+            newRepLine += <span class="dig">1</span>
 
     <span class="kw">if</span> errorFound != True:
         logging.debug(<span class="str">" - passed : "</span> + pReportName)

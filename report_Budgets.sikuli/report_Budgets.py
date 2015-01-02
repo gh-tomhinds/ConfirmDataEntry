@@ -71,11 +71,13 @@ def finishReport(pReportName):
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
-def printCliBudget(pReportMonth):
+def printCliBudget(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print cli budget")
-    logging.debug('Print_CliBudget: ' + str(pReportMonth))
+
+    reportName = myTools.monthToName(pReportMonth,"-CliBud-",pRepExt)   
+    logging.debug('Print_CliBudget: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -89,15 +91,16 @@ def printCliBudget(pReportMonth):
     time.sleep(1)
 
     setupReport()
-    reportName = myTools.monthToName(pReportMonth,"-CliBud-",".csv")    
     finishReport(reportName)
 
 #---------------------------------------------------#
-def printTkBudget(pReportMonth):
+def printTkBudget(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print tk budget")
-    logging.debug('Print_TkBudget: ' + str(pReportMonth))
+
+    reportName = myTools.monthToName(pReportMonth,"-TkBud-",pRepExt)    
+    logging.debug('Print_TkBudget: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -111,15 +114,16 @@ def printTkBudget(pReportMonth):
     time.sleep(1)
 
     setupReport()
-    reportName = myTools.monthToName(pReportMonth,"-TkBud-",".csv")    
     finishReport(reportName)
 
 #---------------------------------------------------#
-def printFirmBudget(pReportMonth):
+def printFirmBudget(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print firm budget")
-    logging.debug('Print_FirmBudget: ' + str(pReportMonth))
+
+    reportName = myTools.monthToName(pReportMonth,"-FirmBud-",pRepExt)
+    logging.debug('Print_FirmBudget: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -133,5 +137,4 @@ def printFirmBudget(pReportMonth):
     time.sleep(1)
 
     setupReport()
-    reportName = myTools.monthToName(pReportMonth,"-FirmBud-",".csv")    
     finishReport(reportName)
