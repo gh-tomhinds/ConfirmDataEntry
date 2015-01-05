@@ -9,7 +9,7 @@ from bill_ImportLayout import fImport_Layout
 def fImport_DefaultLayout():
 #---------------------------------------------------#
 
-    Import_Layout("Low Detail")
+    fImport_Layout("Low Detail")
 
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)

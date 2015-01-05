@@ -122,10 +122,10 @@
 
 <span class="kw">import</span> reports_PostBill
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> fLogHeader():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fLogHeader():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
     <span class="kw">if</span> os.path.isfile(Settings.BALogFile):
         outFile = Settings.repFolder + <span class="str">"\\!BA-Log.txt"</span>
         billLog = open(outFile, <span class="str">"a"</span>)
@@ -135,15 +135,15 @@
         billLog.write(baTime.strftime(<span class="str">"Started: %Y-%m-%d %H:%M:%S\n"</span>))
         billLog.write(<span class="str">"==================================================\n"</span>)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> fReview_Arrangements():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fReview_Arrangements():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Review_Arrangements'</span>)
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
 
     fLogHeader()
 
@@ -193,7 +193,7 @@
 
     backup_Data.fBackup_Checkpoint(<span class="str">"ba"</span>)
 
-    reports_PostBill.fPrint_PostbillReports(<span class="dig">13</span>)
+    reports_PostBill.fPrint_PostbillReports(<span class="dig">13</span>,<span class="str">"a"</span>)
 </pre>
 </body>
 </html>
