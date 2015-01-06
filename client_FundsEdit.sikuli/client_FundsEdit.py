@@ -29,8 +29,8 @@ def fEdit_ClientFunds():
     # loop through clients
     for oneClient in range(1,352):
 
-        # log every 20 clients
-        if oneClient % 20 == 0:               
+        # log every 10 clients
+        if oneClient % 10 == 0:               
             logging.debug('-- client: ' + str(oneClient+1))    
 
         # list

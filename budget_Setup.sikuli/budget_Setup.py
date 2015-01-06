@@ -6,7 +6,7 @@ import myTools
 def fBudgetDetails(pStartMonth,pEndMonth,pDay):
 #---------------------------------------------------#
 
-    logging.debug('- budget details: ' + str(pStartMonth))
+    logging.debug('-- budget details: ' + str(pStartMonth))
 
     # new
     type("n", KeyModifier.CTRL)

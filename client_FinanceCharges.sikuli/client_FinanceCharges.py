@@ -4,14 +4,14 @@ import myTools
 import names_Init
 
 #---------------------------------------------------#
-def fCreate_OneFinanceCharge(client,cliNum,month):
+def fCreate_OneFinanceCharge(pClient,pCliNum,pMonth,pAmount):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OneFinance: ' + str(month) + "-" + client)
+    logging.debug('- Create_OneFinance: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
     time.sleep(1)
 
     # choose client
-    type(client)
+    type(pClient)
     time.sleep(1)
     type(Key.ENTER)
     time.sleep(1)
@@ -36,15 +36,14 @@ def fCreate_OneFinanceCharge(client,cliNum,month):
     time.sleep(1)
 
     # enter finance charge   
-    financeCharge = str(cliNum) + ".99"
-    type(financeCharge)
+    type(pAmount)
     time.sleep(1)
     myTools.pressTAB(1)
 
     # description
     type("a",KeyModifier.CTRL)
     time.sleep(1)
-    financeText = "Finance charge for: " + client + ": Month: " + str(month)
+    financeText = "Finance charge for: " + pClient + ": Month: " + str(pMonth)
     paste(financeText)
 
     # save
@@ -55,11 +54,11 @@ def fCreate_OneFinanceCharge(client,cliNum,month):
     type(Key.F4,KeyModifier.CTRL)
 
 #---------------------------------------------------#
-def fCreate_FinanceCharges(month):
+def fCreate_FinanceCharges(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("finance" + str(month))
-    logging.debug('Create_FinanceCharges: ' + str(month))
+    myTools.sectionStartTimeStamp("finance" + str(pMonth))
+    logging.debug('Create_FinanceCharges: ' + str(pMonth))
 
     allClients = names_Init.fInit_Clients()
     count = 0
@@ -75,10 +74,11 @@ def fCreate_FinanceCharges(month):
         # always create finance charge for first 5 clients 
         # then create finance charge for 1 out of 35 next clients
         
-        if (count in range(6)) or ((count + month) % 35 == 0):
-            fCreate_OneFinanceCharge(oneClient,count,month)
+        if (count in range(6)) or ((count + pMonth) % 35 == 0):
+            financeCharge = str(count) + ".99"            
+            fCreate_OneFinanceCharge(oneClient,count,pMonth,financeCharge)
         else:
-            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
+            logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)
 
     type(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()

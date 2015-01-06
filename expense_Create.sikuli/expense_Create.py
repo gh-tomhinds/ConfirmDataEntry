@@ -8,7 +8,7 @@ def fCreate_Expense():
 
     myTools.sectionStartTimeStamp("create expense")
 
-    logging.debug('Create_Expense')
+    logging.debug('Create_Expense: Lip stick')
 
     logging.debug('- open expense list')
     type("n",KeyModifier.ALT)

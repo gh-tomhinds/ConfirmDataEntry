@@ -7,20 +7,25 @@ import myTools
 def fWaitFor_ConflictCheck():
 #---------------------------------------------------#
 
+    logging.debug('- conflict check')    
+
     if exists("do_not_show.png"):
-        logging.debug('- conflict check')    
+        logging.debug('-- conflict msg')
         type(Key.ENTER)
 
     # wait until conflict results displayed
+    logging.debug('-- wait for search')
     while True:
-        if exists ("no_conflicts_found.png") or exists("search_for.png"):
+        if exists("no_conflicts_found.png") or exists("Conflict_msg.png") or exists("search_for.png"):
             break
         else:
             time.sleep(2)
 
-    if exists("no_conflicts_found.png"):
+    if exists("no_conflicts_found.png") or exists("Conflict_msg.png"):
+        logging.debug('-- no conflict')        
         type(Key.ENTER)
     else:
+        logging.debug('-- conflict')
         # close results list
         type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)

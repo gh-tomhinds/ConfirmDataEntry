@@ -74,16 +74,16 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fEdit_ClientFunds():
-<span class="cmt">#---------------------------------------------------#
-</span>
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fEdit_ClientFunds():
+<span class="cmt">#---------------------------------------------------#</span>
+
     myTools.sectionStartTimeStamp(<span class="str">"edit client funds"</span>)
 
     logging.debug(<span class="str">'Edit_ClientFunds'</span>)
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
 
     logging.debug(<span class="str">'- open client list'</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
@@ -94,28 +94,28 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># funds page
-</span>    myTools.pressSHIFTF6(<span class="dig">3</span>)
+    <span class="cmt"># funds page</span>
+    myTools.pressSHIFTF6(<span class="dig">3</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># loop through clients
-</span>    <span class="kw">for</span> oneClient <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">352</span>):
+    <span class="cmt"># loop through clients</span>
+    <span class="kw">for</span> oneClient <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">352</span>):
 
-        <span class="cmt"># log every 20 clients
-</span>        <span class="kw">if</span> oneClient % <span class="dig">20</span> == <span class="dig">0</span>:
+        <span class="cmt"># log every 10 clients</span>
+        <span class="kw">if</span> oneClient % <span class="dig">10</span> == <span class="dig">0</span>:
             logging.debug(<span class="str">'-- client: '</span> + str(oneClient+<span class="dig">1</span>))
 
-        <span class="cmt"># list
-</span>        myTools.pressTAB(<span class="dig">3</span>)
+        <span class="cmt"># list</span>
+        myTools.pressTAB(<span class="dig">3</span>)
         myTools.pressDOWN(<span class="dig">1</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-        <span class="cmt">#open funds
-</span>        <span class="skw">type</span>(Key.ENTER)
+        <span class="cmt">#open funds</span>
+        <span class="skw">type</span>(Key.ENTER)
         time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
 
-        <span class="cmt"># enter 25 for "balance falls below" and "replenishment"    
-</span>        <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="cmt"># enter 25 for "balance falls below" and "replenishment"    </span>
+        <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
             myTools.pressTAB(<span class="dig">3</span>)
         <span class="kw">else</span>:
             myTools.pressTAB(<span class="dig">4</span>)
@@ -131,18 +131,18 @@
         <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
         time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
 
-        <span class="cmt">#go to nn1 field
-</span>        <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
+        <span class="cmt">#go to nn1 field</span>
+        <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
             myTools.pressTAB(<span class="dig">1</span>)
         <span class="kw">else</span>:
             myTools.pressTAB(<span class="dig">4</span>)
 
-        <span class="cmt">#next client        
-</span>        <span class="skw">type</span>(Key.PAGE_DOWN)
+        <span class="cmt">#next client        </span>
+        <span class="skw">type</span>(Key.PAGE_DOWN)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># close client info
-</span>    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    <span class="cmt"># close client info</span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
