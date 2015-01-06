@@ -5,10 +5,10 @@ import myTools
 import names_Init
 
 #---------------------------------------------------#
-def fCreate_OnePayToAccount(client,cliNum,month):
+def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OnePTA: ' + str(month) + "-" + client)
+    logging.debug('- Create_OnePTA: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
 
     # new payment
     type("n",KeyModifier.CTRL)
@@ -21,15 +21,15 @@ def fCreate_OnePayToAccount(client,cliNum,month):
     type(Key.TAB)
 
     # client
-    type(client)        
-    time.sleep(1)        
-    type(Key.TAB)    
+    type(pClient)
+    time.sleep(1)
+    type(Key.TAB)
         
     # skip account
     type(Key.TAB)
 
     # date
-    payDate = str(month) + "/28/2013"
+    payDate = str(pMonth) + "/28/2013"
     type(payDate)
     type(Key.TAB)
         
@@ -37,13 +37,12 @@ def fCreate_OnePayToAccount(client,cliNum,month):
     type(Key.TAB)
             
     # Amount
-    amount = 25 + month/float(100)
-    type(str(amount))
+    type(str(pAmount))
     type(Key.TAB)
 
     # Description
     type("a",KeyModifier.CTRL)
-    type(client + " - " + str(cliNum) + " - " + payDate)
+    type(pClient + " - " + str(pCliNum) + " - " + payDate)
     type(Key.ENTER)
     time.sleep(.5)
     type("s",KeyModifier.CTRL)
@@ -52,11 +51,11 @@ def fCreate_OnePayToAccount(client,cliNum,month):
         type("n")    
 
 #---------------------------------------------------#
-def fCreate_PaymentsToAccount(month):
+def fCreate_PaymentsToAccount(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("paystoaccount" + str(month))
-    logging.debug('Create_PaysToAccount: ' + str(month))
+    myTools.sectionStartTimeStamp("paystoaccount" + str(pMonth))
+    logging.debug('Create_PaysToAccount: ' + str(pMonth))
 
     allClients = names_Init.fInit_Clients()
     count = 0
@@ -71,10 +70,11 @@ def fCreate_PaymentsToAccount(month):
 
     for oneClient in allClients:
         count += 1
-        if (count in range(6)) or ((count + month) % 6 == 0):
-            fCreate_OnePayToAccount(oneClient,count,month)
+        if (count in range(6)) or ((count + pMonth) % 6 == 0):
+            ptaAmount = 25 + pMonth/float(100)
+            fCreate_OnePayToAccount(oneClient,count,pMonth,ptaAmount)
         else:
-            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
+            logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)           
      
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

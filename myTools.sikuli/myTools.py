@@ -134,7 +134,7 @@ def checkForUnappliedAmount():
 
     time.sleep(1)
     if exists("go_back_edit_transaction.png"):
-        logging.debug("-- UNAPPLIED AMOUNT")
+        logging.debug("--> UNAPPLIED AMOUNT")
         type(Key.ENTER)
         time.sleep(1)
 
@@ -183,9 +183,10 @@ def sectionStartTimeStamp(aSectionName):
     Settings.sectionStartTime = datetime.datetime.now()
     
     logging.debug(' ')
-    logging.debug('---------------------------------------')
+    logging.debug(' ')
+    logging.debug('=======================================')
     logging.debug(Settings.sectionStartTime.strftime("Started at: %Y-%m-%d %H:%M:%S"))
-    logging.debug('---------------------------------------')
+    logging.debug('=======================================')
 
 #---------------------------------------------------#
 def sectionEndTimeStamp():

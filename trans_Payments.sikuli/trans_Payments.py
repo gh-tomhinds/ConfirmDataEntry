@@ -4,10 +4,10 @@ import myTools
 import names_Init
 
 #---------------------------------------------------#
-def fCreate_OnePayment(client,cliNum,month):
+def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OnePay: ' + str(month) + "-" + client)
+    logging.debug('- Create_OnePay: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
 
     # new payment
     type("n",KeyModifier.CTRL)
@@ -17,41 +17,40 @@ def fCreate_OnePayment(client,cliNum,month):
     type(Key.TAB)
        
     # source
-    myTools.pressDOWN(month-1)
+    myTools.pressDOWN(pMonth-1)
     type(Key.TAB)
         
     # check number
-    if month == 1:
-        type(str(cliNum))
+    if pMonth == 1:
+        type(str(pCliNum))
         type(Key.TAB)
             
     # skip card options
-    if month in (3,4,5,6,7,8):
+    if pMonth in (3,4,5,6,7,8):
         type(Key.TAB)
             
     # client
-    time.sleep(1)        
-    type(client)        
+    time.sleep(1)
+    type(pClient)
     type(Key.TAB)
         
     # date
-    payDate = str(month) + "/28/2013"
+    payDate = str(pMonth) + "/28/2013"
     type(payDate)
     time.sleep(1)
     type(Key.TAB)
         
     # skip deposit slip
-    if month in (1,2):
+    if pMonth in (1,2):
         type(Key.TAB)
             
     # Amount
-    amount = 100 + int(cliNum) + month/float(100)
-    type(str(amount))
+    type(str(pAmount))
     type(Key.TAB)
         
     # Description
     type("a",KeyModifier.CTRL)
-    type(client + " - " + str(cliNum) + " - " + payDate)
+    type(pClient + " - " + str(pCliNum) + " - " + payDate)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -60,21 +59,22 @@ def fCreate_OnePayment(client,cliNum,month):
     myTools.checkForUnappliedAmount()
 
     # clear applies and mark future invoice (this is for transfers in other scripts)
-    if client in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]:
-        logging.debug("-- CLEAR APPLIED")        
+    if pClient in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]:
+        logging.debug("--> CLEAR APPLIED")        
         click("clear_applies.png")
         time.sleep(1)
         click("apply_remaining_to_future.png")
         time.sleep(1)
         # save
         type("s",KeyModifier.CTRL)       
+        myTools.checkForUnappliedAmount()
 
 #---------------------------------------------------#
-def fCreate_PaymentsForMonth(month):
+def fCreate_PaymentsForMonth(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("payments" + str(month))
-    logging.debug('Create_PaymentsForMonth: ' + str(month))
+    myTools.sectionStartTimeStamp("payments" + str(pMonth))
+    logging.debug('Create_PaymentsForMonth: ' + str(pMonth))
 
     allClients = names_Init.fInit_Clients()
     count = 0
@@ -90,11 +90,13 @@ def fCreate_PaymentsForMonth(month):
         
         # always create payments for first 5 clients 
         # then create payments for 1 out of 5 next clients
+        # always create payments for certain projects
         
-        if (count in range(6)) or ((count + month) % 5 == 0) or (oneClient in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]):
-            fCreate_OnePayment(oneClient,count,month)
+        if (count in range(6)) or ((count + pMonth) % 5 == 0) or (oneClient in ["East.Bridgewater","East.Brookfield","North.Adams","North.Andover","West.Boylston","West.Bridgewater"]):            
+            payAmount = 100 + int(count) + pMonth/float(100)  # calc amount first, so we can log it
+            fCreate_OnePayment(oneClient,count,pMonth,payAmount)
         else:
-            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
+            logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)
 
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

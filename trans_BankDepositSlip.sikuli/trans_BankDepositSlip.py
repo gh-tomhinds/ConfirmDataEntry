@@ -6,10 +6,10 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def fPayment_CreateOne(pay_client,pay_month,pay_count):
+def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
 #---------------------------------------------------#
 
-    logging.debug('- Pay_Create: ' + str(pay_month) + "-" + pay_client)
+    logging.debug('- Pay_Create: ' + str(pay_month) + "-" + pay_client + " = " + str(pay_amount))
 
     # new payment
     type("n",KeyModifier.CTRL)
@@ -42,7 +42,6 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count):
     type(Key.TAB)
             
     # Amount
-    pay_amount = 30 + pay_count + pay_month/float(100)
     type(str(pay_amount))
     type(Key.TAB)
         
@@ -60,10 +59,10 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count):
     myTools.checkForUnappliedAmount()
 
 #---------------------------------------------------#
-def fPayToAccount_CreateOne(pta_client,pta_month,pta_count):
+def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
 #---------------------------------------------------#
 
-    logging.debug('- PTA_Create: ' + str(pta_month) + "-" + pta_client)
+    logging.debug('- PTA_Create: ' + str(pta_month) + "-" + pta_client + " = " + str(pta_amount))
 
     # new pta
     type("n",KeyModifier.CTRL + KeyModifier.SHIFT)
@@ -97,7 +96,6 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count):
     time.sleep(1)        
     
     # Amount
-    pta_amount = 20 + pta_count + pta_month/float(100)
     type(str(pta_amount))
     type(Key.TAB)
         
@@ -116,10 +114,10 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count):
         type("n")  
 
 #---------------------------------------------------#
-def fDepToAccount_CreateOne(dep_client,dep_month,dep_count):
+def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
 #---------------------------------------------------#
 
-    logging.debug('- DEP_Create: ' + str(dep_month) + "-" + dep_client)
+    logging.debug('- DEP_Create: ' + str(dep_month) + "-" + dep_client + " = " + str(dep_amount))
 
     # new dep
     type("d",KeyModifier.CTRL + KeyModifier.SHIFT)
@@ -153,7 +151,6 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count):
     time.sleep(1)        
     
     # Amount
-    dep_amount = 10 + dep_count + dep_month/float(100)
     type(str(dep_amount))
     type(Key.TAB)
         
@@ -231,9 +228,15 @@ def fBankDepositSlips_Create(bds_month):
     # add transactions to deposit slip
     for bds_client in clientList:
         bds_count += 1
-        fPayment_CreateOne(bds_client,bds_month,bds_count)
-        fPayToAccount_CreateOne(bds_client,bds_month,bds_count)
-        fDepToAccount_CreateOne(bds_client,bds_month,bds_count)
+        
+        trans_amount = 30 + bds_count + bds_month/float(100)        
+        fPayment_CreateOne(bds_client,bds_month,bds_count,trans_amount)
+
+        trans_amount = 20 + bds_count + bds_month/float(100)
+        fPayToAccount_CreateOne(bds_client,bds_month,bds_count,trans_amount)
+
+        trans_amount = 10 + bds_count + bds_month/float(100)        
+        fDepToAccount_CreateOne(bds_client,bds_month,bds_count,trans_amount)
 
     # close
     type(Key.F4,KeyModifier.CTRL)

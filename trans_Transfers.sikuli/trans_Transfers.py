@@ -3,10 +3,10 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def fCreate_OneTransfer(pClient,pCliNum,pMonth):
+def fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OneTransfer: ' + str(pMonth) + "-" + pClient)
+    logging.debug('- Create_OneTransfer: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
 
     # new transaction
     type("n",KeyModifier.CTRL)
@@ -32,8 +32,7 @@ def fCreate_OneTransfer(pClient,pCliNum,pMonth):
     type(Key.TAB)       
             
     # Amount
-    amount = 10 + int(pCliNum) + pMonth/float(100)
-    type(str(amount))
+    type(str(pAmount))
     type(Key.TAB)
         
     # Description
@@ -66,7 +65,8 @@ def fCreate_Transfers(pMonth):
 
     for oneClient in allClients:
         count += 1
-        fCreate_OneTransfer(oneClient,count,pMonth)
+        transferAmount = 10 + int(count) + pMonth/float(100)        
+        fCreate_OneTransfer(oneClient,count,pMonth,transferAmount)
 
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

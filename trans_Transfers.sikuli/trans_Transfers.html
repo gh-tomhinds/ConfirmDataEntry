@@ -75,10 +75,10 @@
 <span class="kw">import</span> myTools
 
 <span class="cmt">#---------------------------------------------------#</span>
-<span class="kw">def</span> fCreate_OneTransfer(pClient,pCliNum,pMonth):
+<span class="kw">def</span> fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
 <span class="cmt">#---------------------------------------------------#</span>
 
-    logging.debug(<span class="str">'- Create_OneTransfer: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient)
+    logging.debug(<span class="str">'- Create_OneTransfer: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient + <span class="str">" = "</span> + str(pAmount))
 
     <span class="cmt"># new transaction</span>
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
@@ -104,8 +104,7 @@
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># Amount</span>
-    amount = <span class="dig">10</span> + int(pCliNum) + pMonth/float(<span class="dig">100</span>)
-    <span class="skw">type</span>(str(amount))
+    <span class="skw">type</span>(str(pAmount))
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># Description</span>
@@ -138,7 +137,8 @@
 
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
-        fCreate_OneTransfer(oneClient,count,pMonth)
+        transferAmount = <span class="dig">10</span> + int(count) + pMonth/float(<span class="dig">100</span>)
+        fCreate_OneTransfer(oneClient,count,pMonth,transferAmount)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

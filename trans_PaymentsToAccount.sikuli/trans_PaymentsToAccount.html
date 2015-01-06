@@ -76,46 +76,45 @@
 <span class="kw">import</span> myTools
 <span class="kw">import</span> names_Init
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fCreate_OnePayToAccount(client,cliNum,month):
-<span class="cmt">#---------------------------------------------------#
-</span>
-    logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(month) + <span class="str">"-"</span> + client)
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
+<span class="cmt">#---------------------------------------------------#</span>
 
-    <span class="cmt"># new payment
-</span>    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    logging.debug(<span class="str">'- Create_OnePTA: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient + <span class="str">" = "</span> + str(pAmount))
+
+    <span class="cmt"># new payment</span>
+    <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
     myTools.waitForTransEntry()
 
-    <span class="cmt"># type (skip)
-</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># type (skip)</span>
+    <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># deposit slip (skip)
-</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># deposit slip (skip)</span>
+    <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># client
-</span>    <span class="skw">type</span>(client)
+    <span class="cmt"># client</span>
+    <span class="skw">type</span>(pClient)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># skip account
-</span>    <span class="skw">type</span>(Key.TAB)
+    <span class="cmt"># skip account</span>
+    <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># date
-</span>    payDate = str(month) + <span class="str">"/28/2013"</span>
+    <span class="cmt"># date</span>
+    payDate = str(pMonth) + <span class="str">"/28/2013"</span>
     <span class="skw">type</span>(payDate)
     <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># skip check number
-</span>    <span class="skw">type</span>(Key.TAB)
-
-    <span class="cmt"># Amount
-</span>    amount = <span class="dig">25</span> + month/float(<span class="dig">100</span>)
-    <span class="skw">type</span>(str(amount))
+    <span class="cmt"># skip check number</span>
     <span class="skw">type</span>(Key.TAB)
 
-    <span class="cmt"># Description
-</span>    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
-    <span class="skw">type</span>(client + <span class="str">" - "</span> + str(cliNum) + <span class="str">" - "</span> + payDate)
+    <span class="cmt"># Amount</span>
+    <span class="skw">type</span>(str(pAmount))
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="cmt"># Description</span>
+    <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.CTRL)
+    <span class="skw">type</span>(pClient + <span class="str">" - "</span> + str(pCliNum) + <span class="str">" - "</span> + payDate)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">.5</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
@@ -123,30 +122,31 @@
     <span class="kw">if</span> exists(<img src="you_deposited_money.png" />):
         <span class="skw">type</span>(<span class="str">"n"</span>)
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fCreate_PaymentsToAccount(month):
-<span class="cmt">#---------------------------------------------------#
-</span>
-    myTools.sectionStartTimeStamp(<span class="str">"paystoaccount"</span> + str(month))
-    logging.debug(<span class="str">'Create_PaysToAccount: '</span> + str(month))
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_PaymentsToAccount(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    myTools.sectionStartTimeStamp(<span class="str">"paystoaccount"</span> + str(pMonth))
+    logging.debug(<span class="str">'Create_PaysToAccount: '</span> + str(pMonth))
 
     allClients = names_Init.fInit_Clients()
     count = <span class="dig">0</span>
 
     myTools.getFocus()
 
-    <span class="cmt"># open funds list
-</span>    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.CTRL)
+    <span class="cmt"># open funds list</span>
+    <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.CTRL)
     myTools.waitForFundsList()
 
-    <span class="cmt"># create PTA for first 5 clients and then every 6th client
-</span>
+    <span class="cmt"># create PTA for first 5 clients and then every 6th client</span>
+
     <span class="kw">for</span> oneClient <span class="kw">in</span> allClients:
         count += <span class="dig">1</span>
-        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + month) % <span class="dig">6</span> == <span class="dig">0</span>):
-            fCreate_OnePayToAccount(oneClient,count,month)
+        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + pMonth) % <span class="dig">6</span> == <span class="dig">0</span>):
+            ptaAmount = <span class="dig">25</span> + pMonth/float(<span class="dig">100</span>)
+            fCreate_OnePayToAccount(oneClient,count,pMonth,ptaAmount)
         <span class="kw">else</span>:
-            logging.debug(<span class="str">'-- skip: '</span> + str(month) + <span class="str">"-"</span> + oneClient)
+            logging.debug(<span class="str">'-- skip: '</span> + str(pMonth) + <span class="str">"-"</span> + oneClient)
 
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)

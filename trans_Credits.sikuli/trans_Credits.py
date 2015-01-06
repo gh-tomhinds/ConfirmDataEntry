@@ -4,10 +4,10 @@ import myTools
 import names_Init
 
 #---------------------------------------------------#
-def fCreate_OneCredit(client,cliNum,month):
+def fCreate_OneCredit(pClient,pCliNum,pMonth,pAmount):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OneCred: ' + str(month) + "-" + client)
+    logging.debug('- Create_OneCred: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
 
     # new payment
     type("n",KeyModifier.CTRL)
@@ -20,23 +20,22 @@ def fCreate_OneCredit(client,cliNum,month):
         
     # client
     time.sleep(1)        
-    type(client)        
+    type(pClient)
     type(Key.TAB)
         
     # date
-    credDate = str(month) + "/28/2013"
+    credDate = str(pMonth) + "/28/2013"
     type(credDate)
     time.sleep(1)
     type(Key.TAB)       
             
     # Amount
-    amount = month + month/float(100)
-    type(str(amount))
+    type(str(pAmount))
     type(Key.TAB)
         
     # Description
     type("a",KeyModifier.CTRL)
-    type(client + " - " + str(cliNum) + " - " + credDate)
+    type(pClient + " - " + str(pCliNum) + " - " + credDate)
     type(Key.ENTER)
     time.sleep(1)
     type(Key.TAB)
@@ -51,11 +50,11 @@ def fCreate_OneCredit(client,cliNum,month):
     myTools.checkForUnappliedAmount()
 
 #---------------------------------------------------#
-def fCreate_CreditsForMonth(month):
+def fCreate_CreditsForMonth(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("credits" + str(month))
-    logging.debug('Create_CreditsForMonth: ' + str(month))
+    myTools.sectionStartTimeStamp("credits" + str(pMonth))
+    logging.debug('Create_CreditsForMonth: ' + str(pMonth))
 
     allClients = names_Init.fInit_Clients()
     count = 0
@@ -72,10 +71,11 @@ def fCreate_CreditsForMonth(month):
         # always create credits for first 5 clients 
         # then create credits for 1 out of 9 next clients
         
-        if (count in range(6)) or ((count + month) % 9 == 0):
-            fCreate_OneCredit(oneClient,count,month)
+        if (count in range(6)) or ((count + pMonth) % 9 == 0):
+            creditAmount = pMonth + pMonth/float(100)            
+            fCreate_OneCredit(oneClient,count,pMonth,creditAmount)
         else:
-            logging.debug('-- skip: ' + str(month) + "-" + oneClient)           
+            logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)           
 
     type(Key.F4,KeyModifier.CTRL)
     type(Key.F4,KeyModifier.CTRL)

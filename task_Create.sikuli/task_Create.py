@@ -8,7 +8,7 @@ def fCreate_Task():
 
     myTools.sectionStartTimeStamp("create task")
 
-    logging.debug('Create_Task')
+    logging.debug('Create_Task: Skipping')
 
     logging.debug('- open task list')
     type("n",KeyModifier.ALT)

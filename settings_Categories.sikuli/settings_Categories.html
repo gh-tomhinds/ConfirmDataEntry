@@ -74,29 +74,29 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fCreate_Categories():
-<span class="cmt">#---------------------------------------------------#
-</span>
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fCreate_Categories():
+<span class="cmt">#---------------------------------------------------#</span>
+
     myTools.sectionStartTimeStamp(<span class="str">"categories"</span>)
 
     logging.debug(<span class="str">'fCreate_Categories'</span>)
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
 
     logging.debug(<span class="str">'- open category list'</span>)
     <span class="skw">type</span>(<span class="str">"p"</span>,KeyModifier.ALT)
 
-    <span class="cmt"># hot keys changed for TS2014
-</span>    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
+    <span class="cmt"># hot keys changed for TS2014</span>
+    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2014</span>:
         <span class="skw">type</span>(<span class="str">"i"</span>)
     <span class="kw">else</span>:
         <span class="skw">type</span>(<span class="str">"o"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="kw">for</span> category <span class="kw">in</span> [<span class="str">"Construction"</span>,<span class="str">"General"</span>,<span class="str">"Landscape"</span>,<span class="str">"Hardware"</span>,<span class="str">"Supplies"</span>,<span class="str">"Materials"</span>,<span class="str">"Other"</span>]:
-        logging.debug(<span class="str">'- create: '</span> + category)
+        logging.debug(<span class="str">'-- create: '</span> + category)
         <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
         <span class="skw">type</span>(category)
         <span class="skw">type</span>(Key.ENTER)
