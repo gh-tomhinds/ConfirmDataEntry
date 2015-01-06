@@ -75,31 +75,31 @@
 <span class="kw">import</span> myTools
 <span class="kw">from</span> datetime <span class="kw">import</span> date
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fSet_BillDate(pMonth):
-<span class="cmt">#---------------------------------------------------#
-</span>    logging.debug(<span class="str">'- change bill date: '</span> + str(pMonth) + <span class="str">"/27/2013"</span>)
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSet_BillDate(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- change bill date: '</span> + str(pMonth) + <span class="str">"/27/2013"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># open revise date
-</span>    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
+    <span class="cmt"># open revise date</span>
+    <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"d"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="cmt"># go to today
-</span>    <span class="skw">type</span>(<span class="str">"t"</span>)
+    <span class="cmt"># go to today</span>
+    <span class="skw">type</span>(<span class="str">"t"</span>)
 
-    <span class="cmt">#get to 01/01 of current year
-</span>    <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
+    <span class="cmt">#get to 01/01 of current year</span>
+    <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
 
-    <span class="cmt"># get to 01/01/2013
-</span>    thisYear = date.today().year
+    <span class="cmt"># get to 01/01/2013</span>
+    thisYear = date.today().year
     <span class="kw">for</span> prevYear <span class="kw">in</span> range(<span class="dig">2013</span>,thisYear):
         <span class="skw">type</span>(Key.PAGE_UP,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># get to 01/27/2013
-</span>    myTools.pressDOWN(<span class="dig">4</span>)
+    <span class="cmt"># get to 01/27/2013</span>
+    myTools.pressDOWN(<span class="dig">4</span>)
     myTools.pressLEFT(<span class="dig">2</span>)
 
     <span class="kw">for</span> nextMonth <span class="kw">in</span> range(pMonth-<span class="dig">1</span>):
@@ -109,10 +109,10 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fPrint_BillRun(pMonth):
-<span class="cmt">#---------------------------------------------------#
-</span>    logging.debug(<span class="str">'- print bill run for month: '</span> + str(pMonth))
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fPrint_BillRun(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+    logging.debug(<span class="str">'- print bill run for month: '</span> + str(pMonth))
 
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
@@ -121,15 +121,15 @@
     <span class="skw">doubleClick</span>(<img src="slip_trans_date.png" />)
     <span class="skw">wait</span>(<img src="apply_this_rule.png" />,<span class="dig">60</span>)
 
-    <span class="cmt"># choose TODAY to get to manual date entry
-</span>    logging.debug(<span class="str">'-- choose TODAY'</span>)
+    <span class="cmt"># choose TODAY to get to manual date entry</span>
+    logging.debug(<span class="str">'-- choose TODAY'</span>)
 
     <span class="skw">type</span>(Key.DOWN)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># type in dates
-</span>    logging.debug(<span class="str">'-- enter date range'</span>)
+    <span class="cmt"># type in dates</span>
+    logging.debug(<span class="str">'-- enter date range'</span>)
     myTools.pressTAB(<span class="dig">6</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"1/1/2013"</span>)
@@ -138,8 +138,8 @@
     <span class="skw">type</span>(billDate)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># print bills to PDF
-</span>    logging.debug(<span class="str">'-- print'</span>)
+    <span class="cmt"># print bills to PDF</span>
+    logging.debug(<span class="str">'-- print'</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
@@ -148,31 +148,31 @@
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># approve bills
-</span>    logging.debug(<span class="str">'-- approve'</span>)
+    <span class="cmt"># approve bills</span>
+    logging.debug(<span class="str">'-- approve'</span>)
 
-    <span class="skw">wait</span>(Pattern(<img src="approve_bills.png" />).targetOffset(-<span class="dig">124</span>,-<span class="dig">10</span>),FOREVER)
-    <span class="skw">click</span>(Pattern(<img src="approve_bills.png" />).targetOffset(-<span class="dig">116</span>,-<span class="dig">8</span>))
+    <span class="skw">wait</span>(Pattern(<img src="approve_bills-1.png" />).targetOffset(-<span class="dig">100</span>,-<span class="dig">8</span>),FOREVER)
+    <span class="skw">click</span>(Pattern(<img src="approve_bills-1.png" />).targetOffset(-<span class="dig">100</span>,-<span class="dig">8</span>))
     <span class="skw">type</span>(Key.ENTER)
     waitVanish(<img src="approving_statusbar.png" />,FOREVER)
 
-    <span class="cmt"># close report entry / don't save
-</span>    logging.debug(<span class="str">'-- close report window'</span>)
+    <span class="cmt"># close report entry / don't save</span>
+    logging.debug(<span class="str">'-- close report window'</span>)
     <span class="skw">click</span>(<img src="report_generate_bills.png" />)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fPrint_Bills(pMonth):
-<span class="cmt">#---------------------------------------------------#
-</span>
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fPrint_Bills(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
     myTools.sectionStartTimeStamp(<span class="str">"bills"</span> + str(pMonth))
     logging.debug(<span class="str">'Print_Bills: '</span> + str(pMonth))
 
-    <span class="cmt"># make sure timeslips has focus
-</span>    myTools.getFocus()
+    <span class="cmt"># make sure timeslips has focus</span>
+    myTools.getFocus()
 
     fSet_BillDate(pMonth)
     fPrint_BillRun(pMonth)

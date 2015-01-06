@@ -79,8 +79,8 @@ def fPrint_BillRun(pMonth):
     # approve bills
     logging.debug('-- approve')
     
-    wait(Pattern("approve_bills.png").targetOffset(-124,-10),FOREVER)
-    click(Pattern("approve_bills.png").targetOffset(-116,-8))
+    wait(Pattern("approve_bills-1.png").targetOffset(-100,-8),FOREVER)
+    click(Pattern("approve_bills-1.png").targetOffset(-100,-8))
     type(Key.ENTER)
     waitVanish("approving_statusbar.png",FOREVER) 
 
