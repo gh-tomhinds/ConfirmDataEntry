@@ -16,7 +16,7 @@ def fWaitFor_ConflictCheck():
     # wait until conflict results displayed
     logging.debug('-- wait for search')
     while True:
-        if exists("no_conflicts_found.png") or exists("Conflict_msg.png") or exists("search_for.png"):
+        if exists("no_conflicts_found.png") or exists("Conflict_msg.png") or exists("search_for.png") or exists("matches_field.png"):
             break
         else:
             time.sleep(2)
