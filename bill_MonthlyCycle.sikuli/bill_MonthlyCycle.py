@@ -26,6 +26,7 @@ def fRun_BillCycle(startMonth,endMonth):
         if (thisMonth == 1):
             bill_Setup.fSetup_BillReport()
             bill_ImportLayout.fImport_BillLayout("Bill with Taxes")
+            backup_Data.fBackup_BillData(0,"a") #backup before first bill
         
         bill_Print.fPrint_Bills(thisMonth)
 

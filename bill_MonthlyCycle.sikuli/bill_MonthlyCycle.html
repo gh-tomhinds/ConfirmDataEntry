@@ -98,6 +98,7 @@
         <span class="kw">if</span> (thisMonth == <span class="dig">1</span>):
             bill_Setup.fSetup_BillReport()
             bill_ImportLayout.fImport_BillLayout(<span class="str">"Bill with Taxes"</span>)
+            backup_Data.fBackup_BillData(<span class="dig">0</span>,<span class="str">"a"</span>) <span class="cmt">#backup before first bill</span>
 
         bill_Print.fPrint_Bills(thisMonth)
 
