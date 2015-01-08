@@ -47,8 +47,6 @@ def fReview_BABill(pBillName):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba review bill")
-
-    logging.debug(' ')
     logging.debug('Review_Bill: ' + pBillName)
 
     # open the file that contain bill data
