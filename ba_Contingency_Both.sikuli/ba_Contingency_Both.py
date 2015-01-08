@@ -77,10 +77,10 @@ def fContingencyBoth_Setup2():
     
 # enter details    
 
-    if int(Settings.tsVersion) > 2014:
-        myTools.pressTAB(1)
-    else:
-        myTools.pressTAB(2)
+#    if int(Settings.tsVersion) > 2014:
+#        myTools.pressTAB(1)
+#    else:
+    myTools.pressTAB(2)
     
     type(Key.DOWN)
     type(Key.ENTER)

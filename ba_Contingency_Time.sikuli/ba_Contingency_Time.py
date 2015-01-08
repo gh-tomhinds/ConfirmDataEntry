@@ -67,10 +67,11 @@ def fContingencyTime_Setup2():
 # enter details    
     type(Key.ENTER)
     time.sleep(1)
-    if int(Settings.tsVersion) > 2014:
-        myTools.pressTAB(1)
-    else:
-        myTools.pressTAB(2)
+    
+#    if int(Settings.tsVersion) > 2014:
+#        myTools.pressTAB(1)
+#    else:
+    myTools.pressTAB(2)
         
     type(Key.DOWN)
     
