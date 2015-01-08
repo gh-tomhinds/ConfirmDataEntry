@@ -11,6 +11,7 @@ def fAdjustTotalExp_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTotalExp")
+    logging.debug("ba AdjustTotalExp")
 
 # open client    
     type("i",KeyModifier.CTRL)

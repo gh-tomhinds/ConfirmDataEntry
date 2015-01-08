@@ -77,21 +77,23 @@
 <span class="kw">import</span> ba__Common
 <span class="kw">import</span> ba__ReviewBills
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> fAdjustTotalBoth_Setup():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-    myTools.sectionStartTimeStamp(<span class="str">"ba AdjustTotalBoth"</span>)
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fAdjustTotalBoth_Setup():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
 
-<span class="cmt"># open client    
-</span>    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    myTools.sectionStartTimeStamp(<span class="str">"ba AdjustTotalBoth"</span>)
+    logging.debug(<span class="str">"ba AdjustTotalBoth"</span>)
+
+
+<span class="cmt"># open client    </span>
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"BA-AdjTot-Both"</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># get to arrangement field for both
-</span>    ba__Common.fMoveto_BAPage()
+<span class="cmt"># get to arrangement field for both</span>
+    ba__Common.fMoveto_BAPage()
     myTools.pressTAB(<span class="dig">3</span>)
 
     <span class="skw">type</span>(Key.RIGHT)
@@ -101,11 +103,11 @@
     <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2014</span>:
         <span class="skw">type</span>(Key.TAB)
 
-<span class="cmt"># switch to adjust total charges    
-</span>    <span class="skw">type</span>(Key.HOME)
+<span class="cmt"># switch to adjust total charges    </span>
+    <span class="skw">type</span>(Key.HOME)
 
-<span class="cmt"># enter details    
-</span>    <span class="skw">type</span>(Key.TAB)
+<span class="cmt"># enter details    </span>
+    <span class="skw">type</span>(Key.TAB)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.ALT)
@@ -120,8 +122,8 @@
         <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"Adjust Total Charges - Both"</span>)
 
-<span class="cmt"># save and close    
-</span>    <span class="skw">type</span>(Key.TAB)
+<span class="cmt"># save and close    </span>
+    <span class="skw">type</span>(Key.TAB)
     <span class="skw">type</span>(Key.SPACE)
     myTools.pressTAB(<span class="dig">4</span>)
     <span class="skw">type</span>(Key.SPACE)
@@ -133,20 +135,20 @@
 
     myTools.sectionEndTimeStamp()
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span><span class="kw">def</span> fAdjustTotal_Both():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #
-</span>
-    <span class="cmt"># create a new client    
-</span>    client_Create.fCreate_Client(<span class="str">"BA-AdjTot-Both"</span>,<span class="str">"BA-AdjTot-Both"</span>,<span class="str">"Adjust Total - Both"</span>,<span class="str">"Adjust Total - Both"</span>,<span class="str">"Adjust Total - Both"</span>)
-    <span class="cmt"># create some slips
-</span>    ba__Common.fCreate_BASlips(<span class="str">"BA-AdjTot-Both"</span>)
-    <span class="cmt"># set up billing arrangement
-</span>    fAdjustTotalBoth_Setup()
-    <span class="cmt"># print a bill to text
-</span>    ba__Common.fPrint_BABill(<span class="str">"BA-AdjTot-Both"</span>,<span class="dig">1</span>)
-    <span class="cmt"># compare at bill values
-</span>    ba__ReviewBills.fReview_BABill(<span class="str">"BA-AdjTot-Both1"</span>)
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="kw">def</span> fAdjustTotal_Both():
+<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+
+    <span class="cmt"># create a new client    </span>
+    client_Create.fCreate_Client(<span class="str">"BA-AdjTot-Both"</span>,<span class="str">"BA-AdjTot-Both"</span>,<span class="str">"Adjust Total - Both"</span>,<span class="str">"Adjust Total - Both"</span>,<span class="str">"Adjust Total - Both"</span>)
+    <span class="cmt"># create some slips</span>
+    ba__Common.fCreate_BASlips(<span class="str">"BA-AdjTot-Both"</span>)
+    <span class="cmt"># set up billing arrangement</span>
+    fAdjustTotalBoth_Setup()
+    <span class="cmt"># print a bill to text</span>
+    ba__Common.fPrint_BABill(<span class="str">"BA-AdjTot-Both"</span>,<span class="dig">1</span>)
+    <span class="cmt"># compare at bill values</span>
+    ba__ReviewBills.fReview_BABill(<span class="str">"BA-AdjTot-Both1"</span>)
 </pre>
 </body>
 </html>

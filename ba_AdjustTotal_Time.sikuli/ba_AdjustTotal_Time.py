@@ -10,6 +10,7 @@ def fAdjustTotalTime_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTotalTime")
+    logging.debug("ba AdjustTotalTime")
 
 # open client    
     type("i",KeyModifier.CTRL)

@@ -10,6 +10,8 @@ def fAdjustTotalBoth_Setup():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
     myTools.sectionStartTimeStamp("ba AdjustTotalBoth")
+    logging.debug("ba AdjustTotalBoth")
+
 
 # open client    
     type("i",KeyModifier.CTRL)
