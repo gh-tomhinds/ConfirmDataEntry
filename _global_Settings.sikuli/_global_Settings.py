@@ -101,7 +101,7 @@ def fSetup_Envirnoment():
 
 # get TS version
     Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
-    time.sleep(1)
+    time.sleep(2)
 
     fSetup_AppFolders()
     fSetup_AppFiles()
