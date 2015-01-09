@@ -76,6 +76,7 @@
 <span class="kw">import</span> datetime
 <span class="kw">import</span> myTools
 <span class="kw">import</span> backup_Data
+<span class="kw">from</span> bill_Print <span class="kw">import</span> fSet_BillDate
 
 <span class="kw">import</span> ba_AdjustTotal_Time
 <span class="kw">import</span> ba_AdjustTotal_Exp
@@ -144,6 +145,9 @@
 
     <span class="cmt"># make sure timeslips has focus</span>
     myTools.getFocus()
+
+    <span class="cmt"># set billing data to 12/27 for ba bills</span>
+    fSet_BillDate(<span class="dig">12</span>)
 
     fLogHeader()
 

@@ -4,6 +4,7 @@ import ba__Common
 import datetime
 import myTools
 import backup_Data
+from bill_Print import fSet_BillDate
 
 import ba_AdjustTotal_Time
 import ba_AdjustTotal_Exp
@@ -72,6 +73,9 @@ def fReview_Arrangements():
     
     # make sure timeslips has focus
     myTools.getFocus()
+    
+    # set billing data to 12/27 for ba bills
+    fSet_BillDate(12)
 
     fLogHeader()
 
