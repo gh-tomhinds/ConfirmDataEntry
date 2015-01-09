@@ -108,12 +108,13 @@ def fCreate_BASlips(pBAClient):
     type("m",KeyModifier.CTRL)
     time.sleep(1)
 
+    # create some time slips
     slips_Create.Create_OneSlip("t","TomH","con001",pBAClient,1)
     slips_Create.Create_OneSlip("t","CoreyM","gen004",pBAClient,2)
     slips_Create.Create_OneSlip("t","SamS","gen005",pBAClient,3)
     slips_Create.Create_OneSlip("t","ShawnR","lnd010",pBAClient,4)
 
-# create some expense slips
+    # create some expense slips
     slips_Create.Create_OneSlip("e","ShawnR","e004",pBAClient,5)
     slips_Create.Create_OneSlip("e","SamS","e005",pBAClient,6)
     slips_Create.Create_OneSlip("e","CoreyM","e006",pBAClient,7)

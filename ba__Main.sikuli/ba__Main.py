@@ -1,9 +1,12 @@
 from sikuli import *
+import os
 import logging
-import ba__Common
 import datetime
+
 import myTools
 import backup_Data
+
+import ba__Common
 from bill_Print import fSet_BillDate
 
 import ba_AdjustTotal_Time
@@ -49,35 +52,47 @@ import ba_SlipsRoundMin
 import ba_SlipsRoundDol
 import ba_Precision
 
+import ba_Replacement_TimeA
+
 import reports_PostBill
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def fLogHeader():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    if os.path.isfile(Settings.BALogFile):
-        outFile = Settings.repFolder + "\\!BA-Log.txt"
-        billLog = open(outFile, "a")
-        billLog.write("\n")
-        billLog.write("==================================================\n")
-        baTime = datetime.datetime.now()
-        billLog.write(baTime.strftime("Started: %Y-%m-%d %H:%M:%S\n"))
-        billLog.write("==================================================\n")
+    logging.debug("ba log file header: " + Settings.BALogFile)
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+    outFile = Settings.BALogFile
+    billLog = open(outFile, "a")
+    
+    billLog.write("\n")
+    billLog.write("==================================================\n")
+    baTime = datetime.datetime.now()
+    billLog.write(baTime.strftime("Started: %Y-%m-%d %H:%M:%S\n"))
+    billLog.write("==================================================\n")
+
+    billLog.close()
+
+#===================================================#
 def fReview_Arrangements():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#===================================================#
 
     logging.debug(' ')
     logging.debug('Review_Arrangements')
-    
+
+    fLogHeader()
+
     # make sure timeslips has focus
     myTools.getFocus()
     
     # set billing data to 12/27 for ba bills
     fSet_BillDate(12)
 
-    fLogHeader()
+    ba_Replacement_TimeA.fReplaceTimeA()
+
+#===================================================#
+def fxxx():
+#===================================================#
 
     ba_AdjustTotal_Time.fAdjustTotal_Time()
     ba_AdjustTotal_Exp.fAdjustTotal_Exp()

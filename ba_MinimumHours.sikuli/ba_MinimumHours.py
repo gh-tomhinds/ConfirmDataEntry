@@ -5,9 +5,9 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#===================================================#
 def fMinimumHours_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#===================================================#
 
     myTools.sectionStartTimeStamp("ba MinHours")
     logging.debug("ba MinHours")
@@ -49,9 +49,9 @@ def fMinimumHours_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#===================================================#
 def fMinimumHours():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#===================================================#
 
     # create a new client    
     client_Create.fCreate_Client("BA-MinimumHours","BA-MinimumHours","Minimum Hours FF","Minimum Hours FF","Minimum Hours FF")

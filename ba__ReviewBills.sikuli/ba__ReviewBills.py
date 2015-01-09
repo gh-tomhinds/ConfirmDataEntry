@@ -27,7 +27,7 @@ def fCompare_Results(pBillName,pValueType,pSavedValue,pBillValue):
 
     logging.debug("- Compare_Results: " + pBillName + ": " + pValueType)
 
-    outFile = Settings.repFolder + "\\BA-Log.txt"
+    outFile = Settings.BALogFile
     billLog = open(outFile, "a")
 
     print(pSavedValue)
@@ -96,7 +96,7 @@ def fReview_BABill(pBillName):
         billTotalValue = fGet_BillValues("Total",billLines,totalText)
 
         # open log file
-        outFile = Settings.repFolder + "\\BA-Log.txt"
+        outFile = Settings.BALogFile
         billLog = open(outFile, "a")
         
         # print results      

@@ -71,11 +71,14 @@
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="kw">import</span> os
 <span class="kw">import</span> logging
-<span class="kw">import</span> ba__Common
 <span class="kw">import</span> datetime
+
 <span class="kw">import</span> myTools
 <span class="kw">import</span> backup_Data
+
+<span class="kw">import</span> ba__Common
 <span class="kw">from</span> bill_Print <span class="kw">import</span> fSet_BillDate
 
 <span class="kw">import</span> ba_AdjustTotal_Time
@@ -121,27 +124,35 @@
 <span class="kw">import</span> ba_SlipsRoundDol
 <span class="kw">import</span> ba_Precision
 
+<span class="kw">import</span> ba_Replacement_TimeA
+
 <span class="kw">import</span> reports_PostBill
 
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
 <span class="kw">def</span> fLogHeader():
 <span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
 
-    <span class="kw">if</span> os.path.isfile(Settings.BALogFile):
-        outFile = Settings.repFolder + <span class="str">"\\!BA-Log.txt"</span>
-        billLog = open(outFile, <span class="str">"a"</span>)
-        billLog.write(<span class="str">"\n"</span>)
-        billLog.write(<span class="str">"==================================================\n"</span>)
-        baTime = datetime.datetime.now()
-        billLog.write(baTime.strftime(<span class="str">"Started: %Y-%m-%d %H:%M:%S\n"</span>))
-        billLog.write(<span class="str">"==================================================\n"</span>)
+    logging.debug(<span class="str">"ba log file header: "</span> + Settings.BALogFile)
 
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+    outFile = Settings.BALogFile
+    billLog = open(outFile, <span class="str">"a"</span>)
+
+    billLog.write(<span class="str">"\n"</span>)
+    billLog.write(<span class="str">"==================================================\n"</span>)
+    baTime = datetime.datetime.now()
+    billLog.write(baTime.strftime(<span class="str">"Started: %Y-%m-%d %H:%M:%S\n"</span>))
+    billLog.write(<span class="str">"==================================================\n"</span>)
+
+    billLog.close()
+
+<span class="cmt">#===================================================#</span>
 <span class="kw">def</span> fReview_Arrangements():
-<span class="cmt"># - - - - - - - - - - - - - - - - - - - - - - - - - #</span>
+<span class="cmt">#===================================================#</span>
 
     logging.debug(<span class="str">' '</span>)
     logging.debug(<span class="str">'Review_Arrangements'</span>)
+
+    fLogHeader()
 
     <span class="cmt"># make sure timeslips has focus</span>
     myTools.getFocus()
@@ -149,7 +160,11 @@
     <span class="cmt"># set billing data to 12/27 for ba bills</span>
     fSet_BillDate(<span class="dig">12</span>)
 
-    fLogHeader()
+    ba_Replacement_TimeA.fReplaceTimeA()
+
+<span class="cmt">#===================================================#</span>
+<span class="kw">def</span> fxxx():
+<span class="cmt">#===================================================#</span>
 
     ba_AdjustTotal_Time.fAdjustTotal_Time()
     ba_AdjustTotal_Exp.fAdjustTotal_Exp()

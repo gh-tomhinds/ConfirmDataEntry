@@ -99,7 +99,7 @@
 
     logging.debug(<span class="str">"- Compare_Results: "</span> + pBillName + <span class="str">": "</span> + pValueType)
 
-    outFile = Settings.repFolder + <span class="str">"\\BA-Log.txt"</span>
+    outFile = Settings.BALogFile
     billLog = open(outFile, <span class="str">"a"</span>)
 
     <span class="kw">print</span>(pSavedValue)
@@ -168,7 +168,7 @@
         billTotalValue = fGet_BillValues(<span class="str">"Total"</span>,billLines,totalText)
 
         <span class="cmt"># open log file</span>
-        outFile = Settings.repFolder + <span class="str">"\\BA-Log.txt"</span>
+        outFile = Settings.BALogFile
         billLog = open(outFile, <span class="str">"a"</span>)
 
         <span class="cmt"># print results      </span>
