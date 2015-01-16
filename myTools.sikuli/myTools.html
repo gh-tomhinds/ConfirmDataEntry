@@ -164,9 +164,56 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterSlipFilter(pMonth,pBillOrReport):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- enterSlipFilter: '</span> + str(pMonth) + <span class="str">' '</span> + pBillOrReport)
+
+    <span class="skw">wait</span>(<img src="slip_trans_date.png" />,<span class="dig">60</span>)
+    <span class="skw">doubleClick</span>(<img src="slip_trans_date.png" />)
+    <span class="skw">wait</span>(<img src="apply_this_rule.png" />,<span class="dig">60</span>)
+
+    <span class="cmt"># choose TODAY to get to manual date entry</span>
+    logging.debug(<span class="str">'-- choose TODAY'</span>)
+
+    <span class="skw">type</span>(Key.DOWN)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># type in dates</span>
+    logging.debug(<span class="str">'-- enter date range'</span>)
+
+    <span class="kw">if</span> pBillOrReport == <span class="str">"report"</span>:
+        pressTAB(<span class="dig">7</span>)
+    <span class="kw">else</span>:
+        pressTAB(<span class="dig">6</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"1/1/2013"</span>)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        reportDate = <span class="str">"12/31/2013"</span>
+    <span class="kw">else</span>:
+        reportDate = str(pMonth) + <span class="str">"/27/2013"</span>
+
+    <span class="skw">type</span>(reportDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> waitForReport():
 <span class="cmt">#---------------------------------------------------#</span>
+
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="replace_it.png" />):
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="recalc_msg.png" />):
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     <span class="cmt">#wait for "calculating" box to disappear</span>
     <span class="kw">while</span> exists(<img src="completed.png" />):
         time.<span class="skw">sleep</span>(<span class="dig">2</span>)

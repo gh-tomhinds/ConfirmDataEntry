@@ -92,9 +92,56 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 #---------------------------------------------------#
+def enterSlipFilter(pMonth,pBillOrReport):
+#---------------------------------------------------#
+
+    logging.debug('- enterSlipFilter: ' + str(pMonth) + ' ' + pBillOrReport)
+
+    wait("slip_trans_date.png",60)
+    doubleClick("slip_trans_date.png")
+    wait("apply_this_rule.png",60)
+
+    # choose TODAY to get to manual date entry
+    logging.debug('-- choose TODAY')
+    
+    type(Key.DOWN)
+    type(Key.ENTER)
+    time.sleep(1)
+
+    # type in dates
+    logging.debug('-- enter date range')
+    
+    if pBillOrReport == "report":       
+        pressTAB(7)
+    else:
+        pressTAB(6)
+
+    time.sleep(1)
+    type("1/1/2013")
+    type(Key.TAB)
+    
+    if pMonth > 12:
+        reportDate = "12/31/2013"
+    else:
+        reportDate = str(pMonth) + "/27/2013"
+        
+    type(reportDate)
+    time.sleep(1)
+
+#---------------------------------------------------#
 def waitForReport():
 #---------------------------------------------------#
-    time.sleep(1)    
+
+    time.sleep(1)
+
+    if exists("replace_it.png"):
+        type(Key.ENTER)
+        time.sleep(1)        
+
+    if exists("recalc_msg.png"):
+        type(Key.ENTER)
+        time.sleep(1)        
+
     #wait for "calculating" box to disappear
     while exists("completed.png"):
         time.sleep(2)
