@@ -9,7 +9,11 @@ import report_Hold
 import report_Taxes
 import report_TOWorksheet
 import report_FeeAlloc
+import report_PayDistr
 import report_Budgets
+import report_ProdPeriod
+import report_ProfPeriod
+import report_SlipSummary
 
 #---------------------------------------------------#
 def fPrint_PostbillReports(pMonth,pAorB):
@@ -29,9 +33,14 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_Budgets.printCliBudget(pMonth,repExt)
     report_Budgets.printTkBudget(pMonth,repExt)
     report_Budgets.printFirmBudget(pMonth,repExt)
+    report_ProdPeriod.print_ProdPeriod(pMonth,repExt)
+    report_ProfPeriod.print_ProfPeriod(pMonth,repExt)
+    report_SlipSummary.print_SlipSummary(pMonth,repExt)    
     
     if (pMonth == 1) and (pAorB == "a"):        
         # fee allocation cannot be run without some payments entered
         logging.debug('SKIP FEE ALLOCATION REPORT')
+        logging.debug('SKIP PAYMENT DISTR REPORT')        
     else:
         report_FeeAlloc.Print_FeeAlloc(pMonth,repExt)
+        report_PayDistr.Print_PayDistr(pMonth,repExt)

@@ -81,7 +81,11 @@
 <span class="kw">import</span> report_Taxes
 <span class="kw">import</span> report_TOWorksheet
 <span class="kw">import</span> report_FeeAlloc
+<span class="kw">import</span> report_PayDistr
 <span class="kw">import</span> report_Budgets
+<span class="kw">import</span> report_ProdPeriod
+<span class="kw">import</span> report_ProfPeriod
+<span class="kw">import</span> report_SlipSummary
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fPrint_PostbillReports(pMonth,pAorB):
@@ -101,12 +105,17 @@
     report_Budgets.printCliBudget(pMonth,repExt)
     report_Budgets.printTkBudget(pMonth,repExt)
     report_Budgets.printFirmBudget(pMonth,repExt)
+    report_ProdPeriod.print_ProdPeriod(pMonth,repExt)
+    report_ProfPeriod.print_ProfPeriod(pMonth,repExt)
+    report_SlipSummary.print_SlipSummary(pMonth,repExt)
 
     <span class="kw">if</span> (pMonth == <span class="dig">1</span>) <span class="kw">and</span> (pAorB == <span class="str">"a"</span>):
         <span class="cmt"># fee allocation cannot be run without some payments entered</span>
         logging.debug(<span class="str">'SKIP FEE ALLOCATION REPORT'</span>)
+        logging.debug(<span class="str">'SKIP PAYMENT DISTR REPORT'</span>)
     <span class="kw">else</span>:
         report_FeeAlloc.Print_FeeAlloc(pMonth,repExt)
+        report_PayDistr.Print_PayDistr(pMonth,repExt)
 </pre>
 </body>
 </html>
