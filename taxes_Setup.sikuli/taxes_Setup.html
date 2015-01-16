@@ -109,7 +109,7 @@
 
     fCreate_TimeOnly_RateRule()
     fCreate_ExpenseOnly_RateRule()
-    fCreate_Compound_RateRules()
+<span class="cmt">#    fCreate_Compound_RateRules()</span>
 <span class="cmt">#    fCreate_Minimum_RateRule()</span>
 <span class="cmt">#    fCreate_Maximum_RateRule()</span>
 
@@ -321,12 +321,14 @@
     <span class="cmt"># Time rule    </span>
     myTools.pressTAB(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"t"</span>)
+
     <span class="cmt"># Expense rule</span>
     myTools.pressTAB(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"e"</span>)
-    <span class="cmt"># Compound rule</span>
-    myTools.pressTAB(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"com"</span>)
+
+<span class="cmt">#    # Compound rule</span>
+<span class="cmt">#    myTools.pressTAB(1)</span>
+<span class="cmt">#    type("com")</span>
 
 <span class="cmt">#    # Minimum rule    </span>
 <span class="cmt">#    myTools.pressTAB(1)</span>

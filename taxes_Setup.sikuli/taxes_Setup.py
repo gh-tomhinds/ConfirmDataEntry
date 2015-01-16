@@ -37,7 +37,7 @@ def fCreate_RateRules():
 
     fCreate_TimeOnly_RateRule()
     fCreate_ExpenseOnly_RateRule()
-    fCreate_Compound_RateRules()
+#    fCreate_Compound_RateRules()
 #    fCreate_Minimum_RateRule()
 #    fCreate_Maximum_RateRule()
 
@@ -249,12 +249,14 @@ def fCreate_TaxProfile():
     # Time rule    
     myTools.pressTAB(1)
     type("t")
+    
     # Expense rule
     myTools.pressTAB(1)
     type("e")
-    # Compound rule
-    myTools.pressTAB(1)
-    type("com")
+    
+#    # Compound rule
+#    myTools.pressTAB(1)
+#    type("com")
     
 #    # Minimum rule    
 #    myTools.pressTAB(1)
