@@ -32,6 +32,8 @@ def fCreate_OneFinanceCharge(pClient,pCliNum,pMonth,pAmount):
 
     # set "next bill"
     type("ne")
+    time.sleep(1)
+    
     myTools.pressTAB(1)
     time.sleep(1)
 
@@ -45,6 +47,7 @@ def fCreate_OneFinanceCharge(pClient,pCliNum,pMonth,pAmount):
     time.sleep(1)
     financeText = "Finance charge for: " + pClient + ": Month: " + str(pMonth)
     paste(financeText)
+    time.sleep(1)
 
     # save
     type("s",KeyModifier.CTRL)

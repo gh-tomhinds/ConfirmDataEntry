@@ -104,6 +104,8 @@
 
     <span class="cmt"># set "next bill"</span>
     <span class="skw">type</span>(<span class="str">"ne"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
     myTools.pressTAB(<span class="dig">1</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
@@ -117,6 +119,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     financeText = <span class="str">"Finance charge for: "</span> + pClient + <span class="str">": Month: "</span> + str(pMonth)
     paste(financeText)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># save</span>
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
