@@ -117,26 +117,7 @@
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="skw">wait</span>(<img src="slip_trans_date.png" />,<span class="dig">60</span>)
-    <span class="skw">doubleClick</span>(<img src="slip_trans_date.png" />)
-    <span class="skw">wait</span>(<img src="apply_this_rule.png" />,<span class="dig">60</span>)
-
-    <span class="cmt"># choose TODAY to get to manual date entry</span>
-    logging.debug(<span class="str">'-- choose TODAY'</span>)
-
-    <span class="skw">type</span>(Key.DOWN)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-
-    <span class="cmt"># type in dates</span>
-    logging.debug(<span class="str">'-- enter date range'</span>)
-    myTools.pressTAB(<span class="dig">6</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"1/1/2013"</span>)
-    <span class="skw">type</span>(Key.TAB)
-    billDate = str(pMonth) + <span class="str">"/27/2013"</span>
-    <span class="skw">type</span>(billDate)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    myTools.enterSlipFilter(pMonth,<span class="str">"bill"</span>)
 
     <span class="cmt"># print bills to PDF</span>
     logging.debug(<span class="str">'-- print'</span>)
