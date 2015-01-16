@@ -56,9 +56,6 @@ def Print_Hold(pReportMonth,pRepExt):
     time.sleep(1)
     type(Key.ENTER)    
 
-    if exists("replace_it.png"):
-        type(Key.ENTER)  
-
     # wait for report to complete
     myTools.waitForReport()
 

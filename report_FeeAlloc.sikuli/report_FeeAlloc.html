@@ -132,9 +132,6 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-    <span class="kw">if</span> exists(<img src="replace_it.png" />):
-        <span class="skw">type</span>(Key.ENTER)
-
     <span class="cmt"># wait for report to complete</span>
     myTools.waitForReport()
 
@@ -144,8 +141,7 @@
     <span class="cmt"># close the report</span>
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="kw">if</span> exists(<img src="preferences_msg.png" />):
-        <span class="skw">type</span>(<span class="str">"n"</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
 
     myTools.sectionEndTimeStamp()

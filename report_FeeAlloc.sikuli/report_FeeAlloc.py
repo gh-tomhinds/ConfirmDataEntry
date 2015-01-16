@@ -60,9 +60,6 @@ def Print_FeeAlloc(pReportMonth,pRepExt):
     time.sleep(1)
     type(Key.ENTER)    
 
-    if exists("replace_it.png"):
-        type(Key.ENTER)
-
     # wait for report to complete
     myTools.waitForReport()
 
@@ -72,8 +69,7 @@ def Print_FeeAlloc(pReportMonth,pRepExt):
     # close the report
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)            
-    if exists("preferences_msg.png"):
-        type("n")
+    type("n")
     type(Key.F4,KeyModifier.CTRL)
         
     myTools.sectionEndTimeStamp()
