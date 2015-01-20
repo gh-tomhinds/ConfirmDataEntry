@@ -73,6 +73,7 @@
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
 <span class="kw">import</span> datetime
 <span class="kw">import</span> logging
+<span class="kw">import</span> shutil
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> setupLog():
@@ -189,15 +190,17 @@
         pressTAB(<span class="dig">6</span>)
 
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(<span class="str">"1/1/2013"</span>)
+
+    startDate = <span class="str">"1/1/"</span> + Settings.dataYear
+    <span class="skw">type</span>(startDate)
     <span class="skw">type</span>(Key.TAB)
 
     <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
-        reportDate = <span class="str">"12/31/2013"</span>
+        endDate = <span class="str">"12/31/"</span> + Settings.dataYear
     <span class="kw">else</span>:
-        reportDate = str(pMonth) + <span class="str">"/27/2013"</span>
+        endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
 
-    <span class="skw">type</span>(reportDate)
+    <span class="skw">type</span>(endDate)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
@@ -240,6 +243,20 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> startTSImport():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- start TSImport'</span>)
+    <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.KEY_WIN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Settings.tsimpEXE)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+    <span class="skw">wait</span>(<img src="tsimport_menubar.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">4</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> doNotSaveReport():
 <span class="cmt">#---------------------------------------------------#</span>
 
@@ -258,15 +275,21 @@
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> padZero(pNumber):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    padNumber = str(pNumber)
+
+    <span class="kw">if</span> pNumber &lt; <span class="dig">10</span>:
+        padNumber = <span class="str">"0"</span> + padNumber
+
+    <span class="kw">return</span>(padNumber)
+
+<span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> monthToName(aMonth,aName,anExt):
 <span class="cmt">#---------------------------------------------------#</span>
 
-    <span class="cmt"># make month number a string</span>
-    fileName = str(aMonth)
-
-    <span class="cmt"># if month is under 10, prefix with 0        </span>
-    <span class="kw">if</span> aMonth &lt; <span class="dig">10</span>:
-        fileName = <span class="str">"0"</span> + fileName
+    fileName = padZero(aMonth)
 
     <span class="cmt"># prefix the version</span>
     fileName = Settings.tsVersion + aName + fileName + anExt
@@ -326,6 +349,32 @@
 
     durationLog.write(Settings.sectionName + <span class="str">","</span> + str(totalMinutes) + <span class="str">"\n"</span>)
     durationLog.close()
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> getScreenshot():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'Get screenshot'</span>)
+
+    wholeScreen = getBounds()
+    ssIn = <span class="skw">capture</span>(wholeScreen)
+    logging.debug(<span class="str">'- old path: '</span> + ssIn)
+
+    ssTime = datetime.datetime.now()
+    <span class="cmt"># add date to screenshot name</span>
+    ssOut = padZero(ssTime.year) + <span class="str">"-"</span> + padZero(ssTime.month) + <span class="str">"-"</span> + padZero(ssTime.day)
+    <span class="cmt"># add time to screenshot name</span>
+    ssOut = ssOut + <span class="str">"-"</span> + padZero(ssTime.hour) + padZero(ssTime.minute) + padZero(ssTime.second)
+    <span class="cmt"># add extension to screenshot name</span>
+    ssOut = ssOut + <img src=".png" />
+    <span class="cmt"># add path</span>
+    ssOut = Settings.sikFolder + <span class="str">"\\"</span> + ssOut
+    logging.debug(<span class="str">'- new path: '</span> + ssOut)
+
+    <span class="kw">print</span>(ssOut)
+
+    shutil.move(ssIn,ssOut)
 </pre>
 </body>
 </html>

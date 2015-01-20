@@ -26,7 +26,7 @@ def fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)
         
     # date
-    tranDate = str(pMonth) + "/28/2013"
+    tranDate = str(pMonth) + "/28/" + Settings.dataYear
     type(tranDate)
     time.sleep(1)
     type(Key.TAB)       

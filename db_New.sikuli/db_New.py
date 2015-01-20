@@ -1,7 +1,8 @@
 from sikuli import *
+import shutil
 import logging
 import myTools
-import shutil
+import backup_Data
 
 #---------------------------------------------------#
 def fDelete_DataFolder():
@@ -125,7 +126,7 @@ def fStartTS_CreateNewDB():
     type(Key.ENTER)
 
 # Firm name
-    type("Timeslips Handyman Services")
+    type("TS Handyman Services " + Settings.dataYear)
     type(Key.ENTER)    
     logging.debug('- db settings')
 
@@ -216,6 +217,7 @@ def fStartTS_CreateNewDB():
 
     fCheckFor_BillingDate()
     fCheckFor_SPS()
-    fCheckFor_PEP()
-
+    fCheckFor_PEP()  
+    
     myTools.sectionEndTimeStamp()
+    backup_Data.fBackup_Checkpoint("new")

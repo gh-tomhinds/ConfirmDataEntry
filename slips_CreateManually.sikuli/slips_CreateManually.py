@@ -82,7 +82,8 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     # start date for the first slip is 1/1/2013
     type(Key.TAB)
     if slipnum == 1:
-        type("1/1/2013")
+        slipDate = "1/1/" + Settings.dataYear
+        type(slipDate)
         
     # increment the date every 8th slip.
     elif (slipnum - 1) % 8 == 0:

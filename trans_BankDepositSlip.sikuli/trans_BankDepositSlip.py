@@ -33,7 +33,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
     type(Key.TAB)
         
     # date
-    pay_date = str(pay_month) + "/28/2013"
+    pay_date = str(pay_month) + "/28/" + Settings.dataYear
     type(pay_date)
     time.sleep(1)
     type(Key.TAB)
@@ -84,7 +84,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     type(Key.TAB)   
 
     # date
-    pta_date = str(pta_month) + "/28/2013"
+    pta_date = str(pta_month) + "/28/" + Settings.dataYear
     type(pta_date)
     time.sleep(1)
     type(Key.TAB)
@@ -139,7 +139,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     type(Key.TAB)   
 
     # date
-    dep_date = str(dep_month) + "/28/2013"
+    dep_date = str(dep_month) + "/28/" + Settings.dataYear
     type(dep_date)
     time.sleep(1)
     type(Key.TAB)
@@ -196,7 +196,7 @@ def fBankDepositSlip_CreateOne(bds_month):
     type(Key.TAB)
 
     # date
-    bds_date = str(bds_month) + "/28/2013"
+    bds_date = str(bds_month) + "/28/" + Settings.dataYear
     type(bds_date)
     time.sleep(1)
     type(Key.TAB)

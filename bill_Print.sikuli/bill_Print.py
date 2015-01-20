@@ -6,7 +6,7 @@ from datetime import date
 #---------------------------------------------------#
 def fSet_BillDate(pMonth):
 #---------------------------------------------------#
-    logging.debug('- change bill date: ' + str(pMonth) + "/27/2013")
+    logging.debug('- change bill date: ' + str(pMonth) + "/27/" + Settings.dataYear)
     time.sleep(1)
     
     # open revise date
@@ -20,13 +20,13 @@ def fSet_BillDate(pMonth):
     #get to 01/01 of current year
     type(Key.HOME,KeyModifier.CTRL)        
 
-    # get to 01/01/2013
+    # get to 01/01 of the data year
     thisYear = date.today().year
-    for prevYear in range(2013,thisYear):
+    for prevYear in range(int(Settings.dataYear),thisYear):
         type(Key.PAGE_UP,KeyModifier.CTRL)        
     time.sleep(1)
 
-    # get to 01/27/2013
+    # get to 01/27 of the data year
     myTools.pressDOWN(4)
     myTools.pressLEFT(2)        
 

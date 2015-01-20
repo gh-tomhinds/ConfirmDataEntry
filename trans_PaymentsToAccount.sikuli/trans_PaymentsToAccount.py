@@ -29,7 +29,7 @@ def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)
 
     # date
-    payDate = str(pMonth) + "/28/2013"
+    payDate = str(pMonth) + "/28/" + Settings.dataYear
     type(payDate)
     type(Key.TAB)
         

@@ -1,6 +1,7 @@
 from sikuli import *
 import datetime
 import logging
+import shutil
 
 #---------------------------------------------------#
 def setupLog():
@@ -117,15 +118,17 @@ def enterSlipFilter(pMonth,pBillOrReport):
         pressTAB(6)
 
     time.sleep(1)
-    type("1/1/2013")
+
+    startDate = "1/1/" + Settings.dataYear
+    type(startDate)
     type(Key.TAB)
     
     if pMonth > 12:
-        reportDate = "12/31/2013"
+        endDate = "12/31/" + Settings.dataYear
     else:
-        reportDate = str(pMonth) + "/27/2013"
+        endDate = str(pMonth) + "/27/" + Settings.dataYear
         
-    type(reportDate)
+    type(endDate)
     time.sleep(1)
 
 #---------------------------------------------------#
@@ -168,6 +171,20 @@ def waitForFundsList():
     time.sleep(1)
 
 #---------------------------------------------------#
+def startTSImport():
+#---------------------------------------------------#
+
+    logging.debug('- start TSImport')
+    type("r",KeyModifier.KEY_WIN)
+    time.sleep(1)
+    type(Settings.tsimpEXE)
+    type(Key.ENTER)
+    time.sleep(2)
+
+    wait("tsimport_menubar.png",FOREVER)
+    time.sleep(4)
+
+#---------------------------------------------------#
 def doNotSaveReport():
 #---------------------------------------------------#
         
@@ -186,15 +203,21 @@ def checkForUnappliedAmount():
         time.sleep(1)
 
 #---------------------------------------------------#
+def padZero(pNumber):
+#---------------------------------------------------#
+
+    padNumber = str(pNumber)
+    
+    if pNumber < 10:
+        padNumber = "0" + padNumber
+
+    return(padNumber)
+
+#---------------------------------------------------#
 def monthToName(aMonth,aName,anExt):
 #---------------------------------------------------#
 
-    # make month number a string
-    fileName = str(aMonth)
-
-    # if month is under 10, prefix with 0        
-    if aMonth < 10:
-        fileName = "0" + fileName
+    fileName = padZero(aMonth)
 
     # prefix the version
     fileName = Settings.tsVersion + aName + fileName + anExt    
@@ -254,3 +277,29 @@ def sectionEndTimeStamp():
 
     durationLog.write(Settings.sectionName + "," + str(totalMinutes) + "\n")
     durationLog.close()
+
+#---------------------------------------------------#
+def getScreenshot():
+#---------------------------------------------------#
+
+    logging.debug(' ')
+    logging.debug('Get screenshot')
+
+    wholeScreen = getBounds()
+    ssIn = capture(wholeScreen)
+    logging.debug('- old path: ' + ssIn)
+
+    ssTime = datetime.datetime.now()    
+    # add date to screenshot name
+    ssOut = padZero(ssTime.year) + "-" + padZero(ssTime.month) + "-" + padZero(ssTime.day)
+    # add time to screenshot name
+    ssOut = ssOut + "-" + padZero(ssTime.hour) + padZero(ssTime.minute) + padZero(ssTime.second)
+    # add extension to screenshot name
+    ssOut = ssOut + ".png"
+    # add path
+    ssOut = Settings.sikFolder + "\\" + ssOut
+    logging.debug('- new path: ' + ssOut)
+
+    print(ssOut)
+
+    shutil.move(ssIn,ssOut)    

@@ -95,7 +95,7 @@ def fCreate_SpecCredits(pMonth):
     type(Key.TAB)
         
     # date
-    tranDate = str(pMonth) + "/28/2013"
+    tranDate = str(pMonth) + "/28/" + Settings.dataYear
     type(tranDate)
     time.sleep(1)
     type(Key.TAB)       

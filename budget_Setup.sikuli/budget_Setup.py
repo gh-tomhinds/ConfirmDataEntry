@@ -16,12 +16,12 @@ def fBudgetDetails(pStartMonth,pEndMonth,pDay):
     if pStartMonth < 13:        
 
         # start date
-        startDate = str(pStartMonth) + "/1/13"
+        startDate = str(pStartMonth) + "/1/" + Settings.dataYear
         type(startDate)
         myTools.pressTAB(1)
 
         # end date
-        endDate = str(pEndMonth) + "/" + str(pDay) + "/13"
+        endDate = str(pEndMonth) + "/" + str(pDay) + "/" + Settings.dataYear
         type(endDate)
         myTools.pressTAB(1)
         time.sleep(1)    

@@ -24,7 +24,7 @@ def fCreate_OneCredit(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)
         
     # date
-    credDate = str(pMonth) + "/28/2013"
+    credDate = str(pMonth) + "/28/" + Settings.dataYear
     type(credDate)
     time.sleep(1)
     type(Key.TAB)       

@@ -88,12 +88,12 @@
     <span class="kw">if</span> pStartMonth &lt; <span class="dig">13</span>:
 
         <span class="cmt"># start date</span>
-        startDate = str(pStartMonth) + <span class="str">"/1/13"</span>
+        startDate = str(pStartMonth) + <span class="str">"/1/"</span> + Settings.dataYear
         <span class="skw">type</span>(startDate)
         myTools.pressTAB(<span class="dig">1</span>)
 
         <span class="cmt"># end date</span>
-        endDate = str(pEndMonth) + <span class="str">"/"</span> + str(pDay) + <span class="str">"/13"</span>
+        endDate = str(pEndMonth) + <span class="str">"/"</span> + str(pDay) + <span class="str">"/"</span> + Settings.dataYear
         <span class="skw">type</span>(endDate)
         myTools.pressTAB(<span class="dig">1</span>)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)

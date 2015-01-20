@@ -88,7 +88,8 @@ def fEdit_CliCustom():
         type(Key.TAB)
 
 # Date
-    type("1/1/2013")
+    customDate = "1/1/" + Settings.dataYear
+    type(customDate)
     type(Key.TAB)
  # Hours
     type(".01")

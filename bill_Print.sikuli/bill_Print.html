@@ -78,7 +78,7 @@
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fSet_BillDate(pMonth):
 <span class="cmt">#---------------------------------------------------#</span>
-    logging.debug(<span class="str">'- change bill date: '</span> + str(pMonth) + <span class="str">"/27/2013"</span>)
+    logging.debug(<span class="str">'- change bill date: '</span> + str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># open revise date</span>
@@ -92,13 +92,13 @@
     <span class="cmt">#get to 01/01 of current year</span>
     <span class="skw">type</span>(Key.HOME,KeyModifier.CTRL)
 
-    <span class="cmt"># get to 01/01/2013</span>
+    <span class="cmt"># get to 01/01 of the data year</span>
     thisYear = date.today().year
-    <span class="kw">for</span> prevYear <span class="kw">in</span> range(<span class="dig">2013</span>,thisYear):
+    <span class="kw">for</span> prevYear <span class="kw">in</span> range(int(Settings.dataYear),thisYear):
         <span class="skw">type</span>(Key.PAGE_UP,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># get to 01/27/2013</span>
+    <span class="cmt"># get to 01/27 of the data year</span>
     myTools.pressDOWN(<span class="dig">4</span>)
     myTools.pressLEFT(<span class="dig">2</span>)
 
