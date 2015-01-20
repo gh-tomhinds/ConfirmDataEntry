@@ -52,7 +52,7 @@ import ba_SlipsRoundMin
 import ba_SlipsRoundDol
 import ba_Precision
 
-import ba_Replacement_TimeA
+import ba_Replacement_Time
 
 import reports_PostBill
 
@@ -88,7 +88,10 @@ def fReview_Arrangements():
     # set billing data to 12/27 for ba bills
     fSet_BillDate(12)
 
-    ba_Replacement_TimeA.fReplaceTimeA()
+    ba_Replacement_Time.fReplaceTimeA()
+    ba_Replacement_Time.fReplaceTimeB()
+    ba_Replacement_Time.fReplaceTimeC()
+    ba_Replacement_Expense.fReplaceExpenseA()    
 
 #===================================================#
 def fxxx():

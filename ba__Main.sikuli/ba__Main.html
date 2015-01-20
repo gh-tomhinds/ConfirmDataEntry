@@ -124,7 +124,7 @@
 <span class="kw">import</span> ba_SlipsRoundDol
 <span class="kw">import</span> ba_Precision
 
-<span class="kw">import</span> ba_Replacement_TimeA
+<span class="kw">import</span> ba_Replacement_Time
 
 <span class="kw">import</span> reports_PostBill
 
@@ -160,7 +160,10 @@
     <span class="cmt"># set billing data to 12/27 for ba bills</span>
     fSet_BillDate(<span class="dig">12</span>)
 
-    ba_Replacement_TimeA.fReplaceTimeA()
+    ba_Replacement_Time.fReplaceTimeA()
+    ba_Replacement_Time.fReplaceTimeB()
+    ba_Replacement_Time.fReplaceTimeC()
+    ba_Replacement_Expense.fReplaceExpenseA()
 
 <span class="cmt">#===================================================#</span>
 <span class="kw">def</span> fxxx():
