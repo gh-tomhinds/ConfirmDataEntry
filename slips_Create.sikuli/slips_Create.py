@@ -98,10 +98,11 @@ def Create_OneSlip(slipType,tk,act,cli,slipnum):
     # description
     type(Key.TAB)
 
-    # start date for the first slip is 1/1/2013
+    # start date for the first slip is 1/01
     type(Key.TAB)
     if slipnum == 1:
-        type("1/1/2013")
+        slipDate = "1/1/" + Settings.dataYear
+        type(slipDate)
         
     # increment the date every 8th slip.
     elif (slipnum - 1) % 8 == 0:
@@ -192,18 +193,8 @@ def Import_TimeSlips():
 
     myTools.sectionStartTimeStamp("import time slips")
     logging.debug('Import_TimeSlips')
-    
-# start tsimport
-    logging.debug('- start TSImport')
 
-    type("r",KeyModifier.KEY_WIN)
-    time.sleep(1)
-    type(Settings.tsimpEXE)
-    type(Key.ENTER)
-    time.sleep(2)
-
-    wait("tsimport_toolbar.png",FOREVER)
-    time.sleep(2)
+    myTools.startTSImport()
 
     logging.debug('- set up slip template')
     type("f",KeyModifier.ALT)
@@ -297,18 +288,8 @@ def Import_ExpenseSlips():
 
     myTools.sectionStartTimeStamp("import expense slips")
     logging.debug('Import_ExpenseSlips')
-    
-# start tsimport
-    logging.debug('- start TSImport')
 
-    type("r",KeyModifier.KEY_WIN)
-    time.sleep(1)
-    type(Settings.tsimpEXE)
-    type(Key.ENTER)
-    time.sleep(2)
-
-    wait("tsimport_toolbar.png",FOREVER)
-    time.sleep(2)
+    myTools.startTSImport()
 
     logging.debug('- set up slip template')
     type("f",KeyModifier.ALT)
