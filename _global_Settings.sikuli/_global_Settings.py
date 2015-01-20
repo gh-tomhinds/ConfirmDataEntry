@@ -41,6 +41,7 @@ def fSetup_DataFiles():
     Settings.refFile = Settings.dataFolder + '\\refs.csv'
     Settings.tSlipsFile = Settings.dataFolder + '\\slips1.csv'
     Settings.eSlipsFile = Settings.dataFolder + '\\slips2.csv'
+    Settings.calFile = Settings.dataFolder + '\\calData.csv'
 
 #---------------------------------------------------#
 def fSetup_AppFolders():
@@ -96,12 +97,18 @@ def fSetup_Envirnoment():
     logging.debug('Setup_Stuff')
 
     fSetup_Time()
+
+    # get TS version
+    Settings.tsVersion = input("TIMESLIPS:", "2015")
+    time.sleep(1)
+
+    # get data version
+    Settings.dataYear = input("DATA:", "2013")
+    time.sleep(2)
+
+    
     fSetup_Folders()
     fSetup_DataFiles()
-
-# get TS version
-    Settings.tsVersion = input("Enter 2013, 2014, or 2015:", "2015")
-    time.sleep(2)
 
     fSetup_AppFolders()
     fSetup_AppFiles()

@@ -95,7 +95,7 @@ def fProcess_CalEntries():
 
     eventCount = 0
 
-    eventDataFile = Settings.dataFolder + "\\calData.csv"
+    eventDataFile = Settings.calFile
     allEvents = csv.DictReader(open(eventDataFile))
 
     for calEvent in allEvents:

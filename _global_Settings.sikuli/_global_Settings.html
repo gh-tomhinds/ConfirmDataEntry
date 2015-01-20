@@ -113,6 +113,7 @@
     Settings.refFile = Settings.dataFolder + <span class="str">'\\refs.csv'</span>
     Settings.tSlipsFile = Settings.dataFolder + <span class="str">'\\slips1.csv'</span>
     Settings.eSlipsFile = Settings.dataFolder + <span class="str">'\\slips2.csv'</span>
+    Settings.calFile = Settings.dataFolder + <span class="str">'\\calData.csv'</span>
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fSetup_AppFolders():
@@ -168,12 +169,18 @@
     logging.debug(<span class="str">'Setup_Stuff'</span>)
 
     fSetup_Time()
+
+    <span class="cmt"># get TS version</span>
+    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"TIMESLIPS:"</span>, <span class="str">"2015"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get data version</span>
+    Settings.dataYear = <span class="skw">input</span>(<span class="str">"DATA:"</span>, <span class="str">"2013"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+
     fSetup_Folders()
     fSetup_DataFiles()
-
-<span class="cmt"># get TS version</span>
-    Settings.tsVersion = <span class="skw">input</span>(<span class="str">"Enter 2013, 2014, or 2015:"</span>, <span class="str">"2015"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
     fSetup_AppFolders()
     fSetup_AppFiles()
