@@ -74,92 +74,78 @@
 <span class="kw">import</span> logging
 <span class="kw">import</span> myTools
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fStart_TSImport():
-<span class="cmt">#---------------------------------------------------#
-</span>
-    logging.debug(<span class="str">'- start TSImport'</span>)
 
-    <span class="skw">type</span>(<span class="str">"r"</span>,KeyModifier.KEY_WIN)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Settings.tsimpEXE)
-    <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fSetup_Template():
+<span class="cmt">#---------------------------------------------------#</span>
 
-    <span class="skw">wait</span>(<img src="tsimport_menubar.png" />,FOREVER)
-    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
-
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fSetup_Template():
-<span class="cmt">#---------------------------------------------------#
-</span>
     logging.debug(<span class="str">'- set up ref template'</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"f"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"n"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># comma
-</span>    <span class="skw">type</span>(<span class="str">"c"</span>)
+<span class="cmt"># comma</span>
+    <span class="skw">type</span>(<span class="str">"c"</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-<span class="cmt"># ref info
-</span>    myTools.pressDOWN(<span class="dig">5</span>)
+<span class="cmt"># ref info</span>
+    myTools.pressDOWN(<span class="dig">5</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt"># choose source
-</span>    <span class="skw">wait</span>(<img src="put_data_into.png" />,FOREVER)
+<span class="cmt"># choose source</span>
+    <span class="skw">wait</span>(<img src="put_data_into.png" />,FOREVER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"g"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     paste(Settings.refFile)
 
-<span class="cmt">#choose fields
-</span>    logging.debug(<span class="str">'- choose fields'</span>)
+<span class="cmt">#choose fields</span>
+    logging.debug(<span class="str">'- choose fields'</span>)
     myTools.pressTAB(<span class="dig">6</span>)
 
-<span class="cmt"># nn1
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
+<span class="cmt"># nn1</span>
+    myTools.pressDOWN(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt"># nn2
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
+<span class="cmt"># nn2</span>
+    myTools.pressDOWN(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt">#CliNN1
-</span>    myTools.pressDOWN(<span class="dig">1</span>)
+<span class="cmt">#CliNN1</span>
+    myTools.pressDOWN(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt"># omit 1st record
-</span>    <span class="skw">click</span>(<img src="limit_records.png" />)
+<span class="cmt"># omit 1st record</span>
+    <span class="skw">click</span>(<img src="limit_records.png" />)
     <span class="skw">type</span>(Key.TAB)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"2"</span>)
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fImport_Data():
-<span class="cmt">#---------------------------------------------------#
-</span>
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fImport_Data():
+<span class="cmt">#---------------------------------------------------#</span>
+
     logging.debug(<span class="str">'- import data'</span>)
     <span class="skw">type</span>(Key.F9)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.RIGHT)
     <span class="skw">type</span>(Key.ENTER)
 
-<span class="cmt"># verify data
-</span>    <span class="skw">wait</span>(<img src="number_records_imported.png" />,FOREVER)
+<span class="cmt"># verify data</span>
+    <span class="skw">wait</span>(<img src="number_records_imported.png" />,FOREVER)
     <span class="kw">if</span> exists(Pattern(<img src="failed.png" />).similar(<span class="dig">0.95</span>)):
         logging.debug(<span class="str">'- import complete - no failed names'</span>)
     <span class="kw">else</span>:
         logging.debug(<span class="str">'- import complete - some failed names'</span>)
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fClose_TSImport():
-<span class="cmt">#---------------------------------------------------#
-</span>
-<span class="cmt"># close tsimport
-</span>    logging.debug(<span class="str">'- close TSImport'</span>)
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fClose_TSImport():
+<span class="cmt">#---------------------------------------------------#</span>
+
+<span class="cmt"># close tsimport</span>
+    logging.debug(<span class="str">'- close TSImport'</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.RIGHT)
     <span class="skw">type</span>(Key.ENTER)
@@ -170,14 +156,14 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"n"</span>)
 
-<span class="cmt">#---------------------------------------------------#
-</span><span class="kw">def</span> fImport_Refs():
-<span class="cmt">#---------------------------------------------------#
-</span>
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> fImport_Refs():
+<span class="cmt">#---------------------------------------------------#</span>
+
     myTools.sectionStartTimeStamp(<span class="str">"import refs"</span>)
     logging.debug(<span class="str">'Import_Refs'</span>)
 
-    fStart_TSImport()
+    myTools.startTSImport()
     fSetup_Template()
     fImport_Data()
     fClose_TSImport()

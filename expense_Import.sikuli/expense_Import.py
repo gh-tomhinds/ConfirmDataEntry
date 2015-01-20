@@ -2,20 +2,6 @@ from sikuli import *
 import logging
 import myTools
 
-#---------------------------------------------------#
-def fStart_TSImport():
-#---------------------------------------------------#
-
-# start tsimport
-    logging.debug('- start TSImport')
-    type("r",KeyModifier.KEY_WIN)
-    time.sleep(1)
-    type(Settings.tsimpEXE)
-    type(Key.ENTER)
-    time.sleep(2)
-
-    wait("tsimport_menubar.png",FOREVER)
-    time.sleep(5)
 
 #---------------------------------------------------#
 def fAdd_ExpCustomField(name, downArrow):
@@ -157,7 +143,7 @@ def fImport_Expenses():
     myTools.sectionStartTimeStamp("import expenses")
     logging.debug('Import_Expenses')
 
-    fStart_TSImport()
+    myTools.startTSImport()
     fSetup_Template()   
     fImport_Data()
     fClose_TSImport()

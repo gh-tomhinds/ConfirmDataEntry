@@ -3,20 +3,6 @@ import logging
 import myTools
 
 #---------------------------------------------------#
-def fStart_TSImport():
-#---------------------------------------------------#
-
-    logging.debug('- start TSImport')
-    type("r",KeyModifier.KEY_WIN)
-    time.sleep(1)
-    type(Settings.tsimpEXE)
-    type(Key.ENTER)
-    time.sleep(2)
-
-    wait("tsimport_menubar.png",FOREVER)
-    time.sleep(5)
-
-#---------------------------------------------------#
 def fAdd_TkCustomField(name, downArrow):
 #---------------------------------------------------#
 
@@ -138,7 +124,7 @@ def fImport_Timekeepers():
     myTools.sectionStartTimeStamp("import timekeepers")
     logging.debug('Import_Timekeepers')
 
-    fStart_TSImport()
+    myTools.startTSImport()
     fSetup_Template()   
     fImport_Data()
     fClose_TSImport()
