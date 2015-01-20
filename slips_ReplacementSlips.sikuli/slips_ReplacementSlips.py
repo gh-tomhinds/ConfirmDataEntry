@@ -51,6 +51,8 @@ def fCreate_ReplacementRule(pReplClient,pTimeOrExp,pActOrCat,pName):
     type(Key.F4,KeyModifier.ALT)
     time.sleep(1)
 
+    myTools.sectionEndTimeStamp()
+
 #---------------------------------------------------#
 def fCreate_ReplacementSlips(pReplClient):
 #---------------------------------------------------#
@@ -61,12 +63,12 @@ def fCreate_ReplacementSlips(pReplClient):
     type("m",KeyModifier.CTRL)
     time.sleep(1)
     
-    # create some expense slips
+    # create some time slips
     slips_Create.Create_OneSlip("t","TomH","gen004",pReplClient,1)   #override - General
     slips_Create.Create_OneSlip("t","CoreyM","gen005",pReplClient,2) #donotbill - General
     slips_Create.Create_OneSlip("t","SamS","lnd011",pReplClient,3)   #billable - Landscape
     slips_Create.Create_OneSlip("t","ShawnR","lnd010",pReplClient,4) #nocharge - Landscape
-    slips_Create.Create_OneSlip("t","JamesR","con001",pReplClient,5) #billable - Construction
+    slips_Create.Create_OneSlip("t","JamesR","lnd011",pReplClient,5) #billable - Landscape
 
     # create some expense slips
     slips_Create.Create_OneSlip("e","ShawnR","e006",pReplClient,6)   #donotbill - Supplies

@@ -123,6 +123,8 @@
     <span class="skw">type</span>(Key.F4,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
+    myTools.sectionEndTimeStamp()
+
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fCreate_ReplacementSlips(pReplClient):
 <span class="cmt">#---------------------------------------------------#</span>
@@ -133,12 +135,12 @@
     <span class="skw">type</span>(<span class="str">"m"</span>,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
-    <span class="cmt"># create some expense slips</span>
+    <span class="cmt"># create some time slips</span>
     slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"TomH"</span>,<span class="str">"gen004"</span>,pReplClient,<span class="dig">1</span>)   <span class="cmt">#override - General</span>
     slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"CoreyM"</span>,<span class="str">"gen005"</span>,pReplClient,<span class="dig">2</span>) <span class="cmt">#donotbill - General</span>
     slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"SamS"</span>,<span class="str">"lnd011"</span>,pReplClient,<span class="dig">3</span>)   <span class="cmt">#billable - Landscape</span>
     slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"ShawnR"</span>,<span class="str">"lnd010"</span>,pReplClient,<span class="dig">4</span>) <span class="cmt">#nocharge - Landscape</span>
-    slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"JamesR"</span>,<span class="str">"con001"</span>,pReplClient,<span class="dig">5</span>) <span class="cmt">#billable - Construction</span>
+    slips_Create.Create_OneSlip(<span class="str">"t"</span>,<span class="str">"JamesR"</span>,<span class="str">"lnd011"</span>,pReplClient,<span class="dig">5</span>) <span class="cmt">#billable - Landscape</span>
 
     <span class="cmt"># create some expense slips</span>
     slips_Create.Create_OneSlip(<span class="str">"e"</span>,<span class="str">"ShawnR"</span>,<span class="str">"e006"</span>,pReplClient,<span class="dig">6</span>)   <span class="cmt">#donotbill - Supplies</span>
