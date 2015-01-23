@@ -99,7 +99,11 @@ def enterSlipFilter(pMonth,pBillOrReport):
     logging.debug('- enterSlipFilter: ' + str(pMonth) + ' ' + pBillOrReport)
 
     wait("slip_trans_date.png",60)
-    doubleClick("slip_trans_date.png")
+    time.sleep(1)
+    
+    click("slip_trans_date.png")
+    time.sleep(1)
+    click("add_filter.png")
     wait("apply_this_rule.png",60)
 
     # choose TODAY to get to manual date entry
@@ -277,6 +281,18 @@ def sectionEndTimeStamp():
 
     durationLog.write(Settings.sectionName + "," + str(totalMinutes) + "\n")
     durationLog.close()
+
+#---------------------------------------------------#
+def pushReportLog(pReportName,pReportStatus):
+#---------------------------------------------------#
+
+    reportTime = datetime.datetime.now()
+    reportTime = reportTime.strftime("%Y-%m-%d %H:%M:%S")
+    reportLogLine = reportTime + "  " + pReportStatus + ": " + pReportName + "\n"
+
+    reportLog = open(Settings.reportLogFile, "a")    
+    reportLog.write(reportLogLine)
+    reportLog.close()
 
 #---------------------------------------------------#
 def getScreenshot():

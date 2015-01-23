@@ -8,9 +8,9 @@ def fSetup_Time():
 #---------------------------------------------------#
 
 # get current month and year (forget where this is used)
-    rightNow = datetime.datetime.now()
-    Settings.thisMonth = rightNow.month
-    Settings.thisYear = rightNow.year
+    Settings.rightNow = datetime.datetime.now()
+    Settings.thisMonth = Settings.rightNow.month
+    Settings.thisYear = Settings.rightNow.year
 
 #---------------------------------------------------#
 def fSetup_Folders():
@@ -81,8 +81,15 @@ def fSetup_AppFiles():
 def fSetup_LogFiles():
 #---------------------------------------------------#
 
-# point to Billing Arrangement log file
-    Settings.BALogFile = Settings.repFolder + "\\!BA-Log.txt"
+    # point to Billing Arrangement log file
+    Settings.BALogFile = Settings.sikFolder + "\\!BA-Log.txt"
+
+    # point to report log file
+    Settings.reportLogFile = Settings.sikFolder + "\\!Rep-Log.txt"
+    reportLog = open(Settings.reportLogFile, "a")
+    reportLog.write("\n")
+    reportLog.write("========================================" + "\n")
+    reportLog.close()
 
     # set up duration log and add version to it
     Settings.durationFile = Settings.sikFolder + "\\Durations-" + Settings.tsVersion + ".csv" 
@@ -105,7 +112,6 @@ def fSetup_Envirnoment():
     # get data version
     Settings.dataYear = input("DATA:", "2013")
     time.sleep(2)
-
     
     fSetup_Folders()
     fSetup_DataFiles()

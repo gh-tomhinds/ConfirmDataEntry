@@ -1,6 +1,7 @@
 from sikuli import *
 import os
 import logging
+import myTools
 
 #---------------------------------------------------#
 def Compare_OneReport(pReportName):
@@ -18,12 +19,14 @@ def Compare_OneReport(pReportName):
     logging.debug('- check for base file')
     if not os.path.exists(baseFile):
         logging.debug("--> " + pReportName[5:] + " MISSING")
+        myTools.pushReportLog(pReportName," MISSING")
         return
 
 # don't compare if new report doesn't exist
     logging.debug('- check for printed file')
     if not os.path.exists(baseFile):
         logging.debug("--> " + pReportName + " MISSING")        
+        myTools.pushReportLog(pReportName," MISSING")
         return
 
 # open report files
@@ -51,10 +54,12 @@ def Compare_OneReport(pReportName):
         errorFound = True        
         logging.debug("--> FAILED: " + pReportName)
         logging.debug("--> new report has more lines")
+        myTools.pushReportLog(pReportName," WRONG SIZE")
     elif len(baseRepLines) > len(newRepLines):
         errorFound = True        
         logging.debug("--> FAILED: " + pReportName)
         logging.debug("--> base report has more lines")
+        myTools.pushReportLog(pReportName," WRONG SIZE")
 
     # compare each line in base report to new report; jump out on first mismatch
     else:
@@ -67,8 +72,11 @@ def Compare_OneReport(pReportName):
                 logging.debug("--> Line: %d \n" % (newRepLine+1))
                 logging.debug("--> Base: " + baseRepLine)
                 logging.debug("--> New:  " + newRepLines[newRepLine])
+                myTools.pushReportLog(pReportName," FAILED    ")
                 break
             newRepLine += 1
     
     if errorFound != True:
         logging.debug("-- reports match: " + pReportName)
+        myTools.pushReportLog(pReportName," pass      ")
+        

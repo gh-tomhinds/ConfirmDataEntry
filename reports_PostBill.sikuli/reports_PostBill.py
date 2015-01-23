@@ -14,6 +14,7 @@ import report_Taxes
 import report_TkCC
 import report_TkHistory
 import report_TOWorksheet
+import report_GLXfer
 
 #---------------------------------------------------#
 def fPrint_PostbillReports(pMonth,pAorB):
@@ -35,7 +36,8 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_Budgets.printFirmBudget(pMonth,repExt)
     report_ProdPeriod.print_ProdPeriod(pMonth,repExt)
     report_ProfPeriod.print_ProfPeriod(pMonth,repExt)
-    report_SlipSummary.print_SlipSummary(pMonth,repExt)    
+    report_SlipSummary.print_SlipSummary(pMonth,repExt)
+    report_GLXfer.Print_GLXfer(pMonth,repExt)
     
     if (pMonth == 1) and (pAorB == "a"):        
         # fee allocation cannot be run without some payments entered

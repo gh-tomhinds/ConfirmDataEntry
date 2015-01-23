@@ -41,6 +41,7 @@ def fAssign_Layout():
     type(Key.ENTER)
 
     wait("assigned_message.png",FOREVER)
+    time.sleep(1)
     type(Key.ENTER)
     time.sleep(1)    
     
