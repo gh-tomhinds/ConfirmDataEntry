@@ -117,9 +117,10 @@ _global_Settings.fSetup_Envirnoment()
 
 <span class="cmt">##############################################################</span>
 
-<span class="cmt">#db_New.fStartTS_CreateNewDB()</span>
 
+<span class="cmt">#db_New.fStartTS_CreateNewDB()</span>
 <span class="cmt">#settings_Prefs.fTweak_Prefs()</span>
+
 <span class="cmt">#settings_Categories.fCreate_Categories()</span>
 <span class="cmt">#settings_CustomFields.fCreate_CustomFields()</span>
 
@@ -130,7 +131,7 @@ _global_Settings.fSetup_Envirnoment()
 
 <span class="cmt">#bill_Split.fSetup_SplitBills()</span>
 
-bill_MonthlyCycle.fRun_BillCycle(<span class="dig">1</span>,<span class="dig">13</span>) <span class="cmt"># pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
+<span class="cmt">#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream</span>
 
 <span class="cmt">#ba__Common.fSetup_BADefaultLayout()</span>
 <span class="cmt">#ba__Main.fReview_Arrangements()</span>

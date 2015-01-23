@@ -21,6 +21,7 @@ import names_Create
 
 import settings_Categories
 import settings_CustomFields
+import settings_TAL
 
 import slips_Create
 import slips_CreateManually
@@ -30,6 +31,8 @@ import bill_MonthlyCycle
 
 import ba__Main
 import ba__Common
+
+import bill_BillFields
 
 import backup_Data
 import calendar_Terms
@@ -46,8 +49,8 @@ _global_Settings.fSetup_Envirnoment()
 ##############################################################
 
 #db_New.fStartTS_CreateNewDB()
-
 #settings_Prefs.fTweak_Prefs()
+
 #settings_Categories.fCreate_Categories()
 #settings_CustomFields.fCreate_CustomFields()
 
@@ -56,12 +59,15 @@ _global_Settings.fSetup_Envirnoment()
 #slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 #slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
-#bill_Split.fSetup_SplitBills()
+#settings_TAL.fSetup_TAL()
 
-bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+#bill_Split.fSetup_SplitBills()
+#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
 #ba__Main.fReview_Arrangements()
+
+#bill_BillFields.fBill_BillFields()
 
 #calendar_Terms.fSetup_CalTerms()
 #calendar_Entries.fCalendar_Entries()
