@@ -126,7 +126,7 @@ def fStartTS_CreateNewDB():
     type(Key.ENTER)
 
 # Firm name
-    type("TS Handyman Services " + Settings.dataYear)
+    type("TS Handyman Services")
     type(Key.ENTER)    
     logging.debug('- db settings')
 
