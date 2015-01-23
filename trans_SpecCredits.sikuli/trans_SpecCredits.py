@@ -7,6 +7,7 @@ def fFilter_Invoices():
 #---------------------------------------------------#
 
     # selection
+    logging.debug('- filters')
     click("selection_button.png")
     time.sleep(1)
 
@@ -16,7 +17,9 @@ def fFilter_Invoices():
         time.sleep(1)
 
     # add tran type filter
-    doubleClick("trans_type.png")
+    click("trans_type.png")
+    time.sleep(1)
+    click("add_filter-1.png")
     time.sleep(1)
     
     # unselect all
