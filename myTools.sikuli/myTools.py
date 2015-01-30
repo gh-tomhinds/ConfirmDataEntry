@@ -147,7 +147,7 @@ def waitForReport():
 
     if exists("recalc_msg.png"):
         type(Key.ENTER)
-        time.sleep(1)        
+        time.sleep(5)        
 
     #wait for "calculating" box to disappear
     while exists("completed.png"):
