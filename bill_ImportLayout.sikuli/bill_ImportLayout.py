@@ -9,6 +9,7 @@ def fImport_Layout(pThisLayout):
     logging.debug('- open layout list')
     type("b",KeyModifier.ALT)
     type("t")
+    wait("adjustment_note.png",FOREVER)
     time.sleep(1)
     logging.debug('- import layout')
     click(Pattern("import_button.png").targetOffset(3,-9))
