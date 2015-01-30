@@ -63,7 +63,14 @@ def fPrint_BillRun(pMonth):
     wait(Pattern("approve_bills-1.png").targetOffset(-100,-8),FOREVER)
     click(Pattern("approve_bills-1.png").targetOffset(-100,-8))
     type(Key.ENTER)
-    waitVanish("approving_statusbar.png",FOREVER) 
+    time.sleep(1)
+    
+    if int(Settings.tsVersion) > 2015:
+        while exists("approving_bills.png"):
+            time.sleep(2)
+    else:
+        waitVanish("approving_statusbar.png",FOREVER) 
+    time.sleep(1)
 
     # close report entry / don't save
     logging.debug('-- close report window')
