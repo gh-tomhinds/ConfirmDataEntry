@@ -1,6 +1,7 @@
 from sikuli import *
 import logging
 import myTools
+import backup_Data
 
 #---------------------------------------------------#
 def fSetup_ChooseTAL():
@@ -418,3 +419,5 @@ def fSetup_TAL():
     fLink_Accounts()    
 
     myTools.sectionEndTimeStamp()
+
+    backup_Data.fBackup_Checkpoint("TAL")    
