@@ -47,6 +47,8 @@ def Print_Worksheet(pReportMonth,pRepExt):
     type("c")
     time.sleep(1)
 
+    myTools.enterSlipFilter(pReportMonth,"bill")
+
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
