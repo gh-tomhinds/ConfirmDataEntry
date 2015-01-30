@@ -1,6 +1,7 @@
 from sikuli import *
 import logging
 import myTools
+import backup_Data
 
 #---------------------------------------------------#
 def fSetup_Primary(pPrimaryClient):
@@ -72,3 +73,4 @@ def fSetup_SplitBills():
     type(Key.SPACE)
 
     myTools.sectionEndTimeStamp()
+    backup_Data.fBackup_Checkpoint("split")    
