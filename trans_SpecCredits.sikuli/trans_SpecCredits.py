@@ -66,21 +66,27 @@ def fClear_Filter():
 def fCreate_SpecCredits(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("specialCredits" + str(pMonth))
+    myTools.sectionStartTimeStamp("specialCredits" + str(pMonth))    
     logging.debug('Create_SpecCredits: ' + str(pMonth))
 
     myTools.getFocus()
+
+    invList = ["12400","12600","13100","13330","13830","14210","14370","14850","15200","15460","15960","16240"]
 
     # open a/r tran list
     type("t",KeyModifier.CTRL)
     myTools.waitForTransList()
 
-    fFilter_Invoices()
-
-    # move to last transaction (which should be an invoice)
-    type(Key.END)
+    # go to invoice
+    type('g',KeyModifier.CTRL + KeyModifer.SHIFT)
     time.sleep(1)
-    
+    myTools.pressTAB(2)
+    invNum = invList[pMonth-1]
+    logging.debug('- look for: ' + invNum)
+    type(invNum)
+    type(Key.ENTER)
+    time.sleep(1)
+
     # open it
     type(Key.ENTER)
     myTools.waitForTransEntry()
@@ -132,8 +138,6 @@ def fCreate_SpecCredits(pMonth):
 
     # close
     type(Key.F4,KeyModifier.CTRL)
-
-    fClear_Filter()
 
     # close   
     type(Key.F4,KeyModifier.CTRL)
