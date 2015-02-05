@@ -46,6 +46,7 @@ def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
     type(Key.ENTER)
     time.sleep(.5)
     type("s",KeyModifier.CTRL)
+    time.sleep(1)
 
     if exists("you_deposited_money.png"):
         type("n")    
