@@ -37,8 +37,13 @@ def print_SlipSummary(pReportMonth,pRepExt):
     type(Key.SPACE)
     time.sleep(1)
 
+    # exclude analysis info
+    myTools.pressSHIFTTAB(4)
+    type(Key.SPACE)
+    time.sleep(1)  
+
     # OK
-    myTools.pressTAB(1)
+    myTools.pressTAB(5)
     type(Key.SPACE)
     time.sleep(1)
 
