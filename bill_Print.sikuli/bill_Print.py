@@ -45,7 +45,7 @@ def fPrint_BillRun(pMonth):
     type("b",KeyModifier.CTRL)
     time.sleep(1)
 
-    myTools.enterSlipFilter(pMonth,"bill")
+    myTools.enterSlipFilter(pMonth,"n")
 
     # print bills to PDF
     logging.debug('-- print')    
@@ -63,7 +63,7 @@ def fPrint_BillRun(pMonth):
     wait(Pattern("approve_bills-1.png").targetOffset(-100,-8),FOREVER)
     click(Pattern("approve_bills-1.png").targetOffset(-100,-8))
     type(Key.ENTER)
-    time.sleep(1)
+    time.sleep(3)
     
     if int(Settings.tsVersion) > 2015:
         while exists("approving_bills.png"):

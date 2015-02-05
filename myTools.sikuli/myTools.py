@@ -93,10 +93,10 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 #---------------------------------------------------#
-def enterSlipFilter(pMonth,pBillOrReport):
+def enterSlipFilter(pMonth,pExtraTab):
 #---------------------------------------------------#
 
-    logging.debug('- enterSlipFilter: ' + str(pMonth) + ' ' + pBillOrReport)
+    logging.debug('- enterSlipFilter: ' + str(pMonth) + ' ' + pExtraTab)
 
     wait("slip_trans_date.png",60)
     time.sleep(1)
@@ -116,7 +116,7 @@ def enterSlipFilter(pMonth,pBillOrReport):
     # type in dates
     logging.debug('-- enter date range')
     
-    if pBillOrReport == "report":       
+    if pExtraTab == "y":       
         pressTAB(7)
     else:
         pressTAB(6)
@@ -139,19 +139,23 @@ def enterSlipFilter(pMonth,pBillOrReport):
 def waitForReport():
 #---------------------------------------------------#
 
+    logging.debug('- wait for report')
     time.sleep(1)
 
     if exists("replace_it.png"):
+        logging.debug('-- replace msg exists')            
         type(Key.ENTER)
         time.sleep(1)        
 
     if exists("recalc_msg.png"):
+        logging.debug('-- budget msg exists')        
         type(Key.ENTER)
         time.sleep(5)        
 
     #wait for "calculating" box to disappear
-    while exists("completed.png"):
-        time.sleep(2)
+    while exists(Pattern("completed.png").similar(0.90)):
+        logging.debug('-- completed msg exists')
+        time.sleep(3)
 
 #---------------------------------------------------#
 def waitForTransList():
@@ -319,3 +323,17 @@ def getScreenshot():
     print(ssOut)
 
     shutil.move(ssIn,ssOut)    
+
+#---------------------------------------------------#
+def testRestore():
+#---------------------------------------------------#
+
+    # using this to test AVs when i try to restore
+
+    logging.debug(' ')
+    logging.debug('test restore')
+
+    type("f",KeyModifier.ALT)
+    type("r")
+    time.sleep(3)
+    type(Key.ESC)

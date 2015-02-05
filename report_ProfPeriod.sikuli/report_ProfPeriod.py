@@ -47,7 +47,7 @@ def print_ProfPeriod(pReportMonth,pRepExt):
     type("c")
     time.sleep(1)
 
-    myTools.enterSlipFilter(pReportMonth,"report")
+    myTools.enterSlipFilter(pReportMonth,"y")
 
     # print the report
     type(Key.ENTER)    
