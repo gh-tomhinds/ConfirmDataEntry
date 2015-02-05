@@ -40,6 +40,27 @@ def fSetup_LinkDetails():
     time.sleep(1)
 
 #---------------------------------------------------#
+def fSetup_LinkDetailsUnmarkWIP():
+#---------------------------------------------------#
+
+    type("a",KeyModifier.ALT)           # set up accounting link
+    time.sleep(1)
+    type("s")
+    time.sleep(1)
+
+    myTools.pressF6(1)                  # method page
+    time.sleep(1)
+    
+    myTools.pressTAB(3)                         # time WIP
+    type(Key.SPACE)
+
+    myTools.pressTAB(1)                         # expense WIP
+    type(Key.SPACE)
+
+    type(Key.ENTER)                     # OK
+    time.sleep(1)
+
+#---------------------------------------------------#
 def fLink_Accounts():
 #---------------------------------------------------#
 
@@ -416,7 +437,8 @@ def fSetup_TAL():
 
     fSetup_ChooseTAL()
     fSetup_LinkDetails()
-    fLink_Accounts()    
+    fLink_Accounts()
+    fSetup_LinkDetailsUnmarkWIP()
 
     myTools.sectionEndTimeStamp()
 
