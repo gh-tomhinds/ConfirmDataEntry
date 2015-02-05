@@ -78,8 +78,7 @@ def Print_TkHistory(pReportMonth,pRepExt):
     # close the report
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)            
-    if exists("preferences_msg.png"):
-        type("n")
+    type("n")
     type(Key.F4,KeyModifier.CTRL)
         
     myTools.sectionEndTimeStamp()
