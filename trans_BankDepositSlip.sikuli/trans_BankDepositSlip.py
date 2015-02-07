@@ -242,6 +242,7 @@ def fBankDepositSlips_Create(bds_month):
 
     # close
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
 
     if exists("please_note.png"):
         type(Key.ENTER)  
