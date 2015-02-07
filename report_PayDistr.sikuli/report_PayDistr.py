@@ -47,10 +47,25 @@ def Print_PayDistr(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
+    # Sort page
+    type(Key.F6)
+    time.sleep(1)
+
+    # clear any existing sorts
+    if exists("remove_all.png"):
+        click("remove_all.png")   
+        time.sleep(1)
+
+    # sort by tran id
+    type(Key.DOWN)
+    time.sleep(1)
+    click("add_filter.png")
+    time.sleep(1)
+
     logging.debug('- print report')
 
     # move to Print To and choose CSV
-    myTools.pressTAB(2)
+    myTools.pressSHIFTTAB(3)
     type("c")
     time.sleep(1)
 
