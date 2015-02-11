@@ -1,6 +1,6 @@
-# - - - - - - - - - - - - - - - - - - - - - - - - - - #
+#######################################################
 # _main
-# - - - - - - - - - - - - - - - - - - - - - - - - - - #
+#######################################################
 #
 # These scripts rely on the following:                
 #
@@ -8,7 +8,7 @@
 # 2) Timeslips is installed below C:\Program Files (x86)  
 # 3) Timeslips install folder is in format: Timeslips 2014
 #
-# - - - - - - - - - - - - - - - - - - - - - - - - - - #
+#######################################################
 
 # import my sikuli scripts
 import myTools
@@ -39,6 +39,7 @@ import calendar_Terms
 import calendar_Entries
 
 #import sendEmail
+import reports_PostBill
 
 ##############################################################
 
@@ -47,6 +48,8 @@ myTools.startTimeStamp()
 _global_Settings.fSetup_Envirnoment()
 
 ##############################################################
+
+#reports_PostBill.fPrint_PostbillReports(1,"a") # use for quick test of reports
 
 #db_New.fStartTS_CreateNewDB()
 #settings_Prefs.fTweak_Prefs()
@@ -62,7 +65,7 @@ _global_Settings.fSetup_Envirnoment()
 #settings_TAL.fSetup_TAL()
 
 #bill_Split.fSetup_SplitBills()
-#bill_MonthlyCycle.fRun_BillCycle(1,13) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
+bill_MonthlyCycle.fRun_BillCycle(1,2) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
 #ba__Main.fReview_Arrangements()
