@@ -71,6 +71,7 @@ def fCreate_SpecCredits(pMonth):
 
     myTools.getFocus()
 
+    # list of invoices; one for each month
     invList = ["12400","12600","13100","13330","13830","14210","14370","14850","15200","15460","15960","16240"]
 
     # open a/r tran list
@@ -78,7 +79,7 @@ def fCreate_SpecCredits(pMonth):
     myTools.waitForTransList()
 
     # go to invoice
-    type('g',KeyModifier.CTRL + KeyModifer.SHIFT)
+    type('g',KeyModifier.CTRL + KeyModifier.SHIFT)
     time.sleep(1)
     myTools.pressTAB(2)
     invNum = invList[pMonth-1]

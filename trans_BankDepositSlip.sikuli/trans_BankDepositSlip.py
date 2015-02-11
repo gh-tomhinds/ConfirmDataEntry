@@ -12,6 +12,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
     logging.debug('- Pay_Create: ' + str(pay_month) + "-" + pay_client + " = " + str(pay_amount))
 
     # new payment
+    myTools.getFocus()
     type("n",KeyModifier.CTRL)
     myTools.waitForTransEntry()
     
@@ -65,6 +66,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     logging.debug('- PTA_Create: ' + str(pta_month) + "-" + pta_client + " = " + str(pta_amount))
 
     # new pta
+    myTools.getFocus()
     type("n",KeyModifier.CTRL + KeyModifier.SHIFT)
     myTools.waitForTransEntry()
     
@@ -113,6 +115,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     
     if exists("you_deposited_money.png"):
         type("n")  
+        time.sleep(1)    
 
 #---------------------------------------------------#
 def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
@@ -121,6 +124,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     logging.debug('- DEP_Create: ' + str(dep_month) + "-" + dep_client + " = " + str(dep_amount))
 
     # new dep
+    myTools.getFocus()
     type("d",KeyModifier.CTRL + KeyModifier.SHIFT)
     myTools.waitForTransEntry()
     
@@ -169,6 +173,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     
     if exists("you_deposited_money.png"):
         type("n")  
+        time.sleep(1)    
 
 #---------------------------------------------------#
 def fBankDepositSlip_CreateOne(bds_month):
@@ -181,13 +186,14 @@ def fBankDepositSlip_CreateOne(bds_month):
 
     if exists("create_bankdepositslip.png"):
         type("n")
+        time.sleep(1)        
 
     # create a new deposit slip
     rightClick("deposit_number.png")
     time.sleep(1)
     type(Key.DOWN)
     type(Key.ENTER)
-    time.sleep(1)
+    time.sleep(2)
 
     # for even months, use "new bank" otherwise use "default"
     if bds_month % 2 == 0:
@@ -245,5 +251,7 @@ def fBankDepositSlips_Create(bds_month):
     time.sleep(1)
 
     if exists("please_note.png"):
-        type(Key.ENTER)  
+        type(Key.ENTER)
+        time.sleep(1)
+            
    

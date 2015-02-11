@@ -160,16 +160,16 @@ def waitForReport():
 #---------------------------------------------------#
 def waitForTransList():
 #---------------------------------------------------#
-    time.sleep(1)    
+    time.sleep(2)
     wait("inv_num_column.png",60)
-    time.sleep(1)
+    time.sleep(2)
 
 #---------------------------------------------------#
 def waitForTransEntry():
 #---------------------------------------------------#
-    time.sleep(1)
+    time.sleep(2)
     wait("ar_balance.png",60)
-    time.sleep(1)
+    time.sleep(2)
 
 #---------------------------------------------------#
 def waitForFundsList():
