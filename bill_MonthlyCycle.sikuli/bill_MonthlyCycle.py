@@ -5,7 +5,9 @@ import bill_ImportLayout
 
 import bill_Print
 import trans_SpecCredits
+import trans_Writeoff
 import trans_Payments
+import trans_Refunds
 import trans_Transfers
 import trans_TransfersToFunds
 import trans_PaymentsToAccount
@@ -35,10 +37,15 @@ def fRun_BillCycle(startMonth,endMonth):
         reports_PostBill.fPrint_PostbillReports(thisMonth,"a")
 
         # enter transactions for month
-        trans_SpecCredits.fCreate_SpecCredits(thisMonth)        
+        trans_SpecCredits.fCreate_SpecCredits(thisMonth)
+        trans_Writeoff.fCreate_Writeoffs(thisMonth)
         trans_Payments.fCreate_PaymentsForMonth(thisMonth)
-        trans_Transfers.fCreate_Transfers(thisMonth)        
-        trans_TransfersToFunds.fCreate_TransfersToFunds(thisMonth)        
+        trans_Transfers.fCreate_Transfers(thisMonth)
+        trans_TransfersToFunds.fCreate_TransfersToFunds(thisMonth)
+        
+        backup_Data.fBackup_Checkpoint("before-refund")        
+        trans_Refunds.fCreate_Refunds(thisMonth)
+        
         trans_PaymentsToAccount.fCreate_PaymentsToAccount(thisMonth)
         trans_Credits.fCreate_CreditsForMonth(thisMonth)
         client_FinanceCharges.fCreate_FinanceCharges(thisMonth)
