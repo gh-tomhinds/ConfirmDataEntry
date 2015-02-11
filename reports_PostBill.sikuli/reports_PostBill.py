@@ -9,6 +9,7 @@ import report_Hold
 import report_PayDistr
 import report_ProdPeriod
 import report_ProfPeriod
+import report_Markup
 import report_SlipSummary
 import report_Taxes
 import report_TkCC
@@ -36,6 +37,7 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_Budgets.printFirmBudget(pMonth,repExt)
     report_ProdPeriod.print_ProdPeriod(pMonth,repExt)
     report_ProfPeriod.print_ProfPeriod(pMonth,repExt)
+    report_Markup.print_Markup(pMonth,repExt)
     report_SlipSummary.print_SlipSummary(pMonth,repExt)
     report_GLXfer.Print_GLXfer(pMonth,repExt)
     
