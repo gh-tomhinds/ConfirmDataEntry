@@ -6,7 +6,7 @@ import myTools
 def fCreate_OneRefund(pClient,pMonth,pAmount):
 #---------------------------------------------------#
 
-    logging.debug('- Create_OneTransfer: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
+    logging.debug('- Create_OneRefund: ' + str(pMonth) + "-" + pClient + " = " + str(pAmount))
 
     # new transaction
     type("n",KeyModifier.CTRL)

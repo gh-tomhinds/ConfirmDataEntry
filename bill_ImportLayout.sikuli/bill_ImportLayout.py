@@ -13,12 +13,12 @@ def fImport_Layout(pThisLayout):
     time.sleep(1)
     logging.debug('- import layout')
     click(Pattern("import_button.png").targetOffset(3,-9))
-    time.sleep(2)
+    time.sleep(3)
 
     layoutFilePath = Settings.dataFolder + "\\" + pThisLayout + ".tsl"
     type(layoutFilePath)
     type(Key.ENTER)
-    time.sleep(2)
+    time.sleep(3)
     type(pThisLayout)
     
     logging.debug('- save layout')    
@@ -35,8 +35,10 @@ def fAssign_Layout():
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)
     wait("selected_layout.png")
+    time.sleep(1)
     type(Key.INSERT)
-    time.sleep(2)    
+    wait("check_boxes.png")
+    time.sleep(1)
     type("a",KeyModifier.ALT)
     time.sleep(1)
     type(Key.ENTER)

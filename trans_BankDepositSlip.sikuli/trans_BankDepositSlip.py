@@ -56,6 +56,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.ENTER)
+    time.sleep(5)
 
     myTools.checkForUnappliedAmount()
 
@@ -111,7 +112,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.ENTER)
-    time.sleep(1)    
+    time.sleep(5)
     
     if exists("you_deposited_money.png"):
         type("n")  
@@ -169,7 +170,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.ENTER)
-    time.sleep(1)    
+    time.sleep(5)    
     
     if exists("you_deposited_money.png"):
         type("n")  
