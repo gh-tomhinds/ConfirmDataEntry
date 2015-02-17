@@ -3,6 +3,7 @@ import logging
 
 import report_AgedARBal
 import report_Budgets
+import report_DaysToPay
 import report_FeeAlloc
 import report_FundsBal
 import report_Hold
@@ -38,6 +39,7 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_ProdPeriod.print_ProdPeriod(pMonth,repExt)
     report_ProfPeriod.print_ProfPeriod(pMonth,repExt)
     report_Markup.print_Markup(pMonth,repExt)
+    report_DaysToPay.print_DaysToPay(pMonth,repExt)
     report_SlipSummary.print_SlipSummary(pMonth,repExt)
     report_GLXfer.Print_GLXfer(pMonth,repExt)
     
