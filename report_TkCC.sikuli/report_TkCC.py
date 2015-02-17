@@ -39,8 +39,12 @@ def Print_TkCC(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
+    # show client breakdown   
+    myTools.pressTAB(4)
+    type(Key.SPACE)
+    time.sleep(1)
+
     # close dialog
-    myTools.pressTAB(1)
     type(Key.ENTER)
     time.sleep(1)   
 
@@ -69,8 +73,7 @@ def Print_TkCC(pReportMonth,pRepExt):
     # close the report
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)            
-    if exists("preferences_msg.png"):
-        type("n")
+    type("n")
     type(Key.F4,KeyModifier.CTRL)
         
     myTools.sectionEndTimeStamp()
