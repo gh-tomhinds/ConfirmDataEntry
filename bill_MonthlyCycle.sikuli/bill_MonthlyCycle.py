@@ -30,8 +30,6 @@ def fRun_BillCycle(startMonth,endMonth):
         backup_Data.fBackup_BillData(thisMonth,"a")       
         reports_PostBill.fPrint_PostbillReports(thisMonth,"a")      # compare some values before trans
 
-        popup("exit")
-
         trans_PostBill.fEnter_Transactions(thisMonth)               # enter all transactions
         backup_Data.fBackup_BillData(thisMonth,"b")        
         reports_PostBill.fPrint_PostbillReports(thisMonth,"b")      # compare some values after trans

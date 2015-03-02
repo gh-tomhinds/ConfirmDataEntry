@@ -136,6 +136,20 @@ def enterSlipFilter(pMonth,pExtraTab):
     time.sleep(1)
 
 #---------------------------------------------------#
+def waitForStatement():
+#---------------------------------------------------#
+
+    if exists(replace_it.png):
+        logging.debug('-- replace msg exists')            
+        type(Key.ENTER)
+        time.sleep(1)        
+
+    wait("finalize_msg.png",FOREVER)
+    type("n")
+    time.sleep(2)
+    type(Key.ESC)
+
+#---------------------------------------------------#
 def waitForReport():
 #---------------------------------------------------#
 
