@@ -66,8 +66,12 @@ def fClear_Filter():
 def fCreate_SpecCredits(pMonth):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("specialCredits" + str(pMonth))    
+    myTools.sectionStartTimeStamp("specialCredits" + str(pMonth))
     logging.debug('Create_SpecCredits: ' + str(pMonth))
+
+    if int(Settings.tsVersion) < 2017:
+        logging.debug('- SKIP until 2017')
+        return       
 
     myTools.getFocus()
 
@@ -75,6 +79,7 @@ def fCreate_SpecCredits(pMonth):
     invList = ["12400","12600","13100","13330","13830","14210","14370","14850","15200","15460","15960","16240"]
 
     # open a/r tran list
+    logging.debug('- open a/r list')    
     type("t",KeyModifier.CTRL)
     myTools.waitForTransList()
 

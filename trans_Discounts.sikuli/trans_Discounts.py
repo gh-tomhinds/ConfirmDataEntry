@@ -43,7 +43,7 @@ def fCreate_OneDiscount(pClient,pMonth,pAmount):
     type(Key.TAB)
 
     # invoice list
-    type(Key.DOWN,KeyModifer.CTRL)
+    type(Key.DOWN,KeyModifier.CTRL)
     time.sleep(1)
     click("apply_one.png")
     time.sleep(1)    
