@@ -66,7 +66,9 @@ def fPrint_BillRun(pMonth):
     time.sleep(3)
     
     if int(Settings.tsVersion) > 2015:
+        wait("approving_bills.png",FOREVER)       
         while exists("approving_bills.png"):
+            logging.debug('--- msg exists')
             time.sleep(2)
     else:
         waitVanish("approving_statusbar.png",FOREVER) 

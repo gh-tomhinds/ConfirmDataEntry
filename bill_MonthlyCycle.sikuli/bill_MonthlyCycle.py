@@ -1,62 +1,37 @@
 from sikuli import *
+import logging
+
+import backup_Data
 
 import bill_Setup
 import bill_ImportLayout
-
 import bill_Print
-import trans_SpecCredits
-import trans_Writeoff
-import trans_ReversePay
-import trans_Payments
-import trans_Discounts
-import trans_Refunds
-import trans_Transfers
-import trans_TransfersToFunds
-import trans_PaymentsToAccount
-import trans_Credits
-import client_FinanceCharges
-import trans_BankDepositSlip
 
-import backup_Data
+import trans_PostBill
+import reports_CreateReports
 import reports_PostBill
 
 #---------------------------------------------------#
 def fRun_BillCycle(startMonth,endMonth):
 #---------------------------------------------------#
 
+    logging.debug(' ')
+    logging.debug('start bill cycle')
+
     for thisMonth in range(startMonth,endMonth):
-
-        # set up the bill report and import the bill layout before the first month
-#        if (thisMonth == 1):
-#            bill_Setup.fSetup_BillReport()
-#            bill_ImportLayout.fImport_BillLayout("Bill with Taxes")
-#            backup_Data.fBackup_BillData(0,"a") #backup before first bill
-
-#        bill_Print.fPrint_Bills(thisMonth)
-
-        # back up data and compare some values each month
-#        backup_Data.fBackup_BillData(thisMonth,"a")       
-#        reports_PostBill.fPrint_PostbillReports(thisMonth,"a")
-
-        # enter transactions for month
-#        trans_SpecCredits.fCreate_SpecCredits(thisMonth)
-#        trans_Writeoff.fCreate_Writeoffs(thisMonth)
-#        trans_ReversePay.fCreate_RevPays(thisMonth)
-##        trans_Discounts.fCreate_Discount(thisMonth)
-#        trans_Payments.fCreate_PaymentsForMonth(thisMonth)
-#        trans_Transfers.fCreate_Transfers(thisMonth)
-#        trans_TransfersToFunds.fCreate_TransfersToFunds(thisMonth)
+        logging.debug('- month: ' + str(thisMonth))
         
-#        backup_Data.fBackup_Checkpoint("before-refund")        
-        trans_Refunds.fCreate_Refunds(thisMonth)
-        
-        trans_PaymentsToAccount.fCreate_PaymentsToAccount(thisMonth)
-        trans_Credits.fCreate_CreditsForMonth(thisMonth)
-        client_FinanceCharges.fCreate_FinanceCharges(thisMonth)
-        
-        backup_Data.fBackup_Checkpoint("before-bds")        
-        trans_BankDepositSlip.fBankDepositSlips_Create(thisMonth)
+        if (thisMonth == 1):                                        # before 1st month, set up bill report and import the layout
+            bill_Setup.fSetup_BillReport()
+            bill_ImportLayout.fImport_BillLayout("Bill with Taxes")
+            backup_Data.fBackup_BillData(0,"a")                     # backup before first bill
 
-        # back up data and compare some values each month
+        bill_Print.fPrint_Bills(thisMonth)        
+        backup_Data.fBackup_BillData(thisMonth,"a")       
+        reports_PostBill.fPrint_PostbillReports(thisMonth,"a")      # compare some values before trans
+
+        popup("exit")
+
+        trans_PostBill.fEnter_Transactions(thisMonth)               # enter all transactions
         backup_Data.fBackup_BillData(thisMonth,"b")        
-        reports_PostBill.fPrint_PostbillReports(thisMonth,"b")
+        reports_PostBill.fPrint_PostbillReports(thisMonth,"b")      # compare some values after trans
