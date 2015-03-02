@@ -156,26 +156,31 @@ def waitForReport():
     while exists(Pattern("completed.png").similar(0.90)):
         logging.debug('-- completed msg exists')
         time.sleep(3)
+    time.sleep(1)       
+
+    if exists("mark_exported.png"):
+        logging.debug('-- exported msg exists')
+        type("n")
 
 #---------------------------------------------------#
 def waitForTransList():
 #---------------------------------------------------#
     time.sleep(2)
-    wait("inv_num_column.png",60)
+    wait("inv_num_column.png",300)
     time.sleep(2)
 
 #---------------------------------------------------#
 def waitForTransEntry():
 #---------------------------------------------------#
     time.sleep(2)
-    wait("ar_balance.png",60)
+    wait("ar_balance.png",300)
     time.sleep(2)
 
 #---------------------------------------------------#
 def waitForFundsList():
 #---------------------------------------------------#
     time.sleep(1)
-    wait("funds_account.png",60)
+    wait("funds_account.png",300)
     time.sleep(1)
 
 #---------------------------------------------------#

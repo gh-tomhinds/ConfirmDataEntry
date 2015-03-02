@@ -33,8 +33,20 @@ def Print_GLXfer(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
+    # trans types 
+    myTools.pressTAB(4)
+    type(Key.ENTER)
+    time.sleep(1)
+
+    # remove transfer since they were wrong before ts2016
+    type("t")
+    time.sleep(1)
+    type(Key.SPACE)
+    time.sleep(1)
+    type(Key.ENTER)
+
     # close dialog
-    myTools.pressTAB(1)
+    myTools.pressSHIFTTAB(3)
     type(Key.ENTER)
     time.sleep(1)   
 

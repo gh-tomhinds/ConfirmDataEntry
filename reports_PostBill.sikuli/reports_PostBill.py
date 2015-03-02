@@ -16,6 +16,10 @@ import report_Taxes
 import report_TkCC
 import report_TkHistory
 import report_TOWorksheet
+import report_UDSlip
+import report_UDClient
+import report_UDFunds
+import report_UDInvoice
 import report_GLXfer
 
 #---------------------------------------------------#
@@ -27,6 +31,11 @@ def fPrint_PostbillReports(pMonth,pAorB):
     repExt = pAorB + ".csv"
 
     report_AgedARBal.Print_ARAgedBal(pMonth,repExt)
+    report_UDSlip.fPrint_SlipListDetailed(pMonth,repExt)    
+    report_UDSlip.fPrint_SlipFields(pMonth,repExt)
+    report_UDClient.fPrint_ClientListHistory(pMonth,repExt)
+    report_UDFunds.fPrint_FundsListFields(pMonth,repExt)
+    report_UDInvoice.fPrint_InvoiceListFields(pMonth,repExt)
     report_TkHistory.Print_TkHistory(pMonth,repExt)
     report_TkCC.Print_TkCC(pMonth,repExt)
     report_FundsBal.fPrint_FundsBal(pMonth,repExt)
@@ -39,10 +48,12 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_ProdPeriod.print_ProdPeriod(pMonth,repExt)
     report_ProfPeriod.print_ProfPeriod(pMonth,repExt)
     report_Markup.print_Markup(pMonth,repExt)
-    report_DaysToPay.print_DaysToPay(pMonth,repExt)
     report_SlipSummary.print_SlipSummary(pMonth,repExt)
     report_GLXfer.Print_GLXfer(pMonth,repExt)
-    
+
+#    report_UDClient.fPrint_ClientListValues(pMonth,repExt)
+#    report_DaysToPay.print_DaysToPay(pMonth,repExt)
+
     if (pMonth == 1) and (pAorB == "a"):        
         # fee allocation cannot be run without some payments entered
         logging.debug('SKIP FEE ALLOCATION REPORT')

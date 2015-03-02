@@ -4,55 +4,19 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fCreate_SlipListDetailed():
+def fCreate_UDReport(pRepGroup,pRepTemplate,pRepToDup):
 #---------------------------------------------------#
 
-    logging.debug('- fCreate_SlipListDetailed')
+    logging.debug('-- fCreate_UDReport')
 
     # make sure timeslips has focus
     myTools.getFocus()
 
-    type(Key.F3,KeyModifier.CTRL)     # create a report
-    time.sleep(1)
-    type("r",KeyModifier.ALT)         # ud report
-    type("n",KeyModifier.ALT)         # next
+    type("r",KeyModifier.ALT)         # report menu
+    type(pRepGroup)
     time.sleep(1)
 
-    type("s")                         # slip
-    type("n",KeyModifier.ALT)         # next
-    time.sleep(1)
-
-    myTools.pressDOWN(2)              # detailed Listing Simple
-    type("n",KeyModifier.ALT)         # next
-    time.sleep(1)
-
-    type("n",KeyModifier.ALT)         # next
-    type(Key.ENTER)                   # Open Report Entry
-    time.sleep(1)
-
-    type("s",KeyModifier.CTRL)        # save
-    type(Key.ENTER)                   # OK
-    time.sleep(1)
-    
-    type(Key.F4,KeyModifier.CTRL)     # close report
-    time.sleep(1)        
-
-#---------------------------------------------------#
-def fCreate_SlipFields():
-#---------------------------------------------------#
-
-    logging.debug('- fCreate_SlipFields')
-
-    # make sure timeslips has focus
-    myTools.getFocus()
-
-    type("r",KeyModifier.ALT)         # slip reports
-    type("s")
-    time.sleep(1)
-
-    type("slip")                      # highlight "slip listing - detailed"
-    time.sleep(1)
-    type(Key.DOWN)
+    type(pRepToDup)                   # highlight "user-defined"
     time.sleep(1)
 
     click("design_tool.png")
@@ -64,14 +28,14 @@ def fCreate_SlipFields():
 
     type("a",KeyModifier.CTRL)        # rename
     time.sleep(1)
-    type("Slip Fields")
+    type(pRepTemplate)
     time.sleep(1)
 
     type("l",KeyModifier.ALT)         # import fields
     type("p")
     time.sleep(1)
 
-    templateName = Settings.dataFolder + '\\UDS SlipFields.tsl'
+    templateName = Settings.dataFolder + '\\' + pRepTemplate + '.tsl'
     paste(templateName)
     time.sleep(1)
     type(Key.ENTER)
@@ -87,23 +51,39 @@ def fCreate_SlipFields():
     time.sleep(1)
 
 #---------------------------------------------------#
-def fPrint_SlipListDetailed(pReportMonth,pRepExt):
+def fCreate_ClientListHistory():
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print sliplistdetailed")
+    logging.debug('- fCreate_ClientListHistory')
+    repTemplate = "UDC History"
+    fCreate_UDReport("c",repTemplate,"user")
+    
+#---------------------------------------------------#
+def fCreate_ClientListValues():
+#---------------------------------------------------#
+
+    logging.debug('- fCreate_ClientListValues')
+    repTemplate = "UDC Values"
+    fCreate_UDReport("c",repTemplate,"user")
+
+#---------------------------------------------------#
+def fPrint_ClientListHistory(pReportMonth,pRepExt):
+#---------------------------------------------------#
+
+    myTools.sectionStartTimeStamp("print clienthistory")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDSlip1-",pRepExt)
-    logging.debug('Print_UDSlip1: ' + reportName)
+    reportName = myTools.monthToName(pReportMonth,"-UDClient1-",pRepExt)
+    logging.debug('Print_UDClient1: ' + reportName)
     myTools.getFocus()
 
     logging.debug('- open report list')
     type("r",KeyModifier.ALT)
-    type("s")
+    type("c")
     time.sleep(1)
 
     logging.debug('- choose report')
-    type("slip listing - d")
+    type("ud")
     time.sleep(1)
 
     # choose CSV
@@ -116,9 +96,17 @@ def fPrint_SlipListDetailed(pReportMonth,pRepExt):
     type(Key.ENTER)    
     time.sleep(1)
 
-    # fill in path and name; press ENTER
+    # fill in path and name
     type(Settings.repFolder + "\\" + reportName)
     time.sleep(1)
+
+    # export column titles
+    myTools.pressTAB(2)
+    time.sleep(1)
+    type(Key.SPACE)
+    time.sleep(1)
+
+    # press ENTER to print
     type(Key.ENTER)    
 
     # wait for report to complete
@@ -133,26 +121,26 @@ def fPrint_SlipListDetailed(pReportMonth,pRepExt):
     myTools.sectionEndTimeStamp()
 
 #---------------------------------------------------#
-def fPrint_SlipFields(pReportMonth,pRepExt):
+def fPrint_ClientListValues(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    # this does not include applied fields, since we fixed some stuff in ts2016
-
-    myTools.sectionStartTimeStamp("print slipfields")
+    myTools.sectionStartTimeStamp("print clientvalues")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDSlip2-",pRepExt)
-    logging.debug('Print_UDSlip2: ' + reportName)
+    reportName = myTools.monthToName(pReportMonth,"-UDClient2-",pRepExt)
+    logging.debug('Print_UDClient2: ' + reportName)
     myTools.getFocus()
 
     logging.debug('- open report list')
     type("r",KeyModifier.ALT)
-    type("s")
+    type("c")
     time.sleep(1)
 
     logging.debug('- choose report')
-    type("slip f")
+    type("ud")
     time.sleep(1)
+    myTools.pressDOWN(1)
+    time.sleep(1)   
 
     # choose CSV
     myTools.pressSHIFTTAB(2)
