@@ -57,7 +57,7 @@ def fPrint_Statement(pReportMonth,pRepExt):
     time.sleep(1)
 
     # text file
-    pressSHIFTTAB(2)
+    myTools.pressSHIFTTAB(2)
     time.sleep(1)
     type("t")
     time.sleep(1)

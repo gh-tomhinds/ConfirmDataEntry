@@ -139,7 +139,7 @@ def enterSlipFilter(pMonth,pExtraTab):
 def waitForStatement():
 #---------------------------------------------------#
 
-    if exists(replace_it.png):
+    if exists('replace_it.png'):
         logging.debug('-- replace msg exists')            
         type(Key.ENTER)
         time.sleep(1)        
@@ -180,22 +180,25 @@ def waitForReport():
 def waitForTransList():
 #---------------------------------------------------#
     time.sleep(2)
-    wait("inv_num_column.png",300)
-    time.sleep(2)
+    while !exists("inv_num_column.png"):
+        logging.debug('-- waiting for trans list')
+        time.sleep(2)
 
 #---------------------------------------------------#
 def waitForTransEntry():
 #---------------------------------------------------#
     time.sleep(2)
-    wait("ar_balance.png",300)
-    time.sleep(2)
+    while !exists("ar_balance.png"):
+        logging.debug('-- waiting for trans entry')
+        time.sleep(2)
 
 #---------------------------------------------------#
 def waitForFundsList():
 #---------------------------------------------------#
-    time.sleep(1)
-    wait("funds_account.png",300)
-    time.sleep(1)
+    time.sleep(2)
+    while !exists("funds_account.png"):
+        logging.debug('-- waiting for funds list')
+        time.sleep(2)
 
 #---------------------------------------------------#
 def startTSImport():
@@ -222,7 +225,7 @@ def doNotSaveReport():
 #---------------------------------------------------#
 def checkForUnappliedAmount():
 #---------------------------------------------------#
-
+    
     time.sleep(1)
     if exists("go_back_edit_transaction.png"):
         logging.debug("--> UNAPPLIED AMOUNT")

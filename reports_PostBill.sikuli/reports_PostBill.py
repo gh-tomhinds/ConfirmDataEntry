@@ -30,7 +30,7 @@ def fPrint_PostbillReports(pMonth,pAorB):
     # print various reports to check db values and calculations
 
     csvExt = pAorB + ".csv"
-    textExt = pAorB + ".txt"
+    txtExt = pAorB + ".txt"
 
     report_AgedARBal.Print_ARAgedBal(pMonth,csvExt)
     report_UDSlip.fPrint_SlipListDetailed(pMonth,csvExt)
