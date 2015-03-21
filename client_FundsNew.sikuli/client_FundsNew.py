@@ -5,6 +5,7 @@
 from sikuli import *
 import logging
 import myTools
+from bill_Print import fSet_BillDate
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 def fFundsAccount_Create(pFundsClient,pFundsCount):
@@ -156,6 +157,8 @@ def fFundsAccouts_Setup():
 
     # make sure timeslips has focus
     myTools.getFocus()
+    # switch date to 1/27/13
+    fSet_BillDate(1)
 
     fBankAccount_Create()
 

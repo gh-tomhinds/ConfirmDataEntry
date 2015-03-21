@@ -51,7 +51,8 @@ def fCreate_OneFundsTransfer(pClient,pCliNum,pMonth):
     type(Key.END)
     time.sleep(1)
 
-    type("s",KeyModifier.CTRL)   
+    type("s",KeyModifier.CTRL)
+    time.sleep(1)
 
 #---------------------------------------------------#
 def fCreate_TransfersToFunds(pMonth):

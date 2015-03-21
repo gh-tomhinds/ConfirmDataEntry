@@ -44,12 +44,13 @@ def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
     type("a",KeyModifier.CTRL)
     type(pClient + " - " + str(pCliNum) + " - " + payDate)
     type(Key.ENTER)
-    time.sleep(.5)
+    time.sleep(1)
     type("s",KeyModifier.CTRL)
     time.sleep(1)
 
     if exists("you_deposited_money.png"):
         type("n")    
+        time.sleep(1) 
 
 #---------------------------------------------------#
 def fCreate_PaymentsToAccount(pMonth):
@@ -78,6 +79,7 @@ def fCreate_PaymentsToAccount(pMonth):
             logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)           
      
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
     
     myTools.sectionEndTimeStamp()

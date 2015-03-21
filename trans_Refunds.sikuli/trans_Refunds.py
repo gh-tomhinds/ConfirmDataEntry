@@ -46,6 +46,7 @@ def fCreate_OneRefund(pClient,pMonth,pAmount):
     type(Key.DOWN)
     time.sleep(1) 
     type("s",KeyModifier.CTRL)   
+    time.sleep(2) 
 
 #---------------------------------------------------#
 def fCreate_Refunds(pMonth):
@@ -68,5 +69,6 @@ def fCreate_Refunds(pMonth):
     fCreate_OneRefund(oneClient,pMonth,refundAmount)
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()

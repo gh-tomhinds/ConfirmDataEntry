@@ -55,6 +55,7 @@ def fCreate_OneFinanceCharge(pClient,pCliNum,pMonth,pAmount):
 
     # close client info
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
 
 #---------------------------------------------------#
 def fCreate_FinanceCharges(pMonth):

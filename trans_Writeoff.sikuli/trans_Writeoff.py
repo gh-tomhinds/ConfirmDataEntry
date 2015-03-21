@@ -41,11 +41,13 @@ def fCreate_OneWriteOff(pClient,pCliNum,pMonth,pAmount):
 
     # Invoice list; go to last entry
     type(Key.END, KeyModifier.CTRL)
+    time.sleep(1)
     click("apply_one_button.png")
     time.sleep(1) 
 
     # save
     type("s",KeyModifier.CTRL)
+    time.sleep(2) 
 
 #---------------------------------------------------#
 def fCreate_Writeoffs(pMonth):
@@ -74,5 +76,7 @@ def fCreate_Writeoffs(pMonth):
         fCreate_OneWriteOff(woClient,count,pMonth,woAmount)
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     myTools.sectionEndTimeStamp()

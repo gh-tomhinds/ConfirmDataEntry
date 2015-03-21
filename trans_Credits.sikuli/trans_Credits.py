@@ -42,6 +42,7 @@ def fCreate_OneCredit(pClient,pCliNum,pMonth,pAmount):
 
     # Invoice list; go to last entry
     type(Key.END, KeyModifier.CTRL)
+    time.sleep(1)    
     click("apply_one_button.png")
     time.sleep(1) 
 
@@ -78,5 +79,6 @@ def fCreate_CreditsForMonth(pMonth):
             logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)           
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
     myTools.sectionEndTimeStamp()

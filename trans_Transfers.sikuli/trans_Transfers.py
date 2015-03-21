@@ -45,7 +45,8 @@ def fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
     # payment list
     type(Key.DOWN)
     time.sleep(1) 
-    type("s",KeyModifier.CTRL)   
+    type("s",KeyModifier.CTRL)
+    time.sleep(1)     
 
 #---------------------------------------------------#
 def fCreate_Transfers(pMonth):

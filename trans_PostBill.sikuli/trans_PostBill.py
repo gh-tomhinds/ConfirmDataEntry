@@ -29,13 +29,14 @@ def fEnter_Transactions(transMonth):
     backup_Data.fBackup_Checkpoint("payments")    
     trans_Transfers.fCreate_Transfers(transMonth)
     trans_TransfersToFunds.fCreate_TransfersToFunds(transMonth)
+    backup_Data.fBackup_Checkpoint("transfers")
         
-    backup_Data.fBackup_Checkpoint("before-refund")        
-    trans_Refunds.fCreate_Refunds(transMonth)
-        
+    trans_Refunds.fCreate_Refunds(transMonth)        
     trans_PaymentsToAccount.fCreate_PaymentsToAccount(transMonth)
+    backup_Data.fBackup_Checkpoint("pta")
     trans_Credits.fCreate_CreditsForMonth(transMonth)
-    client_FinanceCharges.fCreate_FinanceCharges(transMonth)
-        
-    backup_Data.fBackup_Checkpoint("before-bds")        
-    trans_BankDepositSlip.fBankDepositSlips_Create(transMonth)   
+    backup_Data.fBackup_Checkpoint("credits")
+    client_FinanceCharges.fCreate_FinanceCharges(transMonth)        
+    backup_Data.fBackup_Checkpoint("finchar")
+    
+    trans_BankDepositSlip.fBankDepositSlips_Create(transMonth)

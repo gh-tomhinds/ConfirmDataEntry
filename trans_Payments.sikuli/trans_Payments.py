@@ -65,7 +65,7 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
 
     # clear applies and mark future invoice (this is for transfers in other scripts)
     if pClient in clearClients:
-        logging.debug("--> CLEAR APPLIED")        
+        logging.debug("==> CLEAR APPLIED")        
         click("clear_applies.png")
         time.sleep(1)
         click("apply_remaining_to_future.png")

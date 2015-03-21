@@ -72,6 +72,7 @@ def fCreate_RevPays(pMonth):
 
     if (pMonth == 1):
         logging.debug('- SKIP MONTH')
+        myTools.sectionEndTimeStamp()
         return        
 
     # list the client that will get a refund each month

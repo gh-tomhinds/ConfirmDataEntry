@@ -57,7 +57,7 @@ def fCreate_Discounts(pMonth):
     logging.debug('fCreate_Discounts: ' + str(pMonth))
 
     # list the client that will get a refund each month
-    discountClients = ["Natick","Orange","Oakham","Oak Bluffs","Southampton","Otis","Oxford","Leydon","Monroe","Monson","Methuen","Uxbridge"]
+    discountClients = ["Natick","Orange","Oakham","Oak Bluffs","Southampton","Otis","Oxford","Leyden","Monroe","Monson","Methuen","Uxbridge"]
     oneClient = discountClients[(pMonth - 1)]
 
     myTools.getFocus()

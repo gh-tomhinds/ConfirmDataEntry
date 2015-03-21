@@ -14,6 +14,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
     # new payment
     myTools.getFocus()
     type("n",KeyModifier.CTRL)
+    logging.debug('-- new')
     myTools.waitForTransEntry()
     
     # type
@@ -53,6 +54,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
     time.sleep(1)
 
     # close / save
+    logging.debug('-- close/save')
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.ENTER)
@@ -69,6 +71,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     # new pta
     myTools.getFocus()
     type("n",KeyModifier.CTRL + KeyModifier.SHIFT)
+    logging.debug('-- new')
     myTools.waitForTransEntry()
     
     # skip type
@@ -109,12 +112,14 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     time.sleep(1)
 
     # close / save
+    logging.debug('-- close/save')
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.ENTER)
     time.sleep(5)
     
     if exists("you_deposited_money.png"):
+        logging.debug('--- deposited msg exists')
         type("n")  
         time.sleep(1)    
 
@@ -127,6 +132,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     # new dep
     myTools.getFocus()
     type("d",KeyModifier.CTRL + KeyModifier.SHIFT)
+    logging.debug('-- new')
     myTools.waitForTransEntry()
     
     # skip type
@@ -167,12 +173,14 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     time.sleep(1)
 
     # close / save
+    logging.debug('-- close/save')
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type(Key.ENTER)
     time.sleep(5)    
     
     if exists("you_deposited_money.png"):
+        logging.debug('--- deposited msg exists')
         type("n")  
         time.sleep(1)    
 
@@ -181,26 +189,31 @@ def fBankDepositSlip_CreateOne(bds_month):
 #---------------------------------------------------#
 
     # open bank deposit slip list
+    logging.debug('- open bds list')
     type("t",KeyModifier.ALT)
     type("b")
-    time.sleep(1)
+    time.sleep(2)
 
-    if exists("create_bankdepositslip.png"):
-        type("n")
-        time.sleep(1)        
+    logging.debug('- wait for message')
+    wait("create_bankdepositslip.png",60)
+    type("n")
+    time.sleep(2)
 
     # create a new deposit slip
+    logging.debug('- create new bds')
     rightClick("deposit_number.png")
-    time.sleep(1)
+    time.sleep(2)
     type(Key.DOWN)
     type(Key.ENTER)
     time.sleep(2)
 
     # for even months, use "new bank" otherwise use "default"
     if bds_month % 2 == 0:
+        logging.debug('-- new bank')        
         type(Key.END)
     else:
         type(Key.HOME)
+        logging.debug('-- default bank')        
 
     type(Key.TAB)
 
