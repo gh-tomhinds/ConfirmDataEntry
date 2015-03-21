@@ -13,6 +13,37 @@ def fCreate_FundsListFields():
     fCreate_UDReport("f",repTemplate,"user")
 
 #---------------------------------------------------#
+def fSort_FundsListFields():
+#---------------------------------------------------#
+
+    logging.debug('- fSort_FundsListFields')
+
+    logging.debug('- open report list')
+    type("r",KeyModifier.ALT)
+    type("f")
+    time.sleep(1)
+
+    # open report
+    type("udf")
+    time.sleep(1)
+    type("o",KeyModifier.CTRL)
+    time.sleep(1)
+
+    # add funds id sort
+    type(Key.F6)
+    time.sleep(1)
+    myTools.pressTAB(2)
+    time.sleep(1)
+    type(Key.SPACE)
+
+    # close and save report
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    type("y")
+    time.sleep(1)
+    type(Key.F4,KeyModifier.CTRL)
+
+#---------------------------------------------------#
 def fPrint_FundsListFields(pReportMonth,pRepExt):
 #---------------------------------------------------#
 

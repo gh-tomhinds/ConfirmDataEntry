@@ -7,7 +7,7 @@ import reports_Compare
 def fImport_Statement():
 #---------------------------------------------------#
 
-    logging.debug('fImport_Statement')
+    logging.debug('- fImport_Statement')
 
     # make sure timeslips has focus
     myTools.getFocus()

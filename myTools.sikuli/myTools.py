@@ -172,15 +172,45 @@ def waitForReport():
         time.sleep(3)
     time.sleep(1)       
 
+    #wait for "calculating" box to disappear
+    while exists(Pattern("calculating_msg.png").similar(0.90)):
+        logging.debug('-- calculating msg exists')
+        time.sleep(3)
+    time.sleep(1)
+
     if exists("mark_exported.png"):
         logging.debug('-- exported msg exists')
         type("n")
+    time.sleep(1)       
+
+#---------------------------------------------------#
+def waitForWorksheet():
+#---------------------------------------------------#
+
+    logging.debug('- wait for worksheets')
+    time.sleep(1)
+
+    if exists("replace_it.png"):
+        logging.debug('-- replace msg exists')            
+        type(Key.ENTER)
+        time.sleep(1)        
+
+    if exists("recalc_msg.png"):
+        logging.debug('-- budget msg exists')        
+        type(Key.ENTER)
+        time.sleep(5)        
+
+    #wait for "printing" box to disappear
+    while exists("clients_processed.png"):
+        logging.debug('-- printing msg exists')
+        time.sleep(3)
+    time.sleep(1)
 
 #---------------------------------------------------#
 def waitForTransList():
 #---------------------------------------------------#
     time.sleep(2)
-    while !exists("inv_num_column.png"):
+    while not exists("inv_num_column.png"):
         logging.debug('-- waiting for trans list')
         time.sleep(2)
 
@@ -188,7 +218,7 @@ def waitForTransList():
 def waitForTransEntry():
 #---------------------------------------------------#
     time.sleep(2)
-    while !exists("ar_balance.png"):
+    while not exists("ar_balance.png"):
         logging.debug('-- waiting for trans entry')
         time.sleep(2)
 
@@ -196,7 +226,7 @@ def waitForTransEntry():
 def waitForFundsList():
 #---------------------------------------------------#
     time.sleep(2)
-    while !exists("funds_account.png"):
+    while not exists("funds_account.png"):
         logging.debug('-- waiting for funds list')
         time.sleep(2)
 
@@ -226,11 +256,11 @@ def doNotSaveReport():
 def checkForUnappliedAmount():
 #---------------------------------------------------#
     
-    time.sleep(1)
+    time.sleep(4)
     if exists("go_back_edit_transaction.png"):
-        logging.debug("--> UNAPPLIED AMOUNT")
+        logging.debug("==> UNAPPLIED AMOUNT")
         type(Key.ENTER)
-        time.sleep(1)
+        time.sleep(2)
 
 #---------------------------------------------------#
 def padZero(pNumber):
@@ -253,6 +283,28 @@ def monthToName(aMonth,aName,anExt):
     fileName = Settings.tsVersion + aName + fileName + anExt    
         
     return(fileName)
+
+#---------------------------------------------------#
+def removeDateAndTime():
+#---------------------------------------------------#
+    
+    logging.debug('- remove date and time')
+    time.sleep(1)
+
+    click("design_tool.png")
+    time.sleep(2)
+
+    click(Pattern("1-27-2013-white.png").similar(0.50))
+    type(Key.DELETE)  # delete date
+    time.sleep(1)
+    type(Key.DELETE)  # delete time
+    time.sleep(1)
+
+    click(Pattern("1-27-2013-yellow.png").similar(0.50))       # delete date
+    type(Key.DELETE)
+    time.sleep(1)
+    type(Key.DELETE)  # delete time
+    time.sleep(1)
 
 #---------------------------------------------------#
 def startTimeStamp():

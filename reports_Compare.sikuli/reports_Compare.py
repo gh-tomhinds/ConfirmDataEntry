@@ -1,7 +1,18 @@
 from sikuli import *
 import os
+import shutil
+
 import logging
 import myTools
+
+#---------------------------------------------------#
+def Copy_ErrorFiles(pReport1,pReport2):
+#---------------------------------------------------#
+
+    logging.debug('Copy_ErrorFiles')
+
+    shutil.copy(pReport1,Settings.errorFolder)
+    shutil.copy(pReport2,Settings.errorFolder)   
 
 #---------------------------------------------------#
 def Compare_OneReport(pReportName):
@@ -53,17 +64,17 @@ def Compare_OneReport(pReportName):
     if len(baseRepLines) < len(newRepLines):
         errorFound = True        
         logging.debug("--> FAILED: " + pReportName)
-        logging.debug("--> new report has more lines")
+        logging.debug("--> NEW report has more lines")
         myTools.pushReportLog(pReportName," WRONG SIZE")
     elif len(baseRepLines) > len(newRepLines):
         errorFound = True        
         logging.debug("--> FAILED: " + pReportName)
-        logging.debug("--> base report has more lines")
+        logging.debug("--> BASE report has more lines")
         myTools.pushReportLog(pReportName," WRONG SIZE")
 
     # compare each line in base report to new report; jump out on first mismatch
     else:
-        logging.debug("-- same length")    
+        logging.debug("-- SAME length")    
         logging.debug('- compare files')
         for baseRepLine in baseRepLines:
             if baseRepLine != newRepLines[newRepLine]:
@@ -76,7 +87,9 @@ def Compare_OneReport(pReportName):
                 break
             newRepLine += 1
     
-    if errorFound != True:
-        logging.debug("-- reports match: " + pReportName)
+    if errorFound == True:
+        Copy_ErrorFiles(baseFile,newFile)        
+    else:    
+        logging.debug("-- reports MATCH: " + pReportName)
         myTools.pushReportLog(pReportName," pass      ")
         

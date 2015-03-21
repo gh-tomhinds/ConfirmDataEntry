@@ -2,6 +2,7 @@ from sikuli import *
 import logging
 import myTools
 import reports_Compare
+from report_UDClient import fCreate_UDReport
 
 #---------------------------------------------------#
 def fCreate_SlipListDetailed():
@@ -35,56 +36,73 @@ def fCreate_SlipListDetailed():
     time.sleep(1)
     
     type(Key.F4,KeyModifier.CTRL)     # close report
-    time.sleep(1)        
+    time.sleep(1)
 
 #---------------------------------------------------#
 def fCreate_SlipFields():
 #---------------------------------------------------#
 
     logging.debug('- fCreate_SlipFields')
+    repTemplate = "UDS SlipFields"
+    fCreate_UDReport("s",repTemplate,"user")
 
-    # make sure timeslips has focus
-    myTools.getFocus()
+#---------------------------------------------------#
+def fCreate_SlipListCalc():
+#---------------------------------------------------#
 
-    type("r",KeyModifier.ALT)         # slip reports
-    type("s")
+    logging.debug('- fCreate_SlipListCalc')
+    repTemplate = "UDS Calcs"
+    fCreate_UDReport("s",repTemplate,"user")
+
+#---------------------------------------------------#
+def fSort_SlipReportFields():
+#---------------------------------------------------#
+
+    logging.debug('- fSort_SlipReportFields')
+
     time.sleep(1)
-
-    type("slip")                      # highlight "slip listing - detailed"
-    time.sleep(1)
-    type(Key.DOWN)
-    time.sleep(1)
-
-    click("design_tool.png")
-    time.sleep(2)
-
-    type("l",KeyModifier.ALT)         # duplicate
-    type("a")
-    time.sleep(1)
-
-    type("a",KeyModifier.CTRL)        # rename
-    time.sleep(1)
-    type("Slip Fields")
+    type("o",KeyModifier.CTRL)
     time.sleep(1)
 
-    type("l",KeyModifier.ALT)         # import fields
-    type("p")
+    # switch to sort
+    type(Key.F6)
+    time.sleep(1)
+    
+    # select slip num
+    myTools.pressTAB(1)
+    time.sleep(1)
+    type(Key.END)
+    time.sleep(1)
+    myTools.pressUP(4)
+    time.sleep(1)    
+    myTools.pressTAB(1)
+    time.sleep(1)
+    type(Key.SPACE)
+
+#---------------------------------------------------#
+def fChoose_CSV_Print(pReportName):
+#---------------------------------------------------#
+
+    logging.debug('- fChoose_CSV_Print')
+
+    # choose CSV
+    myTools.pressSHIFTTAB(3)
+    time.sleep(1)
+    type("c")
     time.sleep(1)
 
-    templateName = Settings.dataFolder + '\\UDS SlipFields.tsl'
-    paste(templateName)
-    time.sleep(1)
-    type(Key.ENTER)
-    time.sleep(1)
-    type(Key.ENTER)
+    # print the report
+    type(Key.ENTER)    
     time.sleep(1)
 
-    type(Key.F4,KeyModifier.CTRL)      # close / save
+    # fill in path and name; press ENTER    
+    type(Settings.repFolder + "\\" + pReportName)
     time.sleep(1)
-    type(Key.ENTER)
-
-    type(Key.F4,KeyModifier.CTRL)      # close
+    myTools.pressTAB(2)
     time.sleep(1)
+    type(Key.SPACE)
+    time.sleep(1)  
+    type(Key.ENTER)    
 
 #---------------------------------------------------#
 def fPrint_SlipListDetailed(pReportMonth,pRepExt):
@@ -106,28 +124,15 @@ def fPrint_SlipListDetailed(pReportMonth,pRepExt):
     type("slip listing - d")
     time.sleep(1)
 
-    # choose CSV
-    myTools.pressSHIFTTAB(2)
-    time.sleep(1)
-    type("c")
-    time.sleep(1)
-
-    # print the report
-    type(Key.ENTER)    
-    time.sleep(1)
-
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-    type(Key.ENTER)    
-
-    # wait for report to complete
+    fSort_SlipReportFields()
+    fChoose_CSV_Print(reportName)
     myTools.waitForReport()
-
-    # compare the report with baseline
     reports_Compare.Compare_OneReport(reportName)
 
     # close the report
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    type("n")
     type(Key.F4,KeyModifier.CTRL)
 
     myTools.sectionEndTimeStamp()
@@ -151,39 +156,51 @@ def fPrint_SlipFields(pReportMonth,pRepExt):
     time.sleep(1)
 
     logging.debug('- choose report')
-    type("slip f")
+    type("UDS SlipFields")
     time.sleep(1)
 
-    # choose CSV
-    myTools.pressSHIFTTAB(2)
-    time.sleep(1)
-    type("c")
-    time.sleep(1)
-
-    # print the report
-    type(Key.ENTER)    
-    time.sleep(1)
-
-    # fill in path and name
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-
-    # export column titles
-    myTools.pressTAB(2)
-    time.sleep(1)
-    type(Key.SPACE)
-    time.sleep(1)
-
-    # press ENTER to print
-    type(Key.ENTER)    
-
-    # wait for report to complete
+    fSort_SlipReportFields()
+    fChoose_CSV_Print(reportName)
     myTools.waitForReport()
-
-    # compare the report with baseline
     reports_Compare.Compare_OneReport(reportName)
 
     # close the report
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    type("n")
+    type(Key.F4,KeyModifier.CTRL)
+
+    myTools.sectionEndTimeStamp()
+
+#---------------------------------------------------#
+def fPrint_SlipListCalc(pReportMonth,pRepExt):
+#---------------------------------------------------#
+
+    myTools.sectionStartTimeStamp("print slipcalcs")
+
+    # name report file: ex: UDSlip1-03
+    reportName = myTools.monthToName(pReportMonth,"-UDSCalc-",pRepExt)
+    logging.debug('Print_UDSCalc: ' + reportName)
+    myTools.getFocus()
+
+    logging.debug('- open report list')
+    type("r",KeyModifier.ALT)
+    type("s")
+    time.sleep(1)
+
+    logging.debug('- choose report')
+    type("uds c")
+    time.sleep(1)
+
+    fSort_SlipReportFields()
+    fChoose_CSV_Print(reportName)
+    myTools.waitForReport()
+    reports_Compare.Compare_OneReport(reportName)
+
+    # close the report
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    type("n")
     type(Key.F4,KeyModifier.CTRL)
 
     myTools.sectionEndTimeStamp()

@@ -4,53 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Filter_SplitClients():
+def Print_TkContribution(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    logging.debug('- filter split clients')
-    
-    click("client_selection.png")
-    time.sleep(1)
-    click("add_filter.png")
-    wait("selected_items_will_be.png",60)
-
-    # switch to Excluded
-    myTools.pressSHIFTTAB(1)
-    time.sleep(1)
-    type("e")
-
-    # mark Beverly
-    myTools.pressTAB(1)
-    time.sleep(1)
-    type("bev")
-    time.sleep(1)
-    type(Key.F4)
-    time.sleep(2)
-
-    # mark Peabody
-    type("pea")
-    time.sleep(1)
-    type(Key.F4)
-    time.sleep(2)
-
-    # mark Saugus
-    type("sau")
-    time.sleep(1)
-    type(Key.F4)
-    time.sleep(2)
-
-    # close
-    type(Key.ENTER)
-
-#---------------------------------------------------#
-def Print_TkCC(pReportMonth,pRepExt):
-#---------------------------------------------------#
-
-    myTools.sectionStartTimeStamp("print tkcc")
+    myTools.sectionStartTimeStamp("print tkcontribution")
 
     # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(pReportMonth,"-TkCC-",pRepExt)
-    logging.debug('Print_TkCC: ' + reportName)
+    reportName = myTools.monthToName(pReportMonth,"-TkContrib-",pRepExt)
+    logging.debug('Print_TkContrib: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -59,9 +20,7 @@ def Print_TkCC(pReportMonth,pRepExt):
     type("r",KeyModifier.ALT)
     type("t")
     time.sleep(2)   
-    type("timekeeper cont")    
-    time.sleep(1)
-    myTools.pressDOWN(1)
+    type("timekeeper con")
     time.sleep(1)
     type("o",KeyModifier.CTRL)
     time.sleep(1)
@@ -78,9 +37,10 @@ def Print_TkCC(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
-    # show client breakdown   
-    myTools.pressTAB(4)
-    type(Key.SPACE)
+    # ITD
+    myTools.pressSHIFTTAB(3)
+    time.sleep(1)
+    type("i")
     time.sleep(1)
 
     # close dialog
@@ -94,10 +54,8 @@ def Print_TkCC(pReportMonth,pRepExt):
     type("c")
     time.sleep(1)
 
-    Filter_SplitClients()
-
     # print the report
-    type(Key.ENTER)    
+    type(Key.ENTER)
     time.sleep(1)
 
     # fill in path and name; press ENTER
