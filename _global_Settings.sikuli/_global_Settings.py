@@ -30,6 +30,9 @@ def fSetup_Folders():
 
     Settings.imgFolder = Settings.dataFolder + '\\images'
 
+# point to folder to copy report errors
+    Settings.errorFolder = Settings.scriptFolder + '\\!errors'
+
 #---------------------------------------------------#
 def fSetup_DataFiles():
 #---------------------------------------------------#
