@@ -2,9 +2,7 @@ from sikuli import *
 import logging
 
 import backup_Data
-
-import bill_Setup
-import bill_ImportLayout
+import email_Send
 import bill_Print
 
 import trans_PostBill
@@ -19,12 +17,7 @@ def fRun_BillCycle(startMonth,endMonth):
     logging.debug('start bill cycle')
 
     for thisMonth in range(startMonth,endMonth):
-        logging.debug('- month: ' + str(thisMonth))
-        
-        if (thisMonth == 1):                                        # before 1st month, set up bill report and import the layout
-            bill_Setup.fSetup_BillReport()
-            bill_ImportLayout.fImport_BillLayout("Bill with Taxes")
-            backup_Data.fBackup_BillData(0,"a")                     # backup before first bill
+        logging.debug('- month: ' + str(thisMonth))        
 
         bill_Print.fPrint_Bills(thisMonth)        
         backup_Data.fBackup_BillData(thisMonth,"a")       

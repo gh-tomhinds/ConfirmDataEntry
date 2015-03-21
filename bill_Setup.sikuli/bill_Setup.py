@@ -38,22 +38,24 @@ def fSetup_BillReport():
     myTools.pressTAB(4)
     time.sleep(1)
     type(Key.SPACE)
+    time.sleep(1)
 
 # OK
-    time.sleep(1)
     type(Key.ENTER)
+    time.sleep(1)
 
-# Print to PDF
+# Print to Text
     myTools.pressTAB(2)
-    type(Key.END)
+    type("t")
+    time.sleep(1)
 
 # PDF Options
-    myTools.pressTAB(2)
-    type(Key.SPACE)
-    time.sleep(1)
-    type(Key.UP)
-    time.sleep(1)
-    type(Key.ENTER) 
+#    myTools.pressTAB(2)
+#    type(Key.SPACE)
+#    time.sleep(1)
+#    type(Key.UP)
+#    time.sleep(1)
+#    type(Key.ENTER) 
 
 # SAVE and Close
     type("s",KeyModifier.CTRL)

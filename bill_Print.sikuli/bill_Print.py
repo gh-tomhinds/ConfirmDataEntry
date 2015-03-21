@@ -2,6 +2,7 @@ from sikuli import *
 import logging
 import myTools
 from datetime import date
+import reports_Compare
 
 #---------------------------------------------------#
 def fSet_BillDate(pMonth):
@@ -38,33 +39,55 @@ def fSet_BillDate(pMonth):
     time.sleep(1)  
 
 #---------------------------------------------------#
+def fRemove_Sort():
+#---------------------------------------------------#
+
+    time.sleep(1)
+    logging.debug('- remove sort')
+    
+    type(Key.F6)
+    time.sleep(1)
+
+    click(Pattern("remove_sort-1.png").similar(0.80))
+    time.sleep(1)
+    
+    type(Key.F6)
+    time.sleep(1)
+
+#---------------------------------------------------#
 def fPrint_BillRun(pMonth):
 #---------------------------------------------------#
-    logging.debug('- print bill run for month: ' + str(pMonth))
+
+    reportName = myTools.monthToName(pMonth,"-Bill-",".txt")
+    logging.debug('fPrint_BillRun: ' + reportName)
 
     type("b",KeyModifier.CTRL)
     time.sleep(1)
 
+    fRemove_Sort()
     myTools.enterSlipFilter(pMonth,"n")
 
-    # print bills to PDF
+    # print bills to text
     logging.debug('-- print')    
     type(Key.ENTER)    
     time.sleep(1)
-    type(Key.ENTER)    
 
-    wait("bills_saved_to_pdf.png",FOREVER)
+    # fill in path and name; press ENTER
+    type(Settings.repFolder + "\\" + reportName)
+    time.sleep(1)
     type(Key.ENTER)    
     time.sleep(1)
 
+    if exists("replace_msg.png"):
+        type("y")
+
     # approve bills
-    logging.debug('-- approve')
-    
+    logging.debug('-- approve')    
     wait(Pattern("approve_bills-1.png").targetOffset(-100,-8),FOREVER)
     click(Pattern("approve_bills-1.png").targetOffset(-100,-8))
     type(Key.ENTER)
     time.sleep(3)
-    
+
     if int(Settings.tsVersion) > 2015:
         wait("approving_bills.png",FOREVER)       
         while exists("approving_bills.png"):
@@ -73,6 +96,9 @@ def fPrint_BillRun(pMonth):
     else:
         waitVanish("approving_statusbar.png",FOREVER) 
     time.sleep(1)
+
+    # compare the report with baseline
+    reports_Compare.Compare_OneReport(reportName)
 
     # close report entry / don't save
     logging.debug('-- close report window')
