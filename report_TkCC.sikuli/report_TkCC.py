@@ -94,7 +94,8 @@ def Print_TkCC(pReportMonth,pRepExt):
     type("c")
     time.sleep(1)
 
-    Filter_SplitClients()
+    if pReportMonth != 13:
+        Filter_SplitClients()
 
     # print the report
     type(Key.ENTER)    

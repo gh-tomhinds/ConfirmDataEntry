@@ -41,13 +41,12 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_UDSlip.fPrint_SlipFields(pMonth,csvExt)
     report_UDSlip.fPrint_SlipListCalc(pMonth,csvExt)    
     report_UDClient.fPrint_ClientListHistory(pMonth,csvExt)
-    report_UDFunds.fPrint_FundsListFields(pMonth,csvExt)
     report_TkHistory.Print_TkHistory(pMonth,csvExt)
     report_TkContribution.Print_TkContribution(pMonth,csvExt)  
     report_TkCC.Print_TkCC(pMonth,csvExt)
     report_FundsBal.fPrint_FundsBal(pMonth,csvExt)
-    report_Hold.Print_Hold(pMonth,csvExt)
     report_Taxes.Print_Taxes(pMonth,csvExt)
+    
     report_TOWorksheet.Print_Worksheet(pMonth,csvExt)
     report_PBWorksheet.fPrint_PreBill(pMonth,txtExt)
     report_ProdPeriod.print_ProdPeriod(pMonth,csvExt)
@@ -57,14 +56,22 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_Statement.fPrint_Statement(pMonth,txtExt)
     
     report_UDInvoice.fPrint_InvoiceListFields(pMonth,csvExt)
-    report_DaysToPay.print_DaysToPay(pMonth,csvExt)    
     report_Budgets.printCliBudget(pMonth,csvExt)
     report_Budgets.printTkBudget(pMonth,csvExt)
     report_Budgets.printFirmBudget(pMonth,csvExt)    
     report_GLXfer.Print_GLXfer(pMonth,csvExt)
 
+    if (pMonth == 13): # skip some reports for ba clients
+        logging.debug('')
+        logging.debug('!!! SKIP UD FUNDS REPORT')
+        logging.debug('!!! SKIP HOLD REPORT')
+        logging.debug('!!! SKIP DAYS TO PAY REPORT')        
+    else:
+        report_UDFunds.fPrint_FundsListFields(pMonth,csvExt)   
+        report_Hold.Print_Hold(pMonth,csvExt)
+        report_DaysToPay.print_DaysToPay(pMonth,csvExt)   
 
-    if (pMonth == 1) and (pAorB == "a"):        
+    if (pMonth == 13) or ((pMonth == 1) and (pAorB == "a")):
         # fee allocation cannot be run without some payments entered
         logging.debug('')
         logging.debug('!!! SKIP COLLECTIONS REPORT')

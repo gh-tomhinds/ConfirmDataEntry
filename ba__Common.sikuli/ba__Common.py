@@ -1,8 +1,9 @@
 from sikuli import *
+import sys
 import logging
 import myTools
+import backup_Data
 import slips_Create
-import sys
 from bill_ImportLayout import fImport_Layout
 
 #---------------------------------------------------#
@@ -130,8 +131,11 @@ def fCreate_BASlips(pBAClient):
 def fPrint_BABill(pBAClient,pBillNum):
 #---------------------------------------------------#
 
+    baBillName = pBAClient + str(pBillNum)
+    backup_Data.fBackup_Checkpoint(baBillName)
+
     myTools.sectionStartTimeStamp("ba bill")
-    logging.debug('BA_Bill: ' + pBAClient + ' ' + str(pBillNum))
+    logging.debug('BA_Bill: ' + baBillName)
 
     type("b",KeyModifier.CTRL)
     click("remove_filters.png")
@@ -150,7 +154,7 @@ def fPrint_BABill(pBAClient,pBillNum):
     type("t")
     type(Key.ENTER)  
     time.sleep(1)
-    type(Settings.repFolder + "\\" + pBAClient + str(pBillNum) + ".txt")
+    type(Settings.repFolder + "\\" + baBillName + ".txt")
 
 #    for checkmark in findAll("checkmark.png"):
 #        click(checkmark)

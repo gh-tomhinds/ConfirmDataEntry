@@ -9,7 +9,10 @@ def fSet_BillDate(pMonth):
 #---------------------------------------------------#
     logging.debug('- change bill date: ' + str(pMonth) + "/27/" + Settings.dataYear)
     time.sleep(1)
-    
+
+    # make sure timeslips has focus
+    myTools.getFocus()
+
     # open revise date
     type("b",KeyModifier.ALT)
     type("d")    
@@ -115,9 +118,6 @@ def fPrint_Bills(pMonth):
     myTools.sectionStartTimeStamp("bills" + str(pMonth))
     logging.debug('Print_Bills: ' + str(pMonth))
     
-    # make sure timeslips has focus
-    myTools.getFocus()
-
     fSet_BillDate(pMonth)
     fPrint_BillRun(pMonth)
     myTools.sectionEndTimeStamp()

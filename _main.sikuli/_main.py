@@ -50,7 +50,11 @@ _global_Settings.fSetup_Envirnoment()
 
 ##############################################################
 
-reports_PostBill.fPrint_PostbillReports(1,"a") # use for quick test of reports
+from bill_Print import fSet_BillDate
+fSet_BillDate(1)
+reports_PostBill.fPrint_PostbillReports(1,"b") # use for quick test of reports
+type("f",KeyModifier.ALT)
+type("x")
 
 #db_New.fStartTS_CreateNewDB()
 #settings_Prefs.fTweak_Prefs()
