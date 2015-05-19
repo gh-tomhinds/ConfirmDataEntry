@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>client_Create.sikuli\client_Create.sikuli</h2> <a href="client_Create.sikuli\client_Create.zip">(Download this script)</a>
+<h2>client_Create.sikuli</h2> <a href="client_Create.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -80,6 +80,8 @@
 <span class="cmt">#---------------------------------------------------#</span>
 
     logging.debug(<span class="str">'- conflict check'</span>)
+
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
 
     <span class="kw">if</span> exists(<img src="do_not_show.png" />):
         logging.debug(<span class="str">'-- conflict msg'</span>)
@@ -190,7 +192,6 @@
 
     logging.debug(<span class="str">'- save'</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     fWaitFor_ConflictCheck()
 

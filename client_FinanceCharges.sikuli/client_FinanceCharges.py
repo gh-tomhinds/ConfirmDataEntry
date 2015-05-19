@@ -44,9 +44,9 @@ def fCreate_OneFinanceCharge(pClient,pCliNum,pMonth,pAmount):
 
     # description
     type("a",KeyModifier.CTRL)
-    time.sleep(1)
     financeText = "Finance charge for: " + pClient + ": Month: " + str(pMonth)
-    paste(financeText)
+    time.sleep(1)
+    type(financeText)
     time.sleep(1)
 
     # save

@@ -55,12 +55,13 @@ def fCreate_TimeOnly_RateRule():
     # rate
     myTools.pressTAB(2)
     type("4")
+    time.sleep(1)
     # options   
     myTools.pressTAB(5)
     type(Key.SPACE)
     myTools.pressTAB(2)
     type(Key.SPACE)
-    # save
+    # OK
     myTools.pressTAB(1)
     type(Key.SPACE)
     time.sleep(1)
@@ -84,18 +85,29 @@ def fCreate_ExpenseOnly_RateRule():
     # rate
     myTools.pressTAB(2)
     type("4.25")
+    time.sleep(1)
     # type
     myTools.pressTAB(1)
     type("e")
-    # options   
-    myTools.pressTAB(5)
-    type(Key.SPACE)
-    myTools.pressTAB(2)
-    type(Key.SPACE)
-    myTools.pressTAB(1)
-    # save
+    time.sleep(1)
+    
+    # options
+    if int(Settings.tsVersion) > 2015:
+        myTools.pressTAB(4)
+    else:
+        myTools.pressTAB(5)
     type(Key.SPACE)
     time.sleep(1)
+    
+    myTools.pressTAB(2)
+    type(Key.SPACE)
+    time.sleep(1)
+    
+    # OK    
+    myTools.pressTAB(1)
+    type(Key.SPACE)
+    time.sleep(1)
+    
     # export to all
     type(Key.INSERT)
     myTools.pressTAB(1)
@@ -269,7 +281,6 @@ def fCreate_TaxProfile():
     time.sleep(1)
 
     # OK
-    time.sleep(1)
     type(Key.ENTER)    
 
     # DONE

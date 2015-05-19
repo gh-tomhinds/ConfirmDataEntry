@@ -51,6 +51,7 @@ def fCreateImportEdit_Names():
     client_Import.fImport_Clients()
     client_Edit.fEdit_Client()    
     client_FundsEdit.fEdit_ClientFunds()
+    backup_Data.fBackup_Checkpoint("clients")    
     report_FundsAccountList.fPrint_Funds("FundsSettings-01.csv")
     client_Hold.fSetup_ClientHold()
     client_FeeAlloc.fSetup_FeeAlloc()
@@ -59,6 +60,7 @@ def fCreateImportEdit_Names():
     task_Edit.fEdit_Task()
     expense_Import.fImport_Expenses()
     expense_Edit.fEdit_Expense()
+    backup_Data.fBackup_Checkpoint("activities")
     
     expense_Markup.fSetup_ExpMarkups()
     taxes_Setup.fSetup_Taxes()

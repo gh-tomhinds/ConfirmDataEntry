@@ -6,15 +6,7 @@ import myTools
 def fEdit_CliGenInfo():
 #---------------------------------------------------#
 
-    logging.debug('- open client list')
-    type("n",KeyModifier.ALT)
-    type("i")
-    time.sleep(1)
-
-    logging.debug('- edit ZZZlient')
-    type("zzz")
-    type(Key.ENTER)
-    time.sleep(1)
+    myTools.openClient("zzz")
 
     logging.debug('  - nicknames')
     type("a",KeyModifier.CTRL)

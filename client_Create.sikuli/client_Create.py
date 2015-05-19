@@ -7,7 +7,9 @@ import myTools
 def fWaitFor_ConflictCheck():
 #---------------------------------------------------#
 
-    logging.debug('- conflict check')    
+    logging.debug('- conflict check')
+
+    time.sleep(5)    
 
     if exists("do_not_show.png"):
         logging.debug('-- conflict msg')
@@ -118,7 +120,6 @@ def fCreate_Client(nn1,nn2,fullname,inrefto,clinotes):
     
     logging.debug('- save')
     type("s",KeyModifier.CTRL)
-    time.sleep(1)
 
     fWaitFor_ConflictCheck()
 
