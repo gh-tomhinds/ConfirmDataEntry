@@ -43,18 +43,27 @@ import reports_PostBill
 import reports_CreateReports
 
 ##############################################################
+# setup stuff - never comment this out
+##############################################################
 
 myTools.setupLog()
 myTools.startTimeStamp()
 _global_Settings.fSetup_Envirnoment()
 
 ##############################################################
+# this section contains 1-off tests
+##############################################################
 
-from bill_Print import fSet_BillDate
-fSet_BillDate(1)
-reports_PostBill.fPrint_PostbillReports(1,"b") # use for quick test of reports
-type("f",KeyModifier.ALT)
-type("x")
+
+#from bill_Print import fSet_BillDate
+#fSet_BillDate(1)
+#reports_PostBill.fPrint_PostbillReports(10,"b") # use for quick test of reports
+#type("f",KeyModifier.ALT)
+#type("x")
+
+##############################################################
+# the real stuff starts below
+##############################################################
 
 #db_New.fStartTS_CreateNewDB()
 #settings_Prefs.fTweak_Prefs()
@@ -65,12 +74,12 @@ type("x")
 #names_Create.fCreateImportEdit_Names()
 
 #slips_Create.Create_Slips(10,10) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
-#slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
+##slips_CreateManually.Create_Slips(702,702) # pass in numTimeSlips and numExpSlips to create manually; should be 10, 10
 
 #settings_TAL.fSetup_TAL()
 #bill_Split.fSetup_SplitBills()
-#reports_CreateReports.create_Layouts()
 
+#reports_CreateReports.create_Layouts()
 #bill_MonthlyCycle.fRun_BillCycle(4,5) # pass in start and end+1 month; should by 1, 13 unless starting in mid stream
 
 #ba__Common.fSetup_BADefaultLayout()
@@ -81,6 +90,8 @@ type("x")
 #calendar_Terms.fSetup_CalTerms()
 #calendar_Entries.fCalendar_Entries()
 
+myTools.checkProcesses()
 myTools.endTimeStamp()
 
 exit()
+ 

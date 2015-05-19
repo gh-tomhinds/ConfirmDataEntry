@@ -2,6 +2,8 @@ from sikuli import *
 import datetime
 import logging
 import shutil
+import reports_Compare
+
 
 #---------------------------------------------------#
 def setupLog():
@@ -93,6 +95,18 @@ def waitForExportSuccess():
     type(Key.ENTER)
 
 #---------------------------------------------------#
+def openClient(pClient):
+#---------------------------------------------------#
+
+    logging.debug('- open client: ' +  pClient)
+    type("i",KeyModifier.CTRL)
+    time.sleep(1)
+
+    type(pClient)
+    type(Key.ENTER)
+    time.sleep(1)
+
+#---------------------------------------------------#
 def enterSlipFilter(pMonth,pExtraTab):
 #---------------------------------------------------#
 
@@ -110,6 +124,7 @@ def enterSlipFilter(pMonth,pExtraTab):
     logging.debug('-- choose TODAY')
     
     type(Key.DOWN)
+    time.sleep(1)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -122,6 +137,46 @@ def enterSlipFilter(pMonth,pExtraTab):
         pressTAB(6)
 
     time.sleep(1)
+
+    startDate = "1/1/" + Settings.dataYear
+    type(startDate)
+    type(Key.TAB)
+    
+    if pMonth > 12:
+        endDate = "12/31/" + Settings.dataYear
+    else:
+        endDate = str(pMonth) + "/27/" + Settings.dataYear
+        
+    type(endDate)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def enterCurrentMonthOnList(pMonth):
+#---------------------------------------------------#
+
+    # start from Print To field
+    
+    pressSHIFTTAB(3)
+
+    startDate = str(pMonth) + "/1/" + Settings.dataYear
+    type(startDate)
+    type(Key.TAB)
+    
+    if pMonth > 12:
+        endDate = "12/31/" + Settings.dataYear
+    else:
+        endDate = str(pMonth) + "/27/" + Settings.dataYear
+        
+    type(endDate)
+    time.sleep(1)
+
+#---------------------------------------------------#
+def enterYearToDateOnList(pMonth):
+#---------------------------------------------------#
+
+    # start from Print To field
+    
+    pressSHIFTTAB(3)
 
     startDate = "1/1/" + Settings.dataYear
     type(startDate)
@@ -170,7 +225,7 @@ def waitForReport():
     while exists(Pattern("completed.png").similar(0.90)):
         logging.debug('-- completed msg exists')
         time.sleep(3)
-    time.sleep(1)       
+    time.sleep(2)       
 
     #wait for "calculating" box to disappear
     while exists(Pattern("calculating_msg.png").similar(0.90)):
@@ -182,6 +237,8 @@ def waitForReport():
         logging.debug('-- exported msg exists')
         type("n")
     time.sleep(1)       
+
+    getFocus()
 
 #---------------------------------------------------#
 def waitForWorksheet():
@@ -207,27 +264,87 @@ def waitForWorksheet():
     time.sleep(1)
 
 #---------------------------------------------------#
+def finishReport(pReportName):
+#---------------------------------------------------#
+
+    # fill in path and name; press ENTER
+    type(Settings.repFolder + "\\" + pReportName)
+    time.sleep(1)
+    type(Key.ENTER)
+
+    # wait for report to complete
+    waitForReport()
+
+    # compare the report with baseline
+    reports_Compare.Compare_OneReport(pReportName)
+
+    # close the report
+    type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
+    type("n")                       # do not save report
+    time.sleep(1)
+
+    if exists("view_full_example.png"):
+        type(Key.F4,KeyModifier.CTRL)
+        time.sleep(1)
+        
+    sectionEndTimeStamp()
+
+#---------------------------------------------------#
 def waitForTransList():
 #---------------------------------------------------#
+
     time.sleep(2)
     while not exists("inv_num_column.png"):
         logging.debug('-- waiting for trans list')
         time.sleep(2)
+    time.sleep(2)
 
 #---------------------------------------------------#
 def waitForTransEntry():
 #---------------------------------------------------#
+
     time.sleep(2)
     while not exists("ar_balance.png"):
         logging.debug('-- waiting for trans entry')
         time.sleep(2)
+    time.sleep(2)
 
 #---------------------------------------------------#
 def waitForFundsList():
 #---------------------------------------------------#
+
     time.sleep(2)
     while not exists("funds_account.png"):
         logging.debug('-- waiting for funds list')
+        time.sleep(2)
+    time.sleep(2)
+
+#---------------------------------------------------#
+def enterClient(pClientName):
+#---------------------------------------------------#
+
+    time.sleep(1)
+    type(pClientName)
+    time.sleep(2)
+    type(Key.TAB)
+    time.sleep(2)
+
+#---------------------------------------------------#
+def checkForUnappliedAmount():
+#---------------------------------------------------#
+    
+    time.sleep(4)
+    if exists("go_back_edit_transaction.png"):
+        logging.debug("==> UNAPPLIED AMOUNT")
+        type(Key.ENTER)
+
+#---------------------------------------------------#
+def waitForTransSave():
+#---------------------------------------------------#
+
+    while exists(Pattern("dash_in_title.png").similar(0.90)):
+        logging.debug('-- saving')
         time.sleep(2)
 
 #---------------------------------------------------#
@@ -251,16 +368,6 @@ def doNotSaveReport():
     time.sleep(1)
     if exists("save_msg.png"):
         type("n")
-
-#---------------------------------------------------#
-def checkForUnappliedAmount():
-#---------------------------------------------------#
-    
-    time.sleep(4)
-    if exists("go_back_edit_transaction.png"):
-        logging.debug("==> UNAPPLIED AMOUNT")
-        type(Key.ENTER)
-        time.sleep(2)
 
 #---------------------------------------------------#
 def padZero(pNumber):
@@ -288,7 +395,7 @@ def monthToName(aMonth,aName,anExt):
 def removeDateAndTime():
 #---------------------------------------------------#
     
-    logging.debug('- remove date and time')
+    logging.debug('-- remove date and time')
     time.sleep(1)
 
     click("design_tool.png")
@@ -304,6 +411,14 @@ def removeDateAndTime():
     type(Key.DELETE)
     time.sleep(1)
     type(Key.DELETE)  # delete time
+    time.sleep(1)
+
+    click(Pattern("white_page.png").similar(0.55).targetOffset(20,0))
+    type(Key.DELETE)
+    time.sleep(1)
+
+    click(Pattern("yellow_page.png").similar(0.55).targetOffset(20,0))
+    type(Key.DELETE)
     time.sleep(1)
 
 #---------------------------------------------------#
@@ -411,3 +526,24 @@ def testRestore():
     type("r")
     time.sleep(3)
     type(Key.ESC)
+
+#---------------------------------------------------#
+def checkProcesses():
+#---------------------------------------------------#
+
+    time.sleep(5)
+    
+    cmd = "wmic path Win32_PerfFormattedData_PerfProc_Process get Name"
+    cmdOut = run(cmd)
+    processList = cmdOut.splitlines()
+
+    totalProc = 0
+    for oneProcess in processList:
+        oneProcess = oneProcess.strip()
+        if oneProcess[:7] == "fb_inet":
+            totalProc += 1
+
+    logging.debug(' ')
+    logging.debug('>>> FB Processes: ' + str(totalProc))
+
+    time.sleep(1)

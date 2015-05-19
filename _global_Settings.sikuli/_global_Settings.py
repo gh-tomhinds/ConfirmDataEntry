@@ -109,11 +109,14 @@ def fSetup_Envirnoment():
     fSetup_Time()
 
     # get TS version
-    Settings.tsVersion = input("TIMESLIPS:", "2015")
+    Settings.tsVersion = input("TIMESLIPS:", "2016")
     time.sleep(1)
 
-    # get data version
-    Settings.dataYear = input("DATA:", "2013")
+    # get data version 
+    # setting this automatically for now
+#    Settings.dataYear = input("DATA:", "2013")
+    Settings.dataYear = "2013" 
+
     time.sleep(2)
     
     fSetup_Folders()

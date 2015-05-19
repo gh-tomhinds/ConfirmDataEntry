@@ -18,7 +18,7 @@ def fSend_Text(mailSubject):
     msg['From'] = fromEmail
     msg['To'] = toEmail
     msg['Subject'] = mailSubject
-    message = 'script is done'
+    message = mailSubject
     
     msg.attach(MIMEText(message))   
     
