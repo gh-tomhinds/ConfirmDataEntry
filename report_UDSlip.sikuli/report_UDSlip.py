@@ -86,7 +86,7 @@ def fChoose_CSV_Print(pReportName):
     logging.debug('- fChoose_CSV_Print')
 
     # choose CSV
-    myTools.pressSHIFTTAB(3)
+    myTools.pressSHIFTTAB(2)
     time.sleep(1)
     type("c")
     time.sleep(1)
@@ -124,7 +124,7 @@ def fPrint_SlipListDetailed(pReportMonth,pRepExt):
     type("slip listing - d")
     time.sleep(1)
 
-    fSort_SlipReportFields()
+#    fSort_SlipReportFields()
     fChoose_CSV_Print(reportName)
     myTools.waitForReport()
     reports_Compare.Compare_OneReport(reportName)
@@ -159,7 +159,7 @@ def fPrint_SlipFields(pReportMonth,pRepExt):
     type("UDS SlipFields")
     time.sleep(1)
 
-    fSort_SlipReportFields()
+#    fSort_SlipReportFields()
     fChoose_CSV_Print(reportName)
     myTools.waitForReport()
     reports_Compare.Compare_OneReport(reportName)
@@ -192,7 +192,7 @@ def fPrint_SlipListCalc(pReportMonth,pRepExt):
     type("uds c")
     time.sleep(1)
 
-    fSort_SlipReportFields()
+#    fSort_SlipReportFields()
     fChoose_CSV_Print(reportName)
     myTools.waitForReport()
     reports_Compare.Compare_OneReport(reportName)

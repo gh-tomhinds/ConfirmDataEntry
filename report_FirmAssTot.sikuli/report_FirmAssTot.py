@@ -4,15 +4,19 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fSetup_PreBill():
+def fSetup_FirmAssTot():
 #---------------------------------------------------#
 
-    logging.debug('- set up prebill')
+    logging.debug('- set firmasstot')
     
     myTools.getFocus()
-    logging.debug('- open worksheet')
-    type("b",KeyModifier.ALT)
-    type("p")
+    logging.debug('- open report')
+    type("r",KeyModifier.ALT)
+    type("b")
+    time.sleep(1)
+    type("f")
+    myTools.pressDOWN(1)
+    time.sleep(1)
 
     myTools.removeDateAndTime()
 
@@ -23,24 +27,29 @@ def fSetup_PreBill():
     type(Key.F4,KeyModifier.CTRL)
 
 #---------------------------------------------------#
-def fPrint_PreBill(pReportMonth,pRepExt):
+def fPrint_FirmAssTot(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print PBworksheet")
+    myTools.sectionStartTimeStamp("print FirmAssTot")
 
     # name report file: ex: PreBill-03
-    reportName = myTools.monthToName(pReportMonth,"-PreBill-",pRepExt)
-    logging.debug('Print_PreBill: ' + reportName)
+    reportName = myTools.monthToName(pReportMonth,"-FirmAssTot-",pRepExt)
+    logging.debug('Print_FirmAssTot: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
 
-    logging.debug('- open worksheet')
-    type("b",KeyModifier.ALT)
-    type("p")    
+    logging.debug('- open FirmAssTot')
+    type("r",KeyModifier.ALT)
+    type("b")
+    time.sleep(1)
+    type("f")
+    myTools.pressDOWN(1)
     time.sleep(1)
     
-    logging.debug('- set up worksheet')
+    logging.debug('- set up report')
+    type("o",KeyModifier.CTRL)
+    
     # Options
     myTools.pressSHIFTTAB(4)
     type(Key.SPACE)

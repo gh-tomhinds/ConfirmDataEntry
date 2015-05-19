@@ -4,24 +4,24 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_FeeAlloc(pReportMonth,pRepExt):
+def Print_SlipTotalsWeekly(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print fee alloc")
+    myTools.sectionStartTimeStamp("slip totals")
 
-    # name report file: ex: FeeAlloc-03
-    reportName = myTools.monthToName(pReportMonth,"-FeeAlloc-",pRepExt)
-    logging.debug('Print_FeeAlloc: ' + reportName)
+    # name report file: ex: PayDistr-03
+    reportName = myTools.monthToName(pReportMonth,"-SlipTot-",pRepExt)
+    logging.debug('Print_SlipTotalsWeekly: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
 
     logging.debug('- open report')
     type("r",KeyModifier.ALT)
-    type("t")
+    type("s")
     time.sleep(2)
     
-    type("fee")    
+    type("w")
     time.sleep(1)
     
     type("o",KeyModifier.CTRL)
@@ -29,8 +29,13 @@ def Print_FeeAlloc(pReportMonth,pRepExt):
 
     logging.debug('- default options')
 
+    # switch to CSV
+    myTools.pressSHIFTTAB(2)
+    time.sleep(1)
+    type("c")    
+
     # options button
-    myTools.pressSHIFTTAB(4)
+    myTools.pressSHIFTTAB(2)
     type(Key.ENTER)
     time.sleep(1)
     
@@ -39,19 +44,19 @@ def Print_FeeAlloc(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
-    # close dialog
-    myTools.pressTAB(1)
+    # Include totals
+    myTools.pressTAB(8)
+    time.sleep(1)
+    type(Key.SPACE)
+    
+    # OK
     type(Key.ENTER)
-    time.sleep(1)   
+    time.sleep(1)
+
+    myTools.enterSlipFilter(pReportMonth,"y")
 
     logging.debug('- print report')
 
-    # move to Print To and choose CSV
-    myTools.pressTAB(2)
-    type("c")
-    time.sleep(1)
-
-    # print the report
     type(Key.ENTER)    
     time.sleep(1)
 

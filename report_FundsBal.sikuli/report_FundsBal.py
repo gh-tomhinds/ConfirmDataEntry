@@ -48,22 +48,4 @@ def fPrint_FundsBal(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-    type(Key.ENTER)    
-
-    # wait for report to complete
-    myTools.waitForReport()
-
-    # compare the report with baseline
-    reports_Compare.Compare_OneReport(reportName)
-
-    # close the report
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)            
-    if exists("preferences_msg.png"):
-        type("n")
-    type(Key.F4,KeyModifier.CTRL)
-        
-    myTools.sectionEndTimeStamp()
+    myTools.finishReport(reportName)

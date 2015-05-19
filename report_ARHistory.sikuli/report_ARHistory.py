@@ -4,27 +4,28 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_ARAgedBal(pReportMonth,pRepExt):
+def fPrint_ARHistory(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print aged bal")
+    myTools.sectionStartTimeStamp("print ARHistory")
 
-    # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-ARAgedBal-",pRepExt)    
-    logging.debug('Print_ARAgedBal: ' + reportName)
-
-    # make sure timeslips has focus
+    # name report file: ex: UDSlip1-03
+    reportName = myTools.monthToName(pReportMonth,"-ARHist-",pRepExt)
+    logging.debug('fPrint_ARHistory: ' + reportName)
     myTools.getFocus()
 
-    logging.debug('- open report')
+    logging.debug('- open report list')
     type("r",KeyModifier.ALT)
-    type("b")
+    type("a")
     time.sleep(1)
 
-    # move to Print To and choose CSV
+    # choose txt
     myTools.pressSHIFTTAB(2)
     time.sleep(1)
     type("c")
+    time.sleep(1)
+
+    myTools.enterYearToDateOnList(pReportMonth)
 
     # print the report
     type(Key.ENTER)    

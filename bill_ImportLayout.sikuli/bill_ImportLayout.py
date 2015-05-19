@@ -34,16 +34,23 @@ def fAssign_Layout():
 
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)
-    wait("selected_layout.png")
+    wait(Pattern("selected_layout.png").similar(0.60))    
     time.sleep(1)
     type(Key.INSERT)
-    wait("check_boxes.png")
-    time.sleep(1)
+    if int(Settings.tsVersion) > 2015:
+        time.sleep(2)
+    else:    
+        wait("check_boxes.png")
+        time.sleep(1)
     type("a",KeyModifier.ALT)
     time.sleep(1)
     type(Key.ENTER)
 
-    wait("assigned_message.png",FOREVER)
+    if int(Settings.tsVersion) > 2015:
+        wait("layout_assigned.png",FOREVER)
+    else:
+        wait("assigned_message.png",FOREVER)
+    
     time.sleep(1)
     type(Key.ENTER)
     time.sleep(1)    

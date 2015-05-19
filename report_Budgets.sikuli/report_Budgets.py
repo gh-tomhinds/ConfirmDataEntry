@@ -39,32 +39,6 @@ def setupReport():
     time.sleep(1)
 
 #---------------------------------------------------#
-def finishReport(pReportName):
-#---------------------------------------------------#
-
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + pReportName)
-    time.sleep(1)
-    type(Key.ENTER)
-
-    # wait for report to complete
-    myTools.waitForReport()
-
-    # compare the report with baseline
-    reports_Compare.Compare_OneReport(pReportName)
-
-    # close the report
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
-
-    # check for save message
-    myTools.doNotSaveReport()
-    
-    type(Key.F4,KeyModifier.CTRL)
-        
-    myTools.sectionEndTimeStamp()
-
-#---------------------------------------------------#
 def printCliBudget(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
@@ -85,7 +59,7 @@ def printCliBudget(pReportMonth,pRepExt):
     time.sleep(1)
 
     setupReport()
-    finishReport(reportName)
+    myTools.finishReport(reportName)
 
 #---------------------------------------------------#
 def printTkBudget(pReportMonth,pRepExt):
@@ -108,7 +82,7 @@ def printTkBudget(pReportMonth,pRepExt):
     time.sleep(1)
 
     setupReport()
-    finishReport(reportName)
+    myTools.finishReport(reportName)
 
 #---------------------------------------------------#
 def printFirmBudget(pReportMonth,pRepExt):
@@ -131,4 +105,4 @@ def printFirmBudget(pReportMonth,pRepExt):
     time.sleep(1)
 
     setupReport()
-    finishReport(reportName)
+    myTools.finishReport(reportName)

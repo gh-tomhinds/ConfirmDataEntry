@@ -24,6 +24,8 @@ def fSetup_TkCollections():
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1)
     type("y")
+    time.sleep(1)
+    type(Key.F4,KeyModifier.CTRL)
 
 #---------------------------------------------------#
 def Print_TkCollections(pReportMonth,pRepExt):
@@ -79,21 +81,4 @@ def Print_TkCollections(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-    type(Key.ENTER)    
-
-    # wait for report to complete
-    myTools.waitForReport()
-
-    # compare the report with baseline
-    reports_Compare.Compare_OneReport(reportName)
-
-    # close the report
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)            
-    type("n")
-    type(Key.F4,KeyModifier.CTRL)
-        
-    myTools.sectionEndTimeStamp()
+    myTools.finishReport(reportName)

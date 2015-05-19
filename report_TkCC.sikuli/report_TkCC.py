@@ -12,7 +12,7 @@ def Filter_SplitClients():
     click("client_selection.png")
     time.sleep(1)
     click("add_filter.png")
-    wait("selected_items_will_be.png",60)
+    wait(Pattern("selected_items_will_be.png").similar(0.50),60)
 
     # switch to Excluded
     myTools.pressSHIFTTAB(1)
@@ -101,21 +101,4 @@ def Print_TkCC(pReportMonth,pRepExt):
     type(Key.ENTER)    
     time.sleep(1)
 
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-    type(Key.ENTER)    
-
-    # wait for report to complete
-    myTools.waitForReport()
-
-    # compare the report with baseline
-    reports_Compare.Compare_OneReport(reportName)
-
-    # close the report
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)            
-    type("n")
-    type(Key.F4,KeyModifier.CTRL)
-        
-    myTools.sectionEndTimeStamp()
+    myTools.finishReport(reportName)

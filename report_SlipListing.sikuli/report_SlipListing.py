@@ -4,13 +4,13 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_ARAgedBal(pReportMonth,pRepExt):
+def fPrint_SlipListing(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print aged bal")
+    myTools.sectionStartTimeStamp("print SlipList")
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-ARAgedBal-",pRepExt)    
+    reportName = myTools.monthToName(pReportMonth,"-SlipList-",pRepExt)    
     logging.debug('Print_ARAgedBal: ' + reportName)
 
     # make sure timeslips has focus
@@ -18,7 +18,9 @@ def Print_ARAgedBal(pReportMonth,pRepExt):
 
     logging.debug('- open report')
     type("r",KeyModifier.ALT)
-    type("b")
+    type("s")
+    time.sleep(1)
+    type("s")
     time.sleep(1)
 
     # move to Print To and choose CSV

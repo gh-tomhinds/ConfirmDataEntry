@@ -47,6 +47,11 @@ def Print_PayDistr(pReportMonth,pRepExt):
     type(Key.ENTER)
     time.sleep(1)
 
+    # on Selection page, clear any existing filters
+    if exists("remove_all.png"):
+        click("remove_all.png")   
+        time.sleep(1)
+
     # Sort page
     type(Key.F6)
     time.sleep(1)
@@ -73,21 +78,4 @@ def Print_PayDistr(pReportMonth,pRepExt):
     type(Key.ENTER)    
     time.sleep(1)
 
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-    type(Key.ENTER)    
-
-    # wait for report to complete
-    myTools.waitForReport()
-
-    # compare the report with baseline
-    reports_Compare.Compare_OneReport(reportName)
-
-    # close the report
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)            
-    type("n")
-    type(Key.F4,KeyModifier.CTRL)
-        
-    myTools.sectionEndTimeStamp()
+    myTools.finishReport(reportName)

@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>bill_ImportLayout.sikuli\bill_ImportLayout.sikuli</h2> <a href="bill_ImportLayout.sikuli\bill_ImportLayout.zip">(Download this script)</a>
+<h2>bill_ImportLayout.sikuli</h2> <a href="bill_ImportLayout.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -81,15 +81,16 @@
     logging.debug(<span class="str">'- open layout list'</span>)
     <span class="skw">type</span>(<span class="str">"b"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"t"</span>)
+    <span class="skw">wait</span>(<img src="adjustment_note.png" />,FOREVER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     logging.debug(<span class="str">'- import layout'</span>)
     <span class="skw">click</span>(Pattern(<img src="import_button.png" />).targetOffset(<span class="dig">3</span>,-<span class="dig">9</span>))
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
 
     layoutFilePath = Settings.dataFolder + <span class="str">"\\"</span> + pThisLayout + <span class="str">".tsl"</span>
     <span class="skw">type</span>(layoutFilePath)
     <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
     <span class="skw">type</span>(pThisLayout)
 
     logging.debug(<span class="str">'- save layout'</span>)
@@ -105,14 +106,17 @@
 
     logging.debug(<span class="str">'- assign layout'</span>)
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
-    <span class="skw">wait</span>(<img src="selected_layout.png" />)
+    <span class="skw">wait</span>(Pattern(<img src="selected_layout.png" />).similar(<span class="dig">0.60</span>))
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.INSERT)
-    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">wait</span>(<img src="check_boxes.png" />)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"a"</span>,KeyModifier.ALT)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
 
     <span class="skw">wait</span>(<img src="assigned_message.png" />,FOREVER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 

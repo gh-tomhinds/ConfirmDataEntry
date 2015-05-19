@@ -67,58 +67,37 @@
    </head>
 <body>
 <div class="info">
-<h2>bill_MonthlyCycle.sikuli\bill_MonthlyCycle.sikuli</h2> <a href="bill_MonthlyCycle.sikuli\bill_MonthlyCycle.zip">(Download this script)</a>
+<h2>bill_MonthlyCycle.sikuli</h2> <a href="bill_MonthlyCycle.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
-
-<span class="kw">import</span> bill_Setup
-<span class="kw">import</span> bill_ImportLayout
-
-<span class="kw">import</span> bill_Print
-<span class="kw">import</span> trans_SpecCredits
-<span class="kw">import</span> trans_Payments
-<span class="kw">import</span> trans_Transfers
-<span class="kw">import</span> trans_TransfersToFunds
-<span class="kw">import</span> trans_PaymentsToAccount
-<span class="kw">import</span> trans_Credits
-<span class="kw">import</span> client_FinanceCharges
-<span class="kw">import</span> trans_BankDepositSlip
+<span class="kw">import</span> logging
 
 <span class="kw">import</span> backup_Data
+<span class="kw">import</span> email_Send
+<span class="kw">import</span> bill_Print
+
+<span class="kw">import</span> trans_PostBill
+<span class="kw">import</span> reports_CreateReports
 <span class="kw">import</span> reports_PostBill
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fRun_BillCycle(startMonth,endMonth):
 <span class="cmt">#---------------------------------------------------#</span>
 
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'start bill cycle'</span>)
+
     <span class="kw">for</span> thisMonth <span class="kw">in</span> range(startMonth,endMonth):
+        logging.debug(<span class="str">'- month: '</span> + str(thisMonth))
 
-        <span class="cmt"># set up the bill report and import the bill layout before the first month</span>
-        <span class="kw">if</span> (thisMonth == <span class="dig">1</span>):
-            bill_Setup.fSetup_BillReport()
-            bill_ImportLayout.fImport_BillLayout(<span class="str">"Bill with Taxes"</span>)
-            backup_Data.fBackup_BillData(<span class="dig">0</span>,<span class="str">"a"</span>) <span class="cmt">#backup before first bill</span>
+<span class="cmt">#        bill_Print.fPrint_Bills(thisMonth)        </span>
+<span class="cmt">#        backup_Data.fBackup_BillData(thisMonth,"a")       </span>
+<span class="cmt">#        reports_PostBill.fPrint_PostbillReports(thisMonth,"a")      # compare some values before trans</span>
 
-        bill_Print.fPrint_Bills(thisMonth)
-
-        <span class="cmt"># back up data and compare some values each month</span>
-        backup_Data.fBackup_BillData(thisMonth,<span class="str">"a"</span>)
-        reports_PostBill.fPrint_PostbillReports(thisMonth,<span class="str">"a"</span>)
-
-        <span class="cmt"># enter transactions for month</span>
-        trans_SpecCredits.fCreate_SpecCredits(thisMonth)
-        trans_Payments.fCreate_PaymentsForMonth(thisMonth)
-        trans_Transfers.fCreate_Transfers(thisMonth)
-        trans_TransfersToFunds.fCreate_TransfersToFunds(thisMonth)
-        trans_PaymentsToAccount.fCreate_PaymentsToAccount(thisMonth)
-        trans_Credits.fCreate_CreditsForMonth(thisMonth)
-        client_FinanceCharges.fCreate_FinanceCharges(thisMonth)
-        trans_BankDepositSlip.fBankDepositSlips_Create(thisMonth)
-
-        <span class="cmt"># back up data and compare some values each month</span>
+        trans_PostBill.fEnter_Transactions(thisMonth)               <span class="cmt"># enter all transactions</span>
         backup_Data.fBackup_BillData(thisMonth,<span class="str">"b"</span>)
-        reports_PostBill.fPrint_PostbillReports(thisMonth,<span class="str">"b"</span>)
+        reports_PostBill.fPrint_PostbillReports(thisMonth,<span class="str">"b"</span>)      <span class="cmt"># compare some values after trans</span>
 </pre>
 </body>
 </html>

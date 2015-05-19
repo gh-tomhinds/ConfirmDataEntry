@@ -7,7 +7,7 @@ import reports_Compare
 def Print_Worksheet(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print worksheet")
+    myTools.sectionStartTimeStamp("print TOworksheet")
 
     # name report file: ex: Worksheet-03
     reportName = myTools.monthToName(pReportMonth,"-Worksheet-",pRepExt)
@@ -52,22 +52,5 @@ def Print_Worksheet(pReportMonth,pRepExt):
     # print the report
     type(Key.ENTER)    
     time.sleep(1)
-    
-    # fill in path and name; press ENTER
-    type(Settings.repFolder + "\\" + reportName)
-    time.sleep(1)
-    type(Key.ENTER)    
 
-    # wait for report to complete
-    myTools.waitForReport()
-
-    # compare the report with baseline
-    reports_Compare.Compare_OneReport(reportName)
-
-    type(Key.F4,KeyModifier.CTRL)
-
-    time.sleep(1)            
-    type("n")
-    type(Key.F4,KeyModifier.CTRL)
-
-    myTools.sectionEndTimeStamp()
+    myTools.finishReport(reportName)

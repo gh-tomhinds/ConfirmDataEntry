@@ -4,14 +4,14 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_ARAgedBal(pReportMonth,pRepExt):
+def fPrint_SplitBill(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print aged bal")
+    myTools.sectionStartTimeStamp("print splitbill")
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-ARAgedBal-",pRepExt)    
-    logging.debug('Print_ARAgedBal: ' + reportName)
+    reportName = myTools.monthToName(pReportMonth,"-Split-",pRepExt)    
+    logging.debug('Print_SplitBill: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -20,6 +20,7 @@ def Print_ARAgedBal(pReportMonth,pRepExt):
     type("r",KeyModifier.ALT)
     type("b")
     time.sleep(1)
+    type("s")
 
     # move to Print To and choose CSV
     myTools.pressSHIFTTAB(2)
