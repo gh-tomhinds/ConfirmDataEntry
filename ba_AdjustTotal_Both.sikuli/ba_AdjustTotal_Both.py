@@ -6,19 +6,14 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAdjustTotalBoth_Setup():
+def fAdjustTotalBoth_Setup(pBAClient):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp("ba AdjustTotalBoth")
-    logging.debug("ba AdjustTotalBoth")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-AdjTot-Both")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for both
     ba__Common.fMoveto_BAPage()
@@ -48,7 +43,10 @@ def fAdjustTotalBoth_Setup():
         myTools.pressTAB(3)
     else:
         type("d",KeyModifier.ALT)
+
+	time.sleep(1)    
     type("Adjust Total Charges - Both")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -67,13 +65,15 @@ def fAdjustTotalBoth_Setup():
 def fAdjustTotal_Both():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
+    baClient = "BA-AdjTot-Both"
+
     # create a new client    
-    client_Create.fCreate_Client("BA-AdjTot-Both","BA-AdjTot-Both","Adjust Total - Both","Adjust Total - Both","Adjust Total - Both")
+    client_Create.fCreate_Client(baClient,baClient,"Adjust Total - Both","Adjust Total - Both","Adjust Total - Both")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-AdjTot-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAdjustTotalBoth_Setup() 
+    fAdjustTotalBoth_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-AdjTot-Both",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-AdjTot-Both1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

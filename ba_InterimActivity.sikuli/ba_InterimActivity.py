@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fInterimActivity_Setup1():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fInterimActivity_Setup1(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba InterimAct1")
-    logging.debug("ba InterimAct1")
+    myTools.sectionStartTimeStamp(pBAClient + "1")
+    logging.debug(pBAClient + "1")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-InterimAct")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -38,6 +34,7 @@ def fInterimActivity_Setup1():
     type(Key.ENTER)
     time.sleep(1)    
     type(Key.ENTER)
+	
 # save and close    
     type("s",KeyModifier.CTRL)
 
@@ -48,18 +45,14 @@ def fInterimActivity_Setup1():
     myTools.sectionEndTimeStamp()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fInterimActivity_Setup2():
+def fInterimActivity_Setup2(pBAClient):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp("ba InterimAct2")
-    logging.debug("ba InterimAct2")
+    myTools.sectionStartTimeStamp(pBAClient + "2")
+    logging.debug(pBAClient + "2")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-InterimAct")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -91,19 +84,15 @@ def fInterimActivity_Setup2():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fInterimActivity_Setup3():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fInterimActivity_Setup3(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba InterimAct3")
-    logging.debug("ba InterimAct3")
+    myTools.sectionStartTimeStamp(pBAClient + "3")
+    logging.debug(pBAClient + "3")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-InterimAct")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -137,35 +126,37 @@ def fInterimActivity_Setup3():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fInterimActivity():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-InterimAct"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-InterimAct","BA-InterimAct","Interim Activity FF","Interim Activity FF","Interim Activity FF")
+    client_Create.fCreate_Client(baClient,baClient,"Interim Activity FF","Interim Activity FF","Interim Activity FF")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-InterimAct")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fInterimActivity_Setup1() 
+    fInterimActivity_Setup1(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-InterimAct",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-InterimAct1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")
 
     # create some slips
-    ba__Common.fCreate_BASlips("BA-InterimAct")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fInterimActivity_Setup2() 
+    fInterimActivity_Setup2(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-InterimAct",2)
+    ba__Common.fPrint_BABill(baClient,2)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-InterimAct2")
+    ba__ReviewBills.fReview_BABill(baClient + "2")
 
     # create some slips
-    ba__Common.fCreate_BASlips("BA-InterimAct")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fInterimActivity_Setup3() 
+    fInterimActivity_Setup3(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-InterimAct",3)
+    ba__Common.fPrint_BABill(baClient,3)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-InterimAct3")
+    ba__ReviewBills.fReview_BABill(baClient + "BA-InterimAct3")

@@ -32,7 +32,11 @@ def fMaximumExp_Setup():
     time.sleep(1)    
     type("500")
     myTools.pressTAB(2)
+	
+    time.sleep(1)    
     type("Maximum FF - Expense")
+    time.sleep(1)    
+	
 # save and close    
     type(Key.TAB)
     type(Key.SPACE)

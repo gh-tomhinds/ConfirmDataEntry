@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fContingencyTime_Setup1():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fContingencyTime_Setup1(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba ContTime1")
-    logging.debug("ba ContTime1")
+    myTools.sectionStartTimeStamp(pBAClient + "1")
+    logging.debug(pBAClient + "1")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-Cont-Time")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -33,7 +29,10 @@ def fContingencyTime_Setup1():
     time.sleep(1)    
     type("1000")
     myTools.pressTAB(3)
+	
+    time.sleep(1)    
     type("Contingency - Time")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -46,19 +45,15 @@ def fContingencyTime_Setup1():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fContingencyTime_Setup2():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fContingencyTime_Setup2(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba ContTime2")
-    logging.debug("ba ContTime2")
+    myTools.sectionStartTimeStamp(pBAClient + "2")
+    logging.debug(pBAClient + "2")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-Cont-Time")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement fields
     ba__Common.fMoveto_BAPage()
@@ -85,26 +80,28 @@ def fContingencyTime_Setup2():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fContingency_Time():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Cont-Time"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Cont-Time","BA-Cont-Time","Contingency - Time","Contingency - Time","Contingency - Time")
+    client_Create.fCreate_Client(baClient,baClient,"Contingency - Time","Contingency - Time","Contingency - Time")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Cont-Time")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fContingencyTime_Setup1() 
+    fContingencyTime_Setup1(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Cont-Time",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare bill values
-    ba__ReviewBills.fReview_BABill("BA-Cont-Time1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")
 
     # create some more slips
-    ba__Common.fCreate_BASlips("BA-Cont-Time")
+    ba__Common.fCreate_BASlips(baClient)
     # change billing arrangement
-    fContingencyTime_Setup2() 
+    fContingencyTime_Setup2(baClient) 
     # print 2nd bill to text
-    ba__Common.fPrint_BABill("BA-Cont-Time",2)
+    ba__Common.fPrint_BABill(baClient,2)
     # compare 2nd bill's values
-    ba__ReviewBills.fReview_BABill("BA-Cont-Time2")
+    ba__ReviewBills.fReview_BABill(baClient + "2")

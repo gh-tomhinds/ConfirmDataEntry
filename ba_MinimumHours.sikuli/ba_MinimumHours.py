@@ -37,7 +37,11 @@ def fMinimumHours_Setup():
     type(Key.TAB)
     type("500")
     myTools.pressTAB(3)
+	
+    time.sleep(1)    
     type("Minimum Hours FF")
+    time.sleep(1)    
+	
 # save and close    
     type(Key.TAB)
     type(Key.SPACE)

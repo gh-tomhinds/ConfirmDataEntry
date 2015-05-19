@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAdjustTotalTime_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fAdjustTotalTime_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba AdjustTotalTime")
-    logging.debug("ba AdjustTotalTime")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-AdjTot-Time")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -41,7 +37,10 @@ def fAdjustTotalTime_Setup():
         myTools.pressTAB(3)
     else:
         type("d",KeyModifier.ALT)
+		
+    time.sleep(1)    
     type("Adjust Total Charges - Time")
+    time.sleep(1)    
 
 # save and close
     type(Key.TAB)
@@ -56,20 +55,19 @@ def fAdjustTotalTime_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fAdjustTotal_Time():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
-    logging.debug(' ')
-    logging.debug('BA_AdjustTotal_Time')
+    baClient = "BA-AdjTot-Time"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-AdjTot-Time","BA-AdjTot-Time","Adjust Total - Time","Adjust Total - Time","Adjust Total - Time")
+    client_Create.fCreate_Client(baClient,baClient,"Adjust Total - Time","Adjust Total - Time","Adjust Total - Time")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-AdjTot-Time")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAdjustTotalTime_Setup() 
+    fAdjustTotalTime_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-AdjTot-Time",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-AdjTot-Time1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

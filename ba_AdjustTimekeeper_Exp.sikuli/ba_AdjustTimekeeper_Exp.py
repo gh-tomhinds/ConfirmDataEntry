@@ -6,18 +6,14 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAdjustTimekeeperExp_Setup():
+def fAdjustTimekeeperExp_Setup(pBAClient):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp("ba AdjustTimekeeperExp")
-    logging.debug("ba AdjustTimekeeperExp")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-AdjTK-Exp")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for exp
     ba__Common.fMoveto_BAPage()
@@ -42,7 +38,10 @@ def fAdjustTimekeeperExp_Setup():
         myTools.pressTAB(3)
     else:
         type("d",KeyModifier.ALT)
+		
+    time.sleep(1)    
     type("Adjust Timekeeper - Exp")
+    time.sleep(1)    
 
 # save and close    
     type(Key.TAB)
@@ -61,16 +60,15 @@ def fAdjustTimekeeperExp_Setup():
 def fAdjustTimekeeper_Exp():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug(' ')
-    logging.debug('BA_AdjustTimekeeper_Exp')
+    baClient = "BA-AdjTK-Exp"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-AdjTK-Exp","BA-AdjTK-Exp","Adjust Timekeeper - Expense","Adjust Timekeeper - Expense","Adjust Timekeeper - Expense")
+    client_Create.fCreate_Client(baClient,baClient,"Adjust Timekeeper - Expense","Adjust Timekeeper - Expense","Adjust Timekeeper - Expense")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-AdjTK-Exp")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAdjustTimekeeperExp_Setup() 
+    fAdjustTimekeeperExp_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-AdjTK-Exp",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-AdjTK-Exp1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

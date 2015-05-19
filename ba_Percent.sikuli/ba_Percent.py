@@ -68,7 +68,10 @@ def fPercent_Setup1():
         myTools.pressTAB(5)
     else:
         myTools.pressTAB(6)
+		
+    time.sleep(1)    
     type("Percent Complete")
+    time.sleep(1)    
 
 # save and close    
     type(Key.TAB)

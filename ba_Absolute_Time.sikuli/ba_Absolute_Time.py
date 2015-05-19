@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAbsoluteTime_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fAbsoluteTime_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba AbsoluteTime")
-    logging.debug("ba AbsoluteTime")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-Absolute-Time")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -33,7 +29,10 @@ def fAbsoluteTime_Setup():
     time.sleep(1)    
     type("1000")
     myTools.pressTAB(3)
+	
+    time.sleep(1)    
     type("Absolute FF - Time")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -46,17 +45,19 @@ def fAbsoluteTime_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fAbsolute_Time():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Absolute-Time"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Absolute-Time","BA-Absolute-Time","Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
+    client_Create.fCreate_Client(baClient,baClient,"Absolute FF - Time","Absolute FF - Time","Absolute FF - Time")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Absolute-Time")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAbsoluteTime_Setup() 
+    fAbsoluteTime_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Absolute-Time",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Absolute-Time1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

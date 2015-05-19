@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fContingencyBoth_Setup1():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fContingencyBoth_Setup1(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba ContBoth1")
-    logging.debug("ba ContBoth1")
+    myTools.sectionStartTimeStamp(pBAClient + "1")
+    logging.debug(pBAClient + "1")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-Cont-Both")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for both
     ba__Common.fMoveto_BAPage()
@@ -40,7 +36,10 @@ def fContingencyBoth_Setup1():
     time.sleep(1)    
     type("500")
     myTools.pressTAB(3)
+	
+    time.sleep(1)    
     type("Contingency - Both")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -53,19 +52,15 @@ def fContingencyBoth_Setup1():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fContingencyBoth_Setup2():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fContingencyBoth_Setup2(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba ContBoth2")
-    logging.debug("ba ContBoth2")
+    myTools.sectionStartTimeStamp(pBAClient + "2")
+    logging.debug(pBAClient + "2")
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-Cont-Both")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for both
     ba__Common.fMoveto_BAPage()
@@ -95,26 +90,28 @@ def fContingencyBoth_Setup2():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fContingency_Both():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Cont-Both"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Cont-Both","BA-Cont-Both","Contingency - Both","Contingency - Both","Contingency - Both")
+    client_Create.fCreate_Client(baClient,baClient,"Contingency - Both","Contingency - Both","Contingency - Both")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Cont-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fContingencyBoth_Setup1() 
+    fContingencyBoth_Setup1(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Cont-Both",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Cont-Both1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")
 
     # create some more slips
-    ba__Common.fCreate_BASlips("BA-Cont-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # change billing arrangement
-    fContingencyBoth_Setup2() 
+    fContingencyBoth_Setup2(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Cont-Both",2)
+    ba__Common.fPrint_BABill(baClient,2)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Cont-Both2")
+    ba__ReviewBills.fReview_BABill(baClient + "2")

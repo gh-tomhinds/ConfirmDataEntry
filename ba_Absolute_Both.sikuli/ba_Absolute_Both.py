@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAbsoluteBoth_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fAbsoluteBoth_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba AbsoluteBoth")
-    logging.debug("ba AbsoluteBoth")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-Absolute-Both")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for both
     ba__Common.fMoveto_BAPage()
@@ -44,7 +40,9 @@ def fAbsoluteBoth_Setup():
     if int(Settings.tsVersion) > 2014:
         type(Key.TAB)
 
+    time.sleep(1)    
     type("Absolute FF - Both")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -57,17 +55,19 @@ def fAbsoluteBoth_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fAbsolute_Both():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Absolute-Both"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Absolute-Both","BA-Absolute-Both","Absolute FF - Both","Absolute FF - Both","Absolute FF - Both")
+    client_Create.fCreate_Client(baClient,baClient,"Absolute FF - Both","Absolute FF - Both","Absolute FF - Both")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Absolute-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAbsoluteBoth_Setup() 
+    fAbsoluteBoth_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Absolute-Both",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Absolute-Both1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

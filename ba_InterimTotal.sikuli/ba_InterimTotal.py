@@ -33,6 +33,7 @@ def fInterimTotal_Setup1():
     type("500")
     time.sleep(1)    
     type(Key.ENTER)
+	
 # save and close    
     type("s",KeyModifier.CTRL)
 

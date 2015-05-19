@@ -33,7 +33,10 @@ def fMinimumTime_Setup():
     time.sleep(1)    
     type("5000")
     myTools.pressTAB(2)
+	
+    time.sleep(1)    
     type("Minimum FF - Time")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)

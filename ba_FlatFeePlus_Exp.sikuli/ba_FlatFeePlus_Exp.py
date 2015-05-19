@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fFlatFeePlusExp_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fFlatFeePlusExp_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba FFPlusExp")
-    logging.debug("ba FFPlusExp")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-FFPlus-Exp")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for exp
     ba__Common.fMoveto_BAPage()
@@ -33,7 +29,11 @@ def fFlatFeePlusExp_Setup():
     time.sleep(1)    
     type("500")
     myTools.pressTAB(2)
+	
+    time.sleep(1)    
     type("FF Plus - Expense")
+    time.sleep(1)    
+	
 # save and close    
     type(Key.TAB)
     type(Key.SPACE)
@@ -45,17 +45,19 @@ def fFlatFeePlusExp_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fFlatFeePlus_Exp():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-FFPlus-Exp"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-FFPlus-Exp","BA-FFPlus-Exp","FF Plus - Exp","FF Plus - Exp","FF Plus - Exp")
+    client_Create.fCreate_Client(baClient,baClient,"FF Plus - Exp","FF Plus - Exp","FF Plus - Exp")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-FFPlus-Exp")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fFlatFeePlusExp_Setup() 
+    fFlatFeePlusExp_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-FFPlus-Exp",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-FFPlus-Exp1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

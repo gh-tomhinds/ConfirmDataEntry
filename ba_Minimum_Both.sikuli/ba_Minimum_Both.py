@@ -44,8 +44,10 @@ def fMinimumBoth_Setup():
     if int(Settings.tsVersion) > 2014:
         type(Key.TAB)
     
+    time.sleep(1)    
     type("Minimum FF - Both")
-    
+    time.sleep(1)    
+   
 # save and close    
     type(Key.TAB)
     type(Key.SPACE)

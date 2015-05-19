@@ -43,8 +43,10 @@ def fMaximumBoth_Setup():
 
     if int(Settings.tsVersion) > 2014:
         type(Key.TAB)
-    
+		
+    time.sleep(1)    
     type("Maximum FF - Both")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)

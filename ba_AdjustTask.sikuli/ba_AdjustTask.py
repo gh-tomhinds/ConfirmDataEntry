@@ -6,18 +6,14 @@ import ba__Common
 import ba__ReviewBills
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAdjustTask_Setup():
+def fAdjustTask_Setup(pBAClient):
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    myTools.sectionStartTimeStamp("ba AdjustTask")
-    logging.debug("ba AdjustTask")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-AdjTask")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()       
@@ -33,6 +29,7 @@ def fAdjustTask_Setup():
     time.sleep(1)    
     type("n",KeyModifier.ALT)
     type("bu")    
+    time.sleep(1)    
     type(Key.TAB)    
     type("25")
     type(Key.TAB)    
@@ -42,7 +39,10 @@ def fAdjustTask_Setup():
         myTools.pressTAB(3)
     else:
         type("d",KeyModifier.ALT)
+		
+    time.sleep(1)    
     type("Adjust Task")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -61,16 +61,15 @@ def fAdjustTask_Setup():
 def fAdjustTask():
 # - - - - - - - - - - - - - - - - - - - - - - - - - #
 
-    logging.debug(' ')
-    logging.debug('BA_AdjustTask')
+    baClient = "BA-AdjTask"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-AdjTask","BA-AdjTask","Adjust Task","Adjust Task","Adjust Task")
+    client_Create.fCreate_Client(baClient,baClient,"Adjust Task","Adjust Task","Adjust Task")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-AdjTask")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAdjustTask_Setup() 
+    fAdjustTask_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-AdjTask",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-AdjTask1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

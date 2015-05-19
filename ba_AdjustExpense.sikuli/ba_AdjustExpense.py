@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fAdjustExpense_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fAdjustExpense_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba AdjustExp")
-    logging.debug("ba AdjustExp")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-AdjExpense")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for time
     ba__Common.fMoveto_BAPage()
@@ -33,6 +29,7 @@ def fAdjustExpense_Setup():
     time.sleep(1)    
     type("n",KeyModifier.ALT)
     type("p")    
+    time.sleep(1)    
     type(Key.TAB)    
     type("25")
     type(Key.TAB)    
@@ -42,7 +39,10 @@ def fAdjustExpense_Setup():
         myTools.pressTAB(3)
     else:
         type("d",KeyModifier.ALT)
+		
+    time.sleep(1)    
     type("Adjust Expense")
+    time.sleep(1)    
     
 # save and close    
     type(Key.TAB)
@@ -57,20 +57,19 @@ def fAdjustExpense_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fAdjustExpense():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 
-    logging.debug(' ')
-    logging.debug('BA_AdjustExpense')
+    baClient = "BA-AdjExpense"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-AdjExpense","BA-AdjExpense","Adjust Expense","Adjust Expense","Adjust Expense")
+    client_Create.fCreate_Client(baClient,baClient,"Adjust Expense","Adjust Expense","Adjust Expense")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-AdjExpense")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fAdjustExpense_Setup() 
+    fAdjustExpense_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-AdjExpense",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-AdjExpense1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

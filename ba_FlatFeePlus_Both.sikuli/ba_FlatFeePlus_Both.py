@@ -5,19 +5,15 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fFlatFeePlusBoth_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fFlatFeePlusBoth_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba FFPlusBoth")
-    logging.debug("ba FFPlusBoth")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
-# open client    
-    type("i",KeyModifier.CTRL)
-    time.sleep(1)
-    type("BA-FFPlus-Both")
-    type(Key.ENTER)
-    time.sleep(1)
+# open client
+    myTools.openClient(pBAClient)
 
 # get to arrangement field for both
     ba__Common.fMoveto_BAPage()
@@ -41,7 +37,9 @@ def fFlatFeePlusBoth_Setup():
     type("500")
     myTools.pressTAB(2)
     
+    time.sleep(1)    
     type("FF Plus - Both")
+    time.sleep(1)    
 
 # save and close    
     type(Key.TAB)
@@ -54,17 +52,19 @@ def fFlatFeePlusBoth_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fFlatFeePlus_Both():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-FFPlus-Both"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-FFPlus-Both","BA-FFPlus-Both","FF Plus - Both","FF Plus - Both","FF Plus - Both")
+    client_Create.fCreate_Client(baClient,baClient,"FF Plus - Both","FF Plus - Both","FF Plus - Both")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-FFPlus-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fFlatFeePlusBoth_Setup() 
+    fFlatFeePlusBoth_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-FFPlus-Both",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-FFPlus-Both1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

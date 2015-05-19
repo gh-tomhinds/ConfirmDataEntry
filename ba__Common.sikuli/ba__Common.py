@@ -14,13 +14,34 @@ def fImport_DefaultLayout():
 
     logging.debug('- assign layout')
     type("a",KeyModifier.ALT)
-    click("template_list.png")
-    type(Key.INSERT)
+    time.sleep(1)
+
+    # shift tab to open/templates control
+    myTools.pressSHIFTTAB(1)
+    time.sleep(1)
+
+    # press RIGHT to Template Clients
+    myTools.pressRIGHT(1)
+    time.sleep(1)
+
+    # press TAB to client list
+    myTools.pressTAB(1)
+    time.sleep(1)
+
+    #press F4 to mark template    
+    type(Key.F4)
+    time.sleep(1)
+
+    # assign
     type("a",KeyModifier.ALT)
     type(Key.ENTER)
     time.sleep(1)
+
+    # confirm and close
     type(Key.ENTER)
+    time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
 
 #---------------------------------------------------#
 def fSetup_NewNamesDefault():
@@ -132,7 +153,7 @@ def fPrint_BABill(pBAClient,pBillNum):
 #---------------------------------------------------#
 
     baBillName = pBAClient + str(pBillNum)
-    backup_Data.fBackup_Checkpoint(baBillName)
+    backup_Data.fBackup_Checkpoint(baBillName + "-before")
 
     myTools.sectionStartTimeStamp("ba bill")
     logging.debug('BA_Bill: ' + baBillName)
@@ -167,6 +188,7 @@ def fPrint_BABill(pBAClient,pBillNum):
         type(Key.ENTER)  
         time.sleep(1)
      
+    wait("approve_bill.png",FOREVER)
     click("approve_bill.png")
     type(Key.ENTER)  
     time.sleep(1)
@@ -179,3 +201,4 @@ def fPrint_BABill(pBAClient,pBillNum):
     type("n")
     
     myTools.sectionEndTimeStamp()
+    backup_Data.fBackup_Checkpoint(baBillName + "-after")
