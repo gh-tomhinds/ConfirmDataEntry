@@ -22,8 +22,7 @@ def fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)
        
     # client
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     tranDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -46,7 +45,7 @@ def fCreate_OneTransfer(pClient,pCliNum,pMonth,pAmount):
     type(Key.DOWN)
     time.sleep(1) 
     type("s",KeyModifier.CTRL)
-    time.sleep(1)     
+    myTools.waitForTransSave()    
 
 #---------------------------------------------------#
 def fCreate_Transfers(pMonth):
@@ -70,5 +69,8 @@ def fCreate_Transfers(pMonth):
         fCreate_OneTransfer(oneClient,count,pMonth,transferAmount)
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()

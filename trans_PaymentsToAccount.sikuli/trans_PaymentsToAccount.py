@@ -21,17 +21,16 @@ def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)
 
     # client
-    type(pClient)
-    time.sleep(1)
-    type(Key.TAB)
+    myTools.enterClient(pClient)    
         
     # skip account
-    type(Key.TAB)
+    myTools.pressTAB(1)
 
     # date
     payDate = str(pMonth) + "/28/" + Settings.dataYear
     type(payDate)
     type(Key.TAB)
+    time.sleep(1)
         
     # skip check number
     type(Key.TAB)
@@ -39,6 +38,7 @@ def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
     # Amount
     type(str(pAmount))
     type(Key.TAB)
+    time.sleep(1)
 
     # Description
     type("a",KeyModifier.CTRL)
@@ -46,11 +46,12 @@ def fCreate_OnePayToAccount(pClient,pCliNum,pMonth,pAmount):
     type(Key.ENTER)
     time.sleep(1)
     type("s",KeyModifier.CTRL)
-    time.sleep(1)
+
+    myTools.waitForTransSave()
 
     if exists("you_deposited_money.png"):
         type("n")    
-        time.sleep(1) 
+        time.sleep(2) 
 
 #---------------------------------------------------#
 def fCreate_PaymentsToAccount(pMonth):
@@ -83,3 +84,4 @@ def fCreate_PaymentsToAccount(pMonth):
     type(Key.F4,KeyModifier.CTRL)
     
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()        

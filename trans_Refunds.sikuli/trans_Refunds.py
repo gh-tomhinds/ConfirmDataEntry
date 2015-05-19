@@ -22,8 +22,7 @@ def fCreate_OneRefund(pClient,pMonth,pAmount):
     type(Key.TAB)
        
     # client
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     tranDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -46,7 +45,7 @@ def fCreate_OneRefund(pClient,pMonth,pAmount):
     type(Key.DOWN)
     time.sleep(1) 
     type("s",KeyModifier.CTRL)   
-    time.sleep(2) 
+    myTools.waitForTransSave()    
 
 #---------------------------------------------------#
 def fCreate_Refunds(pMonth):
@@ -71,4 +70,6 @@ def fCreate_Refunds(pMonth):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()

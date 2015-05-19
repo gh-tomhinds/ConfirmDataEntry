@@ -30,9 +30,7 @@ def fPayment_CreateOne(pay_client,pay_month,pay_count,pay_amount):
     time.sleep(1)        
             
     # client
-    type(pay_client)
-    time.sleep(1)
-    type(Key.TAB)
+    myTools.enterClient(pay_client)
         
     # date
     pay_date = str(pay_month) + "/28/" + Settings.dataYear
@@ -81,9 +79,7 @@ def fPayToAccount_CreateOne(pta_client,pta_month,pta_count,pta_amount):
     type(Key.TAB)
     
     # client
-    type(pta_client)
-    time.sleep(1)
-    type(Key.TAB)
+    myTools.enterClient(pta_client)
 
     # account
     type(Key.END)
@@ -142,9 +138,7 @@ def fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
     type(Key.TAB)
     
     # client
-    type(dep_client)
-    time.sleep(1)
-    type(Key.TAB)
+    myTools.enterClient(dep_client)
 
     # account
     type(Key.END)
@@ -230,7 +224,7 @@ def fBankDepositSlip_CreateOne(bds_month):
 
     # close
     type(Key.ENTER)
-    time.sleep(1)    
+    time.sleep(5)    
 
 #---------------------------------------------------#
 def fBankDepositSlips_Create(bds_month):
@@ -267,5 +261,5 @@ def fBankDepositSlips_Create(bds_month):
     if exists("please_note.png"):
         type(Key.ENTER)
         time.sleep(1)
-            
-   
+        
+    myTools.checkProcesses()

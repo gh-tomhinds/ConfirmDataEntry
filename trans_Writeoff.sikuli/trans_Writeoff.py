@@ -18,9 +18,7 @@ def fCreate_OneWriteOff(pClient,pCliNum,pMonth,pAmount):
     type(Key.TAB)     
         
     # client
-    time.sleep(1)        
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     woDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -47,7 +45,7 @@ def fCreate_OneWriteOff(pClient,pCliNum,pMonth,pAmount):
 
     # save
     type("s",KeyModifier.CTRL)
-    time.sleep(2) 
+    myTools.waitForTransSave()    
 
 #---------------------------------------------------#
 def fCreate_Writeoffs(pMonth):
@@ -78,5 +76,6 @@ def fCreate_Writeoffs(pMonth):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1) 
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()

@@ -22,8 +22,7 @@ def fCreate_OneRevPay(pClient,pCliNum,pMonth):
     type(Key.TAB)
        
     # client
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     tranDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -99,5 +98,8 @@ def fCreate_RevPays(pMonth):
         fCreate_OneRevPay(oneClient,count,pMonth)
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()    

@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>trans_Payments.sikuli\trans_Payments.sikuli</h2> <a href="trans_Payments.sikuli\trans_Payments.zip">(Download this script)</a>
+<h2>trans_Payments.sikuli</h2> <a href="trans_Payments.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -81,6 +81,11 @@
 
     logging.debug(<span class="str">'- Create_OnePay: '</span> + str(pMonth) + <span class="str">"-"</span> + pClient + <span class="str">" = "</span> + str(pAmount))
 
+    transferClients = [<span class="str">"East.Bridgewater"</span>,<span class="str">"North.Adams"</span>,<span class="str">"West.Boylston"</span>]
+    transferFundsClients = [<span class="str">"East.Brookfield"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Bridgewater"</span>]
+    refundClients = [<span class="str">"Harvard"</span>,<span class="str">"Harwich"</span>,<span class="str">"Hatfield"</span>,<span class="str">"Haverhill"</span>,<span class="str">"Hawley"</span>]
+    clearClients = transferClients + transferFundsClients + refundClients
+
     <span class="cmt"># new payment</span>
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
     myTools.waitForTransEntry()
@@ -91,20 +96,20 @@
     <span class="cmt"># source</span>
     myTools.pressDOWN(pMonth-<span class="dig">1</span>)
     <span class="skw">type</span>(Key.TAB)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># check number</span>
     <span class="kw">if</span> pMonth == <span class="dig">1</span>:
         <span class="skw">type</span>(str(pCliNum))
         <span class="skw">type</span>(Key.TAB)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># skip card options</span>
     <span class="kw">if</span> pMonth <span class="kw">in</span> (<span class="dig">3</span>,<span class="dig">4</span>,<span class="dig">5</span>,<span class="dig">6</span>,<span class="dig">7</span>,<span class="dig">8</span>):
         <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># client</span>
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(pClient)
-    <span class="skw">type</span>(Key.TAB)
+    myTools.enterClient(pClient)
 
     <span class="cmt"># date</span>
     payDate = str(pMonth) + <span class="str">"/28/"</span> + Settings.dataYear
@@ -131,8 +136,8 @@
     myTools.checkForUnappliedAmount()
 
     <span class="cmt"># clear applies and mark future invoice (this is for transfers in other scripts)</span>
-    <span class="kw">if</span> pClient <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"East.Brookfield"</span>,<span class="str">"North.Adams"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Boylston"</span>,<span class="str">"West.Bridgewater"</span>]:
-        logging.debug(<span class="str">"--&gt; CLEAR APPLIED"</span>)
+    <span class="kw">if</span> pClient <span class="kw">in</span> clearClients:
+        logging.debug(<span class="str">"==&gt; CLEAR APPLIED"</span>)
         <span class="skw">click</span>(<img src="clear_applies.png" />)
         time.<span class="skw">sleep</span>(<span class="dig">1</span>)
         <span class="skw">click</span>(<img src="apply_remaining_to_future.png" />)
@@ -149,6 +154,9 @@
     logging.debug(<span class="str">'Create_PaymentsForMonth: '</span> + str(pMonth))
 
     allClients = names_Init.fInit_Clients()
+    transferClients = [<span class="str">"East.Bridgewater"</span>,<span class="str">"North.Adams"</span>,<span class="str">"West.Boylston"</span>]
+    transferFundsClients = [<span class="str">"East.Brookfield"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Bridgewater"</span>]
+
     count = <span class="dig">0</span>
 
     myTools.getFocus()
@@ -164,7 +172,7 @@
         <span class="cmt"># then create payments for 1 out of 5 next clients</span>
         <span class="cmt"># always create payments for certain projects</span>
 
-        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + pMonth) % <span class="dig">5</span> == <span class="dig">0</span>) <span class="kw">or</span> (oneClient <span class="kw">in</span> [<span class="str">"East.Bridgewater"</span>,<span class="str">"East.Brookfield"</span>,<span class="str">"North.Adams"</span>,<span class="str">"North.Andover"</span>,<span class="str">"West.Boylston"</span>,<span class="str">"West.Bridgewater"</span>]):
+        <span class="kw">if</span> (count <span class="kw">in</span> range(<span class="dig">6</span>)) <span class="kw">or</span> ((count + pMonth) % <span class="dig">5</span> == <span class="dig">0</span>) <span class="kw">or</span> (oneClient <span class="kw">in</span> transferClients) <span class="kw">or</span> (oneClient <span class="kw">in</span> transferFundsClients):
             payAmount = <span class="dig">100</span> + int(count) + pMonth/float(<span class="dig">100</span>)  <span class="cmt"># calc amount first, so we can log it</span>
             fCreate_OnePayment(oneClient,count,pMonth,payAmount)
         <span class="kw">else</span>:

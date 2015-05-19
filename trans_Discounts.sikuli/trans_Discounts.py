@@ -22,8 +22,7 @@ def fCreate_OneDiscount(pClient,pMonth,pAmount):
     type(Key.TAB)
        
     # client
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     tranDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -47,7 +46,8 @@ def fCreate_OneDiscount(pClient,pMonth,pAmount):
     time.sleep(1)
     click("apply_one.png")
     time.sleep(1)    
-    type("s",KeyModifier.CTRL)   
+    type("s",KeyModifier.CTRL)
+    myTools.waitForTransSave()    
 
 #---------------------------------------------------#
 def fCreate_Discounts(pMonth):
@@ -70,5 +70,8 @@ def fCreate_Discounts(pMonth):
     fCreate_OneDiscount(oneClient,pMonth,discountAmount)
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()

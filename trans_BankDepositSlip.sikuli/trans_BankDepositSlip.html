@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>trans_BankDepositSlip.sikuli\trans_BankDepositSlip.sikuli</h2> <a href="trans_BankDepositSlip.sikuli\trans_BankDepositSlip.zip">(Download this script)</a>
+<h2>trans_BankDepositSlip.sikuli</h2> <a href="trans_BankDepositSlip.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="cmt"># creates new bank deposit slips each month</span>
@@ -84,7 +84,9 @@
     logging.debug(<span class="str">'- Pay_Create: '</span> + str(pay_month) + <span class="str">"-"</span> + pay_client + <span class="str">" = "</span> + str(pay_amount))
 
     <span class="cmt"># new payment</span>
+    myTools.getFocus()
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL)
+    logging.debug(<span class="str">'-- new'</span>)
     myTools.waitForTransEntry()
 
     <span class="cmt"># type</span>
@@ -100,9 +102,7 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># client</span>
-    <span class="skw">type</span>(pay_client)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.TAB)
+    myTools.enterClient(pay_client)
 
     <span class="cmt"># date</span>
     pay_date = str(pay_month) + <span class="str">"/28/"</span> + Settings.dataYear
@@ -124,9 +124,11 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># close / save</span>
+    logging.debug(<span class="str">'-- close/save'</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
 
     myTools.checkForUnappliedAmount()
 
@@ -137,7 +139,9 @@
     logging.debug(<span class="str">'- PTA_Create: '</span> + str(pta_month) + <span class="str">"-"</span> + pta_client + <span class="str">" = "</span> + str(pta_amount))
 
     <span class="cmt"># new pta</span>
+    myTools.getFocus()
     <span class="skw">type</span>(<span class="str">"n"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+    logging.debug(<span class="str">'-- new'</span>)
     myTools.waitForTransEntry()
 
     <span class="cmt"># skip type</span>
@@ -147,9 +151,7 @@
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># client</span>
-    <span class="skw">type</span>(pta_client)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.TAB)
+    myTools.enterClient(pta_client)
 
     <span class="cmt"># account</span>
     <span class="skw">type</span>(Key.END)
@@ -178,12 +180,16 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># close / save</span>
+    logging.debug(<span class="str">'-- close/save'</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
 
     <span class="kw">if</span> exists(<img src="you_deposited_money.png" />):
+        logging.debug(<span class="str">'--- deposited msg exists'</span>)
         <span class="skw">type</span>(<span class="str">"n"</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fDepToAccount_CreateOne(dep_client,dep_month,dep_count,dep_amount):
@@ -192,7 +198,9 @@
     logging.debug(<span class="str">'- DEP_Create: '</span> + str(dep_month) + <span class="str">"-"</span> + dep_client + <span class="str">" = "</span> + str(dep_amount))
 
     <span class="cmt"># new dep</span>
+    myTools.getFocus()
     <span class="skw">type</span>(<span class="str">"d"</span>,KeyModifier.CTRL + KeyModifier.SHIFT)
+    logging.debug(<span class="str">'-- new'</span>)
     myTools.waitForTransEntry()
 
     <span class="cmt"># skip type</span>
@@ -202,9 +210,7 @@
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># client</span>
-    <span class="skw">type</span>(dep_client)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
-    <span class="skw">type</span>(Key.TAB)
+    myTools.enterClient(dep_client)
 
     <span class="cmt"># account</span>
     <span class="skw">type</span>(Key.END)
@@ -233,37 +239,47 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># close / save</span>
+    logging.debug(<span class="str">'-- close/save'</span>)
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
 
     <span class="kw">if</span> exists(<img src="you_deposited_money.png" />):
+        logging.debug(<span class="str">'--- deposited msg exists'</span>)
         <span class="skw">type</span>(<span class="str">"n"</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fBankDepositSlip_CreateOne(bds_month):
 <span class="cmt">#---------------------------------------------------#</span>
 
     <span class="cmt"># open bank deposit slip list</span>
+    logging.debug(<span class="str">'- open bds list'</span>)
     <span class="skw">type</span>(<span class="str">"t"</span>,KeyModifier.ALT)
     <span class="skw">type</span>(<span class="str">"b"</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
-    <span class="kw">if</span> exists(<img src="create_bankdepositslip.png" />):
-        <span class="skw">type</span>(<span class="str">"n"</span>)
+    logging.debug(<span class="str">'- wait for message'</span>)
+    <span class="skw">wait</span>(<img src="create_bankdepositslip.png" />,<span class="dig">60</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
     <span class="cmt"># create a new deposit slip</span>
+    logging.debug(<span class="str">'- create new bds'</span>)
     <span class="skw">rightClick</span>(<img src="deposit_number.png" />)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="skw">type</span>(Key.DOWN)
     <span class="skw">type</span>(Key.ENTER)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
     <span class="cmt"># for even months, use "new bank" otherwise use "default"</span>
     <span class="kw">if</span> bds_month % <span class="dig">2</span> == <span class="dig">0</span>:
+        logging.debug(<span class="str">'-- new bank'</span>)
         <span class="skw">type</span>(Key.END)
     <span class="kw">else</span>:
         <span class="skw">type</span>(Key.HOME)
+        logging.debug(<span class="str">'-- default bank'</span>)
 
     <span class="skw">type</span>(Key.TAB)
 
@@ -312,9 +328,11 @@
 
     <span class="cmt"># close</span>
     <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="kw">if</span> exists(<img src="please_note.png" />):
         <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 </pre>
 </body>
 </html>

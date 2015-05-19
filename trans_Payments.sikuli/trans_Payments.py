@@ -24,20 +24,20 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
     # source
     myTools.pressDOWN(pMonth-1)
     type(Key.TAB)
+    time.sleep(1)
         
     # check number
     if pMonth == 1:
         type(str(pCliNum))
         type(Key.TAB)
+        time.sleep(1)
             
     # skip card options
     if pMonth in (3,4,5,6,7,8):
         type(Key.TAB)
             
     # client
-    time.sleep(1)
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     payDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -62,6 +62,7 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
     # save
     type("s",KeyModifier.CTRL)
     myTools.checkForUnappliedAmount()
+    myTools.waitForTransSave()    
 
     # clear applies and mark future invoice (this is for transfers in other scripts)
     if pClient in clearClients:
@@ -73,6 +74,7 @@ def fCreate_OnePayment(pClient,pCliNum,pMonth,pAmount):
         # save
         type("s",KeyModifier.CTRL)       
         myTools.checkForUnappliedAmount()
+        myTools.waitForTransSave()    
 
 #---------------------------------------------------#
 def fCreate_PaymentsForMonth(pMonth):
@@ -107,5 +109,8 @@ def fCreate_PaymentsForMonth(pMonth):
             logging.debug('-- skip: ' + str(pMonth) + "-" + oneClient)
 
     type(Key.F4,KeyModifier.CTRL)
+    time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()    

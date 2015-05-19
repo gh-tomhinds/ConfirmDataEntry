@@ -141,10 +141,12 @@ def fCreate_SpecCredits(pMonth):
     #save
     type("s",KeyModifier.CTRL)
     myTools.checkForUnappliedAmount()
+    myTools.waitForTransSave()    
 
     # close
     type(Key.F4,KeyModifier.CTRL)
-
-    # close   
+    time.sleep(1)
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()

@@ -1,5 +1,6 @@
 from sikuli import *
 
+import myTools
 import backup_Data
 
 import trans_SpecCredits
@@ -18,6 +19,8 @@ import trans_BankDepositSlip
 #---------------------------------------------------#
 def fEnter_Transactions(transMonth):
 #---------------------------------------------------#
+
+    myTools.checkProcesses()
 
     # enter transactions for month
 

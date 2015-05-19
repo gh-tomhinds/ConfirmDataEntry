@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>trans_Transfers.sikuli\trans_Transfers.sikuli</h2> <a href="trans_Transfers.sikuli\trans_Transfers.zip">(Download this script)</a>
+<h2>trans_Transfers.sikuli</h2> <a href="trans_Transfers.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -94,8 +94,7 @@
     <span class="skw">type</span>(Key.TAB)
 
     <span class="cmt"># client</span>
-    <span class="skw">type</span>(pClient)
-    <span class="skw">type</span>(Key.TAB)
+    myTools.enterClient(pClient)
 
     <span class="cmt"># date</span>
     tranDate = str(pMonth) + <span class="str">"/28/"</span> + Settings.dataYear
@@ -118,6 +117,7 @@
     <span class="skw">type</span>(Key.DOWN)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(<span class="str">"s"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fCreate_Transfers(pMonth):

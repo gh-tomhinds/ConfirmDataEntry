@@ -17,11 +17,10 @@ def fCreate_OneCredit(pClient,pCliNum,pMonth,pAmount):
     type(Key.HOME)
     myTools.pressDOWN(1)
     type(Key.TAB)     
+    time.sleep(1)        
         
     # client
-    time.sleep(1)        
-    type(pClient)
-    type(Key.TAB)
+    myTools.enterClient(pClient)
         
     # date
     credDate = str(pMonth) + "/28/" + Settings.dataYear
@@ -49,6 +48,7 @@ def fCreate_OneCredit(pClient,pCliNum,pMonth,pAmount):
     # save
     type("s",KeyModifier.CTRL)
     myTools.checkForUnappliedAmount()
+    myTools.waitForTransSave()    
 
 #---------------------------------------------------#
 def fCreate_CreditsForMonth(pMonth):
@@ -81,4 +81,6 @@ def fCreate_CreditsForMonth(pMonth):
     type(Key.F4,KeyModifier.CTRL)
     time.sleep(1) 
     type(Key.F4,KeyModifier.CTRL)
+    
     myTools.sectionEndTimeStamp()
+    myTools.checkProcesses()
