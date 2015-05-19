@@ -29,7 +29,9 @@ def fStart_TS():
     
     logging.debug('-- wait until TS is open')
 
-    wait("sage_timeslips.png",60)
+    if int(Settings.tsVersion) < 2016:
+        wait("sage_timeslips.png",60)
+      
 
 #---------------------------------------------------#
 def fCheckFor_Sample():
@@ -87,9 +89,15 @@ def fStartTS_CreateNewDB():
 
 # start the new db process
     logging.debug('- Check for database')
+    time.sleep(3)
 
     if exists("database_not_found.png"):
-        logging.debug('-- db not found')
+        logging.debug('-- TS2014 db not found')
+        type(Key.ENTER)
+        time.sleep(2)
+        type("n")
+    elif exists("fb_encountered_error.png"):
+        logging.debug('-- TS2016 db not found')
         type(Key.ENTER)
         time.sleep(2)
         type("n")

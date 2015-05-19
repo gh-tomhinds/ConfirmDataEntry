@@ -67,7 +67,7 @@
    </head>
 <body>
 <div class="info">
-<h2>db_New.sikuli\db_New.sikuli</h2> <a href="db_New.sikuli\db_New.zip">(Download this script)</a>
+<h2>db_New.sikuli</h2> <a href="db_New.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
 <span class="kw">from</span> sikuli <span class="kw">import</span> *
@@ -101,7 +101,9 @@
 
     logging.debug(<span class="str">'-- wait until TS is open'</span>)
 
-    <span class="skw">wait</span>(<img src="sage_timeslips.png" />,<span class="dig">60</span>)
+    <span class="kw">if</span> int(Settings.tsVersion) &lt; <span class="dig">2016</span>:
+        <span class="skw">wait</span>(<img src="sage_timeslips.png" />,<span class="dig">60</span>)
+
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> fCheckFor_Sample():
@@ -159,9 +161,15 @@
 
 <span class="cmt"># start the new db process</span>
     logging.debug(<span class="str">'- Check for database'</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">3</span>)
 
     <span class="kw">if</span> exists(<img src="database_not_found.png" />):
-        logging.debug(<span class="str">'-- db not found'</span>)
+        logging.debug(<span class="str">'-- TS2014 db not found'</span>)
+        <span class="skw">type</span>(Key.ENTER)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">type</span>(<span class="str">"n"</span>)
+    <span class="kw">elif</span> exists(<img src="cannot_find_file.png" />):
+        logging.debug(<span class="str">'-- TS2016 db not found'</span>)
         <span class="skw">type</span>(Key.ENTER)
         time.<span class="skw">sleep</span>(<span class="dig">2</span>)
         <span class="skw">type</span>(<span class="str">"n"</span>)
@@ -198,7 +206,7 @@
     <span class="skw">type</span>(Key.ENTER)
 
 <span class="cmt"># Firm name</span>
-    <span class="skw">type</span>(<span class="str">"TS Handyman Services "</span> + Settings.dataYear)
+    <span class="skw">type</span>(<span class="str">"TS Handyman Services"</span>)
     <span class="skw">type</span>(Key.ENTER)
     logging.debug(<span class="str">'- db settings'</span>)
 
