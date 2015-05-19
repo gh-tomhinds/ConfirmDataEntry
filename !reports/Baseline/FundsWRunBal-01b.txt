@@ -1,0 +1,525 @@
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+							Selection Criteria
+
+Clie.Classification	     Open
+Fnds.Transaction Date	     1/1/2013 - Latest
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Abington / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Abington - 1 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Acton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Acton - 2 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Acushnet / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Acushnet - 3 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Adams / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Adams - 4 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Agawam / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Agawam - 5 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Arlington / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Arlington - 11 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Attleboro / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Attleboro - 17 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Becket / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Becket - 23 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Berlin / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Berlin - 29 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Bolton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Bolton - 35 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Braintree / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Braintree - 41 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Brookline / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Brookline - 47 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Carver / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Carver - 53 - 1/28/2013						     25.01	      25.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.01
+
+Cheshire / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Cheshire - 59 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Clinton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Clinton - 65 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Dalton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Dalton - 71 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Dighton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Dighton - 77 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Duxbury / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Duxbury - 83 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+East.Longmeadow / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Transferred payment						    185.01	     185.01
+
+Ending Balance														     185.01
+
+
+Easton / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     1/28/2013	PAYT   Easton - 89 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Fairhaven / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Fairhaven - 95 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Framingham / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Framingham - 101 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Gloucester / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Gloucester - 107 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Great Barrington / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Great Barrington - 113 - 1/28/2013				     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Hadley / Hadley-1
+Beginning Balance													       0.00
+		     1/27/2013	DEP    bal - new bank							     10.01	      10.01
+		     1/28/2013	PAYT   bds-pta: Hadley - 1/28/2013					     21.01	      31.02
+				       . Check No. pta-1-1
+		     1/28/2013	DEP    bds-dep: Hadley - 1/28/2013					     11.01	      42.03
+				       . Check No. dep-1-1
+
+Ending Balance														      42.03
+
+Halifax / Halifax-2
+Beginning Balance													       0.00
+		     1/27/2013	DEP    bal - new bank							     20.02	      20.02
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     1/28/2013	PAYT   bds-pta: Halifax - 1/28/2013					     22.01	      42.03
+				       . Check No. pta-2-1
+		     1/28/2013	DEP    bds-dep: Halifax - 1/28/2013					     12.01	      54.04
+				       . Check No. dep-2-1
+
+Ending Balance														      54.04
+
+
+Hamilton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Hamilton - 119 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Harvard / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Harvard - 125 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Hingham / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Hingham - 131 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Holyoke / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Holyoke - 137 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Huntington / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Huntington - 143 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Lawrence / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Lawrence - 149 - 1/28/2013					     25.01	      25.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.01
+
+Lexington / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Lexington - 155 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Ludlow / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Ludlow - 161 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Mansfield / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Mansfield - 167 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Mattapoisett / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Mattapoisett - 173 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Mendon / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Mendon - 179 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Milford / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Milford - 185 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Monson / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     1/28/2013	PAYT   Monson - 191 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Nantucket / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Nantucket - 197 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+New Marlborough / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   New Marlborough - 203 - 1/28/2013				     25.01	      25.01
+
+Ending Balance														      25.01
+
+North.Adams / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   North.Adams - 209 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+North.Reading / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Transferred payment						     61.53	      61.53
+
+Ending Balance														      61.53
+
+
+Northborough / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Northborough - 215 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Oak Bluffs / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Oak Bluffs - 221 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Palmer / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Palmer - 227 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Peru / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Peru - 233 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+Plymouth / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Plymouth - 239 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Raynham / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Raynham - 245 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Rockland / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Rockland - 251 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Rutland / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Rutland - 257 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Savoy / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Savoy - 263 - 1/28/2013						     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Sherborn / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Sherborn - 269 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+South.Hadley / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   South.Hadley - 275 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Springfield / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Springfield - 281 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Sturbridge / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Sturbridge - 287 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Taunton / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Taunton - 293 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Townsend / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Townsend - 299 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Wakefield / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Wakefield - 305 - 1/28/2013					     25.01	      25.01
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.01
+
+Warren / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Warren - 311 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Wellesley / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Wellesley - 317 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+West.Brookfield / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   West.Brookfield - 323 - 1/28/2013				     25.01	      25.01
+
+Ending Balance														      25.01
+
+West.Tisbury / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Transferred payment						    422.01	     422.01
+
+Ending Balance														     422.01
+
+Westfield / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Westfield - 329 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Westwood / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Westwood - 335 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Williamstown / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     1/28/2013	PAYT   Williamstown - 341 - 1/28/2013					     25.01	      25.01
+
+Ending Balance														      25.01
+
+Woburn / Default
+Beginning Balance													       0.00
+		     1/28/2013	PAYT   Woburn - 347 - 1/28/2013 					     25.01	      25.01
+
+Ending Balance														      25.01
+
+
+Grand Total														       0.00
+   Total Added														    2315.24
+   Total Removed													       0.00
+   Ending Balance Total 												    2315.24

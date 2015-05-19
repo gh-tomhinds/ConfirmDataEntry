@@ -1,0 +1,989 @@
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+							Selection Criteria
+
+Clie.Classification	     Open
+Fnds.Transaction Date	     3/1/2013 - Latest
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Abington / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (1.99)	      23.03
+		     3/28/2013	PAYT   Abington - 1 - 3/28/2013 					     25.03	      48.06
+
+Ending Balance														      48.06
+
+
+Acton / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.13)	      21.89
+		     3/28/2013	PAYT   Acton - 2 - 3/28/2013						     25.03	      46.92
+
+Ending Balance														      46.92
+
+Acushnet / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (4.51)	      20.51
+		     3/28/2013	PAYT   Acushnet - 3 - 3/28/2013 					     25.03	      45.54
+
+Ending Balance														      45.54
+
+Adams / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (6.76)	      18.26
+		     3/28/2013	PAYT   Adams - 4 - 3/28/2013						     25.03	      43.29
+
+Ending Balance														      43.29
+
+
+Agawam / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (6.87)	      18.15
+		     3/28/2013	PAYT   Agawam - 5 - 3/28/2013						     25.03	      43.18
+
+Ending Balance														      43.18
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Andover / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Andover - 9 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Arlington / Default
+Beginning Balance													      19.96
+		     3/27/2013	PAYF   Payment from account						     (4.56)	      15.40
+
+Ending Balance														      15.40
+
+Ashland / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Ashland - 15 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Athol / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (1.71)	      23.31
+
+Ending Balance														      23.31
+
+Barnstable / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Barnstable - 21 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Barre / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (0.18)	      24.84
+
+Ending Balance														      24.84
+
+Belmont / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Belmont - 27 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Berlin / Default
+Beginning Balance													      21.55
+		     3/27/2013	PAYF   Payment from account						     (3.13)	      18.42
+
+Ending Balance														      18.42
+
+
+Blackstone / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Blackstone - 33 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Boxford / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Boxford - 39 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Boylston / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.68)	      21.34
+
+Ending Balance														      21.34
+
+Brockton / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Brockton - 45 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Brookfield / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (0.90)	      24.12
+
+Ending Balance														      24.12
+
+Canton / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Canton - 51 - 3/28/2013						     25.03	      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.03
+
+Carlisle / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.54)	      21.48
+
+Ending Balance														      21.48
+
+Chelmsford / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Chelmsford - 57 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Chelsea / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (0.71)	      24.31
+
+Ending Balance														      24.31
+
+Chilmark / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Chilmark - 63 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Clarksburg / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.19)	      21.83
+
+Ending Balance														      21.83
+
+Conway / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Conway - 69 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Cummington / Default
+Beginning Balance													      25.02
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     3/27/2013	PAYF   Payment from account						     (2.50)	      22.52
+
+Ending Balance														      22.52
+
+Deerfield / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Deerfield - 75 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Dighton / Default
+Beginning Balance													      19.81
+		     3/27/2013	PAYF   Payment from account						     (4.70)	      15.11
+
+Ending Balance														      15.11
+
+Dudley / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Dudley - 81 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+Dunstable / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.23)	      21.79
+
+Ending Balance														      21.79
+
+
+East.Longmeadow / Default
+Beginning Balance													     249.56
+		     3/27/2013	PAYF   Payment from account						     (0.52)	     249.04
+		     3/28/2013	PAYT   Transferred payment						      6.70	     255.74
+
+Ending Balance														     255.74
+
+Eastham / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Eastham - 87 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Essex / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Essex - 93 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Fairhaven / Default
+Beginning Balance													      14.38
+		     3/27/2013	PAYF   Payment from account						     (9.60)	       4.78
+
+Ending Balance														       4.78
+
+Florida / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Florida - 99 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Georgetown / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Georgetown - 105 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Gill / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.07)	      21.95
+
+Ending Balance														      21.95
+
+
+Granby / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Granby - 111 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Granville / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (0.90)	      24.12
+
+Ending Balance														      24.12
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Hadley / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Hadley - 117 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Hadley / Hadley-1
+Beginning Balance													      74.07
+		     3/28/2013	PAYT   bds-pta: Hadley - 3/28/2013					     21.03	      95.10
+				       . Check No. pta-1-3
+		     3/28/2013	DEP    bds-dep: Hadley - 3/28/2013					     11.03	     106.13
+				       . Check No. dep-1-3
+
+Ending Balance														     106.13
+
+Halifax / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Halifax / Halifax-2
+Beginning Balance													      88.08
+		     3/28/2013	PAYT   bds-pta: Halifax - 3/28/2013					     22.03	     110.11
+				       . Check No. pta-2-3
+		     3/28/2013	DEP    bds-dep: Halifax - 3/28/2013					     12.03	     122.14
+				       . Check No. dep-2-3
+
+Ending Balance														     122.14
+
+Hamilton / Default
+Beginning Balance													      21.50
+		     3/27/2013	PAYF   Payment from account						    (21.50)	       0.00
+
+Ending Balance														       0.00
+
+Hanson / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Hanson - 123 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Harvard / Default
+Beginning Balance													      25.01
+		     3/27/2013	PAYF   Payment from account						    (25.01)	       0.00
+
+Ending Balance														       0.00
+
+
+Hawley / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Hawley - 129 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Heath / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Hingham / Default
+Beginning Balance													      25.01
+		     3/27/2013	PAYF   Payment from account						    (25.01)	       0.00
+
+Ending Balance														       0.00
+
+Holland / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Holland - 135 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Holliston / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Holyoke / Default
+Beginning Balance													      23.06
+		     3/27/2013	PAYF   Payment from account						    (23.06)	       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Hudson / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Hudson - 141 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Hull / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Huntington / Default
+Beginning Balance													      23.88
+		     3/27/2013	PAYF   Payment from account						     (0.09)	      23.79
+
+Ending Balance														      23.79
+
+Lancaster / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Lancaster - 147 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Lanesborough / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Leominster / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Leominster - 153 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Leverett / Default
+Beginning Balance													      25.02
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     3/27/2013	PAYF   Payment from account						     (0.10)	      24.92
+
+Ending Balance														      24.92
+
+Lexington / Default
+Beginning Balance													      23.44
+		     3/27/2013	PAYF   Payment from account						    (23.44)	       0.00
+
+Ending Balance														       0.00
+
+Longmeadow / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Longmeadow - 159 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Lowell / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Ludlow / Default
+Beginning Balance													      21.61
+		     3/27/2013	PAYF   Payment from account						     (3.07)	      18.54
+
+Ending Balance														      18.54
+
+
+Malden / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Malden - 165 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Manchester-by-the-Sea / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Mansfield / Default
+Beginning Balance													      24.02
+		     3/27/2013	PAYF   Payment from account						    (24.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Marshfield / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Marshfield - 171 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Mashpee / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						     (3.08)	      21.94
+
+Ending Balance														      21.94
+
+
+Mattapoisett / Default
+Beginning Balance													      21.09
+		     3/27/2013	PAYF   Payment from account						    (21.09)	       0.00
+
+Ending Balance														       0.00
+
+Medway / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Medway - 177 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Melrose / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Mendon / Default
+Beginning Balance													      24.74
+		     3/27/2013	PAYF   Payment from account						    (24.74)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Middlefield / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Middlefield - 183 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Middleton / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Milford / Default
+Beginning Balance													      20.90
+		     3/27/2013	PAYF   Payment from account						    (20.90)	       0.00
+
+Ending Balance														       0.00
+
+
+Milton / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Milton - 189 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Monroe / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Monson / Default
+Beginning Balance													      22.21
+		     3/27/2013	PAYF   Payment from account						    (22.21)	       0.00
+
+Ending Balance														       0.00
+
+Mount Washington / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Mount Washington - 195 - 3/28/2013				     25.03	      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.03
+
+Nahant / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Nantucket / Default
+Beginning Balance													      25.01
+		     3/27/2013	PAYF   Payment from account						    (25.01)	       0.00
+
+Ending Balance														       0.00
+
+New Bedford / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   New Bedford - 201 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+New Braintree / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+New Marlborough / Default
+Beginning Balance													      23.82
+		     3/27/2013	PAYF   Payment from account						    (23.82)	       0.00
+
+Ending Balance														       0.00
+
+Newton / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Newton - 207 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Norfolk / Default
+Beginning Balance													      25.02
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+North.Reading / Default
+Beginning Balance													      68.01
+		     3/27/2013	PAYF   Payment from account						    (68.01)	       0.00
+		     3/28/2013	PAYT   Transferred payment						    310.03	     310.03
+		     3/28/2013	PAYT   North.Reading - 213 - 3/28/2013					     25.03	     335.06
+
+Ending Balance														     335.06
+
+Northborough / Default
+Beginning Balance													      25.01
+		     3/27/2013	PAYF   Payment from account						    (25.01)	       0.00
+
+Ending Balance														       0.00
+
+
+Norwell / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Norwell - 219 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Otis / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Otis - 225 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Oxford / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Pembroke / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Pembroke - 231 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Pepperell / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Plainfield / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Plainfield - 237 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Quincy / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Quincy - 243 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Randolph / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Richmond / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Richmond - 249 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Rochester / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Royalston / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Royalston - 255 - 3/28/2013					     25.03	      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.03
+
+Russell / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Sandwich / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Sandwich - 261 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Saugus / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Savoy / Default
+Beginning Balance													      25.01
+		     3/27/2013	PAYF   Payment from account						    (25.01)	       0.00
+
+Ending Balance														       0.00
+
+Sheffield / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Sheffield - 267 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Shelburne / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Somerset / Default
+Beginning Balance													       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+		     3/28/2013	PAYT   Somerset - 273 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Southwick / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Southwick - 279 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Spencer / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Springfield / Default
+Beginning Balance													      25.01
+		     3/27/2013	PAYF   Payment from account						    (25.01)	       0.00
+
+Ending Balance														       0.00
+
+Stoughton / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Stoughton - 285 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Swampscott / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Swampscott - 291 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Swansea / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+Tolland / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Tolland - 297 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Topsfield / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Upton / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Upton - 303 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Ware / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Ware - 309 - 3/28/2013						     25.03	      25.03
+
+Ending Balance														      25.03
+
+Wareham / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+Wayland / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Wayland - 315 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Webster / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+West.Boylston / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   West.Boylston - 321 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+West.Bridgewater / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+West.Tisbury / Default
+Beginning Balance													     422.02
+		     3/27/2013	PAYF   Payment from account						   (422.02)	       0.00
+		     3/28/2013	PAYT   Transferred payment						    422.03	     422.03
+		     3/28/2013	PAYT   West.Tisbury - 327 - 3/28/2013					     25.03	     447.06
+
+Ending Balance														     447.06
+
+
+Westborough / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Weston / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Weston - 333 - 3/28/2013 					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Westport / Default
+Beginning Balance													      25.02
+		     3/27/2013	PAYF   Payment from account						    (25.02)	       0.00
+
+Ending Balance														       0.00
+
+Wilbraham / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Wilbraham - 339 - 3/28/2013					     25.03	      25.03
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														      25.03
+
+Windsor / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Windsor - 345 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+Yarmouth / Default
+Beginning Balance													       0.00
+		     3/28/2013	PAYT   Yarmouth - 351 - 3/28/2013					     25.03	      25.03
+
+Ending Balance														      25.03
+
+
+Grand Total														    2528.69
+   Total Added														    2381.77
+   Total Removed													   (1621.15)
+   Ending Balance Total 												    3289.31
