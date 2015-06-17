@@ -65,8 +65,6 @@ def fPrint_PostbillReports(pMonth,pAorB):
     report_TkContribution.Print_TkContribution(pMonth,csvExt)  
     report_TkCC.Print_TkCC(pMonth,csvExt)
     report_FundsBal.fPrint_FundsBal(pMonth,csvExt)
-    report_FundsList.fPrint_FundsList(pMonth,csvExt)
-    report_FundsWRunBal.fPrint_FundsWRunBal(pMonth,txtExt)
     report_Taxes.Print_Taxes(pMonth,csvExt)
     report_TOWorksheet.Print_Worksheet(pMonth,csvExt)
     report_PBWorksheet.fPrint_PreBill(pMonth,txtExt)
@@ -93,10 +91,14 @@ def fPrint_PostbillReports(pMonth,pAorB):
         logging.debug('!!! SKIP UD FUNDS REPORT')
         logging.debug('!!! SKIP HOLD REPORT')
         logging.debug('!!! SKIP SPLIT BILL DIST')
+        logging.debug('!!! SKIP FUNDS w/RUNNING BAL')
+        logging.debug('!!! SKIP FUNDS LIST')
     else:
         report_UDFunds.fPrint_FundsListFields(pMonth,csvExt)   
         report_Hold.Print_Hold(pMonth,csvExt)
         report_SplitBill.fPrint_SplitBill(pMonth,csvExt)
+        report_FundsWRunBal.fPrint_FundsWRunBal(pMonth,txtExt)
+        report_FundsList.fPrint_FundsList(pMonth,csvExt)
 
     if (pMonth == 13) or ((pMonth == 1) and (pAorB == "a")):
         # fee allocation cannot be run without some payments entered

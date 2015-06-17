@@ -17,7 +17,8 @@ def Copy_ErrorFiles(pReport1,pReport2):
 #---------------------------------------------------#
 def Compare_OneReport(pReportName):
 #---------------------------------------------------#
-    logging.debug('Compare_OneReport: ' + pReportName)
+    logging.debug(' ')
+    logging.debug('COMPARE: ' + pReportName)
 
 # point to old report, new report, and output file
     logging.debug('- set file names')
@@ -92,4 +93,5 @@ def Compare_OneReport(pReportName):
     else:    
         logging.debug("-- reports MATCH: " + pReportName)
         myTools.pushReportLog(pReportName," pass      ")
-        
+
+    myTools.checkProcesses()
