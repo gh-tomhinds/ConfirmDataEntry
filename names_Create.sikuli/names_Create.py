@@ -51,28 +51,39 @@ def fCreateImportEdit_Names():
     client_Import.fImport_Clients()
     client_Edit.fEdit_Client()    
     client_FundsEdit.fEdit_ClientFunds()
-    backup_Data.fBackup_Checkpoint("clients")    
+    backup_Data.fBackup_Checkpoint("clients")
     report_FundsAccountList.fPrint_Funds("FundsSettings-01.csv")
+
+    
     client_Hold.fSetup_ClientHold()
     client_FeeAlloc.fSetup_FeeAlloc()
-    
+
     task_Import.fImport_Tasks()
     task_Edit.fEdit_Task()
     expense_Import.fImport_Expenses()
     expense_Edit.fEdit_Expense()
-    backup_Data.fBackup_Checkpoint("activities")
-    
+    backup_Data.fBackup_Checkpoint("activities")    
+
     expense_Markup.fSetup_ExpMarkups()
+    backup_Data.fBackup_Checkpoint("markups")    
+
     taxes_Setup.fSetup_Taxes()
+    backup_Data.fBackup_Checkpoint("taxes")
+
     client_PayDistrib.fSetup_PayDist()
+    backup_Data.fBackup_Checkpoint("pay-dist")
+
     client_FundsNew.fFundsAccouts_Setup()
+    backup_Data.fBackup_Checkpoint("fundsaccts")
 
     ref_Create.fCreate_Refs()
     ref_Import.fImport_Refs()
+    backup_Data.fBackup_Checkpoint("refs")
 
     budget_Setup.fBudget_Setup()
 
-    report_TimekeeperInfo.fPrint_TimekeeperInfo("Timekeepers-01.csv")
-    report_ClientInfo.fPrint_ClientInfo("Clients-01.csv")
+#    report_TimekeeperInfo.fPrint_TimekeeperInfo("Timekeepers-01.csv")
+#    report_ClientInfo.fPrint_ClientInfo("Clients-01.csv")
 
-    backup_Data.fBackup_Checkpoint("names")
+
+#    backup_Data.fBackup_Checkpoint("names")
