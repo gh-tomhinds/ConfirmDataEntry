@@ -390,7 +390,8 @@ def fChange_ClientSettings():
 #---------------------------------------------------#
 
     logging.debug('- Change_ClientSettings')
-
+    myTools.getFocus()
+    
     logging.debug('-- change a client')
     type("i",KeyModifier.CTRL)
     time.sleep(1)

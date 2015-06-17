@@ -66,7 +66,8 @@ def fExport_Timekeepers():
     type("5")
 
     type("s", KeyModifier.CTRL)
-
+    
+    wait("export_btn.png")
     click("export_btn.png")
     time.sleep(1)
 

@@ -7,6 +7,10 @@ import reports_Compare
 #---------------------------------------------------#
 def fSet_BillDate(pMonth):
 #---------------------------------------------------#
+
+    if pMonth == 13:
+        pMonth = 12     
+
     logging.debug('- change bill date: ' + str(pMonth) + "/27/" + Settings.dataYear)
     time.sleep(1)
 
