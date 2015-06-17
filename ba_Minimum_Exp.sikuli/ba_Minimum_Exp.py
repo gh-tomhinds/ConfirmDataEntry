@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fMinimumExp_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fMinimumExp_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba MinimumExp")
-    logging.debug("ba MinimumExp")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Minimum-Exp")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -48,17 +48,19 @@ def fMinimumExp_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fMinimum_Exp():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Minimum-Exp"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Minimum-Exp","BA-Minimum-Exp","Minimum FF - Exp","Minimum FF - Exp","Minimum FF - Exp")
+    client_Create.fCreate_Client(baClient,baClient,"Minimum FF - Exp","Minimum FF - Exp","Minimum FF - Exp")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Minimum-Exp")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fMinimumExp_Setup() 
+    fMinimumExp_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Minimum-Exp",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Minimum-Exp1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

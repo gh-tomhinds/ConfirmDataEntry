@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fPercent_Setup1():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fPercent_Setup1(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba Percent1")
-    logging.debug("ba Percent1")
+    myTools.sectionStartTimeStamp(pBAClient + "1")
+    logging.debug(pBAClient + "1")
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Percent")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -85,17 +85,17 @@ def fPercent_Setup1():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fPercent_Setup2():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fPercent_Setup2(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba Percent2")
-    logging.debug("ba Percent2")
+    myTools.sectionStartTimeStamp(pBAClient + "2")
+    logging.debug(pBAClient + "2")
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Percent")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -143,17 +143,17 @@ def fPercent_Setup2():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fPercent_Setup3():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fPercent_Setup3(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba Percent3")
-    logging.debug("ba Percent3")
+    myTools.sectionStartTimeStamp(pBAClient + "3")
+    logging.debug(pBAClient + "3")
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Percent")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -204,36 +204,37 @@ def fPercent_Setup3():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fPercent():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Percent"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Percent","BA-Percent","Percent Comp","Percent Comp","Percent Comp")
+    client_Create.fCreate_Client(baClient,baClient,"Percent Comp","Percent Comp","Percent Comp")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Percent")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fPercent_Setup1() 
+    fPercent_Setup1(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Percent",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare bill values
-    ba__ReviewBills.fReview_BABill("BA-Percent1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")
 
     # create some more slips
-    ba__Common.fCreate_BASlips("BA-Percent")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fPercent_Setup2() 
+    fPercent_Setup2(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Percent",2)
+    ba__Common.fPrint_BABill(baClient,2)
     # compare bill values
-    ba__ReviewBills.fReview_BABill("BA-Percent2")
+    ba__ReviewBills.fReview_BABill(baClient + "2")
 
     # create some more slips
-    ba__Common.fCreate_BASlips("BA-Percent")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fPercent_Setup3() 
+    fPercent_Setup3(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Percent",3)
+    ba__Common.fPrint_BABill(baClient,3)
     # compare bill values
-    ba__ReviewBills.fReview_BABill("BA-Percent3")
-
+    ba__ReviewBills.fReview_BABill(baClient + "3")

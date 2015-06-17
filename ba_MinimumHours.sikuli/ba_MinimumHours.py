@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-#===================================================#
-def fMinimumHours_Setup():
-#===================================================#
+#---------------------------------------------------#
+def fMinimumHours_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba MinHours")
-    logging.debug("ba MinHours")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-MinimumHours")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -53,17 +53,19 @@ def fMinimumHours_Setup():
 
     myTools.sectionEndTimeStamp()
 
-#===================================================#
+#---------------------------------------------------#
 def fMinimumHours():
-#===================================================#
+#---------------------------------------------------#
+
+    baClient = "BA-MinimumHours"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-MinimumHours","BA-MinimumHours","Minimum Hours FF","Minimum Hours FF","Minimum Hours FF")
+    client_Create.fCreate_Client(baClient,baClient,"Minimum Hours FF","Minimum Hours FF","Minimum Hours FF")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-MinimumHours")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fMinimumHours_Setup() 
+    fMinimumHours_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-MinimumHours",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-MinimumHours1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

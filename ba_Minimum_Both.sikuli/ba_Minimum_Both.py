@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fMinimumBoth_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fMinimumBoth_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba MinimumBoth")
-    logging.debug("ba MinimumBoth")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Minimum-Both")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -59,17 +59,19 @@ def fMinimumBoth_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fMinimum_Both():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Minimum-Both"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Minimum-Both","BA-Minimum-Both","Minimum FF - Both","Minimum FF - Both","Minimum FF - Both")
+    client_Create.fCreate_Client(baClient,baClient,"Minimum FF - Both","Minimum FF - Both","Minimum FF - Both")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Minimum-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fMinimumBoth_Setup() 
+    fMinimumBoth_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Minimum-Both",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Minimum-Both1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fMinimumTime_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fMinimumTime_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba MinimumTime")
-    logging.debug("ba MinimumTime")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Minimum-Time")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -49,17 +49,19 @@ def fMinimumTime_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fMinimum_Time():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Minimum-Time"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Minimum-Time","BA-Minimum-Time","Minimum FF - Time","Minimum FF - Time","Minimum FF - Time")
+    client_Create.fCreate_Client(baClient,baClient,"Minimum FF - Time","Minimum FF - Time","Minimum FF - Time")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Minimum-Time")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fMinimumTime_Setup() 
+    fMinimumTime_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Minimum-Time",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Minimum-Time1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

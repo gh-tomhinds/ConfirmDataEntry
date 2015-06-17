@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fMaximumExp_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fMaximumExp_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba MaximumExp")
-    logging.debug("ba MaximumExp")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Maximum-Exp")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -48,17 +48,19 @@ def fMaximumExp_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fMaximum_Exp():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Maximum-Exp"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Maximum-Exp","BA-Maximum-Exp","Maximum FF - Exp","Maximum FF - Exp","Maximum FF - Exp")
+    client_Create.fCreate_Client(baClient,baClient,"Maximum FF - Exp","Maximum FF - Exp","Maximum FF - Exp")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Maximum-Exp")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fMaximumExp_Setup() 
+    fMaximumExp_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Maximum-Exp",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Maximum-Exp1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")

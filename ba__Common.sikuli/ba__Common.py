@@ -159,6 +159,7 @@ def fPrint_BABill(pBAClient,pBillNum):
     logging.debug('BA_Bill: ' + baBillName)
 
     type("b",KeyModifier.CTRL)
+    time.sleep(1)
     click("remove_filters.png")
     time.sleep(1)
     type(Key.ENTER)

@@ -5,17 +5,17 @@ import client_Create
 import ba__Common
 import ba__ReviewBills
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
-def fMaximumBoth_Setup():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+def fMaximumBoth_Setup(pBAClient):
+#---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("ba MaximumBoth")
-    logging.debug("ba MaximumBoth")
+    myTools.sectionStartTimeStamp(pBAClient)
+    logging.debug(pBAClient)
 
 # open client    
     type("i",KeyModifier.CTRL)
     time.sleep(1)
-    type("BA-Maximum-Both")
+    type(pBAClient)
     type(Key.ENTER)
     time.sleep(1)
 
@@ -59,17 +59,19 @@ def fMaximumBoth_Setup():
 
     myTools.sectionEndTimeStamp()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
 def fMaximum_Both():
-# - - - - - - - - - - - - - - - - - - - - - - - - - #
+#---------------------------------------------------#
+
+    baClient = "BA-Maximum-Both"
 
     # create a new client    
-    client_Create.fCreate_Client("BA-Maximum-Both","BA-Maximum-Both","Maximum FF - Both","Maximum FF - Both","Maximum FF - Both")
+    client_Create.fCreate_Client(baClient,baClient,"Maximum FF - Both","Maximum FF - Both","Maximum FF - Both")
     # create some slips
-    ba__Common.fCreate_BASlips("BA-Maximum-Both")
+    ba__Common.fCreate_BASlips(baClient)
     # set up billing arrangement
-    fMaximumBoth_Setup() 
+    fMaximumBoth_Setup(baClient) 
     # print a bill to text
-    ba__Common.fPrint_BABill("BA-Maximum-Both",1)
+    ba__Common.fPrint_BABill(baClient,1)
     # compare at bill values
-    ba__ReviewBills.fReview_BABill("BA-Maximum-Both1")
+    ba__ReviewBills.fReview_BABill(baClient + "1")
