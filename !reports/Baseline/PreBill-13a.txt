@@ -1,7 +1,7 @@
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  1
+							Pre-bill Worksheet					      Page
 
 							Selection Criteria
 
@@ -10,7 +10,7 @@ Slip.Transaction Date	     1/1/2013 - 12/31/2013
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  2
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-Absolute-Both | BA-Absolute-Bot
 Full Name	    Absolute FF - Both
@@ -65,7 +65,7 @@ Current 											       $2,637.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  3
+							Pre-bill Worksheet					      Page
 
 BA-Absolute-Both:Absolute FF - Both (continued)
 
@@ -81,7 +81,7 @@ Total New Balance													  $3,677.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  4
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-Absolute-Exp | BA-Absolute-Exp
 Full Name	    Absolute FF - Expense
@@ -134,7 +134,7 @@ Total tax on costs													     $42.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  5
+							Pre-bill Worksheet					      Page
 
 BA-Absolute-Exp:Absolute FF - Expense (continued)
 
@@ -154,7 +154,7 @@ Total New Balance													  $3,806.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  6
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-Absolute-Time | BA-Absolute-Tim
 Full Name	    Absolute FF - Time
@@ -209,7 +209,7 @@ Total new charges													  $1,040.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  7
+							Pre-bill Worksheet					      Page
 
 BA-Absolute-Time:Absolute FF - Time (continued)
 
@@ -227,7 +227,7 @@ Total New Balance													  $4,596.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  8
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-FFPlus-Both | BA-FFPlus-Both
 Full Name	    FF Plus - Both
@@ -282,7 +282,7 @@ Current 											       $3,163.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  9
+							Pre-bill Worksheet					      Page
 
 BA-FFPlus-Both:FF Plus - Both (continued)
 
@@ -298,7 +298,7 @@ Total New Balance													  $3,683.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 10
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-FFPlus-Exp | BA-FFPlus-Exp
 Full Name	    FF Plus - Exp
@@ -351,7 +351,7 @@ Total tax on costs													     $21.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 11
+							Pre-bill Worksheet					      Page
 
 BA-FFPlus-Exp:FF Plus - Exp (continued)
 
@@ -371,7 +371,7 @@ Total New Balance													  $3,685.36
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 12
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-FFPlus-Time | BA-FFPlus-Time
 Full Name	    FF Plus - Time
@@ -426,7 +426,7 @@ Total new charges													    $520.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 13
+							Pre-bill Worksheet					      Page
 
 BA-FFPlus-Time:FF Plus - Time (continued)
 
@@ -444,7 +444,7 @@ Total New Balance													  $3,682.86
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 14
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-Minimum-Both | BA-Minimum-Both
 Full Name	    Minimum FF - Both
@@ -499,7 +499,7 @@ Current 											       $6,806.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 15
+							Pre-bill Worksheet					      Page
 
 BA-Minimum-Both:Minimum FF - Both (continued)
 
@@ -515,7 +515,7 @@ Total New Balance													 $12,006.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 16
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-Minimum-Exp | BA-Minimum-Exp
 Full Name	    Minimum FF - Exp
@@ -568,7 +568,7 @@ Total tax on costs													    $212.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 17
+							Pre-bill Worksheet					      Page
 
 BA-Minimum-Exp:Minimum FF - Exp (continued)
 
@@ -588,7 +588,7 @@ Total New Balance													 $12,146.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 18
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-Minimum-Time | BA-Minimum-Time
 Full Name	    Minimum FF - Time
@@ -643,7 +643,7 @@ Total new charges													  $5,200.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 19
+							Pre-bill Worksheet					      Page
 
 BA-Minimum-Time:Minimum FF - Time (continued)
 
@@ -661,7 +661,7 @@ Total New Balance													 $12,916.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 20
+							Pre-bill Worksheet					      Page
 
 Nickname	    BA-MinimumHours | BA-MinimumHours
 Full Name	    Minimum Hours FF
@@ -716,7 +716,7 @@ Total new charges													  $1,040.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 21
+							Pre-bill Worksheet					      Page
 
 BA-MinimumHours:Minimum Hours FF (continued)
 

@@ -5,7 +5,7 @@
 
 							Selection Criteria
 
-Slip.Transaction Dat	     1/1/2013 - 10/27/2013
+Slip.Transaction Date	     1/1/2013 - 10/27/2013
 
 
 Fees
@@ -83,8 +83,8 @@ New Balance
        90 Days														$152,168.98
        60 Days														$167,437.75
        30 Days														$191,149.61
-       Current														$287,458.27
-       Unapplied													 ($1,931.73)
+       Current														$287,453.79
+       Unapplied													 ($1,927.25)
 
        Balance Due												      $1,882,857.49
 

@@ -1,16 +1,16 @@
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  1
+							Pre-bill Worksheet					      Page
 
 							Selection Criteria
 
-Slip.Transaction Dat	     1/1/2013 - 10/27/2013
+Slip.Transaction Date	     1/1/2013 - 10/27/2013
 
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  2
+							Pre-bill Worksheet					      Page
 
 Nickname	    Abington | 02351
 Full Name	    Town of Abington
@@ -64,7 +64,7 @@ Date|ID        Type   Description
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  3
+							Pre-bill Worksheet					      Page
 
 Abington:Town of Abington (continued)
 
@@ -86,7 +86,7 @@ Total Overdue:	 $6,265.03
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  4
+							Pre-bill Worksheet					      Page
 
 Nickname	    Acton | 01720
 Full Name	    Town of Acton
@@ -137,7 +137,7 @@ Total Previous Balance													  $7,724.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  5
+							Pre-bill Worksheet					      Page
 
 Acton:Town of Acton (continued)
 
@@ -164,7 +164,7 @@ Total Overdue:	 $7,612.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  6
+							Pre-bill Worksheet					      Page
 
 Nickname	    Acushnet | 02743
 Full Name	    Town of Acushnet
@@ -215,7 +215,7 @@ Total Previous Balance													  $5,145.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  7
+							Pre-bill Worksheet					      Page
 
 Acushnet:Town of Acushnet (continued)
 
@@ -242,7 +242,7 @@ Total Overdue:	 $5,042.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  8
+							Pre-bill Worksheet					      Page
 
 Nickname	    Adams | 01220
 Full Name	    Town of Adams
@@ -296,7 +296,7 @@ Total of Costs (Expense Charges)											    $163.97
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	  9
+							Pre-bill Worksheet					      Page
 
 Adams:Town of Adams (continued)
 
@@ -342,7 +342,7 @@ Total Overdue:	 $4,365.85
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 10
+							Pre-bill Worksheet					      Page
 
 Nickname	    Agawam | 01001
 Full Name	    City of Agawam
@@ -396,7 +396,7 @@ Total of Costs (Expense Charges)											      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 11
+							Pre-bill Worksheet					      Page
 
 Agawam:City of Agawam (continued)
 
@@ -433,7 +433,7 @@ Total Overdue:	 $3,975.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 12
+							Pre-bill Worksheet					      Page
 
 Nickname	    Alford | 01230x
 Full Name	    Town of Alford
@@ -481,7 +481,7 @@ TOTAL	       Billable Costs												      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 13
+							Pre-bill Worksheet					      Page
 
 Alford:Town of Alford (continued)
 
@@ -533,7 +533,7 @@ Total Overdue:	 $5,497.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 14
+							Pre-bill Worksheet					      Page
 
 Nickname	    Amesbury | 01913
 Full Name	    City of Amesbury
@@ -582,7 +582,7 @@ TOTAL	       Billable Costs												      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 15
+							Pre-bill Worksheet					      Page
 
 Amesbury:City of Amesbury (continued)
 
@@ -634,7 +634,7 @@ Current 											       $4,078.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 16
+							Pre-bill Worksheet					      Page
 
 Amesbury:City of Amesbury (continued)
 
@@ -647,7 +647,7 @@ Total Overdue:	 $14,633.12
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 17
+							Pre-bill Worksheet					      Page
 
 Nickname	    Amherst | 01003
 Full Name	    Town of Amherst
@@ -695,7 +695,7 @@ TOTAL	       Billable Costs												      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 18
+							Pre-bill Worksheet					      Page
 
 Amherst:Town of Amherst (continued)
 
@@ -750,7 +750,7 @@ Current 												 $683.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 19
+							Pre-bill Worksheet					      Page
 
 Amherst:Town of Amherst (continued)
 
@@ -763,7 +763,7 @@ Total Overdue:	 $6,394.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 20
+							Pre-bill Worksheet					      Page
 
 Nickname	    Andover | 01810
 Full Name	    Town of Andover
@@ -817,7 +817,7 @@ Total of Costs (Expense Charges)											      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 21
+							Pre-bill Worksheet					      Page
 
 Andover:Town of Andover (continued)
 
@@ -852,7 +852,7 @@ Total Overdue:	 $16,557.07
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 22
+							Pre-bill Worksheet					      Page
 
 Nickname	    Aquinnah | 02535x
 Full Name	    Town of Aquinnah
@@ -907,7 +907,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 23
+							Pre-bill Worksheet					      Page
 
 Aquinnah:Town of Aquinnah (continued)
 
@@ -936,7 +936,7 @@ Total Overdue:	 $5,620.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 24
+							Pre-bill Worksheet					      Page
 
 Nickname	    Arlington | 02474
 Full Name	    Town of Arlington
@@ -991,7 +991,7 @@ Total Overdue:	 $6,877.09
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 25
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ashburnham | 01430
 Full Name	    Town of Ashburnham
@@ -1046,7 +1046,7 @@ Total New Balance													  $7,315.36
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 26
+							Pre-bill Worksheet					      Page
 
 Ashburnham:Town of Ashburnham (continued)
 
@@ -1057,7 +1057,7 @@ Total Overdue:	 $7,285.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 27
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ashby | 01431
 Full Name	    Town of Ashby
@@ -1112,7 +1112,7 @@ Total New Balance													  $8,659.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 28
+							Pre-bill Worksheet					      Page
 
 Ashby:Town of Ashby (continued)
 
@@ -1123,7 +1123,7 @@ Total Overdue:	 $8,624.16
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 29
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ashfield | 01330
 Full Name	    Town of Ashfield
@@ -1178,7 +1178,7 @@ Total New Balance													  $6,075.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 30
+							Pre-bill Worksheet					      Page
 
 Ashfield:Town of Ashfield (continued)
 
@@ -1189,7 +1189,7 @@ Total Overdue:	 $6,050.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 31
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ashland | 01721
 Full Name	    Town of Ashland
@@ -1245,7 +1245,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 32
+							Pre-bill Worksheet					      Page
 
 Ashland:Town of Ashland (continued)
 
@@ -1260,7 +1260,7 @@ Total Overdue:	 $4,811.13
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 33
+							Pre-bill Worksheet					      Page
 
 Nickname	    Athol | 01331
 Full Name	    Town of Athol
@@ -1315,7 +1315,7 @@ Total New Balance													  $5,020.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 34
+							Pre-bill Worksheet					      Page
 
 Athol:Town of Athol (continued)
 
@@ -1326,7 +1326,7 @@ Total Overdue:	 $5,000.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 35
+							Pre-bill Worksheet					      Page
 
 Nickname	    Attleboro | 02703
 Full Name	    City of Attleboro
@@ -1382,7 +1382,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 36
+							Pre-bill Worksheet					      Page
 
 Attleboro:City of Attleboro (continued)
 
@@ -1399,7 +1399,7 @@ Total Overdue:	 $4,052.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 37
+							Pre-bill Worksheet					      Page
 
 Nickname	    Auburn | 01501
 Full Name	    Town of Auburn
@@ -1454,7 +1454,7 @@ Total Overdue:	 $3,474.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 38
+							Pre-bill Worksheet					      Page
 
 Nickname	    Avon | 02322
 Full Name	    Town of Avon
@@ -1507,7 +1507,7 @@ Total Previous Balance													  $3,627.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 39
+							Pre-bill Worksheet					      Page
 
 Avon:Town of Avon (continued)
 
@@ -1527,7 +1527,7 @@ Total Overdue:	 $3,613.02
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 40
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ayer | 01432
 Full Name	    Town of Ayer
@@ -1580,7 +1580,7 @@ Total Previous Balance													  $3,868.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 41
+							Pre-bill Worksheet					      Page
 
 Ayer:Town of Ayer (continued)
 
@@ -1606,7 +1606,7 @@ Total Overdue:	 $3,732.94
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 42
+							Pre-bill Worksheet					      Page
 
 Nickname	    Barnstable | 02630
 Full Name	    City of Barnstable
@@ -1661,7 +1661,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 43
+							Pre-bill Worksheet					      Page
 
 Barnstable:City of Barnstable (continued)
 
@@ -1679,7 +1679,7 @@ Total Overdue:	 $8,688.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 44
+							Pre-bill Worksheet					      Page
 
 Nickname	    Barre | 01005
 Full Name	    Town of Barre
@@ -1732,7 +1732,7 @@ Total Previous Balance													  $3,070.01
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 45
+							Pre-bill Worksheet					      Page
 
 Barre:Town of Barre (continued)
 
@@ -1752,7 +1752,7 @@ Total Overdue:	 $3,057.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 46
+							Pre-bill Worksheet					      Page
 
 Nickname	    Becket | 01223
 Full Name	    Town of Becket
@@ -1805,7 +1805,7 @@ Total Previous Balance													  $3,301.73
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 47
+							Pre-bill Worksheet					      Page
 
 Becket:Town of Becket (continued)
 
@@ -1825,7 +1825,7 @@ Total Overdue:	 $3,288.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 48
+							Pre-bill Worksheet					      Page
 
 Nickname	    Bedford | 01730
 Full Name	    Town of Bedford
@@ -1878,7 +1878,7 @@ Total Previous Balance													  $9,821.56
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 49
+							Pre-bill Worksheet					      Page
 
 Bedford:Town of Bedford (continued)
 
@@ -1898,7 +1898,7 @@ Total Overdue:	 $9,781.36
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 50
+							Pre-bill Worksheet					      Page
 
 Nickname	    Belchertown | 01007
 Full Name	    Town of Belchertown
@@ -1953,7 +1953,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 51
+							Pre-bill Worksheet					      Page
 
 Belchertown:Town of Belchertown (continued)
 
@@ -1983,7 +1983,7 @@ Total Overdue:	 $4,496.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 52
+							Pre-bill Worksheet					      Page
 
 Nickname	    Bellingham | 02019
 Full Name	    Town of Bellingham
@@ -2039,7 +2039,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 53
+							Pre-bill Worksheet					      Page
 
 Bellingham:Town of Bellingham (continued)
 
@@ -2056,7 +2056,7 @@ Total Overdue:	 $7,693.15
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 54
+							Pre-bill Worksheet					      Page
 
 Nickname	    Belmont | 02478
 Full Name	    Town of Belmont
@@ -2111,7 +2111,7 @@ Total New Balance													  $9,838.77
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 55
+							Pre-bill Worksheet					      Page
 
 Belmont:Town of Belmont (continued)
 
@@ -2122,7 +2122,7 @@ Total Overdue:	 $9,823.49
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 56
+							Pre-bill Worksheet					      Page
 
 Nickname	    Berkley | 02779
 Full Name	    Town of Berkley
@@ -2177,7 +2177,7 @@ Total New Balance													  $6,057.10
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 57
+							Pre-bill Worksheet					      Page
 
 Berkley:Town of Berkley (continued)
 
@@ -2188,7 +2188,7 @@ Total Overdue:	 $6,032.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 58
+							Pre-bill Worksheet					      Page
 
 Nickname	    Berlin | 01503
 Full Name	    Town of Berlin
@@ -2243,7 +2243,7 @@ Total New Balance													  $3,771.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 59
+							Pre-bill Worksheet					      Page
 
 Berlin:Town of Berlin (continued)
 
@@ -2254,7 +2254,7 @@ Total Overdue:	 $3,755.95
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 60
+							Pre-bill Worksheet					      Page
 
 Nickname	    Bernardston | 01337
 Full Name	    Town of Bernardston
@@ -2310,7 +2310,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 61
+							Pre-bill Worksheet					      Page
 
 Bernardston:Town of Bernardston (continued)
 
@@ -2327,7 +2327,7 @@ Total Overdue:	 $3,621.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 62
+							Pre-bill Worksheet					      Page
 
 Nickname	    Beverly | 01915
 Full Name	    City of Beverly
@@ -2381,7 +2381,7 @@ Current 												  $19.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 63
+							Pre-bill Worksheet					      Page
 
 Beverly:City of Beverly (continued)
 
@@ -2394,7 +2394,7 @@ Total Overdue:	 $4,775.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 64
+							Pre-bill Worksheet					      Page
 
 Nickname	    Billerica | 01821
 Full Name	    Town of Billerica
@@ -2449,7 +2449,7 @@ Total New Balance													  $6,922.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 65
+							Pre-bill Worksheet					      Page
 
 Billerica:Town of Billerica (continued)
 
@@ -2460,7 +2460,7 @@ Total Overdue:	 $6,893.90
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 66
+							Pre-bill Worksheet					      Page
 
 Nickname	    Blackstone | 01504
 Full Name	    Town of Blackstone
@@ -2516,7 +2516,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 67
+							Pre-bill Worksheet					      Page
 
 Blackstone:Town of Blackstone (continued)
 
@@ -2533,7 +2533,7 @@ Total Overdue:	 $7,370.40
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 68
+							Pre-bill Worksheet					      Page
 
 Nickname	    Blandford | 01008
 Full Name	    Town of Blandford
@@ -2588,7 +2588,7 @@ Total Overdue:	 $4,396.52
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 69
+							Pre-bill Worksheet					      Page
 
 Nickname	    Bolton | 01740
 Full Name	    Town of Bolton
@@ -2642,7 +2642,7 @@ Total Accounts Receivable												   ($145.20)
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 70
+							Pre-bill Worksheet					      Page
 
 Bolton:Town of Bolton (continued)
 
@@ -2662,7 +2662,7 @@ Total Overdue:	 $9,979.29
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 71
+							Pre-bill Worksheet					      Page
 
 Nickname	    Boston | 02108
 Full Name	    City of Boston
@@ -2717,7 +2717,7 @@ Total Overdue:	 $8,398.79
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 72
+							Pre-bill Worksheet					      Page
 
 Nickname	    Bourne | 02532
 Full Name	    Town of Bourne
@@ -2772,7 +2772,7 @@ Total New Balance													  $9,231.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 73
+							Pre-bill Worksheet					      Page
 
 Bourne:Town of Bourne (continued)
 
@@ -2783,7 +2783,7 @@ Total Overdue:	 $9,193.93
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 74
+							Pre-bill Worksheet					      Page
 
 Nickname	    Boxborough | 01719
 Full Name	    Town of Boxborough
@@ -2838,7 +2838,7 @@ Total New Balance													  $6,500.43
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 75
+							Pre-bill Worksheet					      Page
 
 Boxborough:Town of Boxborough (continued)
 
@@ -2849,7 +2849,7 @@ Total Overdue:	 $6,473.83
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 76
+							Pre-bill Worksheet					      Page
 
 Nickname	    Boxford | 01921
 Full Name	    Town of Boxford
@@ -2904,7 +2904,7 @@ Total Overdue:	 $4,936.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 77
+							Pre-bill Worksheet					      Page
 
 Nickname	    Boylston | 01505
 Full Name	    Town of Boylston
@@ -2960,7 +2960,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 78
+							Pre-bill Worksheet					      Page
 
 Boylston:Town of Boylston (continued)
 
@@ -2977,7 +2977,7 @@ Total Overdue:	 $3,737.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 79
+							Pre-bill Worksheet					      Page
 
 Nickname	    Braintree | 02184
 Full Name	    City of Braintree
@@ -3032,7 +3032,7 @@ Total New Balance													  $4,126.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 80
+							Pre-bill Worksheet					      Page
 
 Braintree:City of Braintree (continued)
 
@@ -3043,7 +3043,7 @@ Total Overdue:	 $4,109.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 81
+							Pre-bill Worksheet					      Page
 
 Nickname	    Brewster | 02631
 Full Name	    Town of Brewster
@@ -3098,7 +3098,7 @@ Total New Balance													  $4,521.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 82
+							Pre-bill Worksheet					      Page
 
 Brewster:Town of Brewster (continued)
 
@@ -3109,7 +3109,7 @@ Total Overdue:	 $4,503.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 83
+							Pre-bill Worksheet					      Page
 
 Nickname	    Bridgewater | 02324
 Full Name	    City of Bridgewater
@@ -3164,7 +3164,7 @@ Total New Balance													  $5,686.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 84
+							Pre-bill Worksheet					      Page
 
 Bridgewater:City of Bridgewater (continued)
 
@@ -3175,7 +3175,7 @@ Total Overdue:	 $5,663.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 85
+							Pre-bill Worksheet					      Page
 
 Nickname	    Brimfield | 01010
 Full Name	    Town of Brimfield
@@ -3228,7 +3228,7 @@ Total Previous Balance													  $5,861.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 86
+							Pre-bill Worksheet					      Page
 
 Brimfield:Town of Brimfield (continued)
 
@@ -3254,7 +3254,7 @@ Total Overdue:	 $5,837.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 87
+							Pre-bill Worksheet					      Page
 
 Nickname	    Brockton | 02301
 Full Name	    City of Brockton
@@ -3306,7 +3306,7 @@ Total Previous Balance													  $6,711.35
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 88
+							Pre-bill Worksheet					      Page
 
 Brockton:City of Brockton (continued)
 
@@ -3332,7 +3332,7 @@ Total Overdue:	 $6,563.77
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 89
+							Pre-bill Worksheet					      Page
 
 Nickname	    Brookfield | 01506
 Full Name	    Town of Brookfield
@@ -3385,7 +3385,7 @@ Total Previous Balance													  $7,579.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 90
+							Pre-bill Worksheet					      Page
 
 Brookfield:Town of Brookfield (continued)
 
@@ -3405,7 +3405,7 @@ Total Overdue:	 $7,548.17
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 91
+							Pre-bill Worksheet					      Page
 
 Nickname	    Brookline | 02445
 Full Name	    Town of Brookline
@@ -3460,7 +3460,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 92
+							Pre-bill Worksheet					      Page
 
 Brookline:Town of Brookline (continued)
 
@@ -3477,7 +3477,7 @@ Total Overdue:	 $3,389.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 93
+							Pre-bill Worksheet					      Page
 
 Nickname	    Buckland | 01338
 Full Name	    Town of Buckland
@@ -3530,7 +3530,7 @@ Total Previous Balance													  $4,389.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 94
+							Pre-bill Worksheet					      Page
 
 Buckland:Town of Buckland (continued)
 
@@ -3550,7 +3550,7 @@ Total Overdue:	 $4,371.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 95
+							Pre-bill Worksheet					      Page
 
 Nickname	    Burlington | 01803
 Full Name	    Town of Burlington
@@ -3605,7 +3605,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 96
+							Pre-bill Worksheet					      Page
 
 Burlington:Town of Burlington (continued)
 
@@ -3623,7 +3623,7 @@ Total Overdue:	 $4,366.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 97
+							Pre-bill Worksheet					      Page
 
 Nickname	    Cambridge | 02138
 Full Name	    City of Cambridge
@@ -3675,7 +3675,7 @@ Total Previous Balance													  $4,175.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 98
+							Pre-bill Worksheet					      Page
 
 Cambridge:City of Cambridge (continued)
 
@@ -3701,7 +3701,7 @@ Total Overdue:	 $4,008.49
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	 99
+							Pre-bill Worksheet					      Page
 
 Nickname	    Canton | 02021
 Full Name	    Town of Canton
@@ -3756,7 +3756,7 @@ Total Overdue:	 $3,434.52
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	100
+							Pre-bill Worksheet					      Page
 
 Nickname	    Carlisle | 01741
 Full Name	    Town of Carlisle
@@ -3811,7 +3811,7 @@ Total New Balance													  $4,108.56
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	101
+							Pre-bill Worksheet					      Page
 
 Carlisle:Town of Carlisle (continued)
 
@@ -3822,7 +3822,7 @@ Total Overdue:	 $4,091.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	102
+							Pre-bill Worksheet					      Page
 
 Nickname	    Carver | 02330
 Full Name	    Town of Carver
@@ -3876,7 +3876,7 @@ Total Accounts Receivable												    ($13.20)
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	103
+							Pre-bill Worksheet					      Page
 
 Carver:Town of Carver (continued)
 
@@ -3896,7 +3896,7 @@ Total Overdue:	 $4,431.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	104
+							Pre-bill Worksheet					      Page
 
 Nickname	    Charlemont | 01339
 Full Name	    Town of Charlemont
@@ -3951,7 +3951,7 @@ Total Overdue:	 $5,635.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	105
+							Pre-bill Worksheet					      Page
 
 Nickname	    Charlton | 01507
 Full Name	    Town of Charlton
@@ -4007,7 +4007,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	106
+							Pre-bill Worksheet					      Page
 
 Charlton:Town of Charlton (continued)
 
@@ -4024,7 +4024,7 @@ Total Overdue:	 $5,814.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	107
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chatham | 02633
 Full Name	    Town of Chatham
@@ -4079,7 +4079,7 @@ Total New Balance													  $7,381.44
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	108
+							Pre-bill Worksheet					      Page
 
 Chatham:Town of Chatham (continued)
 
@@ -4090,7 +4090,7 @@ Total Overdue:	 $7,351.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	109
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chelmsford | 01824
 Full Name	    Town of Chelmsford
@@ -4145,7 +4145,7 @@ Total New Balance													  $8,610.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	110
+							Pre-bill Worksheet					      Page
 
 Chelmsford:Town of Chelmsford (continued)
 
@@ -4156,7 +4156,7 @@ Total Overdue:	 $6,991.93
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	111
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chelsea | 02150
 Full Name	    City of Chelsea
@@ -4211,7 +4211,7 @@ Total Overdue:	 $4,140.35
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	112
+							Pre-bill Worksheet					      Page
 
 Nickname	    Cheshire | 01225
 Full Name	    Town of Cheshire
@@ -4264,7 +4264,7 @@ Total Overdue:	 $2,720.57
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	113
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chester | 01011
 Full Name	    Town of Chester
@@ -4316,7 +4316,7 @@ Total Previous Balance													  $5,229.70
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	114
+							Pre-bill Worksheet					      Page
 
 Chester:Town of Chester (continued)
 
@@ -4342,7 +4342,7 @@ Total Overdue:	 $2,730.16
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	115
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chesterfield | 01012
 Full Name	    Town of Chesterfield
@@ -4397,7 +4397,7 @@ Total New Balance													  $4,058.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	116
+							Pre-bill Worksheet					      Page
 
 Chesterfield:Town of Chesterfield (continued)
 
@@ -4408,7 +4408,7 @@ Total Overdue:	 $1,420.81
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	117
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chicopee | 01013
 Full Name	    City of Chicopee
@@ -4464,7 +4464,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	118
+							Pre-bill Worksheet					      Page
 
 Chicopee:City of Chicopee (continued)
 
@@ -4481,7 +4481,7 @@ Total Overdue:	 $3,215.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	119
+							Pre-bill Worksheet					      Page
 
 Nickname	    Chilmark | 02535
 Full Name	    Town of Chilmark
@@ -4536,7 +4536,7 @@ Total New Balance													  $4,064.11
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	120
+							Pre-bill Worksheet					      Page
 
 Chilmark:Town of Chilmark (continued)
 
@@ -4547,7 +4547,7 @@ Total Overdue:	 $3,604.52
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	121
+							Pre-bill Worksheet					      Page
 
 Nickname	    Clarksburg | 01247x
 Full Name	    Town of Clarksburg
@@ -4602,7 +4602,7 @@ Total Overdue:	 $4,369.92
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	122
+							Pre-bill Worksheet					      Page
 
 Nickname	    Clinton | 01510
 Full Name	    Town of Clinton
@@ -4658,7 +4658,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	123
+							Pre-bill Worksheet					      Page
 
 Clinton:Town of Clinton (continued)
 
@@ -4675,7 +4675,7 @@ Total Overdue:	 $4,655.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	124
+							Pre-bill Worksheet					      Page
 
 Nickname	    Cohasset | 02025
 Full Name	    Town of Cohasset
@@ -4730,7 +4730,7 @@ Total New Balance													  $6,879.89
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	125
+							Pre-bill Worksheet					      Page
 
 Cohasset:Town of Cohasset (continued)
 
@@ -4741,7 +4741,7 @@ Total Overdue:	 $5,706.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	126
+							Pre-bill Worksheet					      Page
 
 Nickname	    Colrain | 01340
 Full Name	    Town of Colrain
@@ -4796,7 +4796,7 @@ Total New Balance													  $7,268.48
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	127
+							Pre-bill Worksheet					      Page
 
 Colrain:Town of Colrain (continued)
 
@@ -4807,7 +4807,7 @@ Total Overdue:	 $7,238.73
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	128
+							Pre-bill Worksheet					      Page
 
 Nickname	    Concord | 01742
 Full Name	    Town of Concord
@@ -4862,7 +4862,7 @@ Total New Balance													  $8,607.09
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	129
+							Pre-bill Worksheet					      Page
 
 Concord:Town of Concord (continued)
 
@@ -4873,7 +4873,7 @@ Total Overdue:	 $6,963.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	130
+							Pre-bill Worksheet					      Page
 
 Nickname	    Conway | 01341
 Full Name	    Town of Conway
@@ -4928,7 +4928,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	131
+							Pre-bill Worksheet					      Page
 
 Conway:Town of Conway (continued)
 
@@ -4945,7 +4945,7 @@ Total Overdue:	 $4,159.81
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	132
+							Pre-bill Worksheet					      Page
 
 Nickname	    Cummington | 01026
 Full Name	    Town of Cummington
@@ -4996,7 +4996,7 @@ Total Previous Balance													  $4,851.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	133
+							Pre-bill Worksheet					      Page
 
 Cummington:Town of Cummington (continued)
 
@@ -5021,7 +5021,7 @@ Total Overdue:	 $2,595.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	134
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dalton | 01226
 Full Name	    Town of Dalton
@@ -5076,7 +5076,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	135
+							Pre-bill Worksheet					      Page
 
 Dalton:Town of Dalton (continued)
 
@@ -5110,7 +5110,7 @@ Total Overdue:	 $2,604.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	136
+							Pre-bill Worksheet					      Page
 
 Nickname	    Danvers | 01923
 Full Name	    Town of Danvers
@@ -5165,7 +5165,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	137
+							Pre-bill Worksheet					      Page
 
 Danvers:Town of Danvers (continued)
 
@@ -5181,7 +5181,7 @@ Total Overdue:	 $1,562.62
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	138
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dartmouth | 02714
 Full Name	    Town of Dartmouth
@@ -5234,7 +5234,7 @@ Total Previous Balance													  $2,388.95
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	139
+							Pre-bill Worksheet					      Page
 
 Dartmouth:Town of Dartmouth (continued)
 
@@ -5254,7 +5254,7 @@ Total Overdue:	 $2,132.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	140
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dedham | 02026
 Full Name	    Town of Dedham
@@ -5307,7 +5307,7 @@ Total Previous Balance													  $3,395.15
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	141
+							Pre-bill Worksheet					      Page
 
 Dedham:Town of Dedham (continued)
 
@@ -5327,7 +5327,7 @@ Total Overdue:	 $2,913.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	142
+							Pre-bill Worksheet					      Page
 
 Nickname	    Deerfield | 01342
 Full Name	    Town of Deerfield
@@ -5379,7 +5379,7 @@ Total Previous Balance													  $3,646.86
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	143
+							Pre-bill Worksheet					      Page
 
 Deerfield:Town of Deerfield (continued)
 
@@ -5404,7 +5404,7 @@ Total Overdue:	 $3,471.76
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	144
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dennis | 02638
 Full Name	    Town of Dennis
@@ -5459,7 +5459,7 @@ Total Overdue:	 $4,806.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	145
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dighton | 02715
 Full Name	    Town of Dighton
@@ -5514,7 +5514,7 @@ Total New Balance													  $7,011.99
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	146
+							Pre-bill Worksheet					      Page
 
 Dighton:Town of Dighton (continued)
 
@@ -5525,7 +5525,7 @@ Total Overdue:	 $5,837.93
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	147
+							Pre-bill Worksheet					      Page
 
 Nickname	    Douglas | 01516
 Full Name	    Town of Douglas
@@ -5580,7 +5580,7 @@ Total New Balance													  $7,404.86
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	148
+							Pre-bill Worksheet					      Page
 
 Douglas:Town of Douglas (continued)
 
@@ -5591,7 +5591,7 @@ Total Overdue:	 $7,374.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	149
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dover | 02030
 Full Name	    Town of Dover
@@ -5646,7 +5646,7 @@ Total New Balance													  $8,709.94
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	150
+							Pre-bill Worksheet					      Page
 
 Dover:Town of Dover (continued)
 
@@ -5657,7 +5657,7 @@ Total Overdue:	 $7,066.41
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	151
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dracut | 01826
 Full Name	    Town of Dracut
@@ -5711,7 +5711,7 @@ Total Accounts Receivable												   ($190.20)
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	152
+							Pre-bill Worksheet					      Page
 
 Dracut:Town of Dracut (continued)
 
@@ -5731,7 +5731,7 @@ Total Overdue:	 $4,037.51
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	153
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dudley | 01571
 Full Name	    Town of Dudley
@@ -5786,7 +5786,7 @@ Total New Balance													  $5,815.92
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	154
+							Pre-bill Worksheet					      Page
 
 Dudley:Town of Dudley (continued)
 
@@ -5797,7 +5797,7 @@ Total Overdue:	 $3,737.97
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	155
+							Pre-bill Worksheet					      Page
 
 Nickname	    Dunstable | 01827
 Full Name	    Town of Dunstable
@@ -5852,7 +5852,7 @@ Total Overdue:	 $4,708.21
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	156
+							Pre-bill Worksheet					      Page
 
 Nickname	    Duxbury | 02331
 Full Name	    Town of Duxbury
@@ -5907,7 +5907,7 @@ Total New Balance													  $5,330.62
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	157
+							Pre-bill Worksheet					      Page
 
 Duxbury:Town of Duxbury (continued)
 
@@ -5918,7 +5918,7 @@ Total Overdue:	 $2,749.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	158
+							Pre-bill Worksheet					      Page
 
 Nickname	    East.Bridgewater | 02333
 Full Name	    Town of East Bridgewater
@@ -5972,7 +5972,7 @@ Total Accounts Receivable												   ($173.00)
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	159
+							Pre-bill Worksheet					      Page
 
 East.Bridgewater:Town of East Bridgewater (continued)
 
@@ -5991,7 +5991,7 @@ Total Overdue:	 $4,569.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	160
+							Pre-bill Worksheet					      Page
 
 Nickname	    East.Brookfield | 01515
 Full Name	    Town of East Brookfield
@@ -6046,7 +6046,7 @@ Date|ID        Type   Description
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	161
+							Pre-bill Worksheet					      Page
 
 East.Brookfield:Town of East Brookfield (continued)
 
@@ -6069,7 +6069,7 @@ Total Overdue:	 $4,337.29
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	162
+							Pre-bill Worksheet					      Page
 
 Nickname	    East.Longmeadow | 01028
 Full Name	    Town of East Longmeadow
@@ -6118,7 +6118,7 @@ Total Overdue:	 $1,117.67
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	163
+							Pre-bill Worksheet					      Page
 
 Nickname	    Eastham | 02642
 Full Name	    Town of Eastham
@@ -6173,7 +6173,7 @@ Total New Balance													  $8,619.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	164
+							Pre-bill Worksheet					      Page
 
 Eastham:Town of Eastham (continued)
 
@@ -6184,7 +6184,7 @@ Total Overdue:	 $7,692.13
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	165
+							Pre-bill Worksheet					      Page
 
 Nickname	    Easthampton | 01027
 Full Name	    City of Easthampton
@@ -6239,7 +6239,7 @@ Total Overdue:	 $3,823.18
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	166
+							Pre-bill Worksheet					      Page
 
 Nickname	    Easton | 02334
 Full Name	    Town of Easton
@@ -6295,7 +6295,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	167
+							Pre-bill Worksheet					      Page
 
 Easton:Town of Easton (continued)
 
@@ -6312,7 +6312,7 @@ Total Overdue:	 $12,295.91
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	168
+							Pre-bill Worksheet					      Page
 
 Nickname	    Edgartown | 02539
 Full Name	    Town of Edgartown
@@ -6368,7 +6368,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	169
+							Pre-bill Worksheet					      Page
 
 Edgartown:Town of Edgartown (continued)
 
@@ -6385,7 +6385,7 @@ Total Overdue:	 $11,331.29
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	170
+							Pre-bill Worksheet					      Page
 
 Nickname	    Egremont | 01258x
 Full Name	    Town of Egremont
@@ -6440,7 +6440,7 @@ Total New Balance													  $5,468.17
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	171
+							Pre-bill Worksheet					      Page
 
 Egremont:Town of Egremont (continued)
 
@@ -6451,7 +6451,7 @@ Total Overdue:	 $3,603.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	172
+							Pre-bill Worksheet					      Page
 
 Nickname	    Erving | 01344
 Full Name	    Town of Erving
@@ -6506,7 +6506,7 @@ Total New Balance													  $4,440.04
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	173
+							Pre-bill Worksheet					      Page
 
 Erving:Town of Erving (continued)
 
@@ -6517,7 +6517,7 @@ Total Overdue:	 $2,342.73
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	174
+							Pre-bill Worksheet					      Page
 
 Nickname	    Essex | 01929
 Full Name	    Town of Essex
@@ -6572,7 +6572,7 @@ Total New Balance													  $7,636.02
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	175
+							Pre-bill Worksheet					      Page
 
 Essex:Town of Essex (continued)
 
@@ -6583,7 +6583,7 @@ Total Overdue:	 $5,311.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	176
+							Pre-bill Worksheet					      Page
 
 Nickname	    Everett | 02149
 Full Name	    City of Everett
@@ -6638,7 +6638,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	177
+							Pre-bill Worksheet					      Page
 
 Everett:City of Everett (continued)
 
@@ -6651,7 +6651,7 @@ Total Overdue:	 $2,622.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	178
+							Pre-bill Worksheet					      Page
 
 Nickname	    Fairhaven | 02719
 Full Name	    Town of Fairhaven
@@ -6706,7 +6706,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	179
+							Pre-bill Worksheet					      Page
 
 Fairhaven:Town of Fairhaven (continued)
 
@@ -6736,7 +6736,7 @@ Total Overdue:	 $5,370.88
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	180
+							Pre-bill Worksheet					      Page
 
 Nickname	    Fall River | 02720
 Full Name	    City of Fall River
@@ -6791,7 +6791,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	181
+							Pre-bill Worksheet					      Page
 
 Fall River:City of Fall River (continued)
 
@@ -6823,7 +6823,7 @@ Total Overdue:	 $7,599.36
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	182
+							Pre-bill Worksheet					      Page
 
 Nickname	    Falmouth | 02540
 Full Name	    Town of Falmouth
@@ -6878,7 +6878,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	183
+							Pre-bill Worksheet					      Page
 
 Falmouth:Town of Falmouth (continued)
 
@@ -6896,7 +6896,7 @@ Total Overdue:	 $10,681.88
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	184
+							Pre-bill Worksheet					      Page
 
 Nickname	    Fitchburg | 01420
 Full Name	    City of Fitchburg
@@ -6948,7 +6948,7 @@ Total Previous Balance													  $4,003.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	185
+							Pre-bill Worksheet					      Page
 
 Fitchburg:City of Fitchburg (continued)
 
@@ -6974,7 +6974,7 @@ Total Overdue:	 $3,070.10
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	186
+							Pre-bill Worksheet					      Page
 
 Nickname	    Florida | 01247z
 Full Name	    Town of Florida
@@ -7029,7 +7029,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	187
+							Pre-bill Worksheet					      Page
 
 Florida:Town of Florida (continued)
 
@@ -7047,7 +7047,7 @@ Total Overdue:	 $5,228.93
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	188
+							Pre-bill Worksheet					      Page
 
 Nickname	    Foxborough | 02035
 Full Name	    Town of Foxborough
@@ -7100,7 +7100,7 @@ Total Previous Balance													 $11,389.57
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	189
+							Pre-bill Worksheet					      Page
 
 Foxborough:Town of Foxborough (continued)
 
@@ -7126,7 +7126,7 @@ Total Overdue:	 $11,142.86
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	190
+							Pre-bill Worksheet					      Page
 
 Nickname	    Framingham | 01701
 Full Name	    Town of Framingham
@@ -7181,7 +7181,7 @@ Total New Balance													  $8,847.01
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	191
+							Pre-bill Worksheet					      Page
 
 Framingham:Town of Framingham (continued)
 
@@ -7192,7 +7192,7 @@ Total Overdue:	 $7,202.92
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	192
+							Pre-bill Worksheet					      Page
 
 Nickname	    Franklin | 02038
 Full Name	    City of Franklin
@@ -7247,7 +7247,7 @@ Total Overdue:	 $4,398.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	193
+							Pre-bill Worksheet					      Page
 
 Nickname	    Freetown | 02702
 Full Name	    Town of Freetown
@@ -7302,7 +7302,7 @@ Total New Balance													  $5,086.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	194
+							Pre-bill Worksheet					      Page
 
 Freetown:Town of Freetown (continued)
 
@@ -7313,7 +7313,7 @@ Total Overdue:	 $2,986.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	195
+							Pre-bill Worksheet					      Page
 
 Nickname	    Gardner | 01440
 Full Name	    City of Gardner
@@ -7368,7 +7368,7 @@ Total New Balance													  $5,308.75
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	196
+							Pre-bill Worksheet					      Page
 
 Gardner:City of Gardner (continued)
 
@@ -7379,7 +7379,7 @@ Total Overdue:	 $2,968.99
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	197
+							Pre-bill Worksheet					      Page
 
 Nickname	    Georgetown | 01833
 Full Name	    Town of Georgetown
@@ -7435,7 +7435,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	198
+							Pre-bill Worksheet					      Page
 
 Georgetown:Town of Georgetown (continued)
 
@@ -7452,7 +7452,7 @@ Total Overdue:	 $1,328.27
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	199
+							Pre-bill Worksheet					      Page
 
 Nickname	    Gill | 01354
 Full Name	    Town of Gill
@@ -7507,7 +7507,7 @@ Total Overdue:	 $3,062.26
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	200
+							Pre-bill Worksheet					      Page
 
 Nickname	    Gloucester | 01930
 Full Name	    City of Gloucester
@@ -7563,7 +7563,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	201
+							Pre-bill Worksheet					      Page
 
 Gloucester:City of Gloucester (continued)
 
@@ -7580,7 +7580,7 @@ Total Overdue:	 $3,509.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	202
+							Pre-bill Worksheet					      Page
 
 Nickname	    Goshen | 01032
 Full Name	    Town of Goshen
@@ -7635,7 +7635,7 @@ Total New Balance													  $4,381.35
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	203
+							Pre-bill Worksheet					      Page
 
 Goshen:Town of Goshen (continued)
 
@@ -7646,7 +7646,7 @@ Total Overdue:	 $4,363.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	204
+							Pre-bill Worksheet					      Page
 
 Nickname	    Gosnold | 02713
 Full Name	    Town of Gosnold
@@ -7701,7 +7701,7 @@ Total New Balance													  $5,541.76
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	205
+							Pre-bill Worksheet					      Page
 
 Gosnold:Town of Gosnold (continued)
 
@@ -7712,7 +7712,7 @@ Total Overdue:	 $4,601.70
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	206
+							Pre-bill Worksheet					      Page
 
 Nickname	    Grafton | 01519
 Full Name	    Town of Grafton
@@ -7768,7 +7768,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	207
+							Pre-bill Worksheet					      Page
 
 Grafton:Town of Grafton (continued)
 
@@ -7785,7 +7785,7 @@ Total Overdue:	 $5,703.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	208
+							Pre-bill Worksheet					      Page
 
 Nickname	    Granby | 01033
 Full Name	    Town of Granby
@@ -7840,7 +7840,7 @@ Total New Balance													  $7,244.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	209
+							Pre-bill Worksheet					      Page
 
 Granby:Town of Granby (continued)
 
@@ -7851,7 +7851,7 @@ Total Overdue:	 $7,239.48
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	210
+							Pre-bill Worksheet					      Page
 
 Nickname	    Granville | 01034
 Full Name	    Town of Granville
@@ -7906,7 +7906,7 @@ Total New Balance													  $8,497.81
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	211
+							Pre-bill Worksheet					      Page
 
 Granville:Town of Granville (continued)
 
@@ -7917,7 +7917,7 @@ Total Overdue:	 $6,855.15
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	212
+							Pre-bill Worksheet					      Page
 
 Nickname	    Great Barrington | 01230
 Full Name	    Town of Great Barrington
@@ -7972,7 +7972,7 @@ Total New Balance													  $5,887.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	213
+							Pre-bill Worksheet					      Page
 
 Great Barrington:Town of Great Barrington (continued)
 
@@ -7983,7 +7983,7 @@ Total Overdue:	 $4,020.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	214
+							Pre-bill Worksheet					      Page
 
 Nickname	    Greenfield | 01301
 Full Name	    City of Greenfield
@@ -8038,7 +8038,7 @@ Total New Balance													  $4,728.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	215
+							Pre-bill Worksheet					      Page
 
 Greenfield:City of Greenfield (continued)
 
@@ -8049,7 +8049,7 @@ Total Overdue:	 $2,630.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	216
+							Pre-bill Worksheet					      Page
 
 Nickname	    Groton | 01450
 Full Name	    Town of Groton
@@ -8105,7 +8105,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	217
+							Pre-bill Worksheet					      Page
 
 Groton:Town of Groton (continued)
 
@@ -8122,7 +8122,7 @@ Total Overdue:	 $2,616.36
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	218
+							Pre-bill Worksheet					      Page
 
 Nickname	    Groveland | 01834
 Full Name	    Town of Groveland
@@ -8178,7 +8178,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	219
+							Pre-bill Worksheet					      Page
 
 Groveland:Town of Groveland (continued)
 
@@ -8195,7 +8195,7 @@ Total Overdue:	 $1,306.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	220
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hadley | 01035
 Full Name	    Town of Hadley
@@ -8251,7 +8251,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	221
+							Pre-bill Worksheet					      Page
 
 Hadley:Town of Hadley (continued)
 
@@ -8268,7 +8268,7 @@ Total Overdue:	 $2,590.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	222
+							Pre-bill Worksheet					      Page
 
 Nickname	    Halifax | 02338
 Full Name	    Town of Halifax
@@ -8324,7 +8324,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	223
+							Pre-bill Worksheet					      Page
 
 Halifax:Town of Halifax (continued)
 
@@ -8339,7 +8339,7 @@ Total Overdue:	 $3,006.17
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	224
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hamilton | 01936
 Full Name	    Town of Hamilton
@@ -8394,7 +8394,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	225
+							Pre-bill Worksheet					      Page
 
 Hamilton:Town of Hamilton (continued)
 
@@ -8412,7 +8412,7 @@ Total Overdue:	 $4,315.18
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	226
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hampden | 01036
 Full Name	    Town of Hampden
@@ -8464,7 +8464,7 @@ Total Previous Balance													  $5,286.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	227
+							Pre-bill Worksheet					      Page
 
 Hampden:Town of Hampden (continued)
 
@@ -8489,7 +8489,7 @@ Total Overdue:	 $4,127.13
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	228
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hancock | 01237
 Full Name	    Town of Hancock
@@ -8542,7 +8542,7 @@ Total Previous Balance													  $5,933.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	229
+							Pre-bill Worksheet					      Page
 
 Hancock:Town of Hancock (continued)
 
@@ -8562,7 +8562,7 @@ Total Overdue:	 $4,764.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	230
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hanover | 02339
 Full Name	    Town of Hanover
@@ -8615,7 +8615,7 @@ Total Previous Balance													  $4,949.94
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	231
+							Pre-bill Worksheet					      Page
 
 Hanover:Town of Hanover (continued)
 
@@ -8635,7 +8635,7 @@ Total Overdue:	 $4,929.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	232
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hanson | 02341
 Full Name	    Town of Hanson
@@ -8688,7 +8688,7 @@ Total Previous Balance													  $5,763.10
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	233
+							Pre-bill Worksheet					      Page
 
 Hanson:Town of Hanson (continued)
 
@@ -8708,7 +8708,7 @@ Total Overdue:	 $4,156.62
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	234
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hardwick | 01037
 Full Name	    Town of Hardwick
@@ -8763,7 +8763,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	235
+							Pre-bill Worksheet					      Page
 
 Hardwick:Town of Hardwick (continued)
 
@@ -8780,7 +8780,7 @@ Total Overdue:	 $3,710.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	236
+							Pre-bill Worksheet					      Page
 
 Nickname	    Harvard | 01451
 Full Name	    Town of Harvard
@@ -8831,7 +8831,7 @@ Total Previous Balance													  $4,218.07
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	237
+							Pre-bill Worksheet					      Page
 
 Harvard:Town of Harvard (continued)
 
@@ -8860,7 +8860,7 @@ Total Overdue:	 $2,128.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	238
+							Pre-bill Worksheet					      Page
 
 Nickname	    Harwich | 02645
 Full Name	    Town of Harwich
@@ -8915,7 +8915,7 @@ Total New Balance													  $5,001.41
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	239
+							Pre-bill Worksheet					      Page
 
 Harwich:Town of Harwich (continued)
 
@@ -8926,7 +8926,7 @@ Total Overdue:	 $2,789.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	240
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hatfield | 01038
 Full Name	    Town of Hatfield
@@ -8981,7 +8981,7 @@ Total Overdue:	 $1,598.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	241
+							Pre-bill Worksheet					      Page
 
 Nickname	    Haverhill | 01830
 Full Name	    City of Haverhill
@@ -9036,7 +9036,7 @@ Total New Balance													  $3,461.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	242
+							Pre-bill Worksheet					      Page
 
 Haverhill:City of Haverhill (continued)
 
@@ -9047,7 +9047,7 @@ Total Overdue:	 $3,200.86
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	243
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hawley | 01339x
 Full Name	    Town of Hawley
@@ -9102,7 +9102,7 @@ Total New Balance													  $4,040.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	244
+							Pre-bill Worksheet					      Page
 
 Hawley:Town of Hawley (continued)
 
@@ -9113,7 +9113,7 @@ Total Overdue:	 $3,580.78
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	245
+							Pre-bill Worksheet					      Page
 
 Nickname	    Heath | 01346
 Full Name	    Town of Heath
@@ -9164,7 +9164,7 @@ Total Previous Balance													  $4,382.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	246
+							Pre-bill Worksheet					      Page
 
 Heath:Town of Heath (continued)
 
@@ -9189,7 +9189,7 @@ Total Overdue:	 $4,141.33
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	247
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hingham | 02043
 Full Name	    Town of Hingham
@@ -9244,7 +9244,7 @@ Total New Balance													  $5,552.82
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	248
+							Pre-bill Worksheet					      Page
 
 Hingham:Town of Hingham (continued)
 
@@ -9255,7 +9255,7 @@ Total Overdue:	 $4,481.26
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	249
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hinsdale | 01235
 Full Name	    Town of Hinsdale
@@ -9310,7 +9310,7 @@ Total New Balance													  $6,849.17
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	250
+							Pre-bill Worksheet					      Page
 
 Hinsdale:Town of Hinsdale (continued)
 
@@ -9321,7 +9321,7 @@ Total Overdue:	 $5,675.77
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	251
+							Pre-bill Worksheet					      Page
 
 Nickname	    Holbrook | 02343
 Full Name	    Town of Holbrook
@@ -9376,7 +9376,7 @@ Total New Balance													  $7,209.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	252
+							Pre-bill Worksheet					      Page
 
 Holbrook:Town of Holbrook (continued)
 
@@ -9387,7 +9387,7 @@ Total Overdue:	 $7,180.02
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	253
+							Pre-bill Worksheet					      Page
 
 Nickname	    Holden | 01520
 Full Name	    Town of Holden
@@ -9443,7 +9443,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	254
+							Pre-bill Worksheet					      Page
 
 Holden:Town of Holden (continued)
 
@@ -9460,7 +9460,7 @@ Total Overdue:	 $6,874.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	255
+							Pre-bill Worksheet					      Page
 
 Nickname	    Holland | 01521
 Full Name	    Town of Holland
@@ -9516,7 +9516,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	256
+							Pre-bill Worksheet					      Page
 
 Holland:Town of Holland (continued)
 
@@ -9533,7 +9533,7 @@ Total Overdue:	 $4,043.43
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	257
+							Pre-bill Worksheet					      Page
 
 Nickname	    Holliston | 01746
 Full Name	    Town of Holliston
@@ -9588,7 +9588,7 @@ Total Overdue:	 $2,575.15
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	258
+							Pre-bill Worksheet					      Page
 
 Nickname	    Holyoke | 01040
 Full Name	    City of Holyoke
@@ -9643,7 +9643,7 @@ Total New Balance													  $4,931.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	259
+							Pre-bill Worksheet					      Page
 
 Holyoke:City of Holyoke (continued)
 
@@ -9654,7 +9654,7 @@ Total Overdue:	 $2,593.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	260
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hopedale | 01747
 Full Name	    Town of Hopedale
@@ -9709,7 +9709,7 @@ Total New Balance													  $3,981.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	261
+							Pre-bill Worksheet					      Page
 
 Hopedale:Town of Hopedale (continued)
 
@@ -9720,7 +9720,7 @@ Total Overdue:	 $1,406.24
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	262
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hopkinton | 01748
 Full Name	    Town of Hopkinton
@@ -9775,7 +9775,7 @@ Total New Balance													  $3,384.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	263
+							Pre-bill Worksheet					      Page
 
 Hopkinton:Town of Hopkinton (continued)
 
@@ -9786,7 +9786,7 @@ Total Overdue:	 $3,123.91
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	264
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hubbardston | 01452
 Full Name	    Town of Hubbardston
@@ -9842,7 +9842,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	265
+							Pre-bill Worksheet					      Page
 
 Hubbardston:Town of Hubbardston (continued)
 
@@ -9859,7 +9859,7 @@ Total Overdue:	 $3,343.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	266
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hudson | 01749
 Full Name	    Town of Hudson
@@ -9914,7 +9914,7 @@ Total New Balance													  $6,299.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	267
+							Pre-bill Worksheet					      Page
 
 Hudson:Town of Hudson (continued)
 
@@ -9925,7 +9925,7 @@ Total Overdue:	 $6,298.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	268
+							Pre-bill Worksheet					      Page
 
 Nickname	    Hull | 02045
 Full Name	    Town of Hull
@@ -9980,7 +9980,7 @@ Total New Balance													  $7,392.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	269
+							Pre-bill Worksheet					      Page
 
 Hull:Town of Hull (continued)
 
@@ -9991,7 +9991,7 @@ Total Overdue:	 $6,444.56
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	270
+							Pre-bill Worksheet					      Page
 
 Nickname	    Huntington | 01050
 Full Name	    Town of Huntington
@@ -10047,7 +10047,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	271
+							Pre-bill Worksheet					      Page
 
 Huntington:Town of Huntington (continued)
 
@@ -10062,7 +10062,7 @@ Total Overdue:	 $3,909.40
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	272
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ipswich | 01938
 Full Name	    Town of Ipswich
@@ -10117,7 +10117,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	273
+							Pre-bill Worksheet					      Page
 
 Ipswich:Town of Ipswich (continued)
 
@@ -10135,7 +10135,7 @@ Total Overdue:	 $10,445.78
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	274
+							Pre-bill Worksheet					      Page
 
 Nickname	    Kingston | 02364
 Full Name	    Town of Kingston
@@ -10188,7 +10188,7 @@ Total Previous Balance													 $10,203.99
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	275
+							Pre-bill Worksheet					      Page
 
 Kingston:Town of Kingston (continued)
 
@@ -10214,7 +10214,7 @@ Total Overdue:	 $8,309.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	276
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lakeville | 02347
 Full Name	    Town of Lakeville
@@ -10269,7 +10269,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	277
+							Pre-bill Worksheet					      Page
 
 Lakeville:Town of Lakeville (continued)
 
@@ -10287,7 +10287,7 @@ Total Overdue:	 $6,729.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	278
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lancaster | 01523
 Full Name	    Town of Lancaster
@@ -10342,7 +10342,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	279
+							Pre-bill Worksheet					      Page
 
 Lancaster:Town of Lancaster (continued)
 
@@ -10360,7 +10360,7 @@ Total Overdue:	 $2,938.29
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	280
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lanesborough | 01237x
 Full Name	    Town of Lanesborough
@@ -10415,7 +10415,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	281
+							Pre-bill Worksheet					      Page
 
 Lanesborough:Town of Lanesborough (continued)
 
@@ -10431,7 +10431,7 @@ Total Overdue:	 $1,356.70
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	282
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lawrence | 01840
 Full Name	    City of Lawrence
@@ -10484,7 +10484,7 @@ Total Previous Balance													  $3,655.16
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	283
+							Pre-bill Worksheet					      Page
 
 Lawrence:City of Lawrence (continued)
 
@@ -10504,7 +10504,7 @@ Total Overdue:	 $1,081.08
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	284
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lee | 01238
 Full Name	    Town of Lee
@@ -10557,7 +10557,7 @@ Total Previous Balance													  $2,426.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	285
+							Pre-bill Worksheet					      Page
 
 Lee:Town of Lee (continued)
 
@@ -10583,7 +10583,7 @@ Total Overdue:	 $1,919.90
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	286
+							Pre-bill Worksheet					      Page
 
 Nickname	    Leicester | 01524
 Full Name	    Town of Leicester
@@ -10638,7 +10638,7 @@ Total New Balance													  $4,754.94
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	287
+							Pre-bill Worksheet					      Page
 
 Leicester:Town of Leicester (continued)
 
@@ -10649,7 +10649,7 @@ Total Overdue:	 $4,267.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	288
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lenox | 01240
 Full Name	    Town of Lenox
@@ -10705,7 +10705,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	289
+							Pre-bill Worksheet					      Page
 
 Lenox:Town of Lenox (continued)
 
@@ -10722,7 +10722,7 @@ Total Overdue:	 $2,944.18
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	290
+							Pre-bill Worksheet					      Page
 
 Nickname	    Leominster | 01453
 Full Name	    City of Leominster
@@ -10777,7 +10777,7 @@ Total New Balance													  $5,552.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	291
+							Pre-bill Worksheet					      Page
 
 Leominster:City of Leominster (continued)
 
@@ -10788,7 +10788,7 @@ Total Overdue:	 $4,637.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	292
+							Pre-bill Worksheet					      Page
 
 Nickname	    Leverett | 01054
 Full Name	    Town of Leverett
@@ -10843,7 +10843,7 @@ Total Overdue:	 $3,908.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	293
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lexington | 02420
 Full Name	    Town of Lexington
@@ -10899,7 +10899,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	294
+							Pre-bill Worksheet					      Page
 
 Lexington:Town of Lexington (continued)
 
@@ -10916,7 +10916,7 @@ Total Overdue:	 $12,611.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	295
+							Pre-bill Worksheet					      Page
 
 Nickname	    Leyden | 01337x
 Full Name	    Town of Leyden
@@ -10971,7 +10971,7 @@ Total New Balance													  $7,906.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	296
+							Pre-bill Worksheet					      Page
 
 Leyden:Town of Leyden (continued)
 
@@ -10982,7 +10982,7 @@ Total Overdue:	 $6,266.07
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	297
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lincoln | 01773
 Full Name	    Town of Lincoln
@@ -11037,7 +11037,7 @@ Total New Balance													  $6,993.67
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	298
+							Pre-bill Worksheet					      Page
 
 Lincoln:Town of Lincoln (continued)
 
@@ -11048,7 +11048,7 @@ Total Overdue:	 $5,122.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	299
+							Pre-bill Worksheet					      Page
 
 Nickname	    Littleton | 01460
 Full Name	    Town of Littleton
@@ -11103,7 +11103,7 @@ Total New Balance													  $4,853.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	300
+							Pre-bill Worksheet					      Page
 
 Littleton:Town of Littleton (continued)
 
@@ -11114,7 +11114,7 @@ Total Overdue:	 $2,754.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	301
+							Pre-bill Worksheet					      Page
 
 Nickname	    Longmeadow | 01106
 Full Name	    Town of Longmeadow
@@ -11169,7 +11169,7 @@ Total New Balance													  $3,358.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	302
+							Pre-bill Worksheet					      Page
 
 Longmeadow:Town of Longmeadow (continued)
 
@@ -11180,7 +11180,7 @@ Total Overdue:	 $1,051.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	303
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lowell | 01850
 Full Name	    City of Lowell
@@ -11236,7 +11236,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	304
+							Pre-bill Worksheet					      Page
 
 Lowell:City of Lowell (continued)
 
@@ -11253,7 +11253,7 @@ Total Overdue:	 $1,971.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	305
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ludlow | 01056
 Full Name	    Town of Ludlow
@@ -11309,7 +11309,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	306
+							Pre-bill Worksheet					      Page
 
 Ludlow:Town of Ludlow (continued)
 
@@ -11324,7 +11324,7 @@ Total Overdue:	 $2,935.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	307
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lunenburg | 01462
 Full Name	    Town of Lunenburg
@@ -11379,7 +11379,7 @@ Total New Balance													  $3,888.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	308
+							Pre-bill Worksheet					      Page
 
 Lunenburg:Town of Lunenburg (continued)
 
@@ -11390,7 +11390,7 @@ Total Overdue:	 $3,404.73
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	309
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lynn | 01901
 Full Name	    City of Lynn
@@ -11445,7 +11445,7 @@ Total New Balance													  $4,261.70
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	310
+							Pre-bill Worksheet					      Page
 
 Lynn:City of Lynn (continued)
 
@@ -11456,7 +11456,7 @@ Total Overdue:	 $4,244.26
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	311
+							Pre-bill Worksheet					      Page
 
 Nickname	    Lynnfield | 01940
 Full Name	    Town of Lynnfield
@@ -11511,7 +11511,7 @@ Total New Balance													  $5,417.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	312
+							Pre-bill Worksheet					      Page
 
 Lynnfield:Town of Lynnfield (continued)
 
@@ -11522,7 +11522,7 @@ Total Overdue:	 $4,477.67
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	313
+							Pre-bill Worksheet					      Page
 
 Nickname	    Malden | 02148
 Full Name	    City of Malden
@@ -11574,7 +11574,7 @@ Total Previous Balance													  $6,998.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	314
+							Pre-bill Worksheet					      Page
 
 Malden:City of Malden (continued)
 
@@ -11600,7 +11600,7 @@ Total Overdue:	 $5,584.48
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	315
+							Pre-bill Worksheet					      Page
 
 Nickname	    Manchester-by-the-Sea | 01944
 Full Name	    Town of Manchester-by-the-Sea
@@ -11655,7 +11655,7 @@ Total New Balance													  $7,281.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	316
+							Pre-bill Worksheet					      Page
 
 Manchester-by-the-Sea:Town of Manchester-by-the-Sea (continued)
 
@@ -11666,7 +11666,7 @@ Total Overdue:	 $7,085.21
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	317
+							Pre-bill Worksheet					      Page
 
 Nickname	    Mansfield | 02048
 Full Name	    Town of Mansfield
@@ -11721,7 +11721,7 @@ Total New Balance													  $8,539.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	318
+							Pre-bill Worksheet					      Page
 
 Mansfield:Town of Mansfield (continued)
 
@@ -11732,7 +11732,7 @@ Total Overdue:	 $6,896.82
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	319
+							Pre-bill Worksheet					      Page
 
 Nickname	    Marblehead | 01945
 Full Name	    Town of Marblehead
@@ -11787,7 +11787,7 @@ Total Overdue:	 $4,087.88
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	320
+							Pre-bill Worksheet					      Page
 
 Nickname	    Marion | 02738
 Full Name	    Town of Marion
@@ -11840,7 +11840,7 @@ Total Previous Balance													  $2,698.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	321
+							Pre-bill Worksheet					      Page
 
 Marion:Town of Marion (continued)
 
@@ -11860,7 +11860,7 @@ Total Overdue:	 $2,687.91
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	322
+							Pre-bill Worksheet					      Page
 
 Nickname	    Marlborough | 01752
 Full Name	    City of Marlborough
@@ -11913,7 +11913,7 @@ Total Previous Balance													  $3,981.11
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	323
+							Pre-bill Worksheet					      Page
 
 Marlborough:City of Marlborough (continued)
 
@@ -11941,7 +11941,7 @@ Total Overdue:	 $1,376.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	324
+							Pre-bill Worksheet					      Page
 
 Nickname	    Marshfield | 02050
 Full Name	    Town of Marshfield
@@ -11994,7 +11994,7 @@ Total Previous Balance													  $3,674.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	325
+							Pre-bill Worksheet					      Page
 
 Marshfield:Town of Marshfield (continued)
 
@@ -12014,7 +12014,7 @@ Total Overdue:	 $1,125.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	326
+							Pre-bill Worksheet					      Page
 
 Nickname	    Mashpee | 02649
 Full Name	    Town of Mashpee
@@ -12067,7 +12067,7 @@ Total Previous Balance													  $2,405.40
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	327
+							Pre-bill Worksheet					      Page
 
 Mashpee:Town of Mashpee (continued)
 
@@ -12087,7 +12087,7 @@ Total Overdue:	 $2,149.04
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	328
+							Pre-bill Worksheet					      Page
 
 Nickname	    Mattapoisett | 02739
 Full Name	    Town of Mattapoisett
@@ -12142,7 +12142,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	329
+							Pre-bill Worksheet					      Page
 
 Mattapoisett:Town of Mattapoisett (continued)
 
@@ -12158,7 +12158,7 @@ Total Overdue:	 $3,537.97
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	330
+							Pre-bill Worksheet					      Page
 
 Nickname	    Maynard | 01754
 Full Name	    Town of Maynard
@@ -12211,7 +12211,7 @@ Total Previous Balance													  $3,473.41
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	331
+							Pre-bill Worksheet					      Page
 
 Maynard:Town of Maynard (continued)
 
@@ -12231,7 +12231,7 @@ Total Overdue:	 $3,459.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	332
+							Pre-bill Worksheet					      Page
 
 Nickname	    Medfield | 02052
 Full Name	    Town of Medfield
@@ -12283,7 +12283,7 @@ Total Previous Balance													  $5,680.30
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	333
+							Pre-bill Worksheet					      Page
 
 Medfield:Town of Medfield (continued)
 
@@ -12309,7 +12309,7 @@ Total Overdue:	 $4,464.57
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	334
+							Pre-bill Worksheet					      Page
 
 Nickname	    Medford | 02153
 Full Name	    City of Medford
@@ -12364,7 +12364,7 @@ Total New Balance													  $6,738.41
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	335
+							Pre-bill Worksheet					      Page
 
 Medford:City of Medford (continued)
 
@@ -12375,7 +12375,7 @@ Total Overdue:	 $5,565.47
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	336
+							Pre-bill Worksheet					      Page
 
 Nickname	    Medway | 02053
 Full Name	    Town of Medway
@@ -12430,7 +12430,7 @@ Total New Balance													  $7,095.10
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	337
+							Pre-bill Worksheet					      Page
 
 Medway:Town of Medway (continued)
 
@@ -12441,7 +12441,7 @@ Total Overdue:	 $7,091.05
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	338
+							Pre-bill Worksheet					      Page
 
 Nickname	    Melrose | 02176
 Full Name	    City of Melrose
@@ -12496,7 +12496,7 @@ Total New Balance													  $8,351.03
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	339
+							Pre-bill Worksheet					      Page
 
 Melrose:City of Melrose (continued)
 
@@ -12507,7 +12507,7 @@ Total Overdue:	 $6,708.97
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	340
+							Pre-bill Worksheet					      Page
 
 Nickname	    Mendon | 01756
 Full Name	    Town of Mendon
@@ -12563,7 +12563,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	341
+							Pre-bill Worksheet					      Page
 
 Mendon:Town of Mendon (continued)
 
@@ -12578,7 +12578,7 @@ Total Overdue:	 $3,871.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	342
+							Pre-bill Worksheet					      Page
 
 Nickname	    Merrimac | 01860
 Full Name	    Town of Merrimac
@@ -12634,7 +12634,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	343
+							Pre-bill Worksheet					      Page
 
 Merrimac:Town of Merrimac (continued)
 
@@ -12651,7 +12651,7 @@ Total Overdue:	 $2,497.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	344
+							Pre-bill Worksheet					      Page
 
 Nickname	    Methuen | 01844
 Full Name	    City of Methuen
@@ -12706,7 +12706,7 @@ Total Overdue:	 $2,344.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	345
+							Pre-bill Worksheet					      Page
 
 Nickname	    Middleborough | 02346
 Full Name	    Town of Middleborough
@@ -12761,7 +12761,7 @@ Total New Balance													  $3,738.03
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	346
+							Pre-bill Worksheet					      Page
 
 Middleborough:Town of Middleborough (continued)
 
@@ -12772,7 +12772,7 @@ Total Overdue:	 $1,163.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	347
+							Pre-bill Worksheet					      Page
 
 Nickname	    Middlefield | 01243
 Full Name	    Town of Middlefield
@@ -12827,7 +12827,7 @@ Total New Balance													  $3,118.76
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	348
+							Pre-bill Worksheet					      Page
 
 Middlefield:Town of Middlefield (continued)
 
@@ -12838,7 +12838,7 @@ Total Overdue:	 $2,884.47
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	349
+							Pre-bill Worksheet					      Page
 
 Nickname	    Middleton | 01949
 Full Name	    Town of Middleton
@@ -12893,7 +12893,7 @@ Total New Balance													  $3,720.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	350
+							Pre-bill Worksheet					      Page
 
 Middleton:Town of Middleton (continued)
 
@@ -12904,7 +12904,7 @@ Total Overdue:	 $3,236.89
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	351
+							Pre-bill Worksheet					      Page
 
 Nickname	    Milford | 01757
 Full Name	    Town of Milford
@@ -12960,7 +12960,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	352
+							Pre-bill Worksheet					      Page
 
 Milford:Town of Milford (continued)
 
@@ -12975,7 +12975,7 @@ Total Overdue:	 $4,020.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	353
+							Pre-bill Worksheet					      Page
 
 Nickname	    Millbury | 01527
 Full Name	    Town of Millbury
@@ -13030,7 +13030,7 @@ Total Overdue:	 $4,394.11
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	354
+							Pre-bill Worksheet					      Page
 
 Nickname	    Millis | 02054
 Full Name	    Town of Millis
@@ -13085,7 +13085,7 @@ Total New Balance													  $6,603.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	355
+							Pre-bill Worksheet					      Page
 
 Millis:Town of Millis (continued)
 
@@ -13096,7 +13096,7 @@ Total Overdue:	 $5,431.11
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	356
+							Pre-bill Worksheet					      Page
 
 Nickname	    Millville | 01529
 Full Name	    Town of Millville
@@ -13152,7 +13152,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	357
+							Pre-bill Worksheet					      Page
 
 Millville:Town of Millville (continued)
 
@@ -13169,7 +13169,7 @@ Total Overdue:	 $6,929.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	358
+							Pre-bill Worksheet					      Page
 
 Nickname	    Milton | 02186
 Full Name	    Town of Milton
@@ -13224,7 +13224,7 @@ Total New Balance													  $8,229.86
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	359
+							Pre-bill Worksheet					      Page
 
 Milton:Town of Milton (continued)
 
@@ -13235,7 +13235,7 @@ Total Overdue:	 $6,613.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	360
+							Pre-bill Worksheet					      Page
 
 Nickname	    Monroe | 01350
 Full Name	    Town of Monroe
@@ -13291,7 +13291,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	361
+							Pre-bill Worksheet					      Page
 
 Monroe:Town of Monroe (continued)
 
@@ -13308,7 +13308,7 @@ Total Overdue:	 $3,716.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	362
+							Pre-bill Worksheet					      Page
 
 Nickname	    Monson | 01057
 Full Name	    Town of Monson
@@ -13363,7 +13363,7 @@ Current 											       $2,045.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	363
+							Pre-bill Worksheet					      Page
 
 Monson:Town of Monson (continued)
 
@@ -13376,7 +13376,7 @@ Total Overdue:	 $2,314.33
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	364
+							Pre-bill Worksheet					      Page
 
 Nickname	    Montague | 01351
 Full Name	    Town of Montague
@@ -13431,7 +13431,7 @@ Total New Balance													  $4,698.35
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	365
+							Pre-bill Worksheet					      Page
 
 Montague:Town of Montague (continued)
 
@@ -13442,7 +13442,7 @@ Total Overdue:	 $2,361.09
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	366
+							Pre-bill Worksheet					      Page
 
 Nickname	    Monterey | 01245
 Full Name	    Town of Monterey
@@ -13497,7 +13497,7 @@ Total New Balance													  $3,726.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	367
+							Pre-bill Worksheet					      Page
 
 Monterey:Town of Monterey (continued)
 
@@ -13508,7 +13508,7 @@ Total Overdue:	 $1,151.88
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	368
+							Pre-bill Worksheet					      Page
 
 Nickname	    Montgomery | 01085x
 Full Name	    Town of Montgomery
@@ -13561,7 +13561,7 @@ Total Previous Balance													  $2,878.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	369
+							Pre-bill Worksheet					      Page
 
 Montgomery:Town of Montgomery (continued)
 
@@ -13581,7 +13581,7 @@ Total Overdue:	 $2,866.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	370
+							Pre-bill Worksheet					      Page
 
 Nickname	    Mount Washington | 01258
 Full Name	    Town of Mount Washington
@@ -13634,7 +13634,7 @@ Total Previous Balance													  $3,647.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	371
+							Pre-bill Worksheet					      Page
 
 Mount Washington:Town of Mount Washington (continued)
 
@@ -13660,7 +13660,7 @@ Total Overdue:	 $2,894.33
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	372
+							Pre-bill Worksheet					      Page
 
 Nickname	    Nahant | 01908
 Full Name	    Town of Nahant
@@ -13715,7 +13715,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	373
+							Pre-bill Worksheet					      Page
 
 Nahant:Town of Nahant (continued)
 
@@ -13733,7 +13733,7 @@ Total Overdue:	 $3,586.26
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	374
+							Pre-bill Worksheet					      Page
 
 Nickname	    Nantucket | 02554
 Full Name	    Town of Nantucket
@@ -13785,7 +13785,7 @@ Total Previous Balance													  $3,638.27
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	375
+							Pre-bill Worksheet					      Page
 
 Nantucket:Town of Nantucket (continued)
 
@@ -13810,7 +13810,7 @@ Total Overdue:	 $2,706.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	376
+							Pre-bill Worksheet					      Page
 
 Nickname	    Natick | 01760
 Full Name	    Town of Natick
@@ -13863,7 +13863,7 @@ Total Previous Balance													  $4,381.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	377
+							Pre-bill Worksheet					      Page
 
 Natick:Town of Natick (continued)
 
@@ -13883,7 +13883,7 @@ Total Overdue:	 $3,217.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	378
+							Pre-bill Worksheet					      Page
 
 Nickname	    Needham | 02492
 Full Name	    Town of Needham
@@ -13936,7 +13936,7 @@ Total Previous Balance													  $5,672.87
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	379
+							Pre-bill Worksheet					      Page
 
 Needham:Town of Needham (continued)
 
@@ -13956,7 +13956,7 @@ Total Overdue:	 $5,649.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	380
+							Pre-bill Worksheet					      Page
 
 Nickname	    New Ashford | 01237z
 Full Name	    Town of New Ashford
@@ -14011,7 +14011,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	381
+							Pre-bill Worksheet					      Page
 
 New Ashford:Town of New Ashford (continued)
 
@@ -14043,7 +14043,7 @@ Total Overdue:	 $6,642.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	382
+							Pre-bill Worksheet					      Page
 
 Nickname	    New Bedford | 02740
 Full Name	    City of New Bedford
@@ -14098,7 +14098,7 @@ Total New Balance													  $9,477.49
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	383
+							Pre-bill Worksheet					      Page
 
 New Bedford:City of New Bedford (continued)
 
@@ -14109,7 +14109,7 @@ Total Overdue:	 $7,420.11
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	384
+							Pre-bill Worksheet					      Page
 
 Nickname	    New Braintree | 01531
 Full Name	    Town of New Braintree
@@ -14164,7 +14164,7 @@ Total New Balance													  $5,443.76
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	385
+							Pre-bill Worksheet					      Page
 
 New Braintree:Town of New Braintree (continued)
 
@@ -14175,7 +14175,7 @@ Total Overdue:	 $3,342.34
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	386
+							Pre-bill Worksheet					      Page
 
 Nickname	    New Marlborough | 01244
 Full Name	    Town of New Marlborough
@@ -14230,7 +14230,7 @@ Total New Balance													  $3,881.11
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	387
+							Pre-bill Worksheet					      Page
 
 New Marlborough:Town of New Marlborough (continued)
 
@@ -14241,7 +14241,7 @@ Total Overdue:	 $1,547.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	388
+							Pre-bill Worksheet					      Page
 
 Nickname	    New Salem | 01355
 Full Name	    Town of New Salem
@@ -14296,7 +14296,7 @@ Total New Balance													  $3,861.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	389
+							Pre-bill Worksheet					      Page
 
 New Salem:Town of New Salem (continued)
 
@@ -14307,7 +14307,7 @@ Total Overdue:	 $1,287.05
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	390
+							Pre-bill Worksheet					      Page
 
 Nickname	    Newbury | 01951
 Full Name	    Town of Newbury
@@ -14363,7 +14363,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	391
+							Pre-bill Worksheet					      Page
 
 Newbury:Town of Newbury (continued)
 
@@ -14380,7 +14380,7 @@ Total Overdue:	 $4,959.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	392
+							Pre-bill Worksheet					      Page
 
 Nickname	    Newburyport | 01950
 Full Name	    City of Newburyport
@@ -14436,7 +14436,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	393
+							Pre-bill Worksheet					      Page
 
 Newburyport:City of Newburyport (continued)
 
@@ -14453,7 +14453,7 @@ Total Overdue:	 $6,681.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	394
+							Pre-bill Worksheet					      Page
 
 Nickname	    Newton | 02458
 Full Name	    City of Newton
@@ -14508,7 +14508,7 @@ Total New Balance													 $10,038.64
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	395
+							Pre-bill Worksheet					      Page
 
 Newton:City of Newton (continued)
 
@@ -14519,7 +14519,7 @@ Total Overdue:	 $10,022.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	396
+							Pre-bill Worksheet					      Page
 
 Nickname	    Norfolk | 02056
 Full Name	    Town of Norfolk
@@ -14574,7 +14574,7 @@ Total New Balance													  $7,547.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	397
+							Pre-bill Worksheet					      Page
 
 Norfolk:Town of Norfolk (continued)
 
@@ -14585,7 +14585,7 @@ Total Overdue:	 $6,598.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	398
+							Pre-bill Worksheet					      Page
 
 Nickname	    North.Adams | 01247
 Full Name	    City of North Adams
@@ -14641,7 +14641,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	399
+							Pre-bill Worksheet					      Page
 
 North.Adams:City of North Adams (continued)
 
@@ -14657,7 +14657,7 @@ Total Overdue:	 $3,639.95
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	400
+							Pre-bill Worksheet					      Page
 
 Nickname	    North.Andover | 01845
 Full Name	    Town of North Andover
@@ -14712,7 +14712,7 @@ Date|ID        Type   Description
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	401
+							Pre-bill Worksheet					      Page
 
 North.Andover:Town of North Andover (continued)
 
@@ -14735,7 +14735,7 @@ Total Overdue:	 $9,637.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	402
+							Pre-bill Worksheet					      Page
 
 Nickname	    North.Attleborough | 02760
 Full Name	    Town of North Attleborough
@@ -14790,7 +14790,7 @@ Total New Balance													 $13,428.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	403
+							Pre-bill Worksheet					      Page
 
 North.Attleborough:Town of North Attleborough (continued)
 
@@ -14801,7 +14801,7 @@ Total Overdue:	 $11,765.62
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	404
+							Pre-bill Worksheet					      Page
 
 Nickname	    North.Brookfield | 01535
 Full Name	    Town of North Brookfield
@@ -14856,7 +14856,7 @@ Total New Balance													  $6,273.05
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	405
+							Pre-bill Worksheet					      Page
 
 North.Brookfield:Town of North Brookfield (continued)
 
@@ -14867,7 +14867,7 @@ Total Overdue:	 $4,404.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	406
+							Pre-bill Worksheet					      Page
 
 Nickname	    North.Reading | 01864
 Full Name	    Town of North Reading
@@ -14920,7 +14920,7 @@ Total Overdue:	 $3,117.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	407
+							Pre-bill Worksheet					      Page
 
 Nickname	    Northampton | 01060
 Full Name	    City of Northampton
@@ -14975,7 +14975,7 @@ Total New Balance													  $2,764.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	408
+							Pre-bill Worksheet					      Page
 
 Northampton:City of Northampton (continued)
 
@@ -14986,7 +14986,7 @@ Total Overdue:	 $434.90
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	409
+							Pre-bill Worksheet					      Page
 
 Nickname	    Northborough | 01532
 Full Name	    Town of Northborough
@@ -15042,7 +15042,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	410
+							Pre-bill Worksheet					      Page
 
 Northborough:Town of Northborough (continued)
 
@@ -15059,7 +15059,7 @@ Total Overdue:	 $1,710.58
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	411
+							Pre-bill Worksheet					      Page
 
 Nickname	    Northbridge | 01534
 Full Name	    Town of Northbridge
@@ -15114,7 +15114,7 @@ Total New Balance													  $3,611.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	412
+							Pre-bill Worksheet					      Page
 
 Northbridge:Town of Northbridge (continued)
 
@@ -15125,7 +15125,7 @@ Total Overdue:	 $3,350.24
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	413
+							Pre-bill Worksheet					      Page
 
 Nickname	    Northfield | 01360
 Full Name	    Town of Northfield
@@ -15180,7 +15180,7 @@ Total New Balance													  $3,577.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	414
+							Pre-bill Worksheet					      Page
 
 Northfield:Town of Northfield (continued)
 
@@ -15191,7 +15191,7 @@ Total Overdue:	 $3,094.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	415
+							Pre-bill Worksheet					      Page
 
 Nickname	    Norton | 02766
 Full Name	    Town of Norton
@@ -15246,7 +15246,7 @@ Total New Balance													 $11,119.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	416
+							Pre-bill Worksheet					      Page
 
 Norton:Town of Norton (continued)
 
@@ -15257,7 +15257,7 @@ Total Overdue:	 $11,073.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	417
+							Pre-bill Worksheet					      Page
 
 Nickname	    Norwell | 02061
 Full Name	    Town of Norwell
@@ -15310,7 +15310,7 @@ Total Previous Balance													  $6,405.13
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	418
+							Pre-bill Worksheet					      Page
 
 Norwell:Town of Norwell (continued)
 
@@ -15330,7 +15330,7 @@ Total Overdue:	 $6,403.90
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	419
+							Pre-bill Worksheet					      Page
 
 Nickname	    Norwood | 02062
 Full Name	    Town of Norwood
@@ -15382,7 +15382,7 @@ Total Previous Balance													  $9,737.69
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	420
+							Pre-bill Worksheet					      Page
 
 Norwood:Town of Norwood (continued)
 
@@ -15408,7 +15408,7 @@ Total Overdue:	 $8,552.47
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	421
+							Pre-bill Worksheet					      Page
 
 Nickname	    Oak Bluffs | 02557
 Full Name	    Town of Oak Bluffs
@@ -15463,7 +15463,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	422
+							Pre-bill Worksheet					      Page
 
 Oak Bluffs:Town of Oak Bluffs (continued)
 
@@ -15480,7 +15480,7 @@ Total Overdue:	 $5,993.85
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	423
+							Pre-bill Worksheet					      Page
 
 Nickname	    Oakham | 01068
 Full Name	    Town of Oakham
@@ -15533,7 +15533,7 @@ Total Previous Balance													  $5,865.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	424
+							Pre-bill Worksheet					      Page
 
 Oakham:Town of Oakham (continued)
 
@@ -15553,7 +15553,7 @@ Total Overdue:	 $4,233.49
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	425
+							Pre-bill Worksheet					      Page
 
 Nickname	    Orange | 01364
 Full Name	    Town of Orange
@@ -15606,7 +15606,7 @@ Total Previous Balance													  $5,365.99
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	426
+							Pre-bill Worksheet					      Page
 
 Orange:Town of Orange (continued)
 
@@ -15626,7 +15626,7 @@ Total Overdue:	 $3,501.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	427
+							Pre-bill Worksheet					      Page
 
 Nickname	    Orleans | 02653
 Full Name	    Town of Orleans
@@ -15679,7 +15679,7 @@ Total Previous Balance													  $4,146.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	428
+							Pre-bill Worksheet					      Page
 
 Orleans:Town of Orleans (continued)
 
@@ -15705,7 +15705,7 @@ Total Overdue:	 $2,050.61
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	429
+							Pre-bill Worksheet					      Page
 
 Nickname	    Otis | 01253
 Full Name	    Town of Otis
@@ -15758,7 +15758,7 @@ Total Previous Balance													  $4,494.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	430
+							Pre-bill Worksheet					      Page
 
 Otis:Town of Otis (continued)
 
@@ -15784,7 +15784,7 @@ Total Overdue:	 $2,183.01
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	431
+							Pre-bill Worksheet					      Page
 
 Nickname	    Oxford | 01540
 Full Name	    Town of Oxford
@@ -15839,7 +15839,7 @@ Total Overdue:	 $1,001.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	432
+							Pre-bill Worksheet					      Page
 
 Nickname	    Palmer | 01069
 Full Name	    City of Palmer
@@ -15894,7 +15894,7 @@ Total Overdue:	 $2,788.78
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	433
+							Pre-bill Worksheet					      Page
 
 Nickname	    Paxton | 01612
 Full Name	    Town of Paxton
@@ -15949,7 +15949,7 @@ Total New Balance													  $3,751.92
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	434
+							Pre-bill Worksheet					      Page
 
 Paxton:Town of Paxton (continued)
 
@@ -15960,7 +15960,7 @@ Total Overdue:	 $3,268.62
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	435
+							Pre-bill Worksheet					      Page
 
 Nickname	    Peabody | 01960
 Full Name	    City of Peabody
@@ -16013,7 +16013,7 @@ Total of Costs (Expense Charges)											      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	436
+							Pre-bill Worksheet					      Page
 
 Peabody:City of Peabody (continued)
 
@@ -16043,7 +16043,7 @@ Total Overdue:	 $5,390.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	437
+							Pre-bill Worksheet					      Page
 
 Nickname	    Pelham | 01002
 Full Name	    Town of Pelham
@@ -16099,7 +16099,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	438
+							Pre-bill Worksheet					      Page
 
 Pelham:Town of Pelham (continued)
 
@@ -16116,7 +16116,7 @@ Total Overdue:	 $4,683.99
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	439
+							Pre-bill Worksheet					      Page
 
 Nickname	    Pembroke | 02359
 Full Name	    Town of Pembroke
@@ -16171,7 +16171,7 @@ Total New Balance													  $6,595.89
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	440
+							Pre-bill Worksheet					      Page
 
 Pembroke:Town of Pembroke (continued)
 
@@ -16182,7 +16182,7 @@ Total Overdue:	 $5,448.52
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	441
+							Pre-bill Worksheet					      Page
 
 Nickname	    Pepperell | 01463
 Full Name	    Town of Pepperell
@@ -16237,7 +16237,7 @@ Total New Balance													  $6,981.82
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	442
+							Pre-bill Worksheet					      Page
 
 Pepperell:Town of Pepperell (continued)
 
@@ -16248,7 +16248,7 @@ Total Overdue:	 $6,953.24
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	443
+							Pre-bill Worksheet					      Page
 
 Nickname	    Peru | 01235x
 Full Name	    Town of Peru
@@ -16304,7 +16304,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	444
+							Pre-bill Worksheet					      Page
 
 Peru:Town of Peru (continued)
 
@@ -16319,7 +16319,7 @@ Total Overdue:	 $6,595.95
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	445
+							Pre-bill Worksheet					      Page
 
 Nickname	    Petersham | 01366
 Full Name	    Town of Petersham
@@ -16372,7 +16372,7 @@ Total Overdue:	 $3,775.76
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	446
+							Pre-bill Worksheet					      Page
 
 Nickname	    Phillipston | 01331x
 Full Name	    Town of Phillipston
@@ -16424,7 +16424,7 @@ Total Previous Balance													  $4,815.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	447
+							Pre-bill Worksheet					      Page
 
 Phillipston:Town of Phillipston (continued)
 
@@ -16450,7 +16450,7 @@ Total Overdue:	 $2,716.58
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	448
+							Pre-bill Worksheet					      Page
 
 Nickname	    Pittsfield | 01201
 Full Name	    City of Pittsfield
@@ -16505,7 +16505,7 @@ Total New Balance													  $4,930.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	449
+							Pre-bill Worksheet					      Page
 
 Pittsfield:City of Pittsfield (continued)
 
@@ -16516,7 +16516,7 @@ Total Overdue:	 $2,356.49
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	450
+							Pre-bill Worksheet					      Page
 
 Nickname	    Plainfield | 01070
 Full Name	    Town of Plainfield
@@ -16571,7 +16571,7 @@ Total New Balance													  $3,837.48
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	451
+							Pre-bill Worksheet					      Page
 
 Plainfield:Town of Plainfield (continued)
 
@@ -16582,7 +16582,7 @@ Total Overdue:	 $1,287.64
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	452
+							Pre-bill Worksheet					      Page
 
 Nickname	    Plainville | 02762
 Full Name	    Town of Plainville
@@ -16637,7 +16637,7 @@ Total New Balance													  $3,263.94
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	453
+							Pre-bill Worksheet					      Page
 
 Plainville:Town of Plainville (continued)
 
@@ -16648,7 +16648,7 @@ Total Overdue:	 $3,004.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	454
+							Pre-bill Worksheet					      Page
 
 Nickname	    Plymouth | 02360
 Full Name	    Town of Plymouth
@@ -16703,7 +16703,7 @@ Total Overdue:	 $3,466.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	455
+							Pre-bill Worksheet					      Page
 
 Nickname	    Plympton | 02367
 Full Name	    Town of Plympton
@@ -16759,7 +16759,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	456
+							Pre-bill Worksheet					      Page
 
 Plympton:Town of Plympton (continued)
 
@@ -16776,7 +16776,7 @@ Total Overdue:	 $4,337.17
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	457
+							Pre-bill Worksheet					      Page
 
 Nickname	    Princeton | 01541
 Full Name	    Town of Princeton
@@ -16831,7 +16831,7 @@ Total New Balance													  $5,461.24
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	458
+							Pre-bill Worksheet					      Page
 
 Princeton:Town of Princeton (continued)
 
@@ -16842,7 +16842,7 @@ Total Overdue:	 $4,521.51
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	459
+							Pre-bill Worksheet					      Page
 
 Nickname	    Provincetown | 02657
 Full Name	    Town of Provincetown
@@ -16898,7 +16898,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	460
+							Pre-bill Worksheet					      Page
 
 Provincetown:Town of Provincetown (continued)
 
@@ -16915,7 +16915,7 @@ Total Overdue:	 $5,552.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	461
+							Pre-bill Worksheet					      Page
 
 Nickname	    Quincy | 02169
 Full Name	    City of Quincy
@@ -16970,7 +16970,7 @@ Total New Balance													  $7,052.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	462
+							Pre-bill Worksheet					      Page
 
 Quincy:City of Quincy (continued)
 
@@ -16981,7 +16981,7 @@ Total Overdue:	 $7,048.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	463
+							Pre-bill Worksheet					      Page
 
 Nickname	    Randolph | 02368
 Full Name	    City of Randolph
@@ -17034,7 +17034,7 @@ Total Previous Balance													  $6,744.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	464
+							Pre-bill Worksheet					      Page
 
 Randolph:City of Randolph (continued)
 
@@ -17054,7 +17054,7 @@ Total Overdue:	 $6,716.93
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	465
+							Pre-bill Worksheet					      Page
 
 Nickname	    Raynham | 02767
 Full Name	    Town of Raynham
@@ -17105,7 +17105,7 @@ Total Previous Balance													  $4,893.04
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	466
+							Pre-bill Worksheet					      Page
 
 Raynham:Town of Raynham (continued)
 
@@ -17130,7 +17130,7 @@ Total Overdue:	 $3,030.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	467
+							Pre-bill Worksheet					      Page
 
 Nickname	    Reading | 01867
 Full Name	    Town of Reading
@@ -17184,7 +17184,7 @@ Current 											       $2,084.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	468
+							Pre-bill Worksheet					      Page
 
 Reading:Town of Reading (continued)
 
@@ -17197,7 +17197,7 @@ Total Overdue:	 $1,041.33
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	469
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rehoboth | 02769
 Full Name	    Town of Rehoboth
@@ -17250,7 +17250,7 @@ Total Previous Balance													  $4,106.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	470
+							Pre-bill Worksheet					      Page
 
 Rehoboth:Town of Rehoboth (continued)
 
@@ -17270,7 +17270,7 @@ Total Overdue:	 $1,771.44
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	471
+							Pre-bill Worksheet					      Page
 
 Nickname	    Revere | 02151
 Full Name	    City of Revere
@@ -17324,7 +17324,7 @@ Current 											       $2,570.05
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	472
+							Pre-bill Worksheet					      Page
 
 Revere:City of Revere (continued)
 
@@ -17337,7 +17337,7 @@ Total Overdue:	 $100.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	473
+							Pre-bill Worksheet					      Page
 
 Nickname	    Richmond | 01254
 Full Name	    Town of Richmond
@@ -17392,7 +17392,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	474
+							Pre-bill Worksheet					      Page
 
 Richmond:Town of Richmond (continued)
 
@@ -17409,7 +17409,7 @@ Total Overdue:	 $2,747.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	475
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rochester | 02770
 Full Name	    Town of Rochester
@@ -17462,7 +17462,7 @@ Total Previous Balance													  $3,033.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	476
+							Pre-bill Worksheet					      Page
 
 Rochester:Town of Rochester (continued)
 
@@ -17488,7 +17488,7 @@ Total Overdue:	 $2,553.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	477
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rockland | 02370
 Full Name	    Town of Rockland
@@ -17544,7 +17544,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	478
+							Pre-bill Worksheet					      Page
 
 Rockland:Town of Rockland (continued)
 
@@ -17559,7 +17559,7 @@ Total Overdue:	 $3,909.12
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	479
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rockport | 01966
 Full Name	    Town of Rockport
@@ -17614,7 +17614,7 @@ Total Overdue:	 $4,238.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	480
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rowe | 01367
 Full Name	    Town of Rowe
@@ -17669,7 +17669,7 @@ Total New Balance													  $6,445.75
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	481
+							Pre-bill Worksheet					      Page
 
 Rowe:Town of Rowe (continued)
 
@@ -17680,7 +17680,7 @@ Total Overdue:	 $5,274.01
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	482
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rowley | 01969
 Full Name	    Town of Rowley
@@ -17735,7 +17735,7 @@ Total New Balance													  $6,762.88
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	483
+							Pre-bill Worksheet					      Page
 
 Rowley:Town of Rowley (continued)
 
@@ -17746,7 +17746,7 @@ Total Overdue:	 $6,735.20
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	484
+							Pre-bill Worksheet					      Page
 
 Nickname	    Royalston | 01368
 Full Name	    Town of Royalston
@@ -17802,7 +17802,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	485
+							Pre-bill Worksheet					      Page
 
 Royalston:Town of Royalston (continued)
 
@@ -17819,7 +17819,7 @@ Total Overdue:	 $6,814.12
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	486
+							Pre-bill Worksheet					      Page
 
 Nickname	    Russell | 01071
 Full Name	    Town of Russell
@@ -17874,7 +17874,7 @@ Total New Balance													  $5,517.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	487
+							Pre-bill Worksheet					      Page
 
 Russell:Town of Russell (continued)
 
@@ -17885,7 +17885,7 @@ Total Overdue:	 $3,652.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	488
+							Pre-bill Worksheet					      Page
 
 Nickname	    Rutland | 01543
 Full Name	    Town of Rutland
@@ -17938,7 +17938,7 @@ Total Overdue:	 $2,203.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	489
+							Pre-bill Worksheet					      Page
 
 Nickname	    Salem | 01970
 Full Name	    City of Salem
@@ -17993,7 +17993,7 @@ Total New Balance													  $4,541.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	490
+							Pre-bill Worksheet					      Page
 
 Salem:City of Salem (continued)
 
@@ -18004,7 +18004,7 @@ Total Overdue:	 $2,204.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	491
+							Pre-bill Worksheet					      Page
 
 Nickname	    Salisbury | 01952
 Full Name	    Town of Salisbury
@@ -18059,7 +18059,7 @@ Total New Balance													  $3,572.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	492
+							Pre-bill Worksheet					      Page
 
 Salisbury:Town of Salisbury (continued)
 
@@ -18070,7 +18070,7 @@ Total Overdue:	 $999.05
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	493
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sandisfield | 01255
 Full Name	    Town of Sandisfield
@@ -18124,7 +18124,7 @@ Total Accounts Receivable												   ($370.20)
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	494
+							Pre-bill Worksheet					      Page
 
 Sandisfield:Town of Sandisfield (continued)
 
@@ -18144,7 +18144,7 @@ Total Overdue:	 $2,958.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	495
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sandwich | 02563
 Full Name	    Town of Sandwich
@@ -18199,7 +18199,7 @@ Total New Balance													  $9,100.30
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	496
+							Pre-bill Worksheet					      Page
 
 Sandwich:Town of Sandwich (continued)
 
@@ -18210,7 +18210,7 @@ Total Overdue:	 $8,620.09
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	497
+							Pre-bill Worksheet					      Page
 
 Nickname	    Saugus | 01906
 Full Name	    Town of Saugus
@@ -18263,7 +18263,7 @@ Total of Costs (Expense Charges)											      $0.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	498
+							Pre-bill Worksheet					      Page
 
 Saugus:Town of Saugus (continued)
 
@@ -18293,7 +18293,7 @@ Total Overdue:	 $8,741.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	499
+							Pre-bill Worksheet					      Page
 
 Nickname	    Savoy | 01256
 Full Name	    Town of Savoy
@@ -18348,7 +18348,7 @@ Total Overdue:	 $3,741.31
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	500
+							Pre-bill Worksheet					      Page
 
 Nickname	    Scituate | 02066
 Full Name	    Town of Scituate
@@ -18403,7 +18403,7 @@ Total New Balance													  $9,342.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	501
+							Pre-bill Worksheet					      Page
 
 Scituate:Town of Scituate (continued)
 
@@ -18414,7 +18414,7 @@ Total Overdue:	 $8,158.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	502
+							Pre-bill Worksheet					      Page
 
 Nickname	    Seekonk | 02771
 Full Name	    Town of Seekonk
@@ -18470,7 +18470,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	503
+							Pre-bill Worksheet					      Page
 
 Seekonk:Town of Seekonk (continued)
 
@@ -18487,7 +18487,7 @@ Total Overdue:	 $13,876.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	504
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sharon | 02067
 Full Name	    Town of Sharon
@@ -18542,7 +18542,7 @@ Total New Balance													 $11,386.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	505
+							Pre-bill Worksheet					      Page
 
 Sharon:Town of Sharon (continued)
 
@@ -18553,7 +18553,7 @@ Total Overdue:	 $9,732.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	506
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sheffield | 01257
 Full Name	    Town of Sheffield
@@ -18608,7 +18608,7 @@ Total New Balance													  $5,038.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	507
+							Pre-bill Worksheet					      Page
 
 Sheffield:Town of Sheffield (continued)
 
@@ -18619,7 +18619,7 @@ Total Overdue:	 $3,200.40
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	508
+							Pre-bill Worksheet					      Page
 
 Nickname	    Shelburne | 01370
 Full Name	    Town of Shelburne
@@ -18674,7 +18674,7 @@ Total Overdue:	 $2,204.88
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	509
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sherborn | 01770
 Full Name	    Town of Sherborn
@@ -18727,7 +18727,7 @@ Total Previous Balance													  $4,034.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	510
+							Pre-bill Worksheet					      Page
 
 Sherborn:Town of Sherborn (continued)
 
@@ -18753,7 +18753,7 @@ Total Overdue:	 $4,018.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	511
+							Pre-bill Worksheet					      Page
 
 Nickname	    Shirley | 01464
 Full Name	    Town of Shirley
@@ -18808,7 +18808,7 @@ Previous Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	512
+							Pre-bill Worksheet					      Page
 
 Shirley:Town of Shirley (continued)
 
@@ -18836,7 +18836,7 @@ Total Overdue:	 $1,350.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	513
+							Pre-bill Worksheet					      Page
 
 Nickname	    Shrewsbury | 01545
 Full Name	    Town of Shrewsbury
@@ -18889,7 +18889,7 @@ Total Previous Balance													  $3,330.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	514
+							Pre-bill Worksheet					      Page
 
 Shrewsbury:Town of Shrewsbury (continued)
 
@@ -18909,7 +18909,7 @@ Total Overdue:	 $2,799.43
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	515
+							Pre-bill Worksheet					      Page
 
 Nickname	    Shutesbury | 01072
 Full Name	    Town of Shutesbury
@@ -18963,7 +18963,7 @@ Current 												 $471.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	516
+							Pre-bill Worksheet					      Page
 
 Shutesbury:Town of Shutesbury (continued)
 
@@ -18976,7 +18976,7 @@ Total Overdue:	 $328.72
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	517
+							Pre-bill Worksheet					      Page
 
 Nickname	    Somerset | 02725
 Full Name	    Town of Somerset
@@ -19029,7 +19029,7 @@ Total Previous Balance													  $9,388.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	518
+							Pre-bill Worksheet					      Page
 
 Somerset:Town of Somerset (continued)
 
@@ -19049,7 +19049,7 @@ Total Overdue:	 $9,375.21
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	519
+							Pre-bill Worksheet					      Page
 
 Nickname	    Somerville | 02143
 Full Name	    City of Somerville
@@ -19102,7 +19102,7 @@ Total Previous Balance													  $5,057.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	520
+							Pre-bill Worksheet					      Page
 
 Somerville:City of Somerville (continued)
 
@@ -19122,7 +19122,7 @@ Total Overdue:	 $4,119.47
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	521
+							Pre-bill Worksheet					      Page
 
 Nickname	    South.Hadley | 01075
 Full Name	    Town of South Hadley
@@ -19175,7 +19175,7 @@ Total Previous Balance													  $5,263.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	522
+							Pre-bill Worksheet					      Page
 
 South.Hadley:Town of South Hadley (continued)
 
@@ -19201,7 +19201,7 @@ Total Overdue:	 $4,096.64
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	523
+							Pre-bill Worksheet					      Page
 
 Nickname	    Southampton | 01073
 Full Name	    Town of Southampton
@@ -19256,7 +19256,7 @@ Total Overdue:	 $4,895.48
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	524
+							Pre-bill Worksheet					      Page
 
 Nickname	    Southborough | 01772
 Full Name	    Town of Southborough
@@ -19311,7 +19311,7 @@ Total New Balance													 $10,075.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	525
+							Pre-bill Worksheet					      Page
 
 Southborough:Town of Southborough (continued)
 
@@ -19322,7 +19322,7 @@ Total Overdue:	 $8,426.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	526
+							Pre-bill Worksheet					      Page
 
 Nickname	    Southbridge | 01550
 Full Name	    City of Southbridge
@@ -19378,7 +19378,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	527
+							Pre-bill Worksheet					      Page
 
 Southbridge:City of Southbridge (continued)
 
@@ -19395,7 +19395,7 @@ Total Overdue:	 $4,631.52
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	528
+							Pre-bill Worksheet					      Page
 
 Nickname	    Southwick | 01077
 Full Name	    Town of Southwick
@@ -19450,7 +19450,7 @@ Total Overdue:	 $978.41
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	529
+							Pre-bill Worksheet					      Page
 
 Nickname	    Spencer | 01562
 Full Name	    Town of Spencer
@@ -19506,7 +19506,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	530
+							Pre-bill Worksheet					      Page
 
 Spencer:Town of Spencer (continued)
 
@@ -19523,7 +19523,7 @@ Total Overdue:	 $3,636.76
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	531
+							Pre-bill Worksheet					      Page
 
 Nickname	    Springfield | 01101
 Full Name	    City of Springfield
@@ -19578,7 +19578,7 @@ Total Overdue:	 $934.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	532
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sterling | 01564
 Full Name	    Town of Sterling
@@ -19633,7 +19633,7 @@ Total Overdue:	 $2,696.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	533
+							Pre-bill Worksheet					      Page
 
 Nickname	    Stockbridge | 01262
 Full Name	    Town of Stockbridge
@@ -19688,7 +19688,7 @@ Total New Balance													  $3,636.03
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	534
+							Pre-bill Worksheet					      Page
 
 Stockbridge:Town of Stockbridge (continued)
 
@@ -19699,7 +19699,7 @@ Total Overdue:	 $3,153.20
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	535
+							Pre-bill Worksheet					      Page
 
 Nickname	    Stoneham | 02180
 Full Name	    Town of Stoneham
@@ -19754,7 +19754,7 @@ Total New Balance													  $4,003.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	536
+							Pre-bill Worksheet					      Page
 
 Stoneham:Town of Stoneham (continued)
 
@@ -19765,7 +19765,7 @@ Total Overdue:	 $3,986.99
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	537
+							Pre-bill Worksheet					      Page
 
 Nickname	    Stoughton | 02072
 Full Name	    Town of Stoughton
@@ -19821,7 +19821,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	538
+							Pre-bill Worksheet					      Page
 
 Stoughton:Town of Stoughton (continued)
 
@@ -19838,7 +19838,7 @@ Total Overdue:	 $4,620.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	539
+							Pre-bill Worksheet					      Page
 
 Nickname	    Stow | 01775
 Full Name	    Town of Stow
@@ -19893,7 +19893,7 @@ Total Overdue:	 $5,301.17
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	540
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sturbridge | 01566
 Full Name	    Town of Sturbridge
@@ -19949,7 +19949,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	541
+							Pre-bill Worksheet					      Page
 
 Sturbridge:Town of Sturbridge (continued)
 
@@ -19966,7 +19966,7 @@ Total Overdue:	 $6,827.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	542
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sudbury | 01776
 Full Name	    Town of Sudbury
@@ -20021,7 +20021,7 @@ Total Overdue:	 $6,485.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	543
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sunderland | 01375
 Full Name	    Town of Sunderland
@@ -20076,7 +20076,7 @@ Total New Balance													  $5,527.67
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	544
+							Pre-bill Worksheet					      Page
 
 Sunderland:Town of Sunderland (continued)
 
@@ -20087,7 +20087,7 @@ Total Overdue:	 $3,662.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	545
+							Pre-bill Worksheet					      Page
 
 Nickname	    Sutton | 01590
 Full Name	    Town of Sutton
@@ -20143,7 +20143,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	546
+							Pre-bill Worksheet					      Page
 
 Sutton:Town of Sutton (continued)
 
@@ -20158,7 +20158,7 @@ Total Overdue:	 $2,654.93
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	547
+							Pre-bill Worksheet					      Page
 
 Nickname	    Swampscott | 01907
 Full Name	    Town of Swampscott
@@ -20213,7 +20213,7 @@ Total New Balance													  $4,556.22
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	548
+							Pre-bill Worksheet					      Page
 
 Swampscott:Town of Swampscott (continued)
 
@@ -20224,7 +20224,7 @@ Total Overdue:	 $2,244.53
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	549
+							Pre-bill Worksheet					      Page
 
 Nickname	    Swansea | 02777
 Full Name	    Town of Swansea
@@ -20279,7 +20279,7 @@ Total New Balance													  $3,485.74
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	550
+							Pre-bill Worksheet					      Page
 
 Swansea:Town of Swansea (continued)
 
@@ -20290,7 +20290,7 @@ Total Overdue:	 $912.35
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	551
+							Pre-bill Worksheet					      Page
 
 Nickname	    Taunton | 02780
 Full Name	    City of Taunton
@@ -20345,7 +20345,7 @@ Total New Balance													  $2,908.89
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	552
+							Pre-bill Worksheet					      Page
 
 Taunton:City of Taunton (continued)
 
@@ -20356,7 +20356,7 @@ Total Overdue:	 $2,650.47
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	553
+							Pre-bill Worksheet					      Page
 
 Nickname	    Templeton | 01468
 Full Name	    Town of Templeton
@@ -20411,7 +20411,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	554
+							Pre-bill Worksheet					      Page
 
 Templeton:Town of Templeton (continued)
 
@@ -20427,7 +20427,7 @@ Total Overdue:	 $3,134.25
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	555
+							Pre-bill Worksheet					      Page
 
 Nickname	    Tewksbury | 01876
 Full Name	    Town of Tewksbury
@@ -20480,7 +20480,7 @@ Total Previous Balance													  $3,705.59
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	556
+							Pre-bill Worksheet					      Page
 
 Tewksbury:Town of Tewksbury (continued)
 
@@ -20506,7 +20506,7 @@ Total Overdue:	 $3,295.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	557
+							Pre-bill Worksheet					      Page
 
 Nickname	    Tisbury | 02568
 Full Name	    Town of Tisbury
@@ -20558,7 +20558,7 @@ Total Previous Balance													  $4,232.62
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	558
+							Pre-bill Worksheet					      Page
 
 Tisbury:Town of Tisbury (continued)
 
@@ -20584,7 +20584,7 @@ Total Overdue:	 $4,215.30
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	559
+							Pre-bill Worksheet					      Page
 
 Nickname	    Tolland | 01634
 Full Name	    Town of Tolland
@@ -20639,7 +20639,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	560
+							Pre-bill Worksheet					      Page
 
 Tolland:Town of Tolland (continued)
 
@@ -20656,7 +20656,7 @@ Total Overdue:	 $3,419.75
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	561
+							Pre-bill Worksheet					      Page
 
 Nickname	    Topsfield | 01983
 Full Name	    Town of Topsfield
@@ -20711,7 +20711,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	562
+							Pre-bill Worksheet					      Page
 
 Topsfield:Town of Topsfield (continued)
 
@@ -20729,7 +20729,7 @@ Total Overdue:	 $4,432.18
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	563
+							Pre-bill Worksheet					      Page
 
 Nickname	    Townsend | 01469
 Full Name	    Town of Townsend
@@ -20782,7 +20782,7 @@ Total Previous Balance													  $6,338.13
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	564
+							Pre-bill Worksheet					      Page
 
 Townsend:Town of Townsend (continued)
 
@@ -20802,7 +20802,7 @@ Total Overdue:	 $6,312.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	565
+							Pre-bill Worksheet					      Page
 
 Nickname	    Truro | 02666
 Full Name	    Town of Truro
@@ -20853,7 +20853,7 @@ Total Previous Balance													  $3,715.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	566
+							Pre-bill Worksheet					      Page
 
 Truro:Town of Truro (continued)
 
@@ -20877,7 +20877,7 @@ Total Overdue:	 $3,300.23
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	567
+							Pre-bill Worksheet					      Page
 
 Nickname	    Tyngsborough | 01879
 Full Name	    Town of Tyngsborough
@@ -20932,7 +20932,7 @@ Total New Balance													  $2,113.05
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	568
+							Pre-bill Worksheet					      Page
 
 Tyngsborough:Town of Tyngsborough (continued)
 
@@ -20943,7 +20943,7 @@ Total Overdue:	 $2,104.40
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	569
+							Pre-bill Worksheet					      Page
 
 Nickname	    Tyringham | 01264
 Full Name	    Town of Tyringham
@@ -20998,7 +20998,7 @@ Total New Balance													  $2,143.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	570
+							Pre-bill Worksheet					      Page
 
 Tyringham:Town of Tyringham (continued)
 
@@ -21009,7 +21009,7 @@ Total Overdue:	 $2,134.78
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	571
+							Pre-bill Worksheet					      Page
 
 Nickname	    Upton | 01568
 Full Name	    Town of Upton
@@ -21064,7 +21064,7 @@ Total Overdue:	 $924.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	572
+							Pre-bill Worksheet					      Page
 
 Nickname	    Uxbridge | 01569
 Full Name	    Town of Uxbridge
@@ -21119,7 +21119,7 @@ Total New Balance													  $2,619.79
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	573
+							Pre-bill Worksheet					      Page
 
 Uxbridge:Town of Uxbridge (continued)
 
@@ -21130,7 +21130,7 @@ Total Overdue:	 $2,609.07
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	574
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wakefield | 01880
 Full Name	    Town of Wakefield
@@ -21182,7 +21182,7 @@ Total Previous Balance													  $3,395.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	575
+							Pre-bill Worksheet					      Page
 
 Wakefield:Town of Wakefield (continued)
 
@@ -21210,7 +21210,7 @@ Total Overdue:	 $2,976.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	576
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wales | 01081
 Full Name	    Town of Wales
@@ -21265,7 +21265,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	577
+							Pre-bill Worksheet					      Page
 
 Wales:Town of Wales (continued)
 
@@ -21281,7 +21281,7 @@ Total Overdue:	 $3,812.20
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	578
+							Pre-bill Worksheet					      Page
 
 Nickname	    Waltham | 02451
 Full Name	    City of Waltham
@@ -21336,7 +21336,7 @@ Total New Balance													  $6,333.38
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	579
+							Pre-bill Worksheet					      Page
 
 Waltham:City of Waltham (continued)
 
@@ -21347,7 +21347,7 @@ Total Overdue:	 $6,307.46
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	580
+							Pre-bill Worksheet					      Page
 
 Nickname	    Ware | 01082
 Full Name	    Town of Ware
@@ -21402,7 +21402,7 @@ Total New Balance													  $6,934.90
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	581
+							Pre-bill Worksheet					      Page
 
 Ware:Town of Ware (continued)
 
@@ -21413,7 +21413,7 @@ Total Overdue:	 $6,931.50
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	582
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wareham | 02571
 Full Name	    Town of Wareham
@@ -21469,7 +21469,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	583
+							Pre-bill Worksheet					      Page
 
 Wareham:Town of Wareham (continued)
 
@@ -21486,7 +21486,7 @@ Total Overdue:	 $6,633.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	584
+							Pre-bill Worksheet					      Page
 
 Nickname	    Warren | 01083
 Full Name	    Town of Warren
@@ -21541,7 +21541,7 @@ Total Overdue:	 $3,858.77
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	585
+							Pre-bill Worksheet					      Page
 
 Nickname	    Warwick | 01378
 Full Name	    Town of Warwick
@@ -21596,7 +21596,7 @@ Total Overdue:	 $2,427.26
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	586
+							Pre-bill Worksheet					      Page
 
 Nickname	    Washington | 01223x
 Full Name	    Town of Washington
@@ -21651,7 +21651,7 @@ Total New Balance													  $2,423.81
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	587
+							Pre-bill Worksheet					      Page
 
 Washington:Town of Washington (continued)
 
@@ -21662,7 +21662,7 @@ Total Overdue:	 $2,413.89
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	588
+							Pre-bill Worksheet					      Page
 
 Nickname	    Watertown | 02471
 Full Name	    City of Watertown
@@ -21718,7 +21718,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	589
+							Pre-bill Worksheet					      Page
 
 Watertown:City of Watertown (continued)
 
@@ -21735,7 +21735,7 @@ Total Overdue:	 $1,209.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	590
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wayland | 01778
 Full Name	    Town of Wayland
@@ -21791,7 +21791,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	591
+							Pre-bill Worksheet					      Page
 
 Wayland:Town of Wayland (continued)
 
@@ -21806,7 +21806,7 @@ Total Overdue:	 $2,589.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	592
+							Pre-bill Worksheet					      Page
 
 Nickname	    Webster | 01570
 Full Name	    Town of Webster
@@ -21861,7 +21861,7 @@ Total New Balance													  $2,976.39
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	593
+							Pre-bill Worksheet					      Page
 
 Webster:Town of Webster (continued)
 
@@ -21872,7 +21872,7 @@ Total Overdue:	 $2,964.21
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	594
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wellesley | 02482
 Full Name	    Town of Wellesley
@@ -21927,7 +21927,7 @@ Total New Balance													  $3,817.32
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	595
+							Pre-bill Worksheet					      Page
 
 Wellesley:Town of Wellesley (continued)
 
@@ -21938,7 +21938,7 @@ Total Overdue:	 $3,801.70
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	596
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wellfleet | 02667
 Full Name	    Town of Wellfleet
@@ -21993,7 +21993,7 @@ Total Overdue:	 $4,107.48
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	597
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wendell | 01379
 Full Name	    Town of Wendell
@@ -22048,7 +22048,7 @@ Total New Balance													  $5,156.65
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	598
+							Pre-bill Worksheet					      Page
 
 Wendell:Town of Wendell (continued)
 
@@ -22059,7 +22059,7 @@ Total Overdue:	 $5,135.54
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	599
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wenham | 01984
 Full Name	    Town of Wenham
@@ -22112,7 +22112,7 @@ Total Previous Balance													  $6,293.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	600
+							Pre-bill Worksheet					      Page
 
 Wenham:Town of Wenham (continued)
 
@@ -22138,7 +22138,7 @@ Total Overdue:	 $5,847.42
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	601
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Boylston | 01583
 Full Name	    Town of West Boylston
@@ -22190,7 +22190,7 @@ Total Previous Balance													  $3,167.00
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	602
+							Pre-bill Worksheet					      Page
 
 West.Boylston:Town of West Boylston (continued)
 
@@ -22216,7 +22216,7 @@ Total Overdue:	 $3,560.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	603
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Bridgewater | 02379
 Full Name	    Town of West Bridgewater
@@ -22268,7 +22268,7 @@ Total Previous Balance													  $3,087.20
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	604
+							Pre-bill Worksheet					      Page
 
 West.Bridgewater:Town of West Bridgewater (continued)
 
@@ -22296,7 +22296,7 @@ Total Overdue:	 $3,087.60
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	605
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Brookfield | 01585
 Full Name	    Town of West Brookfield
@@ -22349,7 +22349,7 @@ Total Previous Balance													  $2,806.63
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	606
+							Pre-bill Worksheet					      Page
 
 West.Brookfield:Town of West Brookfield (continued)
 
@@ -22375,7 +22375,7 @@ Total Overdue:	 $2,795.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	607
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Newbury | 01985
 Full Name	    Town of West Newbury
@@ -22430,7 +22430,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	608
+							Pre-bill Worksheet					      Page
 
 West.Newbury:Town of West Newbury (continued)
 
@@ -22447,7 +22447,7 @@ Total Overdue:	 $3,664.82
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	609
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Springfield | 01089
 Full Name	    City of West Springfield
@@ -22498,7 +22498,7 @@ Total Previous Balance													    $803.91
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	610
+							Pre-bill Worksheet					      Page
 
 West.Springfield:City of West Springfield (continued)
 
@@ -22523,7 +22523,7 @@ Total Overdue:	 $375.52
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	611
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Stockbridge | 01266
 Full Name	    Town of West Stockbridge
@@ -22578,7 +22578,7 @@ Total New Balance													  $2,259.06
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	612
+							Pre-bill Worksheet					      Page
 
 West.Stockbridge:Town of West Stockbridge (continued)
 
@@ -22589,7 +22589,7 @@ Total Overdue:	 $2,249.81
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	613
+							Pre-bill Worksheet					      Page
 
 Nickname	    West.Tisbury | 02575
 Full Name	    Town of West Tisbury
@@ -22644,7 +22644,7 @@ Total Overdue:	 $6,669.28
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	614
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westborough | 01580
 Full Name	    Town of Westborough
@@ -22699,7 +22699,7 @@ Total New Balance													  $5,358.33
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	615
+							Pre-bill Worksheet					      Page
 
 Westborough:Town of Westborough (continued)
 
@@ -22710,7 +22710,7 @@ Total Overdue:	 $5,336.40
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	616
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westfield | 01085
 Full Name	    City of Westfield
@@ -22765,7 +22765,7 @@ Total Overdue:	 $3,141.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	617
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westford | 01886
 Full Name	    Town of Westford
@@ -22821,7 +22821,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	618
+							Pre-bill Worksheet					      Page
 
 Westford:Town of Westford (continued)
 
@@ -22836,7 +22836,7 @@ Total Overdue:	 $7,141.20
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	619
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westhampton | 01027x
 Full Name	    Town of Westhampton
@@ -22891,7 +22891,7 @@ Total New Balance													  $3,983.71
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	620
+							Pre-bill Worksheet					      Page
 
 Westhampton:Town of Westhampton (continued)
 
@@ -22902,7 +22902,7 @@ Total Overdue:	 $3,967.41
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	621
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westminster | 01441
 Full Name	    Town of Westminster
@@ -22958,7 +22958,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	622
+							Pre-bill Worksheet					      Page
 
 Westminster:Town of Westminster (continued)
 
@@ -22975,7 +22975,7 @@ Total Overdue:	 $6,528.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	623
+							Pre-bill Worksheet					      Page
 
 Nickname	    Weston | 02493
 Full Name	    Town of Weston
@@ -23030,7 +23030,7 @@ Total New Balance													  $6,619.66
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	624
+							Pre-bill Worksheet					      Page
 
 Weston:Town of Weston (continued)
 
@@ -23041,7 +23041,7 @@ Total Overdue:	 $6,617.55
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	625
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westport | 02790
 Full Name	    Town of Westport
@@ -23096,7 +23096,7 @@ Total New Balance													  $7,450.33
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	626
+							Pre-bill Worksheet					      Page
 
 Westport:Town of Westport (continued)
 
@@ -23107,7 +23107,7 @@ Total Overdue:	 $7,419.84
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	627
+							Pre-bill Worksheet					      Page
 
 Nickname	    Westwood | 02090
 Full Name	    Town of Westwood
@@ -23163,7 +23163,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	628
+							Pre-bill Worksheet					      Page
 
 Westwood:Town of Westwood (continued)
 
@@ -23180,7 +23180,7 @@ Total Overdue:	 $5,714.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	629
+							Pre-bill Worksheet					      Page
 
 Nickname	    Weymouth | 02188
 Full Name	    City of Weymouth
@@ -23235,7 +23235,7 @@ Total Overdue:	 $2,216.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	630
+							Pre-bill Worksheet					      Page
 
 Nickname	    Whately | 01093
 Full Name	    Town of Whately
@@ -23290,7 +23290,7 @@ Total New Balance													  $1,754.21
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	631
+							Pre-bill Worksheet					      Page
 
 Whately:Town of Whately (continued)
 
@@ -23301,7 +23301,7 @@ Total Overdue:	 $1,747.03
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	632
+							Pre-bill Worksheet					      Page
 
 Nickname	    Whitman | 02382
 Full Name	    Town of Whitman
@@ -23356,7 +23356,7 @@ Total New Balance													  $8,017.26
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	633
+							Pre-bill Worksheet					      Page
 
 Whitman:Town of Whitman (continued)
 
@@ -23367,7 +23367,7 @@ Total Overdue:	 $7,984.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	634
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wilbraham | 01095
 Full Name	    Town of Wilbraham
@@ -23422,7 +23422,7 @@ Total Overdue:	 $1,986.34
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	635
+							Pre-bill Worksheet					      Page
 
 Nickname	    Williamsburg | 01096
 Full Name	    Town of Williamsburg
@@ -23474,7 +23474,7 @@ Total Previous Balance													  $3,655.96
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	636
+							Pre-bill Worksheet					      Page
 
 Williamsburg:Town of Williamsburg (continued)
 
@@ -23500,7 +23500,7 @@ Total Overdue:	 $3,200.90
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	637
+							Pre-bill Worksheet					      Page
 
 Nickname	    Williamstown | 01267
 Full Name	    Town of Williamstown
@@ -23556,7 +23556,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	638
+							Pre-bill Worksheet					      Page
 
 Williamstown:Town of Williamstown (continued)
 
@@ -23573,7 +23573,7 @@ Total Overdue:	 $5,188.80
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	639
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wilmington | 01887
 Full Name	    Town of Wilmington
@@ -23628,7 +23628,7 @@ Total Overdue:	 $7,070.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	640
+							Pre-bill Worksheet					      Page
 
 Nickname	    Winchendon | 01475
 Full Name	    Town of Winchendon
@@ -23683,7 +23683,7 @@ Total New Balance													  $6,746.98
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	641
+							Pre-bill Worksheet					      Page
 
 Winchendon:Town of Winchendon (continued)
 
@@ -23694,7 +23694,7 @@ Total Overdue:	 $6,719.37
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	642
+							Pre-bill Worksheet					      Page
 
 Nickname	    Winchester | 01890
 Full Name	    Town of Winchester
@@ -23749,7 +23749,7 @@ Total New Balance													  $3,914.03
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	643
+							Pre-bill Worksheet					      Page
 
 Winchester:Town of Winchester (continued)
 
@@ -23760,7 +23760,7 @@ Total Overdue:	 $3,898.01
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	644
+							Pre-bill Worksheet					      Page
 
 Nickname	    Windsor | 01270
 Full Name	    Town of Windsor
@@ -23811,7 +23811,7 @@ Total Previous Balance													  $2,947.68
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	645
+							Pre-bill Worksheet					      Page
 
 Windsor:Town of Windsor (continued)
 
@@ -23836,7 +23836,7 @@ Total Overdue:	 $2,502.58
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	646
+							Pre-bill Worksheet					      Page
 
 Nickname	    Winthrop | 02152
 Full Name	    City of Winthrop
@@ -23889,7 +23889,7 @@ Total Previous Balance													  $2,340.77
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	647
+							Pre-bill Worksheet					      Page
 
 Winthrop:City of Winthrop (continued)
 
@@ -23909,7 +23909,7 @@ Total Overdue:	 $2,331.19
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	648
+							Pre-bill Worksheet					      Page
 
 Nickname	    Woburn | 01801
 Full Name	    City of Woburn
@@ -23964,7 +23964,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	649
+							Pre-bill Worksheet					      Page
 
 Woburn:City of Woburn (continued)
 
@@ -23981,7 +23981,7 @@ Total Overdue:	 $1,156.64
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	650
+							Pre-bill Worksheet					      Page
 
 Nickname	    Worcester | 01601
 Full Name	    City of Worcester
@@ -24036,7 +24036,7 @@ New Balance
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	651
+							Pre-bill Worksheet					      Page
 
 Worcester:City of Worcester (continued)
 
@@ -24053,7 +24053,7 @@ Total Overdue:	 $1,752.75
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	652
+							Pre-bill Worksheet					      Page
 
 Nickname	    Worthington | 01098
 Full Name	    Town of Worthington
@@ -24106,7 +24106,7 @@ Total Previous Balance													  $2,569.97
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	653
+							Pre-bill Worksheet					      Page
 
 Worthington:Town of Worthington (continued)
 
@@ -24126,7 +24126,7 @@ Total Overdue:	 $2,559.45
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	654
+							Pre-bill Worksheet					      Page
 
 Nickname	    Wrentham | 02093
 Full Name	    Town of Wrentham
@@ -24179,7 +24179,7 @@ Total Previous Balance													  $3,253.14
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	655
+							Pre-bill Worksheet					      Page
 
 Wrentham:Town of Wrentham (continued)
 
@@ -24207,7 +24207,7 @@ Total Overdue:	 $2,789.73
 
 
 						       TS Handyman Services
-							Pre-bill Worksheet					      Page	656
+							Pre-bill Worksheet					      Page
 
 Nickname	    Yarmouth | 02664
 Full Name	    Town of Yarmouth

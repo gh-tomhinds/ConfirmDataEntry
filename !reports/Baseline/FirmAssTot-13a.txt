@@ -1,11 +1,11 @@
 
 
-4/14/2015					       TS Handyman Services
-4:47 PM 					   Firm Assistant Totals Listing				      Page	  1
+						       TS Handyman Services
+						   Firm Assistant Totals Listing				      Page
 
 							Selection Criteria
 
-Slip.Transaction Dat	     1/1/2013 - 12/31/2013
+Slip.Transaction Date	     1/1/2013 - 12/31/2013
 
 
 Fees
@@ -54,8 +54,8 @@ Accounts Receivable
 
 
 
-4/14/2015					       TS Handyman Services
-4:47 PM 					   Firm Assistant Totals Listing				      Page	  2
+						       TS Handyman Services
+						   Firm Assistant Totals Listing				      Page
 
 Funds Accounts
        Previous Balance 												      $0.00

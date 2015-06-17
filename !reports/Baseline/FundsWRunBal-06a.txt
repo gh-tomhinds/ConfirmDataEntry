@@ -6,7 +6,7 @@
 							Selection Criteria
 
 Clie.Classification	     Open
-Fnds.Transaction Dat	     6/1/2013 - Latest
+Fnds.Transaction Date	     6/1/2013 - Latest
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
