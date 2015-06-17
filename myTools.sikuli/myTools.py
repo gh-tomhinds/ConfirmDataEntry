@@ -82,6 +82,7 @@ def getFocus():
 #---------------------------------------------------#
 
     if int(Settings.tsVersion) > 2013:
+        logging.debug('--- getFocus')        
         click("billing_date_statusbar.png")
 
 #---------------------------------------------------#
@@ -158,7 +159,11 @@ def enterCurrentMonthOnList(pMonth):
     
     pressSHIFTTAB(3)
 
-    startDate = str(pMonth) + "/1/" + Settings.dataYear
+    if pMonth > 12:
+        startDate = "12/1/" + Settings.dataYear        
+    else:
+        startDate = str(pMonth) + "/1/" + Settings.dataYear
+        
     type(startDate)
     type(Key.TAB)
     
@@ -533,17 +538,22 @@ def checkProcesses():
 
     time.sleep(5)
     
-    cmd = "wmic path Win32_PerfFormattedData_PerfProc_Process get Name"
+    cmd = "wmic path Win32_PerfFormattedData_PerfProc_Process get Name,PrivateBytes"
     cmdOut = run(cmd)
     processList = cmdOut.splitlines()
 
-    totalProc = 0
+    totalFbProcs = 0
     for oneProcess in processList:
         oneProcess = oneProcess.strip()
+#        print(oneProcess)
+
         if oneProcess[:7] == "fb_inet":
-            totalProc += 1
+            totalFbProcs += 1        
+        elif oneProcess[:8] == "Timeslip":
+            procName, procSize = oneProcess.split()
 
     logging.debug(' ')
-    logging.debug('>>> FB Processes: ' + str(totalProc))
+    logging.debug('>>> FB Procs: ' + str(totalFbProcs))
+    logging.debug('>>> TS Size : ' + str(procSize))
 
     time.sleep(1)
