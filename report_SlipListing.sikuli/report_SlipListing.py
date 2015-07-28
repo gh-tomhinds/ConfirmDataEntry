@@ -10,7 +10,7 @@ def fPrint_SlipListing(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print SlipList")
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-SlipList-",pRepExt)    
+    reportName = myTools.buildRepName("SlipList",pRepExt)    
     logging.debug('Print_ARAgedBal: ' + reportName)
 
     # make sure timeslips has focus

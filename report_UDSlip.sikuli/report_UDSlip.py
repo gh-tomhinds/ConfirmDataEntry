@@ -111,7 +111,7 @@ def fPrint_SlipListDetailed(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print sliplistdetailed")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDSlip1-",pRepExt)
+    reportName = myTools.buildRepName("UDSlip1",pRepExt)
     logging.debug('Print_UDSlip1: ' + reportName)
     myTools.getFocus()
 
@@ -146,7 +146,7 @@ def fPrint_SlipFields(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print slipfields")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDSlip2-",pRepExt)
+    reportName = myTools.buildRepName("UDSlip2",pRepExt)
     logging.debug('Print_UDSlip2: ' + reportName)
     myTools.getFocus()
 
@@ -179,7 +179,7 @@ def fPrint_SlipListCalc(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print slipcalcs")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDSCalc-",pRepExt)
+    reportName = myTools.buildRepName("UDSCalc",pRepExt)
     logging.debug('Print_UDSCalc: ' + reportName)
     myTools.getFocus()
 

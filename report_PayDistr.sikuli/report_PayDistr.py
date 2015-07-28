@@ -10,7 +10,7 @@ def Print_PayDistr(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print pay dist")
 
     # name report file: ex: PayDistr-03
-    reportName = myTools.monthToName(pReportMonth,"-PayDistr-",pRepExt)
+    reportName = myTools.buildRepName("PayDistr",pRepExt)
     logging.debug('Print_PayDistr: ' + reportName)
 
     # make sure timeslips has focus

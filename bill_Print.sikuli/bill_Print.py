@@ -64,8 +64,8 @@ def fRemove_Sort():
 #---------------------------------------------------#
 def fPrint_BillRun(pMonth):
 #---------------------------------------------------#
-
-    reportName = myTools.monthToName(pMonth,"-Bill-",".txt")
+    
+    reportName = "Bill-" + myTools.padZero(pMonth) + Settings.tsVersion + ".txt"    
     logging.debug('fPrint_BillRun: ' + reportName)
 
     type("b",KeyModifier.CTRL)

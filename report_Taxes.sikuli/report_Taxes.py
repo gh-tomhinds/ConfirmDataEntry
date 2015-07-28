@@ -10,7 +10,7 @@ def Print_Taxes(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print taxes")
 
     # name report file: ex: Hold-03
-    reportName = myTools.monthToName(pReportMonth,"-Taxes-",pRepExt)
+    reportName = myTools.buildRepName("Taxes",pRepExt)
     logging.debug('Print_Taxes: ' + reportName)
 
     # make sure timeslips has focus

@@ -10,7 +10,7 @@ def fPrint_FundsBal(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print fundsbal")
 
     # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(pReportMonth,"-FundsBal-",pRepExt)    
+    reportName = myTools.buildRepName("FundsBal",pRepExt)    
     logging.debug('fPrint_FundsBal: ' + reportName)
 
     # make sure timeslips has focus

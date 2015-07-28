@@ -10,7 +10,7 @@ def Print_GLXfer(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print glxfer")
 
     # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(pReportMonth,"-GLXfer-",pRepExt)
+    reportName = myTools.buildRepName("GLXfer",pRepExt)
     logging.debug('Print_GLXfer: ' + reportName)
 
     # make sure timeslips has focus

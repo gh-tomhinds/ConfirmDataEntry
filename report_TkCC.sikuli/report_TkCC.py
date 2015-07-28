@@ -49,7 +49,7 @@ def Print_TkCC(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print tkcc")
 
     # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(pReportMonth,"-TkCC-",pRepExt)
+    reportName = myTools.buildRepName("TkCC",pRepExt)
     logging.debug('Print_TkCC: ' + reportName)
 
     # make sure timeslips has focus

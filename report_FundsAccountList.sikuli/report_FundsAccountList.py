@@ -8,9 +8,7 @@ def fPrint_Funds(pReportName):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print funds")
-
-    reportName = Settings.tsVersion + "-" + pReportName
-    logging.debug('fPrint_Funds: ' + reportName)
+    logging.debug('fPrint_Funds: ' + pReportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -52,4 +50,4 @@ def fPrint_Funds(pReportName):
     type(Key.ENTER)
     time.sleep(1)
 
-    myTools.finishReport(reportName)
+    myTools.finishReport(pReportName)

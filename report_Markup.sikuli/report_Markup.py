@@ -10,7 +10,7 @@ def print_Markup(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print markup")
 
     # name report file: ex: Markup-03
-    reportName = myTools.monthToName(pReportMonth,"-Markup-",pRepExt)
+    reportName = myTools.buildRepName("Markup",pRepExt)
     logging.debug('Print_Markup: ' + reportName)
 
     # make sure timeslips has focus

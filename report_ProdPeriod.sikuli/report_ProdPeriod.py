@@ -10,7 +10,7 @@ def print_ProdPeriod(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print ProdPer")
 
     # name report file: ex: ProdPer-03
-    reportName = myTools.monthToName(pReportMonth,"-ProdPer-",pRepExt)
+    reportName = myTools.buildRepName("ProdPer",pRepExt)
     logging.debug('Print_ProdPeriod: ' + reportName)
 
     # make sure timeslips has focus

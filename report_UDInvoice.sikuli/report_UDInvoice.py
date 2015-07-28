@@ -50,7 +50,7 @@ def fPrint_InvoiceListFields(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print invoicefields")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDInvoice1-",pRepExt)
+    reportName = myTools.buildRepName("UDInvoice1",pRepExt)
     logging.debug('Print_UDInvoice1: ' + reportName)
     myTools.getFocus()
 

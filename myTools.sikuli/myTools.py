@@ -132,7 +132,9 @@ def enterSlipFilter(pMonth,pExtraTab):
     # type in dates
     logging.debug('-- enter date range')
     
-    if pExtraTab == "y":       
+    if pExtraTab == "yy":       
+        pressTAB(8)
+    elif pExtraTab == "y":       
         pressTAB(7)
     else:
         pressTAB(6)
@@ -386,13 +388,21 @@ def padZero(pNumber):
     return(padNumber)
 
 #---------------------------------------------------#
-def monthToName(aMonth,aName,anExt):
+def bkuName(aMonth,aName,anExt):
 #---------------------------------------------------#
 
     fileName = padZero(aMonth)
 
     # prefix the version
     fileName = Settings.tsVersion + aName + fileName + anExt    
+        
+    return(fileName)
+
+#---------------------------------------------------#
+def buildRepName(aName,anExt):
+#---------------------------------------------------#
+
+    fileName = aName + "-" + Settings.PartOfRepName + anExt
         
     return(fileName)
 

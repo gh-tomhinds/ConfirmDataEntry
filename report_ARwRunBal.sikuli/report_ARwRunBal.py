@@ -31,7 +31,7 @@ def fPrint_ARwRunBal(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print ARwRunBal")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-ARwRunBal-",pRepExt)
+    reportName = myTools.buildRepName("ARwRunBal",pRepExt)
     logging.debug('fPrint_ARwRunBal: ' + reportName)
     myTools.getFocus()
 

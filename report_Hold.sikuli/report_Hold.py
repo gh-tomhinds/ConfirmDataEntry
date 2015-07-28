@@ -10,7 +10,7 @@ def Print_Hold(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print hold")
 
     # name report file: ex: Hold-03
-    reportName = myTools.monthToName(pReportMonth,"-Hold-",pRepExt)
+    reportName = myTools.buildRepName("Hold",pRepExt)
     logging.debug('Print_Hold: ' + reportName)
 
     # make sure timeslips has focus

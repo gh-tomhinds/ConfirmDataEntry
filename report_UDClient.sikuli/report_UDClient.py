@@ -73,7 +73,7 @@ def fPrint_ClientListHistory(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print clienthistory")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDClient1-",pRepExt)
+    reportName = myTools.buildRepName("UDClient1",pRepExt)
     logging.debug('Print_UDClient1: ' + reportName)
     myTools.getFocus()
 
@@ -127,7 +127,7 @@ def fPrint_ClientListValues(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print clientvalues")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDClient2-",pRepExt)
+    reportName = myTools.buildRepName("UDClient2",pRepExt)
     logging.debug('Print_UDClient2: ' + reportName)
     myTools.getFocus()
 

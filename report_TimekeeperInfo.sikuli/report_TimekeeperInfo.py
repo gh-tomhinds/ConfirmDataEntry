@@ -8,9 +8,7 @@ def fPrint_TimekeeperInfo(pReportName):
 #---------------------------------------------------#
 
     myTools.sectionStartTimeStamp("print timekeepers")
-
-    reportName = Settings.tsVersion + "-" + pReportName
-    logging.debug('fPrint_TimekeeperInfo: ' + reportName)
+    logging.debug('fPrint_TimekeeperInfo: ' + pReportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
@@ -52,4 +50,4 @@ def fPrint_TimekeeperInfo(pReportName):
     type(Key.ENTER)
     time.sleep(1)
 
-    myTools.finishReport(reportName)
+    myTools.finishReport(pReportName)

@@ -10,7 +10,7 @@ def Print_TkContribution(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print tkcontribution")
 
     # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(pReportMonth,"-TkContrib-",pRepExt)
+    reportName = myTools.buildRepName("TkContrib",pRepExt)
     logging.debug('Print_TkContrib: ' + reportName)
 
     # make sure timeslips has focus

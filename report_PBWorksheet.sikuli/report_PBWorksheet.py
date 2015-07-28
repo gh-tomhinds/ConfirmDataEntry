@@ -29,7 +29,7 @@ def fPrint_PreBill(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print PBworksheet")
 
     # name report file: ex: PreBill-03
-    reportName = myTools.monthToName(pReportMonth,"-PreBill-",pRepExt)
+    reportName = myTools.buildRepName("PreBill",pRepExt)
     logging.debug('Print_PreBill: ' + reportName)
 
     # make sure timeslips has focus

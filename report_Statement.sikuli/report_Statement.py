@@ -47,7 +47,7 @@ def fPrint_Statement(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print statements")
 
     # name report file: ex: Statement-03
-    reportName = myTools.monthToName(pReportMonth,"-Statement-",pRepExt)
+    reportName = myTools.buildRepName("Statement",pRepExt)
     logging.debug('Print_Statement: ' + reportName)
     myTools.getFocus()
 

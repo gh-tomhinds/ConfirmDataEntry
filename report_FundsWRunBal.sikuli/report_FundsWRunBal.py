@@ -31,7 +31,7 @@ def fPrint_FundsWRunBal(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print FundsWRunBal")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-FundsWRunBal-",pRepExt)
+    reportName = myTools.buildRepName("FundsWRunBal",pRepExt)
     logging.debug('fPrint_FundsWRunBal: ' + reportName)
     myTools.getFocus()
 

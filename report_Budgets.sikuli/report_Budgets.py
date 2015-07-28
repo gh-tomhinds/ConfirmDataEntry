@@ -67,7 +67,7 @@ def printTkBudget(pReportMonth,pRepExt):
 
     myTools.sectionStartTimeStamp("print tk budget")
 
-    reportName = myTools.monthToName(pReportMonth,"-TkBud-",pRepExt)    
+    reportName = myTools.buildRepName("TkBud",pRepExt)    
     logging.debug('Print_TkBudget: ' + reportName)
 
     # make sure timeslips has focus
@@ -90,7 +90,7 @@ def printFirmBudget(pReportMonth,pRepExt):
 
     myTools.sectionStartTimeStamp("print firm budget")
 
-    reportName = myTools.monthToName(pReportMonth,"-FirmBud-",pRepExt)
+    reportName = myTools.buildRepName("FirmBud",pRepExt)
     logging.debug('Print_FirmBudget: ' + reportName)
 
     # make sure timeslips has focus

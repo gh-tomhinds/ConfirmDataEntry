@@ -4,29 +4,30 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def print_SlipSummary(pReportMonth,pRepExt):
+def fPrint_PayPerf(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print SlipSummary")
+    myTools.sectionStartTimeStamp("print PayPerf")
 
-    # name report file: ex: SlipSumm-03
-    reportName = myTools.buildRepName("SlipSumm",pRepExt)
-    logging.debug('Print_SlipSumm: ' + reportName)
+    # name report file: ex: PreBill-03
+    reportName = myTools.buildRepName("PayPerf",pRepExt)
+    logging.debug('Print_PayPerf: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
 
-    logging.debug('- open report list')
+    logging.debug('- open PayPerf')
     type("r",KeyModifier.ALT)
-    type("s")
+    type("a")
+    time.sleep(1)
+    type("p")
+    time.sleep(1)
+    myTools.pressDOWN(1)
     time.sleep(1)
     
     logging.debug('- set up report')
-    type("slip s")
-    time.sleep(1)
     type("o",KeyModifier.CTRL)
-    time.sleep(1)
-
+    
     # Options
     myTools.pressSHIFTTAB(4)
     type(Key.SPACE)
@@ -37,20 +38,31 @@ def print_SlipSummary(pReportMonth,pRepExt):
     type(Key.SPACE)
     time.sleep(1)
 
-    # exclude analysis info
-    myTools.pressSHIFTTAB(4)
-    type(Key.SPACE)
-    time.sleep(1)  
+    # Quarterly
+    myTools.pressSHIFTTAB(2)
+    type("q")
+    time.sleep(1)
 
-    # OK
-    myTools.pressTAB(5)
+    # totals
+    myTools.pressSHIFTTAB(8)
     type(Key.SPACE)
     time.sleep(1)
 
-    # choose CSV
+    # costs
+    myTools.pressSHIFTTAB(1)
+    type(Key.SPACE)
+    time.sleep(1)
+
+    # OK
+    type(Key.ENTER)
+    time.sleep(1)
+
+    # choose csv
     myTools.pressTAB(2)
     type("c")
     time.sleep(1)
+
+    myTools.enterSlipFilter(pReportMonth,"y")
 
     # print the report
     type(Key.ENTER)    

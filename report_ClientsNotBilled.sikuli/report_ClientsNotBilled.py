@@ -4,23 +4,25 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fPrint_ClientInfo(pReportName):
+def Print_ClientsNotBilled(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print clients")
+    myTools.sectionStartTimeStamp("print ClientsNotBilled")
 
-    logging.debug('fPrint_ClientInfo: ' + pReportName)
+    # name report file: ex: Worksheet-03
+    reportName = myTools.buildRepName("CliNotBilled",pRepExt)
+    logging.debug('Print_CliNotBilled: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
-    
+
     logging.debug('- open report list')
     type("r",KeyModifier.ALT)
-    type("c")    
+    type("b")    
     time.sleep(1)
     
-    logging.debug('- set up client info listing')
-    type("client info")    
+    logging.debug('- set up report')
+    type("c")
     time.sleep(1)
     type("o",KeyModifier.CTRL)
     time.sleep(1)
@@ -35,20 +37,32 @@ def fPrint_ClientInfo(pReportName):
     type(Key.SPACE)
     time.sleep(1)
 
-    # hide a/r fields
+    # include auto pay
     myTools.pressSHIFTTAB(5)
+    type(Key.SPACE)
+    time.sleep(1)
+    
+    # include zero
+    myTools.pressTAB(1)
     type(Key.SPACE)
     time.sleep(1)
 
     # OK
-    myTools.pressTAB(6)
-    type(Key.SPACE)
+    type(Key.ENTER)
     time.sleep(1)
 
     # choose CSV
     myTools.pressTAB(2)
-    type("c")    
-    type(Key.ENTER)
+    type("c")
     time.sleep(1)
 
-    myTools.finishReport(pReportName)
+    # remove filters
+    myTools.pressTAB(7)
+    type(Key.ENTER)
+    time.sleep(1)   
+
+    # print the report
+    type(Key.ENTER)    
+    time.sleep(1)
+
+    myTools.finishReport(reportName)

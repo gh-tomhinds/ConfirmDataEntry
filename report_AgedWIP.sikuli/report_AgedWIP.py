@@ -9,8 +9,8 @@ def fPrint_AgedWIP(pReportMonth,pRepExt):
 
     myTools.sectionStartTimeStamp("print AgedWIP")
 
-    # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-AgedWIP-",pRepExt)    
+    # name report file: ex: ARAgedBal-03    
+    reportName = myTools.buildRepName("AgedWIP",pRepExt)    
     logging.debug('fPrint_AgedWIP: ' + reportName)
 
     # make sure timeslips has focus

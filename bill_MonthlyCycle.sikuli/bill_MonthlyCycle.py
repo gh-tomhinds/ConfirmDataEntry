@@ -19,7 +19,7 @@ def fRun_BillCycle(startMonth,endMonth):
     for thisMonth in range(startMonth,endMonth):
         logging.debug('- month: ' + str(thisMonth))        
 
-        bill_Print.fPrint_Bills(thisMonth)        
+        bill_Print.fPrint_Bills(thisMonth)
         backup_Data.fBackup_BillData(thisMonth,"a")       
         reports_PostBill.fPrint_PostbillReports(thisMonth,"a")      # compare some values before trans
 

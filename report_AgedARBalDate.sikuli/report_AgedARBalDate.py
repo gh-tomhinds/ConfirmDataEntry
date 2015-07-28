@@ -75,7 +75,7 @@ def Print_ARAgedBalDate(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print aged bal date")
 
     # name report file: ex: AgedARDate-03
-    reportName = myTools.monthToName(pReportMonth,"-AgedARDate-",pRepExt)    
+    reportName = myTools.buildRepName("AgedARDate",pRepExt)
     logging.debug('Print_AgedARDate: ' + reportName)
 
     # make sure timeslips has focus

@@ -50,7 +50,7 @@ def fPrint_FundsListFields(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print fundsfields")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-UDFunds1-",pRepExt)
+    reportName = myTools.buildRepName("UDFunds1",pRepExt)
     logging.debug('Print_UDFunds1: ' + reportName)
     myTools.getFocus()
 

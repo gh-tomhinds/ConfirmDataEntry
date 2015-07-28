@@ -10,7 +10,7 @@ def Print_SlipTotalsWeekly(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("slip totals")
 
     # name report file: ex: PayDistr-03
-    reportName = myTools.monthToName(pReportMonth,"-SlipTot-",pRepExt)
+    reportName = myTools.buildRepName("SlipTot",pRepExt)
     logging.debug('Print_SlipTotalsWeekly: ' + reportName)
 
     # make sure timeslips has focus

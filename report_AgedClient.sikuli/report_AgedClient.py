@@ -4,29 +4,28 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def Print_Worksheet(pReportMonth,pRepExt):
+def fPrint_AgedClient(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print TOworksheet")
+    myTools.sectionStartTimeStamp("print AgedClient")
 
-    # name report file: ex: Worksheet-03
-    reportName = myTools.buildRepName("Worksheet",pRepExt)
-    logging.debug('Print_Worksheet: ' + reportName)
+    # name report file: ex: PreBill-03
+    reportName = myTools.buildRepName("AgedClient",pRepExt)
+    logging.debug('Print_AgedClient: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
 
-    logging.debug('- open report list')
+    logging.debug('- open PayPerf')
     type("r",KeyModifier.ALT)
-    type("b")    
+    type("c")
+    time.sleep(1)
+    myTools.pressDOWN(1)
     time.sleep(1)
     
-    logging.debug('- set up worksheet')
-    type("t")
-    time.sleep(1)
+    logging.debug('- set up report')
     type("o",KeyModifier.CTRL)
-    time.sleep(1)
-
+    
     # Options
     myTools.pressSHIFTTAB(4)
     type(Key.SPACE)
@@ -37,17 +36,26 @@ def Print_Worksheet(pReportMonth,pRepExt):
     type(Key.SPACE)
     time.sleep(1)
 
-    # OK
+    # Show hours
+    myTools.pressTAB(10)
+    type(Key.SPACE)
+    time.sleep(1)
+
+    # Show Adjustment columns
     myTools.pressTAB(1)
     type(Key.SPACE)
     time.sleep(1)
 
-    # choose CSV
+    # OK
+    type(Key.ENTER)
+    time.sleep(1)
+
+    # choose csv
     myTools.pressTAB(2)
     type("c")
     time.sleep(1)
 
-    myTools.enterSlipFilter(pReportMonth,"n")
+    myTools.enterSlipFilter(pReportMonth,"yy")
 
     # print the report
     type(Key.ENTER)    

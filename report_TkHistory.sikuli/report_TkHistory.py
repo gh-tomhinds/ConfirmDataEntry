@@ -10,7 +10,7 @@ def Print_TkHistory(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print tk history")
 
     # name report file: ex: TkHistory-03
-    reportName = myTools.monthToName(pReportMonth,"-TkHistory-",pRepExt)   
+    reportName = myTools.buildRepName("TkHistory",pRepExt)   
     logging.debug('Print_TkHistory: ' + reportName)
 
     # make sure timeslips has focus

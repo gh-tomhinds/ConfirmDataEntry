@@ -34,7 +34,7 @@ def Print_TkCollections(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print tkcollections")
 
     # name report file: ex: TkCC-03
-    reportName = myTools.monthToName(pReportMonth,"-TkColl-",pRepExt)
+    reportName = myTools.buildRepName("TkColl",pRepExt)
     logging.debug('Print_TkColl: ' + reportName)
 
     # make sure timeslips has focus

@@ -1,16 +1,21 @@
 from sikuli import *
 import logging
+import myTools
 import email_Send
 
 import report_AgedARBal
 import report_AgedARBalDate
+import report_AgedClient
+import report_AgedInv
 import report_AgedWIP
 import report_ARHistory
 import report_ARwRunBal
 import report_BillStage
 import report_Budgets
+import report_ClientsNotBilled
 import report_DaysToPay
 import report_FeeAlloc
+import report_FirmAssList
 import report_FirmAssTot
 import report_FundsBal
 import report_FundsList
@@ -18,6 +23,7 @@ import report_FundsWRunBal
 import report_Hold
 import report_InvoiceListing
 import report_PayDistr
+import report_PayPerf
 import report_PBWorksheet
 import report_ProdPeriod
 import report_ProfPeriod
@@ -49,12 +55,22 @@ def fPrint_PostbillReports(pMonth,pAorB):
 
     fSet_BillDate(pMonth)
 
-    csvExt = pAorB + ".csv"
-    txtExt = pAorB + ".txt"
+    Settings.PartOfRepName = myTools.padZero(pMonth) + pAorB + "-" + Settings.tsVersion
+
+    csvExt = ".csv"
+    txtExt = ".txt"
+    
+    report_AgedInv.fPrint_AgedInv(pMonth,csvExt)
+    report_AgedClient.fPrint_AgedClient(pMonth,csvExt)
+    """
+    report_ClientsNotBilled.Print_ClientsNotBilled(pMonth,csvExt)
+    report_FirmAssList.fPrint_FirmAssList(pMonth,csvExt)
+    report_PayPerf.fPrint_PayPerf(pMonth,csvExt)
 
     report_AgedARBal.Print_ARAgedBal(pMonth,csvExt)
     report_AgedARBalDate.Print_ARAgedBalDate(pMonth,csvExt)
     report_ARwRunBal.fPrint_ARwRunBal(pMonth,txtExt)
+
     report_ARHistory.fPrint_ARHistory(pMonth,csvExt)
     report_UDSlip.fPrint_SlipListDetailed(pMonth,csvExt)
     report_UDSlip.fPrint_SlipFields(pMonth,csvExt)
@@ -117,4 +133,5 @@ def fPrint_PostbillReports(pMonth,pAorB):
 #    report_DaysToPay.print_DaysToPay(pMonth,csvExt)   
 
 #    email_Send.fSend_Email("rep " + str(pMonth) + pAorB)
+    """
     email_Send.fSend_Text("rep-all " + str(pMonth) + pAorB)

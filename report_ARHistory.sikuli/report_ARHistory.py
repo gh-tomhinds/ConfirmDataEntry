@@ -10,7 +10,7 @@ def fPrint_ARHistory(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print ARHistory")
 
     # name report file: ex: UDSlip1-03
-    reportName = myTools.monthToName(pReportMonth,"-ARHist-",pRepExt)
+    reportName = myTools.buildRepName("ARHist",pRepExt)
     logging.debug('fPrint_ARHistory: ' + reportName)
     myTools.getFocus()
 

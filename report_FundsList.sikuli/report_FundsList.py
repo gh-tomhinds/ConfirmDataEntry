@@ -10,7 +10,7 @@ def fPrint_FundsList(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print FundsList")
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-FundsList-",pRepExt)    
+    reportName = myTools.buildRepName("FundsList",pRepExt)
     logging.debug('fPrint_FundsList: ' + reportName)
 
     # make sure timeslips has focus

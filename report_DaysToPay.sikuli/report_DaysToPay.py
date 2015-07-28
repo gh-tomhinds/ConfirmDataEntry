@@ -10,7 +10,7 @@ def print_DaysToPay(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print daystopay")
 
     # name report file: ex: DaysToPay-03
-    reportName = myTools.monthToName(pReportMonth,"-DaysToPay-",pRepExt)
+    reportName = myTools.buildRepName("DaysToPay",pRepExt)
     logging.debug('Print_DaysToPay: ' + reportName)
 
     # make sure timeslips has focus

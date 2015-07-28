@@ -4,47 +4,23 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fSetup_FirmAssTot():
+def fPrint_FirmAssList(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    logging.debug('- set firmasstot')
-    
-    myTools.getFocus()
-    logging.debug('- open report')
-    type("r",KeyModifier.ALT)
-    type("b")
-    time.sleep(1)
-    type("f")
-    myTools.pressDOWN(1)
-    time.sleep(1)
-
-    myTools.removeDateAndTime()
-
-    type(Key.F4,KeyModifier.CTRL)
-    time.sleep(1)
-    type("y")
-    time.sleep(1)
-    type(Key.F4,KeyModifier.CTRL)
-
-#---------------------------------------------------#
-def fPrint_FirmAssTot(pReportMonth,pRepExt):
-#---------------------------------------------------#
-
-    myTools.sectionStartTimeStamp("print FirmAssTot")
+    myTools.sectionStartTimeStamp("print FirmAssList")
 
     # name report file: ex: PreBill-03
-    reportName = myTools.buildRepName("FirmAssTot",pRepExt)
-    logging.debug('Print_FirmAssTot: ' + reportName)
+    reportName = myTools.buildRepName("FirmAssList",pRepExt)
+    logging.debug('Print_FirmAssList: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
 
-    logging.debug('- open FirmAssTot')
+    logging.debug('- open FirmAssList')
     type("r",KeyModifier.ALT)
     type("b")
     time.sleep(1)
     type("f")
-    myTools.pressDOWN(1)
     time.sleep(1)
     
     logging.debug('- set up report')
@@ -65,9 +41,9 @@ def fPrint_FirmAssTot(pReportMonth,pRepExt):
     type(Key.SPACE)
     time.sleep(1)
 
-    # choose text
+    # choose csv
     myTools.pressTAB(2)
-    type("t")
+    type("c")
     time.sleep(1)
 
     myTools.enterSlipFilter(pReportMonth,"n")

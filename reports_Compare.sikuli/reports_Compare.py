@@ -20,9 +20,12 @@ def Compare_OneReport(pReportName):
     logging.debug(' ')
     logging.debug('COMPARE: ' + pReportName)
 
+    removeVersion = "-" + Settings.tsVersion
+    reportNameMinusVersion = pReportName.replace(removeVersion,"")
+
 # point to old report, new report, and output file
     logging.debug('- set file names')
-    baseFile = Settings.baseRepFolder + "\\" + pReportName[5:] #trim version from name
+    baseFile = Settings.baseRepFolder + "\\" + reportNameMinusVersion #trim version from name
     newFile = Settings.repFolder + "\\" + pReportName
 
     global newRepLine
@@ -30,7 +33,7 @@ def Compare_OneReport(pReportName):
 # don't compare if old report doesn't exist
     logging.debug('- check for base file')
     if not os.path.exists(baseFile):
-        logging.debug("--> " + pReportName[5:] + " MISSING")
+        logging.debug("--> " + reportNameMinusVersion + " MISSING")
         myTools.pushReportLog(pReportName," MISSING")
         return
 

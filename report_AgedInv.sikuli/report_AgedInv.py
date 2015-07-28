@@ -4,27 +4,28 @@ import myTools
 import reports_Compare
 
 #---------------------------------------------------#
-def fPrint_ClientInfo(pReportName):
+def fPrint_AgedInv(pReportMonth,pRepExt):
 #---------------------------------------------------#
 
-    myTools.sectionStartTimeStamp("print clients")
+    myTools.sectionStartTimeStamp("print AgedInv")
 
-    logging.debug('fPrint_ClientInfo: ' + pReportName)
+    # name report file: ex: PreBill-03
+    reportName = myTools.buildRepName("AgedInv",pRepExt)
+    logging.debug('Print_AgedInv: ' + reportName)
 
     # make sure timeslips has focus
     myTools.getFocus()
-    
-    logging.debug('- open report list')
-    type("r",KeyModifier.ALT)
-    type("c")    
-    time.sleep(1)
-    
-    logging.debug('- set up client info listing')
-    type("client info")    
-    time.sleep(1)
-    type("o",KeyModifier.CTRL)
-    time.sleep(1)
 
+    logging.debug('- open AgedInv')
+    type("r",KeyModifier.ALT)
+    type("c")
+    time.sleep(1)
+    myTools.pressDOWN(2)
+    time.sleep(1)
+    
+    logging.debug('- set up report')
+    type("o",KeyModifier.CTRL)
+    
     # Options
     myTools.pressSHIFTTAB(4)
     type(Key.SPACE)
@@ -35,20 +36,22 @@ def fPrint_ClientInfo(pReportName):
     type(Key.SPACE)
     time.sleep(1)
 
-    # hide a/r fields
-    myTools.pressSHIFTTAB(5)
-    type(Key.SPACE)
+    # Due values
+    myTools.pressSHIFTTAB(4)
+    type("d")
     time.sleep(1)
 
     # OK
-    myTools.pressTAB(6)
-    type(Key.SPACE)
-    time.sleep(1)
-
-    # choose CSV
-    myTools.pressTAB(2)
-    type("c")    
     type(Key.ENTER)
     time.sleep(1)
 
-    myTools.finishReport(pReportName)
+    # choose csv
+    myTools.pressTAB(2)
+    type("c")
+    time.sleep(1)
+
+    # print the report
+    type(Key.ENTER)    
+    time.sleep(1)
+
+    myTools.finishReport(reportName)

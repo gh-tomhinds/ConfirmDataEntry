@@ -10,7 +10,7 @@ def fPrint_BillStage(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print bill stage")
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-BillStage-",pRepExt)    
+    reportName = myTools.buildRepName("BillStage",pRepExt)    
     logging.debug('Print_BillStage: ' + reportName)
 
     # make sure timeslips has focus

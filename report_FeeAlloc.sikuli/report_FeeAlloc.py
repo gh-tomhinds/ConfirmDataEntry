@@ -10,7 +10,7 @@ def Print_FeeAlloc(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print fee alloc")
 
     # name report file: ex: FeeAlloc-03
-    reportName = myTools.monthToName(pReportMonth,"-FeeAlloc-",pRepExt)
+    reportName = myTools.buildRepName("FeeAlloc",pRepExt)
     logging.debug('Print_FeeAlloc: ' + reportName)
 
     # make sure timeslips has focus

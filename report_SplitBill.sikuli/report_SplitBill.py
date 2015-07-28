@@ -10,7 +10,7 @@ def fPrint_SplitBill(pReportMonth,pRepExt):
     myTools.sectionStartTimeStamp("print splitbill")
 
     # name report file: ex: ARAgedBal-03
-    reportName = myTools.monthToName(pReportMonth,"-Split-",pRepExt)    
+    reportName = myTools.buildRepName("Split",pRepExt)    
     logging.debug('Print_SplitBill: ' + reportName)
 
     # make sure timeslips has focus

@@ -54,12 +54,25 @@ _global_Settings.fSetup_Envirnoment()
 # this section contains 1-off tests
 ##############################################################
 
-
-#from bill_Print import fSet_BillDate
-#fSet_BillDate(1)
-#reports_PostBill.fPrint_PostbillReports(10,"b") # use for quick test of reports
+#reports_PostBill.fPrint_PostbillReports(12,"b") # use for quick test of reports
 #type("f",KeyModifier.ALT)
 #type("x")
+
+##############################################################
+# this section contains 1-off tests
+##############################################################
+
+if int(Settings.tsVersion) > 2015:
+    buExt = ".tbu"
+else:
+    buExt = ".bku"
+
+for theMonth in range(12):
+    realMonth = theMonth + 1
+    for AorB in ("a","b"):
+        buName = Settings.tsVersion + "-" + "bill-" + str(myTools.padZero(realMonth)) + AorB + buExt
+        backup_Data.fRestore_Backup(buName)
+        reports_PostBill.fPrint_PostbillReports(realMonth,AorB) # use for quick test of reports
 
 ##############################################################
 # the real stuff starts below
