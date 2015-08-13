@@ -83,6 +83,11 @@ def getFocus():
 
     if int(Settings.tsVersion) > 2013:
         logging.debug('--- getFocus')        
+        
+        while not exists("billing_date_statusbar.png"):
+            logging.debug('-- wait for bill date')
+            time.sleep(1)
+        
         click("billing_date_statusbar.png")
 
 #---------------------------------------------------#
@@ -177,6 +182,10 @@ def enterCurrentMonthOnList(pMonth):
     type(endDate)
     time.sleep(1)
 
+    # get around defect where date doesn't expand
+    pressSHIFTTAB(1)
+    time.sleep(1)    
+
 #---------------------------------------------------#
 def enterYearToDateOnList(pMonth):
 #---------------------------------------------------#
@@ -195,6 +204,10 @@ def enterYearToDateOnList(pMonth):
         endDate = str(pMonth) + "/27/" + Settings.dataYear
         
     type(endDate)
+    time.sleep(1)
+
+    # get around defect where date doesn't expand
+    pressSHIFTTAB(1)
     time.sleep(1)
 
 #---------------------------------------------------#

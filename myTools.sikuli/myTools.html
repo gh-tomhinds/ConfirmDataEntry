@@ -74,6 +74,8 @@
 <span class="kw">import</span> datetime
 <span class="kw">import</span> logging
 <span class="kw">import</span> shutil
+<span class="kw">import</span> reports_Compare
+
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> setupLog():
@@ -152,6 +154,12 @@
 <span class="cmt">#---------------------------------------------------#</span>
 
     <span class="kw">if</span> int(Settings.tsVersion) &gt; <span class="dig">2013</span>:
+        logging.debug(<span class="str">'--- getFocus'</span>)
+
+        <span class="kw">while</span> <span class="kw">not</span> exists(<img src="billing_date_statusbar.png" />):
+            logging.debug(<span class="str">'-- wait for bill date'</span>)
+            time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
         <span class="skw">click</span>(<img src="billing_date_statusbar.png" />)
 
 <span class="cmt">#---------------------------------------------------#</span>
@@ -163,6 +171,18 @@
     <span class="kw">else</span>:
         <span class="skw">wait</span>(<img src="export_successful_wide.png" />, FOREVER)
     <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> openClient(pClient):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    logging.debug(<span class="str">'- open client: '</span> +  pClient)
+    <span class="skw">type</span>(<span class="str">"i"</span>,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">type</span>(pClient)
+    <span class="skw">type</span>(Key.ENTER)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> enterSlipFilter(pMonth,pExtraTab):
@@ -182,13 +202,16 @@
     logging.debug(<span class="str">'-- choose TODAY'</span>)
 
     <span class="skw">type</span>(Key.DOWN)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="cmt"># type in dates</span>
     logging.debug(<span class="str">'-- enter date range'</span>)
 
-    <span class="kw">if</span> pExtraTab == <span class="str">"y"</span>:
+    <span class="kw">if</span> pExtraTab == <span class="str">"yy"</span>:
+        pressTAB(<span class="dig">8</span>)
+    <span class="kw">elif</span> pExtraTab == <span class="str">"y"</span>:
         pressTAB(<span class="dig">7</span>)
     <span class="kw">else</span>:
         pressTAB(<span class="dig">6</span>)
@@ -205,6 +228,58 @@
         endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
 
     <span class="skw">type</span>(endDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterCurrentMonthOnList(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># start from Print To field</span>
+
+    pressSHIFTTAB(<span class="dig">3</span>)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        startDate = <span class="str">"12/1/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        startDate = str(pMonth) + <span class="str">"/1/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(startDate)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        endDate = <span class="str">"12/31/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(endDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get around defect where date doesn't expand</span>
+    pressSHIFTTAB(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> enterYearToDateOnList(pMonth):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># start from Print To field</span>
+
+    pressSHIFTTAB(<span class="dig">3</span>)
+
+    startDate = <span class="str">"1/1/"</span> + Settings.dataYear
+    <span class="skw">type</span>(startDate)
+    <span class="skw">type</span>(Key.TAB)
+
+    <span class="kw">if</span> pMonth &gt; <span class="dig">12</span>:
+        endDate = <span class="str">"12/31/"</span> + Settings.dataYear
+    <span class="kw">else</span>:
+        endDate = str(pMonth) + <span class="str">"/27/"</span> + Settings.dataYear
+
+    <span class="skw">type</span>(endDate)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="cmt"># get around defect where date doesn't expand</span>
+    pressSHIFTTAB(<span class="dig">1</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
@@ -242,7 +317,7 @@
     <span class="kw">while</span> exists(Pattern(<img src="completed.png" />).similar(<span class="dig">0.90</span>)):
         logging.debug(<span class="str">'-- completed msg exists'</span>)
         time.<span class="skw">sleep</span>(<span class="dig">3</span>)
-    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
     <span class="cmt">#wait for "calculating" box to disappear</span>
     <span class="kw">while</span> exists(Pattern(<img src="calculating_msg.png" />).similar(<span class="dig">0.90</span>)):
@@ -254,6 +329,8 @@
         logging.debug(<span class="str">'-- exported msg exists'</span>)
         <span class="skw">type</span>(<span class="str">"n"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    getFocus()
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> waitForWorksheet():
@@ -279,8 +356,36 @@
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> finishReport(pReportName):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="cmt"># fill in path and name; press ENTER</span>
+    <span class="skw">type</span>(Settings.repFolder + <span class="str">"\\"</span> + pReportName)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(Key.ENTER)
+
+    <span class="cmt"># wait for report to complete</span>
+    waitForReport()
+
+    <span class="cmt"># compare the report with baseline</span>
+    reports_Compare.Compare_OneReport(pReportName)
+
+    <span class="cmt"># close the report</span>
+    <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">type</span>(<span class="str">"n"</span>)                       <span class="cmt"># do not save report</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="kw">if</span> exists(<img src="view_full_example.png" />):
+        <span class="skw">type</span>(Key.F4,KeyModifier.CTRL)
+        time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    sectionEndTimeStamp()
+
+<span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> waitForTransList():
 <span class="cmt">#---------------------------------------------------#</span>
+
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="kw">while</span> <span class="kw">not</span> exists(<img src="inv_num_column.png" />):
         logging.debug(<span class="str">'-- waiting for trans list'</span>)
@@ -290,6 +395,7 @@
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> waitForTransEntry():
 <span class="cmt">#---------------------------------------------------#</span>
+
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="kw">while</span> <span class="kw">not</span> exists(<img src="ar_balance.png" />):
         logging.debug(<span class="str">'-- waiting for trans entry'</span>)
@@ -299,6 +405,7 @@
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> waitForFundsList():
 <span class="cmt">#---------------------------------------------------#</span>
+
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="kw">while</span> <span class="kw">not</span> exists(<img src="funds_account.png" />):
         logging.debug(<span class="str">'-- waiting for funds list'</span>)
@@ -308,10 +415,29 @@
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> enterClient(pClientName):
 <span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(pClientName)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
     <span class="skw">type</span>(Key.TAB)
     time.<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> checkForUnappliedAmount():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">4</span>)
+    <span class="kw">if</span> exists(<img src="go_back_edit_transaction.png" />):
+        logging.debug(<span class="str">"==&gt; UNAPPLIED AMOUNT"</span>)
+        <span class="skw">type</span>(Key.ENTER)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> waitForTransSave():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    <span class="kw">while</span> exists(Pattern(<img src="dash_in_title.png" />).similar(<span class="dig">0.90</span>)):
+        logging.debug(<span class="str">'-- saving'</span>)
+        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> startTSImport():
@@ -336,16 +462,6 @@
         <span class="skw">type</span>(<span class="str">"n"</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
-<span class="kw">def</span> checkForUnappliedAmount():
-<span class="cmt">#---------------------------------------------------#</span>
-
-    time.<span class="skw">sleep</span>(<span class="dig">4</span>)
-    <span class="kw">if</span> exists(<img src="go_back_edit_transaction.png" />):
-        logging.debug(<span class="str">"==&gt; UNAPPLIED AMOUNT"</span>)
-        <span class="skw">type</span>(Key.ENTER)
-        time.<span class="skw">sleep</span>(<span class="dig">2</span>)
-
-<span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> padZero(pNumber):
 <span class="cmt">#---------------------------------------------------#</span>
 
@@ -357,7 +473,7 @@
     <span class="kw">return</span>(padNumber)
 
 <span class="cmt">#---------------------------------------------------#</span>
-<span class="kw">def</span> monthToName(aMonth,aName,anExt):
+<span class="kw">def</span> bkuName(aMonth,aName,anExt):
 <span class="cmt">#---------------------------------------------------#</span>
 
     fileName = padZero(aMonth)
@@ -368,10 +484,18 @@
     <span class="kw">return</span>(fileName)
 
 <span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> buildRepName(aName,anExt):
+<span class="cmt">#---------------------------------------------------#</span>
+
+    fileName = aName + <span class="str">"-"</span> + Settings.PartOfRepName + anExt
+
+    <span class="kw">return</span>(fileName)
+
+<span class="cmt">#---------------------------------------------------#</span>
 <span class="kw">def</span> removeDateAndTime():
 <span class="cmt">#---------------------------------------------------#</span>
 
-    logging.debug(<span class="str">'- remove date and time'</span>)
+    logging.debug(<span class="str">'-- remove date and time'</span>)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
     <span class="skw">click</span>(<img src="design_tool.png" />)
@@ -387,6 +511,14 @@
     <span class="skw">type</span>(Key.DELETE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.DELETE)  <span class="cmt"># delete time</span>
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(Pattern(<img src="white_page.png" />).similar(<span class="dig">0.55</span>).targetOffset(<span class="dig">20</span>,<span class="dig">0</span>))
+    <span class="skw">type</span>(Key.DELETE)
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
+
+    <span class="skw">click</span>(Pattern(<img src="yellow_page.png" />).similar(<span class="dig">0.55</span>).targetOffset(<span class="dig">20</span>,<span class="dig">0</span>))
+    <span class="skw">type</span>(Key.DELETE)
     time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 
 <span class="cmt">#---------------------------------------------------#</span>
@@ -494,6 +626,32 @@
     <span class="skw">type</span>(<span class="str">"r"</span>)
     time.<span class="skw">sleep</span>(<span class="dig">3</span>)
     <span class="skw">type</span>(Key.ESC)
+
+<span class="cmt">#---------------------------------------------------#</span>
+<span class="kw">def</span> checkProcesses():
+<span class="cmt">#---------------------------------------------------#</span>
+
+    time.<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+    cmd = <span class="str">"wmic path Win32_PerfFormattedData_PerfProc_Process get Name,PrivateBytes"</span>
+    cmdOut = run(cmd)
+    processList = cmdOut.splitlines()
+
+    totalFbProcs = <span class="dig">0</span>
+    <span class="kw">for</span> oneProcess <span class="kw">in</span> processList:
+        oneProcess = oneProcess.strip()
+<span class="cmt">#        print(oneProcess)</span>
+
+        <span class="kw">if</span> oneProcess[:<span class="dig">7</span>] == <span class="str">"fb_inet"</span>:
+            totalFbProcs += <span class="dig">1</span>
+        <span class="kw">elif</span> oneProcess[:<span class="dig">8</span>] == <span class="str">"Timeslip"</span>:
+            procName, procSize = oneProcess.split()
+
+    logging.debug(<span class="str">' '</span>)
+    logging.debug(<span class="str">'&gt;&gt;&gt; FB Procs: '</span> + str(totalFbProcs))
+    logging.debug(<span class="str">'&gt;&gt;&gt; TS Size : '</span> + str(procSize))
+
+    time.<span class="skw">sleep</span>(<span class="dig">1</span>)
 </pre>
 </body>
 </html>

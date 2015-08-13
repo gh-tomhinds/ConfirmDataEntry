@@ -50,6 +50,9 @@ myTools.setupLog()
 myTools.startTimeStamp()
 _global_Settings.fSetup_Envirnoment()
 
+print Settings.getOS()
+print Settings.getOSVersion()
+
 ##############################################################
 # this section contains 1-off tests
 ##############################################################
@@ -62,6 +65,7 @@ _global_Settings.fSetup_Envirnoment()
 # this section contains 1-off tests
 ##############################################################
 
+"""
 if int(Settings.tsVersion) > 2015:
     buExt = ".tbu"
 else:
@@ -73,6 +77,7 @@ for theMonth in range(12):
         buName = Settings.tsVersion + "-" + "bill-" + str(myTools.padZero(realMonth)) + AorB + buExt
         backup_Data.fRestore_Backup(buName)
         reports_PostBill.fPrint_PostbillReports(realMonth,AorB) # use for quick test of reports
+"""
 
 ##############################################################
 # the real stuff starts below
