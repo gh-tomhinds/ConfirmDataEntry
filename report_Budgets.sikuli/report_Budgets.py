@@ -44,7 +44,7 @@ def printCliBudget(pReportMonth,pRepExt):
 
     myTools.sectionStartTimeStamp("print cli budget")
 
-    reportName = myTools.monthToName(pReportMonth,"-CliBud-",pRepExt)   
+    reportName = myTools.buildRepName("CliBud",pRepExt)
     logging.debug('Print_CliBudget: ' + reportName)
 
     # make sure timeslips has focus

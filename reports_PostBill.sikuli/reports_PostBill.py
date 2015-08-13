@@ -10,11 +10,13 @@ import report_AgedInv
 import report_AgedWIP
 import report_ARHistory
 import report_ARwRunBal
+import report_AvailableWIP
 import report_BillStage
 import report_Budgets
 import report_ClientsNotBilled
 import report_DaysToPay
 import report_FeeAlloc
+import report_FeeAllocPer
 import report_FirmAssList
 import report_FirmAssTot
 import report_FundsBal
@@ -22,6 +24,7 @@ import report_FundsList
 import report_FundsWRunBal
 import report_Hold
 import report_InvoiceListing
+import report_MissingTime
 import report_PayDistr
 import report_PayPerf
 import report_PBWorksheet
@@ -59,16 +62,28 @@ def fPrint_PostbillReports(pMonth,pAorB):
 
     csvExt = ".csv"
     txtExt = ".txt"
+
+    if (pMonth == 13) or (pMonth == 1):
+        logging.debug('!!! SKIP FEE ALLOCATION PERIOD REPORT')
+    else:        
+        report_FeeAllocPer.fPrint_FeeAllocPer(pMonth,csvExt)
+
+    report_ARwRunBal.fPrint_ARwRunBal(pMonth,txtExt)
+    report_FundsWRunBal.fPrint_FundsWRunBal(pMonth,txtExt)
+    report_ARHistory.fPrint_ARHistory(pMonth,csvExt)
+    report_InvoiceListing.fPrint_InvoiceListing(pMonth,txtExt)        
     
-    report_AgedInv.fPrint_AgedInv(pMonth,csvExt)
-    report_AgedClient.fPrint_AgedClient(pMonth,csvExt)
     """
+    report_AvailableWIP.fPrint_AvailableWIP(pMonth,csvExt)
+    report_MissingTime.fPrint_MissingTime(pMonth,csvExt,pAorB)
     report_ClientsNotBilled.Print_ClientsNotBilled(pMonth,csvExt)
     report_FirmAssList.fPrint_FirmAssList(pMonth,csvExt)
     report_PayPerf.fPrint_PayPerf(pMonth,csvExt)
 
     report_AgedARBal.Print_ARAgedBal(pMonth,csvExt)
     report_AgedARBalDate.Print_ARAgedBalDate(pMonth,csvExt)
+    report_AgedClient.fPrint_AgedClient(pMonth,csvExt)
+    report_AgedInv.fPrint_AgedInv(pMonth,csvExt)
     report_ARwRunBal.fPrint_ARwRunBal(pMonth,txtExt)
 
     report_ARHistory.fPrint_ARHistory(pMonth,csvExt)
