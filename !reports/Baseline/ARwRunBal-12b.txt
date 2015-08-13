@@ -6,7 +6,7 @@
 							Selection Criteria
 
 Clie.Classification	     Open
-A/R.Transaction Date	     12/1/2013 - Latest
+A/R.Transaction Date	     12/1/2013 - 12/27/2013
 
 Client
  Date		 Type	 Description									   Value	    Balance
@@ -14,38 +14,38 @@ Abington
 Beginning Balance													    7304.80
       12/27/2013 INV	 Invoice No. 15971								   32.01	    7336.81
       12/27/2013 PAY	 Payment from account								  (25.11)	    7311.70
-      12/28/2013 PAY	 Abington - 1 - 12/28/2013							 (101.12)	    7210.58
-      12/28/2013 CRED	 Abington - 1 - 12/28/2013							  (12.12)	    7198.46
 
-Ending Balance														    7198.46
+Ending Balance														    7311.70
+
 
 Acton
 Beginning Balance													    7509.35
       12/27/2013 INV	 Invoice No. 15972								   33.86	    7543.21
       12/27/2013 PAY	 Payment from account								  (25.11)	    7518.10
-      12/28/2013 PAY	 Acton - 2 - 12/28/2013 							 (102.12)	    7415.98
-      12/28/2013 CRED	 Acton - 2 - 12/28/2013 							  (12.12)	    7403.86
 
-Ending Balance														    7403.86
-
+Ending Balance														    7518.10
 
 Acushnet
 Beginning Balance													    6533.02
       12/27/2013 INV	 Invoice No. 15973								   30.84	    6563.86
       12/27/2013 PAY	 Payment from account								  (25.11)	    6538.75
-      12/28/2013 PAY	 Acushnet - 3 - 12/28/2013							 (103.12)	    6435.63
-      12/28/2013 CRED	 Acushnet - 3 - 12/28/2013							  (12.12)	    6423.51
 
-Ending Balance														    6423.51
+Ending Balance														    6538.75
 
 Adams
 Beginning Balance													    6429.78
       12/27/2013 INV	 Invoice No. 15974								  202.35	    6632.13
       12/27/2013 PAY	 Payment from account								  (25.11)	    6607.02
-      12/28/2013 PAY	 Adams - 4 - 12/28/2013 							 (104.12)	    6502.90
-      12/28/2013 CRED	 Adams - 4 - 12/28/2013 							  (12.12)	    6490.78
 
-Ending Balance														    6490.78
+Ending Balance														    6607.02
+
+
+Agawam
+Beginning Balance													    5942.49
+      12/27/2013 INV	 Invoice No. 15975								   30.41	    5972.90
+      12/27/2013 PAY	 Payment from account								  (25.11)	    5947.79
+
+Ending Balance														    5947.79
 
 
 
@@ -54,22 +54,12 @@ Ending Balance														    6490.78
 
 Client
  Date		 Type	 Description									   Value	    Balance
-Agawam
-Beginning Balance													    5942.49
-      12/27/2013 INV	 Invoice No. 15975								   30.41	    5972.90
-      12/27/2013 PAY	 Payment from account								  (25.11)	    5947.79
-      12/28/2013 PAY	 Agawam - 5 - 12/28/2013							 (105.12)	    5842.67
-      12/28/2013 CRED	 Agawam - 5 - 12/28/2013							  (12.12)	    5830.55
-
-Ending Balance														    5830.55
-
-
 Alford
 Beginning Balance													    8643.51
       12/27/2013 INV	 Invoice No. 15976								  420.83	    9064.34
-      12/28/2013 CRED	 Alford - 6 - 12/28/2013							  (12.12)	    9052.22
 
-Ending Balance														    9052.22
+Ending Balance														    9064.34
+
 
 Amesbury
 Beginning Balance													   21341.32
@@ -78,13 +68,12 @@ Beginning Balance													   21341.32
 
 Ending Balance														   23413.21
 
-
 Amherst
 Beginning Balance													    7354.14
       12/27/2013 INV	 Invoice No. 15978								  376.45	    7730.59
-      12/28/2013 PAY	 Amherst - 8 - 12/28/2013							 (108.12)	    7622.47
 
-Ending Balance														    7622.47
+Ending Balance														    7730.59
+
 
 Andover
 Beginning Balance													   19910.75
@@ -92,12 +81,22 @@ Beginning Balance													   19910.75
 
 Ending Balance														   21429.27
 
-
 Aquinnah
 Beginning Balance													    5667.94
       12/27/2013 INV	 Invoice No. 15980								   23.29	    5691.23
 
 Ending Balance														    5691.23
+
+
+Arlington
+Beginning Balance													    7855.82
+      12/27/2013 INV	 Invoice No. 15981								   32.28	    7888.10
+
+Ending Balance														    7888.10
+
+Ashburnham
+Beginning Balance													    8496.50
+      12/27/2013 INV	 Invoice No. 15982								   34.92	    8531.42
 
 
 
@@ -106,16 +105,6 @@ Ending Balance														    5691.23
 
 Client
  Date		 Type	 Description									   Value	    Balance
-Arlington
-Beginning Balance													    7855.82
-      12/27/2013 INV	 Invoice No. 15981								   32.28	    7888.10
-
-Ending Balance														    7888.10
-
-
-Ashburnham
-Beginning Balance													    8496.50
-      12/27/2013 INV	 Invoice No. 15982								   34.92	    8531.42
 
 Ending Balance														    8531.42
 
@@ -123,10 +112,8 @@ Ashby
 Beginning Balance													    8696.37
       12/27/2013 INV	 Invoice No. 15983								   35.74	    8732.11
       12/27/2013 PAY	 Payment from account								  (25.11)	    8707.00
-      12/28/2013 PAY	 Ashby - 13 - 12/28/2013							 (113.12)	    8593.88
 
-Ending Balance														    8593.88
-
+Ending Balance														    8707.00
 
 Ashfield
 Beginning Balance													    7576.08
@@ -137,10 +124,8 @@ Ending Balance														    7607.21
 Ashland
 Beginning Balance													    6676.70
       12/27/2013 INV	 Invoice No. 15985								   27.44	    6704.14
-      12/28/2013 CRED	 Ashland - 15 - 12/28/2013							  (12.12)	    6692.02
 
-Ending Balance														    6692.02
-
+Ending Balance														    6704.14
 
 Athol
 Beginning Balance													    7118.76
@@ -148,9 +133,18 @@ Beginning Balance													    7118.76
 
 Ending Balance														    7148.02
 
+
 Attleboro
 Beginning Balance													    6403.96
       12/27/2013 INV	 Invoice No. 15987								   26.32	    6430.28
+
+Ending Balance														    6430.28
+
+Auburn
+Beginning Balance													    3503.15
+      12/27/2013 INV	 Invoice No. 15988								   14.40	    3517.55
+
+Ending Balance														    3517.55
 
 
 
@@ -159,16 +153,6 @@ Beginning Balance													    6403.96
 
 Client
  Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														    6430.28
-
-Auburn
-Beginning Balance													    3503.15
-      12/27/2013 INV	 Invoice No. 15988								   14.40	    3517.55
-      12/28/2013 PAY	 Auburn - 18 - 12/28/2013							 (118.12)	    3399.43
-
-Ending Balance														    3399.43
-
 Avon
 Beginning Balance													    3771.70
       12/27/2013 INV	 Invoice No. 15989								   15.50	    3787.20
@@ -199,9 +183,20 @@ Ending Balance														    4020.66
 Becket
 Beginning Balance													    4465.82
       12/27/2013 INV	 Invoice No. 15993								   18.35	    4484.17
-      12/28/2013 PAY	 Becket - 23 - 12/28/2013							 (123.12)	    4361.05
 
-Ending Balance														    4361.05
+Ending Balance														    4484.17
+
+
+Bedford
+Beginning Balance													    9739.16
+      12/27/2013 INV	 Invoice No. 15994								   65.01	    9804.17
+
+Ending Balance														    9804.17
+
+Belchertown
+Beginning Balance													    6164.28
+      12/27/2013 INV	 Invoice No. 15995								   25.33	    6189.61
+      12/27/2013 PAY	 Payment from account								  (25.11)	    6164.50
 
 
 
@@ -211,19 +206,6 @@ Ending Balance														    4361.05
 Client
  Date		 Type	 Description									   Value	    Balance
 
-Bedford
-Beginning Balance													    9739.16
-      12/27/2013 INV	 Invoice No. 15994								   65.01	    9804.17
-      12/28/2013 CRED	 Bedford - 24 - 12/28/2013							  (12.12)	    9792.05
-
-Ending Balance														    9792.05
-
-
-Belchertown
-Beginning Balance													    6164.28
-      12/27/2013 INV	 Invoice No. 15995								   25.33	    6189.61
-      12/27/2013 PAY	 Payment from account								  (25.11)	    6164.50
-
 Ending Balance														    6164.50
 
 Bellingham
@@ -231,7 +213,6 @@ Beginning Balance													    9599.43
       12/27/2013 INV	 Invoice No. 15996								   39.45	    9638.88
 
 Ending Balance														    9638.88
-
 
 Belmont
 Beginning Balance													   11968.23
@@ -242,10 +223,8 @@ Ending Balance														   12017.41
 Berkley
 Beginning Balance													    8410.38
       12/27/2013 INV	 Invoice No. 15998								   34.56	    8444.94
-      12/28/2013 PAY	 Berkley - 28 - 12/28/2013							 (128.12)	    8316.82
 
-Ending Balance														    8316.82
-
+Ending Balance														    8444.94
 
 Berlin
 Beginning Balance													    6227.94
@@ -255,14 +234,6 @@ Ending Balance														    6253.53
 
 Bernardston
 Beginning Balance													    3899.45
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
       12/27/2013 INV	 Invoice No. 16000								   16.03	    3915.48
 
 Ending Balance														    3915.48
@@ -273,7 +244,14 @@ Beginning Balance													    5074.15
       12/27/2013 PAY	 Payment from account								  (20.85)	    5074.15
 
 Ending Balance														    5074.15
+
 
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 Billerica
 Beginning Balance													    6926.53
       12/27/2013 INV	 Invoice No. 16002								   28.47	    6955.00
@@ -284,11 +262,8 @@ Ending Balance														    6955.00
 Blackstone
 Beginning Balance													    8323.85
       12/27/2013 INV	 Invoice No. 16003								   34.21	    8358.06
-      12/28/2013 WOFF	 Blackstone - 1 - 12/28/2013							   (2.12)	    8355.94
-      12/28/2013 PAY	 Blackstone - 33 - 12/28/2013							 (133.12)	    8222.82
-      12/28/2013 CRED	 Blackstone - 33 - 12/28/2013							  (12.12)	    8210.70
 
-Ending Balance														    8210.70
+Ending Balance														    8358.06
 
 Blandford
 Beginning Balance													    5431.75
@@ -306,16 +281,9 @@ Ending Balance														   10094.58
 Boston
 Beginning Balance													   10083.61
       12/27/2013 INV	 Invoice No. 16006								   41.44	   10125.05
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														   10125.05
+
 
 Bourne
 Beginning Balance													   11120.90
@@ -327,10 +295,16 @@ Ending Balance														   11141.49
 Boxborough
 Beginning Balance													    8590.61
       12/27/2013 INV	 Invoice No. 16008								   35.30	    8625.91
-      12/28/2013 PAY	 Boxborough - 38 - 12/28/2013							 (138.12)	    8487.79
+
 
-Ending Balance														    8487.79
 
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    8625.91
 
 Boxford
 Beginning Balance													    7141.14
@@ -344,7 +318,6 @@ Beginning Balance													    6339.13
 
 Ending Balance														    6365.18
 
-
 Braintree
 Beginning Balance													    4391.93
       12/27/2013 INV	 Invoice No. 16011								   18.05	    4409.98
@@ -354,9 +327,21 @@ Ending Balance														    4409.98
 Brewster
 Beginning Balance													    5010.81
       12/27/2013 INV	 Invoice No. 16012								   20.59	    5031.40
-      12/28/2013 CRED	 Brewster - 42 - 12/28/2013							  (12.12)	    5019.28
 
-Ending Balance														    5019.28
+Ending Balance														    5031.40
+
+Bridgewater
+Beginning Balance													    5699.69
+      12/27/2013 INV	 Invoice No. 16013								   23.42	    5723.11
+      12/27/2013 PAY	 Payment from account								  (23.42)	    5699.69
+
+Ending Balance														    5699.69
+
+Brimfield
+Beginning Balance													    6628.00
+      12/27/2013 INV	 Invoice No. 16014								   27.24	    6655.24
+
+Ending Balance														    6655.24
 
 
 
@@ -365,22 +350,6 @@ Ending Balance														    5019.28
 
 Client
  Date		 Type	 Description									   Value	    Balance
-
-Bridgewater
-Beginning Balance													    5699.69
-      12/27/2013 INV	 Invoice No. 16013								   23.42	    5723.11
-      12/27/2013 PAY	 Payment from account								  (23.42)	    5699.69
-      12/28/2013 PAY	 Bridgewater - 43 - 12/28/2013							 (143.12)	    5556.57
-
-Ending Balance														    5556.57
-
-
-Brimfield
-Beginning Balance													    6628.00
-      12/27/2013 INV	 Invoice No. 16014								   27.24	    6655.24
-
-Ending Balance														    6655.24
-
 Brockton
 Beginning Balance													    7744.20
       12/27/2013 INV	 Invoice No. 16015								   31.83	    7776.03
@@ -404,24 +373,16 @@ Ending Balance														    5052.78
 Buckland
 Beginning Balance													    6258.01
       12/27/2013 INV	 Invoice No. 16018								   25.72	    6283.73
-      12/28/2013 PAY	 Buckland - 48 - 12/28/2013							 (148.12)	    6135.61
 
-Ending Balance														    6135.61
+Ending Balance														    6283.73
 
 Burlington
 Beginning Balance													    6341.85
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
       12/27/2013 INV	 Invoice No. 16019								   26.06	    6367.91
       12/27/2013 PAY	 Payment from account								  (25.11)	    6342.80
 
 Ending Balance														    6342.80
+
 
 Cambridge
 Beginning Balance													    6345.13
@@ -432,10 +393,16 @@ Ending Balance														    6371.21
 Canton
 Beginning Balance													    6007.76
       12/27/2013 INV	 Invoice No. 16021								   24.69	    6032.45
-      12/28/2013 CRED	 Canton - 51 - 12/28/2013							  (12.12)	    6020.33
+
 
-Ending Balance														    6020.33
 
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    6032.45
 
 Carlisle
 Beginning Balance													    4362.43
@@ -446,11 +413,8 @@ Ending Balance														    4380.36
 Carver
 Beginning Balance													    4922.07
       12/27/2013 INV	 Invoice No. 16023								   20.23	    4942.30
-      12/28/2013 WOFF	 Carver - 2 - 12/28/2013							   (3.12)	    4939.18
-      12/28/2013 PAY	 Carver - 53 - 12/28/2013							 (153.12)	    4786.06
 
-Ending Balance														    4786.06
-
+Ending Balance														    4942.30
 
 Charlemont
 Beginning Balance													    5528.08
@@ -462,16 +426,9 @@ Charlton
 Beginning Balance													    7939.93
       12/27/2013 INV	 Invoice No. 16025								   32.63	    7972.56
       12/27/2013 PAY	 Payment from account								  (25.11)	    7947.45
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    7947.45
+
 
 Chatham
 Beginning Balance													    8537.76
@@ -484,34 +441,6 @@ Beginning Balance													    8646.62
       12/27/2013 INV	 Invoice No. 16027								   35.53	    8682.15
 
 Ending Balance														    8682.15
-
-Chelsea
-Beginning Balance													    7639.83
-      12/27/2013 INV	 Invoice No. 16028								   31.40	    7671.23
-      12/28/2013 PAY	 Chelsea - 58 - 12/28/2013							 (158.12)	    7513.11
-
-Ending Balance														    7513.11
-
-Cheshire
-Beginning Balance													    6528.80
-      12/27/2013 INV	 Invoice No. 16029								   86.82	    6615.62
-
-Ending Balance														    6615.62
-
-
-Chester
-Beginning Balance													    7239.80
-      12/27/2013 INV	 Invoice No. 16030								   29.75	    7269.55
-      12/28/2013 CRED	 Chester - 60 - 12/28/2013							  (12.12)	    7257.43
-
-Ending Balance														    7257.43
-
-Chesterfield
-Beginning Balance													    6391.96
-      12/27/2013 INV	 Invoice No. 16031								   26.27	    6418.23
-      12/27/2013 PAY	 Payment from account								  (25.11)	    6393.12
-
-Ending Balance														    6393.12
 
 
 
@@ -520,6 +449,32 @@ Ending Balance														    6393.12
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Chelsea
+Beginning Balance													    7639.83
+      12/27/2013 INV	 Invoice No. 16028								   31.40	    7671.23
+
+Ending Balance														    7671.23
+
+
+Cheshire
+Beginning Balance													    6528.80
+      12/27/2013 INV	 Invoice No. 16029								   86.82	    6615.62
+
+Ending Balance														    6615.62
+
+Chester
+Beginning Balance													    7239.80
+      12/27/2013 INV	 Invoice No. 16030								   29.75	    7269.55
+
+Ending Balance														    7269.55
+
+
+Chesterfield
+Beginning Balance													    6391.96
+      12/27/2013 INV	 Invoice No. 16031								   26.27	    6418.23
+      12/27/2013 PAY	 Payment from account								  (25.11)	    6393.12
+
+Ending Balance														    6393.12
 
 Chicopee
 Beginning Balance													    6025.27
@@ -531,16 +486,22 @@ Ending Balance														    6050.03
 Chilmark
 Beginning Balance													    4328.90
       12/27/2013 INV	 Invoice No. 16033								   17.79	    4346.69
-      12/28/2013 PAY	 Chilmark - 63 - 12/28/2013							 (163.12)	    4183.57
 
-Ending Balance														    4183.57
+Ending Balance														    4346.69
 
 Clarksburg
 Beginning Balance													    4705.73
       12/27/2013 INV	 Invoice No. 16034								   19.34	    4725.07
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    4725.07
-
 
 Clinton
 Beginning Balance													    5619.86
@@ -554,7 +515,6 @@ Beginning Balance													    7830.26
 
 Ending Balance														    7862.44
 
-
 Colrain
 Beginning Balance													    8449.42
       12/27/2013 INV	 Invoice No. 16037								   34.72	    8484.14
@@ -565,6 +525,21 @@ Ending Balance														    8459.03
 Concord
 Beginning Balance													    8618.54
       12/27/2013 INV	 Invoice No. 16038								   35.42	    8653.96
+
+Ending Balance														    8653.96
+
+
+Conway
+Beginning Balance													    5614.86
+      12/27/2013 INV	 Invoice No. 16039								   23.07	    5637.93
+
+Ending Balance														    5637.93
+
+Cummington
+Beginning Balance													    6710.26
+      12/27/2013 INV	 Invoice No. 16040								   47.57	    6757.83
+
+Ending Balance														    6757.83
 
 
 
@@ -573,30 +548,12 @@ Beginning Balance													    8618.54
 
 Client
  Date		 Type	 Description									   Value	    Balance
-      12/28/2013 PAY	 Concord - 68 - 12/28/2013							 (168.12)	    8485.84
-
-Ending Balance														    8485.84
-
-Conway
-Beginning Balance													    5614.86
-      12/27/2013 INV	 Invoice No. 16039								   23.07	    5637.93
-      12/28/2013 REV	 Reverse Pay: Conway - 12/28/2013 - 2						  169.11	    5807.04
-      12/28/2013 CRED	 Conway - 69 - 12/28/2013							  (12.12)	    5794.92
-
-Ending Balance														    5794.92
-
-Cummington
-Beginning Balance													    6710.26
-      12/27/2013 INV	 Invoice No. 16040								   47.57	    6757.83
-
-Ending Balance														    6757.83
-
-
 Dalton
 Beginning Balance													    7060.45
       12/27/2013 INV	 Invoice No. 16041								   29.02	    7089.47
 
 Ending Balance														    7089.47
+
 
 Danvers
 Beginning Balance													    6500.70
@@ -604,26 +561,17 @@ Beginning Balance													    6500.70
 
 Ending Balance														    6527.42
 
-
 Dartmouth
 Beginning Balance													    4968.73
       12/27/2013 INV	 Invoice No. 16043								   20.42	    4989.15
       12/27/2013 PAY	 Payment from account								  (20.42)	    4968.73
-      12/28/2013 PAY	 Dartmouth - 73 - 12/28/2013							 (173.12)	    4795.61
 
-Ending Balance														    4795.61
+Ending Balance														    4968.73
+
 
 Dedham
 Beginning Balance													    3457.89
       12/27/2013 INV	 Invoice No. 16044								   14.21	    3472.10
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    3472.10
 
@@ -632,6 +580,7 @@ Beginning Balance													    3946.27
       12/27/2013 INV	 Invoice No. 16045								   16.22	    3962.49
 
 Ending Balance														    3962.49
+
 
 Dennis
 Beginning Balance													    5767.76
@@ -642,17 +591,22 @@ Ending Balance														    5791.46
 Dighton
 Beginning Balance													    7962.92
       12/27/2013 INV	 Invoice No. 16047								   32.72	    7995.64
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    7995.64
 
 Douglas
 Beginning Balance													    8586.38
       12/27/2013 INV	 Invoice No. 16048								   35.29	    8621.67
-      12/28/2013 PAY	 Douglas - 78 - 12/28/2013							 (178.12)	    8443.55
-      12/28/2013 CRED	 Douglas - 78 - 12/28/2013							  (12.12)	    8431.43
 
-Ending Balance														    8431.43
-
+Ending Balance														    8621.67
 
 Dover
 Beginning Balance													    8556.71
@@ -666,14 +620,6 @@ Beginning Balance													    7509.15
       12/27/2013 INV	 Invoice No. 16050								   30.86	    7540.01
 
 Ending Balance														    7540.01
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 Dudley
 Beginning Balance													    7690.61
@@ -691,33 +637,8 @@ Ending Balance														    9205.33
 Duxbury
 Beginning Balance													    7680.82
       12/27/2013 INV	 Invoice No. 16053								   31.57	    7712.39
-      12/28/2013 PAY	 Duxbury - 83 - 12/28/2013							 (183.12)	    7529.27
 
-Ending Balance														    7529.27
-
-
-East.Bridgewater
-Beginning Balance													    6752.06
-      12/27/2013 INV	 Invoice No. 16054								   28.46	    6780.52
-      12/28/2013 PAY	 East.Bridgewater - 84 - 12/28/2013						 (184.12)	    6596.40
-      12/28/2013 TRN	 East.Bridgewater - 1 - 12/28/2013						   11.12	    6607.52
-
-Ending Balance														    6607.52
-
-East.Brookfield
-Beginning Balance													    5059.65
-      12/27/2013 INV	 Invoice No. 16055								   20.84	    5080.49
-      12/27/2013 PAY	 Payment from account								   (9.73)	    5070.76
-      12/28/2013 PAY	 East.Brookfield - 85 - 12/28/2013						 (185.12)	    4885.64
-      12/28/2013 PAY	 Transferred payment								  (11.12)	    4874.52
-      12/28/2013 TRNF	 East.Brookfield - 1 - 12/28/2013						  185.12	    5059.64
-
-Ending Balance														    5059.64
-
-East.Longmeadow
-Beginning Balance													    1117.67
-      12/27/2013 INV	 Invoice No. 16056								    4.59	    1122.26
-      12/27/2013 PAY	 Payment from account								   (4.59)	    1117.67
+Ending Balance														    7712.39
 
 
 
@@ -726,22 +647,39 @@ Beginning Balance													    1117.67
 
 Client
  Date		 Type	 Description									   Value	    Balance
+East.Bridgewater
+Beginning Balance													    6752.06
+      12/27/2013 INV	 Invoice No. 16054								   28.46	    6780.52
+
+Ending Balance														    6780.52
+
+
+East.Brookfield
+Beginning Balance													    5059.65
+      12/27/2013 INV	 Invoice No. 16055								   20.84	    5080.49
+      12/27/2013 PAY	 Payment from account								   (9.73)	    5070.76
+
+Ending Balance														    5070.76
+
+East.Longmeadow
+Beginning Balance													    1117.67
+      12/27/2013 INV	 Invoice No. 16056								    4.59	    1122.26
+      12/27/2013 PAY	 Payment from account								   (4.59)	    1117.67
 
 Ending Balance														    1117.67
+
 
 Eastham
 Beginning Balance													    8656.40
       12/27/2013 INV	 Invoice No. 16057								   35.57	    8691.97
-      12/28/2013 CRED	 Eastham - 87 - 12/28/2013							  (12.12)	    8679.85
 
-Ending Balance														    8679.85
+Ending Balance														    8691.97
 
 Easthampton
 Beginning Balance													    5911.31
       12/27/2013 INV	 Invoice No. 16058								   24.29	    5935.60
-      12/28/2013 PAY	 Easthampton - 88 - 12/28/2013							 (188.12)	    5747.48
 
-Ending Balance														    5747.48
+Ending Balance														    5935.60
 
 
 Easton
@@ -753,9 +691,16 @@ Ending Balance														   13404.55
 Edgartown
 Beginning Balance													   13048.31
       12/27/2013 INV	 Invoice No. 16060								   53.62	   13101.93
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														   13101.93
-
 
 Egremont
 Beginning Balance													    7105.88
@@ -769,6 +714,31 @@ Beginning Balance													    6283.79
       12/27/2013 INV	 Invoice No. 16062								   25.82	    6309.61
 
 Ending Balance														    6309.61
+
+Essex
+Beginning Balance													    7668.45
+      12/27/2013 INV	 Invoice No. 16063								   31.51	    7699.96
+
+Ending Balance														    7699.96
+
+Everett
+Beginning Balance													    4764.17
+      12/27/2013 INV	 Invoice No. 16064								  114.57	    4878.74
+
+Ending Balance														    4878.74
+
+
+Fairhaven
+Beginning Balance													    8525.97
+      12/27/2013 INV	 Invoice No. 16065								   55.03	    8581.00
+
+Ending Balance														    8581.00
+
+Fall River
+Beginning Balance													    8498.97
+      12/27/2013 INV	 Invoice No. 16066								   34.93	    8533.90
+
+Ending Balance														    8533.90
 
 
 
@@ -777,36 +747,6 @@ Ending Balance														    6309.61
 
 Client
  Date		 Type	 Description									   Value	    Balance
-
-Essex
-Beginning Balance													    7668.45
-      12/27/2013 INV	 Invoice No. 16063								   31.51	    7699.96
-      12/28/2013 PAY	 Essex - 93 - 12/28/2013							 (193.12)	    7506.84
-
-Ending Balance														    7506.84
-
-
-Everett
-Beginning Balance													    4764.17
-      12/27/2013 INV	 Invoice No. 16064								  114.57	    4878.74
-      12/28/2013 REV	 Reverse Pay: Everett - 12/28/2013 - 1						  194.11	    5072.85
-
-Ending Balance														    5072.85
-
-Fairhaven
-Beginning Balance													    8525.97
-      12/27/2013 INV	 Invoice No. 16065								   55.03	    8581.00
-
-Ending Balance														    8581.00
-
-
-Fall River
-Beginning Balance													    8498.97
-      12/27/2013 INV	 Invoice No. 16066								   34.93	    8533.90
-      12/28/2013 CRED	 Fall River - 96 - 12/28/2013							  (12.12)	    8521.78
-
-Ending Balance														    8521.78
-
 Falmouth
 Beginning Balance													   11250.16
       12/27/2013 INV	 Invoice No. 16067								   46.23	   11296.39
@@ -819,17 +759,8 @@ Fitchburg
 Beginning Balance													    3993.77
       12/27/2013 INV	 Invoice No. 16068								   16.41	    4010.18
       12/27/2013 PAY	 Payment from account								   (8.14)	    4002.04
-      12/28/2013 PAY	 Fitchburg - 98 - 12/28/2013							 (198.12)	    3803.92
 
-Ending Balance														    3803.92
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
+Ending Balance														    4002.04
 
 Florida
 Beginning Balance													    7124.51
@@ -861,10 +792,16 @@ Freetown
 Beginning Balance													    6958.13
       12/27/2013 INV	 Invoice No. 16073								   28.60	    6986.73
       12/27/2013 PAY	 Payment from account								  (25.11)	    6961.62
-      12/28/2013 PAY	 Freetown - 103 - 12/28/2013							 (203.12)	    6758.50
+
 
-Ending Balance														    6758.50
 
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    6961.62
 
 Gardner
 Beginning Balance													    7189.76
@@ -875,17 +812,8 @@ Ending Balance														    7219.31
 Georgetown
 Beginning Balance													    6223.15
       12/27/2013 INV	 Invoice No. 16075								   25.57	    6248.72
-
 
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-      12/28/2013 CRED	 Georgetown - 105 - 12/28/2013							  (12.12)	    6236.60
-
-Ending Balance														    6236.60
+Ending Balance														    6248.72
 
 Gill
 Beginning Balance													    5883.76
@@ -902,9 +830,8 @@ Ending Balance														    4265.71
 Goshen
 Beginning Balance													    4869.83
       12/27/2013 INV	 Invoice No. 16078								   20.01	    4889.84
-      12/28/2013 PAY	 Goshen - 108 - 12/28/2013							 (208.12)	    4681.72
 
-Ending Balance														    4681.72
+Ending Balance														    4889.84
 
 Gosnold
 Beginning Balance													    5356.18
@@ -912,19 +839,6 @@ Beginning Balance													    5356.18
       12/27/2013 PAY	 Payment from account								  (22.01)	    5356.18
 
 Ending Balance														    5356.18
-
-
-Grafton
-Beginning Balance													    7803.08
-      12/27/2013 INV	 Invoice No. 16080								   32.07	    7835.15
-
-Ending Balance														    7835.15
-
-Granby
-Beginning Balance													    8424.97
-      12/27/2013 INV	 Invoice No. 16081								   34.62	    8459.59
-
-Ending Balance														    8459.59
 
 
 
@@ -933,6 +847,18 @@ Ending Balance														    8459.59
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Grafton
+Beginning Balance													    7803.08
+      12/27/2013 INV	 Invoice No. 16080								   32.07	    7835.15
+
+Ending Balance														    7835.15
+
+
+Granby
+Beginning Balance													    8424.97
+      12/27/2013 INV	 Invoice No. 16081								   34.62	    8459.59
+
+Ending Balance														    8459.59
 
 Granville
 Beginning Balance													    8533.90
@@ -944,16 +870,14 @@ Ending Balance														    8568.97
 Great Barrington
 Beginning Balance													    7526.71
       12/27/2013 INV	 Invoice No. 16083								   30.93	    7557.64
-      12/28/2013 PAY	 Great Barrington - 113 - 12/28/2013						 (213.12)	    7344.52
 
-Ending Balance														    7344.52
+Ending Balance														    7557.64
 
 Greenfield
 Beginning Balance													    6384.67
       12/27/2013 INV	 Invoice No. 16084								   26.24	    6410.91
-      12/28/2013 CRED	 Greenfield - 114 - 12/28/2013							  (12.12)	    6398.79
 
-Ending Balance														    6398.79
+Ending Balance														    6410.91
 
 
 Groton
@@ -966,17 +890,6 @@ Ending Balance														    7057.05
 Groveland
 Beginning Balance													    6190.46
       12/27/2013 INV	 Invoice No. 16086								   25.44	    6215.90
-
-Ending Balance														    6215.90
-
-
-Hadley
-Beginning Balance													    5180.43
-      12/27/2013 INV	 Invoice No. 16087								   21.29	    5201.72
-      12/28/2013 PAY	 bds-pay: Hadley - 12/28/2013							  (31.12)	    5170.60
-			 . Check No. pay-1-12
-
-Ending Balance														    5170.60
 
 
 
@@ -985,15 +898,20 @@ Ending Balance														    5170.60
 
 Client
  Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    6215.90
+
+Hadley
+Beginning Balance													    5180.43
+      12/27/2013 INV	 Invoice No. 16087								   21.29	    5201.72
+
+Ending Balance														    5201.72
+
 Halifax
 Beginning Balance													    3287.72
       12/27/2013 INV	 Invoice No. 16088								   13.51	    3301.23
-      12/28/2013 PAY	 Halifax - 118 - 12/28/2013							 (218.12)	    3083.11
-      12/28/2013 PAY	 bds-pay: Halifax - 12/28/2013							  (32.12)	    3050.99
-			 . Check No. pay-2-12
 
-Ending Balance														    3050.99
-
+Ending Balance														    3301.23
 
 Hamilton
 Beginning Balance													    4602.07
@@ -1007,7 +925,6 @@ Beginning Balance													    5087.66
 
 Ending Balance														    5108.57
 
-
 Hancock
 Beginning Balance													    6880.22
       12/27/2013 INV	 Invoice No. 16091								   28.27	    6908.49
@@ -1020,15 +937,6 @@ Beginning Balance													    6095.93
       12/27/2013 INV	 Invoice No. 16092								   25.05	    6120.98
 
 Ending Balance														    6120.98
-
-
-Hanson
-Beginning Balance													    5787.57
-      12/27/2013 INV	 Invoice No. 16093								   23.78	    5811.35
-      12/28/2013 PAY	 Hanson - 123 - 12/28/2013							 (223.12)	    5588.23
-      12/28/2013 CRED	 Hanson - 123 - 12/28/2013							  (12.12)	    5576.11
-
-Ending Balance														    5576.11
 
 
 
@@ -1037,12 +945,18 @@ Ending Balance														    5576.11
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Hanson
+Beginning Balance													    5787.57
+      12/27/2013 INV	 Invoice No. 16093								   23.78	    5811.35
+
+Ending Balance														    5811.35
+
+
 Hardwick
 Beginning Balance													    6969.54
       12/27/2013 INV	 Invoice No. 16094								   28.64	    6998.18
 
 Ending Balance														    6998.18
-
 
 Harvard
 Beginning Balance													    5949.83
@@ -1050,12 +964,12 @@ Beginning Balance													    5949.83
 
 Ending Balance														    5974.28
 
+
 Harwich
 Beginning Balance													    7110.33
       12/27/2013 INV	 Invoice No. 16096								   29.22	    7139.55
 
 Ending Balance														    7139.55
-
 
 Hatfield
 Beginning Balance													    6398.37
@@ -1064,24 +978,16 @@ Beginning Balance													    6398.37
 
 Ending Balance														    6399.55
 
+
 Haverhill
 Beginning Balance													    6020.78
       12/27/2013 INV	 Invoice No. 16098								   24.74	    6045.52
-      12/28/2013 PAY	 Haverhill - 128 - 12/28/2013							 (228.12)	    5817.40
-      12/28/2013 REF	 Refund: Haverhill - 12/28/2013 						   99.12	    5916.52
 
-Ending Balance														    5916.52
-
+Ending Balance														    6045.52
 
 Hawley
 Beginning Balance													    4174.97
       12/27/2013 INV	 Invoice No. 16099								  147.68	    4322.65
-
-Ending Balance														    4322.65
-
-Heath
-Beginning Balance													    4771.27
-      12/27/2013 INV	 Invoice No. 16100								   19.61	    4790.88
 
 
 
@@ -1090,6 +996,12 @@ Beginning Balance													    4771.27
 
 Client
  Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    4322.65
+
+Heath
+Beginning Balance													    4771.27
+      12/27/2013 INV	 Invoice No. 16100								   19.61	    4790.88
 
 Ending Balance														    4790.88
 
@@ -1102,17 +1014,16 @@ Ending Balance														    5599.32
 Hinsdale
 Beginning Balance													    7799.41
       12/27/2013 INV	 Invoice No. 16102								   32.05	    7831.46
-      12/28/2013 CRED	 Hinsdale - 132 - 12/28/2013							  (12.12)	    7819.34
 
-Ending Balance														    7819.34
+Ending Balance														    7831.46
 
 Holbrook
 Beginning Balance													    8379.11
       12/27/2013 INV	 Invoice No. 16103								   34.43	    8413.54
       12/27/2013 PAY	 Payment from account								  (25.11)	    8388.43
-      12/28/2013 PAY	 Holbrook - 133 - 12/28/2013							 (233.12)	    8155.31
 
-Ending Balance														    8155.31
+Ending Balance														    8388.43
+
 
 Holden
 Beginning Balance													    8284.15
@@ -1120,18 +1031,11 @@ Beginning Balance													    8284.15
 
 Ending Balance														    8318.19
 
-
 Holland
 Beginning Balance													    7525.40
       12/27/2013 INV	 Invoice No. 16105								   30.93	    7556.33
 
 Ending Balance														    7556.33
-
-Holliston
-Beginning Balance													    6530.05
-      12/27/2013 INV	 Invoice No. 16106								   26.84	    6556.89
-
-Ending Balance														    6556.89
 
 
 
@@ -1140,6 +1044,12 @@ Ending Balance														    6556.89
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Holliston
+Beginning Balance													    6530.05
+      12/27/2013 INV	 Invoice No. 16106								   26.84	    6556.89
+
+Ending Balance														    6556.89
+
 
 Holyoke
 Beginning Balance													    7040.34
@@ -1147,13 +1057,12 @@ Beginning Balance													    7040.34
 
 Ending Balance														    7069.27
 
-
 Hopedale
 Beginning Balance													    6326.13
       12/27/2013 INV	 Invoice No. 16108								   26.00	    6352.13
-      12/28/2013 PAY	 Hopedale - 138 - 12/28/2013							 (238.12)	    6114.01
 
-Ending Balance														    6114.01
+Ending Balance														    6352.13
+
 
 Hopkinton
 Beginning Balance													    5729.18
@@ -1162,29 +1071,22 @@ Beginning Balance													    5729.18
 
 Ending Balance														    5729.18
 
-
 Hubbardston
 Beginning Balance													    4066.94
       12/27/2013 INV	 Invoice No. 16110								   16.71	    4083.65
 
 Ending Balance														    4083.65
 
+
 Hudson
 Beginning Balance													    6795.87
       12/27/2013 INV	 Invoice No. 16111								   27.93	    6823.80
-      12/28/2013 CRED	 Hudson - 141 - 12/28/2013							  (12.12)	    6811.68
 
-Ending Balance														    6811.68
-
+Ending Balance														    6823.80
 
 Hull
 Beginning Balance													    7412.47
       12/27/2013 INV	 Invoice No. 16112								   30.46	    7442.93
-
-Ending Balance														    7442.93
-
-Huntington
-Beginning Balance													    5086.95
 
 
 
@@ -1193,10 +1095,14 @@ Beginning Balance													    5086.95
 
 Client
  Date		 Type	 Description									   Value	    Balance
-      12/27/2013 INV	 Invoice No. 16113								   20.91	    5107.86
-      12/28/2013 PAY	 Huntington - 143 - 12/28/2013							 (243.12)	    4864.74
 
-Ending Balance														    4864.74
+Ending Balance														    7442.93
+
+Huntington
+Beginning Balance													    5086.95
+      12/27/2013 INV	 Invoice No. 16113								   20.91	    5107.86
+
+Ending Balance														    5107.86
 
 Ipswich
 Beginning Balance													   11439.21
@@ -1211,12 +1117,12 @@ Beginning Balance													   10001.18
 
 Ending Balance														   10017.17
 
-
 Lakeville
 Beginning Balance													   10232.64
       12/27/2013 INV	 Invoice No. 16116								   42.05	   10274.69
 
 Ending Balance														   10274.69
+
 
 Lancaster
 Beginning Balance													    6884.24
@@ -1224,17 +1130,11 @@ Beginning Balance													    6884.24
 
 Ending Balance														    6912.53
 
-
 Lanesborough
 Beginning Balance													    5773.79
       12/27/2013 INV	 Invoice No. 16118								   23.73	    5797.52
-      12/28/2013 PAY	 Lanesborough - 148 - 12/28/2013						 (248.12)	    5549.40
 
-Ending Balance														    5549.40
-
-Lawrence
-Beginning Balance													    5749.13
-      12/27/2013 INV	 Invoice No. 16119								   23.63	    5772.76
+Ending Balance														    5797.52
 
 
 
@@ -1243,15 +1143,18 @@ Beginning Balance													    5749.13
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Lawrence
+Beginning Balance													    5749.13
+      12/27/2013 INV	 Invoice No. 16119								   23.63	    5772.76
 
 Ending Balance														    5772.76
+
 
 Lee
 Beginning Balance													    4755.23
       12/27/2013 INV	 Invoice No. 16120								   19.54	    4774.77
-      12/28/2013 CRED	 Lee - 150 - 12/28/2013 							  (12.12)	    4762.65
 
-Ending Balance														    4762.65
+Ending Balance														    4774.77
 
 Leicester
 Beginning Balance													    5011.55
@@ -1270,9 +1173,8 @@ Ending Balance														    3417.45
 Leominster
 Beginning Balance													    5576.42
       12/27/2013 INV	 Invoice No. 16123								   22.92	    5599.34
-      12/28/2013 PAY	 Leominster - 153 - 12/28/2013							 (253.12)	    5346.22
 
-Ending Balance														    5346.22
+Ending Balance														    5599.34
 
 
 Leverett
@@ -1284,8 +1186,6 @@ Ending Balance														    5777.91
 Lexington
 Beginning Balance													   13868.71
       12/27/2013 INV	 Invoice No. 16125								   56.99	   13925.70
-
-Ending Balance														   13925.70
 
 
 
@@ -1295,12 +1195,13 @@ Ending Balance														   13925.70
 Client
  Date		 Type	 Description									   Value	    Balance
 
+Ending Balance														   13925.70
+
 Leyden
 Beginning Balance													    7939.88
       12/27/2013 INV	 Invoice No. 16126								   32.63	    7972.51
 
 Ending Balance														    7972.51
-
 
 Lincoln
 Beginning Balance													    8637.86
@@ -1312,17 +1213,15 @@ Ending Balance														    8648.25
 Littleton
 Beginning Balance													    6698.96
       12/27/2013 INV	 Invoice No. 16128								   27.53	    6726.49
-      12/28/2013 PAY	 Littleton - 158 - 12/28/2013							 (258.12)	    6468.37
 
-Ending Balance														    6468.37
-
+Ending Balance														    6726.49
 
 Longmeadow
 Beginning Balance													    5201.49
       12/27/2013 INV	 Invoice No. 16129								   21.38	    5222.87
-      12/28/2013 CRED	 Longmeadow - 159 - 12/28/2013							  (12.12)	    5210.75
 
-Ending Balance														    5210.75
+Ending Balance														    5222.87
+
 
 Lowell
 Beginning Balance													    6886.38
@@ -1330,15 +1229,11 @@ Beginning Balance													    6886.38
 
 Ending Balance														    6914.68
 
-
 Ludlow
 Beginning Balance													    5767.93
       12/27/2013 INV	 Invoice No. 16131								   23.70	    5791.63
 
 Ending Balance														    5791.63
-
-Lunenburg
-Beginning Balance													    4152.63
 
 
 
@@ -1347,17 +1242,19 @@ Beginning Balance													    4152.63
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Lunenburg
+Beginning Balance													    4152.63
       12/27/2013 INV	 Invoice No. 16132								   17.07	    4169.70
 
 Ending Balance														    4169.70
+
 
 Lynn
 Beginning Balance													    4749.67
       12/27/2013 INV	 Invoice No. 16133								   19.52	    4769.19
       12/27/2013 PAY	 Payment from account								  (19.52)	    4749.67
-      12/28/2013 PAY	 Lynn - 163 - 12/28/2013							 (263.12)	    4486.55
 
-Ending Balance														    4486.55
+Ending Balance														    4749.67
 
 Lynnfield
 Beginning Balance													    5153.11
@@ -1389,8 +1286,6 @@ Ending Balance														    8611.15
 Marblehead
 Beginning Balance													    5979.96
       12/27/2013 INV	 Invoice No. 16138								   24.58	    6004.54
-      12/28/2013 PAY	 Marblehead - 168 - 12/28/2013							 (268.12)	    5736.42
-      12/28/2013 CRED	 Marblehead - 168 - 12/28/2013							  (12.12)	    5724.30
 
 
 
@@ -1400,7 +1295,7 @@ Beginning Balance													    5979.96
 Client
  Date		 Type	 Description									   Value	    Balance
 
-Ending Balance														    5724.30
+Ending Balance														    6004.54
 
 Marion
 Beginning Balance													    4280.19
@@ -1431,9 +1326,8 @@ Ending Balance														    5005.74
 Mattapoisett
 Beginning Balance													    4286.99
       12/27/2013 INV	 Invoice No. 16143								   17.62	    4304.61
-      12/28/2013 PAY	 Mattapoisett - 173 - 12/28/2013						 (273.12)	    4031.49
 
-Ending Balance														    4031.49
+Ending Balance														    4304.61
 
 Maynard
 Beginning Balance													    3683.92
@@ -1465,17 +1359,15 @@ Ending Balance														    7694.57
 Medway
 Beginning Balance													    8275.30
       12/27/2013 INV	 Invoice No. 16147								   34.01	    8309.31
-      12/28/2013 CRED	 Medway - 177 - 12/28/2013							  (12.12)	    8297.19
 
-Ending Balance														    8297.19
+Ending Balance														    8309.31
 
 
 Melrose
 Beginning Balance													    8375.38
       12/27/2013 INV	 Invoice No. 16148								   34.42	    8409.80
-      12/28/2013 PAY	 Melrose - 178 - 12/28/2013							 (278.12)	    8131.68
 
-Ending Balance														    8131.68
+Ending Balance														    8409.80
 
 Mendon
 Beginning Balance													    7087.09
@@ -1493,6 +1385,7 @@ Ending Balance														    6492.77
 Methuen
 Beginning Balance													    6740.24
       12/27/2013 INV	 Invoice No. 16151								   27.70	    6767.94
+      12/27/2013 PAY	 Payment from account								  (25.11)	    6742.83
 
 
 
@@ -1501,7 +1394,6 @@ Beginning Balance													    6740.24
 
 Client
  Date		 Type	 Description									   Value	    Balance
-      12/27/2013 PAY	 Payment from account								  (25.11)	    6742.83
 
 Ending Balance														    6742.83
 
@@ -1514,10 +1406,8 @@ Ending Balance														    6081.25
 Middlefield
 Beginning Balance													    5701.64
       12/27/2013 INV	 Invoice No. 16153								   23.43	    5725.07
-      12/28/2013 PAY	 Middlefield - 183 - 12/28/2013 						 (283.12)	    5441.95
 
-Ending Balance														    5441.95
-
+Ending Balance														    5725.07
 
 Middleton
 Beginning Balance													    3699.28
@@ -1531,18 +1421,18 @@ Beginning Balance													    4525.30
 
 Ending Balance														    4543.90
 
-
 Millbury
 Beginning Balance													    5355.97
       12/27/2013 INV	 Invoice No. 16156								   22.01	    5377.98
-      12/28/2013 CRED	 Millbury - 186 - 12/28/2013							  (12.12)	    5365.86
 
-Ending Balance														    5365.86
+Ending Balance														    5377.98
 
 Millis
 Beginning Balance													    7541.58
       12/27/2013 INV	 Invoice No. 16157								   30.99	    7572.57
       12/27/2013 PAY	 Payment from account								  (25.11)	    7547.46
+
+Ending Balance														    7547.46
 
 
 
@@ -1551,15 +1441,12 @@ Beginning Balance													    7541.58
 
 Client
  Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														    7547.46
-
 Millville
 Beginning Balance													    8102.70
       12/27/2013 INV	 Invoice No. 16158								   33.30	    8136.00
-      12/28/2013 PAY	 Millville - 188 - 12/28/2013							 (288.12)	    7847.88
 
-Ending Balance														    7847.88
+Ending Balance														    8136.00
+
 
 Milton
 Beginning Balance													    7975.70
@@ -1573,12 +1460,12 @@ Beginning Balance													    7221.27
 
 Ending Balance														    7250.95
 
+
 Monson
 Beginning Balance													    6227.97
       12/27/2013 INV	 Invoice No. 16161								   25.59	    6253.56
 
 Ending Balance														    6253.56
-
 
 Montague
 Beginning Balance													    4718.30
@@ -1586,13 +1473,18 @@ Beginning Balance													    4718.30
 
 Ending Balance														    6825.37
 
+
 Monterey
 Beginning Balance													    3742.07
       12/27/2013 INV	 Invoice No. 16163								   15.38	    3757.45
       12/27/2013 PAY	 Payment from account								  (15.38)	    3742.07
-      12/28/2013 PAY	 Monterey - 193 - 12/28/2013							 (293.12)	    3448.95
 
-Ending Balance														    3448.95
+Ending Balance														    3742.07
+
+Montgomery
+Beginning Balance													    2584.20
+      12/27/2013 INV	 Invoice No. 16164								 2580.26	    5164.46
+      12/27/2013 PAY	 Payment from account								  (12.88)	    5151.58
 
 
 
@@ -1602,27 +1494,19 @@ Ending Balance														    3448.95
 Client
  Date		 Type	 Description									   Value	    Balance
 
-Montgomery
-Beginning Balance													    2584.20
-      12/27/2013 INV	 Invoice No. 16164								 2580.26	    5164.46
-      12/27/2013 PAY	 Payment from account								  (12.88)	    5151.58
-
 Ending Balance														    5151.58
-
 
 Mount Washington
 Beginning Balance													    3366.46
       12/27/2013 INV	 Invoice No. 16165								  261.36	    3627.82
-      12/28/2013 CRED	 Mount Washington - 195 - 12/28/2013						  (12.12)	    3615.70
 
-Ending Balance														    3615.70
+Ending Balance														    3627.82
 
 Nahant
 Beginning Balance													    3605.18
       12/27/2013 INV	 Invoice No. 16166								  484.69	    4089.87
 
 Ending Balance														    4089.87
-
 
 Nantucket
 Beginning Balance													    3643.58
@@ -1633,10 +1517,8 @@ Ending Balance														    3658.55
 Natick
 Beginning Balance													    4399.60
       12/27/2013 INV	 Invoice No. 16168								  939.23	    5338.83
-      12/28/2013 PAY	 Natick - 198 - 12/28/2013							 (298.12)	    5040.71
 
-Ending Balance														    5040.71
-
+Ending Balance														    5338.83
 
 Needham
 Beginning Balance													    5397.85
@@ -1644,6 +1526,12 @@ Beginning Balance													    5397.85
       12/27/2013 PAY	 Payment from account								  (25.11)	    6744.98
 
 Ending Balance														    6744.98
+
+New Ashford
+Beginning Balance													    8194.09
+      12/27/2013 INV	 Invoice No. 16170								   33.67	    8227.76
+
+Ending Balance														    8227.76
 
 
 
@@ -1652,18 +1540,12 @@ Ending Balance														    6744.98
 
 Client
  Date		 Type	 Description									   Value	    Balance
-New Ashford
-Beginning Balance													    8194.09
-      12/27/2013 INV	 Invoice No. 16170								   33.67	    8227.76
-
-Ending Balance														    8227.76
-
-
 New Bedford
 Beginning Balance													    9517.74
       12/27/2013 INV	 Invoice No. 16171								 1653.60	   11171.34
 
 Ending Balance														   11171.34
+
 
 New Braintree
 Beginning Balance													    5466.88
@@ -1671,21 +1553,18 @@ Beginning Balance													    5466.88
 
 Ending Balance														    7339.34
 
-
 New Marlborough
 Beginning Balance													    3897.59
       12/27/2013 INV	 Invoice No. 16173								 2103.70	    6001.29
-      12/28/2013 PAY	 New Marlborough - 203 - 12/28/2013						 (303.12)	    5698.17
 
-Ending Balance														    5698.17
+Ending Balance														    6001.29
+
 
 New Salem
 Beginning Balance													    3574.27
       12/27/2013 INV	 Invoice No. 16174								 2342.25	    5916.52
-      12/28/2013 CRED	 New Salem - 204 - 12/28/2013							  (12.12)	    5904.40
 
-Ending Balance														    5904.40
-
+Ending Balance														    5916.52
 
 Newbury
 Beginning Balance													    4990.32
@@ -1694,9 +1573,16 @@ Beginning Balance													    4990.32
 
 Ending Balance														    7555.36
 
+
 Newburyport
 Beginning Balance													    7173.76
       12/27/2013 INV	 Invoice No. 16176								  277.01	    7450.77
+
+Ending Balance														    7450.77
+
+Newton
+Beginning Balance													   10081.27
+      12/27/2013 INV	 Invoice No. 16177								  511.30	   10592.57
 
 
 
@@ -1706,38 +1592,25 @@ Beginning Balance													    7173.76
 Client
  Date		 Type	 Description									   Value	    Balance
 
-Ending Balance														    7450.77
-
-Newton
-Beginning Balance													   10081.27
-      12/27/2013 INV	 Invoice No. 16177								  511.30	   10592.57
-
 Ending Balance														   10592.57
 
 Norfolk
 Beginning Balance													    7579.30
       12/27/2013 INV	 Invoice No. 16178								   31.15	    7610.45
-      12/28/2013 PAY	 Norfolk - 208 - 12/28/2013							 (308.12)	    7302.33
 
-Ending Balance														    7302.33
+Ending Balance														    7610.45
 
 North.Adams
 Beginning Balance													    3342.48
       12/27/2013 INV	 Invoice No. 16179								  937.26	    4279.74
-      12/28/2013 PAY	 North.Adams - 209 - 12/28/2013 						 (309.12)	    3970.62
-      12/28/2013 TRN	 North.Adams - 2 - 12/28/2013							   12.12	    3982.74
 
-Ending Balance														    3982.74
+Ending Balance														    4279.74
 
 North.Andover
 Beginning Balance													    9681.88
       12/27/2013 INV	 Invoice No. 16180								 1189.91	   10871.79
-      12/28/2013 PAY	 North.Andover - 210 - 12/28/2013						 (310.12)	   10561.67
-      12/28/2013 PAY	 Transferred payment								  (12.12)	   10549.55
-      12/28/2013 TRNF	 North.Andover - 2 - 12/28/2013 						  310.12	   10859.67
 
-Ending Balance														   10859.67
-
+Ending Balance														   10871.79
 
 North.Attleborough
 Beginning Balance													   13485.49
@@ -1746,16 +1619,9 @@ Beginning Balance													   13485.49
 
 Ending Balance														   13515.80
 
+
 North.Brookfield
 Beginning Balance													    6274.59
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
       12/27/2013 INV	 Invoice No. 16182								 1640.28	    7914.87
 
 Ending Balance														    7914.87
@@ -1764,11 +1630,16 @@ North.Reading
 Beginning Balance													    4289.38
       12/27/2013 INV	 Invoice No. 16183								 1867.62	    6157.00
       12/27/2013 PAY	 Payment from account								 (601.99)	    5555.01
-      12/28/2013 PAY	 North.Reading - 213 - 12/28/2013						 (313.12)	    5241.89
-      12/28/2013 CRED	 North.Reading - 213 - 12/28/2013						  (12.12)	    5229.77
 
-Ending Balance														    5229.77
+Ending Balance														    5555.01
+
 
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 Northampton
 Beginning Balance													    2450.77
       12/27/2013 INV	 Invoice No. 16184								 2097.75	    4548.52
@@ -1799,17 +1670,9 @@ Ending Balance														    3829.56
 Norton
 Beginning Balance													   11141.35
       12/27/2013 INV	 Invoice No. 16188								   45.79	   11187.14
-      12/28/2013 PAY	 Norton - 218 - 12/28/2013							 (318.12)	   10869.02
-
 
+Ending Balance														   11187.14
 
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														   10869.02
 
 Norwell
 Beginning Balance													    6113.22
@@ -1820,6 +1683,14 @@ Ending Balance														    6138.34
 Norwood
 Beginning Balance													    9457.58
       12/27/2013 INV	 Invoice No. 16190								  960.02	   10417.60
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														   10417.60
 
@@ -1832,33 +1703,23 @@ Ending Balance														    7218.95
 Oakham
 Beginning Balance													    5890.29
       12/27/2013 INV	 Invoice No. 16192								   24.21	    5914.50
-      12/28/2013 CRED	 Oakham - 222 - 12/28/2013							  (12.12)	    5902.38
 
-Ending Balance														    5902.38
-
+Ending Balance														    5914.50
 
 Orange
 Beginning Balance													    5377.67
       12/27/2013 INV	 Invoice No. 16193								 1636.59	    7014.26
       12/27/2013 PAY	 Payment from account								  (25.11)	    6989.15
-      12/28/2013 PAY	 Orange - 223 - 12/28/2013							 (323.12)	    6666.03
 
-Ending Balance														    6666.03
+Ending Balance														    6989.15
 
 Orleans
 Beginning Balance													    3812.51
       12/27/2013 INV	 Invoice No. 16194								 1865.66	    5678.17
       12/27/2013 PAY	 Payment from account								   (7.53)	    5670.64
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    5670.64
+
 
 Otis
 Beginning Balance													    4187.06
@@ -1871,34 +1732,6 @@ Beginning Balance													    3589.93
       12/27/2013 INV	 Invoice No. 16196								 2342.31	    5932.24
 
 Ending Balance														    5932.24
-
-Palmer
-Beginning Balance													    3060.71
-      12/27/2013 INV	 Invoice No. 16197								 2582.22	    5642.93
-
-Ending Balance														    5642.93
-
-Paxton
-Beginning Balance													    3767.85
-      12/27/2013 INV	 Invoice No. 16198								  263.01	    4030.86
-      12/28/2013 PAY	 Paxton - 228 - 12/28/2013							 (328.12)	    3702.74
-
-Ending Balance														    3702.74
-
-
-Peabody
-Beginning Balance													    5200.38
-      12/27/2013 INV	 Invoice No. 16199								  491.24	    5691.62
-      12/27/2013 PAY	 Payment from account								  (25.11)	    5666.51
-
-Ending Balance														    5666.51
-
-Pelham
-Beginning Balance													    5294.29
-      12/27/2013 INV	 Invoice No. 16200								   21.76	    5316.05
-      12/27/2013 PAY	 Payment from account								   (2.62)	    5313.43
-
-Ending Balance														    5313.43
 
 
 
@@ -1907,13 +1740,39 @@ Ending Balance														    5313.43
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Palmer
+Beginning Balance													    3060.71
+      12/27/2013 INV	 Invoice No. 16197								 2582.22	    5642.93
+
+Ending Balance														    5642.93
+
+
+Paxton
+Beginning Balance													    3767.85
+      12/27/2013 INV	 Invoice No. 16198								  263.01	    4030.86
+
+Ending Balance														    4030.86
+
+Peabody
+Beginning Balance													    5200.38
+      12/27/2013 INV	 Invoice No. 16199								  491.24	    5691.62
+      12/27/2013 PAY	 Payment from account								  (25.11)	    5666.51
+
+Ending Balance														    5666.51
+
+
+Pelham
+Beginning Balance													    5294.29
+      12/27/2013 INV	 Invoice No. 16200								   21.76	    5316.05
+      12/27/2013 PAY	 Payment from account								   (2.62)	    5313.43
+
+Ending Balance														    5313.43
 
 Pembroke
 Beginning Balance													    6623.90
       12/27/2013 INV	 Invoice No. 16201								  948.37	    7572.27
-      12/28/2013 CRED	 Pembroke - 231 - 12/28/2013							  (12.12)	    7560.15
 
-Ending Balance														    7560.15
+Ending Balance														    7572.27
 
 
 Pepperell
@@ -1925,10 +1784,16 @@ Ending Balance														    8179.20
 Peru
 Beginning Balance													    8262.39
       12/27/2013 INV	 Invoice No. 16203								   33.96	    8296.35
-      12/28/2013 PAY	 Peru - 233 - 12/28/2013							 (333.12)	    7963.23
+
 
-Ending Balance														    7963.23
 
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    8296.35
 
 Petersham
 Beginning Balance													    5331.12
@@ -1943,21 +1808,13 @@ Beginning Balance													    4735.34
 
 Ending Balance														    6579.68
 
-
 Pittsfield
 Beginning Balance													    4930.72
       12/27/2013 INV	 Invoice No. 16206								 2107.94	    7038.66
       12/27/2013 PAY	 Payment from account								   (4.16)	    7034.50
 
 Ending Balance														    7034.50
-
 
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 Plainfield
 Beginning Balance													    3853.78
       12/27/2013 INV	 Invoice No. 16207								 2343.40	    6197.18
@@ -1968,41 +1825,14 @@ Ending Balance														    6197.18
 Plainville
 Beginning Balance													    3277.80
       12/27/2013 INV	 Invoice No. 16208								 2583.11	    5860.91
-      12/28/2013 PAY	 Plainville - 238 - 12/28/2013							 (338.12)	    5522.79
 
-Ending Balance														    5522.79
+Ending Balance														    5860.91
 
 Plymouth
 Beginning Balance													    3627.92
       12/27/2013 INV	 Invoice No. 16209								  262.44	    3890.36
 
 Ending Balance														    3890.36
-
-
-Plympton
-Beginning Balance													    4374.89
-      12/27/2013 INV	 Invoice No. 16210								  487.85	    4862.74
-      12/28/2013 CRED	 Plympton - 240 - 12/28/2013							  (12.12)	    4850.62
-
-Ending Balance														    4850.62
-
-Princeton
-Beginning Balance													    5473.32
-      12/27/2013 INV	 Invoice No. 16211								   22.49	    5495.81
-      12/27/2013 PAY	 Payment from account								  (22.49)	    5473.32
-
-Ending Balance														    5473.32
-
-
-Provincetown
-Beginning Balance													    6718.20
-      12/27/2013 INV	 Invoice No. 16212								  948.76	    7666.96
-
-Ending Balance														    7666.96
-
-Quincy
-Beginning Balance													    7082.14
-      12/27/2013 INV	 Invoice No. 16213								   29.10	    7111.24
 
 
 
@@ -2011,15 +1841,39 @@ Beginning Balance													    7082.14
 
 Client
  Date		 Type	 Description									   Value	    Balance
-      12/28/2013 PAY	 Quincy - 243 - 12/28/2013							 (343.12)	    6768.12
+Plympton
+Beginning Balance													    4374.89
+      12/27/2013 INV	 Invoice No. 16210								  487.85	    4862.74
 
-Ending Balance														    6768.12
+Ending Balance														    4862.74
+
+
+Princeton
+Beginning Balance													    5473.32
+      12/27/2013 INV	 Invoice No. 16211								   22.49	    5495.81
+      12/27/2013 PAY	 Payment from account								  (22.49)	    5473.32
+
+Ending Balance														    5473.32
+
+Provincetown
+Beginning Balance													    6718.20
+      12/27/2013 INV	 Invoice No. 16212								  948.76	    7666.96
+
+Ending Balance														    7666.96
+
+
+Quincy
+Beginning Balance													    7082.14
+      12/27/2013 INV	 Invoice No. 16213								   29.10	    7111.24
+
+Ending Balance														    7111.24
 
 Randolph
 Beginning Balance													    6429.06
       12/27/2013 INV	 Invoice No. 16214								   26.42	    6455.48
 
 Ending Balance														    6455.48
+
 
 Raynham
 Beginning Balance													    4567.25
@@ -2030,6 +1884,14 @@ Ending Balance														    6200.51
 Reading
 Beginning Balance													    3138.98
       12/27/2013 INV	 Invoice No. 16216								 1862.89	    5001.87
+
+
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    5001.87
 
@@ -2040,35 +1902,26 @@ Beginning Balance													    4123.72
 
 Ending Balance														    6203.24
 
-
 Revere
 Beginning Balance													    2670.37
       12/27/2013 INV	 Invoice No. 16218								 2338.53	    5008.90
       12/27/2013 PAY	 Payment from account								  (13.76)	    4995.14
-      12/28/2013 PAY	 Revere - 248 - 12/28/2013							 (348.12)	    4647.02
 
-Ending Balance														    4647.02
+Ending Balance														    4995.14
+
 
 Richmond
 Beginning Balance													    2644.83
       12/27/2013 INV	 Invoice No. 16219								 2580.51	    5225.34
-      12/28/2013 CRED	 Richmond - 249 - 12/28/2013							  (12.12)	    5213.22
-
 
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														    5213.22
+Ending Balance														    5225.34
 
 Rochester
 Beginning Balance													    2683.78
       12/27/2013 INV	 Invoice No. 16220								  258.56	    2942.34
 
 Ending Balance														    2942.34
+
 
 Rockland
 Beginning Balance													    3931.71
@@ -2081,14 +1934,20 @@ Beginning Balance													    5198.87
       12/27/2013 INV	 Invoice No. 16222								   21.37	    5220.24
 
 Ending Balance														    5220.24
+
 
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 Rowe
 Beginning Balance													    6473.12
       12/27/2013 INV	 Invoice No. 16223								  947.75	    7420.87
       12/27/2013 PAY	 Payment from account								  (25.11)	    7395.76
-      12/28/2013 PAY	 Rowe - 253 - 12/28/2013							 (353.12)	    7042.64
 
-Ending Balance														    7042.64
+Ending Balance														    7395.76
 
 
 Rowley
@@ -2102,6 +1961,31 @@ Beginning Balance													    8110.72
       12/27/2013 INV	 Invoice No. 16225								   33.33	    8144.05
 
 Ending Balance														    8144.05
+
+
+Russell
+Beginning Balance													    5540.96
+      12/27/2013 INV	 Invoice No. 16226								 1637.26	    7178.22
+
+Ending Balance														    7178.22
+
+Rutland
+Beginning Balance													    4313.99
+      12/27/2013 INV	 Invoice No. 16227								 1867.72	    6181.71
+
+Ending Balance														    6181.71
+
+
+Salem
+Beginning Balance													    4560.71
+      12/27/2013 INV	 Invoice No. 16228								 2106.42	    6667.13
+
+Ending Balance														    6667.13
+
+Salisbury
+Beginning Balance													    3217.75
+      12/27/2013 INV	 Invoice No. 16229								 2340.78	    5558.53
+      12/27/2013 PAY	 Payment from account								  (25.11)	    5533.42
 
 
 
@@ -2110,32 +1994,6 @@ Ending Balance														    8144.05
 
 Client
  Date		 Type	 Description									   Value	    Balance
-Russell
-Beginning Balance													    5540.96
-      12/27/2013 INV	 Invoice No. 16226								 1637.26	    7178.22
-
-Ending Balance														    7178.22
-
-
-Rutland
-Beginning Balance													    4313.99
-      12/27/2013 INV	 Invoice No. 16227								 1867.72	    6181.71
-
-Ending Balance														    6181.71
-
-Salem
-Beginning Balance													    4560.71
-      12/27/2013 INV	 Invoice No. 16228								 2106.42	    6667.13
-      12/28/2013 PAY	 Salem - 258 - 12/28/2013							 (358.12)	    6309.01
-      12/28/2013 CRED	 Salem - 258 - 12/28/2013							  (12.12)	    6296.89
-
-Ending Balance														    6296.89
-
-
-Salisbury
-Beginning Balance													    3217.75
-      12/27/2013 INV	 Invoice No. 16229								 2340.78	    5558.53
-      12/27/2013 PAY	 Payment from account								  (25.11)	    5533.42
 
 Ending Balance														    5533.42
 
@@ -2146,7 +2004,6 @@ Beginning Balance													    2961.02
 
 Ending Balance														    5530.30
 
-
 Sandwich
 Beginning Balance													    9138.95
       12/27/2013 INV	 Invoice No. 16231								  285.09	    9424.04
@@ -2155,6 +2012,29 @@ Ending Balance														    9424.04
 
 Saugus
 Beginning Balance													    8932.33
+      12/27/2013 INV	 Invoice No. 16232								  506.58	    9438.91
+
+Ending Balance														    9438.91
+
+Savoy
+Beginning Balance													    4697.70
+      12/27/2013 INV	 Invoice No. 16233								   19.31	    4717.01
+
+Ending Balance														    4717.01
+
+
+Scituate
+Beginning Balance													    9017.70
+      12/27/2013 INV	 Invoice No. 16234								  958.21	    9975.91
+
+Ending Balance														    9975.91
+
+Seekonk
+Beginning Balance													   13994.17
+      12/27/2013 INV	 Invoice No. 16235								 1207.58	   15201.75
+      12/27/2013 PAY	 Payment from account								  (25.11)	   15176.64
+
+Ending Balance														   15176.64
 
 
 
@@ -2163,31 +2043,6 @@ Beginning Balance													    8932.33
 
 Client
  Date		 Type	 Description									   Value	    Balance
-      12/27/2013 INV	 Invoice No. 16232								  506.58	    9438.91
-
-Ending Balance														    9438.91
-
-Savoy
-Beginning Balance													    4697.70
-      12/27/2013 INV	 Invoice No. 16233								   19.31	    4717.01
-      12/28/2013 PAY	 Savoy - 263 - 12/28/2013							 (363.12)	    4353.89
-
-Ending Balance														    4353.89
-
-Scituate
-Beginning Balance													    9017.70
-      12/27/2013 INV	 Invoice No. 16234								  958.21	    9975.91
-
-Ending Balance														    9975.91
-
-
-Seekonk
-Beginning Balance													   13994.17
-      12/27/2013 INV	 Invoice No. 16235								 1207.58	   15201.75
-      12/27/2013 PAY	 Payment from account								  (25.11)	   15176.64
-
-Ending Balance														   15176.64
-
 Sharon
 Beginning Balance													   11409.79
       12/27/2013 INV	 Invoice No. 16236								   46.89	   11456.68
@@ -2198,24 +2053,15 @@ Ending Balance														   11456.68
 Sheffield
 Beginning Balance													    5059.85
       12/27/2013 INV	 Invoice No. 16237								 1635.28	    6695.13
-      12/28/2013 CRED	 Sheffield - 267 - 12/28/2013							  (12.12)	    6683.01
 
-Ending Balance														    6683.01
+Ending Balance														    6695.13
 
 Shelburne
 Beginning Balance													    4292.99
       12/27/2013 INV	 Invoice No. 16238								   17.64	    4310.63
-      12/28/2013 PAY	 Shelburne - 268 - 12/28/2013							 (368.12)	    3942.51
-
 
+Ending Balance														    4310.63
 
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														    3942.51
 
 Sherborn
 Beginning Balance													    3672.62
@@ -2229,6 +2075,7 @@ Beginning Balance													    3838.02
 
 Ending Balance														    6181.35
 
+
 Shrewsbury
 Beginning Balance													    3344.59
       12/27/2013 INV	 Invoice No. 16241								 2583.38	    5927.97
@@ -2240,22 +2087,6 @@ Shutesbury
 Beginning Balance													     799.94
       12/27/2013 INV	 Invoice No. 16242								  250.82	    1050.76
       12/27/2013 PAY	 Payment from account								  (21.70)	    1029.06
-
-Ending Balance														    1029.06
-
-
-Somerset
-Beginning Balance													    9428.52
-      12/27/2013 INV	 Invoice No. 16243								  508.62	    9937.14
-      12/28/2013 PAY	 Somerset - 273 - 12/28/2013							 (373.12)	    9564.02
-
-Ending Balance														    9564.02
-
-Somerville
-Beginning Balance													    4704.92
-      12/27/2013 INV	 Invoice No. 16244								   19.34	    4724.26
-
-Ending Balance														    4724.26
 
 
 
@@ -2265,19 +2096,31 @@ Ending Balance														    4724.26
 Client
  Date		 Type	 Description									   Value	    Balance
 
+Ending Balance														    1029.06
+
+Somerset
+Beginning Balance													    9428.52
+      12/27/2013 INV	 Invoice No. 16243								  508.62	    9937.14
+
+Ending Balance														    9937.14
+
+Somerville
+Beginning Balance													    4704.92
+      12/27/2013 INV	 Invoice No. 16244								   19.34	    4724.26
+
+Ending Balance														    4724.26
+
 South.Hadley
 Beginning Balance													    4909.21
       12/27/2013 INV	 Invoice No. 16245								  941.32	    5850.53
 
 Ending Balance														    5850.53
 
-
 Southampton
 Beginning Balance													    4936.47
       12/27/2013 INV	 Invoice No. 16246								 1170.36	    6106.83
-      12/28/2013 CRED	 Southampton - 276 - 12/28/2013 						  (12.12)	    6094.71
 
-Ending Balance														    6094.71
+Ending Balance														    6106.83
 
 Southborough
 Beginning Balance													   10107.64
@@ -2286,14 +2129,19 @@ Beginning Balance													   10107.64
 
 Ending Balance														   10124.07
 
-
 Southbridge
 Beginning Balance													    6492.90
       12/27/2013 INV	 Invoice No. 16248								 1641.17	    8134.07
-      12/28/2013 PAY	 Southbridge - 278 - 12/28/2013 						 (378.12)	    7755.95
 
-Ending Balance														    7755.95
+Ending Balance														    8134.07
+
 
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 Southwick
 Beginning Balance													    2673.88
       12/27/2013 INV	 Invoice No. 16249								 1860.98	    4534.86
@@ -2309,17 +2157,10 @@ Ending Balance														    7733.74
 
 Springfield
 Beginning Balance													    3523.36
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
       12/27/2013 INV	 Invoice No. 16251								 2342.04	    5865.40
 
 Ending Balance														    5865.40
+
 
 Sterling
 Beginning Balance													    2967.82
@@ -2331,9 +2172,8 @@ Stockbridge
 Beginning Balance													    3651.47
       12/27/2013 INV	 Invoice No. 16253								  262.54	    3914.01
       12/27/2013 PAY	 Payment from account								  (25.11)	    3888.90
-      12/28/2013 PAY	 Stockbridge - 283 - 12/28/2013 						 (383.12)	    3505.78
 
-Ending Balance														    3505.78
+Ending Balance														    3888.90
 
 
 Stoneham
@@ -2346,10 +2186,16 @@ Ending Balance														    4095.90
 Stoughton
 Beginning Balance													    5172.41
       12/27/2013 INV	 Invoice No. 16255								   21.26	    5193.67
-      12/28/2013 CRED	 Stoughton - 285 - 12/28/2013							  (12.12)	    5181.55
+
 
-Ending Balance														    5181.55
 
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
+
+Ending Balance														    5193.67
 
 Stow
 Beginning Balance													    6488.47
@@ -2360,23 +2206,14 @@ Ending Balance														    7436.28
 Sturbridge
 Beginning Balance													    6874.40
       12/27/2013 INV	 Invoice No. 16257								 1178.32	    8052.72
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
 
 Ending Balance														    8052.72
 
 Sudbury
 Beginning Balance													    8161.19
       12/27/2013 INV	 Invoice No. 16258								   33.54	    8194.73
-      12/28/2013 PAY	 Sudbury - 288 - 12/28/2013							 (388.12)	    7806.61
 
-Ending Balance														    7806.61
+Ending Balance														    8194.73
 
 Sunderland
 Beginning Balance													    5162.03
@@ -2398,18 +2235,6 @@ Beginning Balance													    4575.57
       12/27/2013 INV	 Invoice No. 16261								 2106.48	    6682.05
 
 Ending Balance														    6682.05
-
-
-Swansea
-Beginning Balance													    3500.54
-      12/27/2013 INV	 Invoice No. 16262								 2341.95	    5842.49
-
-Ending Balance														    5842.49
-
-Taunton
-Beginning Balance													    2921.24
-      12/27/2013 INV	 Invoice No. 16263								   12.01	    2933.25
-      12/28/2013 PAY	 Taunton - 293 - 12/28/2013							 (393.12)	    2540.13
 
 
 
@@ -2418,15 +2243,25 @@ Beginning Balance													    2921.24
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Swansea
+Beginning Balance													    3500.54
+      12/27/2013 INV	 Invoice No. 16262								 2341.95	    5842.49
 
-Ending Balance														    2540.13
+Ending Balance														    5842.49
+
+
+Taunton
+Beginning Balance													    2921.24
+      12/27/2013 INV	 Invoice No. 16263								   12.01	    2933.25
+
+Ending Balance														    2933.25
 
 Templeton
 Beginning Balance													    2766.38
       12/27/2013 INV	 Invoice No. 16264								  258.90	    3025.28
-      12/28/2013 CRED	 Templeton - 294 - 12/28/2013							  (12.12)	    3013.16
 
-Ending Balance														    3013.16
+Ending Balance														    3025.28
+
 
 Tewksbury
 Beginning Balance													    3313.44
@@ -2435,12 +2270,12 @@ Beginning Balance													    3313.44
 
 Ending Balance														    3771.82
 
-
 Tisbury
 Beginning Balance													    5136.50
       12/27/2013 INV	 Invoice No. 16266								   21.11	    5157.61
 
 Ending Balance														    5157.61
+
 
 Tolland
 Beginning Balance													    4573.30
@@ -2448,19 +2283,9 @@ Beginning Balance													    4573.30
 
 Ending Balance														    5513.24
 
-
 Topsfield
 Beginning Balance													    4469.29
       12/27/2013 INV	 Invoice No. 16268								 1168.44	    5637.73
-      12/28/2013 PAY	 Topsfield - 298 - 12/28/2013							 (398.12)	    5239.61
-
-Ending Balance														    5239.61
-
-Townsend
-Beginning Balance													    7580.43
-      12/27/2013 INV	 Invoice No. 16269								   31.15	    7611.58
-
-Ending Balance														    7611.58
 
 
 
@@ -2470,12 +2295,19 @@ Ending Balance														    7611.58
 Client
  Date		 Type	 Description									   Value	    Balance
 
+Ending Balance														    5637.73
+
+Townsend
+Beginning Balance													    7580.43
+      12/27/2013 INV	 Invoice No. 16269								   31.15	    7611.58
+
+Ending Balance														    7611.58
+
 Truro
 Beginning Balance													    5179.51
       12/27/2013 INV	 Invoice No. 16270								 1635.78	    6815.29
 
 Ending Balance														    6815.29
-
 
 Tyngsborough
 Beginning Balance													    4209.70
@@ -2494,24 +2326,14 @@ Ending Balance														    6561.10
 Upton
 Beginning Balance													    3476.60
       12/27/2013 INV	 Invoice No. 16273								 2341.85	    5818.45
-      12/28/2013 PAY	 Upton - 303 - 12/28/2013							 (403.12)	    5415.33
-      12/28/2013 CRED	 Upton - 303 - 12/28/2013							  (12.12)	    5403.21
 
-Ending Balance														    5403.21
+Ending Balance														    5818.45
 
 Uxbridge
 Beginning Balance													    2463.23
       12/27/2013 INV	 Invoice No. 16274								 2884.75	    5347.98
-      12/28/2013 DISC	 Discount: Uxbridge - 12/28/2013						  (49.12)	    5298.86
 
-Ending Balance														    5298.86
-
-
-Wakefield
-Beginning Balance													    3768.71
-      12/27/2013 INV	 Invoice No. 16275								  263.02	    4031.73
-
-Ending Balance														    4031.73
+Ending Balance														    5347.98
 
 
 
@@ -2520,19 +2342,25 @@ Ending Balance														    4031.73
 
 Client
  Date		 Type	 Description									   Value	    Balance
+Wakefield
+Beginning Balance													    3768.71
+      12/27/2013 INV	 Invoice No. 16275								  263.02	    4031.73
+
+Ending Balance														    4031.73
+
+
 Wales
 Beginning Balance													    4152.42
       12/27/2013 INV	 Invoice No. 16276								   17.06	    4169.48
 
 Ending Balance														    4169.48
 
-
 Waltham
 Beginning Balance													    6662.09
       12/27/2013 INV	 Invoice No. 16277								  951.91	    7614.00
-      12/28/2013 PAY	 Waltham - 308 - 12/28/2013							 (408.12)	    7205.88
 
-Ending Balance														    7205.88
+Ending Balance														    7614.00
+
 
 Ware
 Beginning Balance													    6555.24
@@ -2540,12 +2368,12 @@ Beginning Balance													    6555.24
 
 Ending Balance														    7732.25
 
-
 Wareham
 Beginning Balance													    8305.12
       12/27/2013 INV	 Invoice No. 16279								   34.13	    8339.25
 
 Ending Balance														    8339.25
+
 
 Warren
 Beginning Balance													    5741.07
@@ -2553,18 +2381,11 @@ Beginning Balance													    5741.07
 
 Ending Balance														    7379.15
 
-
 Warwick
 Beginning Balance													    4535.27
       12/27/2013 INV	 Invoice No. 16281								 1868.63	    6403.90
-      12/28/2013 CRED	 Warwick - 312 - 12/28/2013							  (12.12)	    6391.78
 
-Ending Balance														    6391.78
-
-Washington
-Beginning Balance													    4750.55
-      12/27/2013 INV	 Invoice No. 16282								 2107.20	    6857.75
-      12/27/2013 PAY	 Payment from account								  (25.11)	    6832.64
+Ending Balance														    6403.90
 
 
 
@@ -2573,9 +2394,14 @@ Beginning Balance													    4750.55
 
 Client
  Date		 Type	 Description									   Value	    Balance
-      12/28/2013 PAY	 Washington - 313 - 12/28/2013							 (413.12)	    6419.52
 
-Ending Balance														    6419.52
+Washington
+Beginning Balance													    4750.55
+      12/27/2013 INV	 Invoice No. 16282								 2107.20	    6857.75
+      12/27/2013 PAY	 Payment from account								  (25.11)	    6832.64
+
+Ending Balance														    6832.64
+
 
 Watertown
 Beginning Balance													    3339.86
@@ -2588,6 +2414,7 @@ Beginning Balance													    2835.59
       12/27/2013 INV	 Invoice No. 16284								 2581.29	    5416.88
 
 Ending Balance														    5416.88
+
 
 Webster
 Beginning Balance													    3458.90
@@ -2605,16 +2432,13 @@ Ending Balance														    4319.15
 Wellfleet
 Beginning Balance													    5063.02
       12/27/2013 INV	 Invoice No. 16287								   20.81	    5083.83
-      12/28/2013 PAY	 Wellfleet - 318 - 12/28/2013							 (418.12)	    4665.71
 
-Ending Balance														    4665.71
+Ending Balance														    5083.83
 
 Wendell
 Beginning Balance													    4759.44
       12/27/2013 INV	 Invoice No. 16288								  940.71	    5700.15
       12/27/2013 PAY	 Payment from account								  (25.11)	    5675.04
-
-Ending Balance														    5675.04
 
 
 
@@ -2624,6 +2448,8 @@ Ending Balance														    5675.04
 Client
  Date		 Type	 Description									   Value	    Balance
 
+Ending Balance														    5675.04
+
 Wenham
 Beginning Balance													    5873.18
       12/27/2013 INV	 Invoice No. 16289								 1174.21	    7047.39
@@ -2631,31 +2457,24 @@ Beginning Balance													    5873.18
 
 Ending Balance														    7047.23
 
-
 West.Boylston
 Beginning Balance													    3955.52
       12/27/2013 INV	 Invoice No. 16290								   17.93	    3973.45
-      12/28/2013 PAY	 West.Boylston - 321 - 12/28/2013						 (421.12)	    3552.33
-      12/28/2013 TRN	 West.Boylston - 3 - 12/28/2013 						   13.12	    3565.45
-      12/28/2013 CRED	 West.Boylston - 321 - 12/28/2013						  (12.12)	    3553.33
 
-Ending Balance														    3553.33
+Ending Balance														    3973.45
 
 West.Bridgewater
 Beginning Balance													    4491.28
       12/27/2013 INV	 Invoice No. 16291								 1633.00	    6124.28
-      12/28/2013 PAY	 West.Bridgewater - 322 - 12/28/2013						 (422.12)	    5702.16
-      12/28/2013 PAY	 Transferred payment								  (13.12)	    5689.04
-      12/28/2013 TRNF	 West.Bridgewater - 3 - 12/28/2013						  422.12	    6111.16
 
-Ending Balance														    6111.16
+Ending Balance														    6124.28
 
 West.Brookfield
 Beginning Balance													    4896.09
       12/27/2013 INV	 Invoice No. 16292								 1870.11	    6766.20
-      12/28/2013 PAY	 West.Brookfield - 323 - 12/28/2013						 (423.12)	    6343.08
 
-Ending Balance														    6343.08
+Ending Balance														    6766.20
+
 
 West.Newbury
 Beginning Balance													    5598.96
@@ -2667,6 +2486,8 @@ West.Springfield
 Beginning Balance													    2950.06
       12/27/2013 INV	 Invoice No. 16294								 2339.68	    5289.74
       12/27/2013 PAY	 Payment from account								  (25.11)	    5264.63
+
+Ending Balance														    5264.63
 
 
 
@@ -2675,14 +2496,12 @@ Beginning Balance													    2950.06
 
 Client
  Date		 Type	 Description									   Value	    Balance
-
-Ending Balance														    5264.63
-
 West.Stockbridge
 Beginning Balance													    2491.08
       12/27/2013 INV	 Invoice No. 16295								 2579.88	    5070.96
 
 Ending Balance														    5070.96
+
 
 West.Tisbury
 Beginning Balance													    6747.30
@@ -2694,9 +2513,9 @@ Ending Balance														    6747.30
 Westborough
 Beginning Balance													    5381.08
       12/27/2013 INV	 Invoice No. 16297								  491.98	    5873.06
-      12/28/2013 PAY	 Westborough - 328 - 12/28/2013 						 (428.12)	    5444.94
 
-Ending Balance														    5444.94
+Ending Balance														    5873.06
+
 
 Westfield
 Beginning Balance													    3660.31
@@ -2704,18 +2523,23 @@ Beginning Balance													    3660.31
 
 Ending Balance														    3675.35
 
-
 Westford
 Beginning Balance													    8352.84
       12/27/2013 INV	 Invoice No. 16299								  955.48	    9308.32
-      12/28/2013 CRED	 Westford - 330 - 12/28/2013							  (12.12)	    9296.20
 
-Ending Balance														    9296.20
+Ending Balance														    9308.32
+
 
 Westhampton
 Beginning Balance													    3989.52
       12/27/2013 INV	 Invoice No. 16300								 1166.47	    5155.99
       12/27/2013 PAY	 Payment from account								  (25.11)	    5130.88
+
+Ending Balance														    5130.88
+
+Westminster
+Beginning Balance													    8162.76
+      12/27/2013 INV	 Invoice No. 16301								   33.55	    8196.31
 
 
 
@@ -2725,20 +2549,13 @@ Beginning Balance													    3989.52
 Client
  Date		 Type	 Description									   Value	    Balance
 
-Ending Balance														    5130.88
-
-Westminster
-Beginning Balance													    8162.76
-      12/27/2013 INV	 Invoice No. 16301								   33.55	    8196.31
-
 Ending Balance														    8196.31
 
 Weston
 Beginning Balance													    8497.76
       12/27/2013 INV	 Invoice No. 16302								 1649.41	   10147.17
-      12/28/2013 PAY	 Weston - 333 - 12/28/2013							 (433.12)	    9714.05
 
-Ending Balance														    9714.05
+Ending Balance														   10147.17
 
 Westport
 Beginning Balance													    9135.54
@@ -2752,7 +2569,6 @@ Beginning Balance													    8091.57
 
 Ending Balance														   10212.50
 
-
 Weymouth
 Beginning Balance													    4804.39
       12/27/2013 INV	 Invoice No. 16305								 2347.30	    7151.69
@@ -2765,6 +2581,12 @@ Beginning Balance													    2009.19
       12/27/2013 PAY	 Payment from account								  (25.11)	    4561.98
 
 Ending Balance														    4561.98
+
+Whitman
+Beginning Balance													    8496.08
+      12/27/2013 INV	 Invoice No. 16307								  282.45	    8778.53
+
+Ending Balance														    8778.53
 
 
 
@@ -2773,21 +2595,13 @@ Ending Balance														    4561.98
 
 Client
  Date		 Type	 Description									   Value	    Balance
-Whitman
-Beginning Balance													    8496.08
-      12/27/2013 INV	 Invoice No. 16307								  282.45	    8778.53
-      12/28/2013 PAY	 Whitman - 338 - 12/28/2013							 (438.12)	    8340.41
-
-Ending Balance														    8340.41
-
-
 Wilbraham
 Beginning Balance													    1547.23
       12/27/2013 INV	 Invoice No. 16308								  816.22	    2363.45
       12/27/2013 PAY	 Payment from account								   (8.49)	    2354.96
-      12/28/2013 CRED	 Wilbraham - 339 - 12/28/2013							  (12.12)	    2342.84
 
-Ending Balance														    2342.84
+Ending Balance														    2354.96
+
 
 Williamsburg
 Beginning Balance													    4480.55
@@ -2795,12 +2609,12 @@ Beginning Balance													    4480.55
 
 Ending Balance														    4498.96
 
-
 Williamstown
 Beginning Balance													    6715.61
       12/27/2013 INV	 Invoice No. 16310								  948.75	    7664.36
 
 Ending Balance														    7664.36
+
 
 Wilmington
 Beginning Balance													    7129.35
@@ -2808,14 +2622,24 @@ Beginning Balance													    7129.35
 
 Ending Balance														    8308.72
 
-
 Winchendon
 Beginning Balance													    8390.12
       12/27/2013 INV	 Invoice No. 16312								   34.48	    8424.60
       12/27/2013 PAY	 Payment from account								  (25.11)	    8399.49
-      12/28/2013 PAY	 Winchendon - 343 - 12/28/2013							 (443.12)	    7956.37
 
-Ending Balance														    7956.37
+Ending Balance														    8399.49
+
+
+Winchester
+Beginning Balance													    3469.92
+      12/27/2013 INV	 Invoice No. 16313								 1628.75	    5098.67
+      12/27/2013 PAY	 Payment from account								   (8.48)	    5090.19
+
+Ending Balance														    5090.19
+
+Windsor
+Beginning Balance													    4587.91
+      12/27/2013 INV	 Invoice No. 16314								 1868.84	    6456.75
 
 
 
@@ -2824,17 +2648,6 @@ Ending Balance														    7956.37
 
 Client
  Date		 Type	 Description									   Value	    Balance
-Winchester
-Beginning Balance													    3469.92
-      12/27/2013 INV	 Invoice No. 16313								 1628.75	    5098.67
-      12/27/2013 PAY	 Payment from account								   (8.48)	    5090.19
-
-Ending Balance														    5090.19
-
-
-Windsor
-Beginning Balance													    4587.91
-      12/27/2013 INV	 Invoice No. 16314								 1868.84	    6456.75
 
 Ending Balance														    6456.75
 
@@ -2843,7 +2656,6 @@ Beginning Balance													    4678.27
       12/27/2013 INV	 Invoice No. 16315								 2106.91	    6785.18
 
 Ending Balance														    6785.18
-
 
 Woburn
 Beginning Balance													    3735.96
@@ -2854,11 +2666,8 @@ Ending Balance														    6078.87
 Worcester
 Beginning Balance													    2014.95
       12/27/2013 INV	 Invoice No. 16317								 2577.92	    4592.87
-      12/28/2013 PAY	 Worcester - 348 - 12/28/2013							 (448.12)	    4144.75
-      12/28/2013 CRED	 Worcester - 348 - 12/28/2013							  (12.12)	    4132.63
 
-Ending Balance														    4132.63
-
+Ending Balance														    4592.87
 
 Worthington
 Beginning Balance													    2590.53
@@ -2867,16 +2676,9 @@ Beginning Balance													    2590.53
 
 Ending Balance														    2823.60
 
+
 Wrentham
 Beginning Balance													    2792.94
-
-
-
-						       TS Handyman Services
-						     A/R with Running Balances					      Page
-
-Client
- Date		 Type	 Description									   Value	    Balance
       12/27/2013 INV	 Invoice No. 16319								  481.35	    3274.29
       12/27/2013 PAY	 Payment from account								  (13.24)	    3261.05
 
@@ -2887,9 +2689,16 @@ Beginning Balance													    5020.98
       12/27/2013 INV	 Invoice No. 16320								   20.63	    5041.61
 
 Ending Balance														    5041.61
+
 
+
+						       TS Handyman Services
+						     A/R with Running Balances					      Page
+
+Client
+ Date		 Type	 Description									   Value	    Balance
 
 Grand Total														 2148642.49
-   Total Added														  200685.25
-   Total Removed													  (24720.89)
-   Ending Balance Total 												 2324606.85
+   Total Added														  199269.19
+   Total Removed													   (2496.05)
+   Ending Balance Total 												 2345415.63

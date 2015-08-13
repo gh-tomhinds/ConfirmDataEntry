@@ -6,7 +6,7 @@
 							Selection Criteria
 
 Clie.Classification	     Open
-A/R.Transaction Date	     1/1/2013 - Latest
+A/R.Transaction Date	     1/1/2013 - 10/27/2013
 
 ID		     Date  Invoice #				     Fees	       Costs	       Interest 	     Total
 149		1/27/2013  12345	       Billed:		   127.31		0.00		   0.00 	    127.31

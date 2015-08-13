@@ -6,7 +6,7 @@
 							Selection Criteria
 
 Clie.Classification	     Open
-A/R.Transaction Date	     8/1/2013 - Latest
+A/R.Transaction Date	     8/1/2013 - 8/27/2013
 
 Client
  Date		 Type	 Description									   Value	    Balance

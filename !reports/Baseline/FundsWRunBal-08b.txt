@@ -6,46 +6,46 @@
 							Selection Criteria
 
 Clie.Classification	     Open
-Fnds.Transaction Date	     8/1/2013 - Latest
+Fnds.Transaction Dat	     8/1/2013 - 8/27/2013
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
 Abington / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-		     8/28/2013	PAYT   Abington - 1 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 
 Acton / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-		     8/28/2013	PAYT   Acton - 2 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Acushnet / Default
 Beginning Balance													      44.35
 		     8/27/2013	PAYF   Payment from account						    (44.35)	       0.00
-		     8/28/2013	PAYT   Acushnet - 3 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
 
 Adams / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-		     8/28/2013	PAYT   Adams - 4 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Agawam / Default
 Beginning Balance													      40.16
 		     8/27/2013	PAYF   Payment from account						    (40.16)	       0.00
-		     8/28/2013	PAYT   Agawam - 5 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
+Aquinnah / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
 
 
 
@@ -54,25 +54,17 @@ Ending Balance														      25.08
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-Aquinnah / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Aquinnah - 10 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
-
-
 Arlington / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (24.69)	       0.38
 
 Ending Balance														       0.38
 
+
 Athol / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Athol - 16 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Attleboro / Default
 Beginning Balance													      25.07
@@ -80,22 +72,28 @@ Beginning Balance													      25.07
 
 Ending Balance														       0.00
 
+
 Auburn / Default
 Beginning Balance													      12.31
 		     8/27/2013	PAYF   Payment from account						    (12.31)	       0.00
 
 Ending Balance														       0.00
 
-
 Barre / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Barre - 22 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
 
 Becket / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
+
+Ending Balance														       0.00
+
+Belchertown / Default
+Beginning Balance													       2.46
+		     8/27/2013	PAYF   Payment from account						     (2.46)	       0.00
 
 Ending Balance														       0.00
 
@@ -106,19 +104,10 @@ Ending Balance														       0.00
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-
-Belchertown / Default
-Beginning Balance													       2.46
-		     8/27/2013	PAYF   Payment from account						     (2.46)	       0.00
-
-Ending Balance														       0.00
-
-
 Berkley / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Berkley - 28 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Berlin / Default
 Beginning Balance													      25.07
@@ -126,12 +115,10 @@ Beginning Balance													      25.07
 
 Ending Balance														       0.00
 
-
 Blandford / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Blandford - 34 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Bolton / Default
 Beginning Balance													      25.07
@@ -139,16 +126,27 @@ Beginning Balance													      25.07
 
 Ending Balance														       0.00
 
-
 Boston / Default
 Beginning Balance													       7.90
 		     8/27/2013	PAYF   Payment from account						     (7.90)	       0.00
 
 Ending Balance														       0.00
 
+
 Boylston / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Boylston - 40 - 8/28/2013					     25.08	      25.08
+
+Ending Balance														       0.00
+
+Braintree / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
+
+Ending Balance														       0.00
+
+
+Brookfield / Default
+Beginning Balance													       0.00
 
 
 
@@ -158,19 +156,7 @@ Beginning Balance													       0.00
 Client / Account Name
  Date				Type   Description							     Value	    Balance
 
-Ending Balance														      25.08
-
-Braintree / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-
 Ending Balance														       0.00
-
-Brookfield / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Brookfield - 46 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
 
 Brookline / Default
 Beginning Balance													      25.07
@@ -180,9 +166,8 @@ Ending Balance														       0.00
 
 Carlisle / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Carlisle - 52 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Carver / Default
 Beginning Balance													      25.07
@@ -196,20 +181,10 @@ Beginning Balance													       7.64
 
 Ending Balance														       0.00
 
-
 Chelsea / Default
 Beginning Balance													       0.00
-
 
-
-						       TS Handyman Services
-						    Funds with Running Balances 				      Page
-
-Client / Account Name
- Date				Type   Description							     Value	    Balance
-		     8/28/2013	PAYT   Chelsea - 58 - 8/28/2013 					     25.08	      25.08
-
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Cheshire / Default
 Beginning Balance													      25.07
@@ -219,9 +194,16 @@ Ending Balance														      13.52
 
 Clarksburg / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Clarksburg - 64 - 8/28/2013					     25.08	      25.08
+
 
-Ending Balance														      25.08
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
 
 Clinton / Default
 Beginning Balance													      25.07
@@ -231,10 +213,8 @@ Ending Balance														       0.00
 
 Cummington / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Cummington - 70 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Dalton / Default
 Beginning Balance													      25.07
@@ -244,9 +224,23 @@ Ending Balance														       0.00
 
 Dennis / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Dennis - 76 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
+Dighton / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
+
+Ending Balance														       0.00
+
+Dunstable / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Duxbury / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 
 
@@ -255,39 +249,19 @@ Ending Balance														      25.08
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-Dighton / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 Ending Balance														       0.00
-
-
-Dunstable / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Dunstable - 82 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
-
-Duxbury / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-
-Ending Balance														       0.00
-
 
 East.Longmeadow / Default
 Beginning Balance													     674.86
 		     8/27/2013	PAYF   Payment from account						    (96.20)	     578.66
-		     8/28/2013	PAYT   Transferred payment						    185.08	     763.74
 
-Ending Balance														     763.74
+Ending Balance														     578.66
 
 Easthampton / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Easthampton - 88 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Easton / Default
 Beginning Balance													      25.07
@@ -297,17 +271,8 @@ Ending Balance														       0.00
 
 Everett / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Everett - 94 - 8/28/2013 					     25.08	      25.08
-
 
-
-						       TS Handyman Services
-						    Funds with Running Balances 				      Page
-
-Client / Account Name
- Date				Type   Description							     Value	    Balance
-
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Fairhaven / Default
 Beginning Balance													      25.07
@@ -317,13 +282,20 @@ Ending Balance														       1.53
 
 Foxborough / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Foxborough - 100 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Framingham / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
+
+
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
 
 Ending Balance														       0.00
 
@@ -335,9 +307,8 @@ Ending Balance														       0.00
 
 Gill / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Gill - 106 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Gloucester / Default
 Beginning Balance													      25.07
@@ -345,20 +316,10 @@ Beginning Balance													      25.07
 
 Ending Balance														       0.00
 
-
 Granville / Default
 Beginning Balance													       0.00
-
 
-
-						       TS Handyman Services
-						    Funds with Running Balances 				      Page
-
-Client / Account Name
- Date				Type   Description							     Value	    Balance
-		     8/28/2013	PAYT   Granville - 112 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Great Barrington / Default
 Beginning Balance													      25.07
@@ -368,29 +329,26 @@ Ending Balance														       0.00
 
 Hadley / Hadley-1
 Beginning Balance													      96.36
-		     8/28/2013	PAYT   bds-pta: Hadley - 8/28/2013					     21.08	     117.44
-				       . Check No. pta-1-8
-		     8/28/2013	DEP    bds-dep: Hadley - 8/28/2013					     11.08	     128.52
-				       . Check No. dep-1-8
 
-Ending Balance														     128.52
-
+Ending Balance														      96.36
 
 Halifax / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Halifax - 118 - 8/28/2013					     25.08	      25.08
+
 
-Ending Balance														      25.08
+
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
 
 Halifax / Halifax-2
 Beginning Balance													     102.36
-		     8/28/2013	PAYT   bds-pta: Halifax - 8/28/2013					     22.08	     124.44
-				       . Check No. pta-2-8
-		     8/28/2013	DEP    bds-dep: Halifax - 8/28/2013					     12.08	     136.52
-				       . Check No. dep-2-8
 
-Ending Balance														     136.52
-
+Ending Balance														     102.36
 
 Hamilton / Default
 Beginning Balance													      25.07
@@ -400,23 +358,14 @@ Ending Balance														       0.00
 
 Hampden / Default
 Beginning Balance													       7.32
-
-
-
-						       TS Handyman Services
-						    Funds with Running Balances 				      Page
-
-Client / Account Name
- Date				Type   Description							     Value	    Balance
 		     8/27/2013	PAYF   Payment from account						     (7.32)	       0.00
 
 Ending Balance														       0.00
 
 Hardwick / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Hardwick - 124 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Harvard / Default
 Beginning Balance													      25.07
@@ -426,28 +375,12 @@ Ending Balance														      16.03
 
 Heath / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Heath - 130 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Hingham / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-
-Ending Balance														       0.00
-
-
-Holliston / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Holliston - 136 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
-
-Holyoke / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
-
-Ending Balance														       0.00
 
 
 
@@ -456,12 +389,24 @@ Ending Balance														       0.00
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Holliston / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
+Holyoke / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
+
+Ending Balance														       0.00
+
 Hull / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Hull - 142 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Huntington / Default
 Beginning Balance													      25.07
@@ -471,10 +416,8 @@ Ending Balance														       8.50
 
 Lanesborough / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Lanesborough - 148 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Lawrence / Default
 Beginning Balance													      25.07
@@ -484,10 +427,16 @@ Ending Balance														       0.00
 
 Leverett / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Leverett - 154 - 8/28/2013					     25.08	      25.08
+
 
-Ending Balance														      25.08
 
+						       TS Handyman Services
+						    Funds with Running Balances 				      Page
+
+Client / Account Name
+ Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
 
 Lexington / Default
 Beginning Balance													      25.07
@@ -497,17 +446,8 @@ Ending Balance														       0.00
 
 Lowell / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Lowell - 160 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
-
-
-
-						       TS Handyman Services
-						    Funds with Running Balances 				      Page
-
-Client / Account Name
- Date				Type   Description							     Value	    Balance
+Ending Balance														       0.00
 
 Ludlow / Default
 Beginning Balance													      25.07
@@ -515,19 +455,16 @@ Beginning Balance													      25.07
 
 Ending Balance														      12.49
 
-
 Manchester-by-the-Sea / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Manchester-by-the-Sea - 166 - 8/28/2013				     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Mansfield / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 Ending Balance														       0.00
-
 
 Marblehead / Default
 Beginning Balance													      12.20
@@ -537,20 +474,6 @@ Ending Balance														       0.00
 
 Mashpee / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Mashpee - 172 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
-
-
-Mattapoisett / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (13.56)	      11.51
-
-Ending Balance														      11.51
-
-Melrose / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Melrose - 178 - 8/28/2013					     25.08	      25.08
 
 
 
@@ -560,7 +483,18 @@ Beginning Balance													       0.00
 Client / Account Name
  Date				Type   Description							     Value	    Balance
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
+Mattapoisett / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (13.56)	      11.51
+
+Ending Balance														      11.51
+
+Melrose / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
 
 Mendon / Default
 Beginning Balance													      25.07
@@ -570,9 +504,8 @@ Ending Balance														      13.06
 
 Middleton / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Middleton - 184 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Milford / Default
 Beginning Balance													      25.07
@@ -588,19 +521,6 @@ Ending Balance														       0.00
 
 Monroe / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Monroe - 190 - 8/28/2013 					     25.08	      25.08
-
-Ending Balance														      25.08
-
-Monson / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (11.06)	      14.01
-
-Ending Balance														      14.01
-
-
-Nahant / Default
-Beginning Balance													       0.00
 
 
 
@@ -609,9 +529,19 @@ Beginning Balance													       0.00
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-		     8/28/2013	PAYT   Nahant - 196 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
+Monson / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (11.06)	      14.01
+
+Ending Balance														      14.01
+
+Nahant / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
 
 Nantucket / Default
 Beginning Balance													      25.07
@@ -621,9 +551,8 @@ Ending Balance														      14.25
 
 New Braintree / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   New Braintree - 202 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 New Marlborough / Default
 Beginning Balance													      25.07
@@ -633,23 +562,12 @@ Ending Balance														       0.00
 
 Norfolk / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Norfolk - 208 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 North.Reading / Default
 Beginning Balance													     310.07
 		     8/27/2013	PAYF   Payment from account						    (13.24)	     296.83
-		     8/28/2013	PAYT   Transferred payment						    310.08	     606.91
-
-Ending Balance														     606.91
-
-Northampton / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Northampton - 214 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
 
 
 
@@ -658,18 +576,24 @@ Ending Balance														      25.08
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
+
+Ending Balance														     296.83
+
+Northampton / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
+
 Northborough / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						     (6.56)	      18.51
 
 Ending Balance														      18.51
 
-
 Norwood / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Norwood - 220 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Oak Bluffs / Default
 Beginning Balance													      25.07
@@ -677,12 +601,10 @@ Beginning Balance													      25.07
 
 Ending Balance														       1.75
 
-
 Oxford / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Oxford - 226 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Palmer / Default
 Beginning Balance													      25.07
@@ -690,18 +612,8 @@ Beginning Balance													      25.07
 
 Ending Balance														      12.82
 
-
 Pepperell / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Pepperell - 232 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
-
-Peru / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (24.00)	       1.07
-
-Ending Balance														       1.07
 
 
 
@@ -710,6 +622,14 @@ Ending Balance														       1.07
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
+Peru / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (24.00)	       1.07
+
+Ending Balance														       1.07
 
 Petersham / Default
 Beginning Balance													      13.84
@@ -717,12 +637,10 @@ Beginning Balance													      13.84
 
 Ending Balance														       2.24
 
-
 Plainville / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Plainville - 238 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Plymouth / Default
 Beginning Balance													      25.07
@@ -730,12 +648,10 @@ Beginning Balance													      25.07
 
 Ending Balance														      11.82
 
-
 Randolph / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Randolph - 244 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Raynham / Default
 Beginning Balance													      25.07
@@ -743,16 +659,9 @@ Beginning Balance													      25.07
 
 Ending Balance														      12.20
 
-
 Reading / Default
 Beginning Balance													      19.36
 		     8/27/2013	PAYF   Payment from account						     (5.89)	      13.47
-
-Ending Balance														      13.47
-
-Rochester / Default
-Beginning Balance													       0.00
-		     8/28/2013	PAYT   Rochester - 250 - 8/28/2013					     25.08	      25.08
 
 
 
@@ -762,7 +671,12 @@ Beginning Balance													       0.00
 Client / Account Name
  Date				Type   Description							     Value	    Balance
 
-Ending Balance														      25.08
+Ending Balance														      13.47
+
+Rochester / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
 
 Rockland / Default
 Beginning Balance													      25.07
@@ -778,9 +692,8 @@ Ending Balance														       0.00
 
 Russell / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Russell - 256 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Rutland / Default
 Beginning Balance													      25.07
@@ -790,19 +703,12 @@ Ending Balance														      14.19
 
 Saugus / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Saugus - 262 - 8/28/2013 					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Savoy / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (14.53)	      10.54
-
-Ending Balance														      10.54
-
-
-Shelburne / Default
-Beginning Balance													       0.00
 
 
 
@@ -811,9 +717,13 @@ Beginning Balance													       0.00
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-		     8/28/2013	PAYT   Shelburne - 268 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														      10.54
+
+Shelburne / Default
+Beginning Balance													       0.00
+
+Ending Balance														       0.00
 
 Sherborn / Default
 Beginning Balance													      25.07
@@ -835,10 +745,8 @@ Ending Balance														       0.00
 
 Somerville / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Somerville - 274 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 South.Hadley / Default
 Beginning Balance													      25.07
@@ -849,8 +757,6 @@ Ending Balance														       0.00
 Southampton / Default
 Beginning Balance													       5.72
 		     8/27/2013	PAYF   Payment from account						     (5.72)	       0.00
-
-Ending Balance														       0.00
 
 
 
@@ -859,12 +765,13 @@ Ending Balance														       0.00
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
+
+Ending Balance														       0.00
+
 Spencer / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Spencer - 280 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Springfield / Default
 Beginning Balance													      25.07
@@ -878,19 +785,16 @@ Beginning Balance													      14.80
 
 Ending Balance														       0.00
 
-
 Stow / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Stow - 286 - 8/28/2013						     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Sturbridge / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 Ending Balance														       0.00
-
 
 Sudbury / Default
 Beginning Balance													       5.01
@@ -900,9 +804,6 @@ Ending Balance														       0.00
 
 Swansea / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Swansea - 292 - 8/28/2013					     25.08	      25.08
-
-Ending Balance														      25.08
 
 
 
@@ -912,12 +813,13 @@ Ending Balance														      25.08
 Client / Account Name
  Date				Type   Description							     Value	    Balance
 
+Ending Balance														       0.00
+
 Taunton / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 Ending Balance														       0.00
-
 
 Templeton / Default
 Beginning Balance													      16.42
@@ -927,10 +829,8 @@ Ending Balance														       0.00
 
 Topsfield / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Topsfield - 298 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Townsend / Default
 Beginning Balance													      25.07
@@ -944,12 +844,10 @@ Beginning Balance													      14.18
 
 Ending Balance														       2.94
 
-
 Uxbridge / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Uxbridge - 304 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Wakefield / Default
 Beginning Balance													      25.07
@@ -973,9 +871,8 @@ Ending Balance														       0.00
 
 Wareham / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Wareham - 310 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Warren / Default
 Beginning Balance													      25.07
@@ -991,9 +888,8 @@ Ending Balance														       0.00
 
 Webster / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Webster - 316 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Wellesley / Default
 Beginning Balance													      25.07
@@ -1001,9 +897,9 @@ Beginning Balance													      25.07
 
 Ending Balance														       0.00
 
-
 Wellfleet / Default
 Beginning Balance													       8.41
+		     8/27/2013	PAYF   Payment from account						     (8.41)	       0.00
 
 
 
@@ -1012,15 +908,13 @@ Beginning Balance													       8.41
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-		     8/27/2013	PAYF   Payment from account						     (8.41)	       0.00
 
 Ending Balance														       0.00
 
 West.Bridgewater / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   West.Bridgewater - 322 - 8/28/2013				     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 West.Brookfield / Default
 Beginning Balance													      25.07
@@ -1040,19 +934,20 @@ Beginning Balance													      19.40
 
 Ending Balance														       0.00
 
-
 West.Tisbury / Default
 Beginning Balance													     415.48
 		     8/27/2013	PAYF   Payment from account						   (415.48)	       0.00
-		     8/28/2013	PAYT   Transferred payment						      6.26	       6.26
 
-Ending Balance														       6.26
+Ending Balance														       0.00
 
 Westborough / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Westborough - 328 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
+
+Westfield / Default
+Beginning Balance													      25.07
+		     8/27/2013	PAYF   Payment from account						    (12.62)	      12.45
 
 
 
@@ -1061,12 +956,8 @@ Ending Balance														      25.08
 
 Client / Account Name
  Date				Type   Description							     Value	    Balance
-Westfield / Default
-Beginning Balance													      25.07
-		     8/27/2013	PAYF   Payment from account						    (12.62)	      12.45
 
 Ending Balance														      12.45
-
 
 Westford / Default
 Beginning Balance													       0.55
@@ -1076,10 +967,8 @@ Ending Balance														       0.00
 
 Westport / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Westport - 334 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
-
+Ending Balance														       0.00
 
 Westwood / Default
 Beginning Balance													      25.07
@@ -1093,18 +982,20 @@ Beginning Balance													      18.12
 
 Ending Balance														       0.00
 
-
 Williamsburg / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Williamsburg - 340 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Williamstown / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 Ending Balance														       0.00
+
+Wilmington / Default
+Beginning Balance													       2.82
+		     8/27/2013	PAYF   Payment from account						     (2.82)	       0.00
 
 
 
@@ -1114,25 +1005,18 @@ Ending Balance														       0.00
 Client / Account Name
  Date				Type   Description							     Value	    Balance
 
-Wilmington / Default
-Beginning Balance													       2.82
-		     8/27/2013	PAYF   Payment from account						     (2.82)	       0.00
-
 Ending Balance														       0.00
-
 
 Winthrop / Default
 Beginning Balance													       0.00
-		     8/28/2013	PAYT   Winthrop - 346 - 8/28/2013					     25.08	      25.08
 
-Ending Balance														      25.08
+Ending Balance														       0.00
 
 Woburn / Default
 Beginning Balance													      25.07
 		     8/27/2013	PAYF   Payment from account						    (25.07)	       0.00
 
 Ending Balance														       0.00
-
 
 Worcester / Default
 Beginning Balance													      18.36
@@ -1144,4 +1028,4 @@ Ending Balance														       0.00
 Grand Total														    3492.77
    Total Added														    2122.70
    Total Removed													   (2168.80)
-   Ending Balance Total 												    3446.67
+   Ending Balance Total 												    1323.97
